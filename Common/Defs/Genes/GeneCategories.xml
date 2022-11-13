@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneCategoryDef>
+    <defName>rjw_genes_genitalia</defName>
+    <label>Genitalia</label>
+    <displayPriorityInXenotype>541</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+</Defs>
