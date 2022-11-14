@@ -28,6 +28,7 @@
     </Reference>
     <Reference Include="RJW">
       <HintPath>..\..\rjw\1.4\Assemblies\RJW.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -40,12 +41,16 @@
       <Private>False</Private>
     </Reference>
     <None Include="..\About\**" />
-    <None Include="..\Common\Defs\**" />
+    <None Include="..\Common\Defs\Genes\GeneCategories.xml" />
+    <None Include="..\Common\Defs\Genes\GeneDefs_ExtraGenitaliaEndogenes.xml" />
+    <None Include="..\Common\Defs\Genes\GeneDefs_GenitaliaTypeEndogenes.xml" />
     <None Include="..\Common\Languages\**" />
     <None Include="..\Common\Patches\**" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GeneDefOf.cs" />
+    <Compile Include="Genes\ExtraGenitalia\Gene_NoPenis.cs" />
+    <Compile Include="Genes\ExtraGenitalia\Gene_ExtraPenis.cs" />
     <Compile Include="Genes\Genitalia\Gene_SlimeGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_DragonGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_FelineGenitalia.cs" />
@@ -55,8 +60,12 @@
     <Compile Include="Genes\Genitalia\Gene_EquineGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_HumanGenitalia.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaChanger.cs" />
+    <Compile Include="GenitaliaUtility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RJW_Genes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GeneDefs_GenitaliaTypeEndogenes.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

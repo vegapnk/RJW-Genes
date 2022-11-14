@@ -8,6 +8,7 @@ namespace RJW_Genes
 	{
 		[MayRequireBiotech] public static readonly GeneCategoryDef rjw_genes_genitalia;
 
+		// Base Genitalia Types
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_human_genitalia;
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_equine_genitalia;
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_demonic_genitalia;
@@ -16,5 +17,9 @@ namespace RJW_Genes
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_ovipositor_genitalia;
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_feline_genitalia;
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_canine_genitalia;
+
+		// Extra Genitalia 
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_extra_penis;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_no_penis;
 	}
 }

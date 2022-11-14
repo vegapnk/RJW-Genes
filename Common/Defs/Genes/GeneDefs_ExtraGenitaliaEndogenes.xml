@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<GeneDef Name="GeneExtraGenitaliaBase" Abstract="True">
+    <displayCategory>rjw_genes_genitalia</displayCategory>
+    
+    <!--
+    <exclusionTags>
+      <li>GenitalType</li>
+    </exclusionTags>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    -->
+  </GeneDef>
+
+  <GeneDef ParentName="GeneExtraGenitaliaBase">
+    <defName>rjw_genes_extra_penis</defName>
+    <label>extra penis</label>
+    <description>Males of this species grow an additional penis .</description>
+    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <geneClass>RJW_Genes.Gene_ExtraPenis</geneClass>
+    <displayOrderInCategory>15</displayOrderInCategory>
+    <exclusionTags>
+      <li>PenisAmount</li>
+    </exclusionTags>
+  </GeneDef>
+
+
+  <GeneDef ParentName="GeneExtraGenitaliaBase">
+    <defName>rjw_genes_no_penis</defName>
+    <label>no penis</label>
+    <description>Males of this do not have a penis.</description>
+    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <geneClass>RJW_Genes.Gene_NoPenis</geneClass>
+    <displayOrderInCategory>16</displayOrderInCategory>
+    <exclusionTags>
+      <li>PenisAmount</li>
+    </exclusionTags>
+  </GeneDef>
+
+</Defs>

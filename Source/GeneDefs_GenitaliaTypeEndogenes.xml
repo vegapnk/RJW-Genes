@@ -6,8 +6,8 @@
     <exclusionTags>
       <li>GenitalType</li>
     </exclusionTags>
-    <!--
     <biostatCpx>0</biostatCpx>
+    <!--
     <biostatMet>0</biostatMet>
     -->
   </GeneDef>

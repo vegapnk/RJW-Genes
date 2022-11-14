@@ -11,16 +11,15 @@ namespace RJW_Genes
         /// <summary>
         /// This method changes the pawns genitalia to the given types of genitalia. 
         /// All genitals will be changed, e.g. pawns with 2 penises (for whatever reason) or is a futa, all genitals will be changed.
-		/// Anuses are currently not changed, due to a small bug.
         /// </summary>
         /// <param name="pawn">the pawn who's genitals will be changed</param>
         /// <param name="penisReplacement">the new type of penis</param>
         /// <param name="vaginaReplacement">the new type of vagina</param>
-        /// <param name="anusReplacement">the new type of anus (currently disabled)</param>
-        public static void changeGenitalia(Pawn pawn, HediffDef penisReplacement, HediffDef vaginaReplacement, HediffDef anusReplacement)
+        /// <param name="anusReplacement">the new type of anus</param>
+        public static void ChangeGenitalia(Pawn pawn, HediffDef penisReplacement, HediffDef vaginaReplacement, HediffDef anusReplacement)
         {
-            var oldParts = Genital_Helper.get_AllPartsHediffList(pawn); 
-			var partBPR = Genital_Helper.get_genitalsBPR(pawn);
+            var oldParts = Genital_Helper.get_AllPartsHediffList(pawn);
+			BodyPartRecord correctBPR;
 
 			if (!oldParts.NullOrEmpty())
 			{
@@ -31,16 +30,21 @@ namespace RJW_Genes
 				{
 					if (IsArtificial(existingGenital))
 						continue;
+					correctBPR = Genital_Helper.get_genitalsBPR(pawn);
 
 					replacementGenital = null;
 					CompHediff = null;
-					if (IsPenis(existingGenital))
-						replacementGenital = HediffMaker.MakeHediff(penisReplacement, pawn, partBPR);
+					if (Genital_Helper.is_penis(existingGenital))
+						replacementGenital = HediffMaker.MakeHediff(penisReplacement, pawn, correctBPR);
 
-					if (IsVagina(existingGenital))
-						replacementGenital = HediffMaker.MakeHediff(vaginaReplacement, pawn, partBPR);
+					if (Genital_Helper.is_vagina(existingGenital))
+						replacementGenital = HediffMaker.MakeHediff(vaginaReplacement, pawn, correctBPR);
 
-					//TODO: Adding Anus in this way had an issue by multiplying Anusses. At the moment Anus are not covered.
+                    if (IsAnus(existingGenital))
+					{
+						correctBPR = Genital_Helper.get_anusBPR(pawn);
+						replacementGenital = HediffMaker.MakeHediff(anusReplacement, pawn, correctBPR);
+					}
 
 					if (replacementGenital != null)
 					{
@@ -53,7 +57,7 @@ namespace RJW_Genes
 						GenderHelper.ChangeSex(pawn, () =>
 						{
 							pawn.health.RemoveHediff(existingGenital);
-							pawn.health.AddHediff(replacementGenital, partBPR);
+							pawn.health.AddHediff(replacementGenital, correctBPR);
 						});
 					}
 				}
@@ -65,21 +69,6 @@ namespace RJW_Genes
 			}
 
 		}
-
-		private static bool IsPenis(Hediff candidate)
-        {
-            return 
-                candidate.def.defName.ToLower().Contains("penis") ||
-                candidate.def.defName.ToLower().Contains("ovipositorm") ||
-                candidate.def.defName.ToLower().Contains("tentacle");
-        }
-
-        private static bool IsVagina(Hediff candidate)
-        {
-            return
-                candidate.def.defName.ToLower().Contains("vagina") ||
-                candidate.def.defName.ToLower().Contains("ovipositorf");
-        }
 
         private static bool IsAnus(Hediff candidate)
         {
