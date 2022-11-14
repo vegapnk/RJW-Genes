@@ -1,6 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 using rjw;
+using System;
 
 namespace RJW_Genes
 {
@@ -26,30 +27,6 @@ namespace RJW_Genes
             return GeneDefOf.rjw_genes_human_genitalia;
         }
 
-        /// <summary>
-        /// Adds a genital created from a given Def to the pawn.
-        /// Does not alter/touch gender.
-        /// </summary>
-        /// <param name="pawn">The pawn whom to add the genital to,</param>
-        /// <param name="genitalToAdd">The type of genital to be added</param>
-        public static void AddGenitalToPawn(Pawn pawn,HediffDef genitalToAdd)
-        {
-            if (pawn == null || genitalToAdd == null)
-                return;
-
-            var partBPR = Genital_Helper.get_genitalsBPR(pawn);
-            var additionalGenital = HediffMaker.MakeHediff(genitalToAdd, pawn);
-
-            var CompHediff = additionalGenital.TryGetComp<rjw.CompHediffBodyPart>();
-            if (CompHediff != null)
-            {
-                CompHediff.initComp(pawn);
-                CompHediff.updatesize();
-            }
-
-            pawn.health.AddHediff(additionalGenital, partBPR);
-        }
-
 
         public static HediffDef GetPenisForGene(GeneDef gene)
         {
@@ -68,6 +45,59 @@ namespace RJW_Genes
             }
         }
 
+
+        public static HediffDef GetVaginaForGene(GeneDef gene)
+        {
+            switch (gene.defName)
+            {
+                case "rjw_genes_human_genitalia": return Genital_Helper.average_vagina;
+                case "rjw_genes_equine_genitalia": return Genital_Helper.equine_vagina;
+                case "rjw_genes_canine_genitalia": return Genital_Helper.canine_vagina;
+                case "rjw_genes_feline_genitalia": return Genital_Helper.feline_vagina;
+                case "rjw_genes_demonic_genitalia": return Genital_Helper.demon_vagina;
+                case "rjw_genes_dragon_genitalia": return Genital_Helper.dragon_vagina;
+                case "rjw_genes_slime_genitalia": return Genital_Helper.slime_vagina;
+                case "rjw_genes_ovipositor_genitalia": return Genital_Helper.ovipositorF;
+
+                default: return Genital_Helper.average_vagina;
+            }
+        }
+
+        public static HediffDef GetAnusForGene(GeneDef gene)
+        {
+            switch (gene.defName)
+            {
+                //TODO: Do I want the default to be generic or average for feline,equine and canine?
+                case "rjw_genes_human_genitalia": return Genital_Helper.average_anus;
+                case "rjw_genes_equine_genitalia": return Genital_Helper.average_anus;
+                case "rjw_genes_canine_genitalia": return Genital_Helper.average_anus;
+                case "rjw_genes_feline_genitalia": return Genital_Helper.average_anus;
+                case "rjw_genes_demonic_genitalia": return Genital_Helper.demon_anus;
+                case "rjw_genes_dragon_genitalia": return Genital_Helper.average_anus;
+                case "rjw_genes_slime_genitalia": return Genital_Helper.slime_anus;
+                case "rjw_genes_ovipositor_genitalia": return Genital_Helper.insect_anus;
+
+                default: return Genital_Helper.generic_anus;
+            }
+        }
+
+        public static HediffDef GetBreastsForGene(GeneDef gene)
+        {
+            switch (gene.defName)
+            {
+                //TODO: Do I want the default to be generic or average?
+                case "rjw_genes_human_genitalia": return Genital_Helper.average_breasts;
+                case "rjw_genes_equine_genitalia": return Genital_Helper.average_breasts;
+                case "rjw_genes_canine_genitalia": return Genital_Helper.average_breasts;
+                case "rjw_genes_feline_genitalia": return Genital_Helper.average_breasts;
+                case "rjw_genes_demonic_genitalia": return Genital_Helper.average_breasts;
+                case "rjw_genes_dragon_genitalia": return Genital_Helper.average_breasts;
+                case "rjw_genes_slime_genitalia": return Genital_Helper.slime_breasts;
+                case "rjw_genes_ovipositor_genitalia": return Genital_Helper.average_breasts;
+
+                default: return Genital_Helper.generic_breasts;
+            }
+        }
 
         public static bool PawnStillNeedsGenitalia(Pawn pawn)
         {
@@ -88,6 +118,11 @@ namespace RJW_Genes
             else
                 return !pawn_has_any_genitalia;
 
+        }
+
+        public static bool IsBreasts(Hediff candidate)
+        {
+            return candidate.def.defName.ToLower().Contains("breast");
         }
     }
 }

@@ -4,10 +4,10 @@ using RimWorld;
 
 namespace RJW_Genes
 {
-    public class Gene_NoPenis : Gene
+    public class Gene_NoVagina : Gene
     {
 
-        internal Hediff removed_penis;
+        internal Hediff removed_vagina;
 
         // TODO: This gene only works if another Gene was set specifying the genitalia. 
         // If it is added later, it still works, but on creation it needs a different 
@@ -18,10 +18,10 @@ namespace RJW_Genes
             if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn))
                 Sexualizer.sexualize_pawn(pawn);
 
-            // Penis are only added for male pawns!
-            if (pawn.gender == Gender.Male && removed_penis == null)
+            // Vaginas are only removed for female pawns!
+            if (pawn.gender == Gender.Female && removed_vagina == null)
             {
-                RemoveButStorePenis();
+                RemoveButStoreVagina();
             }
         }
         
@@ -29,29 +29,29 @@ namespace RJW_Genes
         {
             base.PostAdd();
 
-            // Penis are only added for male pawns!
-            if (pawn.gender == Gender.Male && removed_penis == null)
+            // Vaginas are only removed for female pawns!
+            if (pawn.gender == Gender.Female && removed_vagina == null)
             {
-                RemoveButStorePenis();
+                RemoveButStoreVagina();
             }
         }
 
         public override void PostRemove()
         {
             base.PostRemove();
-            if(removed_penis != null)    
-                pawn.health.AddHediff(removed_penis);
+            if(removed_vagina != null)    
+                pawn.health.AddHediff(removed_vagina);
         }
 
-        internal void RemoveButStorePenis()
+        internal void RemoveButStoreVagina()
         {
             var partBPR = Genital_Helper.get_genitalsBPR(pawn);
-            Hediff penisToRemove = Genital_Helper.get_AllPartsHediffList(pawn).FindLast(x => Genital_Helper.is_penis(x));
+            Hediff vaginaToRemove = Genital_Helper.get_AllPartsHediffList(pawn).FindLast(x => Genital_Helper.is_vagina(x));
 
-            if(penisToRemove != null)
+            if(vaginaToRemove != null)
             {
-                removed_penis = penisToRemove;
-                pawn.health.RemoveHediff(penisToRemove);
+                removed_vagina = vaginaToRemove;
+                pawn.health.RemoveHediff(vaginaToRemove);
             }
         }
 

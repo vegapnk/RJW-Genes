@@ -70,11 +70,11 @@ namespace RJW_Genes
 
 		}
 
-        private static bool IsAnus(Hediff candidate)
+        public static bool IsAnus(Hediff candidate)
         {
             return candidate.def.defName.ToLower().Contains("anus");        }
 
-		private static bool IsArtificial(Hediff candidate)
+		public static bool IsArtificial(Hediff candidate)
         {
 			return candidate.def.defName.ToLower().Contains("bionic") || candidate.def.defName.ToLower().Contains("archo");
         }

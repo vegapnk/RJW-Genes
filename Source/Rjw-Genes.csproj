@@ -49,6 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GeneDefOf.cs" />
+    <Compile Include="Genes\ExtraGenitalia\Gene_ExtraBreasts.cs" />
+    <Compile Include="Genes\ExtraGenitalia\Gene_ExtraAnus.cs" />
+    <Compile Include="Genes\ExtraGenitalia\Gene_ExtraVagina.cs" />
+    <Compile Include="Genes\ExtraGenitalia\Gene_NoBreasts.cs" />
+    <Compile Include="Genes\ExtraGenitalia\Gene_NoAnus.cs" />
+    <Compile Include="Genes\ExtraGenitalia\Gene_NoVagina.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_NoPenis.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraPenis.cs" />
     <Compile Include="Genes\Genitalia\Gene_SlimeGenitalia.cs" />

@@ -21,5 +21,11 @@ namespace RJW_Genes
 		// Extra Genitalia 
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_extra_penis;
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_no_penis;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_extra_vagina;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_no_vagina;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_extra_breasts;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_no_breasts;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_extra_anus;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_no_anus;
 	}
 }

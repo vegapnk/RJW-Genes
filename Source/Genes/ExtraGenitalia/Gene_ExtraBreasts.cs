@@ -4,10 +4,10 @@ using RimWorld;
 
 namespace RJW_Genes
 {
-    public class Gene_ExtraPenis : Gene
+    public class Gene_ExtraBreasts : Gene
     {
 
-        internal Hediff additional_penis;
+        internal Hediff additional_breasts;
 
         public override void PostMake()
         {
@@ -15,8 +15,8 @@ namespace RJW_Genes
             if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn))
                 Sexualizer.sexualize_pawn(pawn);
 
-            // Penis are only added for male pawns!
-            if (pawn.gender == Gender.Male && additional_penis == null)
+            // Penis are only added for female pawns!
+            if (pawn.gender == Gender.Female && additional_breasts == null)
             {
                 createAndAddPenis();
             }
@@ -26,8 +26,8 @@ namespace RJW_Genes
         {
             base.PostAdd();
 
-            // Penis are only added for male pawns!
-            if (pawn.gender == Gender.Male && additional_penis == null)
+            // Penis are only added for female pawns!
+            if (pawn.gender == Gender.Female && additional_breasts == null)
             {
                 createAndAddPenis();
             }
@@ -36,25 +36,25 @@ namespace RJW_Genes
         public override void PostRemove()
         {
             base.PostRemove();
-            if(additional_penis != null)    
-                pawn.health.RemoveHediff(additional_penis);
+            if(additional_breasts != null)    
+                pawn.health.RemoveHediff(additional_breasts);
         }
 
         internal void createAndAddPenis()
         {
             var correctGene = GenitaliaUtility.GetGenitaliaTypeGeneForPawn(pawn);
-            HediffDef penisDef = GenitaliaUtility.GetPenisForGene(correctGene);
-            var partBPR = Genital_Helper.get_genitalsBPR(pawn);
-            additional_penis = HediffMaker.MakeHediff(penisDef, pawn);
+            var breastDef = GenitaliaUtility.GetBreastsForGene(correctGene);
+            var partBPR = Genital_Helper.get_breastsBPR(pawn);
+            additional_breasts = HediffMaker.MakeHediff(breastDef, pawn);
 
-            var CompHediff = additional_penis.TryGetComp<rjw.CompHediffBodyPart>();
+            var CompHediff = additional_breasts.TryGetComp<rjw.CompHediffBodyPart>();
             if (CompHediff != null)
             {
                 CompHediff.initComp(pawn);
                 CompHediff.updatesize();
             }
 
-            pawn.health.AddHediff(additional_penis, partBPR);
+            pawn.health.AddHediff(additional_breasts, partBPR);
         }
 
     }
