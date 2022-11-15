@@ -103,5 +103,17 @@
     </exclusionTags>
   </GeneDef>
 
-
+    <GeneDef ParentName="GeneExtraGenitaliaBase">
+	    <defName>rjw_genes_futa</defName>
+	    <label>futanari</label>
+	    <description>Males of this xenotype grow additional female genitalia, Females grow additional male genitalia.</description>
+	    <iconPath>Genes/Icons/Placeholder</iconPath>
+	    <geneClass>RJW_Genes.Gene_Futa</geneClass>
+	    <displayOrderInCategory>29</displayOrderInCategory>
+	    <exclusionTags>
+		    <li>PenisAmount</li>
+		    <li>VaginaAmount</li>
+	    </exclusionTags>
+    </GeneDef>
+	
 </Defs>

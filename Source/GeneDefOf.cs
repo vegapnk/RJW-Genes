@@ -27,5 +27,7 @@ namespace RJW_Genes
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_no_breasts;
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_extra_anus;
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_no_anus;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_futa;
+
 	}
 }
