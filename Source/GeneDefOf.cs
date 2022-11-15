@@ -29,5 +29,19 @@ namespace RJW_Genes
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_no_anus;
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_futa;
 
+		// Genitalia Sizes
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_big_male_genitalia;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_normal_male_genitalia;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_small_male_genitalia;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_loose_female_genitalia;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_normal_female_genitalia;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_tight_female_genitalia;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_big_breasts;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_normal_breasts;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_small_breasts;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_loose_anus;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_normal_anus;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_tight_anus;
+
 	}
 }
