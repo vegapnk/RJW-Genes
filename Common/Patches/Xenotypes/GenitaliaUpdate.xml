@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-<!-- Normal Penises -->
 
     <!--TODO: The Baseline does not show up with human genitalia? -->
 	<Operation Class="PatchOperationSequence">
@@ -12,6 +11,10 @@
 				<value>
                     <genes>
 					    <li>rjw_genes_human_genitalia</li>
+					    <li>rjw_genes_normal_anus</li>
+					    <li>rjw_genes_normal_breasts</li>
+					    <li>rjw_genes_normal_male_genitalia</li>
+					    <li>rjw_genes_normal_female_genitalia</li>
                     </genes>
 				</value>
 			</li>
@@ -25,6 +28,10 @@
 				<xpath>Defs/XenotypeDef[defName="Dirtmole"]/genes</xpath>
 				<value>
 					<li>rjw_genes_human_genitalia</li>
+					<li>rjw_genes_normal_anus</li>
+					<li>rjw_genes_normal_breasts</li>
+					<li>rjw_genes_normal_male_genitalia</li>
+					<li>rjw_genes_normal_female_genitalia</li>
 				</value>
 			</li>
 		</operations>
@@ -37,6 +44,10 @@
 				<xpath>Defs/XenotypeDef[defName="Hussar"]/genes</xpath>
 				<value>
 					<li>rjw_genes_human_genitalia</li>
+					<li>rjw_genes_normal_anus</li>
+					<li>rjw_genes_normal_breasts</li>
+					<li>rjw_genes_normal_male_genitalia</li>
+					<li>rjw_genes_normal_female_genitalia</li>
 				</value>
 			</li>
 		</operations>
@@ -49,6 +60,10 @@
 				<xpath>Defs/XenotypeDef[defName="Neanderthal"]/genes</xpath>
 				<value>
 					<li>rjw_genes_human_genitalia</li>
+					<li>rjw_genes_normal_anus</li>
+					<li>rjw_genes_normal_breasts</li>
+					<li>rjw_genes_big_male_genitalia</li>
+					<li>rjw_genes_loose_female_genitalia</li>
 				</value>
 			</li>
 		</operations>
@@ -61,6 +76,10 @@
 				<xpath>Defs/XenotypeDef[defName="Pigskin"]/genes</xpath>
 				<value>
 					<li>rjw_genes_human_genitalia</li>
+					<li>rjw_genes_normal_anus</li>
+					<li>rjw_genes_normal_breasts</li>
+					<li>rjw_genes_normal_male_genitalia</li>
+					<li>rjw_genes_normal_female_genitalia</li>
 				</value>
 			</li>
 		</operations>
@@ -73,6 +92,10 @@
 				<xpath>Defs/XenotypeDef[defName="Waster"]/genes</xpath>
 				<value>
 					<li>rjw_genes_human_genitalia</li>
+					<li>rjw_genes_normal_anus</li>
+					<li>rjw_genes_normal_breasts</li>
+					<li>rjw_genes_normal_male_genitalia</li>
+					<li>rjw_genes_normal_female_genitalia</li>
 				</value>
 			</li>
 		</operations>
@@ -85,6 +108,10 @@
 				<xpath>Defs/XenotypeDef[defName="Yttakin"]/genes</xpath>
 				<value>
 					<li>rjw_genes_human_genitalia</li>
+					<li>rjw_genes_normal_anus</li>
+					<li>rjw_genes_normal_breasts</li>
+					<li>rjw_genes_big_male_genitalia</li>
+					<li>rjw_genes_loose_female_genitalia</li>
 				</value>
 			</li>
 		</operations>
@@ -97,6 +124,10 @@
 				<xpath>Defs/XenotypeDef[defName="Highmate"]/genes</xpath>
 				<value>
 					<li>rjw_genes_human_genitalia</li>
+					<li>rjw_genes_normal_anus</li>
+					<li>rjw_genes_normal_breasts</li>
+					<li>rjw_genes_normal_male_genitalia</li>
+					<li>rjw_genes_normal_female_genitalia</li>
 				</value>
 			</li>
 		</operations>
@@ -109,20 +140,10 @@
 				<xpath>Defs/XenotypeDef[defName="Genie"]/genes</xpath>
 				<value>
 					<li>rjw_genes_human_genitalia</li>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-    
-<!-- SPECIAL Penises -->
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/XenotypeDef[defName="Baseline"]/genes</xpath>
-				<value>
-					<li>rjw_genes_human_genitalia</li>
+					<li>rjw_genes_normal_anus</li>
+					<li>rjw_genes_normal_breasts</li>
+					<li>rjw_genes_normal_male_genitalia</li>
+					<li>rjw_genes_normal_female_genitalia</li>
 				</value>
 			</li>
 		</operations>
@@ -135,6 +156,10 @@
 				<xpath>Defs/XenotypeDef[defName="Sanguophage"]/genes</xpath>
 				<value>
 					<li>rjw_genes_demonic_genitalia</li>
+					<li>rjw_genes_normal_anus</li>
+					<li>rjw_genes_normal_breasts</li>
+					<li>rjw_genes_normal_male_genitalia</li>
+					<li>rjw_genes_normal_female_genitalia</li>
 				</value>
 			</li>
 		</operations>
@@ -147,6 +172,10 @@
 				<xpath>Defs/XenotypeDef[defName="Impid"]/genes</xpath>
 				<value>
 					<li>rjw_genes_demonic_genitalia</li>
+					<li>rjw_genes_normal_anus</li>
+					<li>rjw_genes_small_breasts</li>
+					<li>rjw_genes_small_male_genitalia</li>
+					<li>rjw_genes_tight_female_genitalia</li>
 				</value>
 			</li>
 		</operations>
