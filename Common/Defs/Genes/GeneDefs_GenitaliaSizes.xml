@@ -8,7 +8,7 @@
   <!-- Penis -->
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_big_male_genitalia</defName>
-    <label>Big Male Genitalia</label>
+    <label>Big Male Genitaliasize</label>
     <description>Penises of this Xenotype are bigger.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_BigMaleGenitalia</geneClass>
@@ -20,7 +20,7 @@
 
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_normal_male_genitalia</defName>
-    <label>Normal Male Genitalia</label>
+    <label>Normal Male Genitaliasize</label>
     <description>Penises of this Xenotype can be any size.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_NormalMaleGenitalia</geneClass>
@@ -32,7 +32,7 @@
 
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_small_male_genitalia</defName>
-    <label>Small Male Genitalia</label>
+    <label>Small Male Genitaliasize</label>
     <description>Penises of this Xenotype are smaller.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_SmallMaleGenitalia</geneClass>
@@ -57,7 +57,7 @@
 
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_normal_female_genitalia</defName>
-    <label>Normal Female Genitalia</label>
+    <label>Normal Female Genitaliasize</label>
     <description>Vaginas of this Xenotype can be any size.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_NormalFemaleGenitalia</geneClass>
@@ -94,7 +94,7 @@
 
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_normal_breasts</defName>
-    <label>Normal Breasts</label>
+    <label>Normal Breastssize</label>
     <description>Females of this Xenotype have breasts of any size.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_NormalBreasts</geneClass>
@@ -131,7 +131,7 @@
 
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_normal_anus</defName>
-    <label>Normal Anus Size</label>
+    <label>Normal Anussize</label>
     <description>Anus of this Xenotype can be any size.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_NormalAnus</geneClass>

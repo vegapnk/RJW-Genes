@@ -4,7 +4,7 @@ using System;
 
 namespace RJW_Genes
 {
-    public class Gene_BigMaleGenitalia : Gene
+    public class Gene_SmallMaleGenitalia : Gene
     {
 
         public override void PostMake()

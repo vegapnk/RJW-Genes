@@ -13,13 +13,13 @@ namespace RJW_Genes
             if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn))
                 Sexualizer.sexualize_pawn(pawn);
 
-            SizeAdjuster.AdjustAllVaginaSizes(pawn, 0.5f, 1.0f);
+            SizeAdjuster.AdjustAllVaginaSizes(pawn, 0.0f, 0.5f);
         }
         
         public override void PostAdd()
         {
             base.PostAdd();
-            SizeAdjuster.AdjustAllVaginaSizes(pawn, 0.5f, 1.0f);
+            SizeAdjuster.AdjustAllVaginaSizes(pawn, 0.0f, 0.5f);
         }
 
     }
