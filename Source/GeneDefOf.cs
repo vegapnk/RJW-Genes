@@ -47,5 +47,10 @@ namespace RJW_Genes
 		// Gender 
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_female_only;
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_male_only;
+
+		// Breeding
+		public static readonly GeneDef rjw_genes_mechbreeder;
+		public static readonly GeneDef rjw_genes_insectincubator;
+		public static readonly GeneDef rjw_genes_insectbreeder;
 	}
 }
