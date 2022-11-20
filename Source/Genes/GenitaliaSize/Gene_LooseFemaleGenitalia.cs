@@ -1,17 +1,11 @@
-﻿using Verse;
-using rjw;
-using System;
-
-namespace RJW_Genes
+﻿namespace RJW_Genes
 {
-    public class Gene_LooseFemaleGenitalia : Gene
+    public class Gene_LooseFemaleGenitalia : RJW_Gene
     {
 
         public override void PostMake()
         {
             base.PostMake();
-            if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn))
-                Sexualizer.sexualize_pawn(pawn);
 
             SizeAdjuster.AdjustAllVaginaSizes(pawn, 0.5f, 1.0f);
         }

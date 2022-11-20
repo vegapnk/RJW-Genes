@@ -4,7 +4,7 @@ using RimWorld;
 
 namespace RJW_Genes
 {
-    public class Gene_ExtraBreasts : Gene
+    public class Gene_ExtraBreasts : RJW_Gene
     {
 
         internal Hediff additional_breasts;
@@ -12,13 +12,11 @@ namespace RJW_Genes
         public override void PostMake()
         {
             base.PostMake();
-            if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn))
-                Sexualizer.sexualize_pawn(pawn);
 
-            // Penis are only added for female pawns!
-            if (pawn.gender == Gender.Female && additional_breasts == null)
+            // Tits are only added for female pawns!
+            if (GenderUtility.IsFemale(pawn) && additional_breasts == null)
             {
-                createAndAddPenis();
+                CreateAndAddBreasts();
             }
         }
         
@@ -26,10 +24,10 @@ namespace RJW_Genes
         {
             base.PostAdd();
 
-            // Penis are only added for female pawns!
-            if (pawn.gender == Gender.Female && additional_breasts == null)
+            // Tits are only added for female pawns!
+            if (GenderUtility.IsFemale(pawn) && additional_breasts == null)
             {
-                createAndAddPenis();
+                CreateAndAddBreasts();
             }
         }
 
@@ -40,7 +38,7 @@ namespace RJW_Genes
                 pawn.health.RemoveHediff(additional_breasts);
         }
 
-        internal void createAndAddPenis()
+        internal void CreateAndAddBreasts()
         {
             var correctGene = GenitaliaUtility.GetGenitaliaTypeGeneForPawn(pawn);
             var breastDef = GenitaliaUtility.GetBreastsForGene(correctGene);

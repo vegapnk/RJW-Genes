@@ -58,6 +58,9 @@
     <Compile Include="Genes\ExtraGenitalia\Gene_NoVagina.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_NoPenis.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraPenis.cs" />
+    <Compile Include="Genes\Gender\GenderUtility.cs" />
+    <Compile Include="Genes\Gender\Gene_FemaleOnly.cs" />
+    <Compile Include="Genes\Gender\Gene_MaleOnly.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_BigBreasts.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_LooseAnus.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_LooseFemaleGenitalia.cs" />
@@ -80,6 +83,7 @@
     <Compile Include="Genes\Genitalia\Gene_EquineGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_HumanGenitalia.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaChanger.cs" />
+    <Compile Include="Genes\RJW_Gene.cs" />
     <Compile Include="GenitaliaUtility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RJW_Genes.cs" />

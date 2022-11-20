@@ -18,7 +18,7 @@
     <description>Carriers of this carry genitalia similar to humans.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_HumanGenitalia</geneClass>
-    <displayOrderInCategory>1</displayOrderInCategory>
+    <displayOrderInCategory>801</displayOrderInCategory>
   </GeneDef>
   
   <GeneDef ParentName="GeneGenitalTypeBase">
@@ -27,7 +27,7 @@
     <description>Carriers of this gene develop equine genitalia.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_EquineGenitalia</geneClass>
-    <displayOrderInCategory>2</displayOrderInCategory>
+    <displayOrderInCategory>802</displayOrderInCategory>
   </GeneDef>
   
   <GeneDef ParentName="GeneGenitalTypeBase">
@@ -36,7 +36,7 @@
     <description>Carriers of this gene develop canine genitalia.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_CanineGenitalia</geneClass>
-    <displayOrderInCategory>3</displayOrderInCategory>
+    <displayOrderInCategory>803</displayOrderInCategory>
   </GeneDef>
 
   <GeneDef ParentName="GeneGenitalTypeBase">
@@ -45,7 +45,7 @@
     <description>Carriers of this gene develop feline genitalia.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_FelineGenitalia</geneClass>
-    <displayOrderInCategory>4</displayOrderInCategory>
+    <displayOrderInCategory>804</displayOrderInCategory>
   </GeneDef>
 
   <GeneDef ParentName="GeneGenitalTypeBase">
@@ -54,7 +54,7 @@
     <description>Carriers of this gene have demonic genitalia.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_DemonicGenitalia</geneClass>
-    <displayOrderInCategory>5</displayOrderInCategory>
+    <displayOrderInCategory>805</displayOrderInCategory>
   </GeneDef>
 
   <GeneDef ParentName="GeneGenitalTypeBase">
@@ -63,7 +63,7 @@
     <description>Carriers of this gene develop dragon genitalia.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_DragonGenitalia</geneClass>
-    <displayOrderInCategory>6</displayOrderInCategory>
+    <displayOrderInCategory>806</displayOrderInCategory>
   </GeneDef>
 
   <GeneDef ParentName="GeneGenitalTypeBase">
@@ -72,7 +72,7 @@
     <description>Carriers of this gene have slime genitalia.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_SlimeGenitalia</geneClass>
-    <displayOrderInCategory>7</displayOrderInCategory>
+    <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
 
   <GeneDef ParentName="GeneGenitalTypeBase">
@@ -81,7 +81,7 @@
     <description>Carriers of this gene have ovipositors similar to insects.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_OvipositorGenitalia</geneClass>
-    <displayOrderInCategory>8</displayOrderInCategory>
+    <displayOrderInCategory>808</displayOrderInCategory>
   </GeneDef>
 
 </Defs>

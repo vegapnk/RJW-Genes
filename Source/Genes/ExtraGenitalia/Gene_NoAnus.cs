@@ -4,7 +4,7 @@ using RimWorld;
 
 namespace RJW_Genes
 {
-    public class Gene_NoAnus : Gene
+    public class Gene_NoAnus : RJW_Gene
     {
 
         internal Hediff removed_anus;
@@ -15,8 +15,6 @@ namespace RJW_Genes
         public override void PostMake()
         {
             base.PostMake();
-            if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn))
-                Sexualizer.sexualize_pawn(pawn);
 
             if (removed_anus == null)
             {

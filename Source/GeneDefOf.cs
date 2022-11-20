@@ -7,6 +7,7 @@ namespace RJW_Genes
 	public static class GeneDefOf
 	{
 		[MayRequireBiotech] public static readonly GeneCategoryDef rjw_genes_genitalia;
+		[MayRequireBiotech] public static readonly GeneCategoryDef rjw_genes_gender;
 
 		// Base Genitalia Types
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_human_genitalia;
@@ -43,5 +44,8 @@ namespace RJW_Genes
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_normal_anus;
 		[MayRequireBiotech] public static readonly GeneDef rjw_genes_tight_anus;
 
+		// Gender 
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_female_only;
+		[MayRequireBiotech] public static readonly GeneDef rjw_genes_male_only;
 	}
 }

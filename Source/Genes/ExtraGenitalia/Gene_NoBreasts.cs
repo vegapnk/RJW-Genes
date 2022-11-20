@@ -4,7 +4,7 @@ using RimWorld;
 
 namespace RJW_Genes
 {
-    public class Gene_NoBreasts : Gene
+    public class Gene_NoBreasts : RJW_Gene
     {
 
         internal Hediff removed_breasts;
@@ -15,11 +15,9 @@ namespace RJW_Genes
         public override void PostMake()
         {
             base.PostMake();
-            if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn))
-                Sexualizer.sexualize_pawn(pawn);
             
             // Breasts are removed for female pawns!
-            if (pawn.gender == Gender.Female && removed_breasts == null)
+            if (GenderUtility.IsFemale(pawn) && removed_breasts == null)
             {
                 RemoveButStoreBreasts();
             }
@@ -30,7 +28,7 @@ namespace RJW_Genes
             base.PostAdd();
 
             // Breasts are removed for female pawns!
-            if (pawn.gender == Gender.Female && removed_breasts == null)
+            if (GenderUtility.IsFemale(pawn) && removed_breasts == null)
             {
                 RemoveButStoreBreasts();
             }

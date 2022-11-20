@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!-- Note: It is very important that rjw_genes_gender has a higher priority than the other genes
+       That way they run in the correct order. 
+       If the Gender Change happens after e.g. genitalia change, it will produce errors.
+  -->
+
+  <GeneCategoryDef>
+    <defName>rjw_genes_gender</defName>
+    <label>Gender</label>
+    <displayPriorityInXenotype>20</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
   <GeneCategoryDef>
     <defName>rjw_genes_genitalia</defName>
     <label>Genitalia</label>
-    <displayPriorityInXenotype>541</displayPriorityInXenotype>
+    <displayPriorityInXenotype>16</displayPriorityInXenotype>
   </GeneCategoryDef>
 
 </Defs>

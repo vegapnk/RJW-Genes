@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef>
+        <defName>rjw_genes_female_only</defName>
+        <label>Female</label>
+        <displayCategory>rjw_genes_gender</displayCategory>
+        <description>This Xenotype only has females.</description>
+        <biostatCpx>0</biostatCpx>
+        <iconPath>Genes/Icons/Placeholder</iconPath>
+        <geneClass>RJW_Genes.Gene_FemaleOnly</geneClass>
+        <displayOrderInCategory>1</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>rjw_genes_male_only</defName>
+        <displayCategory>rjw_genes_gender</displayCategory>
+        <label>Male</label>
+        <description>This Xenotype only has males.</description>
+        <biostatCpx>0</biostatCpx>
+        <iconPath>Genes/Icons/Placeholder</iconPath>
+        <geneClass>RJW_Genes.Gene_MaleOnly</geneClass>
+        <displayOrderInCategory>2</displayOrderInCategory>
+    </GeneDef>
+    
+</Defs>

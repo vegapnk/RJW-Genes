@@ -4,7 +4,7 @@ using RimWorld;
 
 namespace RJW_Genes
 {
-    public class Gene_ExtraVagina : Gene
+    public class Gene_ExtraVagina : RJW_Gene
     {
 
         internal Hediff additional_vagina;
@@ -17,11 +17,9 @@ namespace RJW_Genes
         public override void PostMake()
         {
             base.PostMake();
-            if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn))
-                Sexualizer.sexualize_pawn(pawn);
 
             // Vaginas are only added for female pawns!
-            if (pawn.gender == Gender.Female && additional_vagina == null)
+            if (GenderUtility.IsFemale(pawn) && additional_vagina == null)
             {
                 CreateAndAddVagina();
             }
@@ -32,7 +30,7 @@ namespace RJW_Genes
             base.PostAdd();
 
             // Vaginas are only added for female pawns!
-            if (pawn.gender == Gender.Female && additional_vagina == null)
+            if (GenderUtility.IsFemale(pawn) && additional_vagina == null)
             {
                 CreateAndAddVagina();
             }

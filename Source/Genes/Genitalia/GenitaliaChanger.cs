@@ -79,5 +79,14 @@ namespace RJW_Genes
 			return candidate.def.defName.ToLower().Contains("bionic") || candidate.def.defName.ToLower().Contains("archo");
         }
 
+		public static void RemoveAllGenitalia(Pawn pawn)
+		{
+			var parts = Genital_Helper.get_AllPartsHediffList(pawn);
+			foreach (var part in parts)
+            {
+				pawn.health.RemoveHediff(part);
+            }
+		}
+
     }
 }

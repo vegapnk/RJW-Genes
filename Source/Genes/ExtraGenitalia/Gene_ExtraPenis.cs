@@ -4,7 +4,7 @@ using RimWorld;
 
 namespace RJW_Genes
 {
-    public class Gene_ExtraPenis : Gene
+    public class Gene_ExtraPenis : RJW_Gene
     {
 
         internal Hediff additional_penis;
@@ -12,13 +12,11 @@ namespace RJW_Genes
         public override void PostMake()
         {
             base.PostMake();
-            if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn))
-                Sexualizer.sexualize_pawn(pawn);
 
             // Penis are only added for male pawns!
-            if (pawn.gender == Gender.Male && additional_penis == null)
+            if (GenderUtility.IsMale(pawn) && additional_penis == null)
             {
-                createAndAddPenis();
+                CreateAndAddPenis();
             }
         }
         
@@ -27,9 +25,9 @@ namespace RJW_Genes
             base.PostAdd();
 
             // Penis are only added for male pawns!
-            if (pawn.gender == Gender.Male && additional_penis == null)
+            if (GenderUtility.IsMale(pawn) && additional_penis == null)
             {
-                createAndAddPenis();
+                CreateAndAddPenis();
             }
         }
 
@@ -40,7 +38,7 @@ namespace RJW_Genes
                 pawn.health.RemoveHediff(additional_penis);
         }
 
-        internal void createAndAddPenis()
+        internal void CreateAndAddPenis()
         {
             var correctGene = GenitaliaUtility.GetGenitaliaTypeGeneForPawn(pawn);
             HediffDef penisDef = GenitaliaUtility.GetPenisForGene(correctGene);

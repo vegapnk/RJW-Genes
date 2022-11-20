@@ -11,7 +11,7 @@
     <description>Males of this species grow an additional penis .</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_ExtraPenis</geneClass>
-    <displayOrderInCategory>20</displayOrderInCategory>
+    <displayOrderInCategory>701</displayOrderInCategory>
     <exclusionTags>
       <li>PenisAmount</li>
     </exclusionTags>
@@ -23,7 +23,7 @@
     <description>Males of this do not have a penis.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_NoPenis</geneClass>
-    <displayOrderInCategory>21</displayOrderInCategory>
+    <displayOrderInCategory>702</displayOrderInCategory>
     <exclusionTags>
       <li>PenisAmount</li>
     </exclusionTags>
@@ -36,7 +36,7 @@
     <description>Females of this species grow an additional vagina .</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_ExtraVagina</geneClass>
-    <displayOrderInCategory>22</displayOrderInCategory>
+    <displayOrderInCategory>703</displayOrderInCategory>
     <exclusionTags>
       <li>VaginaAmount</li>
     </exclusionTags>
@@ -48,7 +48,7 @@
     <description>Females of this do not have a vagina.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_NoVagina</geneClass>
-    <displayOrderInCategory>23</displayOrderInCategory>
+    <displayOrderInCategory>704</displayOrderInCategory>
     <exclusionTags>
       <li>VaginaAmount</li>
     </exclusionTags>
@@ -61,7 +61,7 @@
     <description>Females of this species grow an additional pair of breasts .</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_ExtraBreasts</geneClass>
-    <displayOrderInCategory>24</displayOrderInCategory>
+    <displayOrderInCategory>705</displayOrderInCategory>
     <exclusionTags>
       <li>BreastAmount</li>
     </exclusionTags>
@@ -73,7 +73,7 @@
     <description>Females of this do not have a pair of breasts.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_NoBreasts</geneClass>
-    <displayOrderInCategory>25</displayOrderInCategory>
+    <displayOrderInCategory>706</displayOrderInCategory>
     <exclusionTags>
       <li>BreastAmount</li>
     </exclusionTags>
@@ -85,7 +85,7 @@
     <description>This specias has an extra anus.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_ExtraAnus</geneClass>
-    <displayOrderInCategory>26</displayOrderInCategory>
+    <displayOrderInCategory>707</displayOrderInCategory>
     <exclusionTags>
       <li>AnusAmount</li>
     </exclusionTags>
@@ -97,7 +97,7 @@
     <description>This specias has no anus.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <geneClass>RJW_Genes.Gene_NoAnus</geneClass>
-    <displayOrderInCategory>27</displayOrderInCategory>
+    <displayOrderInCategory>708</displayOrderInCategory>
     <exclusionTags>
       <li>AnusAmount</li>
     </exclusionTags>
@@ -109,7 +109,7 @@
 	    <description>Males of this xenotype grow additional female genitalia, Females grow additional male genitalia.</description>
 	    <iconPath>Genes/Icons/Placeholder</iconPath>
 	    <geneClass>RJW_Genes.Gene_Futa</geneClass>
-	    <displayOrderInCategory>29</displayOrderInCategory>
+	    <displayOrderInCategory>709</displayOrderInCategory>
 	    <exclusionTags>
 		    <li>PenisAmount</li>
 		    <li>VaginaAmount</li>
