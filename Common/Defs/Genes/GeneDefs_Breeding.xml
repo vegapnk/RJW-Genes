@@ -19,7 +19,7 @@
     <displayOrderInCategory>52</displayOrderInCategory>
 	<displayCategory>rjw_genes_breeding</displayCategory>
   </GeneDef>
-  
+
   <GeneDef>
     <defName>rjw_genes_insectbreeder</defName>
     <label>InsectBreeder</label>	
@@ -28,5 +28,5 @@
     <displayOrderInCategory>53</displayOrderInCategory>
 	<displayCategory>rjw_genes_breeding</displayCategory>
   </GeneDef>
-
+  
 </Defs>
