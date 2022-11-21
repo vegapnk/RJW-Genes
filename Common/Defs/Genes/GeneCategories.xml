@@ -24,4 +24,10 @@
     <displayPriorityInXenotype>15</displayPriorityInXenotype>
   </GeneCategoryDef>
 
+  <GeneCategoryDef>
+    <defName>rjw_genes_cum</defName>
+    <label>Cum</label>
+    <displayPriorityInXenotype>14</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
 </Defs>

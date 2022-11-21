@@ -56,6 +56,10 @@
     <Compile Include="Genes\Breeding\PatchMechBirth.cs" />
     <Compile Include="Genes\Breeding\PatchPawnExtensions.cs" />
     <Compile Include="Genes\Breeding\PatchPregnancyHelper.cs" />
+    <Compile Include="Genes\Cum\CumUtility.cs" />
+    <Compile Include="Genes\Cum\Gene_VeryMuchCum.cs" />
+    <Compile Include="Genes\Cum\Gene_MuchCum.cs" />
+    <Compile Include="Genes\Cum\Gene_NoCum.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraBreasts.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraAnus.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_Futa.cs" />

@@ -15,7 +15,7 @@ namespace RJW_Genes
 
         public override void PostAdd()
         {
-            base.PostMake();
+            base.PostAdd();
             GenitaliaChanger.ChangeGenitalia(this.pawn, Genital_Helper.demon_penis, Genital_Helper.demon_vagina, Genital_Helper.demon_anus);
         }
     }

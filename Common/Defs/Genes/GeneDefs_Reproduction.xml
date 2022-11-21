@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <GeneDef>
+        <defName>rjw_genes_hypersexual</defName>
+        <label>Hypersexuality</label>
+        <displayCategory>Reproduction</displayCategory>
+        <description>Xenotypes with this Gene are Hypersexual (Nymphs).</description>
+        <iconPath>Genes/Icons/Placeholder</iconPath>
+        <displayOrderInCategory>1</displayOrderInCategory>    
+        <forcedTraits>
+            <li>
+                <def>Nymphomaniac</def>
+            </li>
+        </forcedTraits>
+    </GeneDef>
+    
+</Defs>
