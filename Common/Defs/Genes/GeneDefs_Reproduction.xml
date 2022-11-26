@@ -15,4 +15,17 @@
         </forcedTraits>
     </GeneDef>
     
+    <GeneDef>
+        <defName>rjw_genes_rapist</defName>
+        <label>Rapist</label>
+        <displayCategory>Reproduction</displayCategory>
+        <description>Xenotypes with this Gene are Rapists.</description>
+        <iconPath>Genes/Icons/Placeholder</iconPath>
+        <displayOrderInCategory>2</displayOrderInCategory>    
+        <forcedTraits>
+            <li>
+                <def>Rapist</def>
+            </li>
+        </forcedTraits>
+    </GeneDef>
 </Defs>

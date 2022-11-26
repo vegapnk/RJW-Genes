@@ -58,8 +58,6 @@
     </exclusionTags>  
   </GeneDef>
 
-<!-- Does not Work like this (yet)-->
-<!--
   <GeneDef MayRequire="LustLicentia.RJWLabs">
     <defName>rjw_genes_cumflation_immunity</defName>
     <label>Cumflation Immunity</label>
@@ -67,13 +65,13 @@
     <description>This Xenotype cannot get cumflated.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
     <displayOrderInCategory>537</displayOrderInCategory>
-    <hediffGiversCannotGive>
-      <li>Cumflation</li>
-    </hediffGiversCannotGive>
+    <!-- 
+      Note: This Gene has an accompanying patch for LicentiaLabs in ../Patches
+    -->
     <exclusionTags>
         <li>NotCumflatable</li>
     </exclusionTags>  
   </GeneDef>
--->
+
 
 </Defs>
