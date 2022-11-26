@@ -6,8 +6,10 @@ namespace RJW_Genes
 	[DefOf]
 	public static class GeneDefOf
 	{
-		public static readonly GeneCategoryDef rjw_genes_genitalia;
+		public static readonly GeneCategoryDef rjw_genes_genitalia_type;
+		public static readonly GeneCategoryDef rjw_genes_genitalia_size;
 		public static readonly GeneCategoryDef rjw_genes_gender;
+		public static readonly GeneCategoryDef rjw_genes_breeding;
 
 		// Base Genitalia Types
 		public static readonly GeneDef rjw_genes_human_genitalia;
@@ -53,14 +55,19 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_insectincubator;
 		public static readonly GeneDef rjw_genes_insectbreeder;
 
-		//Cum 
+		// Cum 
 		public static readonly GeneDef rjw_genes_no_cum;
 		public static readonly GeneDef rjw_genes_much_cum;
 		public static readonly GeneDef rjw_genes_very_much_cum;
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_likes_cumflation;
-		//[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_cumflation_immunity; //Does currently not work like this
+		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_cumflation_immunity; //Does currently not work like this
 
-		//Reproduction 
+		// Reproduction 
 		public static readonly GeneDef rjw_genes_hypersexual;
+		public static readonly GeneDef rjw_genes_rapist;
+		public static readonly GeneDef rjw_genes_zoophile;
+
+		// Damage & Side Effects 
+		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_elasticity;
 	}
 }

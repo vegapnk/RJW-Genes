@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 <GeneDef Name="GeneGenitaliaSizeBase" Abstract="True">
-    <displayCategory>rjw_genes_genitalia</displayCategory>
+    <displayCategory>rjw_genes_genitalia_size</displayCategory>
     <!--These Genes need to be loaded quite last, otherwise e.g. genitalia types will re-roll and overrule genitalia size-->
   </GeneDef>
 

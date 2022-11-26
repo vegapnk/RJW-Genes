@@ -17,7 +17,7 @@ namespace RJW_Genes
         {
             if (!__result)
             {
-                __result = GeneUtility.isInsectBreeder(pawn);
+                __result = GeneUtility.IsInsectBreeder(pawn);
             }
         }
     }

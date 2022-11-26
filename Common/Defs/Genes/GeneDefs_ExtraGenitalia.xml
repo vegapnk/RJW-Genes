@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 <GeneDef Name="GeneExtraGenitaliaBase" Abstract="True">
-    <displayCategory>rjw_genes_genitalia</displayCategory>
+    <displayCategory>rjw_genes_genitalia_extras</displayCategory>
   </GeneDef>
 
 

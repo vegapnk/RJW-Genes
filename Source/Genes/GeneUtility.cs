@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using System;
+using Verse;
 
 namespace RJW_Genes
 {
@@ -22,7 +23,7 @@ namespace RJW_Genes
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_insectincubator);
         }
 
-        public static bool isInsectBreeder(Pawn pawn)
+        public static bool IsInsectBreeder(Pawn pawn)
         {
             if (pawn.genes == null)
             {
@@ -39,6 +40,24 @@ namespace RJW_Genes
                 MaxEggSize *= 2;
             }
             return MaxEggSize;
+        }
+
+        internal static bool IsElastic(Pawn pawn)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(GeneDefOf.rjw_genes_elasticity);
+        }
+
+        public static bool IsCumflationImmune(Pawn pawn)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(GeneDefOf.rjw_genes_cumflation_immunity);
         }
     }
 }

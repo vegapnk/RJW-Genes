@@ -2,7 +2,7 @@
 <Defs>
 
   <GeneDef Name="GeneGenitalTypeBase" Abstract="True">
-    <displayCategory>rjw_genes_genitalia</displayCategory>
+    <displayCategory>rjw_genes_genitalia_type</displayCategory>
     <exclusionTags>
       <li>GenitalType</li>
     </exclusionTags>

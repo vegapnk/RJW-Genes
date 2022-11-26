@@ -26,3 +26,34 @@ Reason: If you go with Full-No-Genitals (No Penis, No Anus, No Breasts, No Vagin
 however then the RJW base-logic runs the sexualizer. 
 
 **Workaround**: Have atleast 1 genitalia enabled with Genes, I recommend the anus. 
+
+## Log Pops up for Xenotypes with Female/Male Only Gene 
+
+Error: 
+
+When using a Xenotype with the Female only gene, upon refresh it can open the log with the following (red) statement: 
+
+```
+[RJW]  ChangeSex error (PAWNNAME) faction (FACTION). Probably tried to change sex at world gen for royalty implant, skipping
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Error (string)
+rjw.ModLog:Error (string)
+rjw.GenderHelper:ChangeSex (Verse.Pawn,rjw.GenderHelper/Sex,rjw.GenderHelper/Sex)
+rjw.GenderHelper:ChangeSex (Verse.Pawn,System.Action)
+RJW_Genes.Gene_FemaleOnly:AdjustPawnToFemale ()
+RJW_Genes.Gene_FemaleOnly:PostMake ()
+RimWorld.GeneMaker:MakeGene (Verse.GeneDef,Verse.Pawn)
+[... some more ...]
+```
+
+Reason: 
+
+RJW covers some corner cases when the pawn is changed before creation. 
+
+Current Solution: 
+
+Ignore this. The pawns seem to have the right sex and genitalia, I cannot "catch" the exception as it is only a Log Error. I would need to do harmony patching and ... that seems to be too much.  
+
+Aimed Solution: 
+
+Patch ChangeSex to skip for pawns with the two genes producing this.

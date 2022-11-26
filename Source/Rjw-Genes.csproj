@@ -29,6 +29,10 @@
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="LicentiaLabs">
+      <HintPath>..\..\licentia-labs\Assemblies\LicentiaLabs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="RJW">
       <HintPath>..\..\rjw\1.4\Assemblies\RJW.dll</HintPath>
       <Private>False</Private>
@@ -60,6 +64,8 @@
     <Compile Include="Genes\Cum\Gene_VeryMuchCum.cs" />
     <Compile Include="Genes\Cum\Gene_MuchCum.cs" />
     <Compile Include="Genes\Cum\Gene_NoCum.cs" />
+    <Compile Include="Genes\Damage\Gene_Elasticity.cs" />
+    <Compile Include="Genes\Cum\Patch_Cumflation.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraBreasts.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraAnus.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_Futa.cs" />
