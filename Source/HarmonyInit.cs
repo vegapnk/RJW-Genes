@@ -21,9 +21,12 @@ namespace RJW_Genes
                 {
                     if (ModsConfig.IsActive("LustLicentia.RJWLabs"))
                     {
-                        // Gene: Cumflation Immunity
+                        // Gene: Cumflation Immunity [Prefix Patch]
                         harmony.Patch(AccessTools.Method(typeof(LicentiaLabs.CumflationHelper), nameof(LicentiaLabs.CumflationHelper.Cumflation)),
                             prefix: new HarmonyMethod(typeof(Patch_Cumflation), nameof(Patch_Cumflation.Prefix)));
+                        // Gene: Generous Donor [Postfix Patch]
+                        harmony.Patch(AccessTools.Method(typeof(LicentiaLabs.CumflationHelper), nameof(LicentiaLabs.CumflationHelper.TransferNutrition)),
+                            postfix: new HarmonyMethod(typeof(Patch_TransferNutrition), nameof(Patch_TransferNutrition.Postfix)));
                     }
                 }))();
             }

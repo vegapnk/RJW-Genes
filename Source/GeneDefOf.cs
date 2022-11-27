@@ -60,8 +60,9 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_much_cum;
 		public static readonly GeneDef rjw_genes_very_much_cum;
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_likes_cumflation;
-		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_cumflation_immunity; //Does currently not work like this
-
+		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_cumflation_immunity;
+		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_generous_donor; 
+		
 		// Reproduction 
 		public static readonly GeneDef rjw_genes_hypersexual;
 		public static readonly GeneDef rjw_genes_rapist;

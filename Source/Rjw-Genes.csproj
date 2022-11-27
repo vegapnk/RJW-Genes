@@ -64,6 +64,7 @@
     <Compile Include="Genes\Cum\Gene_VeryMuchCum.cs" />
     <Compile Include="Genes\Cum\Gene_MuchCum.cs" />
     <Compile Include="Genes\Cum\Gene_NoCum.cs" />
+    <Compile Include="Genes\Cum\Patch_TransferNutrition.cs" />
     <Compile Include="Genes\Damage\Gene_Elasticity.cs" />
     <Compile Include="Genes\Cum\Patch_Cumflation.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraBreasts.cs" />

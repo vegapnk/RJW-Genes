@@ -9,8 +9,8 @@ This is my first Mod I started from scratch so any feedback is very welcome.
 - Different Genitalia Types 
 - Genitalia Size Scaling 
 - Extra Genitalia (and a Futa Attempt)
-- Some Traits 
-- Cum-Amount Changes
+- Some Traits, Cumflation Immunity, Elasticity
+- Cum-Amount Changes, Transfer Nutrition
 - Mech Breeding / Insect Breeding Support 
 
 See [planned things](TODOS.md) and feel free to contribute. 
@@ -23,5 +23,5 @@ Please consider looking at [the known bugs](./KNOWN_BUGS.md)
 
 ## Genes vs. Races 
 
-I currently don't use Genes after Biotech was introduced. 
+I currently don't use Races after Biotech was introduced. 
 One of the main motivations was to have genes being added to the xenotypes that other mods and the base game add, e.g. adding demonic penis for impids. 

@@ -16,6 +16,7 @@ namespace RJW_Genes
     /// <summary>
     /// Changes LicentiaLabs (if Present) to not cumflate pawns that are cumflation immune. 
     /// This code is exercised / loaded in the HarmonyInit.
+    /// Patched File: https://gitgud.io/John-the-Anabaptist/licentia-labs/-/blob/master/Source/LicentiaLabs/LicentiaLabs/Cumflation.cs
     /// </summary>
     /// 
     class Patch_Cumflation

@@ -8,10 +8,6 @@ So any help is very appreciated, even if it is just pointing me to existing simi
 **Sanguophage like Cumwhores** adding Hemogen and refilling it by getting semen. 
 Showstopper here is the amount of code required, and that I need to understand a bit better of harmony to run the AfterSexUtility and modulate SexChances. 
 
-**Immunity to Soreness / Ignoring Cumflation Mali** 
-
-**LicentiaLabs TransferNutrition _Generous Donor_** pawns that get head do not loose nutrition or only part of what they fire. 
-
 **Adjustable Cock-Size** like e.g. artificial genitalia have
 
 ## Animal Gene Inheritance 
