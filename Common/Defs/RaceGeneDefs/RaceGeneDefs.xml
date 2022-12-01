@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RJW_BGS.RaceGeneDef Name = "Canine">
+		<defName>Canine</defName> 
+		<raceGroup>Canine_Group</raceGroup>
+		<genes>
+			<li>Ears_Floppy</li>
+		</genes>
+		<genechances> 
+			<li>0.9</li>
+		</genechances> 
+	</RJW_BGS.RaceGeneDef>
+<!-- You can use parents to have animals get specific genes in addition to the group.	
+	<RJW_BGS.RaceGeneDef ParentName = "Canine">
+		<defName>Warg</defName>
+		<raceNames>
+			<li>Warg</li>
+		</raceNames>
+		<genes>
+			<li>DarkVision</li>
+		</genes>
+		<genechances> 
+			<li>0.9</li>
+		</genechances> 
+	</RJW_BGS.RaceGeneDef>
+--> 	
+	<RJW_BGS.RaceGeneDef>
+		<defName>Insect</defName> 
+		<raceGroup>Insect_Group</raceGroup>
+		<genes>
+			<li>Beauty_Ugly</li>
+		</genes>
+		<genechances> 
+			<li>0.5</li>
+		</genechances> 
+	</RJW_BGS.RaceGeneDef>
+	
+	<RJW_BGS.RaceGeneDef>
+		<defName>Feline</defName> 
+		<raceGroup>Feline_Group</raceGroup>
+		<genes>
+			<li>Ears_Cat</li>
+			<li>Sleepy</li>
+			<li>DarkVision</li>
+		</genes>
+		<genechances> 
+			<li>0.9</li>
+			<li>0.25</li>
+			<li>0.25</li>
+		</genechances> 
+	</RJW_BGS.RaceGeneDef>
+<!--	
+	<RJW_BGS.RaceGeneDef>
+		<defName>Equine</defName> 
+		<raceGroup>Equine_Group</raceGroup>
+		<genes>
+			<li>Ears_Floppy</li>
+		</genes>
+		<genechances> 
+			<li>10</li>
+		</genechances> 
+	</RJW_BGS.RaceGeneDef>
+-->	
+	<RJW_BGS.RaceGeneDef>
+		<defName>Dragon</defName> 
+		<raceGroup>Dragon_Group</raceGroup>
+		<genes>
+			<li>Unstoppable</li>
+			<li>Headbone_CenterHorn</li>
+		</genes>
+		<genechances> 
+			<li>0.25</li>
+			<li>0.9</li>
+		</genechances> 
+	</RJW_BGS.RaceGeneDef>
+	
+	<RJW_BGS.RaceGeneDef>
+		<defName>Rodent</defName> 
+		<raceGroup>Rodent_Group</raceGroup>
+		<genes>
+			<li>Fertile</li>
+		</genes>
+		<genechances> 
+			<li>0.25</li>
+		</genechances> 
+	</RJW_BGS.RaceGeneDef>
+	
+	<RJW_BGS.RaceGeneDef>
+		<defName>Racoon</defName> 
+		<raceGroup>Raccon_Group</raceGroup>
+		<genes>
+			<li>StrongStomach</li>
+		</genes>
+		<genechances> 
+			<li>0.5</li>
+		</genechances> 
+	</RJW_BGS.RaceGeneDef>
+<!--	
+	<RJW_BGS.RaceGeneDef>
+		<defName>Needle</defName> 
+		<raceGroup>Needle_Group</raceGroup>
+		<genes>
+			<li>Ears_Floppy</li>
+		</genes>
+		<genechances> 
+			<li>10</li>
+		</genechances> 
+	</RJW_BGS.RaceGeneDef>
+-->
+<!--
+	<RJW_BGS.RaceGeneDef>
+		<defName>Hemi</defName> 
+		<raceGroup>Hemi_Group</raceGroup>
+		<genes>
+			<li>Ears_Floppy</li>
+		</genes>
+		<genechances> 
+			<li>10</li>
+		</genechances> 
+	</RJW_BGS.RaceGeneDef>
+-->
+</Defs>

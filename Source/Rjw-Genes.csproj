@@ -7,7 +7,7 @@
     <ProjectGuid>{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Rjw-Genes</RootNamespace>
+    <RootNamespace>RJW_Genes</RootNamespace>
     <AssemblyName>Rjw-Genes</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -23,18 +23,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="LicentiaLabs">
-      <HintPath>..\..\licentia-labs\Assemblies\LicentiaLabs.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\licentia-labs-master\Assemblies\LicentiaLabs.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RJW">
-      <HintPath>..\..\rjw\1.4\Assemblies\RJW.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW\1.4\Assemblies\RJW.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -43,18 +44,26 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <None Include="..\About\**" />
     <None Include="..\Common\Defs\Genes\GeneCategories.xml" />
     <None Include="..\Common\Defs\Genes\GeneDefs_ExtraGenitaliaEndogenes.xml" />
     <None Include="..\Common\Defs\Genes\GeneDefs_GenitaliaTypeEndogenes.xml" />
     <None Include="..\Common\Languages\**" />
     <None Include="..\Common\Patches\**" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animal_Inheritance\First.cs" />
+    <Compile Include="Animal_Inheritance\Harmony_Init.cs" />
+    <Compile Include="Animal_Inheritance\InheritanceUtility.cs" />
+    <Compile Include="Animal_Inheritance\PatchRJWBestialityPregnancyUtility.cs" />
+    <Compile Include="Animal_Inheritance\PatchRJWHediffInsect_Egg.cs" />
+    <Compile Include="Animal_Inheritance\PatchVanillaPregnancyUtility.cs" />
+    <Compile Include="Animal_Inheritance\RaceGeneDef.cs" />
+    <Compile Include="Animal_Inheritance\RJWcopies.cs" />
     <Compile Include="GeneDefOf.cs" />
     <Compile Include="Genes\Breeding\Gene_MechBreeder.cs" />
     <Compile Include="Genes\Breeding\PatchMechBirth.cs" />

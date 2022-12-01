@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RJW_BGS.RaceGeneDef ParentName="Insect_base" Name="AA_lisks_base" Abstract="True">
+		<defName>AA_lisks_base</defName> 
+		<!-- <raceNames>
+			<li>AA_Animalisk</li>
+			<li>AA_Blizzarisk</li>
+			<li>AA_Cinderlisk</li>
+			<li>AA_Dunealisk</li>
+			<li>AA_Feralisk</li>
+			<li>AA_Junglelisk</li>
+		</raceNames> -->
+		<genes>
+			<li>AG_Spinnerets</li>
+			<li>AG_EggLaying</li>
+			<li>AG_FeraliskEyes</li>
+		</genes>
+		<genechances> 
+			<li>0.25</li>
+			<li>0.25</li>
+			<li>0.25</li>
+		</genechances> 
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef ParentName="AA_lisks_base">
+		<defName>AA_Animalisk</defName> 
+		<raceNames>
+			<li>AA_Animalisk</li>
+		</raceNames>
+		<genes>
+			<li>PsychicAbility_Enhanced</li>
+			<li>PsychicAbility_Extreme</li>
+		</genes>
+		<genechances> 
+			<li>0.8</li>
+			<li>0.2</li>
+		</genechances> 
+	</RJW_BGS.RaceGeneDef>
+	
+	<RJW_BGS.RaceGeneDef ParentName="AA_lisks_base">
+		<defName>AA_Blizzarisk</defName> 
+		<raceNames>
+			<li>AA_Blizzarisk</li>
+		</raceNames>
+		<genes>
+			<li>MaxTemp_SmallDecrease</li>
+			<li>MinTemp_SmallDecrease</li>
+			<li>MinTemp_LargeDecrease</li>
+		</genes>
+		<genechances>
+			<li>0.8</li>		
+			<li>0.8</li>
+			<li>0.2</li>
+		</genechances> 
+	</RJW_BGS.RaceGeneDef>
+	
+	<RJW_BGS.RaceGeneDef ParentName="AA_lisks_base">
+		<defName>AA_Hotlisk</defName> 
+		<raceNames>
+			<li>AA_Cinderlisk</li>
+			<li>AA_Dunealisk</li>
+		</raceNames>
+		<genes>
+			<li>MinTemp_SmallIncrease</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>MaxTemp_LargeIncrease</li>
+		</genes>
+		<genechances> 
+			<li>0.8</li>
+			<li>0.8</li>
+			<li>0.2</li>
+		</genechances> 
+	</RJW_BGS.RaceGeneDef>
+	
+	<RJW_BGS.RaceGeneDef ParentName="AA_lisks_base">
+		<defName>AA_Normallisk</defName> 
+		<raceNames>
+			<li>AA_Feralisk</li>
+			<li>AA_Junglelisk</li>
+		</raceNames> 
+	</RJW_BGS.RaceGeneDef>
+</Defs>

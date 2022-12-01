@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RJW_BGS.RaceGeneDef>
+		<defName>AA_Wildpodgroup</defName> 
+		<raceNames>
+			<li>AA_Wildpod</li>
+			<li>AA_Wildpawn</li>
+			<li>AA_Agaripawn</li>
+			<li>AA_Agaripod</li>
+		</raceNames> 
+		<genes>
+			<li>AG_FungalSkin</li>
+			<li>MoveSpeed_Slow</li>
+			<li>FireWeakness</li>
+			<li>FireTerror</li>
+			<li>Robust</li>
+			<li>Unstoppable</li>
+		</genes>
+		<genechances> 
+			<li>0.15</li>
+			<li>0.25</li>
+			<li>0.25</li>
+			<li>0.25</li>
+			<li>0.25</li>
+			<li>0.25</li>
+		</genechances> 
+	</RJW_BGS.RaceGeneDef>
+</Defs>
