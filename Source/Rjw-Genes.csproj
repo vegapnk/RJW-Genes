@@ -50,9 +50,8 @@
     <None Include="..\Common\Defs\Genes\GeneDefs_GenitaliaTypeEndogenes.xml" />
     <None Include="..\Common\Languages\**" />
     <None Include="..\Common\Patches\**" />
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +63,9 @@
     <Compile Include="Animal_Inheritance\PatchVanillaPregnancyUtility.cs" />
     <Compile Include="Animal_Inheritance\RaceGeneDef.cs" />
     <Compile Include="Animal_Inheritance\RJWcopies.cs" />
+    <Compile Include="Animal_Inheritance\RJW_BGSSettings.cs" />
+    <Compile Include="Animal_Inheritance\RJW_BGSSettingsController.cs" />
+    <Compile Include="Animal_Inheritance\GeneChance.cs" />
     <Compile Include="GeneDefOf.cs" />
     <Compile Include="Genes\Breeding\Gene_MechBreeder.cs" />
     <Compile Include="Genes\Breeding\PatchMechBirth.cs" />

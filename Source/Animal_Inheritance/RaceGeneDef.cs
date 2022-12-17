@@ -10,11 +10,12 @@ namespace RJW_BGS
 {
     public class RaceGeneDef : Def
     {
+
         public String raceGroup;
         public List<string> raceNames;
         public List<string> pawnKindNames;
-        public List<string> genes;
-        public List<float> genechances;
+        public List<GeneChance> genes;
+        //public List<float> genechances;
         public String hybridName;
     }
 }

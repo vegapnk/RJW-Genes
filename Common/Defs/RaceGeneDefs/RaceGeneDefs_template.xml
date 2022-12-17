@@ -23,16 +23,33 @@
 		which genes can be inherited
 		
 		<genes>
-			<li>Ears_Floppy</li>
-		</genes>
-		The genes which may be inherited. Use the defName of the gene, you can also add modded genes. 
-		
-		<genechances> 
-			<li>0.9</li>
-		</genechances> 
-		WIP, the chance of each gene to be inherited. Is in same order as genes, so for the second gene the chance to inherit is based on the second line in geweights. 
+			<li>
+				<defName>Ears_Floppy</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_slime_genitalia</defName> You can add modded genes which will be ignored if the mod is inactive.
+				<chance>0.5</chance>
+			</li>			
+		</genes>		 
+		For each gene you need to find the defname and give it a chance to appear. Each gene is rolled independently.
 	</RJW_BGS.RaceGeneDef>
 	
 	
 -->
+
+<!-- You can use parents to have animals get specific genes in addition to the group. So warg children will have a chance for Ears_Floppy, rjw_genes_slime_genitalia and StrongStomach
+	<RJW_BGS.RaceGeneDef ParentName = "Canine">
+		<defName>Warg</defName>
+		<raceNames>
+			<li>Warg</li>
+		</raceNames>
+		<genes>
+			<li>
+				<defName>StrongStomach</defName>
+				<chance>0.5</chance>
+			</li>			
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+--> 
 </Defs>

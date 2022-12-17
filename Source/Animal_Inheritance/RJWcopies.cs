@@ -35,7 +35,7 @@ namespace RJW_BGS
 			return raceGroupDef != null;
 		}
 
-		//slightly modified code so it also works racegroupdefs
+		
 		public static RaceGroupDef GetRaceGroupDefInternal(PawnKindDef kindDef)
 		{
 			string raceName = kindDef.race.defName;
@@ -71,6 +71,7 @@ namespace RJW_BGS
 			return result;
 		}
 
+		//slightly modified copy of code above so it also works for racegenedefs
 		public static RaceGeneDef GetRaceGenDefInternal(PawnKindDef kindDef)
         {
 			if (kindDef == null)

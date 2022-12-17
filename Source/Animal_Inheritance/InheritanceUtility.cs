@@ -53,18 +53,11 @@ namespace RJW_BGS
             RaceGeneDef raceGeneDef = RJWcopy.GetRaceGenDefInternal(pawnKindDef);
             if (raceGeneDef != null)
             {
-                int num1 = raceGeneDef.genes.Count;
-                int num2 = raceGeneDef.genechances.Count;
-                if (num1 != num2)
+                foreach (GeneChance gene in raceGeneDef.genes)
                 {
-                    Log.Error("The amount of genes and genechanches are different in " + raceGeneDef.defName + ". Can't select genes to inherit");
-                    return genelist;
-                }
-                for (int i = 0; i<num1; i++)
-                {
-                    if (raceGeneDef.genechances[i] > Rand.Range(0.01f, 1f))
+                    if (gene.chance >= Rand.Range(0.01f,1f))
                     {
-                        genelist.Add(DefDatabase<GeneDef>.GetNamed(raceGeneDef.genes[i]));
+                        genelist.Add(DefDatabase<GeneDef>.GetNamed(gene.defName));
                     }
                 }
             }
