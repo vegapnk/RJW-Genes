@@ -23,16 +23,17 @@ namespace RJW_Genes
                     if (!gene.Overridden)
                         return gene.def;
             }
-                
-            return GeneDefOf.rjw_genes_human_genitalia;
+            return null;
         }
 
 
         public static HediffDef GetPenisForGene(GeneDef gene)
         {
+            if (gene == null)
+                return Genital_Helper.average_penis;
+
             switch (gene.defName)
             {
-                case "rjw_genes_human_genitalia":       return Genital_Helper.average_penis;
                 case "rjw_genes_equine_genitalia":      return Genital_Helper.equine_penis;
                 case "rjw_genes_canine_genitalia":      return Genital_Helper.canine_penis;
                 case "rjw_genes_feline_genitalia":      return Genital_Helper.feline_penis;
@@ -48,9 +49,11 @@ namespace RJW_Genes
 
         public static HediffDef GetVaginaForGene(GeneDef gene)
         {
+            if (gene == null)
+                return Genital_Helper.average_vagina;
+
             switch (gene.defName)
             {
-                case "rjw_genes_human_genitalia": return Genital_Helper.average_vagina;
                 case "rjw_genes_equine_genitalia": return Genital_Helper.equine_vagina;
                 case "rjw_genes_canine_genitalia": return Genital_Helper.canine_vagina;
                 case "rjw_genes_feline_genitalia": return Genital_Helper.feline_vagina;
@@ -65,10 +68,11 @@ namespace RJW_Genes
 
         public static HediffDef GetAnusForGene(GeneDef gene)
         {
+            if (gene == null)
+                return Genital_Helper.average_anus;
             switch (gene.defName)
             {
                 //TODO: Do I want the default to be generic or average for feline,equine and canine?
-                case "rjw_genes_human_genitalia": return Genital_Helper.average_anus;
                 case "rjw_genes_equine_genitalia": return Genital_Helper.average_anus;
                 case "rjw_genes_canine_genitalia": return Genital_Helper.average_anus;
                 case "rjw_genes_feline_genitalia": return Genital_Helper.average_anus;
@@ -83,10 +87,12 @@ namespace RJW_Genes
 
         public static HediffDef GetBreastsForGene(GeneDef gene)
         {
+            if (gene == null)
+                return Genital_Helper.average_breasts;
+
             switch (gene.defName)
             {
                 //TODO: Do I want the default to be generic or average?
-                case "rjw_genes_human_genitalia": return Genital_Helper.average_breasts;
                 case "rjw_genes_equine_genitalia": return Genital_Helper.average_breasts;
                 case "rjw_genes_canine_genitalia": return Genital_Helper.average_breasts;
                 case "rjw_genes_feline_genitalia": return Genital_Helper.average_breasts;

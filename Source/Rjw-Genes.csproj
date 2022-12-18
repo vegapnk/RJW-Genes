@@ -70,11 +70,12 @@
     <Compile Include="Animal_Inheritance\RJWcopies.cs" />
     <Compile Include="Animal_Inheritance\RJW_BGSSettings.cs" />
     <Compile Include="Animal_Inheritance\RJW_BGSSettingsController.cs" />
-    <Compile Include="Animal_Inheritance\GeneChance.cs" />
+    <Compile Include="Animal_Inheritance\BestialityGeneInheritanceDef.cs" />
     <Compile Include="GeneDefOf.cs" />
     <Compile Include="Genes\Breeding\Gene_MechBreeder.cs" />
     <Compile Include="Genes\Breeding\PatchMechBirth.cs" />
     <Compile Include="Genes\Breeding\PatchPawnExtensions.cs" />
+    <Compile Include="Genes\Breeding\Patch_EggFertilization.cs" />
     <Compile Include="Genes\Breeding\PatchPregnancyHelper.cs" />
     <Compile Include="Genes\Cum\CumUtility.cs" />
     <Compile Include="Genes\Cum\Gene_VeryMuchCum.cs" />
@@ -99,10 +100,6 @@
     <Compile Include="Genes\GenitaliaSize\Gene_BigBreasts.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_LooseAnus.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_LooseFemaleGenitalia.cs" />
-    <Compile Include="Genes\GenitaliaSize\Gene_NormalFemaleGenitalia.cs" />
-    <Compile Include="Genes\GenitaliaSize\Gene_NormalAnus.cs" />
-    <Compile Include="Genes\GenitaliaSize\Gene_NormalBreasts.cs" />
-    <Compile Include="Genes\GenitaliaSize\Gene_NormalMaleGenitalia.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_TightAnus.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_SmallBreasts.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_TightFemaleGenitalia.cs" />
@@ -116,7 +113,6 @@
     <Compile Include="Genes\Genitalia\Gene_OvipositorGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_DemonicGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_EquineGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_HumanGenitalia.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaChanger.cs" />
     <Compile Include="Genes\RJW_Gene.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaUtility.cs" />
