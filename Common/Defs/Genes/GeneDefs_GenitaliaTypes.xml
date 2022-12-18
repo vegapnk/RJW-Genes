@@ -11,15 +11,6 @@
     <biostatMet>0</biostatMet>
     -->
   </GeneDef>
-
-  <GeneDef ParentName="GeneGenitalTypeBase">
-    <defName>rjw_genes_human_genitalia</defName>
-    <label>human genitalia</label>
-    <description>Carriers of this carry genitalia similar to humans.</description>
-    <iconPath>Genes/Icons/Placeholder</iconPath>
-    <geneClass>RJW_Genes.Gene_HumanGenitalia</geneClass>
-    <displayOrderInCategory>801</displayOrderInCategory>
-  </GeneDef>
   
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_equine_genitalia</defName>
