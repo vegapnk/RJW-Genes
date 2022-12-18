@@ -12,7 +12,7 @@
     <defName>rjw_genes_no_cum</defName>
     <label>No Cum</label>
     <description>Males of these species have no fluid.</description>
-    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <iconPath>Genes/Icons/No_Cum</iconPath>
     <geneClass>RJW_Genes.Gene_NoCum</geneClass>
     <displayOrderInCategory>533</displayOrderInCategory>
     <biostatCpx>0</biostatCpx>
@@ -23,7 +23,7 @@
     <defName>rjw_genes_much_cum</defName>
     <label>Much Cum</label>
     <description>Males of this species produce a lot of fluid.</description>
-    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <iconPath>Genes/Icons/Bonus_Cum</iconPath>
     <geneClass>RJW_Genes.Gene_MuchCum</geneClass>
     <displayOrderInCategory>534</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
@@ -34,7 +34,7 @@
     <defName>rjw_genes_very_much_cum</defName>
     <label>Very Much Cum</label>
     <description>Males of this species produce a whole lot of fluid. They are like fountains basically.</description>
-    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <iconPath>Genes/Icons/Much_Bonus_Cum</iconPath>
     <geneClass>RJW_Genes.Gene_VeryMuchCum</geneClass>
     <displayOrderInCategory>535</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
@@ -46,7 +46,7 @@
     <label>Likes Cumflation</label>
     <displayCategory>rjw_genes_cum</displayCategory>
     <description>This Xenotype loves being cumflated.</description>
-    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <iconPath>Genes/Icons/Cumflation</iconPath>
     <displayOrderInCategory>536</displayOrderInCategory>
     <forcedTraits>
       <li>
@@ -63,7 +63,7 @@
     <label>Cumflation Immunity</label>
     <displayCategory>rjw_genes_cum</displayCategory>
     <description>This Xenotype cannot get cumflated.</description>
-    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <iconPath>Genes/Icons/Cumflation_Immunity</iconPath>
     <displayOrderInCategory>537</displayOrderInCategory>
     <exclusionTags>
         <li>NotCumflatable</li>
@@ -76,7 +76,7 @@
     <label>Generous Donor</label>
     <displayCategory>rjw_genes_cum</displayCategory>
     <description>When this Xenotype transfers nutrition via cumshot, the giver will not get hungry. (Licentia Configuration for Transfer Nutrition must be enabled).</description>
-    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <iconPath>Genes/Icons/Generous_Donor</iconPath>
     <displayOrderInCategory>538</displayOrderInCategory>
   </GeneDef>
 

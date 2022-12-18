@@ -6,7 +6,7 @@
         <displayCategory>rjw_genes_gender</displayCategory>
         <description>This Xenotype only has females.</description>
         <biostatCpx>0</biostatCpx>
-        <iconPath>Genes/Icons/Placeholder</iconPath>
+        <iconPath>Genes/Icons/Female_Only</iconPath>
         <geneClass>RJW_Genes.Gene_FemaleOnly</geneClass>
         <displayOrderInCategory>1</displayOrderInCategory>
     </GeneDef>
@@ -17,7 +17,7 @@
         <label>Male</label>
         <description>This Xenotype only has males.</description>
         <biostatCpx>0</biostatCpx>
-        <iconPath>Genes/Icons/Placeholder</iconPath>
+        <iconPath>Genes/Icons/Male_Only</iconPath>
         <geneClass>RJW_Genes.Gene_MaleOnly</geneClass>
         <displayOrderInCategory>2</displayOrderInCategory>
     </GeneDef>

@@ -6,7 +6,7 @@
     <label>Elasticity</label>
     <displayCategory>rjw_damage</displayCategory>
     <description>This Xenotype cannot get stretched by huge penetrators.</description>
-    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <iconPath>Genes/Icons/Elasticity</iconPath>
     <geneClass>RJW_Genes.Gene_Elasticity</geneClass>
     <displayOrderInCategory>1</displayOrderInCategory>
   </GeneDef>

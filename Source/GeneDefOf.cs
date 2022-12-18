@@ -12,7 +12,6 @@ namespace RJW_Genes
 		public static readonly GeneCategoryDef rjw_genes_breeding;
 
 		// Base Genitalia Types
-		public static readonly GeneDef rjw_genes_human_genitalia;
 		public static readonly GeneDef rjw_genes_equine_genitalia;
 		public static readonly GeneDef rjw_genes_demonic_genitalia;
 		public static readonly GeneDef rjw_genes_dragon_genitalia;
@@ -34,16 +33,12 @@ namespace RJW_Genes
 
 		// Genitalia Sizes
 		public static readonly GeneDef rjw_genes_big_male_genitalia;
-		public static readonly GeneDef rjw_genes_normal_male_genitalia;
 		public static readonly GeneDef rjw_genes_small_male_genitalia;
 		public static readonly GeneDef rjw_genes_loose_female_genitalia;
-		public static readonly GeneDef rjw_genes_normal_female_genitalia;
 		public static readonly GeneDef rjw_genes_tight_female_genitalia;
 		public static readonly GeneDef rjw_genes_big_breasts;
-		public static readonly GeneDef rjw_genes_normal_breasts;
 		public static readonly GeneDef rjw_genes_small_breasts;
 		public static readonly GeneDef rjw_genes_loose_anus;
-		public static readonly GeneDef rjw_genes_normal_anus;
 		public static readonly GeneDef rjw_genes_tight_anus;
 
 		// Gender 

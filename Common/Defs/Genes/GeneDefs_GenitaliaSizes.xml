@@ -10,7 +10,7 @@
     <defName>rjw_genes_big_male_genitalia</defName>
     <label>Big Male Genitaliasize</label>
     <description>Penises of this Xenotype are bigger.</description>
-    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <iconPath>Genes/Icons/Small_Male_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_BigMaleGenitalia</geneClass>
     <displayOrderInCategory>751</displayOrderInCategory>
     <exclusionTags>
@@ -22,7 +22,7 @@
     <defName>rjw_genes_small_male_genitalia</defName>
     <label>Small Male Genitaliasize</label>
     <description>Penises of this Xenotype are smaller.</description>
-    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <iconPath>Genes/Icons/Big_Male_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_SmallMaleGenitalia</geneClass>
     <displayOrderInCategory>753</displayOrderInCategory>
     <exclusionTags>
@@ -35,7 +35,7 @@
     <defName>rjw_genes_loose_female_genitalia</defName>
     <label>Loose Female Genitalia</label>
     <description>Vaginas of this Xenotype are quite spacy.</description>
-    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <iconPath>Genes/Icons/Loose_Female_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_LooseFemaleGenitalia</geneClass>
     <displayOrderInCategory>754</displayOrderInCategory>
     <exclusionTags>
@@ -47,7 +47,7 @@
     <defName>rjw_genes_tight_female_genitalia</defName>
     <label>Tight Female Genitalia</label>
     <description>Vaginas of this Xenotype are pretty tight.</description>
-    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <iconPath>Genes/Icons/Tight_Female_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_TightFemaleGenitalia</geneClass>
     <displayOrderInCategory>756</displayOrderInCategory>
     <exclusionTags>
@@ -60,7 +60,7 @@
     <defName>rjw_genes_big_breasts</defName>
     <label>Big Breasts</label>
     <description>Females of this Xenotype have big honkers.</description>
-    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <iconPath>Genes/Icons/Big_Breasts</iconPath>
     <geneClass>RJW_Genes.Gene_BigBreasts</geneClass>
     <displayOrderInCategory>757</displayOrderInCategory>
     <exclusionTags>
@@ -72,7 +72,7 @@
     <defName>rjw_genes_small_breasts</defName>
     <label>Small Breasts</label>
     <description>Females of this Xenotype have smaller breasts.</description>
-    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <iconPath>Genes/Icons/Small_Breasts</iconPath>
     <geneClass>RJW_Genes.Gene_SmallBreasts</geneClass>
     <displayOrderInCategory>759</displayOrderInCategory>
     <exclusionTags>
@@ -85,7 +85,7 @@
     <defName>rjw_genes_loose_anus</defName>
     <label>Loose Anus</label>
     <description>The Anus of this Xenotype is roomy.</description>
-    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <iconPath>Genes/Icons/Loose_Anus</iconPath>
     <geneClass>RJW_Genes.Gene_LooseAnus</geneClass>
     <displayOrderInCategory>760</displayOrderInCategory>
     <exclusionTags>
@@ -97,7 +97,7 @@
     <defName>rjw_genes_tight_anus</defName>
     <label>Tight Anus</label>
     <description>The anus of this Xenotype is small.</description>
-    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <iconPath>Genes/Icons/Tight_Anus</iconPath>
     <geneClass>RJW_Genes.Gene_TightAnus</geneClass>
     <displayOrderInCategory>762</displayOrderInCategory>
     <exclusionTags>

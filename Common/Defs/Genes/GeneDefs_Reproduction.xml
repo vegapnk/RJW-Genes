@@ -6,7 +6,7 @@
         <label>Hypersexuality</label>
         <displayCategory>Reproduction</displayCategory>
         <description>Xenotypes with this Gene are Hypersexual (Nymphs).</description>
-        <iconPath>Genes/Icons/Placeholder</iconPath>
+        <iconPath>Genes/Icons/Hypersexual</iconPath>
         <displayOrderInCategory>1</displayOrderInCategory>    
         <forcedTraits>
             <li>
@@ -20,7 +20,7 @@
         <label>Rapist</label>
         <displayCategory>Reproduction</displayCategory>
         <description>Xenotypes with this Gene are Rapists.</description>
-        <iconPath>Genes/Icons/Placeholder</iconPath>
+        <iconPath>Genes/Icons/Rape</iconPath>
         <displayOrderInCategory>2</displayOrderInCategory>    
         <forcedTraits>
             <li>
