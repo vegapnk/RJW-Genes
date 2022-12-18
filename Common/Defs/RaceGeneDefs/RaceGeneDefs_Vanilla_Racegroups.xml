@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RJW_BGS.RaceGeneDef Name = "Canine">
+		<defName>Canine</defName> 
+		<raceGroup>Canine_Group</raceGroup>
+		<genes>
+			<li>
+				<defName>Ears_Floppy</defName>
+				<chance>0.9</chance>
+			</li>			
+		</genes> 
+	</RJW_BGS.RaceGeneDef>
+	
+	
+	<RJW_BGS.RaceGeneDef>
+		<defName>Insect</defName> 
+		<raceGroup>Insect_Group</raceGroup>
+		<genes>
+			<li>
+				<defName>Beauty_Ugly</defName>
+				<chance>0.5</chance>
+			</li>			
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+	
+	<RJW_BGS.RaceGeneDef>
+		<defName>Feline</defName> 
+		<raceGroup>Feline_Group</raceGroup>
+		<genes>
+			<li>
+				<defName>Ears_Cat</defName>
+				<chance>0.9</chance>
+			</li>
+			<li>
+				<defName>Sleepy</defName>
+				<chance>0.25</chance>
+			</li>
+			<li>
+				<defName>DarkVision</defName>
+				<chance>0.25</chance>
+			</li>			
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+<!--	
+	<RJW_BGS.RaceGeneDef>
+		<defName>Equine</defName> 
+		<raceGroup>Equine_Group</raceGroup>
+		<genes>
+			<li>
+				<defName>StrongStomach</defName>
+				<chance>0.5</chance>
+			</li>			
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+-->	
+	<RJW_BGS.RaceGeneDef>
+		<defName>Dragon</defName> 
+		<raceGroup>Dragon_Group</raceGroup>
+		<genes>
+			<li>
+				<defName>Unstoppable</defName>
+				<chance>0.25</chance>
+			</li>
+			<li>
+				<defName>Headbone_CenterHorn</defName>
+				<chance>0.9</chance>
+			</li>			
+		</genes> 
+	</RJW_BGS.RaceGeneDef>
+	
+	<RJW_BGS.RaceGeneDef>
+		<defName>Rodent</defName> 
+		<raceGroup>Rodent_Group</raceGroup>
+		<genes>
+			<li>
+				<defName>Fertile</defName>
+				<chance>0.25</chance>
+			</li>			
+		</genes> 
+	</RJW_BGS.RaceGeneDef>
+	
+	<RJW_BGS.RaceGeneDef>
+		<defName>Racoon</defName> 
+		<raceGroup>Raccon_Group</raceGroup>
+		<genes>
+			<li>
+				<defName>StrongStomach</defName>
+				<chance>0.5</chance>
+			</li>			
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+<!--	
+	<RJW_BGS.RaceGeneDef>
+		<defName>Needle</defName> 
+		<raceGroup>Needle_Group</raceGroup>
+		<genes>
+			<li>
+				<defName>StrongStomach</defName>
+				<chance>0.5</chance>
+			</li>			
+		</genes> 
+	</RJW_BGS.RaceGeneDef>
+-->
+<!--
+	<RJW_BGS.RaceGeneDef>
+		<defName>Hemi</defName> 
+		<raceGroup>Hemi_Group</raceGroup>
+		<genes>
+			<li>
+				<defName>StrongStomach</defName>
+				<chance>0.5</chance>
+			</li>			
+		</genes> 
+	</RJW_BGS.RaceGeneDef>
+-->
+</Defs>
