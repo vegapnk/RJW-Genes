@@ -9,10 +9,18 @@ As your help is highly appreciated, there are only three *hard constraints*:
 
 But please consider also the following: 
 
-* Please try to make an issue with your idea first or ping me (Vegapunk)
+* Please try to make an issue with your idea first or ping me (Vegapnk)
 * Keep commit messages on the topic and meaningful
 * Give me some time to review things. I can either mod, play or have a life. 
 
 ## Contributors 
 
-- Shabalox (MechBreeding, InsectBreeding)
+- Shabalox (MechBreeding, InsectBreeding, Animal Gene Inheritance)
+
+## Other Credits 
+
+**Image Credits**
+
+- Many of the Icons I made (e.g. Genitalia Types) include things from [OpenMoji](https://openmoji.org/) which is awesome
+- Placeholder, Rapist, Necrophile come from [RJW-Sexperience Ideology](https://gitgud.io/amevarashi/rjw-sexperience-ideology/)
+- Hypersexual & Zoophile comes from [RJW](https://gitgud.io/Ed86/rjw)
