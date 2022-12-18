@@ -6,9 +6,15 @@ So any help is very appreciated, even if it is just pointing me to existing simi
 ## Planned Genes 
 
 **Sanguophage like Cumwhores** adding Hemogen and refilling it by getting semen. 
-Showstopper here is the amount of code required, and that I need to understand a bit better of harmony to run the AfterSexUtility and modulate SexChances. 
+Showstopper here is the amount of code required, and that I need to understand a bit better of harmony to run the AfterSexUtility and modulate SexChances. My first attempt exploded on adding UI Elements.
 
 **Adjustable Cock-Size** like e.g. artificial genitalia have
+
+**Infectious Hypersexuality Gene** (Maybe?) add Hypersexuality Gene through sex with a certain chance. 
+
+**Stat Boost on Orgasm** restore stamina 
+
+**Cum Addiction** add Cum-Addiction from Sexpererience, slowly loose conciousness while addiction is not attended.
 
 ## Animal Gene Inheritance 
 
@@ -25,7 +31,7 @@ Issues:
 
 There were some suggestions on the Discord I saved them somewhere else. I am far away from making that work, but to have them here: 
 
-- Genitalia deal damage as per size 
-- Genitalia can cause Terror
+- Genitalia deal damage as per size (on normal sex-use)
+- Genitalia can cause Terror (as ability)
 - Cumshot Sniper Abilities
 - Healing Pussy

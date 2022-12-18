@@ -57,3 +57,18 @@ Ignore this. The pawns seem to have the right sex and genitalia, I cannot "catch
 Aimed Solution: 
 
 Patch ChangeSex to skip for pawns with the two genes producing this.
+
+## Insect Breeder does not fertilize
+
+Error: 
+
+A pawn with insect breeder fucks a pawn with unfertilized insect eggs, but the eggs stay unfertilized. 
+
+
+Notes: 
+
+So testing this is super hard. 
+
+One thing - you need to have anal or vaginal sex for this to work. Any other sex type is currently not supported. 
+
+For anything else, please help me gather information on this what you did and how things look. I reworked it once but I think it should work now. 
