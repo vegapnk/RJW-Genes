@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RJW_BGS
 {
-    public class GeneChance
+    public class BestialityGeneInheritanceDef
     {
         public string defName;
         public float chance = 1f;

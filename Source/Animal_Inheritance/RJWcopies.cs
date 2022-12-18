@@ -41,33 +41,37 @@ namespace RJW_BGS
 			string raceName = kindDef.race.defName;
 			string pawnKindName = kindDef.defName;
 			IEnumerable<RaceGroupDef> allDefs = DefDatabase<RaceGroupDef>.AllDefs;
-			List<RaceGroupDef> list = allDefs.Where(delegate (RaceGroupDef group)
+			List<RaceGroupDef> pawnKindDefs = allDefs.Where(delegate (RaceGroupDef group)
 			{
 				List<string> pawnKindNames = group.pawnKindNames;
 				return pawnKindNames != null && pawnKindNames.Contains(pawnKindName);
 			}).ToList<RaceGroupDef>();
-			List<RaceGroupDef> list2 = allDefs.Where(delegate (RaceGroupDef group)
+			List<RaceGroupDef> raceNameDefs = allDefs.Where(delegate (RaceGroupDef group)
 			{
 				List<string> raceNames = group.raceNames;
 				return raceNames != null && raceNames.Contains(raceName);
 			}).ToList<RaceGroupDef>();
-			int num = list.Count<RaceGroupDef>() + list2.Count<RaceGroupDef>();
-			if (num == 0)
+
+			int availableDefs = pawnKindDefs.Count<RaceGroupDef>() + raceNameDefs.Count<RaceGroupDef>();
+			if (availableDefs == 0)
 			{
+				//Exit Early
 				return null;
 			}
-			if (num == 1)
+			if (availableDefs == 1)
 			{
-				return list.Concat(list2).Single<RaceGroupDef>();
+				return pawnKindDefs.Concat(raceNameDefs).Single<RaceGroupDef>();
 			}
+
 			RaceGroupDef result;
-			if ((result = list.FirstOrDefault((RaceGroupDef match) => !IsThisMod(match))) == null)
+			if ((result = pawnKindDefs.FirstOrDefault((RaceGroupDef match) => !IsThisMod(match))) == null)
 			{
-				if ((result = list2.FirstOrDefault((RaceGroupDef match) => !IsThisMod(match))) == null)
+				if ((result = raceNameDefs.FirstOrDefault((RaceGroupDef match) => !IsThisMod(match))) == null)
 				{
-					result = (list.FirstOrDefault<RaceGroupDef>() ?? list2.FirstOrDefault<RaceGroupDef>());
+					result = (pawnKindDefs.FirstOrDefault<RaceGroupDef>() ?? raceNameDefs.FirstOrDefault<RaceGroupDef>());
 				}
 			}
+
 			return result;
 		}
 
@@ -81,29 +85,31 @@ namespace RJW_BGS
 			string raceName = kindDef.race.defName;
 			string pawnKindName = kindDef.defName;
 			RaceGroupDef raceGroupDef = GetRaceGroupDef(kindDef);
-			//string raceGroupName = GetRaceGroupDef(kindDef).defName;
 			IEnumerable<RaceGeneDef> allDefs = DefDatabase<RaceGeneDef>.AllDefs;
 			Log.Message(allDefs.Count<RaceGeneDef>().ToString());
-			List<RaceGeneDef> list = allDefs.Where(delegate (RaceGeneDef group)
+			List<RaceGeneDef> pawnKindDefs = allDefs.Where(delegate (RaceGeneDef group)
 			{
 				List<string> pawnKindNames = group.pawnKindNames;
 				return pawnKindNames != null && pawnKindNames.Contains(pawnKindName);
 			}).ToList<RaceGeneDef>();
-			List<RaceGeneDef> list2 = allDefs.Where(delegate (RaceGeneDef group)
+			List<RaceGeneDef> raceKindDefs = allDefs.Where(delegate (RaceGeneDef group)
 			{
 				List<string> raceNames = group.raceNames;
 				return raceNames != null && raceNames.Contains(raceName);
 			}).ToList<RaceGeneDef>();
-			List<RaceGeneDef> list3 = new List<RaceGeneDef>();
+			List<RaceGeneDef> raceGroupDefs = new List<RaceGeneDef>();
 			if (raceGroupDef != null)
 			{
+				/*
+				// Log Messages for Debugging Only, prints the Genes found for this individual
 				Log.Message("found a raceGroupDef");
 				Log.Message(raceGroupDef.defName);
 				foreach (RaceGeneDef rgd in allDefs)
                 {
 					Log.Message(rgd.defName);
                 }
-				list3 = allDefs.Where(delegate (RaceGeneDef group)
+				*/
+				raceGroupDefs = allDefs.Where(delegate (RaceGeneDef group)
 				{
 					String raceGroupDefName = group.raceGroup;
 					return raceGroupDefName != null && raceGroupDefName == raceGroupDef.defName;
@@ -111,17 +117,17 @@ namespace RJW_BGS
 			}
 			RaceGeneDef result = null;
 			//First check if there is a matching pawnkinddef then race, then racegroup
-			if (list.Any())
+			if (pawnKindDefs.Any())
 			{
-				result = list.RandomElement();
+				result = pawnKindDefs.RandomElement();
 			}
-			else if (list2.Any() && result == null)
+			else if (raceKindDefs.Any() && result == null)
 			{
-				result = list2.RandomElement();
+				result = raceKindDefs.RandomElement();
 			}
-			else if (list3.Any() && result == null)
+			else if (raceGroupDefs.Any() && result == null)
 			{
-				result = list3.RandomElement();
+				result = raceGroupDefs.RandomElement();
 			}
 			else
             {

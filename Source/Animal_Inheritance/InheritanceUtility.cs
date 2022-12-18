@@ -12,40 +12,33 @@ namespace RJW_BGS
     {
         public static List<GeneDef> AnimalInheritedGenes(Pawn father, Pawn mother)
         {
-            //One parent must be an animal and the other must be human, so only one needs to return
             List<GeneDef> genelist = new List<GeneDef>();
+            //If Both are Humans, or Both are animals, do nothing & return empty GeneList 
+            if (!mother.RaceProps.Humanlike && !father.RaceProps.Humanlike)
+                return genelist;
+            if (mother.RaceProps.Humanlike && father.RaceProps.Humanlike)
+                return genelist;
+
+
+            //One parent must be an animal and the other must be human, so only one needs to return
             if (father != null && !father.RaceProps.Humanlike)
             {
                 return SelectGenes(father);
             }
-
             if (mother != null && !mother.RaceProps.Humanlike)
             {
                 return SelectGenes(mother);
-                //PawnKindDef pawnKindDef = mother.kindDef;
-                //RaceGeneDef raceGeneDef = RJWcopy.GetRaceGenDefInternal(pawnKindDef);
-                //if (raceGeneDef != null)
-                //{
-                //    GeneDef gene = null;
-                    //In case you hit a modded gene not currently active try again.
-                //    for (int i = 0; i < 50 || gene == null; i++)
-                //    {
-                //        if (raceGeneDef.genes.Any())
-                //        {
-                //            gene = DefDatabase<GeneDef>.GetNamed(raceGeneDef.genes.RandomElement());
-                //        }
-                //    }
-                //    if (gene != null)
-                //    {
-                //        genelist.Add(gene);
-//
-  //                  }
-    //                
-      //          }
             }
+
             return genelist;
         }
 
+        /// <summary>
+        /// Looks up potential genes for an animal, 
+        /// checks their chance and returns all 'triggered' genes.
+        /// </summary>
+        /// <param name="pawn">The animal for which to look up genes (Animals are Pawns in RW)</param>
+        /// <returns>The genes that will be inherited from this animal.</returns>
         public static List<GeneDef> SelectGenes(Pawn pawn)
         {
             List<GeneDef> genelist = new List<GeneDef>();
@@ -53,7 +46,7 @@ namespace RJW_BGS
             RaceGeneDef raceGeneDef = RJWcopy.GetRaceGenDefInternal(pawnKindDef);
             if (raceGeneDef != null)
             {
-                foreach (GeneChance gene in raceGeneDef.genes)
+                foreach (BestialityGeneInheritanceDef gene in raceGeneDef.genes)
                 {
                     if (gene.chance >= Rand.Range(0.01f,1f))
                     {

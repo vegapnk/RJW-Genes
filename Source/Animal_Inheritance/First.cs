@@ -15,17 +15,24 @@ namespace RJW_BGS
         static First()
         {
             RJWcopy.Racegroupdictbuilder();
-            //foreach (RaceGroupDef raceGroupDef2  in DefDatabase<RaceGroupDef>.AllDefs)      
-            //{
-                //Log.Message("defName = " + raceGroupDef2.defName);
-            //    if (raceGroupDef2.raceNames != null)
-            //    {
-            //        foreach (string race in raceGroupDef2.raceNames)
-            //        {
-                        //Log.Message(race);
-            //        }
-            //    }
-           //}
+            //Prints all found race dicts (debugging only)
+            //logAllFoundRaceGroupGenes
+            
+        }
+
+        private static void logAllFoundRaceGroupGenes()
+        {
+            foreach (RaceGroupDef def in DefDatabase<RaceGroupDef>.AllDefs)
+            {
+                Log.Message("defName = " + def.defName);
+                if (def.raceNames != null)
+                {
+                    foreach (string race in def.raceNames)
+                    {
+                        Log.Message(race);
+                    }
+                }
+            }
         }
     }
 }
