@@ -10,6 +10,8 @@ namespace RJW_Genes
 		public static readonly GeneCategoryDef rjw_genes_genitalia_size;
 		public static readonly GeneCategoryDef rjw_genes_gender;
 		public static readonly GeneCategoryDef rjw_genes_breeding;
+		public static readonly GeneCategoryDef rjw_genes_damage;
+		public static readonly GeneCategoryDef rjw_genes_special;
 
 		// Base Genitalia Types
 		public static readonly GeneDef rjw_genes_equine_genitalia;
@@ -65,5 +67,9 @@ namespace RJW_Genes
 
 		// Damage & Side Effects 
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_elasticity;
+
+		// Special
+		public static readonly GeneDef rjw_genes_orgasm_rush;
+
 	}
 }

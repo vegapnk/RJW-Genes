@@ -4,7 +4,7 @@
   <GeneDef MayRequire="LustLicentia.RJWLabs">
     <defName>rjw_genes_elasticity</defName>
     <label>Elasticity</label>
-    <displayCategory>rjw_damage</displayCategory>
+    <displayCategory>rjw_genes_damage</displayCategory>
     <description>This Xenotype cannot get stretched by huge penetrators.</description>
     <iconPath>Genes/Icons/Elasticity</iconPath>
     <geneClass>RJW_Genes.Gene_Elasticity</geneClass>

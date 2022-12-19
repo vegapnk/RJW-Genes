@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef>
+        <defName>rjw_genes_orgasm_rush</defName>
+        <label>Orgasm Rush</label>
+        <displayCategory>rjw_genes_special</displayCategory>
+        <description>On Orgasm, carriers of this gene get a boost in activity. (rest-need is partially filled)</description>
+        <biostatCpx>1</biostatCpx>
+        <iconPath>UI/Memes/FleshPurity</iconPath>
+        <displayOrderInCategory>1</displayOrderInCategory>
+    </GeneDef>
+    
+</Defs>

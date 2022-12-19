@@ -50,9 +50,15 @@
   </GeneCategoryDef>
 
   <GeneCategoryDef>
-    <defName>rjw_damage</defName>
+    <defName>rjw_genes_damage</defName>
     <label>Genital Related Damage</label>
     <displayPriorityInXenotype>11</displayPriorityInXenotype>
   </GeneCategoryDef>
 
+  <GeneCategoryDef>
+    <defName>rjw_genes_special</defName>
+    <label>Genital Related Damage</label>
+    <displayPriorityInXenotype>8</displayPriorityInXenotype>
+  </GeneCategoryDef>
+  
 </Defs>
