@@ -12,9 +12,13 @@ Showstopper here is the amount of code required, and that I need to understand a
 
 **Infectious Hypersexuality Gene** (Maybe?) add Hypersexuality Gene through sex with a certain chance. 
 
-**Stat Boost on Orgasm** restore stamina 
-
 **Cum Addiction** add Cum-Addiction from Sexpererience, slowly loose conciousness while addiction is not attended.
+
+**Cum-Drugs** eating cum has an effect similar to Go-Juice (including (separate?) addiction)
+
+**More Orgasm Boost** currently only does sleep, other things could be cool here too. Maybe a separate hediff boosting movement or fight. 
+
+**Self-Fertilizing Eggs** Pawns fertilize eggs that are put inside them (with themselves as a parent)
 
 ## Animal Gene Inheritance 
 
@@ -35,3 +39,10 @@ There were some suggestions on the Discord I saved them somewhere else. I am far
 - Genitalia can cause Terror (as ability)
 - Cumshot Sniper Abilities
 - Healing Pussy
+
+## Things to add/change for base-rjw 
+
+(Bit dependable on RJW-Core people)
+
+1. Make Racegroup-Defs accessible and non-private [This file here](https://gitgud.io/Ed86/rjw/-/blob/master/1.4/Source/Common/Helpers/RaceGroupDef_Helper.cs)
+2. Make [this](https://gitgud.io/Ed86/rjw/-/blob/master/1.4/Source/Common/Helpers/Gender_Helper.cs#L316) not warn, to reduce errors towards users

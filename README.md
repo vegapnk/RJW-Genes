@@ -16,7 +16,7 @@ This is my first Mod I started from scratch so any feedback is very welcome.
 
 See [planned things](TODOS.md) and feel free to contribute. 
 With the Human-Animal-Gene Inheritance we have a lot of XML that you can contribute! 
-We have a [template](./Common/Defs/RaceGeneDefs/RaceGeneDefs_template.xml) and you can add animals and/or genes from mods there. 
+We have a [template](./Common/Defs/RaceGeneDefs/RaceGeneDefs_template.xml) and you can add animals and/or genes from mods there (Racegroups are base-rjw). 
 
 ## Bugs? 
 
