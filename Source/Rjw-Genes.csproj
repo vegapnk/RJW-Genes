@@ -27,7 +27,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="LicentiaLabs">
@@ -35,7 +35,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="RJW">
-      <HintPath>..\..\rjw\1.4\Assemblies\RJW.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rjw-master\1.4\Assemblies\RJW.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -50,12 +50,12 @@
     <None Include="..\Common\Defs\Genes\GeneDefs_GenitaliaTypeEndogenes.xml" />
     <None Include="..\Common\Languages\**" />
     <None Include="..\Common\Patches\**" />
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -67,7 +67,7 @@
     <Compile Include="Animal_Inheritance\PatchRJWHediffInsect_Egg.cs" />
     <Compile Include="Animal_Inheritance\PatchVanillaPregnancyUtility.cs" />
     <Compile Include="Animal_Inheritance\RaceGeneDef.cs" />
-    <Compile Include="Animal_Inheritance\RJWcopies.cs" />
+    <Compile Include="Animal_Inheritance\RaceGeneDef_Helper.cs" />
     <Compile Include="Animal_Inheritance\RJW_BGSSettings.cs" />
     <Compile Include="Animal_Inheritance\RJW_BGSSettingsController.cs" />
     <Compile Include="Animal_Inheritance\BestialityGeneInheritanceDef.cs" />
