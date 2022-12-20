@@ -21,7 +21,7 @@ namespace RJW_Genes
 			if (props.pawn == null || !props.hasPartner())
 				return;
 
-			if (props.pawn.genes.HasGene(GeneDefOf.rjw_genes_orgasm_rush))
+			if (props.pawn.genes != null && props.pawn.genes.HasGene(GeneDefOf.rjw_genes_orgasm_rush))
             {
 				props.pawn.needs.rest.CurLevel += REST_INCREASE;
             }

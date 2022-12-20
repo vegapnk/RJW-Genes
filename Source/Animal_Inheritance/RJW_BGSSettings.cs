@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 using UnityEngine;
+
 namespace RJW_Genes.Animal_Inheritance
 {
     public class RJW_BGSSettings : ModSettings

@@ -14,7 +14,7 @@ namespace RJW_BGS
     {
         static First()
         {
-            RJWcopy.Racegroupdictbuilder();
+            //RJWcopy.Racegroupdictbuilder();
             //Prints all found race dicts (debugging only)
             //logAllFoundRaceGroupGenes
             
