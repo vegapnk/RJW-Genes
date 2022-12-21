@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RJW_BGS.RaceGeneDef Name = "AeroFleet">
+		<defName>AeroFleet</defName>
+	
+		<raceNames>
+			<li>AA_Aerofleet</li>
+			<li>AA_ColossalAerofleet</li>
+		</raceNames>
+	
+		<genes>
+			<li>
+				<defName>AG_Detonation</defName>
+				<chance>0.8</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_slime_genitalia</defName>
+				<chance>0.5</chance>
+			</li>
+		</genes>
+	
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef ParentName = "AeroFleet">
+		<defName>ColossalAerofleet</defName>
+		<raceNames>
+			<li>AA_ColossalAerofleet</li>
+		</raceNames>
+		<genes>
+			<li>
+				<defName>rjw_genes_big_male_genitalia</defName>
+				<chance>0.5</chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+	
+</Defs>

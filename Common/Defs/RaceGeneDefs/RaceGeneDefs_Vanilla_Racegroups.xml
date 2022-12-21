@@ -36,7 +36,7 @@
 	</RJW_BGS.RaceGeneDef>
 	
 	
-	<RJW_BGS.RaceGeneDef>
+	<RJW_BGS.RaceGeneDef Name = "Insect">
 		<defName>Insect</defName> 
 		<raceGroup>Insect_Group</raceGroup>
 		<genes>
@@ -70,8 +70,8 @@
 			</li>			
 		</genes>
 	</RJW_BGS.RaceGeneDef>
-	
-	<RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Feline">
 		<defName>Feline</defName> 
 		<raceGroup>Feline_Group</raceGroup>
 		<genes>
@@ -105,8 +105,8 @@
 			</li>			
 		</genes>
 	</RJW_BGS.RaceGeneDef>
-	
-	<RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Equine">
 		<defName>Equine</defName> 
 		<raceGroup>Equine_Group</raceGroup>
 		<genes>
@@ -141,7 +141,7 @@
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
-	<RJW_BGS.RaceGeneDef>
+	<RJW_BGS.RaceGeneDef Name = "Dragon">
 		<defName>Dragon</defName> 
 		<raceGroup>Dragon_Group</raceGroup>
 		<genes>
@@ -187,8 +187,8 @@
 			</li>			
 		</genes> 
 	</RJW_BGS.RaceGeneDef>
-	
-	<RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Rodent">
 		<defName>Rodent</defName> 
 		<raceGroup>Rodent_Group</raceGroup>
 		<genes>
@@ -222,8 +222,8 @@
 			</li>			
 		</genes> 
 	</RJW_BGS.RaceGeneDef>
-	
-	<RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Racoon">
 		<defName>Racoon</defName> 
 		<raceGroup>Raccon_Group</raceGroup>
 		<genes>
