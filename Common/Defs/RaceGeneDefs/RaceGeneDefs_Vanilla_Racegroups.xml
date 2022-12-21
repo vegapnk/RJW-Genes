@@ -76,6 +76,10 @@
 		<raceGroup>Feline_Group</raceGroup>
 		<genes>
 			<li>
+				<defName>VoiceRoar</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
 				<defName>Tail_Furry</defName>
 				<chance>0.2</chance>
 			</li>

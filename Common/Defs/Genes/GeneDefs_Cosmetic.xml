@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Skin Color -->
+
+	<!-- AlphaAnimals -->
+	<GeneDef ParentName="GeneSkinColorOverride">
+		<defName>rjw_genes_skin_skysteel</defName>
+		<label>Sky Steel Skin</label>
+		<labelShortAdj>sky steel</labelShortAdj>
+		<description>Carriers of this gene produce a pigment that gives their skin a blueish purple skin that looks similar to Sky Steel.</description>
+		<skinColorOverride>(80, 99, 225)</skinColorOverride>
+		<displayOrderInCategory>69</displayOrderInCategory>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>purple</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+</Defs>

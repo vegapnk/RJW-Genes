@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RJW_BGS.RaceGeneDef>
+		<defName>ArcturanSkyEel</defName>
+		<raceNames>
+			<li>AA_Skyeel</li>
+		</raceNames>
+		<genes>
+			<li>
+				<defName>rjw_genes_skin_skysteel</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>AG_ScalyBody</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>AG_Zap</defName>
+				<chance>0.25</chance>
+			</li>
+			<li>
+				<defName>AG_FrostbiteResistance</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>MinTemp_LargeDecrease</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>MinTemp_SmallDecrease</defName>
+				<chance>0.8</chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+	
+</Defs>
