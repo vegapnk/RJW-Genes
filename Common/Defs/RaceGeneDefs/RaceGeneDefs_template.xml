@@ -18,6 +18,9 @@
 		</pawnKindNames>
 		For even more direct control you can use pawnKindNames. 
 		
+		<priority>0</priority> 
+		You can use priority incase you have multiple racegenedefs with the same animal under the same list (racegroup, racenames or pawnKindNames). If not assigned the value is 0. Higher priority is chosen.
+		
 		The RaceGeneDef for an animal will first be decided by if it is in the pawnkindNames, after that racenames and lastly racegroup,
 		so if there is for a wolf a RaceGeneDef with the canine group and a second which has wolf under raceNames it will always use the second one to determine
 		which genes can be inherited
