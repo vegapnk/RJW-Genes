@@ -10,7 +10,7 @@ namespace RJW_BGS
 {
     public class RaceGeneDef : Def
     {
-
+        public int priority;
         public String raceGroup;
         public List<string> raceNames;
         public List<string> pawnKindNames;
