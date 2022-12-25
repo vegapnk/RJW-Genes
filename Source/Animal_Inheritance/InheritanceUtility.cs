@@ -47,7 +47,7 @@ namespace RJW_BGS
             {
                 foreach (BestialityGeneInheritanceDef gene in raceGeneDef.genes)
                 {
-                    if (gene.chance >= Rand.Range(0.01f,1f))
+                    if (gene.chance * RJW_BGSSettings.global_gene_chance  >= Rand.Range(0.01f,1f))
                     {
                         genelist.Add(DefDatabase<GeneDef>.GetNamed(gene.defName));
                     }
@@ -64,8 +64,13 @@ namespace RJW_BGS
             }
         }
 
+        //For ParchRJWHediffInsect_egg
         public static void NewGenes(Pawn mother, Pawn dad, Pawn baby)
         {
+            if (!RJW_BGSSettings.enabled)
+            {
+                return;
+            }
             if (baby.RaceProps.Humanlike)
             {
                 if (baby.genes == null)

@@ -70,6 +70,6 @@ namespace RJW_Genes
 
 		// Special
 		public static readonly GeneDef rjw_genes_orgasm_rush;
-
+		public static readonly GeneDef rjw_genes_aphrodisiac_pheromones;
 	}
 }

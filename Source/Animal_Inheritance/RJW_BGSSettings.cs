@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Verse;
 using UnityEngine;
 
-namespace RJW_Genes.Animal_Inheritance
+namespace RJW_BGS
 {
     public class RJW_BGSSettings : ModSettings
     {
@@ -23,6 +23,10 @@ namespace RJW_Genes.Animal_Inheritance
             listing_Standard.Gap(24f);
             listing_Standard.CheckboxLabeled("enabled", ref enabled, "no function yet", 0f, 1f);
             //listing_Standard.CheckboxLabeled("sexfrenzy", ref sexfrenzy, "disable the effects", 0f, 1f);
+            listing_Standard.Gap(5f);
+            listing_Standard.Label("gene inheritance chance"+ ": " + 
+                Math.Round((double)(RJW_BGSSettings.global_gene_chance * 100f), 0).ToString() + "%", -1f, "modify chance for a gene to be inherited.");
+            RJW_BGSSettings.global_gene_chance = listing_Standard.Slider(RJW_BGSSettings.global_gene_chance, 0f, 5f);
             listing_Standard.End();
         }
 
@@ -30,8 +34,10 @@ namespace RJW_Genes.Animal_Inheritance
         {
             base.ExposeData();
             Scribe_Values.Look<bool>(ref RJW_BGSSettings.enabled, "enabled", RJW_BGSSettings.enabled, true);
+            Scribe_Values.Look<float>(ref RJW_BGSSettings.global_gene_chance, "global_gene_chance", RJW_BGSSettings.global_gene_chance, true);
         }
 
-        public static bool enabled;
+        public static float global_gene_chance = 1f;
+        public static bool enabled = true;
     }
 }

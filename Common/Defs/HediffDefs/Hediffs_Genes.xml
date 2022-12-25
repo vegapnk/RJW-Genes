@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--all pregnancies-->
+<Defs>
+	<HediffDef>
+		<defName>Aphrodisiac_Pheromone</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>induced libido</label>
+		<description>Aphrodisiac pheromone effects.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-4.0</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<statOffsets>
+					<SexFrequency>2</SexFrequency>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>
