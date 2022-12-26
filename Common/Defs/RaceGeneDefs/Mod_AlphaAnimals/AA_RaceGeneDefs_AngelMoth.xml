@@ -9,15 +9,15 @@
 		<genes>
 			<li>
 				<defName>AG_MothWings</defName>
-				<chance>1</chance>
+				<chance>0.75</chance>
 			</li>
 			<li>
 				<defName>AG_MothAntennae</defName>
-				<chance>1</chance>
+				<chance>0.75</chance>
 			</li>
 			<li>
 				<defName>Skin_PaleYellow</defName>
-				<chance>1</chance>
+				<chance>0.75</chance>
 			</li>
 			<li>
 				<defName>AG_ParasiticStinger</defName>

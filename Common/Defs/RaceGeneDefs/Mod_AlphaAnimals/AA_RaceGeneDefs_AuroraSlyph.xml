@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RJW_BGS.RaceGeneDef ParentName = "Insect">
+		<defName>AuroraSlyph</defName>
+		<raceNames>
+			<li>AA_AuroraSylph</li>
+		</raceNames>
+		<genes>
+      <li>
+        <defName>AG_BodyTentacles</defName>
+        <chance>0.5</chance>
+      </li>
+			<li>
+				<defName>AG_LightSustenance</defName>
+				<chance>0.05</chance>
+			</li>
+      <li>
+        <defName>AG_FrostbiteResistance</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>MaxTemp_LargeDecrease</defName>
+        <chance>0.25</chance>
+      </li>
+      <li>
+        <defName>MinTemp_LargeDecrease</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>Beauty_Ugly</defName>
+        <chance>0.05</chance>
+      </li>
+      <li>
+        <defName>Beauty_Beautiful</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AptitudeTerrible_Melee</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>Delicate</defName>
+        <chance>0.3</chance>
+      </li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+	
+</Defs>

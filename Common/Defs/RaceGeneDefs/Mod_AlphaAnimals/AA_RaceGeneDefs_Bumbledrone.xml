@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RJW_BGS.RaceGeneDef ParentName = "Insect">
+		<defName>Bumbledrone</defName>
+		<raceNames>
+			<li>AA_Bumbledrone</li>
+		</raceNames>
+		<genes>
+      <li>
+        <defName>Skin_PaleYellow</defName>
+        <chance>0.75</chance>
+      </li>
+			<li>
+				<defName>AG_DownwardsAntennas</defName>
+				<chance>0.5</chance>
+			</li>
+      <li>
+        <defName>AG_BeeMandibles</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Head_Gaunt</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_SmallerBodySize</defName>
+        <chance>0.08</chance>
+      </li>
+      <li>
+        <defName>AG_WaspWings</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>Delicate</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AptitudePoor_Melee</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Animals</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AptitudeRemarkable_Construction</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>Libido_High</defName>
+        <chance>0.15</chance>
+      </li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+	
+</Defs>

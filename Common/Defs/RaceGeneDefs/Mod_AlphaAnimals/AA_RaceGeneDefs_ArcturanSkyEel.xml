@@ -15,21 +15,25 @@
 				<defName>AG_ScalyBody</defName>
 				<chance>0.5</chance>
 			</li>
+      <li>
+        <defName>Body_Thin</defName>
+        <chance>0.5</chance>
+      </li>
 			<li>
 				<defName>AG_Zap</defName>
 				<chance>0.25</chance>
 			</li>
 			<li>
 				<defName>AG_FrostbiteResistance</defName>
-				<chance>0.5</chance>
+				<chance>0.2</chance>
 			</li>
 			<li>
 				<defName>MinTemp_LargeDecrease</defName>
-				<chance>0.5</chance>
+				<chance>0.33</chance>
 			</li>
 			<li>
 				<defName>MinTemp_SmallDecrease</defName>
-				<chance>0.8</chance>
+				<chance>0.6</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>

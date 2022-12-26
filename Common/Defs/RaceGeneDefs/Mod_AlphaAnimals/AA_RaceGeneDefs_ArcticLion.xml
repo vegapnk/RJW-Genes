@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	
-	<RJW_BGS.RaceGeneDef ParentName = "Feline">
+	<RJW_BGS.RaceGeneDef Name ="ArcticLion" ParentName = "Feline">
 		<defName>ArcticLion</defName>
 		<raceNames>
 			<li>AA_ArcticLion</li>
@@ -9,31 +9,31 @@
 		<genes>
 			<li>
 				<defName>Skin_SheerWhite</defName>
-				<chance>0.8</chance>
+				<chance>0.75</chance>
 			</li>
+      <li>
+        <defName>Hair_SnowWhite</defName>
+        <chance>0.75</chance>
+      </li>
 			<li>
 				<defName>AG_FrostbiteResistance</defName>
-				<chance>0.5</chance>
+				<chance>0.05</chance>
 			</li>
 			<li>
 				<defName>MinTemp_LargeDecrease</defName>
 				<chance>0.25</chance>
 			</li>
 			<li>
-				<defName>MinTemp_SmallDecrease</defName>
-				<chance>0.5</chance>
-			</li>
-			<li>
 				<defName>MeleeDamage_Strong</defName>
-				<chance>0.5</chance>
+				<chance>0.1</chance>
 			</li>
-			<li>
-				<defName>AG_Clean</defName>
-				<chance>0.5</chance>
-			</li>
+      <li>
+        <defName>MaxTemp_SmallDecrease</defName>
+        <chance>0.75</chance>
+      </li>
 			<li>
 				<defName>rjw_genes_big_male_genitalia</defName>
-				<chance>0.5</chance>
+				<chance>0.8</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>

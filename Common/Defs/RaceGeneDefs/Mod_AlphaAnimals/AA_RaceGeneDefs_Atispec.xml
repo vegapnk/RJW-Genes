@@ -5,22 +5,114 @@
 		<defName>Atispec</defName>
 		<raceNames>
 			<li>AA_LarvalAtispec</li>
-			<li>AA_Atispec</li>
 		</raceNames>
 		<genes>
 			<li>
-				<defName>AG_HivelingVoice</defName>
+				<defName>AG_RayHoundTentacles</defName>
 				<chance>0.5</chance>
 			</li>
-			<li>
-				<defName>AG_HornCrown</defName>
-				<chance>0.5</chance>
-			</li>
+      <li>
+        <defName>Body_Thin</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Skin_DeepRed</defName>
+        <chance>0.75</chance>
+      </li>
 			<li>
 				<defName>AG_WaspWings</defName>
-				<chance>0.1</chance>
+				<chance>0.05</chance>
 			</li>
+      <li>
+        <defName>Delicate</defName>
+        <chance>0.4</chance>
+      </li>
+      <li>
+        <defName>AG_BiggerBodySize</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Melee</defName>
+        <chance>0.05</chance>
+      </li>
+      <li>
+        <defName>AcidSpray</defName>
+        <chance>0.05</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Intellectual</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>MaxTemp_SmallDecrease</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>FireWeakness</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>Sleepy</defName>
+        <chance>0.15</chance>
+      </li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
+
+  <RJW_BGS.RaceGeneDef ParentName = "Insect">
+    <defName>Atispec</defName>
+    <raceNames>
+      <li>AA_Atispec</li>
+    </raceNames>
+    <genes>
+      <li>
+        <defName>AG_RayHoundTentacles</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Body_Hulk</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Skin_DeepRed</defName>
+        <chance>0.75</chance>
+      </li>
+      <li>
+        <defName>AG_WaspWings</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>Robust</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AG_BiggerBodySize</defName>
+        <chance>0.25</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Melee</defName>
+        <chance>0.25</chance>
+      </li>
+      <li>
+        <defName>AcidSpray</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Intellectual</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>MaxTemp_SmallDecrease</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>FireWeakness</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>Sleepy</defName>
+        <chance>0.15</chance>
+      </li>
+    </genes>
+  </RJW_BGS.RaceGeneDef>
 	
 </Defs>

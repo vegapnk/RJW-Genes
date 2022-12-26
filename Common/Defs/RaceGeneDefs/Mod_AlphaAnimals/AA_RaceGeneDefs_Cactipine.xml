@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RJW_BGS.RaceGeneDef ParentName = "Rodent">
+		<defName>Cactipine</defName>
+		<raceNames>
+			<li>AA_Cactipine</li>
+		</raceNames>
+		<genes>
+      <li>
+        <defName>Skin_Green</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Hair_Green</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Tail_Furry</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_SmallerBodySize</defName>
+        <chance>0.1</chance>
+      </li>
+			<li>
+				<defName>MaxTemp_LargeIncrease</defName>
+				<chance>0.25</chance>
+			</li>
+      <li>
+        <defName>DarkVision</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>PiercingSpine</defName>
+        <chance>0.08</chance>
+      </li>
+      <li>
+        <defName>Delicate</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AptitudePoor_Melee</defName>
+        <chance>0.1</chance>
+      </li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+	
+</Defs>

@@ -48,6 +48,14 @@
 				<defName>Immunity_Strong</defName>
 				<chance>0.6</chance>
 			</li>
+      <li>
+        <defName>AptitudePoor_Social</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AptitudePoor_Intellectual</defName>
+        <chance>0.15</chance>
+      </li>
 			<li>
 				<defName>ToxicEnvironmentResistance_Partial</defName>
 				<chance>0.4</chance>
@@ -67,7 +75,31 @@
 			<li>
 				<defName>Body_Thin</defName>
 				<chance>0.3</chance>
-			</li>			
+			</li>
+
+			<!-- With AlphaAnimals/AlphaGenes installed -->
+
+      <li>
+        <defName>AG_InsectJellyProduction</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>AG_InsectRally</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>AG_InsectBlood</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_HivelingVoice</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_UnsettlingAppearance</defName>
+        <chance>0.2</chance>
+      </li>
+      
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
@@ -106,7 +138,15 @@
 			<li>
 				<defName>rjw_genes_feline_genitalia</defName>
 				<chance>0.25</chance>
-			</li>			
+			</li>
+
+      <!-- With AlphaAnimals/AlphaGenes installed -->
+
+      <li>
+        <defName>AG_Clean</defName>
+        <chance>0.2</chance>
+      </li>
+      
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
