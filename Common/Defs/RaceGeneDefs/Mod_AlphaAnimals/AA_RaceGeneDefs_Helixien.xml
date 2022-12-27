@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RJW_BGS.RaceGeneDef ParentName = "Rodent">
+		<defName>Cactipine</defName>
+		<raceNames>
+			<li>AA_Cactipine</li>
+		</raceNames>
+		<genes>
+      <li>
+        <defName>UVSensitivity_Intense</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>ToxResist_Total</defName>
+        <chance>0.08</chance>
+      </li>
+      <li>
+        <defName>PsychicAbility_Dull</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AptitudeTerrible_Mining</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AptitudePoor_Shooting</defName>
+        <chance>0.2</chance>
+      </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_SlugBody</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AG_SlugFace</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AG_SlugVoice</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_LargerBodySize</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AG_CorpseFeeding</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AG_SlimeBlood</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AG_EldritchVisage</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_Filthy</defName>
+        <chance>0.35</chance>
+      </li>
+      <li>
+        <defName>AG_FrailBack</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AG_FrailSkin</defName>
+        <chance>0.15</chance>
+      </li>
+      
+    </genes>
+	</RJW_BGS.RaceGeneDef>
+	
+</Defs>

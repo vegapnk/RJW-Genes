@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RJW_BGS.RaceGeneDef ParentName = "Bovine">
+		<defName>DevilSheep</defName>
+		<raceNames>
+			<li>AA_DevilSheep</li>
+		</raceNames>
+		<genes>
+      <li>
+        <defName>Skin_InkBlack</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Hair_Red</defName>
+        <chance>0.5</chance>
+      </li>
+      
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_DevilsheepHorns</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_SmallerBodySize</defName>
+        <chance>0.1</chance>
+      </li>
+
+      <!-- Genitalia -->
+      
+      <!-- Needs Bovine Penis -->
+      
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+	
+</Defs>
