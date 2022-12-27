@@ -14,6 +14,41 @@ namespace RJW_Genes
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_mechbreeder);
         }
 
+        public static bool HasLifeForce(Pawn pawn)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(GeneDefOf.rjw_genes_lifeforce);
+        }
+
+        public static bool HasLowLifeForce(Pawn pawn)
+        {
+            if (HasLifeForce(pawn))
+            {
+                Gene_LifeForce gene = pawn.genes.GetFirstGeneOfType<Gene_LifeForce>();
+                if (gene.Resource.Value < gene.targetValue)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public static bool HasCriticalLifeForce(Pawn pawn)
+        {
+            if (HasLifeForce(pawn))
+            {
+                Gene_LifeForce gene = pawn.genes.GetFirstGeneOfType<Gene_LifeForce>();
+                if (gene.Resource.Value < gene.MinLevelForAlert)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public static bool IsInsectIncubator(Pawn pawn)
         {
             if (pawn.genes == null)

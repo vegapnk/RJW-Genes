@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>rjw_genes_lifeforce</defName>
+		<label>lifeforce</label>
+		<description>Carriers of this gene have a reserve of biological strength powered by a resource called lifeforce. The resource can be gained and spent in various ways, all of which are unlocked by other genes.\n\nCarriers lose 10 lifeforce per day from biological entropy.</description>
+		<geneClass>RJW_Genes.Gene_LifeForce</geneClass>
+		<resourceGizmoType>RJW_Genes.GeneGizmo_ResourceLifeForce</resourceGizmoType>
+		<resourceLabel>lifeforce</resourceLabel>
+		<resourceGizmoThresholds>
+		  <li>0.25</li>
+		  <li>0.5</li>
+		  <li>0.75</li>
+		</resourceGizmoThresholds>
+		<showGizmoOnWorldView>true</showGizmoOnWorldView>
+		<showGizmoWhenDrafted>true</showGizmoWhenDrafted>
+		<resourceDescription>A reserve of biological strength which can be gained and spent in a variety of ways. \n\nLifeforce can be increased by absorbing cum, typically through oral sex or stored cum. \n\nIf lifeforce reaches zero, {PAWN_nameDef} will become very unhappy and may try to obtain some forcefully.</resourceDescription>
+		<iconPath>UI/Icons/Genes/Gene_Hemogenic</iconPath>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>Hemogen</displayCategory>
+		<displayOrderInCategory>-2</displayOrderInCategory>
+		<customEffectDescriptions>
+		  <li>Gives lifeforce supply.</li>
+		</customEffectDescriptions>
+		<symbolPack>
+		  <prefixSymbols>
+			<li><symbol>hemo</symbol></li>
+		  </prefixSymbols>
+		</symbolPack>
+		<mentalBreakDef>rjw_genes_lifeforce_randomrape</mentalBreakDef>
+		<minAgeActive>13</minAgeActive>
+		<resourceLossPerDay>0.02</resourceLossPerDay>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+	</GeneDef>
+</Defs>

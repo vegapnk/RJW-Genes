@@ -60,7 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal_Inheritance\First.cs" />
+    <Compile Include="First.cs" />
     <Compile Include="Animal_Inheritance\Harmony_Init.cs" />
     <Compile Include="Animal_Inheritance\InheritanceUtility.cs" />
     <Compile Include="Animal_Inheritance\PatchRJWBestialityPregnancyUtility.cs" />
@@ -114,12 +114,21 @@
     <Compile Include="Genes\Genitalia\Gene_DemonicGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_EquineGenitalia.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaChanger.cs" />
+    <Compile Include="Genes\Life_Force\GeneGizmo_ResourceLifeForce.cs" />
+    <Compile Include="Genes\Life_Force\LifeForceMentalState.cs" />
+    <Compile Include="Genes\Life_Force\LifeForceMentalStateWorker.cs" />
+    <Compile Include="Genes\Life_Force\JobGiver_LifeForce_RandomRape.cs" />
+    <Compile Include="Genes\Life_Force\LifeForceMentalBreakWorker.cs" />
+    <Compile Include="Genes\Life_Force\Gene_LifeForce.cs" />
     <Compile Include="Genes\RJW_Gene.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaUtility.cs" />
     <Compile Include="Genes\Special\Gene_Aphrodisiac_Pheromones_.cs" />
+    <Compile Include="Genes\Life_Force\Patch_LifeForce.cs" />
     <Compile Include="Genes\Special\Patch_OrgasmRush.cs" />
     <Compile Include="HarmonyInit.cs" />
     <Compile Include="HediffDefOf.cs" />
+    <Compile Include="Interactions\GenesPartKindUsageRule.cs" />
+    <Compile Include="JobDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RJW_Genes.cs" />
   </ItemGroup>
