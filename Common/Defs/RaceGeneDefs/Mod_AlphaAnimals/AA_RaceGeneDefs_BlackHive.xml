@@ -8,16 +8,8 @@
 		</raceNames>
 		<genes>
       <li>
-        <defName>AG_Tusks</defName>
-        <chance>0.5</chance>
-      </li>
-      <li>
         <defName>Skin_InkBlack</defName>
         <chance>0.5</chance>
-      </li>
-      <li>
-        <defName>AG_SmallerBodySize</defName>
-        <chance>0.3</chance>
       </li>
       <li>
         <defName>Aggression_Aggressive</defName>
@@ -43,6 +35,18 @@
         <defName>FireWeakness</defName>
         <chance>0.2</chance>
       </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_SmallerBodySize</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AG_Tusks</defName>
+        <chance>0.5</chance>
+      </li>
+      
     </genes>
 	</RJW_BGS.RaceGeneDef>
 
@@ -52,10 +56,6 @@
       <li>AA_BlackSpelopede</li>
     </raceNames>
     <genes>
-      <li>
-        <defName>AG_Tusks</defName>
-        <chance>0.5</chance>
-      </li>
       <li>
         <defName>Skin_InkBlack</defName>
         <chance>0.5</chance>
@@ -92,6 +92,14 @@
         <defName>AcidSpray</defName>
         <chance>0.1</chance>
       </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_Tusks</defName>
+        <chance>0.5</chance>
+      </li>
+      
     </genes>
   </RJW_BGS.RaceGeneDef>
 
@@ -102,16 +110,8 @@
     </raceNames>
     <genes>
       <li>
-        <defName>AG_Tusks</defName>
-        <chance>0.5</chance>
-      </li>
-      <li>
         <defName>Skin_InkBlack</defName>
         <chance>0.5</chance>
-      </li>
-      <li>
-        <defName>AG_SmallerBodySize</defName>
-        <chance>0.1</chance>
       </li>
       <li>
         <defName>Aggression_Aggressive</defName>
@@ -141,6 +141,18 @@
         <defName>Robust</defName>
         <chance>0.2</chance>
       </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_SmallerBodySize</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>AG_Tusks</defName>
+        <chance>0.5</chance>
+      </li>
+      
     </genes>
   </RJW_BGS.RaceGeneDef>
 
@@ -151,16 +163,8 @@
     </raceNames>
     <genes>
       <li>
-        <defName>AG_Tusks</defName>
-        <chance>0.5</chance>
-      </li>
-      <li>
         <defName>Skin_InkBlack</defName>
         <chance>0.5</chance>
-      </li>
-      <li>
-        <defName>AG_LargerBodySize</defName>
-        <chance>0.15</chance>
       </li>
       <li>
         <defName>Aggression_Aggressive</defName>
@@ -194,6 +198,18 @@
         <defName>AcidSpray</defName>
         <chance>0.15</chance>
       </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_LargerBodySize</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AG_Tusks</defName>
+        <chance>0.5</chance>
+      </li>
+      
     </genes>
   </RJW_BGS.RaceGeneDef>
 
@@ -204,16 +220,8 @@
     </raceNames>
     <genes>
       <li>
-        <defName>AG_Tusks</defName>
-        <chance>0.5</chance>
-      </li>
-      <li>
         <defName>Skin_InkBlack</defName>
         <chance>0.5</chance>
-      </li>
-      <li>
-        <defName>AG_LargerBodySize</defName>
-        <chance>0.4</chance>
       </li>
       <li>
         <defName>Aggression_DeadCalm</defName>
@@ -239,6 +247,18 @@
         <defName>MoveSpeed_Slow</defName>
         <chance>0.15</chance>
       </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_LargerBodySize</defName>
+        <chance>0.4</chance>
+      </li>
+      <li>
+        <defName>AG_Tusks</defName>
+        <chance>0.5</chance>
+      </li>
+      
     </genes>
   </RJW_BGS.RaceGeneDef>
 

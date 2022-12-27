@@ -16,10 +16,6 @@
         <chance>0.75</chance>
       </li>
 			<li>
-				<defName>AG_FrostbiteResistance</defName>
-				<chance>0.05</chance>
-			</li>
-			<li>
 				<defName>MinTemp_LargeDecrease</defName>
 				<chance>0.25</chance>
 			</li>
@@ -35,7 +31,15 @@
 				<defName>rjw_genes_big_male_genitalia</defName>
 				<chance>0.8</chance>
 			</li>
-		</genes>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_FrostbiteResistance</defName>
+        <chance>0.05</chance>
+      </li>
+      
+    </genes>
 	</RJW_BGS.RaceGeneDef>
 	
 </Defs>

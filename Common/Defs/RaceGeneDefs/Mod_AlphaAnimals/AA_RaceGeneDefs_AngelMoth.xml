@@ -8,22 +8,26 @@
 		</raceNames>
 		<genes>
 			<li>
-				<defName>AG_MothWings</defName>
-				<chance>0.75</chance>
-			</li>
-			<li>
-				<defName>AG_MothAntennae</defName>
-				<chance>0.75</chance>
-			</li>
-			<li>
 				<defName>Skin_PaleYellow</defName>
 				<chance>0.75</chance>
 			</li>
-			<li>
-				<defName>AG_ParasiticStinger</defName>
-				<chance>1</chance>
-			</li>
-		</genes>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_ParasiticStinger</defName>
+        <chance>1</chance>
+      </li>
+      <li>
+        <defName>AG_MothWings</defName>
+        <chance>0.75</chance>
+      </li>
+      <li>
+        <defName>AG_MothAntennae</defName>
+        <chance>0.75</chance>
+      </li>
+      
+    </genes>
 	</RJW_BGS.RaceGeneDef>
 	
 </Defs>

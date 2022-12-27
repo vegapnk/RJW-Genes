@@ -7,29 +7,9 @@
 			<li>AA_BedBug</li>
 		</raceNames>
 		<genes>
-			<li>
-				<defName>AG_FormicAntennas</defName>
-				<chance>0.5</chance>
-			</li>
-      <li>
-        <defName>AG_PincerMandibles</defName>
-        <chance>0.5</chance>
-      </li>
-      <li>
-        <defName>AG_Proboscis</defName>
-        <chance>0.5</chance>
-      </li>
       <li>
         <defName>Skin_DeepRed</defName>
         <chance>0.5</chance>
-      </li>
-      <li>
-        <defName>AG_SmallerBodySize</defName>
-        <chance>0.1</chance>
-      </li>
-      <li>
-        <defName>AG_WaspWings</defName>
-        <chance>0.15</chance>
       </li>
       <li>
         <defName>Delicate</defName>
@@ -39,7 +19,31 @@
         <defName>AptitudeTerrible_Melee</defName>
         <chance>0.1</chance>
       </li>
-		</genes>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_SmallerBodySize</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>AG_WaspWings</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AG_FormicAntennas</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_PincerMandibles</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_Proboscis</defName>
+        <chance>0.5</chance>
+      </li>
+      
+    </genes>
 	</RJW_BGS.RaceGeneDef>
 	
 </Defs>

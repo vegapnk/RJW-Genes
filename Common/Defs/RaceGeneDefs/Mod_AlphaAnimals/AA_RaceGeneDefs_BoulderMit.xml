@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RJW_BGS.RaceGeneDef>
+		<defName>BoulderMit</defName>
+		<raceNames>
+			<li>AA_BoulderMit</li>
+		</raceNames>
+		<genes>
+      <li>
+        <defName>Skin_Orange</defName>
+        <chance>0.75</chance>
+      </li>
+      <li>
+        <defName>Eyes_Red</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Robust</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AptitudeRemarkable_Mining</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>MoveSpeed_Slow</defName>
+        <chance>0.45</chance>
+      </li>
+      <li>
+        <defName>Aggression_DeadCalm</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AptitudePoor_Intellectual</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AptitudePoor_Social</defName>
+        <chance>0.25</chance>
+      </li>
+      <li>
+        <defName>AptitudePoor_Plants</defName>
+        <chance>0.25</chance>
+      </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_UnsettlingAppearance</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AG_Filthy</defName>
+        <chance>0.25</chance>
+      </li>
+      <li>
+        <defName>AG_PackMule</defName>
+        <chance>0.25</chance>
+      </li>
+      <li>
+        <defName>AG_HivelingVoice</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_RockyBody</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_BeeMandibles</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_CrabClaw</defName>
+        <chance>0.2</chance>
+      </li>
+
+      <!-- Genitalia -->
+      
+      <!-- Needs custom crab like penis -->
+      
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+	
+</Defs>

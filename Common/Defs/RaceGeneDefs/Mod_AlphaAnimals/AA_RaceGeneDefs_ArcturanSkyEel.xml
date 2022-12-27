@@ -11,22 +11,10 @@
 				<defName>rjw_genes_skin_skysteel</defName>
 				<chance>0.5</chance>
 			</li>
-			<li>
-				<defName>AG_ScalyBody</defName>
-				<chance>0.5</chance>
-			</li>
       <li>
         <defName>Body_Thin</defName>
         <chance>0.5</chance>
       </li>
-			<li>
-				<defName>AG_Zap</defName>
-				<chance>0.25</chance>
-			</li>
-			<li>
-				<defName>AG_FrostbiteResistance</defName>
-				<chance>0.2</chance>
-			</li>
 			<li>
 				<defName>MinTemp_LargeDecrease</defName>
 				<chance>0.33</chance>
@@ -35,7 +23,23 @@
 				<defName>MinTemp_SmallDecrease</defName>
 				<chance>0.6</chance>
 			</li>
-		</genes>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_FrostbiteResistance</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AG_Zap</defName>
+        <chance>0.25</chance>
+      </li>
+      <li>
+        <defName>AG_ScalyBody</defName>
+        <chance>0.5</chance>
+      </li>
+      
+    </genes>
 	</RJW_BGS.RaceGeneDef>
 	
 </Defs>

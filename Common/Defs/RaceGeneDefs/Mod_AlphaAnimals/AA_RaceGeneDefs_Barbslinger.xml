@@ -8,14 +8,6 @@
 		</raceNames>
 		<genes>
       <li>
-        <defName>AG_PincerMandibles</defName>
-        <chance>0.75</chance>
-      </li>
-      <li>
-        <defName>AG_LargerBodySize</defName>
-        <chance>0.3</chance>
-      </li>
-      <li>
         <defName>AptitudeGood_Melee</defName>
         <chance>0.25</chance>
       </li>
@@ -23,7 +15,19 @@
         <defName>AptitudeRemarkable_Melee</defName>
         <chance>0.1</chance>
       </li>
-		</genes>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_PincerMandibles</defName>
+        <chance>0.75</chance>
+      </li>
+      <li>
+        <defName>AG_LargerBodySize</defName>
+        <chance>0.3</chance>
+      </li>
+      
+    </genes>
 	</RJW_BGS.RaceGeneDef>
 	
 </Defs>

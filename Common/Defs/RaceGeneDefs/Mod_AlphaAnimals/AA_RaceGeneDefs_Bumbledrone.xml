@@ -11,25 +11,9 @@
         <defName>Skin_PaleYellow</defName>
         <chance>0.75</chance>
       </li>
-			<li>
-				<defName>AG_DownwardsAntennas</defName>
-				<chance>0.5</chance>
-			</li>
-      <li>
-        <defName>AG_BeeMandibles</defName>
-        <chance>0.5</chance>
-      </li>
       <li>
         <defName>Head_Gaunt</defName>
         <chance>0.5</chance>
-      </li>
-      <li>
-        <defName>AG_SmallerBodySize</defName>
-        <chance>0.08</chance>
-      </li>
-      <li>
-        <defName>AG_WaspWings</defName>
-        <chance>0.3</chance>
       </li>
       <li>
         <defName>Delicate</defName>
@@ -51,7 +35,27 @@
         <defName>Libido_High</defName>
         <chance>0.15</chance>
       </li>
-		</genes>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_SmallerBodySize</defName>
+        <chance>0.08</chance>
+      </li>
+      <li>
+        <defName>AG_WaspWings</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AG_DownwardsAntennas</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_BeeMandibles</defName>
+        <chance>0.5</chance>
+      </li>
+      
+    </genes>
 	</RJW_BGS.RaceGeneDef>
 	
 </Defs>

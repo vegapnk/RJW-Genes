@@ -77,7 +77,7 @@
 				<chance>0.3</chance>
 			</li>
 
-			<!-- With AlphaAnimals/AlphaGenes installed -->
+			<!-- With AlphaAnimals / AlphaGenes installed -->
 
       <li>
         <defName>AG_InsectJellyProduction</defName>
@@ -135,15 +135,23 @@
 				<defName>DarkVision</defName>
 				<chance>0.25</chance>
 			</li>
+      <li>
+        <defName>FastRunner</defName>
+        <chance>0.1</chance>
+      </li>
 			<li>
 				<defName>rjw_genes_feline_genitalia</defName>
 				<chance>0.25</chance>
 			</li>
 
-      <!-- With AlphaAnimals/AlphaGenes installed -->
+      <!-- With AlphaAnimals / AlphaGenes installed -->
 
       <li>
         <defName>AG_Clean</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AG_Thalassophobia</defName>
         <chance>0.2</chance>
       </li>
       
@@ -263,8 +271,20 @@
 			<li>
 				<defName>Body_Thin</defName>
 				<chance>0.45</chance>
-			</li>			
-		</genes> 
+			</li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_RatAffinity</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>AG_EfficientMandibles</defName>
+        <chance>0.3</chance>
+      </li>
+      
+    </genes> 
 	</RJW_BGS.RaceGeneDef>
 
 	<RJW_BGS.RaceGeneDef Name = "Racoon">

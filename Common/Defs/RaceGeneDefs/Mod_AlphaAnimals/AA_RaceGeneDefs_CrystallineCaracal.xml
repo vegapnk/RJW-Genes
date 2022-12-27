@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<RJW_BGS.RaceGeneDef Name ="ArcticLion" ParentName = "Feline">
+		<defName>CrystallineCaracal</defName>
+		<raceNames>
+			<li>AA_CrystallineCaracal</li>
+		</raceNames>
+		<genes>
+			<li>
+				<defName>Skin_PaleRed</defName>
+				<chance>0.5</chance>
+			</li>
+      <li>
+        <defName>Hair_Pink</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Hair_Blue</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AptitudeTerrible_Social</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>MaxTemp_SmallIncrease</defName>
+        <chance>0.1</chance>
+      </li>
+
+      <!-- With BE-Core / BE-Mammalia / BE-Mythic installed -->
+
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_UVPowered_Mild</defName>
+        <chance>0.2</chance>
+      </li>
+      
+      <!-- ToDo -->
+      
+      <!--
+            - UV Laser Ranged Attack 
+            - Needs to eat meat and plants to survive
+            - High market value
+       -->
+      
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+	
+</Defs>

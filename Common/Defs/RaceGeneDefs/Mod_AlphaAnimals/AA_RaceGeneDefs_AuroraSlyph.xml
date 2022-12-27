@@ -8,18 +8,6 @@
 		</raceNames>
 		<genes>
       <li>
-        <defName>AG_BodyTentacles</defName>
-        <chance>0.5</chance>
-      </li>
-			<li>
-				<defName>AG_LightSustenance</defName>
-				<chance>0.05</chance>
-			</li>
-      <li>
-        <defName>AG_FrostbiteResistance</defName>
-        <chance>0.1</chance>
-      </li>
-      <li>
         <defName>MaxTemp_LargeDecrease</defName>
         <chance>0.25</chance>
       </li>
@@ -43,7 +31,23 @@
         <defName>Delicate</defName>
         <chance>0.3</chance>
       </li>
-		</genes>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_BodyTentacles</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_LightSustenance</defName>
+        <chance>0.05</chance>
+      </li>
+      <li>
+        <defName>AG_FrostbiteResistance</defName>
+        <chance>0.1</chance>
+      </li>
+      
+    </genes>
 	</RJW_BGS.RaceGeneDef>
 	
 </Defs>

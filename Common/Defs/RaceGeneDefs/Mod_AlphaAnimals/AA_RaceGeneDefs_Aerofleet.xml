@@ -10,6 +10,25 @@
 	
 		<genes>
       <li>
+        <defName>Delicate</defName>
+        <chance>0.4</chance>
+      </li>
+      <li>
+        <defName>AptitudePoor_Melee</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AptitudeTerrible_Mining</defName>
+        <chance>0.3</chance>
+      </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_UnsettlingAppearance</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
         <defName>AG_SlimeBlood</defName>
         <chance>0.5</chance>
       </li>
@@ -33,28 +52,12 @@
         <defName>AG_SmallerBodySize</defName>
         <chance>0.2</chance>
       </li>
-			<li>
-				<defName>AG_Detonation</defName>
-				<chance>0.05</chance>
-			</li>
+      <li>
+        <defName>AG_Detonation</defName>
+        <chance>0.05</chance>
+      </li>
       <li>
         <defName>AG_BlueGelProduction</defName>
-        <chance>0.15</chance>
-      </li>
-      <li>
-        <defName>Delicate</defName>
-        <chance>0.4</chance>
-      </li>
-      <li>
-        <defName>AptitudePoor_Melee</defName>
-        <chance>0.3</chance>
-      </li>
-      <li>
-        <defName>AptitudeTerrible_Mining</defName>
-        <chance>0.3</chance>
-      </li>
-      <li>
-        <defName>AG_UnsettlingAppearance</defName>
         <chance>0.15</chance>
       </li>
 
@@ -75,6 +78,25 @@
     </raceNames>
 
     <genes>
+      <li>
+        <defName>Delicate</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AptitudePoor_Melee</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AptitudeTerrible_Mining</defName>
+        <chance>0.3</chance>
+      </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_UnsettlingAppearance</defName>
+        <chance>0.15</chance>
+      </li>
       <li>
         <defName>AG_SlimeBlood</defName>
         <chance>0.5</chance>
@@ -107,23 +129,7 @@
         <defName>AG_BlueGelProduction</defName>
         <chance>0.25</chance>
       </li>
-      <li>
-        <defName>Delicate</defName>
-        <chance>0.3</chance>
-      </li>
-      <li>
-        <defName>AptitudePoor_Melee</defName>
-        <chance>0.3</chance>
-      </li>
-      <li>
-        <defName>AptitudeTerrible_Mining</defName>
-        <chance>0.3</chance>
-      </li>
-      <li>
-        <defName>AG_UnsettlingAppearance</defName>
-        <chance>0.15</chance>
-      </li>
-      
+
       <!-- Genitalia -->
 
       <li>
