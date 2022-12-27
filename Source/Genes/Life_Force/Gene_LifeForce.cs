@@ -39,7 +39,7 @@ namespace RJW_Genes
 			yield break;
 		}
 
-		//Depending on how low the value is it will increase sexdrive and if it reaches zero it will create a random rape mental break.
+		//Depending on how low the value is it will increase sexdrive and if it reaches zero it will create a mental break which will make the pawn rape others.
 		//Not using base.Tick() as it is used to start mental breaks, but we have another way to do it.
 		public override void Tick()
 		{

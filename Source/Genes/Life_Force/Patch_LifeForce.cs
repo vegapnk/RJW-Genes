@@ -14,7 +14,6 @@ namespace RJW_Genes
 	[HarmonyPatch(typeof(SexUtility), nameof(SexUtility.SatisfyPersonal))]
 	public static class Patch_LifeForce
 	{
-		
 		public static void Postfix(SexProps props)
 		{
 			// ShortCuts: Exit Early if Pawn or Partner are null (can happen with Animals or Masturbation)
@@ -27,7 +26,7 @@ namespace RJW_Genes
                 {
 					Pawn_GeneTracker genes = props.pawn.genes;
 					Gene_LifeForce gene = genes.GetFirstGeneOfType<Gene_LifeForce>();
-					gene.Resource.Value += CumUtility.GetTotalFluidAmount(props.partner); //total amount may need to be modified to be balanced
+					gene.Resource.Value += CumUtility.GetTotalFluidAmount(props.partner); //total amount may need to be modified to be balanced or maybe I should just consider one at random
 				}
             }
 		}

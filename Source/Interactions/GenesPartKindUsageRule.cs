@@ -9,7 +9,10 @@ using Verse;
 
 namespace RJW_Genes.Interactions
 {
-    public class GenesPartKindUsageRule : IPartPreferenceRule
+	//Summary//
+	//Set custom preferences for pawn. Gets integrated to rjw by AddtoIPartPreferenceRule in First
+	//Depending on the level of lifeforce increase the chance for using the mouth.
+	public class GenesPartKindUsageRule : IPartPreferenceRule
     {
 		public IEnumerable<Weighted<LewdablePartKind>> ModifiersForDominant(InteractionContext context)
 		{

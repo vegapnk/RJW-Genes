@@ -18,9 +18,9 @@
 		<stages>
 			<li>
 				<becomeVisible>false</becomeVisible>
-				<statOffsets>
+				<statFactors>
 					<SexFrequency>2</SexFrequency>
-				</statOffsets>
+				</statFactors>
 			</li>
 		</stages>
 	</HediffDef>

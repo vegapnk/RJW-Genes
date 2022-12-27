@@ -34,7 +34,7 @@ namespace RJW_Genes
 
 		}
 
-		//Get total fluidamount a persom has.
+		//Get total fluidamount a person has.
 		public static float GetTotalFluidAmount(Pawn pawn, float multiplier = 1f)
 		{
 			var partBPR = Genital_Helper.get_genitalsBPR(pawn);

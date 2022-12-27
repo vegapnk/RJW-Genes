@@ -20,6 +20,9 @@ namespace RJW_Genes
         }
 
         //Modified code from https://gitgud.io/lutepickle/rjw_menstruation/-/tree/main/1.4/source/RJW_Menstruation/RJW_Menstruation
+        //Summary//
+        //Adds our own partpreferences to rjw's list. Our partpreferences are under Interactions.GenesPartKindUsageRule
+        //
         private static void AddtoIPartPreferenceRule()
         {
             List<IPartPreferenceRule> partPreferenceRules = Unprivater.GetProtectedValue<List<IPartPreferenceRule>>("_partKindUsageRules", typeof(PartPreferenceDetectorService));

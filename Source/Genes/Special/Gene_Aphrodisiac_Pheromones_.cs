@@ -12,6 +12,8 @@ namespace RJW_Genes
 {
     public class Gene_Aphrodisiac_Pheromones : Gene
     {   
+
+        //Summary one every one check for all pawns nearby and in line of sight and add/renew a hediff which increases sexdrive for six hours.
         public override void Tick()
         {
             base.Tick();
@@ -24,11 +26,12 @@ namespace RJW_Genes
             }
         }
 
+        //Creatus an IEnumerable of all pawns which are closeby and in lineofsight
         private IEnumerable<Pawn> AffectedPawns(IntVec3 pos, Map map)
         {
             foreach (Pawn pawn in map.mapPawns.AllPawns)
             {
-                if (pos.DistanceTo(pawn.Position) < 5)
+                if (pos.DistanceTo(pawn.Position) < 5 && GenSight.LineOfSight(pos, pawn.Position, pawn.Map))
                 {
                     yield return pawn;
                 }
@@ -37,6 +40,7 @@ namespace RJW_Genes
             yield break;
         }
 
+        //Applies er renews a hediff which increases sexdrive for 6 hours
         private void InduceAphrodisiac(Pawn pawn)
         {
             Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Aphrodisiac_Pheromone);
