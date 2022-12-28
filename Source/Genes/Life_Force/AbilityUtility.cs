@@ -48,5 +48,24 @@ namespace RJW_Genes
             }
             return any_wound_tended;
         }
+
+        public static float LifeForceCost(Ability ability)
+        {
+            if (ability.comps != null)
+            {
+                using (List<AbilityComp>.Enumerator enumerator = ability.comps.GetEnumerator())
+                {
+                    while (enumerator.MoveNext())
+                    {
+                        CompAbilityEffect_LifeForceCost compAbilityEffect_HemogenCost;
+                        if ((compAbilityEffect_HemogenCost = (enumerator.Current as CompAbilityEffect_LifeForceCost)) != null)
+                        {
+                            return compAbilityEffect_HemogenCost.Props.fertilinCost;
+                        }
+                    }
+                }
+            }
+            return 0f;
+        }
     }
 }

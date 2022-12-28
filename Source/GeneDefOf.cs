@@ -75,5 +75,7 @@ namespace RJW_Genes
 		// LifeForce
 		public static readonly GeneDef rjw_genes_lifeforce;
 		public static readonly GeneDef rjw_genes_pussyhealer;
+		public static readonly GeneDef rjw_genes_vaginal_absorber;
+		public static readonly GeneDef rjw_genes_anal_absorber;
 	}
 }

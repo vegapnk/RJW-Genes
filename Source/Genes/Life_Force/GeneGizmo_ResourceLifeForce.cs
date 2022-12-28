@@ -30,11 +30,11 @@ namespace RJW_Genes
 			{
 				if (this.gene.targetValue <= 0f)
 				{
-					text += "NeverConsumeCum";
+					text += "NeverSeekFertilin";
 				}
 				else
 				{
-					text = text + ("ConsumeCumBelow" + ": ") + this.gene.PostProcessValue(this.gene.targetValue);
+					text = text + ("SeekFertilinBelow" + ": ") + this.gene.PostProcessValue(this.gene.targetValue);
 				}
 			}
 			if (!this.drainGenes.NullOrEmpty<IGeneResourceDrain>())

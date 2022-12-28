@@ -2,8 +2,8 @@
 <Defs>
 	<GeneDef>
 		<defName>rjw_genes_lifeforce</defName>
-		<label>lifeforce</label>
-		<description>Carriers of this gene have a reserve of biological strength powered by a resource called lifeforce. The resource can be gained and spent in various ways, all of which are unlocked by other genes.\n\nCarriers lose 10 lifeforce per day from biological entropy.</description>
+		<label>fertilin</label>
+		<description>Carriers of this gene have a reserve of biological strength powered by a resource called fertilin. The resource can be gained and spent in various ways, all of which are unlocked by other genes.\n\nCarriers lose 10 lifeforce per day from biological entropy.</description>
 		<geneClass>RJW_Genes.Gene_LifeForce</geneClass>
 		<resourceGizmoType>RJW_Genes.GeneGizmo_ResourceLifeForce</resourceGizmoType>
 		<resourceLabel>lifeforce</resourceLabel>
@@ -14,13 +14,13 @@
 		</resourceGizmoThresholds>
 		<showGizmoOnWorldView>true</showGizmoOnWorldView>
 		<showGizmoWhenDrafted>true</showGizmoWhenDrafted>
-		<resourceDescription>A reserve of biological strength which can be gained and spent in a variety of ways. \n\nLifeforce can be increased by absorbing cum, typically through oral sex or stored cum. \n\nIf lifeforce reaches zero, {PAWN_nameDef} will become very unhappy and may try to obtain some forcefully.</resourceDescription>
+		<resourceDescription>A reserve of biological strength which can be gained and spent in a variety of ways. \n\nFertilin can be increased by absorbing cum, typically through oral sex or stored cum. \n\nIf fertilin reaches zero, {PAWN_nameDef} will become very unhappy and may try to obtain some forcefully.</resourceDescription>
 		<iconPath>UI/Icons/Genes/Gene_Hemogenic</iconPath>
 		<selectionWeight>0</selectionWeight>
-		<displayCategory>Hemogen</displayCategory>
+		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<displayOrderInCategory>-2</displayOrderInCategory>
 		<customEffectDescriptions>
-		  <li>Gives lifeforce supply.</li>
+		  <li>Gives fertilin supply.</li>
 		</customEffectDescriptions>
 		<symbolPack>
 		  <prefixSymbols>
@@ -28,33 +28,60 @@
 		  </prefixSymbols>
 		</symbolPack>
 		<mentalBreakDef>rjw_genes_lifeforce_randomrape</mentalBreakDef>
-		<minAgeActive>13</minAgeActive>
+		<minAgeActive>18</minAgeActive>
 		<resourceLossPerDay>0.02</resourceLossPerDay>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>1</biostatMet>
 	</GeneDef>
 	
 	<GeneDef>
-    <defName>rjw_genes_pussyhealer</defName>
-    <label>Pussy Healer</label>
-    <labelShortAdj>pussyhealer</labelShortAdj>
-    <description>Carriers of this gene are able use vaginal sex to tend to other's wounds.</description>
-    <iconPath>Things/Mote/Heart</iconPath>
-    <displayCategory>Ability</displayCategory>
-    <abilities>
-      <li>rjw_genes_pussyheal</li>
-    </abilities>
-    <descriptionHyperlinks>
-      <AbilityDef>rjw_genes_pussyheal</AbilityDef>
-    </descriptionHyperlinks>
-    <biostatMet>1</biostatMet>
-    <minAgeActive>13</minAgeActive>
-    <symbolPack>
-      <suffixSymbols>
-        <li><symbol>life</symbol></li>
-        <li><symbol>clotter</symbol></li>
-        <li><symbol>tender</symbol></li>
-      </suffixSymbols>
-    </symbolPack>
-  </GeneDef>
+		<defName>rjw_genes_pussyhealer</defName>
+		<label>Pussy Healer</label>
+		<labelShortAdj>pussyhealer</labelShortAdj>
+		<description>Carriers of this gene are able use vaginal sex to tend to other's wounds.</description>
+		<iconPath>Things/Mote/Heart</iconPath>
+		<prerequisite>rjw_genes_lifeforce</prerequisite>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<displayCategory>rjw_genes_fertilin</displayCategory>
+		<abilities>
+		  <li>rjw_genes_pussyheal</li>
+		</abilities>
+		<descriptionHyperlinks>
+		  <AbilityDef>rjw_genes_pussyheal</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<minAgeActive>18</minAgeActive>
+		<symbolPack>
+		  <suffixSymbols>
+			<li><symbol>life</symbol></li>
+			<li><symbol>clotter</symbol></li>
+			<li><symbol>tender</symbol></li>
+		  </suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>rjw_genes_vaginal_absorber</defName>
+		<label>Vaginal Fertilin Absorber</label>
+		<description>Pawns with this gene are able to absorb ferilin through their vagina.</description>
+		<iconPath>Things/Mote/Heart</iconPath>
+		<prerequisite>rjw_genes_lifeforce</prerequisite>
+		<displayOrderInCategory>2</displayOrderInCategory>
+		<displayCategory>rjw_genes_fertilin</displayCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>rjw_genes_anal_absorber</defName>
+		<label>Anal Fertilin Absorber</label>
+		<description>Pawns with this gene are able to absorb ferilin through their anus.</description>
+		<iconPath>Things/Mote/Heart</iconPath>
+		<prerequisite>rjw_genes_lifeforce</prerequisite>
+		<displayOrderInCategory>3</displayOrderInCategory>
+		<displayCategory>rjw_genes_fertilin</displayCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
 </Defs>

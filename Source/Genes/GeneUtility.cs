@@ -1,10 +1,38 @@
 ﻿using System;
 using Verse;
-
+using RimWorld;
 namespace RJW_Genes
 {
     public class GeneUtility
     {
+        //Instead of seperate functions this should be simpeler
+        public static bool HasGeneNullCheck(Pawn pawn, GeneDef genedef)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(genedef);
+        }
+
+        public static void OffsetLifeForce(Pawn pawn, float offset, bool applyStatFactor = true)
+        {
+            if (!ModsConfig.BiotechActive)
+            {
+                return;
+            }
+            //if (offset > 0f && applyStatFactor)
+            //{
+            //    offset *= pawn.GetStatValue(StatDefOf.HemogenGainFactor, true, -1);
+            //}
+            Pawn_GeneTracker genes2 = pawn.genes;
+            Gene_LifeForce gene_LifeFroce = (genes2 != null) ? genes2.GetFirstGeneOfType<Gene_LifeForce>() : null;
+            if (gene_LifeFroce != null)
+            {
+                gene_LifeFroce.Value += offset;
+            }
+        }
+
         public static bool IsMechbreeder(Pawn pawn)
         {
             if (pawn.genes == null)
