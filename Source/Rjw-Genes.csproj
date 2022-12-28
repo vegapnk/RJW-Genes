@@ -114,7 +114,14 @@
     <Compile Include="Genes\Genitalia\Gene_DemonicGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_EquineGenitalia.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaChanger.cs" />
+    <Compile Include="Genes\Life_Force\AbilityUtility.cs" />
+    <Compile Include="Genes\Life_Force\CompAbility_SexInteractionRequirements.cs" />
+    <Compile Include="Genes\Life_Force\CompAbilityEffect_PussyHeal.cs" />
+    <Compile Include="Genes\Life_Force\CompProperties_SexInteractionRequirements.cs" />
+    <Compile Include="Genes\Life_Force\CompProperties_AbilityPussyHeal.cs" />
     <Compile Include="Genes\Life_Force\GeneGizmo_ResourceLifeForce.cs" />
+    <Compile Include="Genes\Life_Force\Interactionchances.cs" />
+    <Compile Include="Genes\Life_Force\JobDriver_CastAbilityAfterSex.cs" />
     <Compile Include="Genes\Life_Force\LifeForceMentalState.cs" />
     <Compile Include="Genes\Life_Force\LifeForceMentalStateWorker.cs" />
     <Compile Include="Genes\Life_Force\JobGiver_LifeForce_RandomRape.cs" />

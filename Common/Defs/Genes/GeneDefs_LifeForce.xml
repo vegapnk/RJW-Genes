@@ -33,4 +33,28 @@
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>1</biostatMet>
 	</GeneDef>
+	
+	<GeneDef>
+    <defName>rjw_genes_pussyhealer</defName>
+    <label>Pussy Healer</label>
+    <labelShortAdj>pussyhealer</labelShortAdj>
+    <description>Carriers of this gene are able use vaginal sex to tend to other's wounds.</description>
+    <iconPath>Things/Mote/Heart</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <abilities>
+      <li>rjw_genes_pussyheal</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>rjw_genes_pussyheal</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>1</biostatMet>
+    <minAgeActive>13</minAgeActive>
+    <symbolPack>
+      <suffixSymbols>
+        <li><symbol>life</symbol></li>
+        <li><symbol>clotter</symbol></li>
+        <li><symbol>tender</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
 </Defs>
