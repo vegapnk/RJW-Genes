@@ -38,6 +38,7 @@ namespace RJW_Genes
 			//FleckMaker.AttachedOverlay(pawn, FleckDefOf.FlashHollow, Vector3.zero, 1.5f, -1f);
 		}
 
+		//Not yet implemented, but the heal should also trigger after normal sex
 		public void AfterSex(Pawn pawn, Pawn target)
 		{
 			List<Hediff> hediffs = target.health.hediffSet.hediffs;

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThoughtDef>
+		<defName>rjw_genes_cock_eaten</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>30.0</durationDays>
+		<stackLimit>100</stackLimit>
+		<stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>cock eaten</label>
+				<description>My cock was eaten directly of my body, I am devestated.</description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

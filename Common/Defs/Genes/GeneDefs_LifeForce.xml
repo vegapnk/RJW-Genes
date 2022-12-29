@@ -24,7 +24,7 @@
 		</customEffectDescriptions>
 		<symbolPack>
 		  <prefixSymbols>
-			<li><symbol>hemo</symbol></li>
+			<li><symbol>fert</symbol></li>
 		  </prefixSymbols>
 		</symbolPack>
 		<mentalBreakDef>rjw_genes_lifeforce_randomrape</mentalBreakDef>
@@ -55,8 +55,35 @@
 		<symbolPack>
 		  <suffixSymbols>
 			<li><symbol>life</symbol></li>
-			<li><symbol>clotter</symbol></li>
-			<li><symbol>tender</symbol></li>
+			<li><symbol>pussy</symbol></li>
+			<li><symbol>heal</symbol></li>
+		  </suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>rjw_genes_cockeater</defName>
+		<label>Cockeater</label>
+		<labelShortAdj>cockeater</labelShortAdj>
+		<description>Carriers of this gene are able eat cocks to restore their fertilin supply.</description>
+		<iconPath>Things/Mote/Heart</iconPath>
+		<prerequisite>rjw_genes_lifeforce</prerequisite>
+		<displayOrderInCategory>11</displayOrderInCategory>
+		<displayCategory>rjw_genes_fertilin</displayCategory>
+		<abilities>
+		  <li>rjw_genes_cockeater</li>
+		</abilities>
+		<descriptionHyperlinks>
+		  <AbilityDef>rjw_genes_cockeater</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<minAgeActive>18</minAgeActive>
+		<symbolPack>
+		  <suffixSymbols>
+			<li><symbol>life</symbol></li>
+			<li><symbol>cock</symbol></li>
+			<li><symbol>eat</symbol></li>
 		  </suffixSymbols>
 		</symbolPack>
 	</GeneDef>
