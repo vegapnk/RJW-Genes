@@ -24,4 +24,23 @@
 			</li>
 		</stages>
 	</HediffDef>
+	
+	<HediffDef>
+		<defName>Fertilin_Lost</defName>
+		<hediffClass>RJW_Genes.HediffWithComps_tank</hediffClass>
+		<label>lost fertilin</label>
+		<description>Percentage of fertilin lost.</description>
+		<defaultLabelColor>(1,1,1)</defaultLabelColor>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.5</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+		  <li>
+			<becomeVisible>true</becomeVisible>
+		  </li>
+		</stages>
+	</HediffDef>
 </Defs>

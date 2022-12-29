@@ -122,6 +122,7 @@
     <Compile Include="Genes\Life_Force\CompProperties_SexInteractionRequirements.cs" />
     <Compile Include="Genes\Life_Force\CompProperties_AbilityPussyHeal.cs" />
     <Compile Include="Genes\Life_Force\GeneGizmo_ResourceLifeForce.cs" />
+    <Compile Include="Genes\Life_Force\HediffWithComps_tank.cs" />
     <Compile Include="Genes\Life_Force\Interactionchances.cs" />
     <Compile Include="Genes\Life_Force\JobDriver_CastAbilityAfterSex.cs" />
     <Compile Include="Genes\Life_Force\LifeForceMentalState.cs" />

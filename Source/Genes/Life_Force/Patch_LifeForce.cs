@@ -20,43 +20,58 @@ namespace RJW_Genes
 			if (props.pawn == null || !props.hasPartner())
 				return;
 
-			float factor = 1f;
-			if (GeneUtility.HasLifeForce(props.pawn))
+			float absorb_factor = 0f;
+			if (GeneUtility.HasLifeForce(props.partner))
 			{
 				if (props.sexType == xxx.rjwSextype.Oral || props.sexType == xxx.rjwSextype.Fellatio || props.sexType == xxx.rjwSextype.Sixtynine)
 				{
-					AbsorbFertilin(props, factor);
+					absorb_factor += 1f;
 					//Currently taking the sum of all penises, maybe I should just consider one at random
 				}
-				else if (props.sexType == xxx.rjwSextype.Vaginal && GeneUtility.HasGeneNullCheck(props.pawn, GeneDefOf.rjw_genes_vaginal_absorber))
+				else if (props.sexType == xxx.rjwSextype.Vaginal && GeneUtility.HasGeneNullCheck(props.partner, GeneDefOf.rjw_genes_vaginal_absorber))
 				{
-					AbsorbFertilin(props, factor);
+					absorb_factor += 1f;
 				}
-				else if (props.sexType == xxx.rjwSextype.Anal && GeneUtility.HasGeneNullCheck(props.pawn, GeneDefOf.rjw_genes_anal_absorber))
+				else if (props.sexType == xxx.rjwSextype.Anal && GeneUtility.HasGeneNullCheck(props.partner, GeneDefOf.rjw_genes_anal_absorber))
 				{
-					AbsorbFertilin(props, factor);
+					absorb_factor += 1f;
 				}
 				else if (props.sexType == xxx.rjwSextype.DoublePenetration)
                 {
-					if (GeneUtility.HasGeneNullCheck(props.pawn, GeneDefOf.rjw_genes_vaginal_absorber))
+					if (GeneUtility.HasGeneNullCheck(props.partner, GeneDefOf.rjw_genes_vaginal_absorber))
 					{
-						AbsorbFertilin(props, 0.5f);
+						absorb_factor += 0.5f;
 					}
-					if (GeneUtility.HasGeneNullCheck(props.pawn, GeneDefOf.rjw_genes_anal_absorber))
+					if (GeneUtility.HasGeneNullCheck(props.partner, GeneDefOf.rjw_genes_anal_absorber))
 					{
-						AbsorbFertilin(props, 0.5f);
+						absorb_factor += 0.5f;
 					}
+				}
+				if (absorb_factor != 0)
+                {
+					AbsorbFertilin(props, absorb_factor);
 				}
 			}
 		}
-		public static void AbsorbFertilin(SexProps props, float factor = 1f)
+		public static void AbsorbFertilin(SexProps props, float absorb_factor = 1f)
         {
-			Pawn_GeneTracker genes = props.pawn.genes;
+			Pawn_GeneTracker genes = props.partner.genes;
 			Gene_LifeForce gene = genes.GetFirstGeneOfType<Gene_LifeForce>();
-			gene.Resource.Value += CumUtility.GetTotalFluidAmount(props.partner) / 100 * factor;
+			float multiplier = Rand.Range(0.10f, 0.40f); //Around quarter get ejected everytime pawn cums
+			Hediff fertelin_lost = props.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Fertilin_Lost);
+			if (fertelin_lost == null)
+            {
+				Hediff new_fertelin_lost = HediffMaker.MakeHediff(HediffDefOf.Fertilin_Lost, props.pawn);
+				props.pawn.health.AddHediff(new_fertelin_lost);
+				new_fertelin_lost.Severity = multiplier;
+			}
+            else
+            {
+				multiplier *= 1 - fertelin_lost.Severity;
+				fertelin_lost.Severity += multiplier;
+				
+            }
+			gene.Resource.Value += CumUtility.GetTotalFluidAmount(props.partner) / 100 * absorb_factor * multiplier;
 		}
 	}
-
-	
-
 }
