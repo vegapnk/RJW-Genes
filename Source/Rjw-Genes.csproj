@@ -116,10 +116,10 @@
     <Compile Include="Genes\Genitalia\GenitaliaChanger.cs" />
     <Compile Include="Genes\Life_Force\AbilityUtility.cs" />
     <Compile Include="Genes\Life_Force\CompAbilityEffect_LifeForceCost.cs" />
-    <Compile Include="Genes\Life_Force\CompAbility_SexInteractionRequirements.cs" />
+    <Compile Include="Interactions\CompAbility_SexInteractionRequirements.cs" />
     <Compile Include="Genes\Life_Force\CompAbilityEffect_PussyHeal.cs" />
     <Compile Include="Genes\Life_Force\CompProperties_AbilityLifeForceCost.cs" />
-    <Compile Include="Genes\Life_Force\CompProperties_SexInteractionRequirements.cs" />
+    <Compile Include="Interactions\CompProperties_SexInteractionRequirements.cs" />
     <Compile Include="Genes\Life_Force\CompProperties_AbilityPussyHeal.cs" />
     <Compile Include="Genes\Life_Force\GeneGizmo_ResourceLifeForce.cs" />
     <Compile Include="Genes\Life_Force\HediffWithComps_tank.cs" />
@@ -137,7 +137,10 @@
     <Compile Include="Genes\Special\Patch_OrgasmRush.cs" />
     <Compile Include="HarmonyInit.cs" />
     <Compile Include="HediffDefOf.cs" />
+    <Compile Include="Interactions\CustomSexInteraction_Helper.cs" />
     <Compile Include="Interactions\GenesPartKindUsageRule.cs" />
+    <Compile Include="Interactions\SubSuccubusTailCustomRequirementHandler - Copy.cs" />
+    <Compile Include="Interactions\DomSuccubusTailCustomRequirementHandler.cs" />
     <Compile Include="JobDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RJW_Genes.cs" />

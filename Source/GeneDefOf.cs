@@ -77,5 +77,8 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_pussyhealer;
 		public static readonly GeneDef rjw_genes_vaginal_absorber;
 		public static readonly GeneDef rjw_genes_anal_absorber;
+
+		// Cosmetic
+		public static readonly GeneDef rjw_genes_succubus_tail;
 	}
 }

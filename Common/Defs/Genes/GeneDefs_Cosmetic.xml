@@ -31,7 +31,7 @@
   </GeneDef>
   
    <GeneDef ParentName="GeneTailBase">
-    <defName>Succubus_Tail</defName>
+    <defName>rjw_genes_succubus_tail</defName>
     <label>succubus tail</label>
     <description>Carriers of this gene grow a slender tail ending with a heart that can act as a dexterous fifth limb.</description>
     <iconPath>Genes/Icons/Succubus_Tail</iconPath>

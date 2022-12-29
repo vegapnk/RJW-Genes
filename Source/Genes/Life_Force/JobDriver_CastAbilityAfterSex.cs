@@ -50,7 +50,7 @@ namespace RJW_Genes
 					if (comp.props is CompProperties_SexInteractionRequirements)
 					{
 						CompProperties_SexInteractionRequirements sexpropsreq = comp.props as CompProperties_SexInteractionRequirements;
-						this.Sexprops = CompAbility_SexInteractionRequirements.GenerateSexProps(this.pawn, this.Partner, sexpropsreq);
+						this.Sexprops = CustomSexInteraction_Helper.GenerateSexProps(this.pawn, this.Partner, sexpropsreq);
 					}
 				}
 				this.Start();

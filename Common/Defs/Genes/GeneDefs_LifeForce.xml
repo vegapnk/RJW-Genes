@@ -29,7 +29,7 @@
 		</symbolPack>
 		<mentalBreakDef>rjw_genes_lifeforce_randomrape</mentalBreakDef>
 		<minAgeActive>18</minAgeActive>
-		<resourceLossPerDay>0.02</resourceLossPerDay>
+		<resourceLossPerDay>0.05</resourceLossPerDay>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>1</biostatMet>
 	</GeneDef>
@@ -70,7 +70,6 @@
 		<displayOrderInCategory>2</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
 	</GeneDef>
 	
 	<GeneDef>
@@ -82,6 +81,5 @@
 		<displayOrderInCategory>3</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
 	</GeneDef>
 </Defs>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<InteractionDef ParentName="RJW_InteractionDefBaseSex">
+		<defName>Sex_SuccubusTail_Reverse_Tailjob</defName>
+		<label>succubustail tailjob</label>
+		<logRulesInitiator>
+			<rulesStrings>
+				<li>r_logentry->Gave tailjob to [RECIPIENT_nameDef].</li>
+			</rulesStrings>
+		</logRulesInitiator>
+		<logRulesRecipient>
+			<rulesStrings>
+				<li>r_logentry->Was given tailjob by [INITIATOR_nameDef].</li>
+			</rulesStrings>
+		</logRulesRecipient>
+		<modExtensions>
+			<li Class="rjw.InteractionExtension">
+				<RMBLabel>Tailjob</RMBLabel>
+				<rjwSextype>Handjob</rjwSextype>
+				<rulepack_defs>
+					<li>SubSuccubusTail_Tailjob_RP</li>
+				</rulepack_defs>
+			</li>
+			<li Class="rjw.Modules.Interactions.DefModExtensions.InteractionSelectorExtension">
+				<customRequirementHandler>DomSuccubusTailCustomRequirementHandler</customRequirementHandler>
+				<tags>
+					<li>Reverse</li>
+					<li>Consensual</li>
+				</tags>
+				<dominantRequirement>
+					
+				</dominantRequirement>
+				<submissiveRequirement>
+					<tags>
+						<li>CanPenetrate</li>
+					</tags>
+				</submissiveRequirement>
+			</li>
+		</modExtensions>
+	</InteractionDef>
+	
+	<InteractionDef ParentName="RJW_InteractionDefBaseSex">
+		<defName>Sex_SuccubusTail_Reverse_Vaginal</defName>
+		<label>succubustail vaginal</label>
+		<logRulesInitiator>
+			<rulesStrings>
+				<li>r_logentry->Was given vaginal tailsex by [RECIPIENT_nameDef].</li>	
+			</rulesStrings>
+		</logRulesInitiator>
+		<logRulesRecipient>
+			<rulesStrings>
+				<li>r_logentry->Gave vaginal tailsex to [INITIATOR_nameDef].</li>
+			</rulesStrings>
+		</logRulesRecipient>
+		<modExtensions>
+			<li Class="rjw.InteractionExtension">
+				<RMBLabel>Vaginal Tailsex</RMBLabel>
+				<rjwSextype>Vaginal</rjwSextype>
+				<rulepack_defs>
+					<li>DomSuccubusTail_Vaginal_RP</li>
+				</rulepack_defs>
+			</li>
+			<li Class="rjw.Modules.Interactions.DefModExtensions.InteractionSelectorExtension">
+				<customRequirementHandler>SubSuccubusTailCustomRequirementHandler</customRequirementHandler>
+				<tags>
+					<li>Reverse</li>
+					<li>Consensual</li>
+				</tags>
+				<dominantRequirement>
+					<families>
+						<li>Vagina</li>
+					</families>
+				</dominantRequirement>
+				<submissiveRequirement>
+					
+				</submissiveRequirement>
+			</li>
+		</modExtensions>
+	</InteractionDef>
+	
+	<InteractionDef ParentName="RJW_InteractionDefBaseSex">
+		<defName>Sex_SuccubusTail_Reverse_Anal</defName>
+		<label>succubustail anal</label>
+		<logRulesInitiator>
+			<rulesStrings>
+				<li>r_logentry->Was given anal tailsex by [RECIPIENT_nameDef].</li>
+			</rulesStrings>
+		</logRulesInitiator>
+		<logRulesRecipient>
+			<rulesStrings>
+				<li>r_logentry->Gave anal tailsex to [INITIATOR_nameDef].</li>
+			</rulesStrings>
+		</logRulesRecipient>
+		<modExtensions>
+			<li Class="rjw.InteractionExtension">
+				<RMBLabel>Anal Tailsex</RMBLabel>
+				<rjwSextype>Anal</rjwSextype>
+				<rulepack_defs>
+					<li>DomSuccubusTail_Anal_RP</li>
+				</rulepack_defs>
+			</li>
+			<li Class="rjw.Modules.Interactions.DefModExtensions.InteractionSelectorExtension">
+				<customRequirementHandler>SubSuccubusTailCustomRequirementHandler</customRequirementHandler>
+				<tags>
+					<li>Reverse</li>
+					<li>Consensual</li>
+				</tags>
+				<dominantRequirement>
+					<families>
+						<li>Anus</li>
+					</families>
+				</dominantRequirement>
+				<submissiveRequirement>
+					
+				</submissiveRequirement>
+			</li>
+		</modExtensions>
+	</InteractionDef>
+	
+	<!--Top of tail opens up and evelops the penis-->
+	<InteractionDef ParentName="RJW_InteractionDefBaseSex">
+		<defName>Sex_SuccubusTail_Reverse_Envelop</defName>
+		<label>succubustail envelop</label>
+		<logRulesInitiator>
+			<rulesStrings>
+				<li>r_logentry->Gave special tailjob to [RECIPIENT_nameDef].</li>
+			</rulesStrings>
+		</logRulesInitiator>
+		<logRulesRecipient>
+			<rulesStrings>
+				<li>r_logentry->Was given special tailjob by [INITIATOR_nameDef].</li>
+			</rulesStrings>
+		</logRulesRecipient>
+		<modExtensions>
+			<li Class="rjw.InteractionExtension">
+				<RMBLabel>Envelop</RMBLabel>
+				<rjwSextype>Vaginal</rjwSextype>
+				<rulepack_defs>
+					<li>DomSuccubusTail_Envelop_RP</li>
+				</rulepack_defs>
+			</li>
+			<li Class="rjw.Modules.Interactions.DefModExtensions.InteractionSelectorExtension">
+				<customRequirementHandler>DomSuccubusTailCustomRequirementHandler</customRequirementHandler>
+				<tags>
+					<li>Reverse</li>
+					<li>Consensual</li>
+				</tags>
+				<dominantRequirement>
+				</dominantRequirement>
+				<submissiveRequirement>	
+					<tags>
+						<li>CanPenetrate</li>
+					</tags>
+				</submissiveRequirement>
+			</li>
+		</modExtensions>
+	</InteractionDef>
+</Defs>

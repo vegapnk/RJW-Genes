@@ -13,16 +13,8 @@ using rjw.Modules.Interactions.Implementation;
 using rjw.Modules.Interactions.Defs.DefFragment;
 namespace RJW_Genes
 {
-	public class CompAbility_SexInteractionRequirements : AbilityComp
-	{
-		public CompProperties_SexInteractionRequirements Props
-		{
-			get
-			{
-				return (CompProperties_SexInteractionRequirements)this.props;
-			}
-		}
-
+    public class CustomSexInteraction_Helper
+    {
 		public static List<InteractionDef> GenerateInteractionDefList(Pawn pawn, Pawn pawn2, CompProperties_SexInteractionRequirements sexpropsreq)
 		{
 			List<InteractionTag> tags = new List<InteractionTag>();
