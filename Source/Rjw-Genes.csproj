@@ -118,6 +118,7 @@
     <Compile Include="Genes\Life_Force\CompAbilityEffect_LifeForceCost.cs" />
     <Compile Include="Genes\Life_Force\CompAbilityEffect_CockEater.cs" />
     <Compile Include="Genes\Life_Force\CompProperties_AbilityCockEater.cs" />
+    <Compile Include="Genes\Life_Force\IngestionOutcomeDoer_LifeForceOffset.cs" />
     <Compile Include="Interactions\CompAbility_SexInteractionRequirements.cs" />
     <Compile Include="Genes\Life_Force\CompAbilityEffect_PussyHeal.cs" />
     <Compile Include="Genes\Life_Force\CompProperties_AbilityLifeForceCost.cs" />
