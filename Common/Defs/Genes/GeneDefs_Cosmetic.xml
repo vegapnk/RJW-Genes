@@ -3,14 +3,54 @@
 
 	<!-- Skin Color -->
 
-	<!-- AlphaAnimals -->
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>rjw_genes_skin_dirtbrown</defName>
+    <label>dirt brown skin</label>
+    <labelShortAdj>dirt brown</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a dark brown skin that looks similar to dirt.</description>
+    <skinColorOverride>(50, 39, 27)</skinColorOverride>
+    <displayOrderInCategory>69</displayOrderInCategory>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>brown</symbol></li>
+        <li><symbol>dirt</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>rjw_genes_skin_midnightblue</defName>
+    <label>midnight blue skin</label>
+    <labelShortAdj>midnight blue</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a very dark tone with shimmers of blue.</description>
+    <skinColorOverride>(13, 23, 29)</skinColorOverride>
+    <displayOrderInCategory>70</displayOrderInCategory>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>blue</symbol>
+        </li>
+        <li>
+          <symbol>dark</symbol>
+        </li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li>
+          <symbol>midnight</symbol>
+        </li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
 	<GeneDef ParentName="GeneSkinColorOverride">
 		<defName>rjw_genes_skin_skysteel</defName>
-		<label>Sky Steel Skin</label>
+		<label>sky steel skin</label>
 		<labelShortAdj>sky steel</labelShortAdj>
 		<description>Carriers of this gene produce a pigment that gives their skin a blueish purple skin that looks similar to Sky Steel.</description>
 		<skinColorOverride>(80, 99, 225)</skinColorOverride>
-		<displayOrderInCategory>69</displayOrderInCategory>
+		<displayOrderInCategory>71</displayOrderInCategory>
 		<randomBrightnessFactor>0</randomBrightnessFactor>
 		<symbolPack>
 			<prefixSymbols>
@@ -20,5 +60,62 @@
 			</prefixSymbols>
 		</symbolPack>
 	</GeneDef>
-	
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>rjw_genes_skin_babyblue</defName>
+    <label>baby blue skin</label>
+    <labelShortAdj>baby blue</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a light blue skin that would fit a baby's romper.</description>
+    <skinColorOverride>(110, 137, 171)</skinColorOverride>
+    <displayOrderInCategory>72</displayOrderInCategory>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>blue</symbol>
+        </li>
+        <li>
+          <symbol>light</symbol>
+        </li>
+        <li>
+          <symbol>baby</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>rjw_genes_skin_mint</defName>
+    <label>mint skin</label>
+    <labelShortAdj>mint</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a whiteish mint skin.</description>
+    <skinColorOverride>(132, 151, 163)</skinColorOverride>
+    <displayOrderInCategory>73</displayOrderInCategory>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>blue</symbol>
+        </li>
+        <li>
+          <symbol>light</symbol>
+        </li>
+        <li>
+          <symbol>mint</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <!-- Hair Color -->
+
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>rjw_genes_hair_midnightblue</defName>
+    <label>midnight blue hair</label>
+    <hairColorOverride>(13, 23, 29)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>74</displayOrderInCategory>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+  </GeneDef>
+  
 </Defs>

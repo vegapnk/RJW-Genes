@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RJW_BGS.RaceGeneDef ParentName = "Dragon">
+		<defName>Behemoth</defName>
+		<raceNames>
+			<li>AA_Behemoth</li>
+		</raceNames>
+		<genes>
+      <li>
+        <defName>Skin_InkBlack</defName>
+        <chance>0.75</chance>
+      </li>
+      <li>
+        <defName>Head_Gaunt</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Tail_Smooth</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>FireResistant</defName>
+        <chance>0.35</chance>
+      </li>
+      <li>
+        <defName>WoundHealing_Fast</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>FireSpew</defName>
+        <chance>0.08</chance>
+      </li>
+      
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_BatWings</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AG_HornCrown</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_LargerBodySize</defName>
+        <chance>0.6</chance>
+      </li>
+      <li>
+        <defName>AG_ScalyBody</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AG_BarkSkin</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AG_GreaterFireSpew</defName>
+        <chance>0.025</chance>
+      </li>
+
+      <!-- ToDo
+      
+           - 4 Yellow glowing eyes
+           - NightOwl
+           - Yellow/Black Spikes on back
+      
+      -->
+      
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+  <RJW_BGS.RaceGeneDef>
+    <defName>DarkVandal</defName>
+    <raceNames>
+      <li>AA_DarkVandal</li>
+    </raceNames>
+    <genes>
+      <li>
+        <defName>Skin_InkBlack</defName>
+        <chance>0.75</chance>
+      </li>
+      <li>
+        <defName>Hair_Black</defName>
+        <chance>0.75</chance>
+      </li>
+      <li>
+        <defName>Body_Hulk</defName>
+        <chance>0.4</chance>
+      </li>
+      <li>
+        <defName>Hands_Pig</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Ears_Pig</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Nose_Pig</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Voice_Pig</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Jaw_Heavy</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Furskin</defName>
+        <chance>0.33</chance>
+      </li>
+      <li>
+        <defName>Tail_Furry</defName>
+        <chance>0.33</chance>
+      </li>
+      <li>
+        <defName>AptitudePoor_Inellectual</defName>
+        <chance>0.35</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Melee</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Construction</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Crafting</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>StrongStomach</defName>
+        <chance>0.2</chance>
+      </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_PackMule</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AG_Tusks</defName>
+        <chance>0.5</chance>
+      </li>
+
+      <!-- Genitalia -->
+
+      <!-- Needs Pig Genitalia -->
+
+      <!-- ToDo
+      
+           - 4 Yellow glowing eyes
+           - NightOwl
+  
+      -->
+
+    </genes>
+  </RJW_BGS.RaceGeneDef>
+
+  <RJW_BGS.RaceGeneDef ParentName = "Feline">
+    <defName>DuskPowler</defName>
+    <raceNames>
+      <li>AA_DuskProwler</li>
+    </raceNames>
+    <genes>
+      <li>
+        <defName>Skin_InkBlack</defName>
+        <chance>0.75</chance>
+      </li>
+      <li>
+        <defName>Hair_Black</defName>
+        <chance>0.75</chance>
+      </li>
+      <li>
+        <defName>Head_Gaunt</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Body_Hulk</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Melee</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Intellectual</defName>
+        <chance>0.15</chance>
+      </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_BodyTentacles</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_FeraliskEyes</defName>
+        <chance>0.5</chance>
+      </li>
+
+      <!-- ToDo
+      
+           - 4 Yellow glowing eyes
+           - NightOwl
+  
+      -->
+
+    </genes>
+  </RJW_BGS.RaceGeneDef>
+
+  <RJW_BGS.RaceGeneDef ParentName = "Rodent">
+    <defName>Murkling</defName>
+    <raceNames>
+      <li>AA_Murkling</li>
+    </raceNames>
+    <genes>
+      <li>
+        <defName>Skin_InkBlack</defName>
+        <chance>0.75</chance>
+      </li>
+      <li>
+        <defName>Hair_Black</defName>
+        <chance>0.75</chance>
+      </li>
+      <li>
+        <defName>Head_Gaunt</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Tail_Furry</defName>
+        <chance>0.3</chance>
+      </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_FeraliskEyes</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_FaceTentacles</defName>
+        <chance>0.5</chance>
+      </li>
+
+      <!-- ToDo
+      
+           - 4 Yellow glowing eyes
+           - NightOwl
+  
+      -->
+
+    </genes>
+  </RJW_BGS.RaceGeneDef>
+
+  <RJW_BGS.RaceGeneDef ParentName = "Bovine">
+    <defName>ShadowCharger</defName>
+    <raceNames>
+      <li>AA_ShadowCharger</li>
+    </raceNames>
+    <genes>
+      <li>
+        <defName>Skin_InkBlack</defName>
+        <chance>0.75</chance>
+      </li>
+      <li>
+        <defName>Hair_Black</defName>
+        <chance>0.75</chance>
+      </li>
+      <li>
+        <defName>Body_Hulk</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Jaw_Heavy</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Melee</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>Robust</defName>
+        <chance>0.2</chance>
+      </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_FeraliskEyes</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_GrowlingVoice</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_LargerBodySize</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AG_ChameleonYakHorns</defName>
+        <chance>0.33</chance>
+      </li>
+
+      <!-- ToDo
+      
+           - 4 Yellow glowing eyes
+           - NightOwl
+  
+      -->
+
+    </genes>
+  </RJW_BGS.RaceGeneDef>
+
+  <RJW_BGS.RaceGeneDef ParentName = "Bovine">
+    <defName>Thunderox</defName>
+    <raceNames>
+      <li>AA_Thunderox</li>
+    </raceNames>
+    <genes>
+      <li>
+        <defName>Skin_InkBlack</defName>
+        <chance>0.75</chance>
+      </li>
+      <li>
+        <defName>Hair_Black</defName>
+        <chance>0.75</chance>
+      </li>
+      <li>
+        <defName>Body_Hulk</defName>
+        <chance>0.6</chance>
+      </li>
+      <li>
+        <defName>Headbone_CenterHorn</defName>
+        <chance>0.6</chance>
+      </li>
+      <li>
+        <defName>Jaw_Heavy</defName>
+        <chance>0.6</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Melee</defName>
+        <chance>0.25</chance>
+      </li>
+      <li>
+        <defName>Robust</defName>
+        <chance>0.25</chance>
+      </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_FeraliskEyes</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_GrowlingVoice</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_LargerBodySize</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AG_Zap</defName>
+        <chance>0.025</chance>
+      </li>
+
+      <!-- ToDo
+      
+           - 4 Yellow glowing eyes
+           - NightOwl
+  
+      -->
+
+    </genes>
+  </RJW_BGS.RaceGeneDef>
+	
+</Defs>

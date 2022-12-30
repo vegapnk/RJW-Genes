@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RJW_BGS.RaceGeneDef>
+		<defName>DarkBeast</defName>
+		<raceNames>
+			<li>AA_Darkbeast</li>
+		</raceNames>
+		<genes>
+      <li>
+        <defName>rjw_genes_skin_midnightblue</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>rjw_genes_hair_midnightblue</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Furskin</defName>
+        <chance>0.33</chance>
+      </li>
+      <li>
+        <defName>Tail_Furry</defName>
+        <chance>0.33</chance>
+      </li>
+      <li>
+        <defName>Body_Hulk</defName>
+        <chance>0.65</chance>
+      </li>
+      <li>
+        <defName>Hands_Pig</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Nose_Pig</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Ears_Pig</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Voice_Pig</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Headbone_CenterHorn</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Jaw_Heavy</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Beauty_Ugly</defName>
+        <chance>0.25</chance>
+      </li>
+      <li>
+        <defName>PiercingSpine</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Melee</defName>
+        <chance>0.2</chance>
+      </li>
+      
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_ArmourMedium</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>AG_TarBlood</defName>
+        <chance>0.25</chance>
+      </li>
+      <li>
+        <defName>AG_UVSensitivity_Minor</defName>
+        <chance>0.15</chance>
+      </li>
+
+      <!-- Genitalia -->
+      
+      <!-- Needs Pig like Penis -->
+
+      <!-- ToDo 
+      
+           - Purple Glow
+      
+      -->
+      
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+	
+</Defs>

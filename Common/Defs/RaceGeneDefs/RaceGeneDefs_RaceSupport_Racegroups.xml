@@ -18,6 +18,10 @@
 				<chance>0.33</chance>
 			</li>
       <li>
+        <defName>Hands_Pig</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
         <defName>PsychicAbility_Dull</defName>
         <chance>0.15</chance>
       </li>
@@ -27,11 +31,11 @@
       </li>
       <li>
         <defName>AptitudePoor_Intellectual</defName>
-        <chance>0.25</chance>
+        <chance>0.3</chance>
       </li>
       <li>
         <defName>AptitudeTerrible_Intellectual</defName>
-        <chance>0.08</chance>
+        <chance>0.1</chance>
       </li>
       <li>
         <defName>Aggression_DeadCalm</defName>
@@ -42,4 +46,9 @@
 
   <!-- With AlphaAnimals / AlphaGenes installed -->
 
+  <li>
+    <defName>AG_Digitigrade</defName>
+    <chance>0.25</chance>
+  </li>
+  
 </Defs>

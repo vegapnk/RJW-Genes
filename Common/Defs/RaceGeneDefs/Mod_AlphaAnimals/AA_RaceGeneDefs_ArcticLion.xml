@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	
-	<RJW_BGS.RaceGeneDef Name ="ArcticLion" ParentName = "Feline">
+	<RJW_BGS.RaceGeneDef ParentName = "Feline">
 		<defName>ArcticLion</defName>
 		<raceNames>
 			<li>AA_ArcticLion</li>

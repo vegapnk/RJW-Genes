@@ -2,7 +2,7 @@
 <Defs>
 
 	<RJW_BGS.RaceGeneDef ParentName = "Insect">
-		<defName>Atispec</defName>
+		<defName>LarvalAtispec</defName>
 		<raceNames>
 			<li>AA_LarvalAtispec</li>
 		</raceNames>

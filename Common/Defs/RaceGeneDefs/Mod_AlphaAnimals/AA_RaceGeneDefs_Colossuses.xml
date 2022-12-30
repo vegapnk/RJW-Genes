@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RJW_BGS.RaceGeneDef>
+		<defName>AnimaColossus</defName>
+		<raceNames>
+			<li>AA_AnimaColossus</li>
+		</raceNames>
+		<genes>
+      <li>
+        <defName>rjw_genes_skin_dirtbrown</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Body_Fat</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AptitudeRemarkable_Plants</defName>
+        <chance>0.35</chance>
+      </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_LargerBodySize</defName>
+        <chance>0.6</chance>
+      </li>
+      <li>
+        <defName>AG_GrowlingVoice</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_ThirdEye</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AG_SlimeBlood</defName>
+        <chance>0.25</chance>
+      </li>
+      <li>
+        <defName>AG_SlowerAging</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AG_PackMule</defName>
+        <chance>0.1</chance>
+      </li>
+      
+      <!-- With Integrated Genes installed -->
+
+      <li>
+        <defName>Turn_Gene_MeditationNeed</defName>
+        <chance>0.15</chance>
+      </li>
+
+      <!-- Genitalia -->
+
+      <!-- Needs nature genitals -->
+
+
+    </genes>
+	</RJW_BGS.RaceGeneDef>
+
+	
+</Defs>

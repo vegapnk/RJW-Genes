@@ -2,18 +2,22 @@
 <Defs>
 
   <RJW_BGS.RaceGeneDef>
-		<defName>Helixien</defName>
+		<defName>SandSquid</defName>
 		<raceNames>
-			<li>AA_Helixien</li>
+			<li>AA_SandSquid</li>
 		</raceNames>
 		<genes>
       <li>
-        <defName>UVSensitivity_Intense</defName>
-        <chance>0.15</chance>
+        <defName>rjw_genes_skin_babyblue</defName>
+        <chance>0.5</chance>
       </li>
       <li>
-        <defName>ToxResist_Total</defName>
-        <chance>0.08</chance>
+        <defName>rjw_genes_skin_mint</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>FacialRidges</defName>
+        <chance>0.5</chance>
       </li>
       <li>
         <defName>PsychicAbility_Dull</defName>
@@ -25,30 +29,38 @@
       </li>
       <li>
         <defName>AptitudePoor_Shooting</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AptitudeTerrible_Melee</defName>
+        <chance>0.35</chance>
+      </li>
+      <li>
+        <defName>MaxTemp_SmallIncrease</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>Fertile</defName>
         <chance>0.2</chance>
       </li>
 
       <!-- With AlphaAnimals / AlphaGenes installed -->
 
       <li>
-        <defName>AG_SlugBody</defName>
-        <chance>0.3</chance>
-      </li>
-      <li>
-        <defName>AG_SlugFace</defName>
-        <chance>0.3</chance>
-      </li>
-      <li>
         <defName>AG_SlugVoice</defName>
         <chance>0.5</chance>
       </li>
       <li>
-        <defName>AG_LargerBodySize</defName>
-        <chance>0.35</chance>
+        <defName>AG_UpperTentacles</defName>
+        <chance>0.6</chance>
       </li>
       <li>
-        <defName>AG_CorpseFeeding</defName>
-        <chance>0.15</chance>
+        <defName>AG_FaceTentacles</defName>
+        <chance>0.6</chance>
+      </li>
+      <li>
+        <defName>AG_LargerBodySize</defName>
+        <chance>0.1</chance>
       </li>
       <li>
         <defName>AG_SlimeBlood</defName>
@@ -56,11 +68,11 @@
       </li>
       <li>
         <defName>AG_EldritchVisage</defName>
-        <chance>0.5</chance>
+        <chance>0.35</chance>
       </li>
       <li>
         <defName>AG_Filthy</defName>
-        <chance>0.35</chance>
+        <chance>0.25</chance>
       </li>
       <li>
         <defName>AG_FrailBack</defName>
