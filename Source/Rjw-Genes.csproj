@@ -119,6 +119,11 @@
     <Compile Include="Genes\Life_Force\CompAbilityEffect_CockEater.cs" />
     <Compile Include="Genes\Life_Force\CompProperties_AbilityCockEater.cs" />
     <Compile Include="Genes\Life_Force\IngestionOutcomeDoer_LifeForceOffset.cs" />
+    <Compile Include="Genes\Life_Force\JobDriver_Drink_Cumflation.cs" />
+    <Compile Include="Genes\Life_Force\Patch_SexTicks_ChangePsyfocus.cs" />
+    <Compile Include="Genes\Life_Force\ThinkNode_ConditionalLowLifeForce.cs" />
+    <Compile Include="Genes\Life_Force\ThinkNode_ConditionalCritcalLifeForce.cs" />
+    <Compile Include="Genes\Life_Force\JobGiver_GetLifeForce.cs" />
     <Compile Include="Interactions\CompAbility_SexInteractionRequirements.cs" />
     <Compile Include="Genes\Life_Force\CompAbilityEffect_PussyHeal.cs" />
     <Compile Include="Genes\Life_Force\CompProperties_AbilityLifeForceCost.cs" />

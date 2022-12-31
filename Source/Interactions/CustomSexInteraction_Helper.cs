@@ -30,7 +30,6 @@ namespace RJW_Genes
 
 			InteractionRequirement dominantRequirement = sexpropsreq.dominantRequirement;
 			InteractionRequirement submissiveRequirement = sexpropsreq.submissiveRequirement;
-			List<InteractionDef> sexinteractions = SexUtility.SexInterractions;
 			List<InteractionDef> list = new List<InteractionDef>();
 			//List<InteractionDef> a = from interaction in sexinteractions
 			//where InteractionHelper.GetWithExtension(interaction).DominantHasFamily(dominantRequirement.families.)

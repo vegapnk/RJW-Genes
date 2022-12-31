@@ -60,6 +60,8 @@ namespace RJW_Genes
 			//GeneResourceDrainUtility.TickResourceDrain(this);
 		}
 
+		public bool StoredCumAllowed = true;
+
 		public Gene_Resource Resource
 		{
 			get
