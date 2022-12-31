@@ -54,7 +54,7 @@ namespace RJW_Genes
 						CompHediff = part.TryGetComp<rjw.CompHediffBodyPart>();
 						if (CompHediff != null)
 						{
-							total_cum += CompHediff.FluidAmmount * multiplier;
+							total_cum += CompHediff.FluidAmmount * CompHediff.FluidModifier * multiplier;
 						}
 					}
 				}

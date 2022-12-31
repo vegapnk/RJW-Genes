@@ -34,6 +34,7 @@ namespace RJW_Genes
 			if (GeneUtility.HasLifeForce(props.partner))
 			{
 				Pawn succubus = props.partner;
+
 				if (!props.isRevese)
 				{
 					if (props.isReceiver)
@@ -66,28 +67,44 @@ namespace RJW_Genes
 				{
 					AbsorbFertilin(props, absorb_factor);
 				}
+
+				if (GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_drainer) && !props.pawn.health.hediffSet.HasHediff(HediffDefOf.Succubus_Drained))
+				{
+					props.pawn.health.AddHediff(HediffDefOf.Succubus_Drained);
+					GeneUtility.OffsetLifeForce(succubus, 0.25f);
+				}
 			}
 		}
 		public static void AbsorbFertilin(SexProps props, float absorb_factor = 1f)
 		{
 			Pawn_GeneTracker genes = props.partner.genes;
 			Gene_LifeForce gene = genes.GetFirstGeneOfType<Gene_LifeForce>();
-			float multiplier = Rand.Range(0.10f, 0.40f); //Around quarter get ejected everytime pawn cums
-			Hediff fertelin_lost = props.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Fertilin_Lost);
-			if (fertelin_lost == null)
+			Hediff fertilin_lost = props.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Fertilin_Lost);
+			//Around quarter get ejected everytime pawn cums
+			float multiplier = Rand.Range(0.10f, 0.40f); 
+			
+
+			//Create a new ferilin_lost hediff or reduce multiplier
+			if (fertilin_lost == null)
 			{
-				Hediff new_fertelin_lost = HediffMaker.MakeHediff(HediffDefOf.Fertilin_Lost, props.pawn);
-				props.pawn.health.AddHediff(new_fertelin_lost);
-				new_fertelin_lost.Severity = multiplier;
+				Hediff new_fertilin_lost = HediffMaker.MakeHediff(HediffDefOf.Fertilin_Lost, props.pawn);
+				props.pawn.health.AddHediff(new_fertilin_lost);
+				new_fertilin_lost.Severity = multiplier;
 			}
 			else
 			{
-				multiplier *= 1 - fertelin_lost.Severity;
-				fertelin_lost.Severity += multiplier;
-
+				multiplier *= 1 - fertilin_lost.Severity;
+				fertilin_lost.Severity += multiplier;
+			}
+			//More in the tank means more to give
+			if (props.pawn.Has(Quirk.Messy))
+			{
+				multiplier *= 2;
 			}
 			//Currently taking the sum of all penises, maybe I should just consider one at random
-			gene.Resource.Value += CumUtility.GetTotalFluidAmount(props.pawn) / 100 * absorb_factor * multiplier;
+			float valuechange = CumUtility.GetTotalFluidAmount(props.pawn) / 100 * absorb_factor * multiplier;
+			GeneUtility.OffsetLifeForce(props.partner, valuechange);
+			//gene.Resource.Value += CumUtility.GetTotalFluidAmount(props.pawn) / 100 * absorb_factor * multiplier;
 		}
 
 

@@ -8,7 +8,6 @@
 		<label>induced libido</label>
 		<description>Aphrodisiac pheromone effects.</description>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
@@ -38,9 +37,55 @@
 			</li>
 		</comps>
 		<stages>
-		  <li>
-			<becomeVisible>true</becomeVisible>
-		  </li>
+			<li>
+				<becomeVisible>true</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Succubus_Drained</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Drained</label>
+		<description>The vitality of this pawn has been drained.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<maxSeverity>1.0</maxSeverity>
+		<initialSeverity>1.0</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.0</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<label>moderate</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<label>severe</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.4</offset>
+					</li>
+				</capMods>
+			</li>
 		</stages>
 	</HediffDef>
 </Defs>

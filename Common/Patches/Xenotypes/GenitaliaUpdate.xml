@@ -74,8 +74,19 @@
 		<xpath>Defs/XenotypeDef[defName="Highmate"]/genes</xpath>
 		<value>
 			<li>rjw_genes_hypersexual</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimJobWorld - Licentia Labs</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Highmate"]/genes</xpath>
+		<value>
 			<li>rjw_genes_likes_cumflation</li>
 		</value>
+		</match>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
