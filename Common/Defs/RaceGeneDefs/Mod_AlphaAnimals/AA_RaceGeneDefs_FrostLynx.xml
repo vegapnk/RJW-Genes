@@ -2,9 +2,9 @@
 <Defs>
 	
 	<RJW_BGS.RaceGeneDef ParentName = "Feline">
-		<defName>ArcticLion</defName>
+		<defName>FrostLynx</defName>
 		<raceNames>
-			<li>AA_ArcticLion</li>
+			<li>AA_FrostLynx</li>
 		</raceNames>
 		<genes>
 			<li>
@@ -13,31 +13,47 @@
 			</li>
       <li>
         <defName>Hair_SnowWhite</defName>
-        <chance>0.75</chance>
+        <chance>0.66</chance>
+      </li>
+      <li>
+        <defName>Hair_Gray</defName>
+        <chance>0.33</chance>
+      </li>
+      <li>
+        <defName>Body_Hulk</defName>
+        <chance>0.4</chance>
+      </li>
+      <li>
+        <defName>Head_Gaunt</defName>
+        <chance>0.5</chance>
       </li>
       <li>
         <defName>MinTemp_SmallDecrease</defName>
-        <chance>0.35</chance>
+        <chance>0.5</chance>
       </li>
 			<li>
 				<defName>MinTemp_LargeDecrease</defName>
-				<chance>0.2</chance>
+				<chance>0.3</chance>
 			</li>
 			<li>
 				<defName>MeleeDamage_Strong</defName>
-				<chance>0.2</chance>
+				<chance>0.1</chance>
 			</li>
       <li>
         <defName>MaxTemp_SmallDecrease</defName>
-        <chance>0.75</chance>
+        <chance>0.3</chance>
       </li>
 
       <!-- With AlphaAnimals / AlphaGenes installed -->
 
       <li>
         <defName>AG_FrostbiteResistance</defName>
-        <chance>0.05</chance>
+        <chance>0.1</chance>
       </li>
+      
+      <!-- ToDo
+      
+           - Ice ranged and melee attack -->
       
     </genes>
 	</RJW_BGS.RaceGeneDef>

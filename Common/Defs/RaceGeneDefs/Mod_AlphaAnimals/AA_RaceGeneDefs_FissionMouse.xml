@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RJW_BGS.RaceGeneDef ParentName = "Rodent">
+		<defName>FissionMouse</defName>
+		<raceNames>
+			<li>AA_FissionMouse</li>
+		</raceNames>
+		<genes>
+      <li>
+        <defName>Skin_SheerWhite</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Hair_SnowWhite</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Head_Gaunt</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Sterile</defName>
+        <chance>0.65</chance>
+      </li>
+      <li>
+        <defName>Tail_Furry</defName>
+        <chance>0.5</chance>
+      </li>
+			<li>
+				<defName>MaxTemp_LargeIncrease</defName>
+				<chance>0.25</chance>
+			</li>
+      <li>
+        <defName>AptitudePoor_Melee</defName>
+        <chance>0.3</chance>
+      </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_LongEars</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_SmallerBodySize</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AG_Digitigrade</defName>
+        <chance>0.25</chance>
+      </li>
+      <li>
+        <defName>AG_FissionMouseAffinity</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>AG_AsexualFission</defName>
+        <chance>0.025</chance>
+      </li>
+
+      <!-- RaceGroupDef Value Override -->
+
+      <li>
+        <defName>Fertile</defName>
+        <chance>0.0</chance>
+      </li>
+      
+    </genes>
+	</RJW_BGS.RaceGeneDef>
+	
+</Defs>

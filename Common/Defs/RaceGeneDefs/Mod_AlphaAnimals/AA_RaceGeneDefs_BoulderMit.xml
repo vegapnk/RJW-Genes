@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<RJW_BGS.RaceGeneDef>
+	<RJW_BGS.RaceGeneDef ParentName ="Insect">
 		<defName>BoulderMit</defName>
 		<raceNames>
 			<li>AA_BoulderMit</li>
@@ -32,14 +32,6 @@
         <chance>0.15</chance>
       </li>
       <li>
-        <defName>AptitudePoor_Intellectual</defName>
-        <chance>0.2</chance>
-      </li>
-      <li>
-        <defName>AptitudePoor_Social</defName>
-        <chance>0.25</chance>
-      </li>
-      <li>
         <defName>AptitudePoor_Plants</defName>
         <chance>0.25</chance>
       </li>
@@ -47,20 +39,8 @@
       <!-- With AlphaAnimals / AlphaGenes installed -->
 
       <li>
-        <defName>AG_UnsettlingAppearance</defName>
-        <chance>0.2</chance>
-      </li>
-      <li>
-        <defName>AG_Filthy</defName>
-        <chance>0.25</chance>
-      </li>
-      <li>
         <defName>AG_PackMule</defName>
         <chance>0.25</chance>
-      </li>
-      <li>
-        <defName>AG_HivelingVoice</defName>
-        <chance>0.5</chance>
       </li>
       <li>
         <defName>AG_RockyBody</defName>
@@ -75,6 +55,17 @@
         <chance>0.2</chance>
       </li>
 
+      <!-- RaceGeneDef Overwrite -->
+
+      <li>
+        <defName>AptitudePoor_Intellectual</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AG_Filthy</defName>
+        <chance>0.35</chance>
+      </li>
+      
       <!-- Genitalia -->
       
       <!-- Needs custom crab like penis -->
