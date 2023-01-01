@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RJW_BGS.RaceGeneDef ParentName ="Insect">
+		<defName>FrostMite</defName>
+		<raceNames>
+			<li>AA_Frostmite</li>
+		</raceNames>
+		<genes>
+      <li>
+        <defName>Skin_SnowWhite</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Body_Fat</defName>
+        <chance>0.6</chance>
+      </li>
+      <li>
+        <defName>Robust</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AptitudeRemarkable_Mining</defName>
+        <chance>0.25</chance>
+      </li>
+      <li>
+        <defName>MoveSpeed_Slow</defName>
+        <chance>0.45</chance>
+      </li>
+      <li>
+        <defName>AptitudePoor_Plants</defName>
+        <chance>0.25</chance>
+      </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_PackMule</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AG_RockVoice</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_RockyBody</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_RockSpurs</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_BeeMandibles</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_CorpseFeeding</defName>
+        <chance>0.1</chance>
+      </li>
+
+      <!-- RaceGroupDef Overwrite -->
+
+      <li>
+        <defName>AG_HivelingVoice</defName>
+        <chance>0.0</chance>
+      </li>
+      <li>
+        <defName>Body_Thin</defName>
+        <chance>0.05</chance>
+      </li>
+      <li>
+        <defName>AptitudePoor_Intellectual</defName>
+        <chance>0.4</chance>
+      </li>
+      
+      <!-- Genitalia -->
+      
+      <!-- Needs custom crab like or stone penis -->
+      
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+	
+</Defs>

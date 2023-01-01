@@ -36,7 +36,7 @@
 	</RJW_BGS.RaceGeneDef>
 	
 	
-	<RJW_BGS.RaceGeneDef>
+	<RJW_BGS.RaceGeneDef Name = "Insect">
 		<defName>Insect</defName> 
 		<raceGroup>Insect_Group</raceGroup>
 		<genes>
@@ -48,33 +48,81 @@
 				<defName>Immunity_Strong</defName>
 				<chance>0.6</chance>
 			</li>
+      <li>
+        <defName>AptitudePoor_Social</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AptitudePoor_Intellectual</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Mining</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Construction</defName>
+        <chance>0.15</chance>
+      </li>
 			<li>
 				<defName>ToxicEnvironmentResistance_Partial</defName>
 				<chance>0.4</chance>
 			</li>
 			<li>
 				<defName>rjw_genes_ovipositor_genitalia</defName>
-				<chance>0.15</chance>
+				<chance>0.35</chance>
 			</li>
 			<li>
 				<defName>rjw_genes_insectincubator</defName>
-				<chance>0.1</chance>
+				<chance>0.25</chance>
 			</li>
 			<li>
 				<defName>rjw_genes_insectbreeder</defName>
-				<chance>0.1</chance>
+				<chance>0.25</chance>
 			</li>
 			<li>
 				<defName>Body_Thin</defName>
 				<chance>0.3</chance>
-			</li>			
+			</li>
+
+			<!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_InsectJellyProduction</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>AG_InsectRally</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>AG_InsectBlood</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_HivelingVoice</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_UnsettlingAppearance</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AG_Filthy</defName>
+        <chance>0.25</chance>
+      </li>
+      
 		</genes>
 	</RJW_BGS.RaceGeneDef>
-	
-	<RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Feline">
 		<defName>Feline</defName> 
 		<raceGroup>Feline_Group</raceGroup>
 		<genes>
+			<li>
+				<defName>VoiceRoar</defName>
+				<chance>0.5</chance>
+			</li>
 			<li>
 				<defName>Tail_Furry</defName>
 				<chance>0.2</chance>
@@ -99,14 +147,42 @@
 				<defName>DarkVision</defName>
 				<chance>0.25</chance>
 			</li>
+      <li>
+        <defName>FastRunner</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Intellectual</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AptitudePoor_Mining</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AptitudePoor_Construction</defName>
+        <chance>0.2</chance>
+      </li>
 			<li>
 				<defName>rjw_genes_feline_genitalia</defName>
-				<chance>0.25</chance>
-			</li>			
+				<chance>0.5</chance>
+			</li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_Clean</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AG_Thalassophobia</defName>
+        <chance>0.2</chance>
+      </li>
+      
 		</genes>
 	</RJW_BGS.RaceGeneDef>
-	
-	<RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Equine">
 		<defName>Equine</defName> 
 		<raceGroup>Equine_Group</raceGroup>
 		<genes>
@@ -137,11 +213,19 @@
 			<li>
 				<defName>Body_Hulk</defName>
 				<chance>0.4</chance>
-			</li>		
-		</genes>
+			</li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_Digitigrade</defName>
+        <chance>0.25</chance>
+      </li>
+      
+    </genes>
 	</RJW_BGS.RaceGeneDef>
 
-	<RJW_BGS.RaceGeneDef>
+	<RJW_BGS.RaceGeneDef Name = "Dragon">
 		<defName>Dragon</defName> 
 		<raceGroup>Dragon_Group</raceGroup>
 		<genes>
@@ -184,17 +268,33 @@
 			<li>
 				<defName>Body_Hulk</defName>
 				<chance>0.7</chance>
-			</li>			
+			</li>
+      <li>
+        <defName>AptitudeRemarkable_Melee</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>AptitudeGood_Intellectual</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AptitudePoor_Plants</defName>
+        <chance>0.25</chance>
+      </li>
+      <li>
+        <defName>AptitudeTerrible_Animals</defName>
+        <chance>0.25</chance>
+      </li>
 		</genes> 
 	</RJW_BGS.RaceGeneDef>
-	
-	<RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Rodent">
 		<defName>Rodent</defName> 
 		<raceGroup>Rodent_Group</raceGroup>
 		<genes>
 			<li>
 				<defName>Furskin</defName>
-				<chance>0.2</chance>
+				<chance>0.33</chance>
 			</li>
 			<li>
 				<defName>Fertile</defName>
@@ -219,11 +319,31 @@
 			<li>
 				<defName>Body_Thin</defName>
 				<chance>0.45</chance>
-			</li>			
-		</genes> 
+			</li>
+      <li>
+        <defName>Delicate</defName>
+        <chance>0.2</chance>
+      </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_RatAffinity</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>AG_EfficientMandibles</defName>
+        <chance>0.3</chance>
+      </li>
+      <li>
+        <defName>AG_Filthy</defName>
+        <chance>0.35</chance>
+      </li>
+      
+    </genes> 
 	</RJW_BGS.RaceGeneDef>
-	
-	<RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Racoon">
 		<defName>Racoon</defName> 
 		<raceGroup>Raccon_Group</raceGroup>
 		<genes>

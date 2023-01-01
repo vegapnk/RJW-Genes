@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<RJW_BGS.RaceGeneDef ParentName = "Feline">
+		<defName>ArcticLion</defName>
+		<raceNames>
+			<li>AA_ArcticLion</li>
+		</raceNames>
+		<genes>
+			<li>
+				<defName>Skin_SheerWhite</defName>
+				<chance>0.75</chance>
+			</li>
+      <li>
+        <defName>Hair_SnowWhite</defName>
+        <chance>0.75</chance>
+      </li>
+      <li>
+        <defName>MinTemp_SmallDecrease</defName>
+        <chance>0.35</chance>
+      </li>
+			<li>
+				<defName>MinTemp_LargeDecrease</defName>
+				<chance>0.2</chance>
+			</li>
+			<li>
+				<defName>MeleeDamage_Strong</defName>
+				<chance>0.2</chance>
+			</li>
+      <li>
+        <defName>MaxTemp_SmallDecrease</defName>
+        <chance>0.75</chance>
+      </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_FrostbiteResistance</defName>
+        <chance>0.05</chance>
+      </li>
+      
+    </genes>
+	</RJW_BGS.RaceGeneDef>
+	
+</Defs>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RJW_BGS.RaceGeneDef ParentName = "Insect">
+		<defName>Blizzarisk</defName>
+		<raceNames>
+			<li>AA_Blizzarisk</li>
+		</raceNames>
+		<genes>
+			<li>
+				<defName></defName>
+				<chance>0.5</chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+	
+</Defs>
