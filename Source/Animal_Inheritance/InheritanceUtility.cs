@@ -42,7 +42,7 @@ namespace RJW_BGS
         public static List<GeneDef> SelectGenes(Pawn pawn)
         {
             List<GeneDef> genelist = new List<GeneDef>();
-            RaceGeneDef raceGeneDef = RJWcopy.GetRaceGeneDefInternal(pawn);
+            RaceGeneDef raceGeneDef = RaceGeneDef_Helper.GetRaceGeneDefInternal(pawn);
             if (raceGeneDef != null)
             {
                 foreach (BestialityGeneInheritanceDef gene in raceGeneDef.genes)

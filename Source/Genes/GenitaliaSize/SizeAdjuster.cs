@@ -58,7 +58,7 @@ namespace RJW_Genes
         public static void AdjustAllBreastSizes(Pawn pawn, float lowerLimit = 0.0f, float upperLimit = 1.0f)
         {
 
-            List<Hediff> AllBreasts = Genital_Helper.get_AllPartsHediffList(pawn).FindAll(x => x.def.defName.Contains("breasts"));
+            List<Hediff> AllBreasts = Genital_Helper.get_AllPartsHediffList(pawn).FindAll(x => x.def.defName.ToLower().Contains("breasts"));
             ResizeAll(AllBreasts,lowerLimit,upperLimit);
         }
 
