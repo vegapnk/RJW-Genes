@@ -10,4 +10,24 @@
         <displayOrderInCategory>1</displayOrderInCategory>
     </GeneDef>
     
+    <GeneDef>
+        <defName>rjw_genes_youth_fountain</defName>
+        <label>Youth Fountain</label>
+        <displayCategory>rjw_genes_special</displayCategory>
+        <description>Having sex with a carrier of this gene makes the partner slightly younger. (Partner stays adult)</description>
+        <biostatCpx>1</biostatCpx>
+        <iconPath>UI/Ideoligions/FireLeaves</iconPath>
+        <displayOrderInCategory>2</displayOrderInCategory>
+    </GeneDef>
+    
+    <GeneDef>
+        <defName>rjw_genes_sex_age_drain</defName>
+        <label>Sexual Age Drain</label>
+        <displayCategory>rjw_genes_special</displayCategory>
+        <description>Having sex transfers some of the partners life-time to themselves. (Pawn stays adult)</description>
+        <biostatCpx>1</biostatCpx>
+        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <displayOrderInCategory>3</displayOrderInCategory>
+    </GeneDef>
+    
 </Defs>
