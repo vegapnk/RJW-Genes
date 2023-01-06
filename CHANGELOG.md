@@ -1,3 +1,20 @@
+# 1.1.0 (2023-xx-xx)
+
+Features: 
+
+- Succubus (see below)
+- Orgasm Rush got a Hediff
+- Unbreakable Gene
+- Age-Transfer and Youth-Fountain per Sex Gene 
+- Balancing some Genes by changing metabolism and complexity
+
+Succubus:
+
+Fixes:
+
+- Issue with Breast-Size (#8) fixed by lowercasing breast-match (Shabakur) 
+- Error on Game Load when Licentia Genes are tried to be added to Xenotypes for players without Licentia (#5)
+
 # 1.0.1 (2022-12-20)
 
 - Fix issue with Orgasm Rush throwing an Error on Animal Orgasm (Thanks Shabakur)

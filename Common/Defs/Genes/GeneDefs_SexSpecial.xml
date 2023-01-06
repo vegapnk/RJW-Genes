@@ -6,6 +6,7 @@
         <displayCategory>rjw_genes_special</displayCategory>
         <description>On Orgasm, carriers of this gene get a boost in activity. (rest-need is partially filled)</description>
         <biostatCpx>1</biostatCpx>
+        <biostatMet>-2</biostatMet>
         <iconPath>UI/Memes/FleshPurity</iconPath>
         <displayOrderInCategory>1</displayOrderInCategory>
     </GeneDef>
@@ -15,7 +16,8 @@
         <label>Youth Fountain</label>
         <displayCategory>rjw_genes_special</displayCategory>
         <description>Having sex with a carrier of this gene makes the partner slightly younger. (Partner stays adult)</description>
-        <biostatCpx>1</biostatCpx>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-2</biostatMet>
         <iconPath>UI/Ideoligions/FireLeaves</iconPath>
         <displayOrderInCategory>2</displayOrderInCategory>
     </GeneDef>
@@ -25,7 +27,8 @@
         <label>Sexual Age Drain</label>
         <displayCategory>rjw_genes_special</displayCategory>
         <description>Having sex transfers some of the partners life-time to themselves. (Pawn stays adult)</description>
-        <biostatCpx>1</biostatCpx>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
         <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
         <displayOrderInCategory>3</displayOrderInCategory>
     </GeneDef>
