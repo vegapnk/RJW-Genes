@@ -44,20 +44,20 @@
 		<displayOrderInCategory>10</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<abilities>
-		  <li>rjw_genes_pussyheal</li>
+			<li>rjw_genes_pussyheal</li>
 		</abilities>
 		<descriptionHyperlinks>
-		  <AbilityDef>rjw_genes_pussyheal</AbilityDef>
+			<AbilityDef>rjw_genes_pussyheal</AbilityDef>
 		</descriptionHyperlinks>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 		<minAgeActive>18</minAgeActive>
 		<symbolPack>
-		  <suffixSymbols>
-			<li><symbol>life</symbol></li>
-			<li><symbol>pussy</symbol></li>
-			<li><symbol>heal</symbol></li>
-		  </suffixSymbols>
+			<suffixSymbols>
+				<li><symbol>life</symbol></li>
+				<li><symbol>pussy</symbol></li>
+				<li><symbol>heal</symbol></li>
+			</suffixSymbols>
 		</symbolPack>
 	</GeneDef>
 	
@@ -71,20 +71,72 @@
 		<displayOrderInCategory>11</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<abilities>
-		  <li>rjw_genes_cockeater</li>
+			<li>rjw_genes_cockeater</li>
 		</abilities>
 		<descriptionHyperlinks>
-		  <AbilityDef>rjw_genes_cockeater</AbilityDef>
+			<AbilityDef>rjw_genes_cockeater</AbilityDef>
 		</descriptionHyperlinks>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 		<minAgeActive>18</minAgeActive>
 		<symbolPack>
-		  <suffixSymbols>
-			<li><symbol>life</symbol></li>
-			<li><symbol>cock</symbol></li>
-			<li><symbol>eat</symbol></li>
-		  </suffixSymbols>
+			<suffixSymbols>
+				<li><symbol>life</symbol></li>
+				<li><symbol>cock</symbol></li>
+				<li><symbol>eat</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>rjw_genes_paralysingkiss</defName>
+		<label>paralysing kiss</label>
+		<labelShortAdj>paralysing kiss</labelShortAdj>
+		<description>Carriers of this gene are able to briefly stun an enemy with a kiss.</description>
+		<iconPath>Things/Mote/Heart</iconPath>
+		<prerequisite>rjw_genes_lifeforce</prerequisite>
+		<displayOrderInCategory>11</displayOrderInCategory>
+		<displayCategory>rjw_genes_fertilin</displayCategory>
+		<abilities>
+			<li>rjw_genes_paralysingkiss</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>rjw_genes_paralysingkiss</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<minAgeActive>18</minAgeActive>
+		<symbolPack>
+			<suffixSymbols>
+				<li><symbol>stun</symbol></li>
+				<li><symbol>kiss</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>rjw_genes_seduce</defName>
+		<label>seduction</label>
+		<labelShortAdj>seduction</labelShortAdj>
+		<description>Carriers of this gene are able to seduce a pawn into having sex with them.</description>
+		<iconPath>Things/Mote/Heart</iconPath>
+		<prerequisite>rjw_genes_lifeforce</prerequisite>
+		<displayOrderInCategory>11</displayOrderInCategory>
+		<displayCategory>rjw_genes_fertilin</displayCategory>
+		<abilities>
+			<li>rjw_genes_seduce</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>rjw_genes_seduce</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<minAgeActive>18</minAgeActive>
+		<symbolPack>
+			<suffixSymbols>
+				<li><symbol>stun</symbol></li>
+				<li><symbol>kiss</symbol></li>
+			</suffixSymbols>
 		</symbolPack>
 	</GeneDef>
 	

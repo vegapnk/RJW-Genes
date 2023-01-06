@@ -19,6 +19,12 @@
     <iconPath>Genes/Icons/Succubus_Wings</iconPath>
     <iconColor>(0.75, 0.75, 0.75)</iconColor>
     <displayOrderInCategory>1000</displayOrderInCategory>
+	<abilities>
+		 <li>rjw_genes_flight</li>
+	</abilities>
+	<descriptionHyperlinks>
+		<AbilityDef>rjw_genes_flight</AbilityDef>
+	</descriptionHyperlinks>
     <biostatCpx>1</biostatCpx>
     <graphicData>
       <graphicPath>Things/Pawn/Humanlike/BodyAttachments/rjw_genes_Succubus_Wings/Succubus_Wings</graphicPath>

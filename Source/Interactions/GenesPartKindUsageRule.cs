@@ -19,17 +19,14 @@ namespace RJW_Genes.Interactions
 			Pawn pawn = context.Internals.Dominant.Pawn;
 			if (GeneUtility.HasCriticalLifeForce(pawn))
 			{
-				Log.Message("Critical");
 				yield return new Weighted<LewdablePartKind>(50f, LewdablePartKind.Mouth);
 			}
 			else if (GeneUtility.HasLowLifeForce(pawn))
 			{
-				Log.Message("Low");
 				yield return new Weighted<LewdablePartKind>(10f, LewdablePartKind.Mouth);
 			}
 			else if (GeneUtility.HasLifeForce(pawn))
 			{
-				Log.Message("normal");
 				yield return new Weighted<LewdablePartKind>(2f, LewdablePartKind.Mouth);
 			}
 			yield break;
@@ -40,17 +37,14 @@ namespace RJW_Genes.Interactions
 			Pawn pawn = context.Internals.Submissive.Pawn;
 			if (GeneUtility.HasCriticalLifeForce(pawn))
 			{
-				Log.Message("Critical");
 				yield return new Weighted<LewdablePartKind>(50f, LewdablePartKind.Mouth);
 			}
 			else if (GeneUtility.HasLowLifeForce(pawn))
 			{
-				Log.Message("Low");
 				yield return new Weighted<LewdablePartKind>(10f, LewdablePartKind.Mouth);
 			}
 			else if (GeneUtility.HasLifeForce(pawn))
 			{
-				Log.Message("normal");
 				yield return new Weighted<LewdablePartKind>(2f, LewdablePartKind.Mouth);
 			}
 			yield break;

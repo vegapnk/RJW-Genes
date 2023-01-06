@@ -14,5 +14,6 @@ namespace RJW_Genes
         public static readonly HediffDef Aphrodisiac_Pheromone;
         public static readonly HediffDef Fertilin_Lost;
         public static readonly HediffDef Succubus_Drained;
+        public static readonly HediffDef rjw_genes_sexually_exhausted;
     }
 }

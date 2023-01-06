@@ -14,4 +14,12 @@
 		<reportString>Healing someone with sex.</reportString>
 		<casualInterruptible>false</casualInterruptible>
 	</JobDef>
+	
+	<JobDef>
+		<defName>rjw_genes_lifeforce_seduced</defName>
+		<driverClass>RJW_Genes.JobDriver_Seduced</driverClass>
+		<reportString>Seduced.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+		<playerInterruptible>false</playerInterruptible>
+	</JobDef>
 </Defs>

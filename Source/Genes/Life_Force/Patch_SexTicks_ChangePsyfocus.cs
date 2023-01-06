@@ -44,9 +44,6 @@ namespace RJW_Genes
 
 		public static void DrinkCumflation(Pawn dom, Pawn sub)
         {
-			Log.Message("Firese");
-			Log.Message(dom.Name.ToString());
-			Log.Message(sub.Name.ToString());
 			if (GeneUtility.HasLifeForce(sub) && dom.health.hediffSet.HasHediff(HediffDef.Named("Cumflation")))
 			{
 				Hediff cumflation = dom.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("Cumflation"));
@@ -55,6 +52,6 @@ namespace RJW_Genes
 				gene_LifeForce.Resource.Value += 0.05f;
 			}
 		}
-		//Maybe i can store instance and hediff so I dont need to look them up every time
+		//Maybe I can store gene and hediff so I dont need to look them up every time
 	}
 }

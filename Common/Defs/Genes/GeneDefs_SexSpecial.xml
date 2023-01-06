@@ -15,7 +15,7 @@
         <label>Aphrodisiac Pheromones</label>
         <displayCategory>rjw_genes_special</displayCategory>
 		<geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass>
-        <description>Pheremones of this pawn induce an increased sexdrive to others nearby.</description>
+        <description>Carriers of this gene create an aphrodisiac pheremones which induce an increased sexdrive to others nearby, increasing in strength as the sexdrive of the carrier increases.\nCarriers are unaffected by others with this gene.</description>
         <iconPath>UI/Memes/FleshPurity</iconPath>
         <displayOrderInCategory>2</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>

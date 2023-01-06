@@ -11,5 +11,8 @@ namespace RJW_Genes
     public static class JobDefOf
     {
         public static readonly JobDef rjw_genes_lifeforce_randomrape;
+        public static readonly JobDef rjw_genes_lifeforce_seduced;
+        public static readonly JobDef sex_on_spot;
+        public static readonly JobDef sex_on_spot_reciever;
     }
 }

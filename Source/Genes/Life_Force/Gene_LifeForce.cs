@@ -29,13 +29,10 @@ namespace RJW_Genes
 			{
 				yield return gizmo;
 			}
-			IEnumerator<Gizmo> enumerator = null;
 			foreach (Gizmo gizmo2 in GeneResourceDrainUtility.GetResourceDrainGizmos(this))
 			{
 				yield return gizmo2;
 			}
-			enumerator = null;
-			yield break;
 			yield break;
 		}
 
