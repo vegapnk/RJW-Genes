@@ -120,8 +120,6 @@
     <Compile Include="Genes\Life_Force\CompAbilityEffect_CockEater.cs" />
     <Compile Include="Genes\Life_Force\CompProperties_Seduce.cs" />
     <Compile Include="Genes\Life_Force\CompProperties_AbilityCockEater.cs" />
-    <Compile Include="Genes\Life_Force\HediffCompProperties_RemoveSubmit.cs" />
-    <Compile Include="Genes\Life_Force\HediffComp_RemoveSubmit.cs" />
     <Compile Include="Genes\Life_Force\IngestionOutcomeDoer_LifeForceOffset.cs" />
     <Compile Include="Genes\Life_Force\JobDriver_SexOnSpotReceiver.cs" />
     <Compile Include="Genes\Life_Force\JobDriver_SexOnSpot.cs" />

@@ -9,7 +9,7 @@
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-4.0</severityPerDay>
+				<severityPerDay>-24.0</severityPerDay>
 			</li>
 		</comps>
 		<stages>
@@ -85,25 +85,5 @@
 				</capMods>
 			</li>
 		</stages>
-	</HediffDef>
-	
-	<HediffDef>
-		<defName>rjw_genes_sexually_exhausted</defName>
-		<hediffClass>HediffWithComps</hediffClass>
-		<label>Exhausted</label>
-		<description>Has been exhaused due to sexual activities and needs a little break before being able to stand up again.\n\nWill remove submitting hediff.</description>
-		<defaultLabelColor>(1,1,1)</defaultLabelColor>
-		<stages>
-			<li>
-				<becomeVisible>true</becomeVisible>
-			</li>
-		</stages>
-		<comps>
-			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>300~900</disappearsAfterTicks>
-				<showRemainingTime>true</showRemainingTime>
-			</li>
-			<li Class="RJW_Genes.HediffCompProperties_RemoveSubmit"/>
-		</comps>
 	</HediffDef>
 </Defs>

@@ -143,7 +143,7 @@
 	<GeneDef>
 		<defName>rjw_genes_vaginal_absorber</defName>
 		<label>Vaginal Fertilin Absorber</label>
-		<description>Carriers of this gene are able to absorb ferilin through their vagina.</description>
+		<description>Carriers of this gene are able to absorb fertilin through their vagina.</description>
 		<iconPath>Things/Mote/Heart</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>2</displayOrderInCategory>
@@ -154,7 +154,7 @@
 	<GeneDef>
 		<defName>rjw_genes_anal_absorber</defName>
 		<label>Anal Fertilin Absorber</label>
-		<description>Carriers of this gene are able to absorb ferilin through their anus.</description>
+		<description>Carriers of this gene are able to absorb fertilin through their anus.</description>
 		<iconPath>Things/Mote/Heart</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>3</displayOrderInCategory>
@@ -165,7 +165,7 @@
 	<GeneDef>
 		<defName>rjw_genes_drainer</defName>
 		<label>vitality drainer</label>
-		<description>Carriers of this gene are able to absorb a great amount of ferilin by draining the vitality of the partner.</description>
+		<description>Carriers of this gene are able to absorb a great amount of fertilin by draining the vitality of the partner.</description>
 		<iconPath>Things/Mote/Heart</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>4</displayOrderInCategory>

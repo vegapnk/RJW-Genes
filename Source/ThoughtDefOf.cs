@@ -11,5 +11,6 @@ namespace RJW_Genes
 	public static class ThoughtDefOf
     {
         public static readonly ThoughtDef rjw_genes_cock_eaten;
+        public static readonly ThoughtDef rjw_genes_seduced;
     }
 }

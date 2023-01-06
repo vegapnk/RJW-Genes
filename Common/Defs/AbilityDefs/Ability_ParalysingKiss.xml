@@ -34,7 +34,7 @@
         <goodwillImpact>-15</goodwillImpact>
       </li>
       <li Class="CompProperties_AbilityFleckOnTarget">
-        <fleckDef>Heart</fleckDef> <!--Will change to kiss when I have a good icon/fleck for it-->.
+        <fleckDef>Heart</fleckDef> <!--Will change to kiss when I have a good icon/fleck for it-->
       </li>
 	  <li Class="RJW_Genes.CompProperties_AbilityLifeForceCost">
         <fertilinCost>0.05</fertilinCost>

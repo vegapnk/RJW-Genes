@@ -38,6 +38,7 @@ namespace RJW_Genes
 					if(partner != null)
                     {
 						partner.drafter.Drafted = false;
+						this.pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDefOf.rjw_genes_seduced, partner, null);
 						Job newJob = JobMaker.MakeJob(JobDefOf.sex_on_spot, pawn);
 						partner.jobs.StartJob(newJob, JobCondition.InterruptForced, null, false, true, null, null, false, false, null, false, true);
 					}
