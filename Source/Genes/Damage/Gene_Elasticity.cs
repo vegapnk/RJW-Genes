@@ -10,8 +10,6 @@ namespace RJW_Genes
     /// </summary>
     public class Gene_Elasticity : Gene
     {
-        
-        private int ticksToReset = RESET_INTERVAL; 
         private const int RESET_INTERVAL = 60000; // 60k should be 1 day 
 
         public override void PostAdd()
@@ -26,11 +24,8 @@ namespace RJW_Genes
         public override void Tick()
         {
             base.Tick();
-            --this.ticksToReset;
-            if (this.ticksToReset > 0)
-                return;
-            this.ticksToReset = RESET_INTERVAL;
-            ResetSeverity();
+            if (pawn.IsHashIntervalTick(RESET_INTERVAL))
+                ResetSeverity();
         }
 
         public override void PostRemove()

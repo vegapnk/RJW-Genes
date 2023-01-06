@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="FeelingBroken"]</xpath>
+		<value>    
+            <nullifyingGenes>
+                <li>rjw_genes_unbreakable</li>
+            </nullifyingGenes>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="GotRaped"]</xpath>
+		<value>  
+            <nullifyingGenes>
+                <li>rjw_genes_unbreakable</li>
+            </nullifyingGenes>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="GotAnalRaped"]</xpath>
+		<value>  
+            <nullifyingGenes>
+                <li>rjw_genes_unbreakable</li>
+            </nullifyingGenes>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="GotAnalRapedByFemale"]</xpath>
+		<value>  
+            <nullifyingGenes>
+                <li>rjw_genes_unbreakable</li>
+            </nullifyingGenes>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="GotRapedUnconscious"]</xpath>
+		<value>  
+            <nullifyingGenes>
+                <li>rjw_genes_unbreakable</li>
+            </nullifyingGenes>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="HateMyRapist"]</xpath>
+		<value>  
+            <nullifyingGenes>
+                <li>rjw_genes_unbreakable</li>
+            </nullifyingGenes>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="AllowedMeToGetRaped"]</xpath>
+		<value>  
+            <nullifyingGenes>
+                <li>rjw_genes_unbreakable</li>
+            </nullifyingGenes>
+		</value>
+	</Operation>
+
+</Patch>

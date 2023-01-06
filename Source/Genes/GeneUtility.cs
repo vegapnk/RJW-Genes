@@ -67,5 +67,15 @@ namespace RJW_Genes
             }
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_generous_donor);
         }
+
+        public static bool IsUnbreakable(Pawn pawn)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(GeneDefOf.rjw_genes_unbreakable);
+        }
+
     }
 }

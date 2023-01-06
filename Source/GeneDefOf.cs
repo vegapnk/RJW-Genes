@@ -67,6 +67,7 @@ namespace RJW_Genes
 
 		// Damage & Side Effects 
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_elasticity;
+		public static readonly GeneDef rjw_genes_unbreakable;
 
 		// Special
 		public static readonly GeneDef rjw_genes_orgasm_rush;
