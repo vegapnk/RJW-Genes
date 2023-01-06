@@ -48,7 +48,7 @@ RimWorld.GeneMaker:MakeGene (Verse.GeneDef,Verse.Pawn)
 
 Reason: 
 
-RJW covers some corner cases when the pawn is changed before creation. 
+RJW covers some corner cases when the pawn is changed before creation. This seems a bit legacy and related to Royalty-Content.
 
 Current Solution: 
 
@@ -56,9 +56,24 @@ Ignore this. The pawns seem to have the right sex and genitalia, I cannot "catch
 
 Aimed Solution: 
 
-Patch ChangeSex to skip for pawns with the two genes producing this.
+Patch RJW ChangeSex upstream to skip for pawns with the two genes producing this.
+
+## Error on Game Load:  Verse.GeneDef named rjw_genes_human_genitalia (wanter=genes)
+
+Error: Issue #4, Game throws a warning on load that some Genes were not found. 
+
+Reason: (Likely) because I removed some genes from Pre-Release to 1.0.0. Now some players have unknown definitions in their safe-files and Xenotype Defs. 
+The removed Genes were the ones that performed default behaviour (e.g. normal breast size, normal penis size, ...)
+
+Solution: Should be safe to ignore, when you get this on safe-load make a quick new safe. new safe should not throw the error. For Self-Made Xenotypes remove the Genes. 
+
+Sorry about this one, I know removal can break things but hey you were playing with the Prerelease! 
 
 ## Insect Breeder does not fertilize
+
+Update:
+
+We changed behaviour in [1.0.1](https://github.com/vegapnk/RJW-Genes/releases/tag/1.0.1) and it seems to work now. Please tell us if you still encounter this. 
 
 Error: 
 
