@@ -32,7 +32,7 @@ namespace RJW_Genes
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_youth_fountain);
         }
 
-        internal static bool IsAgeDrainer(Pawn pawn)
+        public static bool IsAgeDrainer(Pawn pawn)
         {
             if (pawn.genes == null)
             {
