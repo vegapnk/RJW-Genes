@@ -86,6 +86,24 @@ namespace RJW_Genes
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_insectincubator);
         }
 
+        public static bool IsYouthFountain(Pawn pawn)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(GeneDefOf.rjw_genes_youth_fountain);
+        }
+
+        internal static bool IsAgeDrainer(Pawn pawn)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(GeneDefOf.rjw_genes_sex_age_drain);
+        }
+
         public static bool IsInsectBreeder(Pawn pawn)
         {
             if (pawn.genes == null)
@@ -138,6 +156,15 @@ namespace RJW_Genes
                 return false;
             }
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_pussyhealer);
+        }
+
+        public static bool IsUnbreakable(Pawn pawn)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(GeneDefOf.rjw_genes_unbreakable);
         }
     }
 }

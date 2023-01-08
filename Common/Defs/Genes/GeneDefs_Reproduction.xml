@@ -21,6 +21,7 @@
         <displayCategory>Reproduction</displayCategory>
         <description>Xenotypes with this Gene are Rapists.</description>
         <iconPath>Genes/Icons/Rape</iconPath>
+        <biostatMet>1</biostatMet>
         <displayOrderInCategory>2</displayOrderInCategory>    
         <forcedTraits>
             <li>

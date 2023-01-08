@@ -1,44 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-
-    <!--TODO: The Baseline does not show up with human genitalia? -->
-	<!--
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/XenotypeDef[defName="Baseline"]</xpath>
-		<value>
-			<genes>
-				<li>rjw_genes_human_genitalia</li>
-				<li>rjw_genes_normal_anus</li>
-				<li>rjw_genes_normal_breasts</li>
-				<li>rjw_genes_normal_male_genitalia</li>
-				<li>rjw_genes_normal_female_genitalia</li>
-			</genes>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/XenotypeDef[defName="Dirtmole"]/genes</xpath>
-		<value>
-			<li>rjw_genes_human_genitalia</li>
-			<li>rjw_genes_normal_anus</li>
-			<li>rjw_genes_normal_breasts</li>
-			<li>rjw_genes_normal_male_genitalia</li>
-			<li>rjw_genes_normal_female_genitalia</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/XenotypeDef[defName="Hussar"]/genes</xpath>
-		<value>
-			<li>rjw_genes_human_genitalia</li>
-			<li>rjw_genes_normal_anus</li>
-			<li>rjw_genes_normal_breasts</li>
-			<li>rjw_genes_normal_male_genitalia</li>
-			<li>rjw_genes_normal_female_genitalia</li>
-		</value>
-	</Operation>
-    
-	-->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/XenotypeDef[defName="Neanderthal"]/genes</xpath>
 		<value>
@@ -77,16 +39,18 @@
 		</value>
 	</Operation>
 
+<!-- Conditional Patch, only add these Genes for players with Licentia 
+	I tried "mayRequire" but that cannot be put so fine-grained into the <li> -->
 	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>RimJobWorld - Licentia Labs</li>
-		</mods>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/XenotypeDef[defName="Highmate"]/genes</xpath>
-		<value>
-			<li>rjw_genes_likes_cumflation</li>
-		</value>
-		</match>
+    <mods>
+      <li>LustLicentia.RJWLabs</li>
+    </mods>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/XenotypeDef[defName="Highmate"]/genes</xpath>
+      <value>
+        <li>rjw_genes_likes_cumflation</li>
+      </value>
+    </match>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
