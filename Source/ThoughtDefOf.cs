@@ -12,5 +12,6 @@ namespace RJW_Genes
     {
         public static readonly ThoughtDef rjw_genes_cock_eaten;
         public static readonly ThoughtDef rjw_genes_seduced;
+        public static readonly ThoughtDef rjw_critical_fertilin;
     }
 }

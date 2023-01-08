@@ -25,7 +25,18 @@
 		<stages>
 			<li>
 				<label>seduced</label>
-				<description>I was seduced into having sex. I regrett what happened.</description>
+				<description>I was seduced into having sex. I regret what happened.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>rjw_critical_fertilin</defName>
+		<stages>
+			<li>
+				<label>low on fertilin</label>
+				<description>I'm almost out of fertilin. I'm scared of losing control.</description>
 				<baseMoodEffect>-10</baseMoodEffect>
 			</li>
 		</stages>

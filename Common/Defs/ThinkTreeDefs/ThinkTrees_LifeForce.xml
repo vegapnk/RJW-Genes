@@ -23,7 +23,13 @@
 									<subNodes>
 										<li Class="RJW_Genes.ThinkNode_ConditionalCritcalLifeForce">
 											<subNodes>
-												<li Class="rjw.JobGiver_RandomRape" />
+												<!--Maybe make a custom chance per hour to determine if pawn would consider rape-->
+												<li Class="ThinkNode_ChancePerHour_Constant">
+													<mtbHours>8</mtbHours>
+													<subNodes>
+														<li Class="rjw.JobGiver_RandomRape" />
+													</subNodes>
+												</li>
 												<li Class="rjw.ThinkNode_ConditionalBestiality">
 													<subNodes>
 														<li Class="rjw.ThinkNode_ChancePerHour_Bestiality">

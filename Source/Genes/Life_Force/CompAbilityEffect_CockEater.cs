@@ -39,7 +39,7 @@ namespace RJW_Genes
 
 					if (rjw.Genital_Helper.is_penis(part))
 					{
-						GeneUtility.OffsetLifeForce(this.parent.pawn, part.Severity); ;
+						GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(this.parent.pawn), part.Severity); ;
 						pawn.health.RemoveHediff(part);
 						pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDefOf.rjw_genes_cock_eaten, pawn, null);
 						break; //Only one penis at the time

@@ -71,7 +71,7 @@ namespace RJW_Genes
 				if (GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_drainer) && !props.pawn.health.hediffSet.HasHediff(HediffDefOf.Succubus_Drained))
 				{
 					props.pawn.health.AddHediff(HediffDefOf.Succubus_Drained);
-					GeneUtility.OffsetLifeForce(succubus, 0.25f);
+					GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(succubus), 0.25f);
 				}
 			}
 		}
@@ -103,7 +103,7 @@ namespace RJW_Genes
 			}
 			//Currently taking the sum of all penises, maybe I should just consider one at random
 			float valuechange = CumUtility.GetTotalFluidAmount(props.pawn) / 100 * absorb_factor * multiplier;
-			GeneUtility.OffsetLifeForce(props.partner, valuechange);
+			GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(props.partner), valuechange);
 			//gene.Resource.Value += CumUtility.GetTotalFluidAmount(props.pawn) / 100 * absorb_factor * multiplier;
 		}
 

@@ -43,7 +43,15 @@ namespace RJW_Genes
 			//base.Tick();
 			if (this.CanOffset && this.Resource != null)
             {
-				this.Resource.Value -= this.ResourceLossPerDay / 60000;
+				if (this.CanOffset)
+				{
+					if (this.Resource == null)
+					{
+						return;
+					}
+					GeneUtility.OffsetLifeForce(this, -this.ResourceLossPerDay / 60000f);
+				}
+				//this.Resource.Value -= this.ResourceLossPerDay / 60000;
 				if (this.Resource.Value <= 0 && this.pawn.IsHashIntervalTick(300))
 				{
 					if (ModsConfig.BiotechActive && this.def.mentalBreakDef != null && 

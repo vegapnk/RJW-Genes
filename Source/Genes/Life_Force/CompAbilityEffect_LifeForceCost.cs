@@ -37,7 +37,7 @@ namespace RJW_Genes
 		public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
 		{
 			base.Apply(target, dest);
-			GeneUtility.OffsetLifeForce(this.parent.pawn, -this.Props.fertilinCost, true);
+			GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(this.parent.pawn), -this.Props.fertilinCost, true);
 		}
 
 		// Token: 0x06005D1B RID: 23835 RVA: 0x001FA7E0 File Offset: 0x001F89E0

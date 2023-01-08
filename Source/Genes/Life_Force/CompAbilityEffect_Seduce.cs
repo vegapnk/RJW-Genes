@@ -26,8 +26,8 @@ namespace RJW_Genes
 			Pawn pawn2 = this.parent.pawn;
 			if (pawn != null && pawn2 != null && !pawn.Downed)
 			{
-				Job job = JobMaker.MakeJob(JobDefOf.rjw_genes_lifeforce_seduced, pawn2);//ChooseJob(pawn, pawn2);
-				job.mote = MoteMaker.MakeThoughtBubble(pawn, this.parent.def.iconPath, true); //make this image of pawn or else heart
+				Job job = JobMaker.MakeJob(JobDefOf.rjw_genes_lifeforce_seduced, pawn2);
+				job.mote = MoteMaker.MakeThoughtBubble(pawn, this.parent.def.iconPath, true);
 				pawn.jobs.StopAll(false, true);
 				pawn.jobs.StartJob(job, JobCondition.InterruptForced, null, false, true, null, null, false, false, null, false, true);
 			}

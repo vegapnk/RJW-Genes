@@ -15,7 +15,7 @@ namespace RJW_Genes
 			if (GeneUtility.HasLifeForce(pawn))
             {
 				float num = ingested.stackCount * this.FertilinPerUnit / 100;
-				GeneUtility.OffsetLifeForce(pawn, num);
+				GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(pawn), num);
 			}
 		}
 		public float FertilinPerUnit = 1f;

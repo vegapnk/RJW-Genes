@@ -15,21 +15,31 @@ namespace RJW_Genes
             return pawn.genes.HasGene(genedef);
         }
 
-        public static void OffsetLifeForce(Pawn pawn, float offset, bool applyStatFactor = true)
+        //Split function so I can offsetlifeforce from gene without needing to look for the gene agian (for the constant drain tick)
+        public static Gene_LifeForce GetLifeForceGene(Pawn pawn)
         {
-            if (!ModsConfig.BiotechActive)
-            {
-                return;
-            }
-            //if (offset > 0f && applyStatFactor)
-            //{
-            //    offset *= pawn.GetStatValue(StatDefOf.HemogenGainFactor, true, -1);
-            //}
             Pawn_GeneTracker genes2 = pawn.genes;
-            Gene_LifeForce gene_LifeFroce = (genes2 != null) ? genes2.GetFirstGeneOfType<Gene_LifeForce>() : null;
-            if (gene_LifeFroce != null)
+            Gene_LifeForce gene_LifeForce = (genes2 != null) ? genes2.GetFirstGeneOfType<Gene_LifeForce>() : null;
+            return gene_LifeForce;
+        }
+
+        public static void OffsetLifeForce(Gene_LifeForce gene_LifeForce, float offset, bool applyStatFactor = true)
+        {
+            if (gene_LifeForce != null)
             {
-                gene_LifeFroce.Value += offset;
+                float old_value = gene_LifeForce.Value;
+                gene_LifeForce.Value += offset;
+                PostOffSetLifeForce(gene_LifeForce, old_value);
+            }
+        }
+
+        public static void PostOffSetLifeForce(Gene_LifeForce gene_LifeForce, float old_value)
+        {
+            if (old_value > 0.15f && gene_LifeForce.Resource.Value <= 0.15f)
+            {
+                Pawn pawn = gene_LifeForce.Pawn;
+                
+                //Give thoughtdef
             }
         }
 
