@@ -10,6 +10,19 @@
         <iconPath>UI/Memes/FleshPurity</iconPath>
         <displayOrderInCategory>1</displayOrderInCategory>
     </GeneDef>
+	
+    <GeneDef>
+        <defName>rjw_genes_aphrodisiac_pheromones</defName>
+        <label>Aphrodisiac Pheromones</label>
+        <displayCategory>rjw_genes_special</displayCategory>
+		    <geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass>
+        <description>Carriers of this gene create an aphrodisiac pheremones which induce an increased sexdrive to others nearby, increasing in strength as the sexdrive of the carrier increases.\n\nCarriers are unaffected by others with this gene.</description>
+        <iconPath>Things/Mote/Heart</iconPath>
+        <displayOrderInCategory>2</displayOrderInCategory>
+		    <biostatCpx>1</biostatCpx>
+		    <biostatMet>1</biostatMet>
+    </GeneDef>
+
     
     <GeneDef>
         <defName>rjw_genes_youth_fountain</defName>
@@ -32,5 +45,4 @@
         <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
         <displayOrderInCategory>3</displayOrderInCategory>
     </GeneDef>
-    
 </Defs>

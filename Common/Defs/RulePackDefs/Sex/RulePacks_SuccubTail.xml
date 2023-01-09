@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<RulePackDef>
+		<defName>DomSuccubusTail_Tailjob_RP</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>sent-> [INITIATOR_nameDef] gave [RECIPIENT_nameDef] a tailjob.</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>DomSuccubusTail_Vaginal_RP</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>sent-> [INITIATOR_nameDef] [INITIATOR_possessive] tail was vaginally inserted into [RECIPIENT_nameDef].</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>DomSuccubusTail_Anal_RP</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>sent-> [INITIATOR_nameDef] [INITIATOR_possessive] tail was anally inserted into [RECIPIENT_nameDef].</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<!--Top of tail opens up and evelops the penis-->
+	<RulePackDef>
+		<defName>DomSuccubusTail_Envelop_RP</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>sent-> [RECIPIENT_nameDef] dick was enveloped by [INITIATOR_nameDef] [INITIATOR_possessive] tail.</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>SubSuccubusTail_Tailjob_RP</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>sent-> [RECIPIENT_nameDef] gave [INITIATOR_nameDef] a tailjob.</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>SubSuccubusTail_Vaginal_RP</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>sent-> [RECIPIENT_nameDef] [RECIPIENT_possessive] tail was vaginally inserted into [INITIATOR_nameDef].</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>SubSuccubusTail_Anal_RP</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>sent-> [RECIPIENT_nameDef] [RECIPIENT_possessive] tail was anally inserted into [INITIATOR_nameDef].</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<!--Top of tail opens up and evelops the penis-->
+	<RulePackDef>
+		<defName>SubSuccubusTail_Envelop_RP</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>sent-> [INITIATOR_nameDef] dick was enveloped by [RECIPIENT_nameDef] [RECIPIENT_possessive] tail.</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

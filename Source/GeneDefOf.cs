@@ -71,10 +71,21 @@ namespace RJW_Genes
 
 		// Special
 		public static readonly GeneDef rjw_genes_orgasm_rush;
+		public static readonly GeneDef rjw_genes_aphrodisiac_pheromones;
+
+		// LifeForce
+		public static readonly GeneDef rjw_genes_lifeforce;
+		public static readonly GeneDef rjw_genes_pussyhealer;
+		public static readonly GeneDef rjw_genes_vaginal_absorber;
+		public static readonly GeneDef rjw_genes_anal_absorber;
+		public static readonly GeneDef rjw_genes_drainer;
+
+		// Cosmetic
+		public static readonly GeneDef rjw_genes_succubus_tail;
+
+
 		public static readonly GeneDef rjw_genes_youth_fountain;
 		public static readonly GeneDef rjw_genes_sex_age_drain;
-
-
 		public static readonly HediffDef rjw_genes_orgasm_rush_hediff;
 	}
 }

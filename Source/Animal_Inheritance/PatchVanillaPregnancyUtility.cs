@@ -22,6 +22,10 @@ namespace RJW_BGS
         [HarmonyPostfix]
         public static void AnimalInheritedGenes(Pawn father, Pawn mother, ref GeneSet __result)
         {
+            if (!RJW_BGSSettings.enabled)
+            {
+                return;
+            }
             List<GeneDef> genes = InheritanceUtility.AnimalInheritedGenes(father, mother);
             if (genes.Any())
             {
@@ -29,7 +33,7 @@ namespace RJW_BGS
                 {
                     __result.AddGene(gene);
                 }
-            }        
+            }
         }
     }
 }

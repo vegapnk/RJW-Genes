@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!--If below low try get some, if critical also consider rape, also a chance to do bestiality 
+		First try and obtain by normal sex, then try to eat gathercum (sexperience)
+		If these fail try rape and a small chance for bestiality
+	-->
+	<ThinkTreeDef>
+		<defName>SuccubusGetLifeForce</defName>
+		<insertTag>Humanlike_PostMain</insertTag>
+		<insertPriority>14</insertPriority>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="RJW_Genes.ThinkNode_ConditionalLowLifeForce">
+					<subNodes>
+							<li Class="rjw.ThinkNode_ConditionalSexChecks">
+							<subNodes>
+								<li Class="JobGiver_DoLovin"/>
+								<li Class="rjw.JobGiver_JoininBed"/>
+								<li Class="rjw.JobGiver_ComfortPrisonerRape" />
+								<li Class="RJW_Genes.JobGiver_GetLifeForce"/>
+								<li Class="rjw.ThinkNode_ConditionalCanRapeCP">
+									<subNodes>
+										<li Class="RJW_Genes.ThinkNode_ConditionalCritcalLifeForce">
+											<subNodes>
+												<!--Maybe make a custom chance per hour to determine if pawn would consider rape-->
+												<li Class="ThinkNode_ChancePerHour_Constant">
+													<mtbHours>8</mtbHours>
+													<subNodes>
+														<li Class="rjw.JobGiver_RandomRape" />
+													</subNodes>
+												</li>
+												<li Class="rjw.ThinkNode_ConditionalBestiality">
+													<subNodes>
+														<li Class="rjw.ThinkNode_ChancePerHour_Bestiality">
+															<subNodes>
+																<li Class="rjw.JobGiver_Bestiality" />
+															</subNodes>
+														</li>
+													</subNodes>
+												</li>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+</Defs>

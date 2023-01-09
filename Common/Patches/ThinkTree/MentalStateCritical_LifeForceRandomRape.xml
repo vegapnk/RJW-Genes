@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Copied from Vanilla BingingDrug. live selfish till rape someone. In the future add others ways to obtain lifeforce. -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThinkTreeDef[defName="MentalStateCritical"]/thinkRoot[@Class="ThinkNode_Tagger"]/subNodes</xpath>
+		<value>
+			<li Class="ThinkNode_ConditionalMentalState">
+				<state>rjw_genes_lifeforce_randomrape</state>
+				<subNodes>
+					<li Class="ThinkNode_ConditionalNeedPercentageAbove">
+						<need>Rest</need>
+						<threshold>0.05</threshold>
+						<invert>true</invert>
+						<subNodes>
+							<li Class="JobGiver_GetRest"/>
+						</subNodes>
+					</li>
+					<li Class="ThinkNode_PrioritySorter">
+						<minPriority>0.5</minPriority>
+						<subNodes>
+							<li Class="JobGiver_GetFood"/>
+							<li Class="ThinkNode_Priority_GetJoy">
+								<subNodes>
+									<li Class="JobGiver_GetJoy"/>
+								</subNodes>
+							</li>
+						</subNodes>
+					</li>
+					<li Class="rjw.JobGiver_RandomRape"/>
+					<li Class="JobGiver_WanderColony" />
+				</subNodes>
+			</li>
+		</value>
+	</Operation>
+</Patch>

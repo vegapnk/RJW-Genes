@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Verse;
 using UnityEngine;
 
-namespace RJW_Genes.Animal_Inheritance
+namespace RJW_BGS
 {
     public class RJW_BGSSettingsController : Mod
     {

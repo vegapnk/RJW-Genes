@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThoughtDef>
+		<defName>rjw_genes_cock_eaten</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>30.0</durationDays>
+		<stackLimit>100</stackLimit>
+		<stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>cock eaten</label>
+				<description>My cock was eaten directly of my body, I am devestated.</description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>rjw_genes_seduced</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>10.0</durationDays>
+		<stackLimit>100</stackLimit>
+		<stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>seduced</label>
+				<description>I was seduced into having sex. I regret what happened.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>rjw_critical_fertilin</defName>
+		<stages>
+			<li>
+				<label>low on fertilin</label>
+				<description>I'm almost out of fertilin. I'm scared of losing control.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>
