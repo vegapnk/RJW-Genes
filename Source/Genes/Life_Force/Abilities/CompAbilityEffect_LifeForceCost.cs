@@ -8,11 +8,9 @@ using Verse.AI;
 using RimWorld;
 namespace RJW_Genes
 {
-	// Token: 0x02000F66 RID: 3942
 	public class CompAbilityEffect_LifeForceCost : CompAbilityEffect
 	{
-		// Token: 0x17000FFB RID: 4091
-		// (get) Token: 0x06005D18 RID: 23832 RVA: 0x001FA767 File Offset: 0x001F8967
+
 		public new CompProperties_AbilityLifeForceCost Props
 		{
 			get
@@ -21,8 +19,6 @@ namespace RJW_Genes
 			}
 		}
 
-		// Token: 0x17000FFC RID: 4092
-		// (get) Token: 0x06005D19 RID: 23833 RVA: 0x001FA774 File Offset: 0x001F8974
 		private bool HasEnoughFertilin
 		{
 			get
@@ -33,14 +29,13 @@ namespace RJW_Genes
 			}
 		}
 
-		// Token: 0x06005D1A RID: 23834 RVA: 0x001FA7B7 File Offset: 0x001F89B7
 		public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
 		{
 			base.Apply(target, dest);
-			GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(this.parent.pawn), -this.Props.fertilinCost, true);
+			GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(this.parent.pawn), -this.Props.fertilinCost);
 		}
 
-		// Token: 0x06005D1B RID: 23835 RVA: 0x001FA7E0 File Offset: 0x001F89E0
+
 		public override bool GizmoDisabled(out string reason)
 		{
 			Pawn_GeneTracker genes = this.parent.pawn.genes;
@@ -111,8 +106,7 @@ namespace RJW_Genes
 			}
 			return num2;
 		}
-		
-		//Modified version of HemogenCost in Ability
+
 		
 	}
 }

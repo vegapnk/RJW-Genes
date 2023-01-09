@@ -6,18 +6,35 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 using RimWorld;
-
+using rjw;
 
 namespace RJW_Genes
 {
     public class Gene_LifeForce : Gene_Resource, IGeneResourceDrain
 	{
-		public override void ExposeData()
+        //Gene should only be active if sex is allowed for this pawn 
+        public override bool Active
 		{
-			base.ExposeData();
+			get
+			{
+				if (this.Overridden)
+				{
+					return false;
+				}
+				Pawn pawn = this.pawn;
+				
+				return ((pawn != null) ? pawn.ageTracker : null) == null || 
+					((float)this.pawn.ageTracker.AgeBiologicalYears >= this.def.minAgeActive && this.pawn.ageTracker.AgeBiologicalYears >= (RJWSettings.AllowYouthSex ? 13f : 18f));
+			}
 		}
 
-		public bool ShouldConsumeLifeForceNow()
+        public override void ExposeData()
+        {
+            base.ExposeData();
+			Scribe_Values.Look<bool>(ref this.StoredCumAllowed, "StoredCumAllowed", true, false);
+		}
+
+        public bool ShouldConsumeLifeForceNow()
 		{
 			return this.Value < this.targetValue;
 		}
@@ -43,14 +60,7 @@ namespace RJW_Genes
 			//base.Tick();
 			if (this.CanOffset && this.Resource != null)
             {
-				if (this.CanOffset)
-				{
-					if (this.Resource == null)
-					{
-						return;
-					}
-					GeneUtility.OffsetLifeForce(this, -this.ResourceLossPerDay / 60000f);
-				}
+				GeneUtility.OffsetLifeForce(this, -this.ResourceLossPerDay / 60000f);
 				//this.Resource.Value -= this.ResourceLossPerDay / 60000;
 				if (this.Resource.Value <= 0 && this.pawn.IsHashIntervalTick(300))
 				{
@@ -62,11 +72,9 @@ namespace RJW_Genes
 					}
 				}
             }
-			//GeneResourceDrainUtility.TickResourceDrain(this);
 		}
 
 		public bool StoredCumAllowed = true;
-
 		public Gene_Resource Resource
 		{
 			get
@@ -117,7 +125,7 @@ namespace RJW_Genes
 		{
 			get
 			{
-				return 0.15f;
+				return 0.2f;
 			}
 		}
 		public override float MaxLevelOffset

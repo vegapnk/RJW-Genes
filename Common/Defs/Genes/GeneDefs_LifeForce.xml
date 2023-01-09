@@ -3,10 +3,10 @@
 	<GeneDef>
 		<defName>rjw_genes_lifeforce</defName>
 		<label>fertilin</label>
-		<description>Carriers of this gene have a reserve of biological strength powered by a resource called fertilin. The resource can be gained and spent in various ways, all of which are unlocked by other genes.\n\nCarriers lose 10 lifeforce per day from biological entropy.</description>
+		<description>Carriers of this gene have a reserve of biological strength powered by a resource called fertilin. The resource can be gained and spent in various ways, some of which are unlocked by other genes.\n\nCarriers lose 5 fertilin per day from biological entropy. \n\nGene is inactive until carrier is able to have sex.</description>
 		<geneClass>RJW_Genes.Gene_LifeForce</geneClass>
 		<resourceGizmoType>RJW_Genes.GeneGizmo_ResourceLifeForce</resourceGizmoType>
-		<resourceLabel>lifeforce</resourceLabel>
+		<resourceLabel>fertilin</resourceLabel>
 		<resourceGizmoThresholds>
 		  <li>0.25</li>
 		  <li>0.5</li>
@@ -28,10 +28,25 @@
 		  </prefixSymbols>
 		</symbolPack>
 		<mentalBreakDef>rjw_genes_lifeforce_randomrape</mentalBreakDef>
-		<minAgeActive>18</minAgeActive>
 		<resourceLossPerDay>0.05</resourceLossPerDay>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>1</biostatMet>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>LifeForceDrain</defName>
+		<label>fertilin drain</label>
+		<labelShortAdj>draining</labelShortAdj>
+		<description>Carriers lose an additional 15 fertilin per day from biological entropy.</description>
+		<resourceLabel>fertilin</resourceLabel>
+		<geneClass>RJW_Genes.Gene_LifeForceDrain</geneClass>
+		<iconPath>UI/Icons/Genes/Gene_HemogenDrain</iconPath>
+		<prerequisite>rjw_genes_lifeforce</prerequisite>
+		<resourceLossPerDay>0.15</resourceLossPerDay>
+		<displayCategory>rjw_genes_fertilin</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>6</biostatMet>
 	</GeneDef>
 	
 	<GeneDef>
@@ -41,7 +56,7 @@
 		<description>Carriers of this gene are able use vaginal sex to tend to other's wounds.</description>
 		<iconPath>Things/Mote/Heart</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
-		<displayOrderInCategory>10</displayOrderInCategory>
+		<displayOrderInCategory>9</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<abilities>
 			<li>rjw_genes_pussyheal</li>
@@ -51,7 +66,6 @@
 		</descriptionHyperlinks>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
-		<minAgeActive>18</minAgeActive>
 		<symbolPack>
 			<suffixSymbols>
 				<li><symbol>life</symbol></li>
@@ -78,7 +92,6 @@
 		</descriptionHyperlinks>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
-		<minAgeActive>18</minAgeActive>
 		<symbolPack>
 			<suffixSymbols>
 				<li><symbol>life</symbol></li>
@@ -95,7 +108,7 @@
 		<description>Carriers of this gene are able to briefly stun an enemy with a kiss.</description>
 		<iconPath>Things/Mote/Heart</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
-		<displayOrderInCategory>11</displayOrderInCategory>
+		<displayOrderInCategory>12</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<abilities>
 			<li>rjw_genes_paralysingkiss</li>
@@ -105,7 +118,6 @@
 		</descriptionHyperlinks>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
-		<minAgeActive>18</minAgeActive>
 		<symbolPack>
 			<suffixSymbols>
 				<li><symbol>stun</symbol></li>
@@ -121,7 +133,7 @@
 		<description>Carriers of this gene are able to seduce a pawn into having sex with them.</description>
 		<iconPath>Things/Mote/Heart</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
-		<displayOrderInCategory>11</displayOrderInCategory>
+		<displayOrderInCategory>13</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<abilities>
 			<li>rjw_genes_seduce</li>
@@ -131,7 +143,7 @@
 		</descriptionHyperlinks>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
-		<minAgeActive>18</minAgeActive>
+		
 		<symbolPack>
 			<suffixSymbols>
 				<li><symbol>stun</symbol></li>

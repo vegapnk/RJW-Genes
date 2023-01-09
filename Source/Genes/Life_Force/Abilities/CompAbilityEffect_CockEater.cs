@@ -37,7 +37,7 @@ namespace RJW_Genes
 					if (GenitaliaChanger.IsArtificial(part))
 						continue;
 
-					if (rjw.Genital_Helper.is_penis(part))
+					if (Genital_Helper.is_penis(part))
 					{
 						GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(this.parent.pawn), part.Severity); ;
 						pawn.health.RemoveHediff(part);
@@ -82,6 +82,18 @@ namespace RJW_Genes
 				}
 			}
 			return base.Valid(target, throwMessages);
+		}
+		public override bool GizmoDisabled(out string reason)
+		{
+			Pawn_GeneTracker genes = this.parent.pawn.genes;
+			Gene_LifeForce gene_LifeForce = (genes != null) ? genes.GetFirstGeneOfType<Gene_LifeForce>() : null;
+			if (gene_LifeForce == null)
+			{
+				reason = "AbilityDisabledNoFertilinGene".Translate(this.parent.pawn);
+				return true;
+			}
+			reason = null;
+			return false;
 		}
 	}
 }

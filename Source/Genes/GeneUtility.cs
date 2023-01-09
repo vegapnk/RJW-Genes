@@ -18,28 +18,25 @@ namespace RJW_Genes
         //Split function so I can offsetlifeforce from gene without needing to look for the gene agian (for the constant drain tick)
         public static Gene_LifeForce GetLifeForceGene(Pawn pawn)
         {
-            Pawn_GeneTracker genes2 = pawn.genes;
-            Gene_LifeForce gene_LifeForce = (genes2 != null) ? genes2.GetFirstGeneOfType<Gene_LifeForce>() : null;
+            Pawn_GeneTracker genes = pawn.genes;
+            Gene_LifeForce gene_LifeForce = genes.GetFirstGeneOfType<Gene_LifeForce>();
             return gene_LifeForce;
         }
 
-        public static void OffsetLifeForce(Gene_LifeForce gene_LifeForce, float offset, bool applyStatFactor = true)
-        {
-            if (gene_LifeForce != null)
-            {
-                float old_value = gene_LifeForce.Value;
-                gene_LifeForce.Value += offset;
-                PostOffSetLifeForce(gene_LifeForce, old_value);
-            }
+        public static void OffsetLifeForce(IGeneResourceDrain drain, float offset)
+        {                
+            float old_value = drain.Resource.Value;
+            drain.Resource.Value += offset;
+            //PostOffSetLifeForce(drain, old_value);     
         }
 
-        public static void PostOffSetLifeForce(Gene_LifeForce gene_LifeForce, float old_value)
+        public static void PostOffSetLifeForce(IGeneResourceDrain drain, float old_value)
         {
-            if (old_value > 0.15f && gene_LifeForce.Resource.Value <= 0.15f)
+            if (old_value > 0.2f && drain.Resource.Value <= 0.2f)
             {
-                Pawn pawn = gene_LifeForce.Pawn;
+                Pawn pawn = drain.Pawn;
                 
-                //Give thoughtdef
+                //Do things
             }
         }
 
