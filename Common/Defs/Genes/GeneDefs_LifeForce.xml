@@ -34,7 +34,7 @@
 	</GeneDef>
 	
 	<GeneDef>
-		<defName>LifeForceDrain</defName>
+		<defName>rjw_genes_lifeforcedrain</defName>
 		<label>fertilin drain</label>
 		<labelShortAdj>draining</labelShortAdj>
 		<description>Carriers lose an additional 15 fertilin per day from biological entropy.</description>
@@ -50,7 +50,7 @@
 	</GeneDef>
 	
 	<GeneDef>
-		<defName>rjw_genes_pussyhealer</defName>
+		<defName>rjw_genes_pussyhealing</defName>
 		<label>Pussy Healer</label>
 		<labelShortAdj>pussyhealer</labelShortAdj>
 		<description>Carriers of this gene are able use vaginal sex to tend to other's wounds.</description>

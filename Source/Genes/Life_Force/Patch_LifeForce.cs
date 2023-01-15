@@ -7,7 +7,6 @@ using System.Text;
 using System.Threading.Tasks;
 using RimWorld;
 using Verse;
-
 namespace RJW_Genes
 {
 
@@ -114,30 +113,6 @@ namespace RJW_Genes
 			if (props.sexType == xxx.rjwSextype.Sixtynine)
 			{
 				absorb_factor += 1f;
-
-			}
-			else if (props.sexType == xxx.rjwSextype.Vaginal)
-			{
-				//with insertion absorbtion or vaginal cum absorbtion 
-				//absorb_factor += 1f;
-			}
-			else if (props.sexType == xxx.rjwSextype.DoublePenetration)
-			{
-				if (GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_vaginal_absorber))
-				{
-					//with insertion absorbtion?
-					//absorb_factor += 0.5f;
-				}
-				if (GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_anal_absorber))
-				{
-					//with insertion absorbtion?
-					//absorb_factor += 0.5f;
-				}
-			}
-			else if (props.sexType == xxx.rjwSextype.Scissoring)
-			{
-				//with vaginal cum absorption && vaginal absorbtion
-				//absorb_factor += 1f;
 			}
 			return absorb_factor;
 		}
@@ -148,7 +123,6 @@ namespace RJW_Genes
 			if (props.sexType == xxx.rjwSextype.Oral || props.sexType == xxx.rjwSextype.Fellatio || props.sexType == xxx.rjwSextype.Sixtynine)
 			{
 				absorb_factor += 1f;
-
 			}
 			else if (props.sexType == xxx.rjwSextype.Vaginal && GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_vaginal_absorber))
 			{

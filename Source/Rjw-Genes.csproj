@@ -28,6 +28,7 @@
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="LicentiaLabs">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\licentia-labs-master\Assemblies\LicentiaLabs.dll</HintPath>
@@ -35,6 +36,7 @@
     </Reference>
     <Reference Include="RJW">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rjw-master\1.4\Assemblies\RJW.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,6 +56,7 @@
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
@@ -122,6 +125,7 @@
     <Compile Include="Genes\Life_Force\Abilities\CompProperties_Seduce.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompProperties_AbilityCockEater.cs" />
     <Compile Include="Genes\Life_Force\Gene_LifeForceDrain.cs" />
+    <Compile Include="Genes\Life_Force\IncidentWorker_SuccubusDreamVisit.cs" />
     <Compile Include="Genes\Life_Force\IngestionOutcomeDoer_LifeForceOffset.cs" />
     <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_SexOnSpotReceiver.cs" />
     <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_SexOnSpot.cs" />
@@ -155,7 +159,7 @@
     <Compile Include="HediffDefOf.cs" />
     <Compile Include="Interactions\CustomSexInteraction_Helper.cs" />
     <Compile Include="Interactions\GenesPartKindUsageRule.cs" />
-    <Compile Include="Interactions\SubSuccubusTailCustomRequirementHandler - Copy.cs" />
+    <Compile Include="Interactions\SubSuccubusTailCustomRequirementHandler.cs" />
     <Compile Include="Interactions\DomSuccubusTailCustomRequirementHandler.cs" />
     <Compile Include="JobDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

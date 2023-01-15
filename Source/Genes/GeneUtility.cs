@@ -162,7 +162,7 @@ namespace RJW_Genes
             {
                 return false;
             }
-            return pawn.genes.HasGene(GeneDefOf.rjw_genes_pussyhealer);
+            return pawn.genes.HasGene(GeneDefOf.rjw_genes_pussyhealing);
         }
 
         public static bool IsUnbreakable(Pawn pawn)
