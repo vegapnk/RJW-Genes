@@ -79,6 +79,7 @@ namespace RJW_Genes
 
 		// LifeForce
 		public static readonly GeneDef rjw_genes_lifeforce;
+		public static readonly GeneDef rjw_genes_lifeforce_drain;
 		public static readonly GeneDef rjw_genes_pussyhealer;
 		public static readonly GeneDef rjw_genes_vaginal_absorber;
 		public static readonly GeneDef rjw_genes_anal_absorber;
@@ -86,7 +87,8 @@ namespace RJW_Genes
 
 		// Cosmetic
 		public static readonly GeneDef rjw_genes_succubus_tail;
+		public static readonly GeneDef rjw_genes_succubus_wings;
 
-    	// Others & Non-Genes
+		// Others & Non-Genes
 	}
 }
