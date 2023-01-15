@@ -6,6 +6,7 @@ Features:
 - Orgasm Rush got a Hediff
 - Unbreakable Gene
 - Age-Transfer and Youth-Fountain per Sex Gene 
+- Bisexual and Homosexual Genes with Placeholder Icon
 - Balancing some Genes by changing metabolism and complexity
 
 Succubus:
