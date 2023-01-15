@@ -15,6 +15,7 @@ Fixes:
 
 - Issue with Breast-Size (#8) fixed by lowercasing breast-match (Shabakur) 
 - Error on Game Load when Licentia Genes are tried to be added to Xenotypes for players without Licentia (#5)
+- Futa Gene only triggers if Pawn is not a futa already (#2)
 
 # 1.0.1 (2022-12-20)
 
