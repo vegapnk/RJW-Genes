@@ -1,22 +1,12 @@
-﻿namespace RJW_Genes
+﻿using Verse;
+
+namespace RJW_Genes
 {
-    public class Gene_LooseFemaleGenitalia : RJW_Gene
+    public class Gene_LooseFemaleGenitalia : Gene_GenitaliaResizingGene
     {
-
-        public override void PostMake()
+        public override void Resize()
         {
-            base.PostMake();
-
             SizeAdjuster.AdjustAllVaginaSizes(pawn, 0.5f, 1.0f);
         }
-        
-        public override void PostAdd()
-        {
-            base.PostAdd();
-            SizeAdjuster.AdjustAllVaginaSizes(pawn, 0.5f, 1.0f);
-        }
-
-
-
     }
 }

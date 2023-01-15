@@ -1,11 +1,8 @@
-﻿using System;
+﻿using rjw;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using rjw;
 using Verse;
-using RimWorld;
 
 namespace RJW_BGS
 {
@@ -44,6 +41,7 @@ namespace RJW_BGS
 			}).ToList<RaceGeneDef>();
 			if (pawnKindDefs.Count() > 0)
 				return pawnKindDefs;
+
 			List<RaceGeneDef> raceKindDefs = allDefs.Where(delegate (RaceGeneDef group)
 			{
 				List<string> raceNames = group.raceNames;
@@ -51,6 +49,7 @@ namespace RJW_BGS
 			}).ToList<RaceGeneDef>();
 			if (raceKindDefs.Count() > 0)
 				return raceKindDefs;
+
 			List<RaceGeneDef> raceGroupDefs = new List<RaceGeneDef>();
 			if (raceGroupDef != null)
 			{
@@ -62,8 +61,10 @@ namespace RJW_BGS
 							|| (list_raceGroupDefName != null && list_raceGroupDefName.Contains(raceGroupDef.defName));
 				}).ToList<RaceGeneDef>();
 			}
+
 			if (raceGroupDefs.Count() > 0)
 				return raceGroupDefs;
+
 			return new List<RaceGeneDef>();
 		}
     } 

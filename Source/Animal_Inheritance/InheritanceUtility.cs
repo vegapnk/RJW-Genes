@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 using RimWorld;
+using rjw;
 
 namespace RJW_BGS
 {
@@ -120,5 +121,22 @@ namespace RJW_BGS
             }
         }
 
+        /// <summary>
+        /// Used only for debugging, to see what you loaded and how it looks.
+        /// </summary>
+        private static void logAllFoundRaceGroupGenes()
+        {
+            foreach (RaceGroupDef def in DefDatabase<RaceGroupDef>.AllDefs)
+            {
+                Log.Message("defName = " + def.defName);
+                if (def.raceNames != null)
+                {
+                    foreach (string race in def.raceNames)
+                    {
+                        Log.Message(race);
+                    }
+                }
+            }
+        }
     }
 }

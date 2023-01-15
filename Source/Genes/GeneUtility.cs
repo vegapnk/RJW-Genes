@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Verse;
 
 namespace RJW_Genes
@@ -21,6 +22,24 @@ namespace RJW_Genes
                 return false;
             }
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_insectincubator);
+        }
+
+        public static bool IsYouthFountain(Pawn pawn)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(GeneDefOf.rjw_genes_youth_fountain);
+        }
+
+        public static bool IsAgeDrainer(Pawn pawn)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(GeneDefOf.rjw_genes_sex_age_drain);
         }
 
         public static bool IsInsectBreeder(Pawn pawn)
@@ -66,6 +85,36 @@ namespace RJW_Genes
                 return false;
             }
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_generous_donor);
+        }
+
+        public static bool IsUnbreakable(Pawn pawn)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(GeneDefOf.rjw_genes_unbreakable);
+        }
+
+
+        public static bool HasGenitaliaResizingGenes(Pawn pawn)
+        {
+            return !GetGenitaliaResizingGenes(pawn).NullOrEmpty();
+        }
+
+        public static List<Gene_GenitaliaResizingGene> GetGenitaliaResizingGenes(Pawn pawn)
+        {
+            var ResizingGenes = new List<Gene_GenitaliaResizingGene>();
+
+            // Error Handling: Issue with Pawn or Genes return empty.
+            if (pawn == null || pawn.genes == null)
+                return ResizingGenes;
+
+            foreach (Gene gene in pawn.genes.GenesListForReading)
+                if (gene is Gene_GenitaliaResizingGene resizing_gene)
+                    ResizingGenes.Add(resizing_gene);
+
+            return ResizingGenes;
         }
     }
 }

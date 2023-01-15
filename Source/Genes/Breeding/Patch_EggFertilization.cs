@@ -14,9 +14,8 @@ namespace RJW_Genes
     /// Normal Egg-Pregnancy logic is in https://gitgud.io/Ed86/rjw/-/blob/master/1.4/Source/Modules/Pregnancy/Pregnancy_Helper.cs
     /// </summary>
     [HarmonyPatch(typeof(SexUtility), "Aftersex")]
-    static class PatchEggFertilizationHelper
+    static class Patch_EggFertilization
     {
-        [HarmonyTranspiler]
         public static void Postfix(SexProps props)
         {
             // Only Fertilize on vaginal / anal sex
@@ -59,7 +58,7 @@ namespace RJW_Genes
         }
 
 
-        private static Boolean canDoEggFertilization(Pawn a, Pawn b)
+        private static bool canDoEggFertilization(Pawn a, Pawn b)
         {
 
             // No Partner / Other Errors
