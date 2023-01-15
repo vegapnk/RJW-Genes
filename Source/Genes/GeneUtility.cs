@@ -1,11 +1,46 @@
 ﻿using System;
 using System.Collections.Generic;
 using Verse;
-
+using RimWorld;
 namespace RJW_Genes
 {
     public class GeneUtility
     {
+        //Instead of seperate functions this should be simpeler
+        public static bool HasGeneNullCheck(Pawn pawn, GeneDef genedef)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(genedef);
+        }
+
+        //Split function so I can offsetlifeforce from gene without needing to look for the gene agian (for the constant drain tick)
+        public static Gene_LifeForce GetLifeForceGene(Pawn pawn)
+        {
+            Pawn_GeneTracker genes = pawn.genes;
+            Gene_LifeForce gene_LifeForce = genes.GetFirstGeneOfType<Gene_LifeForce>();
+            return gene_LifeForce;
+        }
+
+        public static void OffsetLifeForce(IGeneResourceDrain drain, float offset)
+        {                
+            float old_value = drain.Resource.Value;
+            drain.Resource.Value += offset;
+            //PostOffSetLifeForce(drain, old_value);     
+        }
+
+        public static void PostOffSetLifeForce(IGeneResourceDrain drain, float old_value)
+        {
+            if (old_value > 0.2f && drain.Resource.Value <= 0.2f)
+            {
+                Pawn pawn = drain.Pawn;
+                
+                //Do things
+            }
+        }
+
         public static bool IsMechbreeder(Pawn pawn)
         {
             if (pawn.genes == null)
@@ -13,6 +48,41 @@ namespace RJW_Genes
                 return false;
             }
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_mechbreeder);
+        }
+
+        public static bool HasLifeForce(Pawn pawn)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(GeneDefOf.rjw_genes_lifeforce);
+        }
+
+        public static bool HasLowLifeForce(Pawn pawn)
+        {
+            if (HasLifeForce(pawn))
+            {
+                Gene_LifeForce gene = pawn.genes.GetFirstGeneOfType<Gene_LifeForce>();
+                if (gene.Resource.Value < gene.targetValue)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public static bool HasCriticalLifeForce(Pawn pawn)
+        {
+            if (HasLifeForce(pawn))
+            {
+                Gene_LifeForce gene = pawn.genes.GetFirstGeneOfType<Gene_LifeForce>();
+                if (gene.Resource.Value < gene.MinLevelForAlert)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         public static bool IsInsectIncubator(Pawn pawn)
@@ -87,6 +157,15 @@ namespace RJW_Genes
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_generous_donor);
         }
 
+        public static bool isPussyHealer(Pawn pawn)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(GeneDefOf.rjw_genes_pussyhealer);
+        }
+
         public static bool IsUnbreakable(Pawn pawn)
         {
             if (pawn.genes == null)
@@ -95,6 +174,7 @@ namespace RJW_Genes
             }
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_unbreakable);
         }
+<<<<<<< HEAD
 
 
         public static bool HasGenitaliaResizingGenes(Pawn pawn)
@@ -116,5 +196,7 @@ namespace RJW_Genes
 
             return ResizingGenes;
         }
+=======
+>>>>>>> 09157e923d5c4c4cf71d79cb0af665ffd6a7c536
     }
 }

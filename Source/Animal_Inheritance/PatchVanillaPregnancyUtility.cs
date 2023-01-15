@@ -35,7 +35,7 @@ namespace RJW_BGS
                 {
                     __result.AddGene(gene);
                 }
-            }        
+            }
         }
     }
 }

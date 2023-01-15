@@ -38,6 +38,12 @@
   </GeneCategoryDef>
 
   <GeneCategoryDef>
+    <defName>rjw_genes_fertilin</defName>
+    <label>Fertilin</label>
+    <displayPriorityInXenotype>14</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
     <defName>rjw_genes_breeding</defName>
     <label>Breeding</label>
     <displayPriorityInXenotype>13</displayPriorityInXenotype>
@@ -60,5 +66,7 @@
     <label>Genital Based Special Abilities</label>
     <displayPriorityInXenotype>8</displayPriorityInXenotype>
   </GeneCategoryDef>
+  
+  
   
 </Defs>

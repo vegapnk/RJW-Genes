@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GeneDef Name="rjw_genes_wings" Abstract="True">
+    <displayCategory>Miscellaneous</displayCategory>
+    <randomChosen>true</randomChosen>
+    <exclusionTags>
+      <li>Wing</li>
+	  <li>Wings</li>
+    </exclusionTags>
+    <graphicData>
+      <drawLoc>Tailbone</drawLoc>
+    </graphicData>
+  </GeneDef>
+
+  <GeneDef ParentName="rjw_genes_wings">
+    <defName>rjw_genes_Succubus_Wings</defName>
+    <label>succubus wings</label>
+    <description>Carriers of this gene grow succubus wings.</description>
+    <iconPath>Genes/Icons/Succubus_Wings</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>1000</displayOrderInCategory>
+	<abilities>
+		 <li>rjw_genes_flight</li>
+	</abilities>
+	<descriptionHyperlinks>
+		<AbilityDef>rjw_genes_flight</AbilityDef>
+	</descriptionHyperlinks>
+    <biostatCpx>1</biostatCpx>
+    <graphicData>
+      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/rjw_genes_Succubus_Wings/Succubus_Wings</graphicPath>
+      <colorType>Skin</colorType>
+	  <drawScale>2</drawScale>
+      <drawOffsetNorth>(0.0, 0.01, -0.1)</drawOffsetNorth>
+      <drawOffsetSouth>(0.0, 0.0, -0.1)</drawOffsetSouth>
+      <drawOffsetEast>(0.1, 0.0, 0.0)</drawOffsetEast>
+    </graphicData>
+  </GeneDef>
+  
+   <GeneDef ParentName="GeneTailBase">
+    <defName>rjw_genes_succubus_tail</defName>
+    <label>succubus tail</label>
+    <description>Carriers of this gene grow a slender tail ending with a heart that can act as a dexterous fifth limb.</description>
+    <iconPath>Genes/Icons/Succubus_Tail</iconPath>
+    <iconColor>(1, 0, 0)</iconColor>
+    <displayOrderInCategory>1000</displayOrderInCategory>
+    <capMods>
+      <li>
+        <capacity>Manipulation</capacity>
+        <offset>0.05</offset>
+      </li>
+    </capMods>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <graphicData>
+      <graphicPaths>
+		<li>Things/Pawn/Humanlike/BodyAttachments/rjw_genes_Succubus_Tail/Succubus_Tail_L1</li>
+		<li>Things/Pawn/Humanlike/BodyAttachments/rjw_genes_Succubus_Tail/Succubus_Tail_R1</li>
+		<li>Things/Pawn/Humanlike/BodyAttachments/rjw_genes_Succubus_Tail/Succubus_Tail_L2</li>
+		<li>Things/Pawn/Humanlike/BodyAttachments/rjw_genes_Succubus_Tail/Succubus_Tail_R2</li>
+	  </graphicPaths>
+      <colorType>Skin</colorType>
+	  <drawScale>2</drawScale>
+      <drawOffsetNorth>(0, 0.2, -0.1)</drawOffsetNorth>
+      <drawOffsetSouth>(0, -0.1, 0.1)</drawOffsetSouth>
+      <drawOffsetEast>(0.2, 0.2, 0.1)</drawOffsetEast>
+    </graphicData>
+	<randomChosen>true</randomChosen>
+  </GeneDef>
+</Defs>

@@ -1,6 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-
-<!--all pregnancies-->
 <Defs>
 	<HediffDef>
 		<defName>Aphrodisiac_Pheromone</defName>
@@ -8,19 +6,83 @@
 		<label>induced libido</label>
 		<description>Aphrodisiac pheromone effects.</description>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-4.0</severityPerDay>
+				<severityPerDay>-24.0</severityPerDay>
 			</li>
 		</comps>
 		<stages>
 			<li>
-				<becomeVisible>false</becomeVisible>
-				<statOffsets>
+				<becomeVisible>true</becomeVisible>
+				<statFactors>
 					<SexFrequency>2</SexFrequency>
-				</statOffsets>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Fertilin_Lost</defName>
+		<hediffClass>RJW_Genes.HediffWithComps_tank</hediffClass>
+		<label>lost fertilin</label>
+		<description>Percentage of fertilin lost.</description>
+		<defaultLabelColor>(1,1,1)</defaultLabelColor>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.5</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>true</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Succubus_Drained</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Drained</label>
+		<description>The vitality of this pawn has been drained.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<maxSeverity>1.0</maxSeverity>
+		<initialSeverity>1.0</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.0</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<label>moderate</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<label>severe</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.4</offset>
+					</li>
+				</capMods>
 			</li>
 		</stages>
 	</HediffDef>
