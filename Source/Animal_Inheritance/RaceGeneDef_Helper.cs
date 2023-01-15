@@ -56,8 +56,10 @@ namespace RJW_BGS
 			{
 				raceGroupDefs = allDefs.Where(delegate (RaceGeneDef group)
 				{
-					String raceGroupDefName = group.raceGroup;
-					return raceGroupDefName != null && raceGroupDefName == raceGroupDef.defName;
+					string raceGroupDefName = group.raceGroup;
+					List<string> list_raceGroupDefName = group.raceGroups;
+					return (raceGroupDefName != null && raceGroupDefName == raceGroupDef.defName) 
+							|| (list_raceGroupDefName != null && list_raceGroupDefName.Contains(raceGroupDef.defName));
 				}).ToList<RaceGeneDef>();
 			}
 			if (raceGroupDefs.Count() > 0)
