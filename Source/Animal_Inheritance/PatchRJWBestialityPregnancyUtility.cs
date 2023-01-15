@@ -16,7 +16,7 @@ namespace RJW_BGS
         [HarmonyPostfix]
         public static void AddGenes(Pawn mother, Pawn dad, ref Hediff_BasePregnancy __instance)
         {
-            if (!RJW_BGSSettings.enabled)
+            if (!RJW_BGSSettings.rjw_bgs_enabled)
             {
                 return;
             }

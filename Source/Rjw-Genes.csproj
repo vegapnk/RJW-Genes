@@ -60,7 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal_Inheritance\First.cs" />
     <Compile Include="Animal_Inheritance\Harmony_Init.cs" />
     <Compile Include="Animal_Inheritance\InheritanceUtility.cs" />
     <Compile Include="Animal_Inheritance\PatchRJWBestialityPregnancyUtility.cs" />
@@ -71,6 +70,7 @@
     <Compile Include="Animal_Inheritance\RJW_BGSSettings.cs" />
     <Compile Include="Animal_Inheritance\RJW_BGSSettingsController.cs" />
     <Compile Include="Animal_Inheritance\BestialityGeneInheritanceDef.cs" />
+    <Compile Include="Common\ModLog.cs" />
     <Compile Include="GeneDefOf.cs" />
     <Compile Include="Genes\Breeding\Gene_MechBreeder.cs" />
     <Compile Include="Genes\Breeding\PatchMechBirth.cs" />
@@ -82,6 +82,7 @@
     <Compile Include="Genes\Cum\Gene_MuchCum.cs" />
     <Compile Include="Genes\Cum\Gene_NoCum.cs" />
     <Compile Include="Genes\Cum\Patch_TransferNutrition.cs" />
+    <Compile Include="Genes\Damage\Gene_Unbreakable.cs" />
     <Compile Include="Genes\Damage\Gene_Elasticity.cs" />
     <Compile Include="Genes\Cum\Patch_Cumflation.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraBreasts.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="Genes\Gender\Gene_MaleOnly.cs" />
     <Compile Include="Genes\GeneUtility.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_BigBreasts.cs" />
+    <Compile Include="Genes\GenitaliaSize\Gene_GenitaliaResizingGene.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_LooseAnus.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_LooseFemaleGenitalia.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_TightAnus.cs" />
@@ -105,6 +107,7 @@
     <Compile Include="Genes\GenitaliaSize\Gene_TightFemaleGenitalia.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_SmallMaleGenitalia.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_BigMaleGenitalia.cs" />
+    <Compile Include="Genes\GenitaliaSize\Patch_ResizingOnAdulthood.cs" />
     <Compile Include="Genes\GenitaliaSize\SizeAdjuster.cs" />
     <Compile Include="Genes\Genitalia\Gene_SlimeGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_DragonGenitalia.cs" />
@@ -117,7 +120,9 @@
     <Compile Include="Genes\RJW_Gene.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaUtility.cs" />
     <Compile Include="Genes\Special\Gene_Aphrodisiac_Pheromones_.cs" />
+    <Compile Include="Genes\Special\Patch_AgeDrain.cs" />
     <Compile Include="Genes\Special\Patch_OrgasmRush.cs" />
+    <Compile Include="Genes\Special\Patch_Youth_Fountain.cs" />
     <Compile Include="HarmonyInit.cs" />
     <Compile Include="HediffDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

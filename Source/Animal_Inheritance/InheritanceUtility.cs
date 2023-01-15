@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Verse;
 using RimWorld;
 using rjw;
@@ -20,14 +16,18 @@ namespace RJW_BGS
             if (mother.RaceProps.Humanlike && father.RaceProps.Humanlike)
                 return genelist;
 
-
+            ModLog.Message($"Trigger an Animal-Gene-Inheritance for {father.Name} and {mother.Name}");
             //One parent must be an animal and the other must be human, so only one needs to return
             if (father != null && !father.RaceProps.Humanlike)
             {
+                if (RJW_BGSSettings.rjw_bgs_detailed_debug)
+                    ModLog.Message($"Father was found to be animal - looking up genes for {father.Name}");
                 return SelectGenes(father);
             }
             if (mother != null && !mother.RaceProps.Humanlike)
             {
+                if (RJW_BGSSettings.rjw_bgs_detailed_debug)
+                    ModLog.Message($"Mother was found to be animal - looking up genes for {mother.Name}");
                 return SelectGenes(mother);
             }
 
@@ -48,30 +48,48 @@ namespace RJW_BGS
             {
                 foreach (BestialityGeneInheritanceDef gene in raceGeneDef.genes)
                 {
-                    if (gene.chance * RJW_BGSSettings.global_gene_chance  >= Rand.Range(0.01f,1f))
+                    if (gene.chance * RJW_BGSSettings.rjw_bgs_global_gene_chance  >= Rand.Range(0.01f,1f))
                     {
                         genelist.Add(DefDatabase<GeneDef>.GetNamed(gene.defName));
                     }
                 }
             }
+            if (RJW_BGSSettings.rjw_bgs_detailed_debug)
+                ModLog.Message($"From {raceGeneDef.genes.Count} possible genes in {raceGeneDef.defName}, {genelist.Count} were added by chance ({RJW_BGSSettings.rjw_bgs_global_gene_chance} chance multiplier from Settings).");
             return genelist;
         }
 
+
+        /// <summary>
+        /// Adds a list of Genes to the pawns existing GeneSet. 
+        /// Whether it is added as a Xenogene or Endogene is configured in Mod-Settings.
+        /// </summary>
+        /// <param name="pawn">The pawn for which Genes will be added</param>
+        /// <param name="genes">The Genes to add (Endogene by default, Xenogene with Mod Settings)</param>
         public static void AddGenes(Pawn pawn, List<GeneDef> genes)
         {
             foreach (GeneDef gene in genes)
             {
-                pawn.genes.AddGene(gene, false);
+                pawn.genes.AddGene(gene, RJW_BGSSettings.rjw_bgs_animal_genes_as_xenogenes);
             }
         }
 
-        //For ParchRJWHediffInsect_egg
+        /// <summary>
+        /// Initiates a bestiality baby with genes if the baby does not exist earlier. 
+        /// This is used to make rjw-egg-pregnancies work. 
+        /// Related file: PatchRJWHediffInsect_Egg.cs
+        /// </summary>
+        /// <param name="mother">The mother of the baby.</param>
+        /// <param name="dad">The father of the baby.</param>
+        /// <param name="baby">The baby created in non-pregnancy-way (has 0 Genes yet)</param>
         public static void NewGenes(Pawn mother, Pawn dad, Pawn baby)
         {
-            if (!RJW_BGSSettings.enabled)
+            if (!RJW_BGSSettings.rjw_bgs_enabled)
             {
                 return;
             }
+
+            ModLog.Message($"Triggering an New-Gene Animal-Gene-Inheritance for {baby.Name} ({dad.Name} + {mother.Name})");
             if (baby.RaceProps.Humanlike)
             {
                 if (baby.genes == null)
