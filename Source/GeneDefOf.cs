@@ -75,8 +75,9 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_orgasm_rush;
 		public static readonly GeneDef rjw_genes_youth_fountain;
 		public static readonly GeneDef rjw_genes_sex_age_drain;
+		public static readonly GeneDef rjw_genes_aphrodisiac_pheromones;
 
-
+    // Others & Non-Genes
 		public static readonly HediffDef rjw_genes_orgasm_rush_hediff;
 	}
 }

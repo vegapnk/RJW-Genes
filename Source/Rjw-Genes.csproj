@@ -116,8 +116,10 @@
     <Compile Include="Genes\Genitalia\GenitaliaChanger.cs" />
     <Compile Include="Genes\RJW_Gene.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaUtility.cs" />
+    <Compile Include="Genes\Special\Gene_Aphrodisiac_Pheromones_.cs" />
     <Compile Include="Genes\Special\Patch_OrgasmRush.cs" />
     <Compile Include="HarmonyInit.cs" />
+    <Compile Include="HediffDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RJW_Genes.cs" />
   </ItemGroup>
