@@ -24,7 +24,7 @@ namespace RJW_Genes
 				Pawn pawn = this.pawn;
 				
 				return ((pawn != null) ? pawn.ageTracker : null) == null || 
-					((float)this.pawn.ageTracker.AgeBiologicalYears >= this.def.minAgeActive && this.pawn.ageTracker.AgeBiologicalYears >= (RJWSettings.AllowYouthSex ? 13f : 18f));
+					((float)this.pawn.ageTracker.AgeBiologicalYears >= this.def.minAgeActive);
 			}
 		}
 

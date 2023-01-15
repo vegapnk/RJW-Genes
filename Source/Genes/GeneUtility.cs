@@ -174,13 +174,6 @@ namespace RJW_Genes
             }
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_unbreakable);
         }
-<<<<<<< HEAD
-
-
-        public static bool HasGenitaliaResizingGenes(Pawn pawn)
-        {
-            return !GetGenitaliaResizingGenes(pawn).NullOrEmpty();
-        }
 
         public static List<Gene_GenitaliaResizingGene> GetGenitaliaResizingGenes(Pawn pawn)
         {
@@ -196,7 +189,5 @@ namespace RJW_Genes
 
             return ResizingGenes;
         }
-=======
->>>>>>> 09157e923d5c4c4cf71d79cb0af665ffd6a7c536
     }
 }

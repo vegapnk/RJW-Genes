@@ -76,9 +76,6 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_youth_fountain;
 		public static readonly GeneDef rjw_genes_sex_age_drain;
 		public static readonly GeneDef rjw_genes_aphrodisiac_pheromones;
-		public static readonly GeneDef rjw_genes_aphrodisiac_pheromones;
-		public static readonly GeneDef rjw_genes_youth_fountain;
-		public static readonly GeneDef rjw_genes_sex_age_drain;
 
 		// LifeForce
 		public static readonly GeneDef rjw_genes_lifeforce;
@@ -91,6 +88,5 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_succubus_tail;
 
     	// Others & Non-Genes
-		public static readonly HediffDef rjw_genes_orgasm_rush_hediff;
 	}
 }

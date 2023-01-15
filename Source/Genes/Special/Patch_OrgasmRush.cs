@@ -46,10 +46,10 @@ namespace RJW_Genes
 		/// <returns></returns>
 		public static Hediff GetOrgasmRushHediff(Pawn orgasmed)
 		{
-			Hediff orgasmRushHediff = orgasmed.health.hediffSet.GetFirstHediffOfDef(GeneDefOf.rjw_genes_orgasm_rush_hediff);
+			Hediff orgasmRushHediff = orgasmed.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.rjw_genes_orgasm_rush_hediff);
 			if (orgasmRushHediff == null)
 			{
-				orgasmRushHediff = HediffMaker.MakeHediff(GeneDefOf.rjw_genes_orgasm_rush_hediff, orgasmed);
+				orgasmRushHediff = HediffMaker.MakeHediff(HediffDefOf.rjw_genes_orgasm_rush_hediff, orgasmed);
 				orgasmRushHediff.Severity = 0;
 				orgasmed.health.AddHediff(orgasmRushHediff);
 			}

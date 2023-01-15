@@ -133,9 +133,7 @@
     <Compile Include="Genes\Life_Force\ThinkNode_ConditionalLowLifeForce.cs" />
     <Compile Include="Genes\Life_Force\ThinkNode_ConditionalCritcalLifeForce.cs" />
     <Compile Include="Genes\Life_Force\JobGiver_GetLifeForce.cs" />
-    <Compile Include="Genes\Damage\Gene_Unbreakable.cs" />
     <Compile Include="Genes\Special\Patch_AgeDrain.cs" />
-    <Compile Include="Genes\Special\Patch_Youth_Fountain.cs" />
     <Compile Include="Interactions\CompAbility_SexInteractionRequirements.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_PussyHeal.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompProperties_AbilityLifeForceCost.cs" />
@@ -152,7 +150,6 @@
     <Compile Include="Genes\RJW_Gene.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaUtility.cs" />
     <Compile Include="Genes\Special\Gene_Aphrodisiac_Pheromones_.cs" />
-    <Compile Include="Genes\Special\Patch_AgeDrain.cs" />
     <Compile Include="Genes\Life_Force\Patch_LifeForce.cs" />
     <Compile Include="Genes\Special\Patch_OrgasmRush.cs" />
     <Compile Include="Genes\Special\Patch_Youth_Fountain.cs" />
