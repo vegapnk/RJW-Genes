@@ -102,17 +102,17 @@ namespace RJW_Genes
             return !GetGenitaliaResizingGenes(pawn).NullOrEmpty();
         }
 
-        public static List<Gene> GetGenitaliaResizingGenes(Pawn pawn)
+        public static List<Gene_GenitaliaResizingGene> GetGenitaliaResizingGenes(Pawn pawn)
         {
-            var ResizingGenes = new List<Gene>();
+            var ResizingGenes = new List<Gene_GenitaliaResizingGene>();
 
             // Error Handling: Issue with Pawn or Genes return empty.
             if (pawn == null || pawn.genes == null)
                 return ResizingGenes;
 
-            foreach (Gene g in pawn.genes.GenesListForReading)
-                if (g is Gene_GenitaliaResizingGene)
-                    ResizingGenes.Add(g);
+            foreach (Gene gene in pawn.genes.GenesListForReading)
+                if (gene is Gene_GenitaliaResizingGene resizing_gene)
+                    ResizingGenes.Add(resizing_gene);
 
             return ResizingGenes;
         }
