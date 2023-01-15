@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Verse;
 
 namespace RJW_Genes
@@ -95,5 +96,25 @@ namespace RJW_Genes
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_unbreakable);
         }
 
+
+        public static bool HasGenitaliaResizingGenes(Pawn pawn)
+        {
+            return !GetGenitaliaResizingGenes(pawn).NullOrEmpty();
+        }
+
+        public static List<Gene> GetGenitaliaResizingGenes(Pawn pawn)
+        {
+            var ResizingGenes = new List<Gene>();
+
+            // Error Handling: Issue with Pawn or Genes return empty.
+            if (pawn == null || pawn.genes == null)
+                return ResizingGenes;
+
+            foreach (Gene g in pawn.genes.GenesListForReading)
+                if (g is Gene_GenitaliaResizingGene)
+                    ResizingGenes.Add(g);
+
+            return ResizingGenes;
+        }
     }
 }
