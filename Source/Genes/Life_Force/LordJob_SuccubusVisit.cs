@@ -12,6 +12,10 @@ namespace RJW_Genes
     //Based on LordJob_VisitColony
     public class LordJob_SuccubusVisit : LordJob
     {
+        public LordJob_SuccubusVisit()
+        {
+
+        }
         public LordJob_SuccubusVisit(Pawn target)
         {
             this.target = target;
@@ -78,10 +82,9 @@ namespace RJW_Genes
         public override void ExposeData()
         {
             Scribe_Values.Look<int?>(ref this.durationTicks, "durationTicks", null, false);
+            Scribe_References.Look<Pawn>(ref this.target, "target", false);
         }
         public Pawn target;
         private int? durationTicks;
-        public StateGraph exitSubgraph;
-
     }
 }

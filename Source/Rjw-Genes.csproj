@@ -130,9 +130,11 @@
     <Compile Include="Genes\Life_Force\Gene_LifeForceDrain.cs" />
     <Compile Include="Genes\Life_Force\IncidentWorker_SuccubusDreamVisit.cs" />
     <Compile Include="Genes\Life_Force\IngestionOutcomeDoer_LifeForceOffset.cs" />
+    <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_Flirt.cs" />
     <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_SexOnSpotReceiver.cs" />
     <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_SexOnSpot.cs" />
     <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_Seduced.cs" />
+    <Compile Include="Genes\Life_Force\JobGiver_Flirt.cs" />
     <Compile Include="Genes\Life_Force\LordJob_SuccubusVisit.cs" />
     <Compile Include="Genes\Life_Force\LordToil_Flirt.cs" />
     <Compile Include="Genes\Life_Force\Patch_SexTicks_ChangePsyfocus.cs" />

@@ -12,7 +12,7 @@ namespace RJW_Genes
 {
     public class IncidentWorker_SuccubusDreamVisit : IncidentWorker
     {
-        //This incidint will only fire if there is a pawn asleep which while sexneed is lower than 0.25
+        //This incidint will only fire if there is a pawn asleep and sexneed is lower than 0.25
         protected override bool CanFireNowSub(IncidentParms parms)
         {
             if (!base.CanFireNowSub(parms))
@@ -50,7 +50,7 @@ namespace RJW_Genes
                 return false;
             }
 
-            //Spawn succubus at pawn and initiate sex
+            //Spawn succubus at pawn
             Pawn succubus = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDef.Named("rjw_genes_succubus"), faction, PawnGenerationContext.NonPlayer, -1, 
                 false, false, false, true, false, 1f, false, true, false, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, 
                 null, null, null, null, null, null, null, null, null, null, false, false, false, false, null, null, null, null, null, 0f,
