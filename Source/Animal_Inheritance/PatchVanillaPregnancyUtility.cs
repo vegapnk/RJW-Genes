@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using HarmonyLib;
 using RimWorld;
 using Verse;
-using rjw;
 
 namespace RJW_BGS
 {
+    /// <summary>
+    /// This Patch is applied to change the normal pregnancy to add animal-inheritance. 
+    /// If the settings allow animal gene inheritance, 
+    /// the genes are determined and "simply added". 
+    /// </summary>
     [HarmonyPatch(typeof(PregnancyUtility), "GetInheritedGeneSet", new Type[] 
     { 
         typeof(Pawn), 
@@ -22,7 +24,7 @@ namespace RJW_BGS
         [HarmonyPostfix]
         public static void AnimalInheritedGenes(Pawn father, Pawn mother, ref GeneSet __result)
         {
-            if (!RJW_BGSSettings.enabled)
+            if (!RJW_BGSSettings.rjw_bgs_enabled)
             {
                 return;
             }

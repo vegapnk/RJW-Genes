@@ -13,6 +13,12 @@ namespace RJW_Genes
         {
             base.PostMake();
 
+            // If the Pawn is already a Futa, do not do anything. Can Happen by Base-RJW Spawn Chance or potentially races / other mods. 
+            if (IsAlreadyFuta(pawn))
+            {
+                return;
+            }
+
             if (GenderUtility.IsFemale(pawn) && additional_genital == null)
             {
                 createAndAddPenis();
@@ -26,6 +32,12 @@ namespace RJW_Genes
         public override void PostAdd()
         {
             base.PostAdd();
+
+            // If the Pawn is already a Futa, do not do anything. Can Happen by Base-RJW Spawn Chance or potentially races / other mods. 
+            if (IsAlreadyFuta(pawn))
+            {
+                return;
+            }
 
             if (pawn.gender == Gender.Female && additional_genital == null)
             {
@@ -79,5 +91,15 @@ namespace RJW_Genes
             pawn.health.AddHediff(additional_genital, partBPR);
         }
 
+        private static bool IsAlreadyFuta(Pawn pawn)
+        {
+            if (pawn == null)
+                return false;
+            if (!Genital_Helper.has_genitals(pawn))
+                return false;
+            return 
+                (Genital_Helper.has_penis_fertile(pawn) || Genital_Helper.has_penis_infertile(pawn)) 
+                && Genital_Helper.has_vagina(pawn) ;
+        }
     }
 }

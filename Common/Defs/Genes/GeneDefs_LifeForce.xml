@@ -34,7 +34,7 @@
 	</GeneDef>
 	
 	<GeneDef>
-		<defName>rjw_genes_lifeforcedrain</defName>
+		<defName>rjw_genes_lifeforce_drain</defName>
 		<label>fertilin drain</label>
 		<labelShortAdj>draining</labelShortAdj>
 		<description>Carriers lose an additional 15 fertilin per day from biological entropy.</description>

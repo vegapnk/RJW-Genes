@@ -51,6 +51,7 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_mechbreeder;
 		public static readonly GeneDef rjw_genes_insectincubator;
 		public static readonly GeneDef rjw_genes_insectbreeder;
+		public static readonly GeneDef rjw_genes_zoophile;
 
 		// Cum 
 		public static readonly GeneDef rjw_genes_no_cum;
@@ -63,7 +64,8 @@ namespace RJW_Genes
 		// Reproduction 
 		public static readonly GeneDef rjw_genes_hypersexual;
 		public static readonly GeneDef rjw_genes_rapist;
-		public static readonly GeneDef rjw_genes_zoophile;
+		public static readonly GeneDef rjw_genes_homosexual;
+		public static readonly GeneDef rjw_genes_bisexual;
 
 		// Damage & Side Effects 
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_elasticity;
@@ -71,23 +73,29 @@ namespace RJW_Genes
 
 		// Special
 		public static readonly GeneDef rjw_genes_orgasm_rush;
+		public static readonly GeneDef rjw_genes_youth_fountain;
+		public static readonly GeneDef rjw_genes_sex_age_drain;
 		public static readonly GeneDef rjw_genes_aphrodisiac_pheromones;
 
 		// LifeForce
 		public static readonly GeneDef rjw_genes_lifeforce;
 		public static readonly GeneDef rjw_genes_pussyhealing;
+		public static readonly GeneDef rjw_genes_lifeforce_drain;
 		public static readonly GeneDef rjw_genes_vaginal_absorber;
 		public static readonly GeneDef rjw_genes_anal_absorber;
 		public static readonly GeneDef rjw_genes_drainer;
 
 		// Cosmetic
 		public static readonly GeneDef rjw_genes_succubus_tail;
+		public static readonly GeneDef rjw_genes_succubus_wings;
 
-
+		// Others & Non-Genes
 		public static readonly GeneDef rjw_genes_youth_fountain;
 		public static readonly GeneDef rjw_genes_sex_age_drain;
 		public static readonly HediffDef rjw_genes_orgasm_rush_hediff;
 
 		public static readonly XenotypeDef Succubus;
+
+		
 	}
 }

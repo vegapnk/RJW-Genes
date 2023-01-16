@@ -2,7 +2,12 @@
 <Defs>
 	<RJW_BGS.RaceGeneDef Name = "Canine">
 		<defName>Canine</defName> 
-		<raceGroup>Canine_Group</raceGroup>
+		<raceGroups>
+			<li>Canine_Group</li>
+			<li>CanineAnimal</li> 
+			<li>CanineSingleGenderAnimal</li>
+			<li>CanineSkinAnimal</li> 
+		</raceGroups>
 		<genes>
 			<li>
 				<defName>Ears_Floppy</defName>
@@ -38,7 +43,11 @@
 	
 	<RJW_BGS.RaceGeneDef>
 		<defName>Insect</defName> 
-		<raceGroup>Insect_Group</raceGroup>
+		<raceGroups>
+			<li>Insect_Group</li>
+			<li>ArthropodOvipositorAnimal</li> 
+			<li>ArthropodOvipositorHornyAnimal</li>
+		</raceGroups>
 		<genes>
 			<li>
 				<defName>Beauty_Ugly</defName>
@@ -73,7 +82,14 @@
 	
 	<RJW_BGS.RaceGeneDef>
 		<defName>Feline</defName> 
-		<raceGroup>Feline_Group</raceGroup>
+		<raceGroups>
+			<li>Feline_Group</li>
+			<li>FelineAnimal</li> 
+			<li>FelineHornyAnimal</li>
+			<li>FelineSingleGenderAnimal</li>
+			<li>AA_SandProwlerAnimal</li> 
+		</raceGroups>
+
 		<genes>
 			<li>
 				<defName>Tail_Furry</defName>
@@ -108,7 +124,10 @@
 	
 	<RJW_BGS.RaceGeneDef>
 		<defName>Equine</defName> 
-		<raceGroup>Equine_Group</raceGroup>
+		<raceGroups>
+			<li>Equine_Group</li>
+			<li>HorseAnimal</li> 
+		</raceGroups>
 		<genes>
 			<li>
 				<defName>Furskin</defName>
@@ -143,7 +162,12 @@
 
 	<RJW_BGS.RaceGeneDef>
 		<defName>Dragon</defName> 
-		<raceGroup>Dragon_Group</raceGroup>
+		<raceGroups>
+			<li>Dragon_Group</li>
+			<li>ThrumboAnimal</li> 
+			<li>DragonAnimal</li> 
+			<li>DragonSingleGenderAnimal</li> 
+		</raceGroups>
 		<genes>
 			<li>
 				<defName>Unstoppable</defName>
@@ -166,7 +190,7 @@
 				<chance>0.1</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_draconic_genitalia</defName>
+				<defName>rjw_genes_dragon_genitalia</defName>
 				<chance>0.6</chance>
 			</li>
 			<li>
@@ -190,7 +214,12 @@
 	
 	<RJW_BGS.RaceGeneDef>
 		<defName>Rodent</defName> 
-		<raceGroup>Rodent_Group</raceGroup>
+		<raceGroups>
+			<li>Rodent_Group</li>
+			<li>RodentAnimal</li> 
+			<li>RodentSingleGenderAnimal</li> 
+			<li>DragonSingleGenderAnimal</li> 
+		</raceGroups>
 		<genes>
 			<li>
 				<defName>Furskin</defName>
@@ -225,7 +254,10 @@
 	
 	<RJW_BGS.RaceGeneDef>
 		<defName>Racoon</defName> 
-		<raceGroup>Raccon_Group</raceGroup>
+		<raceGroups>
+			<li>Raccon_Group</li>
+			<li>RaccoonAnimal</li> 
+		</raceGroups>	
 		<genes>
 			<li>
 				<defName>Furskin</defName>

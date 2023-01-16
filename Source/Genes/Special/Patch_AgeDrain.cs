@@ -13,9 +13,11 @@ namespace RJW_Genes.Genes.Special
     {
 
         const long AGE_TRANSFERED = 120000; // 120k == 2 days
+        // 20 Years * 60 Days / Year * 60k Ticks/Day + 1 for safety
+        const long MINIMUM_AGE = 20 * 60 * 60000 + 1;
 
         // Comment Below in for debugging, changes years
-        // const long AGE_TRANSFERED = 6000000; // 6000k == 100 days
+        // const long AGE_TRANSFERED = 12000000; 
         public static void Postfix(SexProps props)
         {
             if (props == null || props.pawn == null || props.partner == null || props.partner.IsAnimal() )
@@ -25,12 +27,12 @@ namespace RJW_Genes.Genes.Special
             if (GeneUtility.IsAgeDrainer(props.pawn))
             {
                 var pawnAge = props.pawn.ageTracker.AgeBiologicalTicks;
-                var pawnMinAge = props.pawn.ageTracker.AdultMinAgeTicks;
+                //ModLog.Error($"Firing Age Drain \nMinimum Age is \t{MINIMUM_AGE} \nPawn Age is \t{pawnAge} \nTransferred \t{AGE_TRANSFERED}\nResulting in \t{pawnAge - AGE_TRANSFERED}");
 
                 // Make Partner older
                 props.partner.ageTracker.AgeBiologicalTicks += AGE_TRANSFERED;
                 // Make Pawn younger
-                props.pawn.ageTracker.AgeBiologicalTicks = Math.Max(pawnMinAge, pawnAge - AGE_TRANSFERED);
+                props.pawn.ageTracker.AgeBiologicalTicks = Math.Max(MINIMUM_AGE, (pawnAge - AGE_TRANSFERED));
             }
 
         }

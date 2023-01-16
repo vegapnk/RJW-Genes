@@ -6,7 +6,12 @@ Features:
 - Orgasm Rush got a Hediff
 - Unbreakable Gene
 - Age-Transfer and Youth-Fountain per Sex Gene 
+- Bisexual and Homosexual Genes with Placeholder Icon
 - Balancing some Genes by changing metabolism and complexity
+- Pheromone Gene (#13, Shabakur)
+- RJW Race-Support Compatibility (#12,#13, Shabakur)
+- Animal Gene Inheritance Gene-Chance Multiplier per Setting (#13, Shabakur)
+- Lots of Debug-Only Logging for Animal Gene Inheritance
 
 Succubus:
 
@@ -14,6 +19,9 @@ Fixes:
 
 - Issue with Breast-Size (#8) fixed by lowercasing breast-match (Shabakur) 
 - Error on Game Load when Licentia Genes are tried to be added to Xenotypes for players without Licentia (#5)
+- Futa Gene only triggers if Pawn is not a futa already (#2)
+- Genitalia Resizing triggers on 20th Birthday (#11)
+- RJW-Gene-Inheritance Settings now do things (#13, Shabakur)
 
 # 1.0.1 (2022-12-20)
 

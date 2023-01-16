@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Verse;
 using RimWorld;
 namespace RJW_Genes
@@ -102,7 +103,7 @@ namespace RJW_Genes
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_youth_fountain);
         }
 
-        internal static bool IsAgeDrainer(Pawn pawn)
+        public static bool IsAgeDrainer(Pawn pawn)
         {
             if (pawn.genes == null)
             {
@@ -172,6 +173,21 @@ namespace RJW_Genes
                 return false;
             }
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_unbreakable);
+        }
+
+        public static List<Gene_GenitaliaResizingGene> GetGenitaliaResizingGenes(Pawn pawn)
+        {
+            var ResizingGenes = new List<Gene_GenitaliaResizingGene>();
+
+            // Error Handling: Issue with Pawn or Genes return empty.
+            if (pawn == null || pawn.genes == null)
+                return ResizingGenes;
+
+            foreach (Gene gene in pawn.genes.GenesListForReading)
+                if (gene is Gene_GenitaliaResizingGene resizing_gene)
+                    ResizingGenes.Add(resizing_gene);
+
+            return ResizingGenes;
         }
     }
 }

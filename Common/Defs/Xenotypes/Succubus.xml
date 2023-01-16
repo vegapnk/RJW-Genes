@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeDef>
+    <defName>rjw_genes_succubus</defName>
+    <label>Succubus</label>
+    <description>Succubi are strongly enhanced xenohumans. Powered by archites, their abilities go far beyond normal genetic enhancements. These overnaturally beautiful creatures strive parasitically on the Fertilin found in semen. </description>
+    <descriptionShort>Succubi are beautiful and extremely hungry Xenohumans. They strive on having sex and extracting their victims life-force through this. </descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Sanguophage</iconPath>
+    <soundDefOnImplant>PawnBecameSanguophage</soundDefOnImplant>
+    <generateWithXenogermReplicatingHediffChance>0.5</generateWithXenogermReplicatingHediffChance>
+    <xenogermReplicatingDurationLeftDaysRange>0.1~140</xenogermReplicatingDurationLeftDaysRange>
+    <combatPowerFactor>1</combatPowerFactor>
+    <displayPriority>-1000</displayPriority>
+    <factionlessGenerationWeight>0.005</factionlessGenerationWeight>
+    <doubleXenotypeChances>
+      <Pigskin>0.02</Pigskin>
+      <Impid>0.02</Impid>
+      <Yttakin>0.02</Yttakin>
+      <Neanderthal>0.02</Neanderthal>
+      <Waster>0.02</Waster>
+      <Dirtmole>0.02</Dirtmole>
+    </doubleXenotypeChances>
+    <genes>			
+        <li>rjw_genes_bisexual</li>
+        <li>rjw_genes_hypersexual</li>
+        <li>rjw_genes_female_only</li>
+        <li>rjw_genes_lifeforce</li>
+        <li>rjw_genes_lifeforce_drain</li>
+        <li>rjw_genes_vaginal_absorber</li>
+        <li>rjw_genes_anal_absorber</li>
+
+        <li>rjw_genes_drainer</li>
+
+        <li>rjw_genes_pussyhealer</li>
+        <li>rjw_genes_paralysingkiss</li>
+        <li>rjw_genes_seduce</li>
+        <li>rjw_genes_elasticity</li>
+        <li>rjw_genes_succubus_tail</li>
+        <li>rjw_genes_aphrodisiac_pheromones</li>
+
+        <li>Beauty_Pretty</li>
+        <li>MoveSpeed_Quick</li>
+        <li>Robust</li>
+        <li>UVSensitivity_Intense</li>
+        <li>AptitudeStrong_Social</li>
+        <li>Ears_Pointed</li>
+        <li>Headbone_MiniHorns</li>
+        <li>Skin_Purple</li>
+    </genes>
+  </XenotypeDef>
+  
+</Defs>

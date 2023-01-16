@@ -63,7 +63,7 @@
 
   <GeneCategoryDef>
     <defName>rjw_genes_special</defName>
-    <label>Genital Related Damage</label>
+    <label>Genital Based Special Abilities</label>
     <displayPriorityInXenotype>8</displayPriorityInXenotype>
   </GeneCategoryDef>
   
