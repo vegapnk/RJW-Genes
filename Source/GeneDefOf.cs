@@ -1,6 +1,6 @@
 ﻿using RimWorld;
 using Verse;
-
+using Verse.AI;
 namespace RJW_Genes
 {
 	[DefOf]
@@ -92,6 +92,7 @@ namespace RJW_Genes
 
 		public static readonly XenotypeDef rjw_genes_succubus;
 
-		
+		//Other Defs
+		public static readonly DutyDef rjw_genes_flirt;
 	}
 }

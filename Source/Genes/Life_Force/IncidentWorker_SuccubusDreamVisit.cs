@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using Verse.AI;
+using Verse.AI.Group;
 using RimWorld;
 using rjw;
 namespace RJW_Genes
@@ -55,7 +57,20 @@ namespace RJW_Genes
                 DevelopmentalStage.Adult, null, null, null, false));
             succubus.SetFaction(null, null);
             GenSpawn.Spawn(succubus, loc, map, WipeMode.Vanish);
-            
+
+            //Set succubus behaviour
+            List<Pawn> list = new List<Pawn> {succubus};
+            LordMaker.MakeNewLord(parms.faction, this.CreateLordJob(parms, succubus, victim), map, list);
+
+            //Make succubus rape victim.
+            if (RJWSettings.rape_enabled)
+            {
+                succubus.pather.StopDead(); 
+                succubus.jobs.StopAll();
+                Job newJob = JobMaker.MakeJob(xxx.RapeRandom, victim);
+                succubus.jobs.StartJob(newJob, JobCondition.InterruptForced, null, false, true, null, null, false, false, null, false, true);
+            }
+
             //Broken for now
             //Sends letter
             //string value = succubus.DevelopmentalStage.Child() ? "FeralChild".Translate().ToString() : succubus.KindLabel;
@@ -64,7 +79,7 @@ namespace RJW_Genes
             //TaggedString baseLetterText = this.def.letterText.Formatted(succubus.NameShortColored, value2, succubus.Named("PAWN")).AdjustedFor(succubus, "PAWN", true).CapitalizeFirst();
             //PawnRelationUtility.TryAppendRelationsWithColonistsInfo(ref baseLetterText, ref baseLetterLabel, succubus);
             //base.SendStandardLetter(baseLetterLabel, baseLetterText, this.def.letterDef, parms, succubus, Array.Empty<NamedArgument>());
-           
+
             return true;
         }
 
@@ -83,6 +98,11 @@ namespace RJW_Genes
         private bool TryFindFormerFaction(out Faction formerFaction)
         {
             return Find.FactionManager.TryGetRandomNonColonyHumanlikeFaction(out formerFaction, false, true, TechLevel.Undefined, false);
+        }
+
+        protected virtual LordJob_SuccubusVisit CreateLordJob(IncidentParms parms, Pawn succubus, Pawn target)
+        {
+            return new LordJob_SuccubusVisit(target);
         }
     }
 }

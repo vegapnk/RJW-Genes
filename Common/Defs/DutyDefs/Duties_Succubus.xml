@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+  <DutyDef>
+    <defName>rjw_genes_flirt</defName>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+		<!-- first fulfill needs and joy -->
+        <li Class="ThinkNode_Tagger">
+          <tagToGive>SatisfyingNeeds</tagToGive>
+          <subNodes>
+            <li Class="ThinkNode_PrioritySorter">
+              <subNodes>
+                <li Class="JobGiver_GetFood"/>
+                <li Class="JobGiver_GetRest"/>
+                <li Class="JobGiver_SatisfyChemicalNeed"/>
+                <li Class="JobGiver_SatifyChemicalDependency" MayRequire="Ludeon.RimWorld.Biotech" />
+                <li Class="ThinkNode_Priority_GetJoy">
+                  <subNodes>
+                    <li Class="JobGiver_GetJoy"/>
+                  </subNodes>
+                </li>
+              </subNodes>
+            </li>
+          </subNodes>
+        </li>
+		
+		<!-- switch target randomly or when target is unreachable/sleeping (similar to insults) -->
+		<li Class="RJW_Genes.ThinkNode_ConditionalCannotInteract">
+            <subNodes>
+                <li Class="RJW_Genes.ThinkNode_NewFlirtTarget" />
+            </subNodes>
+        </li>
+		
+		<li Class="ThinkNode_ConditionalRandom">
+			<chance>0.05</chance>
+			<subNodes>
+				<li Class="RJW_Genes.ThinkNode_NewFlirtTarget" />
+			</subNodes>
+		</li>
+		
+		<!--Go to target pawn-->
+        <li Class="JobGiver_AIFollowEscortee" />
+		
+		<!--If fertilin or sex_need is really low, try become more forceful (attempt rape)-->
+		
+		
+		<!--Flirt with target pawn and try hookup with them, increases sexneed in target pawn, maybe flirt has custom text-->
+		
+
+        <li Class="JobGiver_WanderNearDutyLocation">
+          <wanderRadius>5</wanderRadius>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+</Defs>
+

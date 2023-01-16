@@ -133,10 +133,14 @@
     <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_SexOnSpotReceiver.cs" />
     <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_SexOnSpot.cs" />
     <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_Seduced.cs" />
+    <Compile Include="Genes\Life_Force\LordJob_SuccubusVisit.cs" />
+    <Compile Include="Genes\Life_Force\LordToil_Flirt.cs" />
     <Compile Include="Genes\Life_Force\Patch_SexTicks_ChangePsyfocus.cs" />
+    <Compile Include="Genes\Life_Force\ThinkNode_ConditionalCannotInteract.cs" />
     <Compile Include="Genes\Life_Force\ThinkNode_ConditionalLowLifeForce.cs" />
     <Compile Include="Genes\Life_Force\ThinkNode_ConditionalCritcalLifeForce.cs" />
     <Compile Include="Genes\Life_Force\JobGiver_GetLifeForce.cs" />
+    <Compile Include="Genes\Life_Force\ThinkNode_NewFlirtTarget.cs" />
     <Compile Include="Genes\Special\Patch_AgeDrain.cs" />
     <Compile Include="Interactions\CompAbility_SexInteractionRequirements.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_PussyHeal.cs" />

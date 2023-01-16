@@ -7,4 +7,9 @@
 	
 	<AlertLowFertilin>Low fertilin</AlertLowFertilin>
 	<AlertLowFertilinDesc>A colonist has low fertilin. At this point they are becoming desperate enough to consider rape and bestiality to obtain fertilin (if they didn't already). At zero fertilin they will lose all sense and start raping randomly</AlertLowFertilinDesc>
+
+
+	<!--Succubus Events-->
+	<SuccubusLeaving>The succubus has fed enough on your colonists and will now leave.</SuccubusLeaving>
+	
 </LanguageData>
