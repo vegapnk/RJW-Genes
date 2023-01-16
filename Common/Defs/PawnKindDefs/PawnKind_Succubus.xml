@@ -2,13 +2,13 @@
 
 <Defs>
 	<PawnKindDef>
-		<defName>Succubus</defName>
+		<defName>rjw_genes_succubus</defName>
 		<label>succubus</label>
 		<combatPower>50</combatPower>
 		<race>Human</race>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Succubus>999</Succubus>
+				<rjw_genes_succubus>999</rjw_genes_succubus>
 			</xenotypeChances>
 		</xenotypeSet>
 		<acceptArrestChanceFactor>0.5</acceptArrestChanceFactor>

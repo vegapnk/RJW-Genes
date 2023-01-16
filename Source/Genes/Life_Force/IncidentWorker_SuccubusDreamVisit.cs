@@ -49,13 +49,14 @@ namespace RJW_Genes
             }
 
             //Spawn succubus at pawn and initiate sex
-            Pawn succubus = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDef.Named("Succubus"), faction, PawnGenerationContext.NonPlayer, -1, 
+            Pawn succubus = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDef.Named("rjw_genes_succubus"), faction, PawnGenerationContext.NonPlayer, -1, 
                 false, false, false, true, false, 1f, false, true, false, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, 
                 null, null, null, null, null, null, null, null, null, null, false, false, false, false, null, null, null, null, null, 0f,
                 DevelopmentalStage.Adult, null, null, null, false));
             succubus.SetFaction(null, null);
             GenSpawn.Spawn(succubus, loc, map, WipeMode.Vanish);
             
+            //Broken for now
             //Sends letter
             //string value = succubus.DevelopmentalStage.Child() ? "FeralChild".Translate().ToString() : succubus.KindLabel;
             //TaggedString value2 = succubus.DevelopmentalStage.Child() ? "Child".Translate() : "Person".Translate();
