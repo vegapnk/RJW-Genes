@@ -42,7 +42,7 @@ namespace RJW_Genes
 		{
 			return Toils_General.Do(delegate
 			{
-				if (this.pawn.interactions.TryInteractWith(this.Target, InteractionDefOf.Chitchat))
+				if (this.pawn.interactions.TryInteractWith(this.Target, ThoughtDefOf.rjw_genes_flirt))
 				{
 					Need_Sex need_Sex = this.Target.needs.TryGetNeed<Need_Sex>();
 					need_Sex.CurLevel += -0.01f;

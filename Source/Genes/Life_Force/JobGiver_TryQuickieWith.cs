@@ -21,7 +21,7 @@ namespace RJW_Genes
 			if (pawn.CanReserveAndReach(target, PathEndMode.InteractionCell, Danger.Some) && target.CanReserve(pawn, 1, 0, null, false))				
 			{
 				//target is not busy
-				if (!(((jobs != null) ? jobs.curJob : null) != null && (jobs.curJob.playerForced || !CasualSex_Helper.quickieAllowedJobs.Contains(jobs.curJob.def))))
+				if (!(((jobs != null) ? jobs.curJob : null) != null && jobs.curJob.playerForced))
                 {
 					float willingness = TargetWillingness(pawn, target);
 					if (Rand.Chance(willingness))
@@ -80,7 +80,7 @@ namespace RJW_Genes
 						{
 							ModLog.Message(" find_partner(" + pawn_name + "): I interested in banging but that's cheating");
 						}
-						//Succubus has a small chance to seduce even if target is in relationship, maybe setting
+						//Succubus has a small chance to seduce even if target is in relationship, maybe setting like succubus can homewreck
 						willingness *= 0.1f;
 					}
                     else
