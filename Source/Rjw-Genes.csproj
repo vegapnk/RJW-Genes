@@ -141,6 +141,7 @@
     <Compile Include="Genes\Life_Force\LordJob_SuccubusVisit.cs" />
     <Compile Include="Genes\Life_Force\LordToil_Flirt.cs" />
     <Compile Include="Genes\Life_Force\Patch_SexTicks_ChangePsyfocus.cs" />
+    <Compile Include="Genes\Life_Force\Patch_Vanilla_Inheritance_Fertilin.cs" />
     <Compile Include="Genes\Life_Force\ThinkNode_ConditionalCannotInteract.cs" />
     <Compile Include="Genes\Life_Force\ThinkNode_ConditionalLowLifeForce.cs" />
     <Compile Include="Genes\Life_Force\ThinkNode_ConditionalCritcalLifeForce.cs" />
