@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using Verse;
+﻿using Verse;
 using Verse.AI;
 using RimWorld;
 namespace RJW_Genes

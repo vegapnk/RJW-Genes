@@ -84,10 +84,11 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_vaginal_absorber;
 		public static readonly GeneDef rjw_genes_anal_absorber;
 		public static readonly GeneDef rjw_genes_drainer;
+		public static readonly GeneDef rjw_genes_seduce;
+		public static readonly GeneDef rjw_genes_paralysingkiss;
 
 		// Cosmetic
 		public static readonly GeneDef rjw_genes_succubus_tail;
 		public static readonly GeneDef rjw_genes_succubus_wings;
-
-	}
+    }
 }

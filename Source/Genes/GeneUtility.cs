@@ -109,5 +109,8 @@ namespace RJW_Genes
         public static bool IsGenerousDonor(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_generous_donor); }
         public static bool IsPussyHealer(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_pussyhealer); }
         public static bool IsUnbreakable(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_unbreakable); }
+        public static bool HasParalysingKiss(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_paralysingkiss); }
+        public static bool HasSeduce(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_seduce); }
+        public static bool IsSexualDrainer(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_drainer); }
     }
 }

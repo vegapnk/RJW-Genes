@@ -54,6 +54,14 @@ namespace RJW_Genes
 						Messages.Message("bestiality is disabled", pawn, MessageTypeDefOf.RejectInput, false);
 					}
 					return false;
+				} 
+				else if (GeneUtility.HasSeduce(pawn))
+                {
+					if (throwMessages)
+					{
+						Messages.Message(pawn.Name + " cannot be seduced, as they also have the Seduce-Ability", pawn, MessageTypeDefOf.RejectInput, false);
+					}
+					return false;
 				}
 				else if (pawn.Downed)
                 {
