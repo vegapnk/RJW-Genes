@@ -28,7 +28,7 @@ namespace RJW_Genes
 		{
 			this.FailOnDespawnedOrNull(TargetIndex.A);
 			yield return Toils_Interpersonal.GotoInteractablePosition(TargetIndex.A);
-			yield return Toils_General.Wait(600, TargetIndex.A);
+			yield return Toils_General.Wait(300, TargetIndex.A);
 			yield return Toils_Interpersonal.WaitToBeAbleToInteract(this.pawn);
 			Toil toil = Toils_Interpersonal.GotoInteractablePosition(TargetIndex.A);
 			toil.socialMode = RandomSocialMode.Off;

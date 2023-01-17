@@ -4,7 +4,7 @@
     <defName>rjw_genes_flirt</defName>
     <thinkNode Class="ThinkNode_Priority">
       <subNodes>
-		<!-- first fulfill needs and joy -->
+		<!-- first fulfill needs -->
         <li Class="ThinkNode_Tagger">
           <tagToGive>SatisfyingNeeds</tagToGive>
           <subNodes>
@@ -36,12 +36,29 @@
 		<!--Go to target pawn-->
         <li Class="JobGiver_AIFollowEscortee" />
 		
-		<!--If fertilin or sex_need is really low, try become more forceful (attempt rape)-->
-		
+		<li Class="rjw.ThinkNode_ConditionalSexChecks">
+			<subNodes>
+				<!--If sexneed is low do rape or masturbate (like a nymph)-->
+				<li Class="rjw.ThinkNode_ConditionalFrustrated">
+					<subNodes>
+						<li Class="rjw.JobGiver_ViolateCorpse" />
+						<li Class="rjw.JobGiver_RandomRape" />
+						<li Class="rjw.JobGiver_Masturbate"/>
+					</subNodes>
+				</li>
+				<!--Will sometimes try and hookup with target pawn-->
+				<li Class="ThinkNode_ConditionalRandom">
+					<chance>0.1</chance>
+					<subNodes>
+						<li Class="RJW_Genes.JobGiver_TryQuickieWith" />
+					</subNodes>
+				</li>
+			</subNodes>
+		</li>
 		
 		<!--Flirt with target pawn and try hookup with them, increases sexneed in target pawn, maybe flirt has custom text-->
 		<li Class="RJW_Genes.JobGiver_Flirt" />
-
+				
         <li Class="JobGiver_WanderNearDutyLocation">
           <wanderRadius>5</wanderRadius>
         </li>
