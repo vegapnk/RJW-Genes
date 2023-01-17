@@ -6,16 +6,7 @@ namespace RJW_Genes
 {
     public class GeneUtility
     {
-        //Instead of seperate functions this should be simpeler
-        public static bool HasGeneNullCheck(Pawn pawn, GeneDef genedef)
-        {
-            if (pawn.genes == null)
-            {
-                return false;
-            }
-            return pawn.genes.HasGene(genedef);
-        }
-
+        
         //Split function so I can offsetlifeforce from gene without needing to look for the gene agian (for the constant drain tick)
         public static Gene_LifeForce GetLifeForceGene(Pawn pawn)
         {
@@ -37,26 +28,8 @@ namespace RJW_Genes
             {
                 Pawn pawn = drain.Pawn;
                 
-                //Do things
+                //TODO: Do things
             }
-        }
-
-        public static bool IsMechbreeder(Pawn pawn)
-        {
-            if (pawn.genes == null)
-            {
-                return false;
-            }
-            return pawn.genes.HasGene(GeneDefOf.rjw_genes_mechbreeder);
-        }
-
-        public static bool HasLifeForce(Pawn pawn)
-        {
-            if (pawn.genes == null)
-            {
-                return false;
-            }
-            return pawn.genes.HasGene(GeneDefOf.rjw_genes_lifeforce);
         }
 
         public static bool HasLowLifeForce(Pawn pawn)
@@ -85,42 +58,6 @@ namespace RJW_Genes
             return false;
         }
 
-        public static bool IsInsectIncubator(Pawn pawn)
-        {
-            if (pawn.genes == null)
-            {
-                return false;
-            }
-            return pawn.genes.HasGene(GeneDefOf.rjw_genes_insectincubator);
-        }
-
-        public static bool IsYouthFountain(Pawn pawn)
-        {
-            if (pawn.genes == null)
-            {
-                return false;
-            }
-            return pawn.genes.HasGene(GeneDefOf.rjw_genes_youth_fountain);
-        }
-
-        public static bool IsAgeDrainer(Pawn pawn)
-        {
-            if (pawn.genes == null)
-            {
-                return false;
-            }
-            return pawn.genes.HasGene(GeneDefOf.rjw_genes_sex_age_drain);
-        }
-
-        public static bool IsInsectBreeder(Pawn pawn)
-        {
-            if (pawn.genes == null)
-            {
-                return false;
-            }
-            return pawn.genes.HasGene(GeneDefOf.rjw_genes_insectbreeder);
-        }
-
         public static float MaxEggSizeMul(Pawn pawn)
         {
             float MaxEggSize = 1;
@@ -129,50 +66,6 @@ namespace RJW_Genes
                 MaxEggSize *= 2;
             }
             return MaxEggSize;
-        }
-
-        internal static bool IsElastic(Pawn pawn)
-        {
-            if (pawn.genes == null)
-            {
-                return false;
-            }
-            return pawn.genes.HasGene(GeneDefOf.rjw_genes_elasticity);
-        }
-
-        public static bool IsCumflationImmune(Pawn pawn)
-        {
-            if (pawn.genes == null)
-            {
-                return false;
-            }
-            return pawn.genes.HasGene(GeneDefOf.rjw_genes_cumflation_immunity);
-        }
-        public static bool IsGenerousDonor(Pawn pawn)
-        {
-            if (pawn.genes == null)
-            {
-                return false;
-            }
-            return pawn.genes.HasGene(GeneDefOf.rjw_genes_generous_donor);
-        }
-
-        public static bool isPussyHealer(Pawn pawn)
-        {
-            if (pawn.genes == null)
-            {
-                return false;
-            }
-            return pawn.genes.HasGene(GeneDefOf.rjw_genes_pussyhealer);
-        }
-
-        public static bool IsUnbreakable(Pawn pawn)
-        {
-            if (pawn.genes == null)
-            {
-                return false;
-            }
-            return pawn.genes.HasGene(GeneDefOf.rjw_genes_unbreakable);
         }
 
         public static List<Gene_GenitaliaResizingGene> GetGenitaliaResizingGenes(Pawn pawn)
@@ -189,5 +82,32 @@ namespace RJW_Genes
 
             return ResizingGenes;
         }
+
+        /// <summary>
+        /// Unified small check for a pawn if it has a specified Gene. 
+        /// Handles some errors and returns false as default.
+        /// </summary>
+        /// <param name="pawn">The pawn for which to look up a gene.</param>
+        /// <param name="genedef">The gene to look up.</param>
+        /// <returns></returns>
+        public static bool HasGeneNullCheck(Pawn pawn, GeneDef genedef)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(genedef);
+        }
+        public static bool HasLifeForce(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_lifeforce); }
+        public static bool IsMechbreeder(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_mechbreeder); }
+        public static bool IsInsectIncubator(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_insectincubator); }
+        public static bool IsYouthFountain(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_youth_fountain); }
+        public static bool IsAgeDrainer(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_sex_age_drain); }
+        public static bool IsInsectBreeder(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_insectbreeder); }
+        public static bool IsElastic(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_elasticity); }
+        public static bool IsCumflationImmune(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_cumflation_immunity); }
+        public static bool IsGenerousDonor(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_generous_donor); }
+        public static bool IsPussyHealer(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_pussyhealer); }
+        public static bool IsUnbreakable(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_unbreakable); }
     }
 }

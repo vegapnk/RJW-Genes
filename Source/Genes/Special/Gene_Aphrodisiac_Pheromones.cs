@@ -31,7 +31,7 @@ namespace RJW_Genes
             }
         }
 
-        //Creatus an IEnumerable of all pawns which are closeby and in lineofsight, self and other pawns with aphrodisiac pheromones gene are skipped.
+        //Creates an IEnumerable of all pawns which are closeby and in lineofsight, self and other pawns with aphrodisiac pheromones gene are skipped.
         private IEnumerable<Pawn> AffectedPawns(IntVec3 pos, Map map)
         {
             foreach (Pawn pawn in map.mapPawns.AllPawns)
@@ -45,10 +45,10 @@ namespace RJW_Genes
             yield break;
         }
 
-        //Applies er renews a hediff which increases sexdrive for 6 hours
+        //Applies or renews a hediff which increases sexdrive for 6 hours
         private void InduceAphrodisiac(Pawn pawn, float sexfrequency)
         {
-            Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Aphrodisiac_Pheromone);
+            Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.rjw_genes_aphrodisiac_pheromone);
             
             if (hediff != null)
             {
@@ -56,12 +56,9 @@ namespace RJW_Genes
             }
             else
             {
-                Hediff aphrodisiac = HediffMaker.MakeHediff(HediffDefOf.Aphrodisiac_Pheromone, pawn);
+                Hediff aphrodisiac = HediffMaker.MakeHediff(HediffDefOf.rjw_genes_aphrodisiac_pheromone, pawn);
                 foreach (StatModifier stat in aphrodisiac.CurStage.statFactors)
                 {
-                    //Log.Message(pawn.Name.ToString());
-                    //Log.Message(stat.stat.defName);
-                    //Log.Message(stat.value.ToString());
                     if (stat.stat.defName == "SexFrequency")
                     {
                         stat.value = ModifySexfrequency(pawn, sexfrequency);

@@ -89,6 +89,5 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_succubus_tail;
 		public static readonly GeneDef rjw_genes_succubus_wings;
 
-		// Others & Non-Genes
 	}
 }

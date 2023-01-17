@@ -1,17 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
-using RimWorld;
+﻿using Verse;
 using rjw.Modules.Interactions;
 using rjw.Modules.Interactions.Internals.Implementation;
 using rjw.Modules.Interactions.Objects;
-using rjw;
-using rjw.Modules.Interactions.Enums;
 
-//Modefied code based of RJW-AI code at https://gitgud.io/Ed86/rjw-ia/-/tree/master/
+//Modified code based of RJW-AI code at https://gitgud.io/Ed86/rjw-ia/-/tree/master/
 namespace RJW_Genes
 {
 	[StaticConstructorOnStartup]
@@ -25,7 +17,6 @@ namespace RJW_Genes
 			}
 		}
 	
-
 		static SubSuccubusTailCustomRequirementHandler()
 		{
 			Register();
@@ -50,3 +41,4 @@ namespace RJW_Genes
 		//public static readonly StringListDef filter = DefDatabase<StringListDef>.GetNamed("SubSuccubusTailFilter");
 	}
 }
+

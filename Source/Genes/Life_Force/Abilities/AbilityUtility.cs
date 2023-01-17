@@ -23,11 +23,11 @@ namespace RJW_Genes
                 FloatRange tendQualityRange;
                 tendQualityRange.min = 0.4f;
                 tendQualityRange.max = 0.8f;
-                if (GeneUtility.isPussyHealer(pawn))
+                if (GeneUtility.IsPussyHealer(pawn))
                 {
                     Heal(partner, tendQualityRange);
                 }
-                if (GeneUtility.isPussyHealer(partner))
+                if (GeneUtility.IsPussyHealer(partner))
                 {
                     Heal(pawn, tendQualityRange);
                 }

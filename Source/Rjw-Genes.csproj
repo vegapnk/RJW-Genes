@@ -149,7 +149,7 @@
     <Compile Include="Genes\Life_Force\Gene_LifeForce.cs" />
     <Compile Include="Genes\RJW_Gene.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaUtility.cs" />
-    <Compile Include="Genes\Special\Gene_Aphrodisiac_Pheromones_.cs" />
+    <Compile Include="Genes\Special\Gene_Aphrodisiac_Pheromones.cs" />
     <Compile Include="Genes\Life_Force\Patch_LifeForce.cs" />
     <Compile Include="Genes\Special\Patch_OrgasmRush.cs" />
     <Compile Include="Genes\Special\Patch_Youth_Fountain.cs" />
@@ -157,7 +157,7 @@
     <Compile Include="HediffDefOf.cs" />
     <Compile Include="Interactions\CustomSexInteraction_Helper.cs" />
     <Compile Include="Interactions\GenesPartKindUsageRule.cs" />
-    <Compile Include="Interactions\SubSuccubusTailCustomRequirementHandler - Copy.cs" />
+    <Compile Include="Interactions\SubSuccubusTailCustomRequirementHandler.cs" />
     <Compile Include="Interactions\DomSuccubusTailCustomRequirementHandler.cs" />
     <Compile Include="JobDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

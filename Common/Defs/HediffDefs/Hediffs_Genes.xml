@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<HediffDef>
-		<defName>Aphrodisiac_Pheromone</defName>
+		<defName>rjw_genes_aphrodisiac_pheromone</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>induced libido</label>
 		<description>Aphrodisiac pheromone effects.</description>
@@ -23,7 +23,7 @@
 	</HediffDef>
 	
 	<HediffDef>
-		<defName>Fertilin_Lost</defName>
+		<defName>rjw_genes_fertilin_lost</defName>
 		<hediffClass>RJW_Genes.HediffWithComps_tank</hediffClass>
 		<label>lost fertilin</label>
 		<description>Percentage of fertilin lost.</description>
@@ -42,7 +42,7 @@
 	</HediffDef>
 	
 	<HediffDef>
-		<defName>Succubus_Drained</defName>
+		<defName>rjw_genes_succubus_drained</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>Drained</label>
 		<description>The vitality of this pawn has been drained.</description>

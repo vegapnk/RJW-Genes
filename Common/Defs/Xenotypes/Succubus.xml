@@ -4,8 +4,8 @@
   <XenotypeDef>
     <defName>rjw_genes_succubus</defName>
     <label>Succubus</label>
-    <description>Succubi are strongly enhanced xenohumans. Powered by archites, their abilities go far beyond normal genetic enhancements. These overnaturally beautiful creatures strive parasitically on the Fertilin found in semen. </description>
-    <descriptionShort>Succubi are beautiful and extremely hungry Xenohumans. They strive on having sex and extracting their victims life-force through this. </descriptionShort>
+    <description>Succubi are strongly enhanced xenohumans. Powered by archites, their abilities go far beyond normal genetic enhancements. These overnaturally beautiful creatures strive parasitically on the Fertilin found in semen.</description>
+    <descriptionShort>Succubi are beautiful and extremely hungry Xenohumans. They strive on having sex and extracting their victims life-force through this.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Sanguophage</iconPath>
     <soundDefOnImplant>PawnBecameSanguophage</soundDefOnImplant>
     <generateWithXenogermReplicatingHediffChance>0.5</generateWithXenogermReplicatingHediffChance>

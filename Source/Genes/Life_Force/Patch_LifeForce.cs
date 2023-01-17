@@ -68,9 +68,9 @@ namespace RJW_Genes
 					AbsorbFertilin(props, absorb_factor);
 				}
 
-				if (GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_drainer) && !props.pawn.health.hediffSet.HasHediff(HediffDefOf.Succubus_Drained))
+				if (GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_drainer) && !props.pawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_succubus_drained))
 				{
-					props.pawn.health.AddHediff(HediffDefOf.Succubus_Drained);
+					props.pawn.health.AddHediff(HediffDefOf.rjw_genes_succubus_drained);
 					GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(succubus), 0.25f);
 				}
 			}
@@ -79,7 +79,7 @@ namespace RJW_Genes
 		{
 			Pawn_GeneTracker genes = props.partner.genes;
 			Gene_LifeForce gene = genes.GetFirstGeneOfType<Gene_LifeForce>();
-			Hediff fertilin_lost = props.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Fertilin_Lost);
+			Hediff fertilin_lost = props.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.rjw_genes_fertilin_lost);
 			//Around quarter get ejected everytime pawn cums
 			float multiplier = Rand.Range(0.10f, 0.40f); 
 			
@@ -87,7 +87,7 @@ namespace RJW_Genes
 			//Create a new ferilin_lost hediff or reduce multiplier
 			if (fertilin_lost == null)
 			{
-				Hediff new_fertilin_lost = HediffMaker.MakeHediff(HediffDefOf.Fertilin_Lost, props.pawn);
+				Hediff new_fertilin_lost = HediffMaker.MakeHediff(HediffDefOf.rjw_genes_fertilin_lost, props.pawn);
 				props.pawn.health.AddHediff(new_fertilin_lost);
 				new_fertilin_lost.Severity = multiplier;
 			}

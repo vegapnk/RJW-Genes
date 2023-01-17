@@ -5,7 +5,6 @@
     <randomChosen>true</randomChosen>
     <exclusionTags>
       <li>Wing</li>
-	  <li>Wings</li>
     </exclusionTags>
     <graphicData>
       <drawLoc>Tailbone</drawLoc>
