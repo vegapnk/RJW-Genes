@@ -12,7 +12,7 @@ namespace RJW_Genes
     {
 		protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested)
 		{
-			if (GeneUtility.HasLifeForce(pawn))
+			if (GeneUtility.HasLifeForce(pawn) && GeneUtility.HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_cum_eater))
             {
 				float num = ingested.stackCount * this.FertilinPerUnit / 100;
 				GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(pawn), num);

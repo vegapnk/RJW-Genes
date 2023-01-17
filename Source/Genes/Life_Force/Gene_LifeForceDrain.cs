@@ -60,17 +60,6 @@ namespace RJW_Genes
 			}			
 		}
 
-		public override IEnumerable<Gizmo> GetGizmos()
-		{
-			foreach (Gizmo gizmo in GeneResourceDrainUtility.GetResourceDrainGizmos(this))
-			{
-				yield return gizmo;
-			}
-			IEnumerator<Gizmo> enumerator = null;
-			yield break;
-			yield break;
-		}
-
 		[Unsaved(false)]
 		private Gene_LifeForce cachedLifeForceGene;
 

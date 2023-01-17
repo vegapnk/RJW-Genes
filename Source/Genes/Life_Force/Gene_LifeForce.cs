@@ -46,32 +46,19 @@ namespace RJW_Genes
 			{
 				yield return gizmo;
 			}
-			foreach (Gizmo gizmo2 in GeneResourceDrainUtility.GetResourceDrainGizmos(this))
-			{
-				yield return gizmo2;
-			}
 			yield break;
 		}
 
-		//Depending on how low the value is it will increase sexdrive and if it reaches zero it will create a mental break which will make the pawn rape others.
-		//Not using base.Tick() as it is used to start mental breaks, but we have another way to do it.
+		//every tick it decreases fertilin value and everyday if fertilin is below alert minimum there a ~50 chance for mental break
 		public override void Tick()
 		{
-			//base.Tick();
+			base.Tick();
 			if (this.CanOffset && this.Resource != null)
             {
 				GeneUtility.OffsetLifeForce(this, -this.ResourceLossPerDay / 60000f);
-				//this.Resource.Value -= this.ResourceLossPerDay / 60000;
-				if (this.Resource.Value <= 0 && this.pawn.IsHashIntervalTick(300))
-				{
-					if (ModsConfig.BiotechActive && this.def.mentalBreakDef != null && 
-						this.pawn.Spawned && !this.pawn.InMentalState && !this.pawn.Downed && 
-						this.def.mentalBreakDef.Worker.BreakCanOccur(this.pawn))
-                    {
-						this.def.mentalBreakDef.Worker.TryStart(this.pawn, "MentalStateReason_Gene".Translate() + ": " + this.LabelCap, false);
-					}
-				}
-            }
+				
+			}
+			
 		}
 
 		public bool StoredCumAllowed = true;

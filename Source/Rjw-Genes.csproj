@@ -128,6 +128,8 @@
     <Compile Include="Genes\Life_Force\Abilities\CompProperties_Seduce.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompProperties_AbilityCockEater.cs" />
     <Compile Include="Genes\Life_Force\Gene_LifeForceDrain.cs" />
+    <Compile Include="Genes\Life_Force\HediffCompProperties_SeverityFromFertilin.cs" />
+    <Compile Include="Genes\Life_Force\HediffComp_SeverityFromFertilin.cs" />
     <Compile Include="Genes\Life_Force\IncidentWorker_SuccubusDreamVisit.cs" />
     <Compile Include="Genes\Life_Force\IngestionOutcomeDoer_LifeForceOffset.cs" />
     <Compile Include="Genes\Life_Force\JobGiver_TryQuickieWith.cs" />
@@ -151,7 +153,6 @@
     <Compile Include="Interactions\CompProperties_SexInteractionRequirements.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompProperties_AbilityPussyHeal.cs" />
     <Compile Include="Genes\Life_Force\GeneGizmo_ResourceLifeForce.cs" />
-    <Compile Include="Genes\Life_Force\HediffWithComps_tank.cs" />
     <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_CastAbilityAfterSex.cs" />
     <Compile Include="Genes\Life_Force\LifeForceMentalState.cs" />
     <Compile Include="Genes\Life_Force\LifeForceMentalStateWorker.cs" />

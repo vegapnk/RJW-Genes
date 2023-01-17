@@ -27,7 +27,6 @@
 			<li><symbol>fert</symbol></li>
 		  </prefixSymbols>
 		</symbolPack>
-		<mentalBreakDef>rjw_genes_lifeforce_randomrape</mentalBreakDef>
 		<resourceLossPerDay>0.05</resourceLossPerDay>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>1</biostatMet>
@@ -153,9 +152,20 @@
 	</GeneDef>
 	
 	<GeneDef>
+		<defName>rjw_genes_cum_eater</defName>
+		<label>Cum eater</label>
+		<description>Carriers of this gene are able to absorb fertilin through eating cum.</description>
+		<iconPath>Things/Mote/Heart</iconPath>
+		<prerequisite>rjw_genes_lifeforce</prerequisite>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<displayCategory>rjw_genes_fertilin</displayCategory>
+		<biostatCpx>1</biostatCpx>
+	</GeneDef>
+	
+	<GeneDef>
 		<defName>rjw_genes_vaginal_absorber</defName>
 		<label>Vaginal Fertilin Absorber</label>
-		<description>Carriers of this gene are able to absorb fertilin through their vagina.</description>
+		<description>Carriers of this gene are able to absorb the fertilin inside sperm through their vagina.</description>
 		<iconPath>Things/Mote/Heart</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>2</displayOrderInCategory>
@@ -166,7 +176,7 @@
 	<GeneDef>
 		<defName>rjw_genes_anal_absorber</defName>
 		<label>Anal Fertilin Absorber</label>
-		<description>Carriers of this gene are able to absorb fertilin through their anus.</description>
+		<description>Carriers of this gene are able to absorb the fertilin inside sperm through their anus.</description>
 		<iconPath>Things/Mote/Heart</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>3</displayOrderInCategory>

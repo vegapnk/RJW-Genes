@@ -64,29 +64,29 @@ namespace RJW_Genes
 				//If we remove this check fertelin is always lost, but the succubus doesn't always gain any
 				if (absorb_factor != 0f)
 				{
-					AbsorbFertilin(props, absorb_factor);
+					TransferFertilin(props, absorb_factor);
 				}
 
-				if (GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_drainer) && !props.pawn.health.hediffSet.HasHediff(HediffDefOf.Succubus_Drained))
+				if (GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_drainer) && !props.pawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_succubus_drained))
 				{
-					props.pawn.health.AddHediff(HediffDefOf.Succubus_Drained);
+					props.pawn.health.AddHediff(HediffDefOf.rjw_genes_succubus_drained);
 					GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(succubus), 0.25f);
 				}
 			}
 		}
-		public static void AbsorbFertilin(SexProps props, float absorb_factor = 1f)
+		public static void TransferFertilin(SexProps props, float absorb_percentage = 1f)
 		{
 			Pawn_GeneTracker genes = props.partner.genes;
 			Gene_LifeForce gene = genes.GetFirstGeneOfType<Gene_LifeForce>();
-			Hediff fertilin_lost = props.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Fertilin_Lost);
+			Hediff fertilin_lost = props.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.rjw_genes_fertilin_lost);
 			//Around quarter get ejected everytime pawn cums
 			float multiplier = Rand.Range(0.10f, 0.40f); 
 			
 
-			//Create a new ferilin_lost hediff or reduce multiplier
+			//Create a new ferilin_lost hediff or increase it
 			if (fertilin_lost == null)
 			{
-				Hediff new_fertilin_lost = HediffMaker.MakeHediff(HediffDefOf.Fertilin_Lost, props.pawn);
+				Hediff new_fertilin_lost = HediffMaker.MakeHediff(HediffDefOf.rjw_genes_fertilin_lost, props.pawn);
 				props.pawn.health.AddHediff(new_fertilin_lost);
 				new_fertilin_lost.Severity = multiplier;
 			}
@@ -95,22 +95,35 @@ namespace RJW_Genes
 				multiplier *= 1 - fertilin_lost.Severity;
 				fertilin_lost.Severity += multiplier;
 			}
-			//More in the tank means more to give
-			if (props.pawn.Has(Quirk.Messy))
-			{
-				multiplier *= 2;
-			}
+
+			multiplier *= absorb_percentage;
 			//Currently taking the sum of all penises, maybe I should just consider one at random
-			float valuechange = CumUtility.GetTotalFluidAmount(props.pawn) / 100 * absorb_factor * multiplier;
+			float valuechange = TotalFertilinAmount(props, multiplier);
 			GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(props.partner), valuechange);
 			//gene.Resource.Value += CumUtility.GetTotalFluidAmount(props.pawn) / 100 * absorb_factor * multiplier;
 		}
 
+		public static float TotalFertilinAmount(SexProps props, float multiplier)
+        {
+			float total_fluid = CumUtility.GetTotalFluidAmount(props.pawn) / 100;
+
+			//More in the tank means more to give
+			if (props.pawn.Has(Quirk.Messy))
+			{
+				total_fluid *= 2;
+			}
+			if (props.pawn.RaceProps.Animal)
+            {
+				total_fluid *= 0.1f; //Should make this settable in settings
+            }
+
+			return total_fluid;
+		}
 
 		public static float BaseDom(SexProps props, Pawn succubus)
 		{
 			float absorb_factor = 0f;
-			if (props.sexType == xxx.rjwSextype.Sixtynine)
+			if (props.sexType == xxx.rjwSextype.Sixtynine && GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_cum_eater))
 			{
 				absorb_factor += 1f;
 			}
@@ -120,7 +133,8 @@ namespace RJW_Genes
 		public static float BaseSub(SexProps props, Pawn succubus)
         {
 			float absorb_factor = 0f;
-			if (props.sexType == xxx.rjwSextype.Oral || props.sexType == xxx.rjwSextype.Fellatio || props.sexType == xxx.rjwSextype.Sixtynine)
+			if ((props.sexType == xxx.rjwSextype.Oral || props.sexType == xxx.rjwSextype.Fellatio || props.sexType == xxx.rjwSextype.Sixtynine) 
+				&& GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_cum_eater))
 			{
 				absorb_factor += 1f;
 			}

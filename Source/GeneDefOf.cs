@@ -81,6 +81,7 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_lifeforce;
 		public static readonly GeneDef rjw_genes_pussyhealing;
 		public static readonly GeneDef rjw_genes_lifeforce_drain;
+		public static readonly GeneDef rjw_genes_cum_eater;
 		public static readonly GeneDef rjw_genes_vaginal_absorber;
 		public static readonly GeneDef rjw_genes_anal_absorber;
 		public static readonly GeneDef rjw_genes_drainer;
@@ -89,10 +90,10 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_succubus_tail;
 		public static readonly GeneDef rjw_genes_succubus_wings;
 
-
-		public static readonly XenotypeDef rjw_genes_succubus;
-
 		//Other Defs
+		public static readonly XenotypeDef rjw_genes_succubus;
 		public static readonly DutyDef rjw_genes_flirt;
+		public static readonly MentalBreakDef rjw_genes_lifeforce_randomrape;
+
 	}
 }

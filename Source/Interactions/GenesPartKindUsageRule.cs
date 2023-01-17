@@ -29,8 +29,12 @@ namespace RJW_Genes.Interactions
 				{
 					weight *= 2.5f;
 				}
-				yield return new Weighted<LewdablePartKind>(weight, LewdablePartKind.Mouth);
-				yield return new Weighted<LewdablePartKind>(weight, LewdablePartKind.Beak);
+				if (pawn.genes.HasGene(GeneDefOf.rjw_genes_cum_eater))
+				{
+					yield return new Weighted<LewdablePartKind>(weight, LewdablePartKind.Mouth);
+					yield return new Weighted<LewdablePartKind>(weight, LewdablePartKind.Beak);
+				}
+				
 				if (pawn.genes.HasGene(GeneDefOf.rjw_genes_vaginal_absorber))
 				{
 					yield return new Weighted<LewdablePartKind>(weight, LewdablePartKind.Vagina);

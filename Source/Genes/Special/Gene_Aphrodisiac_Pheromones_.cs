@@ -48,7 +48,7 @@ namespace RJW_Genes
         //Applies or renews a hediff which increases sexdrive for 1 hours
         private void InduceAphrodisiac(Pawn pawn, float sexfrequency)
         {
-            Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Aphrodisiac_Pheromone);
+            Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.rjw_genes_aphrodisiac_pheromone);
             
             if (hediff != null)
             {
@@ -56,7 +56,7 @@ namespace RJW_Genes
             }
             else
             {
-                Hediff aphrodisiac = HediffMaker.MakeHediff(HediffDefOf.Aphrodisiac_Pheromone, pawn);
+                Hediff aphrodisiac = HediffMaker.MakeHediff(HediffDefOf.rjw_genes_aphrodisiac_pheromone, pawn);
                 foreach (StatModifier stat in aphrodisiac.CurStage.statFactors)
                 {
                     if (stat.stat.defName == "SexFrequency")

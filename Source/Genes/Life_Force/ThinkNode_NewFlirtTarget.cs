@@ -12,7 +12,8 @@ namespace RJW_Genes
     {
         public override ThinkResult TryIssueJobPackage(Pawn pawn, JobIssueParams jobParams)
         {
-            Pawn new_target = ValidTargets(pawn, pawn.Map).RandomElement();
+            List<Pawn> validTargets = ValidTargets(pawn, pawn.Map).ToList();
+            Pawn new_target = validTargets.NullOrEmpty() ? null : validTargets.RandomElement();
             if (new_target != null)
             {
                 pawn.mindState.duty.focus = new_target;
