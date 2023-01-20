@@ -22,4 +22,11 @@
 		<casualInterruptible>false</casualInterruptible>
 		<playerInterruptible>false</playerInterruptible>
 	</JobDef>
+	
+	<JobDef>
+		<defName>rjw_genes_flirt</defName>
+		<driverClass>RJW_Genes.JobDriver_Flirt</driverClass>
+		<reportString>Seduced.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
 </Defs>

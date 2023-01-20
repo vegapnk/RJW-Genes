@@ -28,6 +28,7 @@
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="LicentiaLabs">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\licentia-labs-master\Assemblies\LicentiaLabs.dll</HintPath>
@@ -35,6 +36,7 @@
     </Reference>
     <Reference Include="RJW">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rjw-master\1.4\Assemblies\RJW.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,6 +56,7 @@
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
@@ -125,14 +128,25 @@
     <Compile Include="Genes\Life_Force\Abilities\CompProperties_Seduce.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompProperties_AbilityCockEater.cs" />
     <Compile Include="Genes\Life_Force\Gene_LifeForceDrain.cs" />
+    <Compile Include="Genes\Life_Force\HediffCompProperties_SeverityFromFertilin.cs" />
+    <Compile Include="Genes\Life_Force\HediffComp_SeverityFromFertilin.cs" />
+    <Compile Include="Genes\Life_Force\IncidentWorker_SuccubusDreamVisit.cs" />
     <Compile Include="Genes\Life_Force\IngestionOutcomeDoer_LifeForceOffset.cs" />
+    <Compile Include="Genes\Life_Force\JobGiver_TryQuickieWith.cs" />
+    <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_Flirt.cs" />
     <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_SexOnSpotReceiver.cs" />
     <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_SexOnSpot.cs" />
     <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_Seduced.cs" />
+    <Compile Include="Genes\Life_Force\JobGiver_Flirt.cs" />
+    <Compile Include="Genes\Life_Force\LordJob_SuccubusVisit.cs" />
+    <Compile Include="Genes\Life_Force\LordToil_Flirt.cs" />
     <Compile Include="Genes\Life_Force\Patch_SexTicks_ChangePsyfocus.cs" />
+    <Compile Include="Genes\Life_Force\Patch_Vanilla_Inheritance_Fertilin.cs" />
+    <Compile Include="Genes\Life_Force\ThinkNode_ConditionalCannotInteract.cs" />
     <Compile Include="Genes\Life_Force\ThinkNode_ConditionalLowLifeForce.cs" />
     <Compile Include="Genes\Life_Force\ThinkNode_ConditionalCritcalLifeForce.cs" />
     <Compile Include="Genes\Life_Force\JobGiver_GetLifeForce.cs" />
+    <Compile Include="Genes\Life_Force\ThinkNode_NewFlirtTarget.cs" />
     <Compile Include="Genes\Special\Patch_AgeDrain.cs" />
     <Compile Include="Interactions\CompAbility_SexInteractionRequirements.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_PussyHeal.cs" />
@@ -140,7 +154,6 @@
     <Compile Include="Interactions\CompProperties_SexInteractionRequirements.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompProperties_AbilityPussyHeal.cs" />
     <Compile Include="Genes\Life_Force\GeneGizmo_ResourceLifeForce.cs" />
-    <Compile Include="Genes\Life_Force\HediffWithComps_tank.cs" />
     <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_CastAbilityAfterSex.cs" />
     <Compile Include="Genes\Life_Force\LifeForceMentalState.cs" />
     <Compile Include="Genes\Life_Force\LifeForceMentalStateWorker.cs" />

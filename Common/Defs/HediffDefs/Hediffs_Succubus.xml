@@ -4,7 +4,7 @@
 		<defName>rjw_genes_aphrodisiac_pheromone</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>induced libido</label>
-		<description>Aphrodisiac pheromone effects.</description>
+		<description>sex drive increasing due to smelling aphrodisiac pheromones.</description>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
@@ -16,7 +16,7 @@
 			<li>
 				<becomeVisible>true</becomeVisible>
 				<statFactors>
-					<SexFrequency>2</SexFrequency>
+					<SexFrequency>2</SexFrequency> <!--This is a lie, it gets changed when applied -->
 				</statFactors>
 			</li>
 		</stages>
@@ -24,7 +24,7 @@
 	
 	<HediffDef>
 		<defName>rjw_genes_fertilin_lost</defName>
-		<hediffClass>RJW_Genes.HediffWithComps_tank</hediffClass>
+		<hediffClass>Hediff_HemogenCraving</hediffClass>
 		<label>lost fertilin</label>
 		<description>Percentage of fertilin lost.</description>
 		<defaultLabelColor>(1,1,1)</defaultLabelColor>
@@ -85,5 +85,55 @@
 				</capMods>
 			</li>
 		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>rjw_genes_fertilin_craving</defName>
+		<label>fertilin craving</label>
+		<hediffClass>Hediff_HemogenCraving</hediffClass>
+		<description>weakened due to running out of fertilin.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<maxSeverity>1.0</maxSeverity>
+		<initialSeverity>0.01</initialSeverity>
+		<stages>
+		  <li>
+			<label>minor</label>
+			<painOffset>0.05</painOffset>
+			<capMods>
+			  <li>
+				<capacity>Consciousness</capacity>
+				<setMax>0.9</setMax>
+			  </li>
+			</capMods>
+		  </li>
+		  <li>
+			<label>moderate</label>
+			<minSeverity>0.35</minSeverity>
+			<painOffset>0.1</painOffset>
+			<capMods>
+			  <li>
+				<capacity>Consciousness</capacity>
+				<setMax>0.8</setMax>
+			  </li>
+			</capMods>
+		  </li>
+		  <li>
+			<label>major</label>
+			<minSeverity>0.7</minSeverity>
+			<painOffset>0.15</painOffset>
+			<capMods>
+			  <li>
+				<capacity>Consciousness</capacity>
+				<setMax>0.5</setMax>
+			  </li>
+			</capMods>
+		  </li>
+		</stages>
+		<comps>
+		  <li Class="RJW_Genes.HediffCompProperties_SeverityFromFertilin">
+			<severityPerHourEmpty>0.05</severityPerHourEmpty>
+			<severityPerHourHemogen>-0.1</severityPerHourHemogen>
+		  </li>
+		</comps>
 	</HediffDef>
 </Defs>

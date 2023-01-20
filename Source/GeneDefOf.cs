@@ -1,6 +1,6 @@
 ﻿using RimWorld;
 using Verse;
-
+using Verse.AI;
 namespace RJW_Genes
 {
 	[DefOf]
@@ -79,8 +79,9 @@ namespace RJW_Genes
 
 		// LifeForce
 		public static readonly GeneDef rjw_genes_lifeforce;
+		public static readonly GeneDef rjw_genes_pussyhealing;
 		public static readonly GeneDef rjw_genes_lifeforce_drain;
-		public static readonly GeneDef rjw_genes_pussyhealer;
+		public static readonly GeneDef rjw_genes_cum_eater;
 		public static readonly GeneDef rjw_genes_vaginal_absorber;
 		public static readonly GeneDef rjw_genes_anal_absorber;
 		public static readonly GeneDef rjw_genes_drainer;
@@ -90,5 +91,12 @@ namespace RJW_Genes
 		// Cosmetic
 		public static readonly GeneDef rjw_genes_succubus_tail;
 		public static readonly GeneDef rjw_genes_succubus_wings;
-    }
+
+		//Other Defs
+		public static readonly XenotypeDef rjw_genes_succubus;
+		public static readonly DutyDef rjw_genes_flirt;
+		public static readonly MentalBreakDef rjw_genes_lifeforce_randomrape;
+
+	}
+
 }
