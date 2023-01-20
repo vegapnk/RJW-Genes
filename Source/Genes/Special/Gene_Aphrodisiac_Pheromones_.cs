@@ -13,11 +13,11 @@ namespace RJW_Genes
     public class Gene_Aphrodisiac_Pheromones : Gene
     {   
 
-        //Summary one every one check for all pawns nearby and in line of sight and add/renew a hediff which increases sexdrive for six hours.
+        //Summary once every one hour check for all pawns nearby and in line of sight (same room) and add/renew a hediff which lasts for 1 hour.
         public override void Tick()
         {
             base.Tick();
-            if (this.pawn.IsHashIntervalTick(2500))
+            if (this.pawn.IsHashIntervalTick(2500) && this.pawn.Map != null)
             {
                 //Only spread pheromones if sexdrive above 1
                 float sexfrequency = this.pawn.GetStatValue(StatDef.Named("SexFrequency"));
@@ -31,12 +31,12 @@ namespace RJW_Genes
             }
         }
 
-        //Creatus an IEnumerable of all pawns which are closeby and in lineofsight, self and other pawns with aphrodisiac pheromones gene are skipped.
+        //Creatus an IEnumerable of all pawns which are closeby and in lineofsight, self and other pawns with aphrodisiac pheromones gene are skipped (to prevent loops).
         private IEnumerable<Pawn> AffectedPawns(IntVec3 pos, Map map)
         {
             foreach (Pawn pawn in map.mapPawns.AllPawns)
             {
-                if (this.pawn != null && pawn != this.pawn && pos.DistanceTo(pawn.Position) < 5 && GenSight.LineOfSight(pos, pawn.Position, pawn.Map) && !GeneUtility.HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_aphrodisiac_pheromones))
+                if (pawn != null && this.pawn != null && pawn != this.pawn && pos.DistanceTo(pawn.Position) < 5 && GenSight.LineOfSight(pos, pawn.Position, pawn.Map) && !GeneUtility.HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_aphrodisiac_pheromones))
                 {
                     yield return pawn;
                 }
@@ -45,10 +45,10 @@ namespace RJW_Genes
             yield break;
         }
 
-        //Applies er renews a hediff which increases sexdrive for 6 hours
+        //Applies or renews a hediff which increases sexdrive for 1 hours
         private void InduceAphrodisiac(Pawn pawn, float sexfrequency)
         {
-            Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Aphrodisiac_Pheromone);
+            Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.rjw_genes_aphrodisiac_pheromone);
             
             if (hediff != null)
             {
@@ -56,12 +56,9 @@ namespace RJW_Genes
             }
             else
             {
-                Hediff aphrodisiac = HediffMaker.MakeHediff(HediffDefOf.Aphrodisiac_Pheromone, pawn);
+                Hediff aphrodisiac = HediffMaker.MakeHediff(HediffDefOf.rjw_genes_aphrodisiac_pheromone, pawn);
                 foreach (StatModifier stat in aphrodisiac.CurStage.statFactors)
                 {
-                    //Log.Message(pawn.Name.ToString());
-                    //Log.Message(stat.stat.defName);
-                    //Log.Message(stat.value.ToString());
                     if (stat.stat.defName == "SexFrequency")
                     {
                         stat.value = ModifySexfrequency(pawn, sexfrequency);

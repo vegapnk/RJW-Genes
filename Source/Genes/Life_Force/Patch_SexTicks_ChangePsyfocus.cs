@@ -24,7 +24,7 @@ namespace RJW_Genes
 					Pawn pawn2 = target as Pawn;
 					if (pawn2 != null)
 					{
-						//We need who the pawn on top is and if reverse we need to make the sub the pawn on top
+						//We need to know who the pawn on top is and if reverse we need to make the sub the pawn on top
 						if (__instance.Sexprops.isRevese)
 						{
 							
@@ -44,7 +44,7 @@ namespace RJW_Genes
 
 		public static void DrinkCumflation(Pawn dom, Pawn sub)
         {
-			if (GeneUtility.HasLifeForce(sub) && dom.health.hediffSet.HasHediff(HediffDef.Named("Cumflation")))
+			if (GeneUtility.HasLifeForce(sub) && GeneUtility.HasGeneNullCheck(sub,GeneDefOf.rjw_genes_cum_eater)&& dom.health.hediffSet.HasHediff(HediffDef.Named("Cumflation")))
 			{
 				Hediff cumflation = dom.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("Cumflation"));
 				Gene_LifeForce gene_LifeForce = sub.genes.GetFirstGeneOfType<Gene_LifeForce>();
