@@ -104,7 +104,7 @@ namespace RJW_Genes
 
                 }
             }
-            Find.LetterStack.ReceiveLetter("RJW_nymph_incident_join_title".Translate(), "RJW_nymph_incident_join_description".Translate(), LetterDefOf.PositiveEvent, new_sexdemons, null, null, null, null);
+            Find.LetterStack.ReceiveLetter("rjw_genes_sexdemon_visit_incident_label".Translate(), "rjw_genes_sexdemon_visit_incident_description".Translate(), LetterDefOf.PositiveEvent, new_sexdemons, null, null, null, null);
             //base.SendStandardLetter(baseLetterLabel, baseLetterText, this.def.letterDef, parms, succubus, Array.Empty<NamedArgument>());
 
             return true;
