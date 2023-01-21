@@ -38,6 +38,10 @@
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rjw-master\1.4\Assemblies\RJW.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="RJWSexperience">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW-Sexperience-master\1.4\Assemblies\RJWSexperience.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -175,6 +179,8 @@
     <Compile Include="JobDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RJW_Genes.cs" />
+    <Compile Include="RJW_GenesSettings.cs" />
+    <Compile Include="RJW_GenesSettingsControllercs.cs" />
     <Compile Include="ThoughtDefOf.cs" />
   </ItemGroup>
   <ItemGroup>

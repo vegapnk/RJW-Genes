@@ -10,6 +10,6 @@
 
 
 	<!--Succubus Events-->
-	<SuccubusLeaving>The succubus has fed enough on your colonists and will now leave.</SuccubusLeaving>
+	<SuccubusLeaving>{0} has fed enough on your colonists and will now leave.</SuccubusLeaving>
 	
 </LanguageData>

@@ -23,7 +23,7 @@ namespace RJW_Genes
         //Summary//
         //Adds our own partpreferences to rjw's list. Our partpreferences are under Interactions.GenesPartKindUsageRule
         //
-        private static void AddtoIPartPreferenceRule()
+        private static void InjectIntoRjwInteractionServices()
         {
             List<IPartPreferenceRule> partPreferenceRules = Unprivater.GetProtectedValue<List<IPartPreferenceRule>>("_partKindUsageRules", typeof(PartPreferenceDetectorService));
             partPreferenceRules.Add(new Interactions.GenesPartKindUsageRule());

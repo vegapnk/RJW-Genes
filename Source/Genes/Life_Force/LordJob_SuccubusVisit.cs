@@ -7,6 +7,7 @@ using Verse;
 using Verse.AI;
 using Verse.AI.Group;
 using RimWorld;
+using rjw;
 namespace RJW_Genes
 {
     //Based on LordJob_VisitColony
@@ -52,8 +53,7 @@ namespace RJW_Genes
                 tickLimit = Rand.Range(60000, 180000); //~1-3 days
             }
             transition1.AddTrigger(new Trigger_TicksPassed(tickLimit));
-
-            transition1.AddPreAction(new TransitionAction_Message("SuccubusLeaving".Translate(), null, 1f));
+            transition1.AddPreAction(new TransitionAction_Custom(new Action(this.SuccubiLeave))); //Join or leave colony
             stateGraph.AddTransition(transition1);
 
             //If they become hostile
@@ -84,7 +84,26 @@ namespace RJW_Genes
             Scribe_Values.Look<int?>(ref this.durationTicks, "durationTicks", null, false);
             Scribe_References.Look<Pawn>(ref this.target, "target", false);
         }
+
+        public void SuccubiLeave()
+        {
+            foreach (Pawn pawn in this.lord.ownedPawns)
+            {
+                if(colonyJoiners.Contains(pawn))
+                {
+                    RecruitUtility.Recruit(pawn, Faction.OfPlayer);
+                    Find.LetterStack.ReceiveLetter("Guest Joins", string.Format("{0} enjoys it here and has decided to stay", xxx.get_pawnname(pawn)), LetterDefOf.PositiveEvent, pawn, null, null, null, null);
+                }
+                else
+                {
+                    Messages.Message("SuccubusLeaving".Translate(xxx.get_pawnname(pawn)), pawn, MessageTypeDefOf.NeutralEvent, true);
+                }
+            }
+
+        }
+
         public Pawn target;
         private int? durationTicks;
+        public List<Pawn> colonyJoiners = new List<Pawn>();
     }
 }

@@ -14,7 +14,7 @@ namespace RJW_Genes
 		protected override Job TryGiveJob(Pawn pawn)
 		{
 			Pawn target = pawn.mindState.duty.focus.Pawn;
-			if (pawn.CanReach(target, PathEndMode.InteractionCell, Danger.Deadly))
+			if (pawn.CanReach(target, PathEndMode.InteractionCell, Danger.Deadly) && !target.jobs.curDriver.asleep)
             {
 				return JobMaker.MakeJob(JobDefOf.rjw_genes_flirt, target);
 			}
