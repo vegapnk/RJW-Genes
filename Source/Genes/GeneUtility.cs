@@ -38,6 +38,7 @@ namespace RJW_Genes
             }
         }
 
+
         public static bool HasLowLifeForce(Pawn pawn)
         {
             if (HasLifeForce(pawn))
@@ -118,5 +119,7 @@ namespace RJW_Genes
         public static bool HasParalysingKiss(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_paralysingkiss); }
         public static bool HasSeduce(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_seduce); }
         public static bool IsSexualDrainer(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_drainer); }
+        public static bool IsCumEater(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_cum_eater); }
+
     }
 }

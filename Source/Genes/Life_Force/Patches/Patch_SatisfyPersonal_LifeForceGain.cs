@@ -103,6 +103,12 @@ namespace RJW_Genes
 			multiplier *= absorb_percentage;
 			//Currently taking the sum of all penises, maybe I should just consider one at random
 			float valuechange = TotalFertilinAmount(props, multiplier);
+
+			if (props.partner.IsAnimal())
+            {
+				valuechange *= RJW_Genes_Settings.rjw_genes_fertilin_from_animals_factor;
+            }
+
 			GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(props.partner), valuechange);
 			//gene.Resource.Value += CumUtility.GetTotalFluidAmount(props.pawn) / 100 * absorb_factor * multiplier;
 		}
@@ -129,7 +135,7 @@ namespace RJW_Genes
 		/// </summary>
 		/// <param name="props">The summary of the sex act, used for checking conditions.</param>
 		/// <param name="PawnWithLifeForce">The pawn that might gain LifeForce through this method.</param>
-		/// <returns></returns>
+		/// <returns>A factor between 0 and 1 how much of output-fertilin will be used for input-lifeforce</returns>
 		public static float BaseDom(SexProps props, Pawn PawnWithLifeForce)
 		{
 			float absorb_factor = 0f;
@@ -145,7 +151,7 @@ namespace RJW_Genes
 		/// </summary>
 		/// <param name="props">The summary of the sex act, used for checking conditions.</param>
 		/// <param name="PawnWithLifeForce">The pawn that might gain LifeForce through this method.</param>
-		/// <returns></returns>
+		/// <returns>A factor between 0 and 1 how much of output-fertilin will be used for input-lifeforce</returns>
 		public static float BaseSub(SexProps props, Pawn PawnWithLifeForce)
         {
 			float absorb_factor = 0f;

@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Verse;
-using UnityEngine;
 using RimWorld;
 using rjw;
-using rjw.Modules.Interactions.Helpers;
 
 namespace RJW_Genes
 {
@@ -31,11 +25,8 @@ namespace RJW_Genes
 			bool any_wound_tended = AbilityUtility.Heal(pawn, this.Props.tendQualityRange);
 			if (any_wound_tended)
 			{
-				MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "Sex healed wounds", 3.65f);
-				//pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDefOf.Pussy_Healed, pawn, null);
+				MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "Sex tended wounds", 3.65f);
 			}
-			//this.AfterSex(any_wound_tended);
-			//FleckMaker.AttachedOverlay(pawn, FleckDefOf.FlashHollow, Vector3.zero, 1.5f, -1f);
 		}
 
 		//Not yet implemented, but the heal should also trigger after normal sex
@@ -77,7 +68,7 @@ namespace RJW_Genes
 					}
 					return false;
 				}
-				//AbilityUtility.ValidateHasTendableWound(pawn, throwMessages, this.parent);
+				//TODO: Only make pawns targetable that have tendable wounds 
 
 			}
 			return base.Valid(target, throwMessages);

@@ -39,7 +39,7 @@ namespace RJW_Genes
                 {
 					return null;
                 }
-				int num = Mathf.RoundToInt(((gene_lifeforce.targetValue - gene_lifeforce.Value) * 100 + 10) / ingestionOutcomeDoer.FERTILIN_PER_UNIT);
+				int num = Mathf.RoundToInt(((gene_lifeforce.targetValue - gene_lifeforce.Value) * 100 + 10) / IngestionOutcomeDoer_LifeForceOffset.FERTILIN_PER_UNIT);
 				if (gatheredCum != null && num > 0)
 				{
 					Job job = JobMaker.MakeJob(RimWorld.JobDefOf.Ingest, gatheredCum);

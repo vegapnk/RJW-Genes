@@ -12,6 +12,7 @@ Features:
 - RJW Race-Support Compatibility (#12,#13, Shabakur)
 - Animal Gene Inheritance Gene-Chance Multiplier per Setting (#13, Shabakur)
 - Lots of Debug-Only Logging for Animal Gene Inheritance
+- Mod-Settings 
 
 Succubus:
 
@@ -22,6 +23,7 @@ Fixes:
 - Futa Gene only triggers if Pawn is not a futa already (#2)
 - Genitalia Resizing triggers on 20th Birthday (#11)
 - RJW-Gene-Inheritance Settings now do things (#13, Shabakur)
+- Check for Animals in Orgasm Rush, no Orgasm Rush for and from Animals (#15)
 
 # 1.0.1 (2022-12-20)
 

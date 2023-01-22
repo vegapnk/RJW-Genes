@@ -11,7 +11,7 @@
 	<JobDef>
 		<defName>rjw_genes_lifeforce_healpussy</defName>
 		<driverClass>RJW_Genes.JobDriver_CastAbilityAfterSex</driverClass>
-		<reportString>Healing someone with sex.</reportString>
+		<reportString>Tending someones wounds with sex.</reportString>
 		<casualInterruptible>false</casualInterruptible>
 	</JobDef>
 	
