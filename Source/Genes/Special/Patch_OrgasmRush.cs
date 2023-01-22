@@ -19,8 +19,12 @@ namespace RJW_Genes
 
 		public static void Postfix(SexProps props)
 		{
-			// ShortCuts: Exit Early if Pawn or Partner are null (can happen with Animals or Masturbation)
-			if (props.pawn == null || !props.hasPartner())
+			// ShortCuts: Exit Early if Pawn or Partner are null (can happen with Masturbation or other nieche-cases)
+			if (props == null || props.pawn == null || !props.hasPartner())
+				return;
+
+			// Exit for Animals - Animals can't get or trigger Orgasm Rushes. Fixes #15
+			if (props.pawn.IsAnimal() || props.partner.IsAnimal())
 				return;
 
 			if (props.pawn.genes != null && props.pawn.genes.HasGene(GeneDefOf.rjw_genes_orgasm_rush))
