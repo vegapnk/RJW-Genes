@@ -78,7 +78,7 @@
 		<defName>rjw_genes_cockeater</defName>
 		<label>Cockeater</label>
 		<labelShortAdj>cockeater</labelShortAdj>
-		<description>Carriers of this gene are able eat cocks to restore their fertilin supply.</description>
+		<description>Carriers of this gene are able eat cocks to restore their fertilin supply. Cocks are consumed during that process.</description>
 		<iconPath>Things/Mote/Heart</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>11</displayOrderInCategory>
@@ -154,7 +154,7 @@
 	<GeneDef>
 		<defName>rjw_genes_cum_eater</defName>
 		<label>Cum eater</label>
-		<description>Carriers of this gene are able to absorb fertilin through eating cum.</description>
+		<description>Carriers of this gene are able to absorb fertilin through eating cum. This includes oral sex, eating cum for food or sucking out cumflated pawns. </description>
 		<iconPath>Things/Mote/Heart</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>1</displayOrderInCategory>
@@ -187,7 +187,7 @@
 	<GeneDef>
 		<defName>rjw_genes_drainer</defName>
 		<label>vitality drainer</label>
-		<description>Carriers of this gene are able to absorb a great amount of fertilin by draining the vitality of the partner.</description>
+		<description>Carriers of this gene are able to absorb a great amount of fertilin by draining the vitality of the partner. This is done passively through having sex with a non-drained pawn that does not have this gene.</description>
 		<iconPath>Things/Mote/Heart</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>4</displayOrderInCategory>

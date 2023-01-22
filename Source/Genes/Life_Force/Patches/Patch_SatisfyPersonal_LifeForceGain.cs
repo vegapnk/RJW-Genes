@@ -1,12 +1,8 @@
 ﻿using HarmonyLib;
 using rjw;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using RimWorld;
 using Verse;
+
 namespace RJW_Genes
 {
 	/// <summary>
@@ -16,6 +12,8 @@ namespace RJW_Genes
 	[HarmonyPatch(typeof(SexUtility), nameof(SexUtility.SatisfyPersonal))]
 	public static class Patch_SatisfyPersonal_LifeForceGain
 	{
+		public const float LIFEFORCE_GAINED_FROM_DRAINER_GENE = 0.25f;
+
 		public static void Postfix(SexProps props)
 		{
 			// ShortCuts: Exit Early if Pawn or Partner are null (can happen with Animals or Masturbation)
@@ -31,7 +29,6 @@ namespace RJW_Genes
 			//Summary//
 			//We use the positions of the pawn (dom or sub) and based on that which interactions will transfer fertilin 
 			//By checking isreceiver we know if the succubus is the dom or the sub and if the situation is reverse we also swap the function we use
-			//
 			float absorb_factor = 0f;
 			if (GeneUtility.HasLifeForce(props.partner))
 			{
@@ -70,10 +67,16 @@ namespace RJW_Genes
 					TransferFertilin(props, absorb_factor);
 				}
 
-				if (GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_drainer) && !props.pawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_succubus_drained))
+				// Handle Gene: Sexual_Drainer
+				// to be drained, a pawn must not-be-drained-already and drainers cannot be drained either.
+				if (GeneUtility.IsSexualDrainer(PawnWithLifeForce) 
+					&& !props.pawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_succubus_drained) 
+					&& !GeneUtility.IsSexualDrainer(props.pawn))
 				{
+					if (RJW_Genes_Settings.rjw_genes_detailed_debug)
+						ModLog.Message($"{props.pawn.Name} has been (sexually) drained by {PawnWithLifeForce.Name}");
 					props.pawn.health.AddHediff(HediffDefOf.rjw_genes_succubus_drained);
-					GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(PawnWithLifeForce), 0.25f);
+					GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(PawnWithLifeForce), LIFEFORCE_GAINED_FROM_DRAINER_GENE);
 				}
 			}
 		}
@@ -82,6 +85,7 @@ namespace RJW_Genes
 		{
 			Pawn_GeneTracker genes = props.partner.genes;
 			Gene_LifeForce gene = genes.GetFirstGeneOfType<Gene_LifeForce>();
+
 			Hediff fertilin_lost = props.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.rjw_genes_fertilin_lost);
 			//Around quarter get ejected everytime pawn cums
 			float multiplier = Rand.Range(0.10f, 0.40f); 
@@ -106,11 +110,12 @@ namespace RJW_Genes
 
 			if (props.partner.IsAnimal())
             {
+				if (RJW_Genes_Settings.rjw_genes_detailed_debug)
+					ModLog.Message($"Fertilin-Source of {props.pawn.Name} was an Animal, Fertilin-Gain is being adjusted by {RJW_Genes_Settings.rjw_genes_fertilin_from_animals_factor}%");
 				valuechange *= RJW_Genes_Settings.rjw_genes_fertilin_from_animals_factor;
             }
 
 			GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(props.partner), valuechange);
-			//gene.Resource.Value += CumUtility.GetTotalFluidAmount(props.pawn) / 100 * absorb_factor * multiplier;
 		}
 
 		public static float TotalFertilinAmount(SexProps props, float multiplier)
@@ -139,7 +144,7 @@ namespace RJW_Genes
 		public static float BaseDom(SexProps props, Pawn PawnWithLifeForce)
 		{
 			float absorb_factor = 0f;
-			if (props.sexType == xxx.rjwSextype.Sixtynine && GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_cum_eater))
+			if (props.sexType == xxx.rjwSextype.Sixtynine && GeneUtility.IsCumEater(PawnWithLifeForce))
 			{
 				absorb_factor += 1f;
 			}
@@ -147,7 +152,7 @@ namespace RJW_Genes
 		}
 
 		/// <summary>
-		/// Handles the Case that the Life-Force wielder got initiated into sex (They are "Sub"). 
+		/// Handles the Case that the Life-Force wielder got initiated into sex (They are "Sub").
 		/// </summary>
 		/// <param name="props">The summary of the sex act, used for checking conditions.</param>
 		/// <param name="PawnWithLifeForce">The pawn that might gain LifeForce through this method.</param>
@@ -156,7 +161,7 @@ namespace RJW_Genes
         {
 			float absorb_factor = 0f;
 			if ((props.sexType == xxx.rjwSextype.Oral || props.sexType == xxx.rjwSextype.Fellatio || props.sexType == xxx.rjwSextype.Sixtynine) 
-				&& GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_cum_eater))
+				&& GeneUtility.IsCumEater(PawnWithLifeForce))
 			{
 				absorb_factor += 1f;
 			}

@@ -45,13 +45,13 @@
 		<defName>rjw_genes_succubus_drained</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>Drained</label>
-		<description>The vitality of this pawn has been drained.</description>
+		<description>The vitality of this pawn has been drained. Cannot be drained again until fully recovered.</description>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
 		<maxSeverity>1.0</maxSeverity>
 		<initialSeverity>1.0</initialSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-1.0</severityPerDay>
+				<severityPerDay>-0.25</severityPerDay>
 			</li>
 		</comps>
 		<stages>
@@ -63,6 +63,10 @@
 						<offset>-0.1</offset>
 					</li>
 				</capMods>
+				<restFallFactorOffset>0.1</restFallFactorOffset>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.5</minSeverity>
@@ -73,6 +77,11 @@
 						<offset>-0.2</offset>
 					</li>
 				</capMods>
+				<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+				<restFallFactorOffset>0.20</restFallFactorOffset>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.8</minSeverity>
@@ -80,9 +89,15 @@
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
-						<offset>-0.4</offset>
+						<offset>-0.3</offset>
 					</li>
 				</capMods>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
+				</statOffsets>
+        		<vomitMtbDays>0.05</vomitMtbDays>
+				<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
+				<restFallFactorOffset>0.35</restFallFactorOffset>
 			</li>
 		</stages>
 	</HediffDef>
