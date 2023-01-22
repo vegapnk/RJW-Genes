@@ -87,6 +87,7 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_drainer;
 		public static readonly GeneDef rjw_genes_seduce;
 		public static readonly GeneDef rjw_genes_paralysingkiss;
+		public static readonly GeneDef rjw_genes_cockeater;
 
 		// Cosmetic
 		public static readonly GeneDef rjw_genes_succubus_tail;
