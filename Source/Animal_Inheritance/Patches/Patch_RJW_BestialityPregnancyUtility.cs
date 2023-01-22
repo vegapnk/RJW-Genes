@@ -11,7 +11,7 @@ using rjw;
 namespace RJW_BGS
 {
     [HarmonyPatch(typeof(Hediff_BasePregnancy), "Initialize")]
-    public static class PatchRJWBestialityPregnancyUtility
+    public static class Patch_RJW_BestialityPregnancyUtility
     {
         [HarmonyPostfix]
         public static void AddGenes(Pawn mother, Pawn dad, ref Hediff_BasePregnancy __instance)

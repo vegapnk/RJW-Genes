@@ -9,9 +9,12 @@ using RimWorld;
 using Verse;
 namespace RJW_Genes
 {
-
+	/// <summary>
+	/// This Patch hooks after "SatisfyPersonal"(i.E. when the pawn finished fucking) and covers LifeForceGain. 
+	/// If the pawn has LifeForce, all relevant Genes are checked and applied. 
+	/// </summary>
 	[HarmonyPatch(typeof(SexUtility), nameof(SexUtility.SatisfyPersonal))]
-	public static class Patch_LifeForce
+	public static class Patch_SatisfyPersonal_LifeForceGain
 	{
 		public static void Postfix(SexProps props)
 		{
@@ -32,19 +35,19 @@ namespace RJW_Genes
 			float absorb_factor = 0f;
 			if (GeneUtility.HasLifeForce(props.partner))
 			{
-				Pawn succubus = props.partner;
+				Pawn PawnWithLifeForce = props.partner;
 
 				if (!props.isRevese)
 				{
 					if (props.isReceiver)
 					{
 						// Scenario Dom Succubus, normal
-						absorb_factor = BaseDom(props, succubus);
+						absorb_factor = BaseDom(props, PawnWithLifeForce);
 					}
 					else
 					{
 						// Scenario Sub Succubus, normal
-						absorb_factor = BaseSub(props, succubus);
+						absorb_factor = BaseSub(props, PawnWithLifeForce);
 					}
 				}
 				else
@@ -52,28 +55,29 @@ namespace RJW_Genes
 					if (props.isReceiver)
 					{
 						// Scenario Dom Succubus, Reverse
-						absorb_factor = BaseSub(props, succubus);
+						absorb_factor = BaseSub(props, PawnWithLifeForce);
 					}
 					else
 					{
 						// Scenario Sub Succubus, Reverse
-						absorb_factor = BaseDom(props, succubus);
+						absorb_factor = BaseDom(props, PawnWithLifeForce);
 					}
 				}
 
-				//If we remove this check fertelin is always lost, but the succubus doesn't always gain any
+				// If we remove this check fertilin is always lost, but the succubus doesn't always gain any
 				if (absorb_factor != 0f)
 				{
 					TransferFertilin(props, absorb_factor);
 				}
 
-				if (GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_drainer) && !props.pawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_succubus_drained))
+				if (GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_drainer) && !props.pawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_succubus_drained))
 				{
 					props.pawn.health.AddHediff(HediffDefOf.rjw_genes_succubus_drained);
-					GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(succubus), 0.25f);
+					GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(PawnWithLifeForce), 0.25f);
 				}
 			}
 		}
+
 		public static void TransferFertilin(SexProps props, float absorb_percentage = 1f)
 		{
 			Pawn_GeneTracker genes = props.partner.genes;
@@ -120,39 +124,51 @@ namespace RJW_Genes
 			return total_fluid;
 		}
 
-		public static float BaseDom(SexProps props, Pawn succubus)
+		/// <summary>
+		/// Handles the Case that the Life-Force wielder initiated the Sex (They are "Dom"). 
+		/// </summary>
+		/// <param name="props">The summary of the sex act, used for checking conditions.</param>
+		/// <param name="PawnWithLifeForce">The pawn that might gain LifeForce through this method.</param>
+		/// <returns></returns>
+		public static float BaseDom(SexProps props, Pawn PawnWithLifeForce)
 		{
 			float absorb_factor = 0f;
-			if (props.sexType == xxx.rjwSextype.Sixtynine && GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_cum_eater))
+			if (props.sexType == xxx.rjwSextype.Sixtynine && GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_cum_eater))
 			{
 				absorb_factor += 1f;
 			}
 			return absorb_factor;
 		}
 
-		public static float BaseSub(SexProps props, Pawn succubus)
+		/// <summary>
+		/// Handles the Case that the Life-Force wielder got initiated into sex (They are "Sub"). 
+		/// </summary>
+		/// <param name="props">The summary of the sex act, used for checking conditions.</param>
+		/// <param name="PawnWithLifeForce">The pawn that might gain LifeForce through this method.</param>
+		/// <returns></returns>
+		public static float BaseSub(SexProps props, Pawn PawnWithLifeForce)
         {
 			float absorb_factor = 0f;
 			if ((props.sexType == xxx.rjwSextype.Oral || props.sexType == xxx.rjwSextype.Fellatio || props.sexType == xxx.rjwSextype.Sixtynine) 
-				&& GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_cum_eater))
+				&& GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_cum_eater))
 			{
 				absorb_factor += 1f;
 			}
-			else if (props.sexType == xxx.rjwSextype.Vaginal && GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_vaginal_absorber))
+			else if (props.sexType == xxx.rjwSextype.Vaginal && GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_vaginal_absorber))
 			{
 				absorb_factor += 1f;
 			}
-			else if (props.sexType == xxx.rjwSextype.Anal && GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_anal_absorber))
+			else if (props.sexType == xxx.rjwSextype.Anal && GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_anal_absorber))
 			{
 				absorb_factor += 1f;
 			}
 			else if (props.sexType == xxx.rjwSextype.DoublePenetration)
 			{
-				if (GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_vaginal_absorber))
+				if (GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_vaginal_absorber))
 				{
 					absorb_factor += 0.5f;
 				}
-				if (GeneUtility.HasGeneNullCheck(succubus, GeneDefOf.rjw_genes_anal_absorber))
+				if (GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_anal_absorber))
 				{
 					absorb_factor += 0.5f;
 				}

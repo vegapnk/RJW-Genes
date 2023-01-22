@@ -19,7 +19,7 @@ namespace RJW_BGS
         //typeof(bool)
     }
     )]
-    public static class PatchVanillaPregnancyUtility
+    public static class Patch_Vanilla_PregnancyUtility
     {
         [HarmonyPostfix]
         public static void AnimalInheritedGenes(Pawn father, Pawn mother, ref GeneSet __result)

@@ -7,7 +7,7 @@ using rjw;
 namespace RJW_BGS
 {
     [HarmonyPatch(typeof(Hediff_InsectEgg), "GiveBirth")]
-    public static class PatchRJWHediffInsect_Egg
+    public static class Patch_RJW_HediffInsect_Egg
     {
         [HarmonyTranspiler]
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
