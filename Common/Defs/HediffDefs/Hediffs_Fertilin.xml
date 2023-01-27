@@ -136,4 +136,37 @@
 		  </li>
 		</comps>
 	</HediffDef>
+
+  <HediffDef ParentName="RoleStatBuff">
+    <defName>rjw_genes_naked_prowess</defName>
+    <label>naked prowss</label>
+    <description>Driven by fertilin, this person has greatly increased strength and resilience.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+		<!--Maybe a bit to much, but they are supposed to be strong-->
+        <statOffsets>
+          <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.5</ArmorRating_Heat>
+<!--		  <Insulation_Cold>10</Insulation_Cold>
+		  <Insulation_Heat>10</Insulation_Heat> -->
+        </statOffsets>
+		<statFactors>
+		  <IncomingDamageFactor>0.5</IncomingDamageFactor>
+		  <MeleeDamageFactor>1.5</MeleeDamageFactor>
+		</statFactors>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+        <disappearsAfterTicks>5000</disappearsAfterTicks> <!-- 2 hours -->
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+	  <!--TODO: Make hediff disappear if pawn is nolonger naked-->
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+
 </Defs>

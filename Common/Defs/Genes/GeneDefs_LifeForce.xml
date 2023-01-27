@@ -152,8 +152,26 @@
 	</GeneDef>
 	
 	<GeneDef>
+		<defName>rjw_genes_naked_prowess</defName>
+		<label>naked prowess</label>
+		<description>Carriers of this gene are able to temporarily increase their strenght and resilience, while they are naked.</description>
+		<iconPath>Things/Mote/Heart</iconPath>
+		<prerequisite>rjw_genes_lifeforce</prerequisite>
+		<displayOrderInCategory>13</displayOrderInCategory>
+		<displayCategory>rjw_genes_fertilin</displayCategory>
+		<abilities>
+			<li>rjw_genes_naked_prowess</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>rjw_genes_naked_prowess</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+	
+	<GeneDef>
 		<defName>rjw_genes_cum_eater</defName>
-		<label>Cum eater</label>
+		<label>cum eater</label>
 		<description>Carriers of this gene are able to absorb fertilin through eating cum.</description>
 		<iconPath>Things/Mote/Heart</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>

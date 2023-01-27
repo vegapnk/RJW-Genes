@@ -125,6 +125,8 @@
     <Compile Include="Genes\Genitalia\Gene_EquineGenitalia.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaChanger.cs" />
     <Compile Include="Genes\Life_Force\Abilities\AbilityUtility.cs" />
+    <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_CasterIsNaked.cs" />
+    <Compile Include="Genes\Life_Force\Abilities\CompProperties_CasterIsNaked.cs" />
     <Compile Include="Genes\Life_Force\Alert_LowFertilin.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_Seduce.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_LifeForceCost.cs" />
