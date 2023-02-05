@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>LustLicentia.RJWLabs</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="rjw_genes_succubus"]/genes</xpath>
+		<value>
+			<li>rjw_genes_elasticity</li>
+		</value>
+	</match>
+</Operation>
+</Patch>

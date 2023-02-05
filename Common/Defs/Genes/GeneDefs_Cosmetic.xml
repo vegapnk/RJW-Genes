@@ -25,6 +25,7 @@
 		<AbilityDef>rjw_genes_flight</AbilityDef>
 	</descriptionHyperlinks>
     <biostatCpx>1</biostatCpx>
+	<biostatMet>-1</biostatMet>
     <graphicData>
       <graphicPath>Things/Pawn/Humanlike/BodyAttachments/rjw_genes_Succubus_Wings/Succubus_Wings</graphicPath>
       <colorType>Skin</colorType>

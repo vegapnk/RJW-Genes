@@ -34,8 +34,9 @@ namespace RJW_Genes
 			toil.socialMode = RandomSocialMode.Off;
 			yield return toil;
 			yield return this.InteractToil();
-			Toil toil1 = Toils_General.Wait(600, TargetIndex.A);
+			Toil toil1 = Toils_General.Wait(300, TargetIndex.A);
 			toil1.socialMode = RandomSocialMode.Off;
+			yield return toil1;
 			yield break;
 		}
 		private Toil InteractToil()

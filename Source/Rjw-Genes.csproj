@@ -38,6 +38,10 @@
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rjw-master\1.4\Assemblies\RJW.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="RJWSexperience">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW-Sexperience-master\1.4\Assemblies\RJWSexperience.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -122,6 +126,8 @@
     <Compile Include="Genes\Genitalia\GenitaliaChanger.cs" />
     <Compile Include="Genes\Life_Force\Abilities\AbilityUtility.cs" />
     <Compile Include="Genes\Life_Force\UI\Alert_LowFertilin.cs" />
+    <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_CasterIsNaked.cs" />
+    <Compile Include="Genes\Life_Force\Abilities\CompProperties_CasterIsNaked.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_Seduce.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_LifeForceCost.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_CockEater.cs" />

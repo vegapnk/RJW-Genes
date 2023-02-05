@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using rjw;
+using RJWSexperience;
 using RimWorld;
 using Verse;
 using Verse.AI;
+using Verse.AI.Group;
+using UnityEngine;
 namespace RJW_Genes
 {
     public class JobGiver_TryQuickieWith : ThinkNode_JobGiver
@@ -20,13 +23,29 @@ namespace RJW_Genes
 			//can reserve eachother
 			if (pawn.CanReserveAndReach(target, PathEndMode.InteractionCell, Danger.Some) && target.CanReserve(pawn, 1, 0, null, false))				
 			{
-				//target is not busy
+				//Dont interrupt player
 				if (!(((jobs != null) ? jobs.curJob : null) != null && jobs.curJob.playerForced))
                 {
 					float willingness = TargetWillingness(pawn, target);
 					if (Rand.Chance(willingness))
                     {
-						return JobMaker.MakeJob(xxx.quick_sex, target);
+						Job newJob =JobMaker.MakeJob(xxx.quick_sex, target);
+						
+						//Pawn joins faction when lordJob ends instead of leaving
+						//in the future determine the chance of this another way
+						if (Rand.Chance(JoinChance(pawn, target)))
+                        {
+							Lord lord = pawn.GetLord();
+							LordJob_SuccubusVisit lordJob = lord == null? null : lord.LordJob as LordJob_SuccubusVisit;
+							if (lordJob != null)
+                            {
+								if (!lordJob.colonyJoiners.Contains(pawn))
+                                {
+									lordJob.colonyJoiners.Add(pawn);
+                                }
+                            }
+						}
+						return newJob;
 					}
 					else
                     {
@@ -40,7 +59,7 @@ namespace RJW_Genes
                 {
 					if (RJWSettings.DebugLogJoinInBed) //change this when we have our own settigns
 					{
-						ModLog.Message(string.Format(" find_pawn_to_fuck({0}): lover has important job ({1}), skipping", pawn_name, target.jobs.curJob.def));
+						//ModLog.Message(string.Format(" find_pawn_to_fuck({0}): lover has important job ({1}), skipping", pawn_name, target.jobs.curJob.def));
 					}
 				}
 			}
@@ -80,7 +99,7 @@ namespace RJW_Genes
 						{
 							ModLog.Message(" find_partner(" + pawn_name + "): I interested in banging but that's cheating");
 						}
-						//Succubus has a small chance to seduce even if target is in relationship, maybe setting like succubus can homewreck
+						//Succubus has a small chance to seduce even if target is in relationship
 						willingness *= 0.1f;
 					}
                     else
@@ -95,5 +114,75 @@ namespace RJW_Genes
 			}
 			return willingness;
         }
+
+		public static float JoinChance(Pawn pawn ,Pawn target)
+        {
+
+			float chance = 0.1f;
+
+			//Sex satisfaction, how good the target is at sex
+			chance *= xxx.get_sex_satisfaction(target); 
+			
+			//Succubus mood
+			if (pawn.needs != null && pawn.needs.mood != null)
+            {
+				chance *= pawn.needs.mood.CurLevelPercentage + 0.5f; 
+			}
+			
+			//Size of genitals
+			bool size_matters = true; //To be placed in modsettings
+			if (size_matters)
+            {
+				//The larger the penis to greater the chance
+				if (RelationsUtility.AttractedToGender(pawn, Gender.Male))
+				{
+					chance *= GetGenitalSize(target, true) + 0.5f;
+				}
+
+				//The tighter the vagine the greater the chance, a size above 1 is considered as 1
+				if (RelationsUtility.AttractedToGender(pawn, Gender.Female))
+				{
+					chance *= 1f - Mathf.Min(GetGenitalSize(target, false),1f) + 0.5f;
+				}
+			}
+
+			//Sex ability from sexperience
+			if (ModsConfig.IsActive("rjw.sexperience"))
+            {
+				chance *= RJWSexperience.PawnExtensions.GetSexStat(pawn);
+            }
+			return Mathf.Max(chance,0f);
+        }
+
+		//Gets the size of the largest penis or the tightest vagina
+		public static float GetGenitalSize(Pawn pawn, bool penis_else_vagina)
+        {
+			List<Hediff> genitals = rjw.PawnExtensions.GetGenitalsList(pawn);
+			if(!genitals.NullOrEmpty())
+            {
+				if (penis_else_vagina)
+				{
+					List<Hediff> penises = genitals.Where(genital => Genital_Helper.is_penis(genital)).ToList();
+					{
+						if (!penises.NullOrEmpty())
+						{
+							return penises.Max(genital => genital.Severity);
+						}
+					}
+				}
+				else
+                {
+					List<Hediff> vaginas = genitals.Where(genital => Genital_Helper.is_vagina(genital)).ToList();
+					{
+						if (!vaginas.NullOrEmpty())
+						{
+							return vaginas.Min(genital => genital.Severity);
+						}
+					}
+				}
+			}
+			return 0f;
+			
+		}
 	}
 }

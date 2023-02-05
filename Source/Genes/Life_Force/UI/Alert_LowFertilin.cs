@@ -61,10 +61,8 @@ namespace RJW_Genes
 			return AlertReport.CulpritsAre(this.Targets);
 		}
 
-		// Token: 0x04004B5C RID: 19292
 		private List<GlobalTargetInfo> targets = new List<GlobalTargetInfo>();
 
-		// Token: 0x04004B5D RID: 19293
 		private List<string> targetLabels = new List<string>();
 	}
 }

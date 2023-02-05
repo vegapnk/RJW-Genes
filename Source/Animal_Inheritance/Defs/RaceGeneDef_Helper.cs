@@ -28,13 +28,16 @@ namespace RJW_BGS
 				ModLog.Warning($"Error looking up PawnKindDef for {pawn.Name} - Could not lookup Animal Inheritance Genes");
 				return null;
 			}
+			
 			string raceName = kindDef.race.defName;
 			string pawnKindName = kindDef.defName;
+			//Wild animals have no name, so we will use pawnkindname instead
+			string pawnName = pawn.Name != null ? pawn.Name.ToStringFull : pawnKindName; 
 			PawnData pawnData = SaveStorage.DataStore.GetPawnData(pawn);
 			RaceGroupDef raceGroupDef = pawnData.RaceSupportDef;
 
 			if (RJW_BGSSettings.rjw_bgs_detailed_debug)
-				ModLog.Message($"Looking up Animal-Inheritable Genes for {pawn.Name} with KindDef {kindDef.defName},RaceName {raceName}, PawnKind {pawnKindName} and RaceGroup {raceGroupDef.defName}");
+				ModLog.Message($"Looking up Animal-Inheritable Genes for {pawnName} with KindDef {kindDef.defName},RaceName {raceName}, PawnKind {pawnKindName} and RaceGroup {raceGroupDef.defName}");
 
 			IEnumerable<RaceGeneDef> allDefs = DefDatabase<RaceGeneDef>.AllDefs;
 			List<RaceGeneDef> pawnKindDefs = allDefs.Where(delegate (RaceGeneDef group)
@@ -44,11 +47,11 @@ namespace RJW_BGS
 			}).ToList<RaceGeneDef>();
 			if (pawnKindDefs.Count() > 0)
             {
-				DebugPrintRaceGeneDefs("PawnKindDefs",pawn.Name.ToStringFull,pawnKindDefs);
+				DebugPrintRaceGeneDefs("PawnKindDefs", pawnName,pawnKindDefs);
 				return pawnKindDefs;
 			}
 			else if (RJW_BGSSettings.rjw_bgs_detailed_debug)
-				ModLog.Message($"Did not find PawnKindDefs for {pawn.Name.ToStringFull}");
+				ModLog.Message($"Did not find PawnKindDefs for {pawnName}");
 
 			List<RaceGeneDef> raceKindDefs = allDefs.Where(delegate (RaceGeneDef group)
 			{
@@ -57,11 +60,11 @@ namespace RJW_BGS
 			}).ToList<RaceGeneDef>();
 			if (raceKindDefs.Count() > 0)
 			{
-				DebugPrintRaceGeneDefs("PawnKindDefs", pawn.Name.ToStringFull, raceKindDefs);
+				DebugPrintRaceGeneDefs("PawnKindDefs", pawnName, raceKindDefs);
 				return raceKindDefs;
 			}
 			else if (RJW_BGSSettings.rjw_bgs_detailed_debug)
-				ModLog.Message($"Did not find RaceKindDefs for {pawn.Name.ToStringFull}");
+				ModLog.Message($"Did not find RaceKindDefs for {pawnName}");
 
 			List<RaceGeneDef> raceGroupDefs = new List<RaceGeneDef>();
 			if (raceGroupDef != null)
@@ -77,13 +80,13 @@ namespace RJW_BGS
 			
 			if (raceGroupDefs.Count() > 0)
             {
-				DebugPrintRaceGeneDefs("RaceKindDefs", pawn.Name.ToStringFull, raceGroupDefs);
+				DebugPrintRaceGeneDefs("RaceKindDefs", pawnName, raceGroupDefs);
 				return raceGroupDefs;
 			}
 			else if (RJW_BGSSettings.rjw_bgs_detailed_debug)
-				ModLog.Message($"Did not find RaceGroupDefs for {pawn.Name.ToStringFull}");
+				ModLog.Message($"Did not find RaceGroupDefs for {pawnName}");
 
-			ModLog.Message($"Did not find any Genes inheritable for {pawn.Name.ToStringFull}");
+			ModLog.Message($"Did not find any Genes inheritable for {pawnName}");
 			return new List<RaceGeneDef>();
 		}
 

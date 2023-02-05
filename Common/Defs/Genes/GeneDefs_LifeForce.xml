@@ -105,7 +105,7 @@
 		<label>paralysing kiss</label>
 		<labelShortAdj>paralysing kiss</labelShortAdj>
 		<description>Carriers of this gene are able to briefly stun an enemy with a kiss.</description>
-		<iconPath>Things/Mote/Heart</iconPath>
+		<iconPath>Genes/Icons/rjw_genes_lips</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>12</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
@@ -149,6 +149,24 @@
 				<li><symbol>kiss</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>rjw_genes_naked_prowess</defName>
+		<label>naked prowess</label>
+		<description>Carriers of this gene are able to temporarily increase their strenght and resilience, while they are naked.</description>
+		<iconPath>Things/Mote/Heart</iconPath>
+		<prerequisite>rjw_genes_lifeforce</prerequisite>
+		<displayOrderInCategory>13</displayOrderInCategory>
+		<displayCategory>rjw_genes_fertilin</displayCategory>
+		<abilities>
+			<li>rjw_genes_naked_prowess</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>rjw_genes_naked_prowess</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
 	</GeneDef>
 	
 	<GeneDef>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-	<InteractionDef ParentName="RJW_InteractionDefBaseSex">
+	<InteractionDef ParentName="RJW_InteractionDefBaseRape">
 		<defName>Rape_SuccubusTail_Reverse_Tailjob</defName>
 		<label>succubustail tailjob</label>
 		<logRulesInitiator>
@@ -40,7 +40,7 @@
 		</modExtensions>
 	</InteractionDef>
 	
-	<InteractionDef ParentName="RJW_InteractionDefBaseSex">
+	<InteractionDef ParentName="RJW_InteractionDefBaseRape">
 		<defName>Rape_SuccubusTail_Reverse_Vaginal</defName>
 		<label>succubustail vaginal</label>
 		<logRulesInitiator>
@@ -79,7 +79,7 @@
 		</modExtensions>
 	</InteractionDef>
 	
-	<InteractionDef ParentName="RJW_InteractionDefBaseSex">
+	<InteractionDef ParentName="RJW_InteractionDefBaseRape">
 		<defName>Rape_SuccubusTail_Reverse_Anal</defName>
 		<label>succubustail anal</label>
 		<logRulesInitiator>
@@ -119,7 +119,7 @@
 	</InteractionDef>
 	
 	<!--Top of tail opens up and evelops the penis-->
-	<InteractionDef ParentName="RJW_InteractionDefBaseSex">
+	<InteractionDef ParentName="RJW_InteractionDefBaseRape">
 		<defName>Rape_SuccubusTail_Reverse_Envelop</defName>
 		<label>succubustail envelop</label>
 		<logRulesInitiator>

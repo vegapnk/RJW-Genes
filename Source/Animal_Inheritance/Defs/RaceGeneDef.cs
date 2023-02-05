@@ -16,6 +16,6 @@ namespace RJW_BGS
         public List<string> raceNames;
         public List<string> pawnKindNames;
         public List<BestialityGeneInheritanceDef> genes;
-        public String hybridName;
+        public string hybridName;
     }
 }
