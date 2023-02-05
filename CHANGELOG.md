@@ -1,5 +1,7 @@
 # 1.1.0 (2023-xx-xx)
 
+1.1.0-beta-1 was released on 05.02.2023. 
+
 ## Features: 
 
 - Succubus, other Fertilin Xenotypes (see below)
@@ -48,6 +50,8 @@ Xenotypes:
 **Incubi** are their male parallels, but gaining fertilin through draining. 
 
 **Cumazones** are female only martial fighters, that can only gain fertilin through biting cocks. Be sure to have enough supply before you hire one of these bad bitches. 
+
+Incubi and Succubi can spawn in a special event at night when pawns have low sex need. Cumazones can just appear randomly. 
 
 ## Fixes:
 
