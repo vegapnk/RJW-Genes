@@ -28,15 +28,16 @@
         <li>rjw_genes_female_only</li>
         <li>rjw_genes_lifeforce</li>
         <li>rjw_genes_lifeforce_drain</li>
+		    <li>rjw_genes_demonic_genitalia</li>
 		
-		<li>rjw_genes_cum_eater</li>
+		    <li>rjw_genes_cum_eater</li>
         <li>rjw_genes_vaginal_absorber</li>
         <li>rjw_genes_anal_absorber</li>
 
         <li>rjw_genes_paralysingkiss</li>
         <li>rjw_genes_seduce</li>
 		
-		<li>rjw_genes_succubus_wings</li>
+		    <li>rjw_genes_succubus_wings</li>
         <li>rjw_genes_succubus_tail</li>
         <li>rjw_genes_aphrodisiac_pheromones</li>
         <li>Beauty_Pretty</li>
@@ -76,10 +77,11 @@
         <li>rjw_genes_male_only</li>
         <li>rjw_genes_lifeforce</li>
         <li>rjw_genes_lifeforce_drain</li>
-		<li>rjw_genes_drainer</li>
-		
+		    <li>rjw_genes_drainer</li>
+		    <li>rjw_genes_demonic_genitalia</li>
+	
         <li>rjw_genes_seduce</li>
-		<li>rjw_genes_succubus_wings</li>
+		    <li>rjw_genes_succubus_wings</li>
         <li>rjw_genes_succubus_tail</li>
         <li>rjw_genes_aphrodisiac_pheromones</li>
 
@@ -90,8 +92,48 @@
         <li>AptitudeStrong_Intellectual</li>
         <li>Ears_Pointed</li>
         <li>Headbone_MiniHorns</li>
-        <li>Skin_Purple</li>
+        <li>Skin_InkBlack</li>
     </genes>
+  </XenotypeDef>
+  
+  <XenotypeDef>
+    <defName>rjw_genes_cumazone</defName>
+    <label>Cumazone</label>
+    <description>Cumazone are a female only xenotype that excel at meele combat. Originally created as bodyguards for glitterworld amazon communities, they spred to other systems by mere strength and providing for some fetishes. They can use Fertilin to enhance their skin to overpower any combatant in meele. Their only source for Fertilin is biting of male genitalia - so be sure to have a steady supply of victim males or prepare to raid unsuspecting men of the rim.</description>
+    <descriptionShort>Female only, strong meele fighters, that use Fertilin from bitten-off cocks for powerful buffs.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Neanderthal</iconPath>
+    <generateWithXenogermReplicatingHediffChance>0.5</generateWithXenogermReplicatingHediffChance>
+    <xenogermReplicatingDurationLeftDaysRange>0.1~140</xenogermReplicatingDurationLeftDaysRange>
+    <combatPowerFactor>2.5</combatPowerFactor>
+    <displayPriority>-1000</displayPriority>
+    <factionlessGenerationWeight>0.01</factionlessGenerationWeight>
+	  <inheritable>false</inheritable>
+    <genes>
+			<li>WoundHealing_Fast</li>
+			<li>NakedSpeed</li>
+			<li>Aggression_Aggressive</li>
+			<li>MeleeDamage_Strong</li>
+			<li>KillThirst</li>
+			<li>Pain_Reduced</li>
+			<li>rjw_genes_rapist</li>
+			<li>Beauty_Ugly</li>
+			<li>Hair_BaldOnly</li>
+			<li>Hair_ShortOnly</li>
+			<li>Brow_Heavy</li>
+			<li>Body_Hulk</li>
+			<li>AptitudeStrong_Shooting</li>
+			<li>AptitudeRemarkable_Melee</li>
+			<li>AptitudePoor_Crafting</li>
+			<li>AptitudePoor_Artistic</li>
+      <li>Unstoppable</li>
+			<li>rjw_genes_female_only</li>
+			<li>rjw_genes_lifeforce</li>
+			<li>rjw_genes_lifeforce_drain</li>
+			<li>rjw_genes_pussyhealing</li>
+			<li>rjw_genes_cockeater</li>
+			<li>rjw_genes_naked_prowess</li>
+			<li>rjw_genes_orgasm_rush</li>
+		</genes>
   </XenotypeDef>
   
 </Defs>
