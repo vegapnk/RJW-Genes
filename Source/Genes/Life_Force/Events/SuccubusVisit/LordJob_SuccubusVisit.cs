@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
-using Verse.AI;
 using Verse.AI.Group;
 using RimWorld;
 using rjw;
@@ -13,10 +9,7 @@ namespace RJW_Genes
     //Based on LordJob_VisitColony
     public class LordJob_SuccubusVisit : LordJob
     {
-        public LordJob_SuccubusVisit()
-        {
-
-        }
+        public LordJob_SuccubusVisit(){}
         public LordJob_SuccubusVisit(Pawn target)
         {
             this.target = target;

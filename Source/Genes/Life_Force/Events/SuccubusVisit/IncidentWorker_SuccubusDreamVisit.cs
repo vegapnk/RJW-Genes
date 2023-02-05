@@ -24,7 +24,7 @@ namespace RJW_Genes
             {
                 return false;
             }
-            if (!RJW_GenesSettings.rjw_genes_sexdemon_visit_incubi && !RJW_GenesSettings.rjw_genes_sexdemon_visit_succubi)
+            if (!RJW_Genes_Settings.rjw_genes_sexdemon_visit_incubi && !RJW_Genes_Settings.rjw_genes_sexdemon_visit_succubi)
             {
                 return false;
             }
@@ -53,7 +53,7 @@ namespace RJW_Genes
             {
                 return false;
             }
-            int pawn_amount = RJW_GenesSettings.rjw_genes_sexdemon_visit_groups ? Rand.Range(1, victims.Count) : 1;
+            int pawn_amount = RJW_Genes_Settings.rjw_genes_sexdemon_visit_groups ? Rand.Range(1, victims.Count) : 1;
             List<Pawn> new_sexdemons = new List<Pawn>();
             for (int i = 0; i < pawn_amount; i++)
             {
@@ -62,11 +62,11 @@ namespace RJW_Genes
 
                 PawnKindDef pawnKindDef;
                 Gender gender;
-                if (victim.gender == Gender.Male || !RJW_GenesSettings.rjw_genes_sexdemon_visit_incubi)
+                if (victim.gender == Gender.Male || !RJW_Genes_Settings.rjw_genes_sexdemon_visit_incubi)
                 {
 
                 }
-                if ((Rand.Bool && RJW_GenesSettings.rjw_genes_sexdemon_visit_succubi) || !RJW_GenesSettings.rjw_genes_sexdemon_visit_incubi)
+                if ((Rand.Bool && RJW_Genes_Settings.rjw_genes_sexdemon_visit_succubi) || !RJW_Genes_Settings.rjw_genes_sexdemon_visit_incubi)
                 {
                     pawnKindDef = PawnKindDef.Named("rjw_genes_succubus");
                     gender = Gender.Female;
