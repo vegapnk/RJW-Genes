@@ -12,6 +12,7 @@ Features:
 - RJW Race-Support Compatibility (#12,#13, Shabakur)
 - Animal Gene Inheritance Gene-Chance Multiplier per Setting (#13, Shabakur)
 - Lots of Debug-Only Logging for Animal Gene Inheritance
+- Patches for some popular Xenotype Mods (Nyaron, Kijin3, Roos Minotaurs, VRE Phytokin)
 - Mod-Settings 
 
 Succubus:
