@@ -6,6 +6,7 @@
 		<mentalState>rjw_genes_lifeforce_randomrape</mentalState>
 		<baseCommonality>1.5</baseCommonality>
 		<intensity>Extreme</intensity>
+		<workerClass>RJW_Genes.LifeForceMentalBreakWorker</workerClass>
 	</MentalBreakDef>
 
 	<MentalStateDef ParentName="BaseMentalState">

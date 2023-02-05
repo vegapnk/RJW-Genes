@@ -41,7 +41,6 @@ namespace RJW_Genes
 			yield break;
 		}
 
-		// Token: 0x06000420 RID: 1056 RVA: 0x00024190 File Offset: 0x00022390
 		private Toil MakeSexToil()
 		{
 			Toil toil = new Toil();

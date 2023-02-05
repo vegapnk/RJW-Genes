@@ -49,6 +49,7 @@ namespace RJW_Genes
 				if (this.Pawn.genes.HasGene(GeneDefOf.rjw_genes_cum_eater)
 				|| this.Pawn.genes.HasGene(GeneDefOf.rjw_genes_vaginal_absorber) || this.Pawn.genes.HasGene(GeneDefOf.rjw_genes_anal_absorber) || this.Pawn.genes.HasGene(GeneDefOf.rjw_genes_drainer))
 				{
+					//TODO: use mentalstatedef instead of mentalbreakdef
 					MentalBreakDef randomrape = GeneDefOf.rjw_genes_lifeforce_randomrape;
 					if (ModsConfig.BiotechActive &&
 						this.Pawn.Spawned && !this.Pawn.InMentalState && !this.Pawn.Downed &&

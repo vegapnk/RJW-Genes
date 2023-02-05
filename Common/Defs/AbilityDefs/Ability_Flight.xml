@@ -3,7 +3,7 @@
   <AbilityDef>
     <defName>rjw_genes_flight</defName>
     <label>fly</label>
-    <description>Fly to a distant location using wings.</description>
+    <description>Fly to a short location using your wings.</description>
     <iconPath>Genes/Icons/Succubus_Wings</iconPath>
     <cooldownTicksRange>1250</cooldownTicksRange>
     <hostile>false</hostile>
