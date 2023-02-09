@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+	<identifier>RJW-Genes</identifier>
+	<version>1.1.0</version>
+	<dependencies>
+        <li>RimJobWorld</li>
+		<li>HugsLib</li>
+	</dependencies>
+	<incompatibleWith />
+	<loadAfter>
+        <li>RimJobWorld</li>
+		<li>HugsLib</li>
+	</loadAfter>
+	<suggests>
+        <li>RJW-LicentiaLabs</li>
+	</suggests>
+	<manifestUri>https://github.com/vegapnk/RJW-Genes/tree/main/About/Manifest.xml</manifestUri>
+	<downloadUri>https://github.com/vegapnk/RJW-Genes</downloadUri>
+</Manifest>
