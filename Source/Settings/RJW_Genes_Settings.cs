@@ -37,6 +37,9 @@ namespace RJW_Genes
             }
 
             listing_Standard.Gap(5f);
+            listing_Standard.CheckboxLabeled("generous-donor cheatmode", ref rjw_genes_generous_donor_cheatmode, "When enabled, pawns with the 'generous donor' are not drained and not fertilin exhausted. Hence they can fuel succubi and incubi non-stop. This makes them drastically easier to keep, and you should not do it.", 0f, 1f);
+
+            listing_Standard.Gap(5f);
             listing_Standard.CheckboxLabeled("detailed-debug", ref rjw_genes_detailed_debug, "Adds detailed information to the log about interactions and genes.", 0f, 1f);
             listing_Standard.End();
         }
@@ -46,11 +49,14 @@ namespace RJW_Genes
             base.ExposeData();
             Scribe_Values.Look<float>(ref RJW_Genes_Settings.rjw_genes_fertilin_from_animals_factor, "rjw_genes_fertilin_from_animals_factor", RJW_Genes_Settings.rjw_genes_fertilin_from_animals_factor, true);
             Scribe_Values.Look<bool>(ref RJW_Genes_Settings.rjw_genes_detailed_debug, "rjw_genes_detailed_debug", RJW_Genes_Settings.rjw_genes_detailed_debug, true);
+
             Scribe_Values.Look<bool>(ref RJW_Genes_Settings.rjw_genes_sexdemon_visit, "rjw_genes_sexdemon_visit", RJW_Genes_Settings.rjw_genes_sexdemon_visit, true);
             Scribe_Values.Look<bool>(ref RJW_Genes_Settings.rjw_genes_sexdemon_join_size_matters, "rjw_genes_sexdemon_join_size_matters", RJW_Genes_Settings.rjw_genes_sexdemon_join_size_matters, true);
             Scribe_Values.Look<bool>(ref RJW_Genes_Settings.rjw_genes_sexdemon_visit_groups, "rjw_genes_sexdemon_groups", RJW_Genes_Settings.rjw_genes_sexdemon_visit_groups, true);
             Scribe_Values.Look<bool>(ref RJW_Genes_Settings.rjw_genes_sexdemon_visit_succubi, "rjw_genes_sexdemon_succubi", RJW_Genes_Settings.rjw_genes_sexdemon_visit_succubi, true);
             Scribe_Values.Look<bool>(ref RJW_Genes_Settings.rjw_genes_sexdemon_visit_incubi, "rjw_genes_sexdemon_incubi", RJW_Genes_Settings.rjw_genes_sexdemon_visit_incubi, true);
+
+            Scribe_Values.Look<bool>(ref RJW_Genes_Settings.rjw_genes_generous_donor_cheatmode, "rjw_genes_generous_donor_cheatmode", RJW_Genes_Settings.rjw_genes_generous_donor_cheatmode, true);
         }
 
         public static bool rjw_genes_detailed_debug = false;
@@ -62,5 +68,7 @@ namespace RJW_Genes
         public static bool rjw_genes_sexdemon_visit_groups = true;
         public static bool rjw_genes_sexdemon_visit_succubi = true;
         public static bool rjw_genes_sexdemon_visit_incubi = true;
+
+        public static bool rjw_genes_generous_donor_cheatmode = false;
     }
 }

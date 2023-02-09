@@ -73,10 +73,19 @@ namespace RJW_Genes
 					&& !props.pawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_succubus_drained) 
 					&& !GeneUtility.IsSexualDrainer(props.pawn))
 				{
-					if (RJW_Genes_Settings.rjw_genes_detailed_debug)
-						ModLog.Message($"{props.pawn.Name} has been (sexually) drained by {PawnWithLifeForce.Name}");
-					props.pawn.health.AddHediff(HediffDefOf.rjw_genes_succubus_drained);
-					GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(PawnWithLifeForce), LIFEFORCE_GAINED_FROM_DRAINER_GENE);
+					if (GeneUtility.IsGenerousDonor(props.pawn) && RJW_Genes_Settings.rjw_genes_generous_donor_cheatmode)
+					{
+						// Cheatmode is on, do not drain but give life 
+						GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(PawnWithLifeForce), LIFEFORCE_GAINED_FROM_DRAINER_GENE); 
+						if (RJW_Genes_Settings.rjw_genes_detailed_debug)
+							ModLog.Message($"{props.pawn.Name} was not (sexually) drained by {PawnWithLifeForce.Name}, because Cheatmode for Generous Donors is on");
+					} else
+                    {
+						if (RJW_Genes_Settings.rjw_genes_detailed_debug)
+							ModLog.Message($"{props.pawn.Name} has been (sexually) drained by {PawnWithLifeForce.Name}");
+						props.pawn.health.AddHediff(HediffDefOf.rjw_genes_succubus_drained);
+						GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(PawnWithLifeForce), LIFEFORCE_GAINED_FROM_DRAINER_GENE);
+					}
 				}
 			}
 		}
@@ -88,20 +97,26 @@ namespace RJW_Genes
 
 			Hediff fertilin_lost = props.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.rjw_genes_fertilin_lost);
 			//Around quarter get ejected everytime pawn cums
-			float multiplier = Rand.Range(0.10f, 0.40f); 
-			
+			float multiplier = Rand.Range(0.10f, 0.40f);
 
-			//Create a new ferilin_lost hediff or increase it
-			if (fertilin_lost == null)
+			if (GeneUtility.IsGenerousDonor(props.pawn) && RJW_Genes_Settings.rjw_genes_generous_donor_cheatmode)
 			{
-				Hediff new_fertilin_lost = HediffMaker.MakeHediff(HediffDefOf.rjw_genes_fertilin_lost, props.pawn);
-				props.pawn.health.AddHediff(new_fertilin_lost);
-				new_fertilin_lost.Severity = multiplier;
-			}
-			else
-			{
-				multiplier *= 1 - fertilin_lost.Severity;
-				fertilin_lost.Severity += multiplier;
+				// Do nothing, Cheatmode is on
+				multiplier = 1;
+			} 
+			else 
+			{ 
+				//Create a new ferilin_lost hediff or increase it
+				if (fertilin_lost == null)
+				{
+					Hediff new_fertilin_lost = HediffMaker.MakeHediff(HediffDefOf.rjw_genes_fertilin_lost, props.pawn);
+					props.pawn.health.AddHediff(new_fertilin_lost);
+					new_fertilin_lost.Severity = multiplier;
+				} else
+				{
+					multiplier *= 1 - fertilin_lost.Severity;
+					fertilin_lost.Severity += multiplier;
+				}
 			}
 
 			multiplier *= absorb_percentage;
