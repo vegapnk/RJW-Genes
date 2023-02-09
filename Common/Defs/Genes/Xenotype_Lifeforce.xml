@@ -13,7 +13,7 @@
     <combatPowerFactor>1</combatPowerFactor>
     <displayPriority>-1000</displayPriority>
     <factionlessGenerationWeight>0.005</factionlessGenerationWeight>
-	<inheritable>true</inheritable>
+	  <inheritable>false</inheritable>
     <doubleXenotypeChances>
       <Pigskin>0.02</Pigskin>
       <Impid>0.02</Impid>
@@ -42,8 +42,6 @@
         <li>rjw_genes_aphrodisiac_pheromones</li>
         <li>Beauty_Pretty</li>
         <li>MoveSpeed_Quick</li>
-        <li>Robust</li>
-        <li>UVSensitivity_Intense</li>
         <li>AptitudeStrong_Social</li>
         <li>Ears_Pointed</li>
         <li>Headbone_MiniHorns</li>
@@ -63,7 +61,7 @@
     <combatPowerFactor>1</combatPowerFactor>
     <displayPriority>-1000</displayPriority>
     <factionlessGenerationWeight>0.005</factionlessGenerationWeight>
-	<inheritable>true</inheritable>
+	  <inheritable>false</inheritable>
     <doubleXenotypeChances>
       <Pigskin>0.02</Pigskin>
       <Impid>0.02</Impid>
@@ -114,6 +112,7 @@
 			<li>Aggression_Aggressive</li>
 			<li>MeleeDamage_Strong</li>
 			<li>KillThirst</li>
+      <li>Robust</li>
 			<li>Pain_Reduced</li>
 			<li>rjw_genes_rapist</li>
 			<li>Beauty_Ugly</li>

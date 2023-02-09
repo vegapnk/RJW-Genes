@@ -3,7 +3,7 @@
   <AbilityDef>
     <defName>rjw_genes_naked_prowess</defName>
     <label>naked prowess</label>
-    <description>Enhance the strenght and resilience of your naked body with fertilin.</description>
+    <description>Enhance the strength and resilience of your naked body with fertilin.</description>
     <iconPath>Things/Mote/Heart</iconPath>
     <warmupMoteSocialSymbol>Things/Mote/Heart</warmupMoteSocialSymbol>
 	<jobDef>CastAbilityOnThing</jobDef>

@@ -154,7 +154,7 @@
 	<GeneDef>
 		<defName>rjw_genes_naked_prowess</defName>
 		<label>naked prowess</label>
-		<description>Carriers of this gene are able to temporarily increase their strenght and resilience, while they are naked.</description>
+		<description>Carriers of this gene are able to temporarily increase their strength and resilience, while they are naked.</description>
 		<iconPath>Things/Mote/Heart</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>13</displayOrderInCategory>

@@ -2,6 +2,19 @@
 
 Collection of Known Bugs and reasons for their origin. 
 
+## Fertilin does not go up after Sex!
+
+Error: An Incubus or Succubus had sex with another pawn, but did not gain Fertilin. 
+
+Things to consider: 
+
+1. Please read descriptions of the respective genes - did you have "the right sex?" 
+2. Check Hediffs of the fucked pawn - was it already drained? 
+3. Did you fuck an animal? Check Settings for Fertilin-Multiplier
+4. Did the pawns really *finish* ? In case they throw up or get drafted there is no gain. 
+
+There also is a known mod-conflict with `rjw Animations patch` (See #18), so make sure you use up-to-date versions of everything.
+
 ## Random Vaginas for Goblins 
 
 Error: Pawns have different genitalia than expected, e.g. if the "no vagina" gene is specified there are pawns with vaginas AND a penis. 

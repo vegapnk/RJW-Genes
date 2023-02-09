@@ -15,6 +15,7 @@
 - Animal Gene Inheritance Gene-Chance Multiplier per Setting (#13, Shabakur)
 - Lots of Debug-Only Logging for Animal Gene Inheritance
 - Patches for some popular Xenotype Mods (Nyaron, Kijin3, Roos Minotaurs, VRE Phytokin)
+- Generous Donor Cheatmode 
 - Mod-Settings 
 
 ## Fertilin:
@@ -52,6 +53,16 @@ Xenotypes:
 **Cumazones** are female only martial fighters, that can only gain fertilin through biting cocks. Be sure to have enough supply before you hire one of these bad bitches. 
 
 Incubi and Succubi can spawn in a special event at night when pawns have low sex need. Cumazones can just appear randomly. 
+
+**_On Inheritance:_** 
+
+We realized that it's not nice if the Succubi Babies do not have all Succubi Genes, and have Fertilin with no use for it or look like wookies instead. Hence, we changed the Fertilin Xenotypes to be Xenogenes (non-inheritable) *BUT* we recommend using the [dominant-gene](https://steamcommunity.com/sharedfiles/filedetails/?id=2884110898) mod. 
+If the dominant-gene mod is loaded, our xenotypes will spawn with it, making Succubus Babies Succubi. 
+In case you do not want that behaviour, look for the Patch `Patch_Dominant_Gene.xml` and delete it. 
+
+**_On Making your own Succubi_:**
+
+Currently Succubi and Incubi only spawn through a special event determined by their xenotype def name. So if you make your own, they will not spawn with this event. Make sure that you have a way to get your custom xenotypes appear. You might want to "just alter" the xenotype xml provided by us, then they will spawn with the event. 
 
 ## Fixes:
 
