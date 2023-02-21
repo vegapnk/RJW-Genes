@@ -23,6 +23,8 @@ Things to Consider:
 
 1. Is your Succubus drafted? If not, they might have a flight-mode set and are scared of the enemy. 
 
+It seems that things changing Enemy Combat AI also affect this. One report was about CAI5000 and we also expect Combat Extended to be incompatible. 
+
 ## Random Vaginas for Goblins 
 
 Error: Pawns have different genitalia than expected, e.g. if the "no vagina" gene is specified there are pawns with vaginas AND a penis. 

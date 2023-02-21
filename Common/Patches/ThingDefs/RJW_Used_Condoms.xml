@@ -3,14 +3,16 @@
 	<!-- Add RJW Sex meditation focus icon to VanillaPsycastsExpanded -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>RJW Sexperience</li>
+			<li>RimJobWorld</li>
 		</mods>
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="UsedCondom"]/ingestible/outcomeDoers</xpath>
+			<xpath>/Defs/ThingDef[defName="UsedCondom"]/ingestible</xpath>
 			<value>
-				<li Class="RJW_Genes.IngestionOutcomeDoer_LifeForceOffset">
-					<FertilinPerUnit>1</FertilinPerUnit>
-				</li>
+				<outcomeDoers>
+					<li Class="RJW_Genes.IngestionOutcomeDoer_LifeForceOffset">
+						<FertilinPerUnit>1</FertilinPerUnit>
+					</li>
+				</outcomeDoers>
 			</value>
 		</match>
 	</Operation>
