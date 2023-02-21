@@ -15,7 +15,7 @@
 		<showGizmoOnWorldView>true</showGizmoOnWorldView>
 		<showGizmoWhenDrafted>true</showGizmoWhenDrafted>
 		<resourceDescription>A reserve of biological strength which can be gained and spent in a variety of ways. \n\nFertilin can be increased by absorbing cum, typically through oral sex or stored cum. \n\nIf fertilin reaches zero, {PAWN_nameDef} will become very unhappy and may try to obtain some forcefully.</resourceDescription>
-		<iconPath>UI/Icons/Genes/Gene_Hemogenic</iconPath>
+		<iconPath>Genes/Icons/FertilinAlt</iconPath>
 		<selectionWeight>0</selectionWeight>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<displayOrderInCategory>-2</displayOrderInCategory>
@@ -39,7 +39,7 @@
 		<description>Carriers lose an additional 15 fertilin per day from biological entropy.</description>
 		<resourceLabel>fertilin</resourceLabel>
 		<geneClass>RJW_Genes.Gene_LifeForceDrain</geneClass>
-		<iconPath>UI/Icons/Genes/Gene_HemogenDrain</iconPath>
+		<iconPath>Genes/Icons/FertilinDrainAlt</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<resourceLossPerDay>0.15</resourceLossPerDay>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
@@ -53,7 +53,7 @@
 		<label>Pussy Healer</label>
 		<labelShortAdj>pussyhealer</labelShortAdj>
 		<description>Carriers of this gene are able use vaginal sex to tend to other's wounds.</description>
-		<iconPath>Things/Mote/Heart</iconPath>
+		<iconPath>Genes/Icons/Healpussy</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>9</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
@@ -79,7 +79,7 @@
 		<label>Cockeater</label>
 		<labelShortAdj>cockeater</labelShortAdj>
 		<description>Carriers of this gene are able eat cocks to restore their fertilin supply. Cocks are consumed during that process.</description>
-		<iconPath>Things/Mote/Heart</iconPath>
+		<iconPath>Genes/Icons/cockeater</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>11</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
@@ -130,7 +130,7 @@
 		<label>seduction</label>
 		<labelShortAdj>seduction</labelShortAdj>
 		<description>Carriers of this gene are able to seduce a pawn into having sex with them.</description>
-		<iconPath>Things/Mote/Heart</iconPath>
+		<iconPath>Genes/Icons/seduce</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>13</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
@@ -155,7 +155,7 @@
 		<defName>rjw_genes_naked_prowess</defName>
 		<label>naked prowess</label>
 		<description>Carriers of this gene are able to temporarily increase their strength and resilience, while they are naked.</description>
-		<iconPath>Things/Mote/Heart</iconPath>
+		<iconPath>Genes/Icons/rjw_naked_prowess</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>13</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
@@ -173,7 +173,7 @@
 		<defName>rjw_genes_cum_eater</defName>
 		<label>Cum eater</label>
 		<description>Carriers of this gene are able to absorb fertilin through eating cum. This includes oral sex, eating cum for food or sucking out cumflated pawns. </description>
-		<iconPath>Things/Mote/Heart</iconPath>
+		<iconPath>Genes/Icons/cumeater</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>1</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
@@ -181,23 +181,12 @@
 	</GeneDef>
 	
 	<GeneDef>
-		<defName>rjw_genes_vaginal_absorber</defName>
-		<label>Vaginal Fertilin Absorber</label>
-		<description>Carriers of this gene are able to absorb the fertilin inside sperm through their vagina.</description>
-		<iconPath>Things/Mote/Heart</iconPath>
+		<defName>rjw_genes_fertilin_absorber</defName>
+		<label>Fertilin Absorber</label>
+		<description>Carriers of this gene are able to absorb the fertilin inside sperm through their vagina and anus.</description>
+		<iconPath>Genes/Icons/Vaginal_cum_absorption</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>2</displayOrderInCategory>
-		<displayCategory>rjw_genes_fertilin</displayCategory>
-		<biostatCpx>1</biostatCpx>
-	</GeneDef>
-	
-	<GeneDef>
-		<defName>rjw_genes_anal_absorber</defName>
-		<label>Anal Fertilin Absorber</label>
-		<description>Carriers of this gene are able to absorb the fertilin inside sperm through their anus.</description>
-		<iconPath>Things/Mote/Heart</iconPath>
-		<prerequisite>rjw_genes_lifeforce</prerequisite>
-		<displayOrderInCategory>3</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<biostatCpx>1</biostatCpx>
 	</GeneDef>

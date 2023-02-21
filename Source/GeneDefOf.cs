@@ -82,8 +82,7 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_pussyhealing;
 		public static readonly GeneDef rjw_genes_lifeforce_drain;
 		public static readonly GeneDef rjw_genes_cum_eater;
-		public static readonly GeneDef rjw_genes_vaginal_absorber;
-		public static readonly GeneDef rjw_genes_anal_absorber;
+		public static readonly GeneDef rjw_genes_fertilin_absorber;
 		public static readonly GeneDef rjw_genes_drainer;
 		public static readonly GeneDef rjw_genes_seduce;
 		public static readonly GeneDef rjw_genes_paralysingkiss;

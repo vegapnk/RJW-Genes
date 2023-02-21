@@ -180,24 +180,17 @@ namespace RJW_Genes
 			{
 				absorb_factor += 1f;
 			}
-			else if (props.sexType == xxx.rjwSextype.Vaginal && GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_vaginal_absorber))
+			else if (props.sexType == xxx.rjwSextype.Vaginal && GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_fertilin_absorber))
 			{
 				absorb_factor += 1f;
 			}
-			else if (props.sexType == xxx.rjwSextype.Anal && GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_anal_absorber))
+			else if (props.sexType == xxx.rjwSextype.Anal && GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_fertilin_absorber))
 			{
 				absorb_factor += 1f;
 			}
-			else if (props.sexType == xxx.rjwSextype.DoublePenetration)
+			else if (props.sexType == xxx.rjwSextype.DoublePenetration && GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_fertilin_absorber))
 			{
-				if (GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_vaginal_absorber))
-				{
-					absorb_factor += 0.5f;
-				}
-				if (GeneUtility.HasGeneNullCheck(PawnWithLifeForce, GeneDefOf.rjw_genes_anal_absorber))
-				{
-					absorb_factor += 0.5f;
-				}
+				absorb_factor += 1f;
 			}
 			else if (props.sexType == xxx.rjwSextype.Scissoring || props.sexType == xxx.rjwSextype.Cunnilingus)
 			{

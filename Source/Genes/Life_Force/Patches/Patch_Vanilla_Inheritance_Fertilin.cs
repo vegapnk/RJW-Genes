@@ -58,8 +58,7 @@ namespace RJW_Genes
         private static List<GeneDef> FertilinSourceGenes = new List<GeneDef>() {
             GeneDefOf.rjw_genes_drainer, 
             GeneDefOf.rjw_genes_cum_eater, 
-            GeneDefOf.rjw_genes_vaginal_absorber,
-            GeneDefOf.rjw_genes_anal_absorber, 
+            GeneDefOf.rjw_genes_fertilin_absorber,
             GeneDefOf.rjw_genes_cockeater 
         };
 
