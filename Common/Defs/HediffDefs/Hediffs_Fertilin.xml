@@ -1,26 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<HediffDef>
-		<defName>rjw_genes_aphrodisiac_pheromone</defName>
-		<hediffClass>HediffWithComps</hediffClass>
-		<label>induced libido</label>
-		<description>sex drive increasing due to smelling aphrodisiac pheromones.</description>
-		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-		<maxSeverity>1.0</maxSeverity>
-		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-24.0</severityPerDay>
-			</li>
-		</comps>
-		<stages>
-			<li>
-				<becomeVisible>true</becomeVisible>
-				<statFactors>
-					<SexFrequency>2</SexFrequency> <!--This is a lie, it gets changed when applied -->
-				</statFactors>
-			</li>
-		</stages>
-	</HediffDef>
 	
 	<HediffDef>
 		<defName>rjw_genes_fertilin_lost</defName>
