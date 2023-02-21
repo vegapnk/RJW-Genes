@@ -15,6 +15,14 @@ Things to consider:
 
 There also is a known mod-conflict with `rjw Animations patch` (See #18), so make sure you use up-to-date versions of everything.
 
+## Seduce aborts on sex-start! 
+
+Error: You have a succubus using seduce on a hostile pawn, they start sex but immediately abort. 
+
+Things to Consider: 
+
+1. Is your Succubus drafted? If not, they might have a flight-mode set and are scared of the enemy. 
+
 ## Random Vaginas for Goblins 
 
 Error: Pawns have different genitalia than expected, e.g. if the "no vagina" gene is specified there are pawns with vaginas AND a penis. 

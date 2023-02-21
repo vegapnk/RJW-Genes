@@ -3,6 +3,12 @@
 I have many ideas but not too much time / knowledge of Rimworld or Modding. 
 So any help is very appreciated, even if it is just pointing me to existing similar projects. 
 
+## Additions to existing things 
+
+**Cumeater** - Look for edible cum-items when low on Fertilin
+
+**Incubi** - Add a forced striptease Ability
+
 ## Planned Genes 
 
 **Adjustable Cock-Size** like e.g. artificial genitalia have

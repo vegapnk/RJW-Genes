@@ -24,3 +24,5 @@ But please consider also the following:
 - Many of the Icons I made (e.g. Genitalia Types) include things from [OpenMoji](https://openmoji.org/) which is awesome
 - Placeholder, Rapist, Necrophile come from [RJW-Sexperience Ideology](https://gitgud.io/amevarashi/rjw-sexperience-ideology/)
 - Hypersexual & Zoophile comes from [RJW](https://gitgud.io/Ed86/rjw)
+- Cockeater & Naked Prowess come from *WasMachenSachen*. 
+- Fertilin, Fertilin Drain, Healpussy, Succubus Wing & Tail come from Shabakur
