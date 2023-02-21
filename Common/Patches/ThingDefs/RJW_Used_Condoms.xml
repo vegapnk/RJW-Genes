@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Add RJW Sex meditation focus icon to VanillaPsycastsExpanded -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RJW Sexperience</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="UsedCondom"]/ingestible/outcomeDoers</xpath>
+			<value>
+				<li Class="RJW_Genes.IngestionOutcomeDoer_LifeForceOffset">
+					<FertilinPerUnit>1</FertilinPerUnit>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
