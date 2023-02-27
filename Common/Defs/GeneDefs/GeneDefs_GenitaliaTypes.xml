@@ -22,7 +22,7 @@
     <defName>rjw_genes_canine_genitalia</defName>
     <label>canine genitalia</label>
     <description>Carriers of this gene develop canine genitalia.</description>
-    <iconPath>Genes/Icons/Genitalia_Canine_2</iconPath>
+    <iconPath>Genes/Icons/Genitalia_Canine</iconPath>
     <geneClass>RJW_Genes.Gene_CanineGenitalia</geneClass>
     <displayOrderInCategory>803</displayOrderInCategory>
   </GeneDef>
