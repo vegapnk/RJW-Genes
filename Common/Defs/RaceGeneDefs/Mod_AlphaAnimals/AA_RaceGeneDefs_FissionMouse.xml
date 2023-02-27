@@ -58,6 +58,13 @@
         <defName>AG_AsexualFission</defName>
         <chance>0.025</chance>
       </li>
+      
+      <!-- With Outland-Genetics installed -->
+
+      <li>
+        <defName>Outland_Tail_Pom</defName>
+        <chance>0.5</chance>
+      </li>
 
       <!-- RaceGroupDef Value Override -->
 

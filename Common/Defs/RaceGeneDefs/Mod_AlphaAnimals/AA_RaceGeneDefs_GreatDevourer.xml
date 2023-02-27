@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RJW_BGS.RaceGeneDef ParentName = "Insect">
+		<defName>GreatDevourer</defName>
+		<raceNames>
+			<li>AA_GreatDevourer</li>
+		</raceNames>
+		<genes>
+      <li>
+        <defName>Skin_Orange</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>Aggression_Aggressive</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>KillThirst</defName>
+        <chance>0.1</chance>
+      </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_PincerMandibles</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_LargerBodySize</defName>
+        <chance>0.25</chance>
+      </li>
+
+      <!-- With Outland-Genetics installed -->
+
+      <li>
+        <defName>Outland_Teeth_Fangs</defName>
+        <chance>0.15</chance>
+      </li>
+      
+      <!-- RaceGroupDef Overwrite -->
+
+      <li>
+        <defName>AG_UnsettlingAppearance</defName>
+        <chance>0.35</chance>
+      </li>
+      
+    </genes>
+	</RJW_BGS.RaceGeneDef>
+	
+</Defs>

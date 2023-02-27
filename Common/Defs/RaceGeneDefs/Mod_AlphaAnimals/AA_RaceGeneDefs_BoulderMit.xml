@@ -50,10 +50,14 @@
         <defName>AG_BeeMandibles</defName>
         <chance>0.5</chance>
       </li>
+
+      <!-- With Outland-Genetics installed -->
+
       <li>
-        <defName>AG_CrabClaw</defName>
-        <chance>0.2</chance>
+        <defName>Outland_Hands_CrabClaw</defName>
+        <chance>0.33</chance>
       </li>
+
 
       <!-- RaceGeneDef Overwrite -->
 

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RJW_BGS.RaceGeneDef>
+		<defName>Mantrap</defName>
+		<raceNames>
+			<li>AA_Mantrap</li>
+		</raceNames>
+		<genes>
+      <li>
+        <defName>Skin_Green</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AptitudeRemarkable_Plants</defName>
+        <chance>0.2</chance>
+      </li>
+      <li>
+        <defName>FireWeakness</defName>
+        <chance>0.25</chance>
+      </li>
+      <li>
+        <defName>FireTerror</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>AcidSpray</defName>
+        <chance>0.075</chance>
+      </li>
+
+      <!-- With AlphaAnimals / AlphaGenes installed -->
+
+      <li>
+        <defName>AG_EldritchHorns</defName>
+        <chance>0.5</chance>
+      </li>
+      <li>
+        <defName>AG_ToxResist_Vulnerability</defName>
+        <chance>0.15</chance>
+      </li>
+      <li>
+        <defName>AG_Deaf</defName>
+        <chance>0.1</chance>
+      </li>
+      <li>
+        <defName>AG_LargerBodySize</defName>
+        <chance>0.2</chance>
+      </li>
+
+      <!-- With Outland-Genetics installed -->
+
+      <li>
+        <defName>Outland_Hands_Tentacle</defName>
+        <chance>0.25</chance>
+      </li>
+
+      <!-- Genitalia -->
+      
+      <!-- Needs plant like penis -->
+      
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+	
+</Defs>

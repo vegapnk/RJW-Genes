@@ -59,6 +59,13 @@
         <chance>0.1</chance>
       </li>
 
+      <!-- With Outland-Genetics installed -->
+
+      <li>
+        <defName>Outland_Hands_CrabClaw</defName>
+        <chance>0.33</chance>
+      </li>
+
       <!-- RaceGroupDef Overwrite -->
 
       <li>
