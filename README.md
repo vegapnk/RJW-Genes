@@ -33,4 +33,4 @@ One of the main motivations was to have genes being added to the xenotypes that 
 1. Please load this after any mod adding genes, and after the used RJW-Mods (Licentia, Sexperience). 
 2. Should not be used with the original RJW_Animal_Gene_Inheritance anymore. 
 3. There was an issue with other "Male-Only / Female-Only" Mods --- for which we provide our own Genes now. 
-4. CAI5000 will not crash, but will make *Seduce*-Ability fail.
+4. CAI5000 will not crash, but will make *Seduce*-Ability fail. I think same goes for Combat Extended.

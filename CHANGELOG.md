@@ -1,6 +1,8 @@
-# 1.1.0 (2023-xx-xx)
+# 1.1.0 (2023-03-04)
 
 1.1.0-beta-1 was released on 05.02.2023. 
+
+Changes since beta: Typos, Icons & Merge of Anal & Vaginal Absorber.
 
 ## Features: 
 
@@ -72,6 +74,7 @@ Currently Succubi and Incubi only spawn through a special event determined by th
 - Genitalia Resizing triggers on 20th Birthday (#11)
 - RJW-Gene-Inheritance Settings now do things (#13, Shabakur)
 - Check for Animals in Orgasm Rush, no Orgasm Rush for and from Animals (#15)
+- Using Character Editor, it can happen that the Genes fired twice. I hoped to harden this issue by checking better (#19) 
 
 # 1.0.1 (2022-12-20)
 

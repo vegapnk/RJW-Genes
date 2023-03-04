@@ -2,6 +2,16 @@
 
 Collection of Known Bugs and reasons for their origin. 
 
+## Pawn does not refresh empty Fertilin!
+
+Issue: A pawn has 0 (or low) Fertilin, and a mood debuff. But they do not do anything about it. 
+
+Reason: Pawns might go on a mental break when their fertilin is low to rape people. However, if your pawn is generally happy, they will not have a mental break. Then they run around with low fertilin. 
+
+Workarounds / Solutions: Depending on your Gene-Setup, you might consider a cum-based diet. You can also tweak sex-settings for more sex need and hookups. Lastly, you can edit the xml to give higher mood penalties, which will lead to more mental breakdowns.
+
+In general, I am happy to hear your feedback. If you have other ideas how to change this to be a bit tricky but not too punishing please let me know. 
+
 ## Fertilin does not go up after Sex!
 
 Error: An Incubus or Succubus had sex with another pawn, but did not gain Fertilin. 
@@ -22,6 +32,7 @@ Error: You have a succubus using seduce on a hostile pawn, they start sex but im
 Things to Consider: 
 
 1. Is your Succubus drafted? If not, they might have a flight-mode set and are scared of the enemy. 
+2. Do you have mods changing combat AI? (CAI5000 or Combat Extended)
 
 It seems that things changing Enemy Combat AI also affect this. One report was about CAI5000 and we also expect Combat Extended to be incompatible. 
 

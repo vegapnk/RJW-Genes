@@ -21,6 +21,13 @@ So any help is very appreciated, even if it is just pointing me to existing simi
 
 **Self-Fertilizing Eggs** Pawns fertilize eggs that are put inside them (with themselves as a parent)
 
+**Death-Rest** until the pawn is cumflated. 
+
+## Planned Xenotypes 
+
+- "Beastmaster": Zoophile with various genes to command animals to rape, mate etc. and increased animal "handling". 
+- "Hive-Mother": for breeding Insect Armies, maybe it is also possible to "store" small insects in her etc. 
+
 ## Genes with Abilities and more Effects 
 
 There were some suggestions on the Discord I saved them somewhere else. I am far away from making that work, but to have them here: 
