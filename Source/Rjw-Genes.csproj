@@ -22,55 +22,25 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="LicentiaLabs">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\licentia-labs-master\Assemblies\LicentiaLabs.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="RJW">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rjw-master\1.4\Assemblies\RJW.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
     <None Include="..\About\**" />
     <None Include="..\Common\Defs\Genes\GeneCategories.xml" />
     <None Include="..\Common\Defs\Genes\GeneDefs_ExtraGenitaliaEndogenes.xml" />
     <None Include="..\Common\Defs\Genes\GeneDefs_GenitaliaTypeEndogenes.xml" />
     <None Include="..\Common\Languages\**" />
     <None Include="..\Common\Patches\**" />
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal_Inheritance\First.cs" />
     <Compile Include="Animal_Inheritance\Harmony_Init.cs" />
     <Compile Include="Animal_Inheritance\InheritanceUtility.cs" />
-    <Compile Include="Animal_Inheritance\PatchRJWBestialityPregnancyUtility.cs" />
-    <Compile Include="Animal_Inheritance\PatchRJWHediffInsect_Egg.cs" />
-    <Compile Include="Animal_Inheritance\PatchVanillaPregnancyUtility.cs" />
-    <Compile Include="Animal_Inheritance\RaceGeneDef.cs" />
-    <Compile Include="Animal_Inheritance\RaceGeneDef_Helper.cs" />
-    <Compile Include="Animal_Inheritance\RJW_BGSSettings.cs" />
-    <Compile Include="Animal_Inheritance\RJW_BGSSettingsController.cs" />
-    <Compile Include="Animal_Inheritance\BestialityGeneInheritanceDef.cs" />
+    <Compile Include="Animal_Inheritance\Patches\Patch_RJW_BestialityPregnancyUtility.cs" />
+    <Compile Include="Animal_Inheritance\Patches\Patch_RJW_HediffInsect_Egg.cs" />
+    <Compile Include="Animal_Inheritance\Patches\Patch_Vanilla_PregnancyUtility.cs" />
+    <Compile Include="Animal_Inheritance\Defs\RaceGeneDef.cs" />
+    <Compile Include="Animal_Inheritance\Defs\RaceGeneDef_Helper.cs" />
+    <Compile Include="Animal_Inheritance\Settings\RJW_BGSSettings.cs" />
+    <Compile Include="Animal_Inheritance\Settings\RJW_BGSSettingsController.cs" />
+    <Compile Include="Animal_Inheritance\Defs\BestialityGeneInheritanceDef.cs" />
+    <Compile Include="Common\ModLog.cs" />
     <Compile Include="GeneDefOf.cs" />
     <Compile Include="Genes\Breeding\Gene_MechBreeder.cs" />
     <Compile Include="Genes\Breeding\PatchMechBirth.cs" />
@@ -82,6 +52,7 @@
     <Compile Include="Genes\Cum\Gene_MuchCum.cs" />
     <Compile Include="Genes\Cum\Gene_NoCum.cs" />
     <Compile Include="Genes\Cum\Patch_TransferNutrition.cs" />
+    <Compile Include="Genes\Damage\Gene_Unbreakable.cs" />
     <Compile Include="Genes\Damage\Gene_Elasticity.cs" />
     <Compile Include="Genes\Cum\Patch_Cumflation.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraBreasts.cs" />
@@ -98,6 +69,7 @@
     <Compile Include="Genes\Gender\Gene_MaleOnly.cs" />
     <Compile Include="Genes\GeneUtility.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_BigBreasts.cs" />
+    <Compile Include="Genes\GenitaliaSize\Gene_GenitaliaResizingGene.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_LooseAnus.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_LooseFemaleGenitalia.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_TightAnus.cs" />
@@ -105,6 +77,7 @@
     <Compile Include="Genes\GenitaliaSize\Gene_TightFemaleGenitalia.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_SmallMaleGenitalia.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_BigMaleGenitalia.cs" />
+    <Compile Include="Genes\GenitaliaSize\Patch_ResizingOnAdulthood.cs" />
     <Compile Include="Genes\GenitaliaSize\SizeAdjuster.cs" />
     <Compile Include="Genes\Genitalia\Gene_SlimeGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_DragonGenitalia.cs" />
@@ -114,15 +87,110 @@
     <Compile Include="Genes\Genitalia\Gene_DemonicGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_EquineGenitalia.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaChanger.cs" />
+    <Compile Include="Genes\Life_Force\Abilities\AbilityUtility.cs" />
+    <Compile Include="Genes\Life_Force\UI\Alert_LowFertilin.cs" />
+    <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_CasterIsNaked.cs" />
+    <Compile Include="Genes\Life_Force\Abilities\CompProperties_CasterIsNaked.cs" />
+    <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_Seduce.cs" />
+    <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_LifeForceCost.cs" />
+    <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_CockEater.cs" />
+    <Compile Include="Genes\Life_Force\Abilities\CompProperties_Seduce.cs" />
+    <Compile Include="Genes\Life_Force\Abilities\CompProperties_AbilityCockEater.cs" />
+    <Compile Include="Genes\Life_Force\Genes\Gene_LifeForceDrain.cs" />
+    <Compile Include="Genes\Life_Force\HediffCompProperties_SeverityFromFertilin.cs" />
+    <Compile Include="Genes\Life_Force\HediffComp_SeverityFromFertilin.cs" />
+    <Compile Include="Genes\Life_Force\Events\SuccubusVisit\IncidentWorker_SuccubusDreamVisit.cs" />
+    <Compile Include="Genes\Life_Force\IngestionOutcomeDoer_LifeForceOffset.cs" />
+    <Compile Include="Genes\Life_Force\JobGivers\JobGiver_TryQuickieWith.cs" />
+    <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_Flirt.cs" />
+    <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_SexOnSpotReceiver.cs" />
+    <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_SexOnSpot.cs" />
+    <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_Seduced.cs" />
+    <Compile Include="Genes\Life_Force\JobGivers\JobGiver_Flirt.cs" />
+    <Compile Include="Genes\Life_Force\Events\SuccubusVisit\LordJob_SuccubusVisit.cs" />
+    <Compile Include="Genes\Life_Force\LordToil_Flirt.cs" />
+    <Compile Include="Genes\Life_Force\Patches\Patch_SexTicks_ChangePsyfocus.cs" />
+    <Compile Include="Genes\Life_Force\Patches\Patch_Vanilla_Inheritance_Fertilin.cs" />
+    <Compile Include="Genes\Life_Force\ThinkNodes\ThinkNode_ConditionalCannotInteract.cs" />
+    <Compile Include="Genes\Life_Force\ThinkNodes\ThinkNode_ConditionalLowLifeForce.cs" />
+    <Compile Include="Genes\Life_Force\ThinkNodes\ThinkNode_ConditionalCritcalLifeForce.cs" />
+    <Compile Include="Genes\Life_Force\JobGivers\JobGiver_GetLifeForce.cs" />
+    <Compile Include="Genes\Life_Force\ThinkNodes\ThinkNode_NewFlirtTarget.cs" />
+    <Compile Include="Genes\Special\Patch_AgeDrain.cs" />
+    <Compile Include="Interactions\SuccubusTailjob\CompAbility_SexInteractionRequirements.cs" />
+    <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_PussyHeal.cs" />
+    <Compile Include="Genes\Life_Force\Abilities\CompProperties_AbilityLifeForceCost.cs" />
+    <Compile Include="Interactions\SuccubusTailjob\CompProperties_SexInteractionRequirements.cs" />
+    <Compile Include="Genes\Life_Force\Abilities\CompProperties_AbilityPussyHeal.cs" />
+    <Compile Include="Genes\Life_Force\UI\GeneGizmo_ResourceLifeForce.cs" />
+    <Compile Include="Genes\Life_Force\JobDrivers\JobDriver_CastAbilityAfterSex.cs" />
+    <Compile Include="Genes\Life_Force\MentalStates\LifeForceMentalState.cs" />
+    <Compile Include="Genes\Life_Force\MentalStates\LifeForceMentalStateWorker.cs" />
+    <Compile Include="Genes\Life_Force\JobGivers\JobGiver_LifeForce_RandomRape.cs" />
+    <Compile Include="Genes\Life_Force\MentalStates\LifeForceMentalBreakWorker.cs" />
+    <Compile Include="Genes\Life_Force\Genes\Gene_LifeForce.cs" />
     <Compile Include="Genes\RJW_Gene.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaUtility.cs" />
+    <Compile Include="Genes\Special\Gene_Aphrodisiac_Pheromones.cs" />
+    <Compile Include="Genes\Life_Force\Patches\Patch_SatisfyPersonal_LifeForceGain.cs" />
     <Compile Include="Genes\Special\Patch_OrgasmRush.cs" />
+    <Compile Include="Genes\Special\Patch_Youth_Fountain.cs" />
     <Compile Include="HarmonyInit.cs" />
+    <Compile Include="HediffDefOf.cs" />
+    <Compile Include="Interactions\SuccubusTailjob\CustomSexInteraction_Helper.cs" />
+    <Compile Include="Interactions\SuccubusTailjob\GenesPartKindUsageRule.cs" />
+    <Compile Include="Interactions\SuccubusTailjob\SubSuccubusTailCustomRequirementHandler.cs" />
+    <Compile Include="Interactions\SuccubusTailjob\DomSuccubusTailCustomRequirementHandler.cs" />
+    <Compile Include="JobDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RJW_Genes.cs" />
+    <Compile Include="Settings\RJW_Genes_Settings.cs" />
+    <Compile Include="Settings\RJW_Genes_SettingsController.cs" />
+    <Compile Include="ThoughtDefOf.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="GeneDefs_GenitaliaTypeEndogenes.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp, Version=1.4.8385.39127, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="LicentiaLabs, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\licentia-labs\Assemblies\LicentiaLabs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RJW, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\rjw\1.4\Assemblies\RJW.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RJWSexperience">
+      <HintPath>..\..\RJW-Sexperience\1.4\Assemblies\RJWSexperience.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

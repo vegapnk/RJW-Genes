@@ -1,20 +1,10 @@
 ﻿namespace RJW_Genes
 {
-    public class Gene_SmallMaleGenitalia : RJW_Gene
+    public class Gene_SmallMaleGenitalia : Gene_GenitaliaResizingGene
     {
-
-        public override void PostMake()
+        public override void Resize()
         {
-            base.PostMake();
-
-            SizeAdjuster.AdjustAllPenisSizes(pawn,0.0f,0.5f);
-        }
-        
-        public override void PostAdd()
-        {
-            base.PostAdd();
             SizeAdjuster.AdjustAllPenisSizes(pawn, 0.0f, 0.5f);
         }
-
     }
 }

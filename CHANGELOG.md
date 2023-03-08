@@ -1,3 +1,81 @@
+# 1.1.0 (2023-03-04)
+
+1.1.0-beta-1 was released on 05.02.2023. 
+
+Changes since beta: Typos, Icons & Merge of Anal & Vaginal Absorber.
+
+## Features: 
+
+- Succubus, other Fertilin Xenotypes (see below)
+- Orgasm Rush got a Hediff
+- Unbreakable Gene
+- Age-Transfer and Youth-Fountain per Sex Gene 
+- Bisexual and Homosexual Genes with Placeholder Icon
+- Balancing some Genes by changing metabolism and complexity
+- Pheromone Gene (#13, Shabakur)
+- RJW Race-Support Compatibility (#12,#13, Shabakur)
+- Animal Gene Inheritance Gene-Chance Multiplier per Setting (#13, Shabakur)
+- Lots of Debug-Only Logging for Animal Gene Inheritance
+- Patches for some popular Xenotype Mods (Nyaron, Kijin3, Roos Minotaurs, VRE Phytokin)
+- Generous Donor Cheatmode 
+- Mod-Settings 
+
+## Fertilin:
+
+Big news ! We got a system similar to hemogen running, labelled *Fertilin*. 
+
+Pawns gain Fertilin through various sources, and can spend them on various abilities and loose it over time. 
+
+Fertilin-Sources: 
+
+- Vaginal & Anal Absorption (Through sex in respective types)
+- Cum-Eater (through oral sex, eating cum from Sexperience, or cunnilinguing (?) cumflated pawns)
+- Sex Drain, after Sex apply a debuff to the fucked pawn 
+- Cock-Eater, bite off the wiener of downed enemies, own colonists, animals, slaves, not sure about visitors but let me know what you think. 
+
+Animals give less Fertilin as a source, configurable in the Mod Settings. 
+The Vaginal, Anal and CumEater interactions *empty* the pawns balls and the pawn needs to *recharge*. Gain and recharge are based on cum-production. 
+The drainer is a flag - undrained pawns can be drained, drained pawns will not get any debuff and will not give any fertilin.
+
+Fertilin-Abilities: 
+
+- Heal Pussy; Rape someone to tend their wounds.
+- Seduce; Target Pawn needs to follow the caster, engaging in sex on collision.
+- Paralysing Kiss; Stun someone in meele range.
+- Naked Prowess; When the pawn is naked, get a 3h buff on meele stats and armor. 
+
+Other than that, the Xenotypes tend to have other buffs from base-game to make up for their insatiable hunger. 
+
+Xenotypes: 
+
+**Succubi** absorb Fertilin through sex and can use it for paralyzing kiss and seduce. 
+
+**Incubi** are their male parallels, but gaining fertilin through draining. 
+
+**Cumazones** are female only martial fighters, that can only gain fertilin through biting cocks. Be sure to have enough supply before you hire one of these bad bitches. 
+
+Incubi and Succubi can spawn in a special event at night when pawns have low sex need. Cumazones can just appear randomly. 
+
+**_On Inheritance:_** 
+
+We realized that it's not nice if the Succubi Babies do not have all Succubi Genes, and have Fertilin with no use for it or look like wookies instead. Hence, we changed the Fertilin Xenotypes to be Xenogenes (non-inheritable) *BUT* we recommend using the [dominant-gene](https://steamcommunity.com/sharedfiles/filedetails/?id=2884110898) mod. 
+If the dominant-gene mod is loaded, our xenotypes will spawn with it, making Succubus Babies Succubi. 
+In case you do not want that behaviour, look for the Patch `Patch_Dominant_Gene.xml` and delete it. 
+
+**_On Making your own Succubi_:**
+
+Currently Succubi and Incubi only spawn through a special event determined by their xenotype def name. So if you make your own, they will not spawn with this event. Make sure that you have a way to get your custom xenotypes appear. You might want to "just alter" the xenotype xml provided by us, then they will spawn with the event. 
+
+## Fixes:
+
+- Issue with Breast-Size (#8) fixed by lowercasing breast-match (Shabakur) 
+- Error on Game Load when Licentia Genes are tried to be added to Xenotypes for players without Licentia (#5,#17)
+- Futa Gene only triggers if Pawn is not a futa already (#2)
+- Genitalia Resizing triggers on 20th Birthday (#11)
+- RJW-Gene-Inheritance Settings now do things (#13, Shabakur)
+- Check for Animals in Orgasm Rush, no Orgasm Rush for and from Animals (#15)
+- Using Character Editor, it can happen that the Genes fired twice. I hoped to harden this issue by checking better (#19) 
+
 # 1.0.1 (2022-12-20)
 
 - Fix issue with Orgasm Rush throwing an Error on Animal Orgasm (Thanks Shabakur)

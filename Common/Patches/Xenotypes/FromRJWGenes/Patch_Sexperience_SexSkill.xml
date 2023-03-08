@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationSequence">
+    <operations>
+        <li Class="PatchOperationFindMod">
+            <mods>
+                <li>RJW Sexperience</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/XenotypeDef[defName="rjw_genes_succubus"]/genes</xpath>
+                <value>
+                    <li>AptitudeRemarkable_Sex</li>
+                </value>
+            </match>
+        </li>
+        <li Class="PatchOperationFindMod">
+            <mods>
+                <li>RJW Sexperience</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/XenotypeDef[defName="rjw_genes_incubus"]/genes</xpath>
+                <value>
+                    <li>AptitudeRemarkable_Sex</li>
+                </value>
+            </match>
+        </li>
+
+    </operations>
+</Operation>
+</Patch>

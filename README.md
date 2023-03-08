@@ -2,17 +2,16 @@
 
 This mod adds genes related and based on RJW to Rimworld. 
 
-This is my first Mod I started from scratch so any feedback is very welcome. 
-
 ## Current Features 
 
 - Different Genitalia Types 
 - Genitalia Size Scaling 
 - Extra Genitalia (and a Futa Attempt)
-- Some Traits, Cumflation Immunity, Elasticity
-- Cum-Amount Changes, Transfer Nutrition
-- Mech Breeding / Insect Breeding Support 
+- Most RJW Traits, Cumflation Immunity, Elasticity
+- Cum-Amount Changes, Transfer Nutrition Boosts
+- Mech Breeding / Insect Breeding Additions 
 - Human-Animal Gene Inheritance merged from [Shabakur](https://github.com/Shabakur/RJW_Animal_Gene_Inheritance)
+- Succubi, Incubi & Cumazones that utilize Fertilin, similar to Hemogen
 
 See [planned things](TODOS.md) and feel free to contribute. 
 With the Human-Animal-Gene Inheritance we have a lot of XML that you can contribute! 
@@ -31,8 +30,7 @@ One of the main motivations was to have genes being added to the xenotypes that 
 
 ## Load Order / Deps 
 
-Please load this after any mod adding genes, and after the used RJW-Mods (Licentia, Sexperience). 
-
-Should not be used with the original RJW_Animal_Gene_Inheritance anymore. 
-
-There was an issue with other "Male-Only / Female-Only" Mods --- for which we provide our own Genes now. 
+1. Please load this after any mod adding genes, and after the used RJW-Mods (Licentia, Sexperience). 
+2. Should not be used with the original RJW_Animal_Gene_Inheritance anymore. 
+3. There was an issue with other "Male-Only / Female-Only" Mods --- for which we provide our own Genes now. 
+4. CAI5000 will not crash, but will make *Seduce*-Ability fail. I think same goes for Combat Extended.

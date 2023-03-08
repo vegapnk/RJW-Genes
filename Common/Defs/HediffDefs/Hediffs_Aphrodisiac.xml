@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Actually, there are no pheromones for humans that we are aware of, did you know? There are smells we are conditioned to like, but actual pheromones are not known for humans. But, this is a game, so fuck it I guess? -->
+	<HediffDef>
+		<defName>rjw_genes_aphrodisiac_pheromone</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>induced libido</label>
+		<description>sex drive increasing due to smelling aphrodisiac pheromones.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-4.0</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>wearing off</label>
+				<statFactors>
+					<SexFrequency>1.25</SexFrequency>
+				</statFactors>
+			</li>
+			<li>
+				<minSeverity>0.35</minSeverity>
+				<label>moderate</label>
+				
+				<statFactors>
+					<SexFrequency>1.8</SexFrequency>
+				</statFactors>
+			</li>
+			<li>
+				<minSeverity>0.9</minSeverity>
+				<label>strong</label>
+				
+				<statFactors>
+					<SexFrequency>2.5</SexFrequency>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

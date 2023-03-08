@@ -16,6 +16,7 @@ But please consider also the following:
 ## Contributors 
 
 - Shabalox (MechBreeding, InsectBreeding, Animal Gene Inheritance)
+- WasMachenDennSachen (Various Icons)
 
 ## Other Credits 
 
@@ -24,3 +25,5 @@ But please consider also the following:
 - Many of the Icons I made (e.g. Genitalia Types) include things from [OpenMoji](https://openmoji.org/) which is awesome
 - Placeholder, Rapist, Necrophile come from [RJW-Sexperience Ideology](https://gitgud.io/amevarashi/rjw-sexperience-ideology/)
 - Hypersexual & Zoophile comes from [RJW](https://gitgud.io/Ed86/rjw)
+- Cockeater & Naked Prowess come from *WasMachenDennSachen* but I copied it from Discord Chat. 
+- Fertilin, Fertilin Drain, Healpussy, Succubus Wing & Tail come from Shabakur

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <GeneDef>
+        <defName>rjw_genes_hypersexual</defName>
+        <label>Hypersexuality</label>
+        <displayCategory>Reproduction</displayCategory>
+        <description>Xenotypes with this Gene are Hypersexual (Nymphs).</description>
+        <iconPath>Genes/Icons/Hypersexual</iconPath>
+        <displayOrderInCategory>1</displayOrderInCategory>    
+        <forcedTraits>
+            <li>
+                <def>Nymphomaniac</def>
+            </li>
+        </forcedTraits>
+    </GeneDef>
+    
+    <GeneDef>
+        <defName>rjw_genes_rapist</defName>
+        <label>Rapist</label>
+        <displayCategory>Reproduction</displayCategory>
+        <description>Xenotypes with this Gene are Rapists.</description>
+        <iconPath>Genes/Icons/Rape</iconPath>
+        <biostatMet>1</biostatMet>
+        <displayOrderInCategory>2</displayOrderInCategory>    
+        <forcedTraits>
+            <li>
+                <def>Rapist</def>
+            </li>
+        </forcedTraits>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>rjw_genes_homosexual</defName>
+        <label>Homosexual</label>
+        <displayCategory>Reproduction</displayCategory>
+        <description>This Gene makes you gay.</description>
+        <iconPath>UI\Ideoligions\Universal\RoundC</iconPath>
+        <biostatMet>0</biostatMet>
+        <displayOrderInCategory>3</displayOrderInCategory>    
+        <forcedTraits>
+            <li>
+                <def>Gay</def>
+            </li>
+        </forcedTraits>
+        <exclusionTags>
+            <li>rjw_genes_sexual_orientation</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>rjw_genes_bisexual</defName>
+        <label>Bisexual</label>
+        <displayCategory>Reproduction</displayCategory>
+        <description>Carriers of this Gene are Bisexual.</description>
+        <iconPath>UI\Ideoligions\Universal\RoundC</iconPath>
+        <biostatMet>0</biostatMet>
+        <displayOrderInCategory>4</displayOrderInCategory>    
+        <forcedTraits>
+            <li>
+                <def>Bisexual</def>
+            </li>
+        </forcedTraits>
+        <exclusionTags>
+            <li>rjw_genes_sexual_orientation</li>
+        </exclusionTags>
+    </GeneDef>
+
+</Defs>

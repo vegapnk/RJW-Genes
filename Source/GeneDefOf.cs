@@ -1,6 +1,6 @@
 ﻿using RimWorld;
 using Verse;
-
+using Verse.AI;
 namespace RJW_Genes
 {
 	[DefOf]
@@ -51,6 +51,7 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_mechbreeder;
 		public static readonly GeneDef rjw_genes_insectincubator;
 		public static readonly GeneDef rjw_genes_insectbreeder;
+		public static readonly GeneDef rjw_genes_zoophile;
 
 		// Cum 
 		public static readonly GeneDef rjw_genes_no_cum;
@@ -63,13 +64,39 @@ namespace RJW_Genes
 		// Reproduction 
 		public static readonly GeneDef rjw_genes_hypersexual;
 		public static readonly GeneDef rjw_genes_rapist;
-		public static readonly GeneDef rjw_genes_zoophile;
+		public static readonly GeneDef rjw_genes_homosexual;
+		public static readonly GeneDef rjw_genes_bisexual;
 
 		// Damage & Side Effects 
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_elasticity;
+		public static readonly GeneDef rjw_genes_unbreakable;
 
 		// Special
 		public static readonly GeneDef rjw_genes_orgasm_rush;
+		public static readonly GeneDef rjw_genes_youth_fountain;
+		public static readonly GeneDef rjw_genes_sex_age_drain;
+		public static readonly GeneDef rjw_genes_aphrodisiac_pheromones;
+
+		// LifeForce
+		public static readonly GeneDef rjw_genes_lifeforce;
+		public static readonly GeneDef rjw_genes_pussyhealing;
+		public static readonly GeneDef rjw_genes_lifeforce_drain;
+		public static readonly GeneDef rjw_genes_cum_eater;
+		public static readonly GeneDef rjw_genes_fertilin_absorber;
+		public static readonly GeneDef rjw_genes_drainer;
+		public static readonly GeneDef rjw_genes_seduce;
+		public static readonly GeneDef rjw_genes_paralysingkiss;
+		public static readonly GeneDef rjw_genes_cockeater;
+
+		// Cosmetic
+		public static readonly GeneDef rjw_genes_succubus_tail;
+		public static readonly GeneDef rjw_genes_succubus_wings;
+
+		//Other Defs
+		public static readonly XenotypeDef rjw_genes_succubus;
+		public static readonly DutyDef rjw_genes_flirt;
+		public static readonly MentalBreakDef rjw_genes_lifeforce_randomrape;
 
 	}
+
 }

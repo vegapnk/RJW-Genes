@@ -1,6 +1,7 @@
 ﻿using Verse;
 using rjw;
 using RimWorld;
+using System.Linq;
 
 namespace RJW_Genes
 {
@@ -13,6 +14,13 @@ namespace RJW_Genes
         {
             base.PostMake();
 
+            // Some sources add Genes before they fire, e.g. Character Editor
+            // This should harden the gene, to solve #19
+            if (HasAlreadyTwoAnus())
+            {
+                return;
+            }
+
             if (additional_anus == null)
             {
                 CreateAndAddAnus();
@@ -22,6 +30,13 @@ namespace RJW_Genes
         public override void PostAdd()
         {
             base.PostAdd();
+
+            // Some sources add Genes before they fire, e.g. Character Editor
+            // This should harden the gene, to solve #19
+            if (HasAlreadyTwoAnus())
+            {
+                return;
+            }
 
             if (additional_anus == null)
             {
@@ -53,5 +68,15 @@ namespace RJW_Genes
             pawn.health.AddHediff(additional_anus, partBPR);
         }
 
+        internal bool HasAlreadyTwoAnus()
+        {
+            if (pawn == null)
+                return false;
+
+            var possible_breasts =
+                Genital_Helper.get_AllPartsHediffList(pawn).Where(t => Genital_Helper.is_anus(t));
+
+            return possible_breasts.Count() >= 2;
+        }
     }
 }

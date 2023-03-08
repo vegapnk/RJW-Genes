@@ -1,18 +1,11 @@
-﻿namespace RJW_Genes
+﻿using Verse;
+
+namespace RJW_Genes
 {
-    public class Gene_SmallBreasts : RJW_Gene
+    public class Gene_SmallBreasts : Gene_GenitaliaResizingGene
     {
-
-        public override void PostMake()
+        public override void Resize()
         {
-            base.PostMake();
-
-            SizeAdjuster.AdjustAllBreastSizes(pawn, 0.0f, 0.5f);
-        }
-        
-        public override void PostAdd()
-        {
-            base.PostAdd();
             SizeAdjuster.AdjustAllBreastSizes(pawn, 0.0f, 0.5f);
         }
     }
