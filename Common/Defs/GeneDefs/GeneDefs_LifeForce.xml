@@ -19,6 +19,7 @@
 		<selectionWeight>0</selectionWeight>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<displayOrderInCategory>-2</displayOrderInCategory>
+    	<minAgeActive>18</minAgeActive>
 		<customEffectDescriptions>
 		  <li>Gives fertilin supply.</li>
 		</customEffectDescriptions>
@@ -43,6 +44,7 @@
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<resourceLossPerDay>0.15</resourceLossPerDay>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
+    	<minAgeActive>18</minAgeActive>
 		<displayOrderInCategory>-1</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>6</biostatMet>

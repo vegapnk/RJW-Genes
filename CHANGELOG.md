@@ -3,6 +3,8 @@
 Fixes: 
 
 - Small and Big Male Genitalia had images wrong way round 
+- Fertilin should activate at a MinAge of 18 
+
 
 # 1.1.0 (2023-03-04)
 
