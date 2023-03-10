@@ -1,3 +1,9 @@
+# 1.1.1 
+
+Fixes: 
+
+- Small and Big Male Genitalia had images wrong way round 
+
 # 1.1.0 (2023-03-04)
 
 1.1.0-beta-1 was released on 05.02.2023. 

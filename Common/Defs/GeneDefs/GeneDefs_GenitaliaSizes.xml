@@ -10,7 +10,7 @@
     <defName>rjw_genes_big_male_genitalia</defName>
     <label>Big Male Genitaliasize</label>
     <description>Penises of this Xenotype are bigger.(Resizing takes place at 20th Birthday)</description>
-    <iconPath>Genes/Icons/Small_Male_Genitalia</iconPath>
+    <iconPath>Genes/Icons/Big_Male_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_BigMaleGenitalia</geneClass>
     <displayOrderInCategory>751</displayOrderInCategory>
     <exclusionTags>
@@ -22,7 +22,7 @@
     <defName>rjw_genes_small_male_genitalia</defName>
     <label>Small Male Genitaliasize</label>
     <description>Penises of this Xenotype are smaller. (Resizing takes place at 20th Birthday)</description>
-    <iconPath>Genes/Icons/Big_Male_Genitalia</iconPath>
+    <iconPath>Genes/Icons/Small_Male_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_SmallMaleGenitalia</geneClass>
     <displayOrderInCategory>753</displayOrderInCategory>
     <exclusionTags>
