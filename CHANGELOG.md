@@ -1,10 +1,18 @@
 # 1.1.1 
 
+Changes: 
+
+- Drastically increased mood-penalty for Fertilin-Loss (if the pawn is still too happy, there will never be a breakdown for missing fertilin)
+- No-Breast Genes add Nipples
+- Featureless Chest Gene (No Nipples at all, adds the RJW Featureless Chest as requested per some Kobold fetishists)
+
 Fixes: 
 
 - Small and Big Male Genitalia had images wrong way round 
 - Fertilin should activate at a MinAge of 18 
 
+**Important**: The Fertilin Changes could throw errors! I tested a bit, but not a lot. 
+So please reach out if you get something and I will try to fix it ASAP. 
 
 # 1.1.0 (2023-03-04)
 

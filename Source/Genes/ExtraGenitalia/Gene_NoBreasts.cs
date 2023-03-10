@@ -6,18 +6,15 @@ namespace RJW_Genes
 {
     public class Gene_NoBreasts : RJW_Gene
     {
+        Hediff breastsToShrink;
+        internal float oldSize = -1f;
 
-        internal Hediff removed_breasts;
-
-        // TODO: This gene only works if another Gene was set specifying the genitalia. 
-        // If it is added later, it still works, but on creation it needs a different 
-        // TODO: If all Genitalia are removed by genes, RJW adds some to the pawns at spawn. IDEA: Add male-nipples ?
         public override void PostMake()
         {
             base.PostMake();
             
             // Breasts are removed for female pawns!
-            if (GenderUtility.IsFemale(pawn) && removed_breasts == null)
+            if (GenderUtility.IsFemale(pawn) && oldSize < 0)
             {
                 RemoveButStoreBreasts();
             }
@@ -28,7 +25,7 @@ namespace RJW_Genes
             base.PostAdd();
 
             // Breasts are removed for female pawns!
-            if (GenderUtility.IsFemale(pawn) && removed_breasts == null)
+            if (GenderUtility.IsFemale(pawn) && oldSize < 0)
             {
                 RemoveButStoreBreasts();
             }
@@ -37,21 +34,33 @@ namespace RJW_Genes
         public override void PostRemove()
         {
             base.PostRemove();
-            if(removed_breasts != null)    
-                pawn.health.AddHediff(removed_breasts);
+            // Re-Add the old breasts
+            if (oldSize != null)
+                breastsToShrink.Severity = oldSize;
         }
 
         internal void RemoveButStoreBreasts()
         {
             var partBPR = Genital_Helper.get_breastsBPR(pawn);
-            Hediff breastsToRemove = Genital_Helper.get_AllPartsHediffList(pawn).FindLast(x => GenitaliaUtility.IsBreasts(x));
+            breastsToShrink = Genital_Helper.get_AllPartsHediffList(pawn).FindLast(x => GenitaliaUtility.IsBreasts(x));
 
-            if(breastsToRemove != null)
+            if(breastsToShrink != null)
             {
-                removed_breasts = breastsToRemove;
-                pawn.health.RemoveHediff(breastsToRemove);
+                oldSize = breastsToShrink.Severity;
+                //pawn.health.RemoveHediff(breastsToRemove);
+                breastsToShrink.Severity = 0f;
             }
         }
 
+        /*
+        /// <summary>
+        /// Adds a "rjw.featurelesschest", which means nipples but nothing else (like male human pawns do).
+        /// </summary>
+        internal void AddFeaturelessBreast()
+        {
+            var partBPR = Genital_Helper.get_breastsBPR(pawn);
+            //this.added_nipples = pawn.health.AddHediff(Genital_Helper.featureless_chest, partBPR);
+        }
+        */
     }
 }
