@@ -54,6 +54,8 @@ Maybe you can also fix it by changing `<DisplayOrderInXenotype>` in the Male/Fem
 
 ## Full-No-Genital-Genes get Genitals later 
 
+*Update: Should be addressed with 1.1.1 and not appear anymore*
+
 Error: I added all "no-XXX" genes but my pawn has genitalia on map!
 
 Reason: If you go with Full-No-Genitals (No Penis, No Anus, No Breasts, No Vagina) then the pawn spawns without any Genitalia on the map, 
@@ -62,6 +64,8 @@ however then the RJW base-logic runs the sexualizer.
 **Workaround**: Have atleast 1 genitalia enabled with Genes, I recommend the anus. 
 
 ## Log Pops up for Xenotypes with Female/Male Only Gene 
+
+*Update: Should not appear anymore after 1.1 when used with current rjw versions* 
 
 Error: 
 

@@ -42,7 +42,7 @@ namespace RJW_Genes
 				{
 					Pawn_GeneTracker genes = pawn.genes;
 					Gene_LifeForce gene_Lifeforce = (genes != null) ? genes.GetFirstGeneOfType<Gene_LifeForce>() : null;
-					if (gene_Lifeforce != null && gene_Lifeforce.Value < gene_Lifeforce.MinLevelForAlert)
+					if (gene_Lifeforce != null && gene_Lifeforce.Active && gene_Lifeforce.Value < gene_Lifeforce.MinLevelForAlert)
 					{
 						this.targets.Add(pawn);
 						this.targetLabels.Add(pawn.NameShortColored.Resolve());

@@ -70,7 +70,7 @@
   <GeneDef ParentName="GeneExtraGenitaliaBase">
     <defName>rjw_genes_no_breasts</defName>
     <label>no breasts</label>
-    <description>Females of this do not have a pair of breasts.</description>
+    <description>Females of this do not have a pair of breasts, but only nipples.</description>
     <iconPath>Genes/Icons/No_Breasts</iconPath>
     <geneClass>RJW_Genes.Gene_NoBreasts</geneClass>
     <displayOrderInCategory>706</displayOrderInCategory>
@@ -106,7 +106,7 @@
     <GeneDef ParentName="GeneExtraGenitaliaBase">
 	    <defName>rjw_genes_futa</defName>
 	    <label>futanari</label>
-	    <description>Males of this xenotype grow additional female genitalia, Females grow additional male genitalia.</description>
+	    <description>Males with this gene grow additional female genitalia, females grow additional male genitalia.</description>
 	    <iconPath>Genes/Icons/Futa</iconPath>
 	    <geneClass>RJW_Genes.Gene_Futa</geneClass>
 	    <displayOrderInCategory>709</displayOrderInCategory>
@@ -116,4 +116,16 @@
 	    </exclusionTags>
     </GeneDef>
 	
+  <GeneDef ParentName="GeneExtraGenitaliaBase">
+    <defName>rjw_genes_featureless_chest</defName>
+    <label>Featureless Chest</label>
+    <description>Carriers of this gene do not have breasts or nipples.</description>
+    <iconPath>Genes/Icons/No_Breasts</iconPath>
+    <geneClass>RJW_Genes.Gene_FeaturelessChest</geneClass>
+    <displayOrderInCategory>710</displayOrderInCategory>
+    <exclusionTags>
+      <li>BreastAmount</li>
+    </exclusionTags>
+  </GeneDef>
+
 </Defs>
