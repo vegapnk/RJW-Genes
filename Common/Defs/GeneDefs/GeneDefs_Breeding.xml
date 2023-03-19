@@ -40,7 +40,7 @@
         <label>Zoophile</label>
         <displayCategory>rjw_genes_breeding</displayCategory>
         <description>Xenotypes with this Gene are Zoophile.</description>
-        <iconPath>Genes/Icons/Zoophile_2</iconPath>
+        <iconPath>Genes/Icons/Zoophile</iconPath>
         <displayOrderInCategory>54</displayOrderInCategory>    
         <forcedTraits>
             <li>
