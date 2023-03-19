@@ -1,3 +1,13 @@
+# 1.1.2
+
+Changes:
+
+- Added more cool images from WasMachenDennSachen (#22)
+
+Fixes: 
+
+- Aphrodisiac Pheromones checks for children and other conditions (#25)
+
 # 1.1.1 
 
 Changes: 

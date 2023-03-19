@@ -25,8 +25,27 @@ So any help is very appreciated, even if it is just pointing me to existing simi
 
 ## Planned Xenotypes 
 
-- "Beastmaster": Zoophile with various genes to command animals to rape, mate etc. and increased animal "handling". 
-- "Hive-Mother": for breeding Insect Armies, maybe it is also possible to "store" small insects in her etc. 
+**Beastmaster:** 
+
+- [] Animal Mating Call (Get fucked by everything nearby, potentially ending animal rage)
+- [] Pheromone Spit that marks a target for being raped by animals 
+- [] Power-Boost & Bonding to animals through zoophilia 
+- [] Maybe: Boost pregnancy times of Animals
+- [] Maybe: Make it Animal-Fertilin-Dependend
+- [] Either: Can only eat meat or cannot eat meat 
+
+Can't help but think about Rexxar Porn now I am a bad person. 
+
+**Hive Mother:**
+
+- [] Spawn the small scarabs 
+- [] Fertilise Eggs inside her 
+- [] Produce cocoons
+- [] Maybe: Insert "dropped" Insect eggs 
+- [] Very fragile, no use except breeding
+- [] Maybe: can only eat insect jelly
+- [] Should look like a nice green-yellow alien as we all know fuckable insects would look like. 
+- [] There can only be one Hive Mother, some penalties if there are others. This could be implement with an "Alpha Gene" that gives heavy penalties when other Alpha exists. 
 
 ## Genes with Abilities and more Effects 
 
@@ -35,4 +54,3 @@ There were some suggestions on the Discord I saved them somewhere else. I am far
 - Genitalia deal damage as per size (on normal sex-use)
 - Genitalia can cause Terror (as ability)
 - Cumshot Sniper Abilities
-- Healing Pussy
