@@ -1,3 +1,15 @@
+# 1.1.3
+
+Changes:
+
+- Youth Fountain and Age Drainer "stop" at 18 (#26)
+- Youth Fountain and Age Drainer activate only for pawns at 18 (#26)
+- Drained Pawns vomit less (from mtb 0.05 to 0.01)
+
+Fixes: 
+
+- InsectBreeder would mess with normal Pawn-Animal pregancy for egg laying animals (#23)
+
 # 1.1.2
 
 Changes:
