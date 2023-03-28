@@ -1,7 +1,6 @@
 # ToDos and Planned Genes 
 
-I have many ideas but not too much time / knowledge of Rimworld or Modding. 
-So any help is very appreciated, even if it is just pointing me to existing similar projects. 
+Any help is very appreciated, even if it is just pointing me to existing similar projects. 
 
 ## Additions to existing things 
 
@@ -54,3 +53,9 @@ There were some suggestions on the Discord I saved them somewhere else. I am far
 - Genitalia deal damage as per size (on normal sex-use)
 - Genitalia can cause Terror (as ability)
 - Cumshot Sniper Abilities
+
+## Cleanups: 
+
+- Streamline Filenames / Names to either be LifeForce or Fertilin (e.g. `Hediffs_Fertilin.xml` but `Pawnkind_LifeForce.xml`). I think most things are called LifeForce. 
+- Similar cleanup for the patches, and make a note what to find where in the patches
+- Change Project structure to the 1.3, 1.4 Structure of other mods
