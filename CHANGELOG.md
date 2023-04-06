@@ -1,9 +1,10 @@
+<<<<<<< HEAD
 # 1.1.4
 
 Fixes: 
 
 - Youth Fountain and Age Drainer **really** "stop" at 18 (#26, #28) and never age pawns
-- Drained Pawns **really** vomit less (#29). I understood the XML wrong. 
+- Drastically reduced vomiting time due to an missunderstanding (#29). `0.4` instead of `0.01`
 
 Sometimes life is like that, and you have to fix the fixes. 
 It was never really broken, life is just very long. 
@@ -14,7 +15,7 @@ Changes:
 
 - Youth Fountain and Age Drainer "stop" at 18 (#26)
 - Youth Fountain and Age Drainer activate only for pawns at 18 (#26)
-- Drained Pawns vomit less (from mtb 0.05 to 0.01)
+- Drained Pawns vomit less (from mtb 0.05 to 0.01)(#29)
 
 Fixes: 
 

@@ -74,7 +74,7 @@
 				<statOffsets>
 					<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
 				</statOffsets>
-        		<vomitMtbDays>0.01</vomitMtbDays>
+        		<vomitMtbDays>0.4</vomitMtbDays>
 				<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
 				<restFallFactorOffset>0.35</restFallFactorOffset>
 			</li>
