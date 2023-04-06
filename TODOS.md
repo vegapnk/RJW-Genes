@@ -22,6 +22,8 @@ Any help is very appreciated, even if it is just pointing me to existing similar
 
 **Death-Rest** until the pawn is cumflated. 
 
+**Alpha / Beta Genes** that you can only have one alpha, and the alpha makes mostly beta children (1:10). This might fit with the xenotypes below. As this is an RJW mod, this should also somewhat affect sex (e.g. betas cannot impregnate betas). 
+
 ## Planned Xenotypes 
 
 **Beastmaster:** 
