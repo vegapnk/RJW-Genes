@@ -2,6 +2,17 @@
 
 Collection of Known Bugs and reasons for their origin. 
 
+## I changed Parts of a pawn and my genes do not apply!
+
+Issue: You had a pawn with "huge genitalia" and add a horse-cock with licentia or surgery. This new genitalia is not huge. 
+
+Reason: The genes are applied when they are added. This is usually character-spawn. The genes change the attributes of the genitalia-hediff, and thus genitalia added after the genes are not affected. 
+
+I think I will not gonna fix this. 
+First of all, I think transplants wouldn't reasonably affected by genes. 
+Second, for implementation I'd need to regularly check if every gene changed all relevant genitalia already, and do the same every x-ticks. 
+This seems like a performance sink, so I will not gonna do it. 
+
 ## Pawn does not refresh empty Fertilin!
 
 Issue: A pawn has 0 (or low) Fertilin, and a mood debuff. But they do not do anything about it. 

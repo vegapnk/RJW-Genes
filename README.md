@@ -28,9 +28,14 @@ Please consider looking at [the known bugs](./KNOWN_BUGS.md)
 I currently don't use Races after Biotech was introduced. 
 One of the main motivations was to have genes being added to the xenotypes that other mods and the base game add, e.g. adding demonic penis for impids. 
 
-## Load Order / Deps 
+Some HAR races change sex-ages and behave unfriendly with this mod. 
+You can make reports about that, but I might not fix it. 
 
-1. Please load this after any mod adding genes, and after the used RJW-Mods (Licentia, Sexperience). 
-2. Should not be used with the original RJW_Animal_Gene_Inheritance anymore. 
-3. There was an issue with other "Male-Only / Female-Only" Mods --- for which we provide our own Genes now. 
-4. CAI5000 will not crash, but will make *Seduce*-Ability fail. I think same goes for Combat Extended.
+## Load Order, Dependencies and Conflicts 
+
+Please load this after any mod adding genes, and after the used RJW-Mods (Licentia, Sexperience). 
+
+**Conflicts:**
+1. Should not be used with the original RJW_Animal_Gene_Inheritance anymore. 
+2. There was an issue with other "Male-Only / Female-Only" Mods --- for which we provide our own Genes now. 
+3. CAI5000 will not crash, but will make *Seduce*-Ability fail. I think same goes for Combat Extended.

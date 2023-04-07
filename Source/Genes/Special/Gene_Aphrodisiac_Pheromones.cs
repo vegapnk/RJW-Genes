@@ -39,9 +39,25 @@ namespace RJW_Genes
         {
             foreach (Pawn pawn in map.mapPawns.AllPawns)
             {
-                if (pawn != null && this.pawn != null && pawn != this.pawn 
-                    && pos.DistanceTo(pawn.Position) < APHRODISIAC_DISTANCE && GenSight.LineOfSight(pos, pawn.Position, pawn.Map) 
-                    && !GeneUtility.HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_aphrodisiac_pheromones))
+                // Return for trivial errors
+                if (pawn == null || this.pawn == null || pawn == this.pawn)
+                    continue;
+                // Check for position-existance
+                if (pawn.Position == null || pos == null || pawn.Map == null)
+                    continue;
+                // Do nothing if pawn is carried 
+                if (pawn.CarriedBy != null)
+                    continue;
+                // Do nothing if Pawn is Baby or Child (#25)
+                if (!pawn.ageTracker.Adult)
+                    continue;
+                // Do nothing for pawns that also have pheromones
+                if (GeneUtility.HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_aphrodisiac_pheromones))
+                    continue;
+
+                // Actual Logic: 
+                // Pawn qualifies in right distance and needs line of sight. 
+                if (pos.DistanceTo(pawn.Position) < APHRODISIAC_DISTANCE && GenSight.LineOfSight(pos, pawn.Position, pawn.Map))
                 {
                     yield return pawn;
                 }

@@ -1,3 +1,36 @@
+<<<<<<< HEAD
+# 1.1.4
+
+Fixes: 
+
+- Youth Fountain and Age Drainer **really** "stop" at 18 (#26, #28) and never age pawns
+- Drastically reduced vomiting time due to an missunderstanding (#29). `0.4` instead of `0.01`
+
+Sometimes life is like that, and you have to fix the fixes. 
+It was never really broken, life is just very long. 
+
+# 1.1.3
+
+Changes:
+
+- Youth Fountain and Age Drainer "stop" at 18 (#26)
+- Youth Fountain and Age Drainer activate only for pawns at 18 (#26)
+- Drained Pawns vomit less (from mtb 0.05 to 0.01)(#29)
+
+Fixes: 
+
+- InsectBreeder would mess with normal Pawn-Animal pregancy for egg laying animals (#23)
+
+# 1.1.2
+
+Changes:
+
+- Added more cool images from WasMachenDennSachen (#22)
+
+Fixes: 
+
+- Aphrodisiac Pheromones checks for children and other conditions (#25)
+
 # 1.1.1 
 
 Changes: 

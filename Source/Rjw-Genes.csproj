@@ -44,7 +44,6 @@
     <Compile Include="GeneDefOf.cs" />
     <Compile Include="Genes\Breeding\Gene_MechBreeder.cs" />
     <Compile Include="Genes\Breeding\PatchMechBirth.cs" />
-    <Compile Include="Genes\Breeding\PatchPawnExtensions.cs" />
     <Compile Include="Genes\Breeding\Patch_EggFertilization.cs" />
     <Compile Include="Genes\Breeding\PatchPregnancyHelper.cs" />
     <Compile Include="Genes\Cum\CumUtility.cs" />

@@ -11,34 +11,33 @@ namespace RJW_Genes.Genes.Special
     [HarmonyPatch(typeof(SexUtility), "Aftersex")]
     public static class Patch_Youth_Fountain
     {
+        /**
+         * Update Issue #26: 
+         * There are options that a 16 yo pawn and a 16 yo pawn have sex, 
+         * or there are races that have a different age-limits.
+         * I am not sure how I feel about this, but as some people that I consider "normal" asked me about this I changed it as requested in #26 and #28
+         */
 
         const long AGE_REDUCTION = 60000; // 60k == 1 day
-        // 20 Years * 60 Days / Year * 60k Ticks/Day + 1 for safety
-        const long MINIMUM_AGE = 20 * 60 * 60000 + 1;
+        // 18 Years * 60 Days / Year * 60k Ticks/Day + 1 for safety
+        const long MINIMUM_AGE = 18 * 60 * 60000 + 1;
 
-        // Comment Below in for debugging
-        // const long AGE_REDUCTION = 6000000; // 6000k == 100 days
         public static void Postfix(SexProps props)
         {
             if (props == null || props.pawn == null || props.partner == null || props.partner.IsAnimal())
             {
                 return;
             }
-            if (GeneUtility.IsYouthFountain(props.pawn))
+            if (GeneUtility.IsYouthFountain(props.pawn) && props.pawn.ageTracker.AgeBiologicalTicks >= MINIMUM_AGE)
             {
                 var partnerAge = props.partner.ageTracker.AgeBiologicalTicks;
 
-                //ModLog.Error($"Firing Youth Fountain \nMinimum Age is \t{MINIMUM_AGE}\t{ticksToYears(MINIMUM_AGE)}y\nPawn Age is \t{partnerAge}\t{ticksToYears(partnerAge)}y \nTransferred \t {AGE_REDUCTION}\t{ticksToYears(AGE_REDUCTION)}y\nResulting in \t{partnerAge - AGE_REDUCTION}\t{ticksToYears(partnerAge - AGE_REDUCTION)}y");
-
-                props.partner.ageTracker.AgeBiologicalTicks = Math.Max(MINIMUM_AGE, partnerAge - AGE_REDUCTION);
+                if(partnerAge - AGE_REDUCTION > MINIMUM_AGE)
+                    props.partner.ageTracker.AgeBiologicalTicks = Math.Max(MINIMUM_AGE, partnerAge - AGE_REDUCTION);
             }
 
         }
 
-        private static float ticksToYears(long ticks)
-        {
-            return (ticks / 60000f) / 60f;
-        }
     }
 
 }
