@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<GeneDef>
+		<defName>rjw_genes_cocoonweaver</defName>
+		<label>Cocoon Weaver</label>
+		<labelShortAdj>cocooner</labelShortAdj>
+		<description>Carriers of this gene can produce a cocoon to prepare helpless victims for breeding.</description>
+		<iconPath>Things/Mote/Heart</iconPath>
+		<displayOrderInCategory>11</displayOrderInCategory>
+		<displayCategory>rjw_genes_hive</displayCategory>
+		<abilities>
+			<li>rjw_genes_cocoonweaver</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>rjw_genes_cocoonweaver</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+	
+</Defs>

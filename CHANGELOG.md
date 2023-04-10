@@ -1,4 +1,14 @@
-<<<<<<< HEAD
+# 1.2
+
+Changes:
+
+- Cocoon Weaver Gene
+
+Fixes: 
+
+- Cockeater Ability has now Icon of Cockeater Gene
+- Cockeater now leaves a bite wound!
+
 # 1.1.4
 
 Fixes: 

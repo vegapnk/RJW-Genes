@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <EffecterDef>
+    <defName>CocoonWeave</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <moteDef>Mote_WeaveA</moteDef>
+        <burstCount>1</burstCount>
+        <chancePerTick>0.05</chancePerTick>
+        <scale>0.25~0.5</scale>
+        <spawnLocType>RandomDrawPosOnTarget</spawnLocType>
+        <attachToSpawnThing>true</attachToSpawnThing>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <moteDef>Mote_WeaveB</moteDef>
+        <burstCount>1</burstCount>
+        <chancePerTick>0.05</chancePerTick>
+        <scale>0.25~0.5</scale>
+        <spawnLocType>RandomDrawPosOnTarget</spawnLocType>
+        <attachToSpawnThing>true</attachToSpawnThing>
+      </li>
+    </children>
+  </EffecterDef>
+
+  <ThingDef ParentName="MoteBase" Name="MoteCocoonBase" Abstract="True">
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <solidTime>0.45</solidTime>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.2</fadeOutTime>
+    </mote>
+    <graphicData>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>PawnSilhouetteStencilColorAnimated</shaderType>
+      <drawSize>(0.65, 0.65)</drawSize>
+      <shaderParameters>
+        <_NumFrames>5</_NumFrames>
+        <_FramesPerSec>7.5</_FramesPerSec>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_CocoonStencil</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>Terrain</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+    </mote>
+    <graphicData>
+      <graphicClass>Graphic_PawnBodySilhouette</graphicClass>
+      <shaderType>PawnSilhouetteStencil</shaderType>
+      <texPath>Things/Mote/Transparent</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteCocoonBase">
+    <defName>Mote_WeaveA</defName>
+    <graphicData>
+      <texPath>Things/Mote/Cocoon/WeaveA</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteCocoonBase">
+    <defName>Mote_WeaveB</defName>
+    <graphicData>
+      <texPath>Things/Mote/Cocoon/WeaveB</texPath>
+    </graphicData>
+  </ThingDef>
+
+</Defs>

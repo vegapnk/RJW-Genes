@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <AbilityDef ParentName="AbilityTouchBase">
-    <defName>rjw_genes_cockeater</defName>
-    <label>Eat Cock</label>
-    <description>Eat the cock of another pawn, restoring fertilin based on the size of the cock.</description>
-    <iconPath>Genes/Icons/cockeater</iconPath>
+    <defName>rjw_genes_cocoonweaver</defName>
+    <label>Cocoon</label>
+    <description>Weaves the victim into a (self-sustaining) cocoon. The victim cannot move, but can be bred.</description>
+    <iconPath>Things/Mote/Heart</iconPath>
     <stunTargetWhileCasting>true</stunTargetWhileCasting>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
-    <warmupMote>Mote_CoagulateStencil</warmupMote>
-    <warmupEffecter>Coagulate</warmupEffecter>
-    <warmupStartSound>Coagulate_Cast</warmupStartSound>
+    <warmupMote>Mote_CocoonStencil</warmupMote>
+    <warmupEffecter>CocoonWeave</warmupEffecter>
     <jobDef>CastAbilityOnThingMelee</jobDef>
-    <displayOrder>402</displayOrder>
+    <displayOrder>403</displayOrder>
     <verbProperties>
       <verbClass>Verb_CastAbilityTouch</verbClass>
       <drawAimPie>false</drawAimPie>
       <range>-1</range>
-      <warmupTime>10</warmupTime>
+      <warmupTime>15</warmupTime>
       <targetParams>
         <canTargetAnimals>true</canTargetAnimals>
         <canTargetSelf>false</canTargetSelf>
@@ -27,7 +26,7 @@
       </targetParams>
     </verbProperties>
     <comps>
-      <li Class="RJW_Genes.CompProperties_AbilityCockEater"/> <!-- namespace needs to be changed when copied to another mod-->
+      <li Class="RJW_Genes.CompProperties_AbilityCocoonWeaver"/>
     </comps>
   </AbilityDef>
 </Defs>

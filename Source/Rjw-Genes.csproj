@@ -87,6 +87,8 @@
     <Compile Include="Genes\Genitalia\Gene_DemonicGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_EquineGenitalia.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaChanger.cs" />
+    <Compile Include="Genes\Hive\Abilities\CompAbilityEffect_CocoonWeaver.cs" />
+    <Compile Include="Genes\Hive\Abilities\CompProperties_AbilityCocoonWeaver.cs" />
     <Compile Include="Genes\Life_Force\Abilities\AbilityUtility.cs" />
     <Compile Include="Genes\Life_Force\UI\Alert_LowFertilin.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_CasterIsNaked.cs" />
