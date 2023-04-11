@@ -6,7 +6,7 @@
     <description>Enhance the strength and resilience of your naked body with fertilin.</description>
     <iconPath>Genes/Icons/rjw_naked_prowess</iconPath>
     <warmupMoteSocialSymbol>Things/Mote/Heart</warmupMoteSocialSymbol>
-	<jobDef>CastAbilityOnThing</jobDef>
+	  <jobDef>CastAbilityOnThing</jobDef>
     <targetRequired>False</targetRequired>
     <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
     <stunTargetWhileCasting>True</stunTargetWhileCasting>

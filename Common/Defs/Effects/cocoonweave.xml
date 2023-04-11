@@ -6,43 +6,16 @@
     <children>
       <li>
         <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
-        <moteDef>Mote_WeaveA</moteDef>
-        <burstCount>1</burstCount>
-        <chancePerTick>0.05</chancePerTick>
-        <scale>0.25~0.5</scale>
-        <spawnLocType>RandomDrawPosOnTarget</spawnLocType>
-        <attachToSpawnThing>true</attachToSpawnThing>
-      </li>
-      <li>
-        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
-        <moteDef>Mote_WeaveB</moteDef>
-        <burstCount>1</burstCount>
-        <chancePerTick>0.05</chancePerTick>
-        <scale>0.25~0.5</scale>
+        <fleckDef>BloodSplash</fleckDef>
+        <chancePerTick>0.15</chancePerTick>
+        <burstCount>2~3</burstCount>
+        <scale>0.75~1.5</scale>
+        <color>(244, 244, 244)</color>
         <spawnLocType>RandomDrawPosOnTarget</spawnLocType>
         <attachToSpawnThing>true</attachToSpawnThing>
       </li>
     </children>
   </EffecterDef>
-
-  <ThingDef ParentName="MoteBase" Name="MoteCocoonBase" Abstract="True">
-    <thingClass>MoteAttached</thingClass>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
-    <mote>
-      <solidTime>0.45</solidTime>
-      <fadeInTime>0.1</fadeInTime>
-      <fadeOutTime>0.2</fadeOutTime>
-    </mote>
-    <graphicData>
-      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
-      <shaderType>PawnSilhouetteStencilColorAnimated</shaderType>
-      <drawSize>(0.65, 0.65)</drawSize>
-      <shaderParameters>
-        <_NumFrames>5</_NumFrames>
-        <_FramesPerSec>7.5</_FramesPerSec>
-      </shaderParameters>
-    </graphicData>
-  </ThingDef>
 
   <ThingDef ParentName="MoteBase">
     <defName>Mote_CocoonStencil</defName>
@@ -50,7 +23,7 @@
     <altitudeLayer>Terrain</altitudeLayer>
     <mote>
       <fadeInTime>0.1</fadeInTime>
-      <fadeOutTime>0.1</fadeOutTime>
+      <fadeOutTime>0.4</fadeOutTime>
       <solidTime>999999</solidTime>
       <needsMaintenance>True</needsMaintenance>
     </mote>
@@ -58,20 +31,6 @@
       <graphicClass>Graphic_PawnBodySilhouette</graphicClass>
       <shaderType>PawnSilhouetteStencil</shaderType>
       <texPath>Things/Mote/Transparent</texPath>
-    </graphicData>
-  </ThingDef>
-
-  <ThingDef ParentName="MoteCocoonBase">
-    <defName>Mote_WeaveA</defName>
-    <graphicData>
-      <texPath>Things/Mote/Cocoon/WeaveA</texPath>
-    </graphicData>
-  </ThingDef>
-
-  <ThingDef ParentName="MoteCocoonBase">
-    <defName>Mote_WeaveB</defName>
-    <graphicData>
-      <texPath>Things/Mote/Cocoon/WeaveB</texPath>
     </graphicData>
   </ThingDef>
 

@@ -11,7 +11,9 @@
     <warmupMote>Mote_CocoonStencil</warmupMote>
     <warmupEffecter>CocoonWeave</warmupEffecter>
     <jobDef>CastAbilityOnThingMelee</jobDef>
-    <displayOrder>403</displayOrder>
+    <displayOrder>404</displayOrder>
+    <!-- 30k Ticks = 12h -->
+    <cooldownTicksRange>30000</cooldownTicksRange>
     <verbProperties>
       <verbClass>Verb_CastAbilityTouch</verbClass>
       <drawAimPie>false</drawAimPie>
