@@ -3,11 +3,22 @@
 Changes:
 
 - Cocoon Weaver Gene
+- Spawn Spelopede Gene (Can re changed to spawn Megascarabs or other insects)
+
+Internal:
+
+- Renamed Abilities to have _ability_ in their name, to not exactly match the gene-defnames.
 
 Fixes: 
 
 - Cockeater Ability has now Icon of Cockeater Gene
 - Cockeater now leaves a bite wound!
+- Pythokin-Patch checks for Licentialabs (#30)
+
+ToDo: 
+
+- Icons: Cocoon, Spelopede Spawn
+- Sound: Spelopede Spawn
 
 # 1.1.4
 

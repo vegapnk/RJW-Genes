@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <AbilityDef ParentName="AbilityTouchBase">
-    <defName>rjw_genes_cocoonweaver</defName>
+    <defName>rjw_genes_ability_cocoonweaver</defName>
     <label>Cocoon</label>
     <description>Weaves the victim into a (self-sustaining) cocoon. The victim cannot move, but can be bred.</description>
     <iconPath>Things/Mote/Heart</iconPath>

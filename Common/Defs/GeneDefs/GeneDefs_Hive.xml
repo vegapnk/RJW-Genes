@@ -10,13 +10,30 @@
 		<displayOrderInCategory>11</displayOrderInCategory>
 		<displayCategory>rjw_genes_hive</displayCategory>
 		<abilities>
-			<li>rjw_genes_cocoonweaver</li>
+			<li>rjw_genes_ability_cocoonweaver</li>
 		</abilities>
 		<descriptionHyperlinks>
-			<AbilityDef>rjw_genes_cocoonweaver</AbilityDef>
+			<AbilityDef>rjw_genes_ability_cocoonweaver</AbilityDef>
 		</descriptionHyperlinks>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 	</GeneDef>
 	
+	<GeneDef>
+		<defName>rjw_genes_spawn_spelopede</defName>
+		<label>Spelopede Dispenser</label>
+		<labelShortAdj>cocooner</labelShortAdj>
+		<description>Carriers of this gene can generate tame spelopedes. Higher psychic-sensitivity will spawn more spelopedes.</description>
+		<iconPath>World/WorldObjects/Expanding/Insects</iconPath>
+		<displayOrderInCategory>11</displayOrderInCategory>
+		<displayCategory>rjw_genes_hive</displayCategory>
+		<abilities>
+			<li>rjw_genes_ability_spawn_spelopede</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>rjw_genes_ability_spawn_spelopede</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
 </Defs>
