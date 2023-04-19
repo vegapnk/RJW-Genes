@@ -1,6 +1,128 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
+	<GeneDef>
+		<defName>rjw_genes_queen</defName>
+		<label>Hive Queen</label>
+		<labelShortAdj>queen</labelShortAdj>
+		<description>This gene represents the royal caste amongst its xenotype. Children of a queen are usually born as sterile workers, unless the father was a drone. Having multiple (adult) queens leads to intense rivalry and can throw the whole colony into chaos!</description>
+		<iconPath>Things/Mote/Heart</iconPath>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<displayCategory>rjw_genes_hive</displayCategory>
+
+		<statOffsets>
+			<PsychicSensitivity>0.5</PsychicSensitivity>
+			<MeditationFocusGain>0.25</MeditationFocusGain>
+		</statOffsets>
+
+			<li Class="ConditionalStatAffecter_MultipleQueens">
+				<statFactors>
+					<MoveSpeed>0.7</MoveSpeed>
+				</statFactors>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+
+			<li Class="ConditionalStatAffecter_QueenCloseBy">
+				<statFactors>
+					<MoveSpeed>0.4</MoveSpeed>
+					<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+				</statFactors>
+			</li>
+
+		<exclusionTags>
+			<li>rjw_genes_hive_caste</li>
+		</exclusionTags>
+
+		<biostatCpx>7</biostatCpx>
+		<biostatMet>-3</biostatMet>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>rjw_genes_drone</defName>
+		<label>Hive Drone</label>
+		<labelShortAdj>drone</labelShortAdj>
+		<description>This gene represents the drone caste amongst its xenotype. Drones are highly specialised experts that ensure the hives functioning. Other than that, drones are the only xenotypes capable of producing fertile offspring with a queen.</description>
+		<iconPath>Things/Mote/Heart</iconPath>
+		<displayOrderInCategory>2</displayOrderInCategory>
+		<displayCategory>rjw_genes_hive</displayCategory>
+
+		<exclusionTags>
+			<li>rjw_genes_hive_caste</li>
+		</exclusionTags>
+
+		<conditionalStatAffecters>
+			<li Class="ConditionalStatAffecter_QueenAbsent">
+				<statFactors>
+					<MoveSpeed>0.9</MoveSpeed>
+				</statFactors>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</conditionalStatAffecters>
+
+		<biostatCpx>4</biostatCpx>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+
+
+	<GeneDef>
+		<defName>rjw_genes_worker</defName>
+		<label>Hive Worker</label>
+		<labelShortAdj>worker</labelShortAdj>
+		<description>This gene represents the lowest caste of a hive, the workers. Usually sterile, they are despised by higher castes and only live to serve with labour.</description>
+		<iconPath>Things/Mote/Heart</iconPath>
+		<displayOrderInCategory>3</displayOrderInCategory>
+		<displayCategory>rjw_genes_hive</displayCategory>
+
+		<exclusionTags>
+			<li>rjw_genes_hive_caste</li>
+		</exclusionTags>
+
+		<conditionalStatAffecters>
+			<li Class="ConditionalStatAffecter_QueenAbsent">
+				<statFactors>
+					<MoveSpeed>0.7</MoveSpeed>
+				</statFactors>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+			<li Class="ConditionalStatAffecter_MultipleQueens">
+				<statFactors>
+					<MoveSpeed>0.7</MoveSpeed>
+				</statFactors>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+			<li Class="ConditionalStatAffecter_QueenCloseBy">
+				<statFactors>
+					<MoveSpeed>1.2</MoveSpeed>
+					<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+				</statFactors>
+			</li>
+		</conditionalStatAffecters>
+
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+	</GeneDef>
+
+
+	<GeneDef>
+		<defName>rjw_genes_zealous_loyalty</defName>
+		<label>Zealous Loyalty</label>
+		<labelShortAdj>loyalty</labelShortAdj>
+		<description>Carriers of this gene are genetically wired to worship carriers of the 'Queen'-gene. They receive a massive relation-ship bonus towards the queen and a slight mood bonus. Having multiple queens in the colony causes severe distress.</description>
+		<iconPath>Things/Mote/Heart</iconPath>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<displayCategory>rjw_genes_hive</displayCategory>
+		
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+
 	<GeneDef>
 		<defName>rjw_genes_cocoonweaver</defName>
 		<label>Cocoon Weaver</label>
@@ -25,7 +147,7 @@
 		<labelShortAdj>cocooner</labelShortAdj>
 		<description>Carriers of this gene can generate tame spelopedes. Higher psychic-sensitivity will spawn more spelopedes.</description>
 		<iconPath>World/WorldObjects/Expanding/Insects</iconPath>
-		<displayOrderInCategory>11</displayOrderInCategory>
+		<displayOrderInCategory>12</displayOrderInCategory>
 		<displayCategory>rjw_genes_hive</displayCategory>
 		<abilities>
 			<li>rjw_genes_ability_spawn_spelopede</li>
