@@ -19,8 +19,15 @@ namespace RJW_Genes
 
         public override bool Applies(StatRequest req)
         {
-            //ModsConfig.BiotechActive && req.HasThing && req.Thing.Spawned && req.Thing.Position.InSunlight(req.Thing.Map);
-            throw new NotImplementedException();
+            if (req.Pawn == null || !req.Pawn.Spawned)
+                return false;
+
+            if (GeneUtility.HasGeneNullCheck(req.Pawn, GeneDefOf.rjw_genes_zealous_loyalty))
+            {
+                return HiveUtility.QueensOnMap() == 0;
+            }
+
+            return false;
         }
     }
 }

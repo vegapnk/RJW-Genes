@@ -92,6 +92,15 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_succubus_tail;
 		public static readonly GeneDef rjw_genes_succubus_wings;
 
+		// Hive 
+		public static readonly GeneDef rjw_genes_queen;
+		public static readonly GeneDef rjw_genes_drone;
+		public static readonly GeneDef rjw_genes_worker;
+		public static readonly GeneDef rjw_genes_zealous_loyalty;
+		public static readonly GeneDef rjw_genes_cocoonweaver;
+		public static readonly GeneDef rjw_genes_spawn_spelopede;
+
+
 		//Other Defs
 		public static readonly XenotypeDef rjw_genes_succubus;
 		public static readonly DutyDef rjw_genes_flirt;

@@ -17,12 +17,36 @@ namespace RJW_Genes
     /// </summary>
     public class ConditionalStatAffecter_QueenCloseBy : ConditionalStatAffecter
     {
+
+        const float EFFECT_DISTANCE = 10.0f;
+
         public override string Label => (string)"StatsReport_QueenCloseBy".Translate();
 
         public override bool Applies(StatRequest req)
         {
-            // => ModsConfig.BiotechActive && req.HasThing && req.Thing.Spawned && req.Thing.Position.InSunlight(req.Thing.Map);
-            throw new NotImplementedException();
-        } 
+            if (req.Pawn == null || !req.Pawn.Spawned)
+                return false;
+
+            // Case A: Check for Loyal Pawns if their One Queen is nearby
+            if (GeneUtility.HasGeneNullCheck(req.Pawn, GeneDefOf.rjw_genes_zealous_loyalty) && HiveUtility.QueensOnMap() == 1)
+            {
+                Pawn queen = HiveUtility.GetQueensOnMap()[0];
+
+                return req.Pawn.Position.DistanceTo(queen.Position) <= EFFECT_DISTANCE;
+            }
+
+            // Case A: Check for Queen if another Queen is nearby
+            if (GeneUtility.HasGeneNullCheck(req.Pawn, GeneDefOf.rjw_genes_zealous_loyalty) && HiveUtility.QueensOnMap() >= 2)
+            {
+                foreach (Pawn queen in HiveUtility.GetQueensOnMap())
+                {
+                    if (queen != req.Pawn && req.Pawn.Position.DistanceTo(queen.Position) <= EFFECT_DISTANCE)
+                        return true;
+                }
+            }
+
+
+            return false;
+        }
     }
 }

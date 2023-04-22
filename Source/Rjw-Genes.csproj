@@ -91,6 +91,16 @@
     <Compile Include="Genes\Hive\Abilities\CompAbilityEffect_CocoonWeaver.cs" />
     <Compile Include="Genes\Hive\Abilities\CompProperties_AbilitySpawnSpelopede.cs" />
     <Compile Include="Genes\Hive\Abilities\CompProperties_AbilityCocoonWeaver.cs" />
+    <Compile Include="Genes\Hive\Genes\ConditionalStatAffecters\ConditionalStatAffecter_MultipleQueens.cs" />
+    <Compile Include="Genes\Hive\Genes\ConditionalStatAffecters\ConditionalStatAffecter_QueenCloseBy.cs" />
+    <Compile Include="Genes\Hive\Genes\ConditionalStatAffecters\ConditionalStatAffecter_QueenAbsent.cs" />
+    <Compile Include="Genes\Hive\Helpers\HiveUtility.cs" />
+    <Compile Include="Genes\Hive\Thoughts\Thoughtworker_QueenAbsent_Mood.cs" />
+    <Compile Include="Genes\Hive\Thoughts\Thoughtworker_MultipleQueens_Mood.cs" />
+    <Compile Include="Genes\Hive\Thoughts\Thoughtworker_QueenPresent_Mood.cs" />
+    <Compile Include="Genes\Hive\Thoughts\Thoughtworker_RivalQueen_Mood.cs" />
+    <Compile Include="Genes\Hive\Thoughts\ThoughtWorker_QueenPresent_Social.cs" />
+    <Compile Include="Genes\Hive\Thoughts\ThoughtWorker_RivalQueen_Social.cs" />
     <Compile Include="Genes\Life_Force\Abilities\AbilityUtility.cs" />
     <Compile Include="Genes\Life_Force\UI\Alert_LowFertilin.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_CasterIsNaked.cs" />
@@ -196,8 +206,6 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Genes\Hive\Genes\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

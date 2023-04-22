@@ -14,7 +14,9 @@
 			<MeditationFocusGain>0.25</MeditationFocusGain>
 		</statOffsets>
 
-			<li Class="ConditionalStatAffecter_MultipleQueens">
+		
+		<conditionalStatAffecters>
+			<li Class="RJW_Genes.ConditionalStatAffecter_MultipleQueens">
 				<statFactors>
 					<MoveSpeed>0.7</MoveSpeed>
 				</statFactors>
@@ -22,13 +24,13 @@
 					<WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
 				</statOffsets>
 			</li>
-
-			<li Class="ConditionalStatAffecter_QueenCloseBy">
+			<li Class="RJW_Genes.ConditionalStatAffecter_QueenCloseBy">
 				<statFactors>
 					<MoveSpeed>0.4</MoveSpeed>
 					<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
 				</statFactors>
 			</li>
+		</conditionalStatAffecters>
 
 		<exclusionTags>
 			<li>rjw_genes_hive_caste</li>
@@ -52,7 +54,7 @@
 		</exclusionTags>
 
 		<conditionalStatAffecters>
-			<li Class="ConditionalStatAffecter_QueenAbsent">
+			<li Class="RJW_Genes.ConditionalStatAffecter_QueenAbsent">
 				<statFactors>
 					<MoveSpeed>0.9</MoveSpeed>
 				</statFactors>
@@ -81,7 +83,7 @@
 		</exclusionTags>
 
 		<conditionalStatAffecters>
-			<li Class="ConditionalStatAffecter_QueenAbsent">
+			<li Class="RJW_Genes.ConditionalStatAffecter_QueenAbsent">
 				<statFactors>
 					<MoveSpeed>0.7</MoveSpeed>
 				</statFactors>
@@ -89,7 +91,7 @@
 					<WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
 				</statOffsets>
 			</li>
-			<li Class="ConditionalStatAffecter_MultipleQueens">
+			<li Class="RJW_Genes.ConditionalStatAffecter_MultipleQueens">
 				<statFactors>
 					<MoveSpeed>0.7</MoveSpeed>
 				</statFactors>
@@ -97,7 +99,7 @@
 					<WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
 				</statOffsets>
 			</li>
-			<li Class="ConditionalStatAffecter_QueenCloseBy">
+			<li Class="RJW_Genes.ConditionalStatAffecter_QueenCloseBy">
 				<statFactors>
 					<MoveSpeed>1.2</MoveSpeed>
 					<WorkSpeedGlobal>1.2</WorkSpeedGlobal>

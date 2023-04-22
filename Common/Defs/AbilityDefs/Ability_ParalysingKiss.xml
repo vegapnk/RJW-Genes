@@ -8,7 +8,7 @@
     <stunTargetWhileCasting>true</stunTargetWhileCasting>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
-	<statBases>
+	  <statBases>
       <Ability_Duration>5</Ability_Duration>
     </statBases>
     <warmupMote>Mote_CoagulateStencil</warmupMote>
