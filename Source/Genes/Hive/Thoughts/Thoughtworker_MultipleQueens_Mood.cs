@@ -20,6 +20,9 @@ namespace RJW_Genes
             // Queens cannot have loyalty thoughts
             if (GeneUtility.HasGeneNullCheck(p, GeneDefOf.rjw_genes_queen))
                 return (ThoughtState)false;
+            // If the pawn is not on Map (e.g. caravan), no mali 
+            if (!HiveUtility.PawnIsOnHomeMap(p))
+                return (ThoughtState)false;
 
             if (GeneUtility.HasGeneNullCheck(p, GeneDefOf.rjw_genes_zealous_loyalty) && HiveUtility.QueensOnMap() >= 2)
             {

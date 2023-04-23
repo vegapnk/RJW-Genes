@@ -34,6 +34,7 @@
 
 		<exclusionTags>
 			<li>rjw_genes_hive_caste</li>
+			<li>rjw_genes_swearing_loyalty</li>
 		</exclusionTags>
 
 		<biostatCpx>7</biostatCpx>
@@ -121,6 +122,10 @@
 		<displayOrderInCategory>10</displayOrderInCategory>
 		<displayCategory>rjw_genes_hive</displayCategory>
 		
+		<exclusionTags>
+			<li>rjw_genes_swearing_loyalty</li>
+		</exclusionTags>
+
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 	</GeneDef>

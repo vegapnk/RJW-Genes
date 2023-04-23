@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RJW_Genes.QueenWorkerMappingDef>
+        <!-- Important: this default defName cannot be renamed! It is a protected keyword.-->
+        <!-- Changing the queenXenotype-Name will also throw an error.-->
+        <!-- But you can change the workerGenes list.-->
+		<defName>rjw_genes_default_worker_genes</defName>
+        <queenXenotype>default</queenXenotype>
+		<workerGenes>
+			<li>rjw_genes_worker</li>
+            <li>Sterile</li>
+			<li>rjw_genes_zealous_loyalty</li>
+            <li>Skin_Green</li>			
+		</workerGenes>
+	</RJW_Genes.QueenWorkerMappingDef>
+
+	<RJW_Genes.QueenWorkerMappingDef>
+        <defName>rjw_genes_test_queen_worker_mapping</defName>
+        <queenXenotype>rjw_genes_test_queen_xenotype</queenXenotype>
+		<workerGenes>
+			<li>rjw_genes_worker</li>
+			<li>rjw_genes_zealous_loyalty</li>
+            <li>Skin_InkBlack</li>		
+		</workerGenes>
+	</RJW_Genes.QueenWorkerMappingDef>
+	
+</Defs>

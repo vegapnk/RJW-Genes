@@ -21,6 +21,9 @@ namespace RJW_Genes
         {
             if (req.Pawn == null || !req.Pawn.Spawned)
                 return false;
+            // If the pawn is not on Map (e.g. caravan), no mali 
+            if (!HiveUtility.PawnIsOnHomeMap(req.Pawn))
+                return false;
 
             if (GeneUtility.HasGeneNullCheck(req.Pawn, GeneDefOf.rjw_genes_zealous_loyalty))
             {

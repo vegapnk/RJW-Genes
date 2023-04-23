@@ -15,6 +15,22 @@ Fixes:
 - Cockeater now leaves a bite wound!
 - Pythokin-Patch checks for Licentialabs (#30)
 
+**Queen & Caste Logic**
+
+There are 3 genes revolting around a new, hopefully flexible insect-caste system. Queens, Drones and Workers. These reproduce either through normal sex, or can utilize the insect birth once [this PR](https://gitgud.io/Ed86/rjw/-/merge_requests/266) has been merged in. 
+
+In general, the logic is the following: 
+
+- A queen can have sex with anyone. If the partner was a drone, there is chance for the baby to become a queen, drone or worker. 
+- If the partner of the queen was not a drone, the baby will be a worker.
+- If the drone didn't mate with a queen but someone else, normal inheritance happens
+- The assignemnt is done by xenotypes for queen and drones. The baby will get all xenogenes of their parents xenotypes. 
+- For workers, every queen can have a set of genes for their workers defined in [a special def](./Common/Defs/QueenWorkerMappingDefs/QueenWorkerMappingDefs_base.xml). These will be added as endogenes, so that pawns can still become xenotypes.
+- There is a default set for worker genes, making mentally dumb, sterile and servile pawns. 
+
+I am not sure if I want to have a specific mapping defining that Queen can only mate with certain Drones, let me know how you feel about it. 
+*Queens can be male*. I just used the female-term, but implementation is gender-neutral. 
+
 ToDo: 
 
 - Icons: Cocoon, Spelopede Spawn

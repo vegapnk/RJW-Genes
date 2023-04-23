@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeDef>
+    <defName>rjw_genes_test_queen_xenotype</defName>
+    <label>Test Queen</label>
+    <iconPath>UI/Icons/Xenotypes/Sanguophage</iconPath>
+    <soundDefOnImplant>PawnBecameSanguophage</soundDefOnImplant>
+
+    <genes>			
+        <li>rjw_genes_queen</li>
+        <li>rjw_genes_hypersexual</li>
+        <li>rjw_genes_female_only</li>
+        <li>Fertile</li>
+        <li>Skin_PaleYellow</li>		
+    </genes>
+  </XenotypeDef>
+  
+  <XenotypeDef>
+    <defName>rjw_genes_test_drone_xenotype</defName>
+    <label>Test Drone</label>
+    <iconPath>UI/Icons/Xenotypes/Sanguophage</iconPath>
+    <genes>			
+        <li>rjw_genes_drone</li>
+        <li>rjw_genes_male_only</li>
+        <li>rjw_genes_zealous_loyalty</li>
+        <li>Fertile</li>
+        <li>Skin_DeepRed</li>		
+    </genes>
+  </XenotypeDef>
+  
+</Defs>
