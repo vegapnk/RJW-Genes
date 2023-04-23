@@ -30,7 +30,6 @@
     <None Include="..\Common\Patches\**" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal_Inheritance\Harmony_Init.cs" />
     <Compile Include="Animal_Inheritance\InheritanceUtility.cs" />
     <Compile Include="Animal_Inheritance\Patches\Patch_RJW_BestialityPregnancyUtility.cs" />
     <Compile Include="Animal_Inheritance\Patches\Patch_RJW_HediffInsect_Egg.cs" />
