@@ -16,6 +16,9 @@ namespace RJW_Genes
         {
             if (p == null || !p.Spawned)
                 return (ThoughtState) false;
+            // If the pawn is not on Map (e.g. caravan), no mali 
+            if (!HiveUtility.PawnIsOnHomeMap(p))
+                return (ThoughtState)false;
 
             if (HiveUtility.IsAdultQueen(p) && HiveUtility.QueensOnMap() >= 2)
             {

@@ -23,9 +23,11 @@ namespace RJW_Genes
 
             // Only check if they are spawned 
             if (!p.Spawned || !other.Spawned)
-            {
                 return (ThoughtState)false;
-            }
+
+            // If the pawn is not on Map (e.g. caravan), no mali 
+            if (!HiveUtility.PawnIsOnHomeMap(p))
+                return (ThoughtState)false;
 
             if (GeneUtility.HasGeneNullCheck(p, GeneDefOf.rjw_genes_zealous_loyalty) && HiveUtility.QueensOnMap() == 1)
             {
