@@ -1,15 +1,17 @@
 # 1.2
 
-Changes:
+**Changes:**
 
 - Cocoon Weaver Gene
 - Spawn Spelopede Gene (Can re changed to spawn Megascarabs or other insects)
+- Queens & Caste Logic (see below)
 
-Internal:
+**Internal:**
 
 - Renamed Abilities to have _ability_ in their name, to not exactly match the gene-defnames.
+- Moved Insect-Incubator & Insect-Breeder to Hive Category and Folders
 
-Fixes: 
+**Fixes:**
 
 - Cockeater Ability has now Icon of Cockeater Gene
 - Cockeater now leaves a bite wound!
@@ -31,7 +33,7 @@ In general, the logic is the following:
 I am not sure if I want to have a specific mapping defining that Queen can only mate with certain Drones, let me know how you feel about it. 
 *Queens can be male*. I just used the female-term, but implementation is gender-neutral. 
 
-ToDo: 
+**ToDo:**
 
 - Icons: Cocoon, Spelopede Spawn
 - Sound: Spelopede Spawn

@@ -12,9 +12,10 @@ namespace RJW_Genes
     /// Patched Class is https://gitgud.io/Ed86/rjw/-/blob/master/1.4/Source/Common/Helpers/SexUtility.cs
     /// 
     /// Normal Egg-Pregnancy logic is in https://gitgud.io/Ed86/rjw/-/blob/master/1.4/Source/Modules/Pregnancy/Pregnancy_Helper.cs
+    /// Gene: rjw_genes_insectbreeder 
     /// </summary>
     [HarmonyPatch(typeof(SexUtility), "Aftersex")]
-    static class Patch_EggFertilization
+    static class Patch_InsectBreeder_EggFertilization
     {
         public static void Postfix(SexProps props)
         {

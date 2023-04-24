@@ -15,9 +15,11 @@ namespace RJW_Genes
     /// <summary>
     /// This Class patches the RJW-DoEgg to allow up to MaxEggSizeMul times the original amount of eggs.
     /// This harmony patch was kindly provided by 'shabalox' https://github.com/Shabalox/RJW_Genes_Addons/
+    /// 
+    /// For Gene: rjw_genes_insectincubator 
     /// </summary>
     [HarmonyPatch(typeof(PregnancyHelper), "DoEgg")]
-    static class PatchPregnancyHelper
+    static class Patch_InsectIncubator_PregnancyHelper
     {
         [HarmonyTranspiler]
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator il)
