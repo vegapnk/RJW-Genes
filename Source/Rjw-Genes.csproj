@@ -43,8 +43,9 @@
     <Compile Include="GeneDefOf.cs" />
     <Compile Include="Genes\Breeding\Gene_MechBreeder.cs" />
     <Compile Include="Genes\Breeding\PatchMechBirth.cs" />
+    <Compile Include="Genes\Hive\Genes\Gene_InsectIncubator.cs" />
     <Compile Include="Genes\Hive\Patches\Patch_InsectBreeder_EggFertilization.cs" />
-    <Compile Include="Genes\Breeding\PatchPregnancyHelper.cs" />
+    <Compile Include="Genes\Hive\Patches\Patch_InsectIncubator_PregnancyHelper.cs" />
     <Compile Include="Genes\Cum\CumUtility.cs" />
     <Compile Include="Genes\Cum\Gene_VeryMuchCum.cs" />
     <Compile Include="Genes\Cum\Gene_MuchCum.cs" />

@@ -169,7 +169,8 @@
 		
 	<GeneDef>
 		<defName>rjw_genes_insectincubator</defName>
-		<label>InsectIncubator</label>	
+		<label>InsectIncubator</label>
+		<geneClass>RJW_Genes.Gene_InsectIncubator</geneClass>
 		<description>Pawns with this gene are able to host more insect eggs, hatch them faster and fertilize any inserted egg.</description>
 		<iconPath>Genes/Icons/More_Egg_Space</iconPath>
 		<displayOrderInCategory>52</displayOrderInCategory>

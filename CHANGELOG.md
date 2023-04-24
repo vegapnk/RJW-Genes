@@ -3,8 +3,9 @@
 **Changes:**
 
 - Cocoon Weaver Gene
-- Spawn Spelopede Gene (Can re changed to spawn Megascarabs or other insects)
+- Spawn Spelopede Gene (Can be changed to spawn Megascarabs or other insects via xml)
 - Queens & Caste Logic (see below)
+- Addition to InsectIncubator: Now fertilizes eggs once placed inside a host, and breeds out eggs twice as fast.
 
 **Internal:**
 
