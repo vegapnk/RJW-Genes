@@ -128,8 +128,6 @@ namespace RJW_Genes
             Dictionary<XenotypeDef,List<GeneDef>> dict = new Dictionary<XenotypeDef, List<GeneDef>>();
             IEnumerable<QueenWorkerMappingDef> mappingDefs = DefDatabase<QueenWorkerMappingDef>.AllDefs;
 
-            if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"Found {mappingDefs.Count()} Queen-Worker mappings in defs");
-
             // Dev-Note: I first a nice lambda here, but I used nesting in favour of logging.
             foreach (QueenWorkerMappingDef mappingDef in mappingDefs)
             {
@@ -202,6 +200,28 @@ namespace RJW_Genes
         public static IEnumerable<XenotypeDef> getDroneXenotypes()
         {
             return DefDatabase<XenotypeDef>.AllDefs.Where(type => type.genes.Contains(GeneDefOf.rjw_genes_drone));
+        }
+
+
+        public static HiveOffspringChanceDef LookupDefaultHiveInheritanceChances()
+        {
+            IEnumerable<HiveOffspringChanceDef> offspringChanceDefs = DefDatabase<HiveOffspringChanceDef>.AllDefs;
+
+            List<GeneDef> workerGenes = new List<GeneDef>();
+
+            var defaultChance = offspringChanceDefs.First(m => m.defName == "rjw_genes_default_hive_offspring_chances");
+
+            if (defaultChance == null)
+                ModLog.Warning("Did not find `rjw_genes_default_hive_offspring_chances`. Someone likely changed the defname!");
+
+            return defaultChance;
+        }
+
+        public static HiveOffspringChanceDef LookupHiveInheritanceChances(XenotypeDef queenDef)
+        {
+            IEnumerable<HiveOffspringChanceDef> offspringChanceDefs = DefDatabase<HiveOffspringChanceDef>.AllDefs;
+
+            return offspringChanceDefs.FirstOrFallback(t => t.queenXenotype == queenDef.defName, LookupDefaultHiveInheritanceChances());
         }
 
     }

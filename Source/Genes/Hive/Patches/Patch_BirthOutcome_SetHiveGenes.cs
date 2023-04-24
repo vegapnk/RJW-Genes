@@ -18,9 +18,6 @@ namespace RJW_Genes
     [HarmonyPatch(typeof(PregnancyUtility), nameof(PregnancyUtility.ApplyBirthOutcome))]
     public class Patch_BirthOutcome_SetHiveGenes
     {
-        const double QUEEN_CHANCE = 0.01f;
-        const double DRONE_CHANCE = 0.49f;
-        const double WORKER_CHANCE = 1 - QUEEN_CHANCE - DRONE_CHANCE;
 
 
         [HarmonyPostfix]
@@ -45,6 +42,8 @@ namespace RJW_Genes
                 if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"PostFix PregnancyUtility::ApplyBirthOutcome - Checking Hive Inheritance because {pawn} has a queen parent.");
 
                 XenotypeDef queenDef = TryFindParentQueenXenotype(pawn);
+                HiveOffspringChanceDef hiveOffspringChanceDef = HiveUtility.LookupHiveInheritanceChances(queenDef);
+
                 // Case 1: Mother is Queen, Father is something else. Produce Worker.
                 if (!hasDroneParent)
                 {
@@ -56,22 +55,22 @@ namespace RJW_Genes
                 {
                     double roll = (new Random()).NextDouble();
                     // Case 2.a: New Queen born
-                    if (roll < QUEEN_CHANCE)
+                    if (roll < hiveOffspringChanceDef.queenChance)
                     {
                         pawn.genes.SetXenotype(queenDef);
-                        if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"{pawn} born as a new queen with xenotype {queenDef.defName} ({QUEEN_CHANCE*100}% chance,rolled {roll})");
+                        if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"{pawn} born as a new queen with xenotype {queenDef.defName} ({hiveOffspringChanceDef.queenChance * 100}% chance,rolled {roll})");
                         // TODO: Make a letter ? 
                     }
                     // Case 2.b: New Drone born
-                    else if (roll < DRONE_CHANCE + QUEEN_CHANCE)
+                    else if (roll < hiveOffspringChanceDef.droneChance + hiveOffspringChanceDef.queenChance)
                     {
                         XenotypeDef droneDef = TryFindParentDroneXenotype(pawn);
                         pawn.genes.SetXenotype(droneDef);
-                        if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"{pawn} born as a new drone with xenotype {droneDef.defName} ({(DRONE_CHANCE + QUEEN_CHANCE) * 100}% chance,rolled {roll}))");
+                        if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"{pawn} born as a new drone with xenotype {droneDef.defName} ({(hiveOffspringChanceDef.droneChance + hiveOffspringChanceDef.queenChance) * 100}% chance,rolled {roll}))");
                     }
                     // Case 2.c: Worker
                     else {
-                        if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"{pawn} born as a worker ({(WORKER_CHANCE) * 100}% chance,rolled {roll}))");
+                        if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"{pawn} born as a worker ({(hiveOffspringChanceDef.workerChance) * 100}% chance,rolled {roll}))");
                         MakeWorker(pawn, queenDef);
                     }
                 }

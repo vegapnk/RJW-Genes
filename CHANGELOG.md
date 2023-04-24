@@ -30,6 +30,7 @@ In general, the logic is the following:
 - The assignemnt is done by xenotypes for queen and drones. The baby will get all xenogenes of their parents xenotypes. 
 - For workers, every queen can have a set of genes for their workers defined in [a special def](./Common/Defs/QueenWorkerMappingDefs/QueenWorkerMappingDefs_base.xml). These will be added as endogenes, so that pawns can still become xenotypes.
 - There is a default set for worker genes, making mentally dumb, sterile and servile pawns. 
+- Chances for Offsprings (Drone, Queen, Worker) is defined in an [XML-Def](./Common/Defs/HiveOffspringChanceDef/HiveOffspringChanceDefs.xml)
 
 I am not sure if I want to have a specific mapping defining that Queen can only mate with certain Drones, let me know how you feel about it. 
 *Queens can be male*. I just used the female-term, but implementation is gender-neutral. 
