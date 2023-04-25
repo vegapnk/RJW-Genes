@@ -8,12 +8,12 @@ using Verse;
 
 namespace RJW_Genes
 {
-    public class ThoughtWorker_QueenPresent_Social : ThoughtWorker
+    public class ThoughtWorker_WorkerDespised_Social : ThoughtWorker
     {
         protected override ThoughtState CurrentSocialStateInternal(Pawn p, Pawn other)
         {
             // p is the pawn `thinking`, and other is the pawn being thought about.
-            // here: p = loyal pawn, other = potential queen  
+            // here: p = queen, other = potential worker 
 
             if (!p.RaceProps.Humanlike)
                 return (ThoughtState) false;
@@ -28,13 +28,9 @@ namespace RJW_Genes
             if (!p.Spawned || !other.Spawned)
                 return (ThoughtState)false;
 
-            // If the pawn is not on Map (e.g. caravan), no mali 
-            if (!HiveUtility.PawnIsOnHomeMap(p))
-                return (ThoughtState)false;
-
-            if (GeneUtility.HasGeneNullCheck(p, GeneDefOf.rjw_genes_zealous_loyalty) && HiveUtility.QueensOnMap() == 1)
+            if (GeneUtility.HasGeneNullCheck(p, GeneDefOf.rjw_genes_queen) && GeneUtility.HasGeneNullCheck(other, GeneDefOf.rjw_genes_worker))
             {
-                return (ThoughtState) HiveUtility.IsAdultQueen(other);
+                return (ThoughtState)true;
             }
 
             return (ThoughtState)false;

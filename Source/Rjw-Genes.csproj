@@ -101,6 +101,7 @@
     <Compile Include="Genes\Hive\Thoughts\Thoughtworker_QueenAbsent_Mood.cs" />
     <Compile Include="Genes\Hive\Thoughts\Thoughtworker_MultipleQueens_Mood.cs" />
     <Compile Include="Genes\Hive\Thoughts\Thoughtworker_QueenPresent_Mood.cs" />
+    <Compile Include="Genes\Hive\Thoughts\ThoughtWorker_WorkerDespised_Social.cs" />
     <Compile Include="Genes\Hive\Thoughts\Thoughtworker_RivalQueen_Mood.cs" />
     <Compile Include="Genes\Hive\Thoughts\ThoughtWorker_QueenPresent_Social.cs" />
     <Compile Include="Genes\Hive\Thoughts\ThoughtWorker_RivalQueen_Social.cs" />
