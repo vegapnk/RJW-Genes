@@ -4,7 +4,7 @@ using rjw;
 
 namespace RJW_Genes
 {
-    public class Gene_FemaleOnly : Gene
+    public class Gene_FemaleOnly : RJW_Gene
     {
         public override void PostMake()
         {
@@ -24,6 +24,8 @@ namespace RJW_Genes
 
         private void AdjustPawnToFemale()
         {
+            Log.Message($"Gene_FemaleOnly AdjustPawnToFemale | {pawn} | {pawn.gender}");
+
             // Here we really use the Gender.Female and not our helper IsFemale(pawn)
             if (pawn.gender == Gender.Female)
                 return;
@@ -38,5 +40,11 @@ namespace RJW_Genes
             }
         }
 
+        public override void Notify_OnPawnGeneration()
+        {
+            base.Notify_OnPawnGeneration();
+            // If this is Pawn generation, then we can assume that the pawn was never any gender other than female, so they shouldn't have sex change thoughts.
+            GenderUtility.RemoveAllSexChangeThoughts(pawn);
+        }
     }
 }
