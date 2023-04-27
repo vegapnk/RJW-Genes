@@ -44,6 +44,7 @@
     <Compile Include="Genes\Breeding\Gene_MechBreeder.cs" />
     <Compile Include="Genes\Breeding\PatchMechBirth.cs" />
     <Compile Include="Genes\Hive\Defs\HiveOffspringChanceDef.cs" />
+    <Compile Include="Genes\Hive\Genes\Gene_FerventOvipositor.cs" />
     <Compile Include="Genes\Hive\Genes\Gene_InsectIncubator.cs" />
     <Compile Include="Genes\Hive\Patches\Patch_InsectBreeder_EggFertilization.cs" />
     <Compile Include="Genes\Hive\Patches\Patch_InsectIncubator_PregnancyHelper.cs" />

@@ -13,19 +13,18 @@
     <biostatMet>-1</biostatMet>
   </GeneDef>
   
-  
-    <GeneDef>
-        <defName>rjw_genes_zoophile</defName>
-        <label>Zoophile</label>
-        <displayCategory>rjw_genes_breeding</displayCategory>
-        <description>Xenotypes with this Gene are Zoophile.</description>
-        <iconPath>Genes/Icons/Zoophile</iconPath>
-        <displayOrderInCategory>54</displayOrderInCategory>    
-        <forcedTraits>
-            <li>
-                <def>Zoophile</def>
-            </li>
-        </forcedTraits>
-    </GeneDef>
+  <GeneDef>
+      <defName>rjw_genes_zoophile</defName>
+      <label>Zoophile</label>
+      <displayCategory>rjw_genes_breeding</displayCategory>
+      <description>Xenotypes with this Gene are Zoophile.</description>
+      <iconPath>Genes/Icons/Zoophile</iconPath>
+      <displayOrderInCategory>54</displayOrderInCategory>    
+      <forcedTraits>
+          <li>
+              <def>Zoophile</def>
+          </li>
+      </forcedTraits>
+  </GeneDef>
 
 </Defs>

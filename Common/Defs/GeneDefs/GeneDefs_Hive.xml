@@ -166,28 +166,40 @@
 		<biostatMet>-1</biostatMet>
 	</GeneDef>
 
-		
-	<GeneDef>
-		<defName>rjw_genes_insectincubator</defName>
-		<label>InsectIncubator</label>
-		<geneClass>RJW_Genes.Gene_InsectIncubator</geneClass>
-		<description>Pawns with this gene are able to host more insect eggs, hatch them faster and fertilize any inserted egg.</description>
-		<iconPath>Genes/Icons/More_Egg_Space</iconPath>
-		<displayOrderInCategory>52</displayOrderInCategory>
-		<displayCategory>rjw_genes_hive</displayCategory>
-		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
-	</GeneDef>
-
-	<GeneDef>
-		<defName>rjw_genes_insectbreeder</defName>
-		<label>InsectBreeder</label>	
-		<description>Pawns with this gene are able to fertilize eggs with any fertile penis.</description>
-		<iconPath>World/WorldObjects/Expanding/Insects</iconPath>
-		<displayOrderInCategory>53</displayOrderInCategory>
-		<displayCategory>rjw_genes_hive</displayCategory>
-		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
-	</GeneDef>
 	
+  <GeneDef>
+    <defName>rjw_genes_insectincubator</defName>
+    <label>Insect Incubator</label>	
+	<geneClass>RJW_Genes.Gene_InsectIncubator</geneClass>
+    <description>Pawns with this gene are able to hold more insect eggs.</description>
+    <iconPath>Genes/Icons/More_Egg_Space</iconPath>
+    <displayOrderInCategory>52</displayOrderInCategory>
+    <displayCategory>rjw_genes_hive</displayCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>rjw_genes_insectbreeder</defName>
+    <label>Insect Breeder</label>	
+    <description>Pawns with this gene are able to fertilize eggs with any fertile penis.</description>
+    <iconPath>World/WorldObjects/Expanding/Insects</iconPath>
+    <displayOrderInCategory>53</displayOrderInCategory>
+	<displayCategory>rjw_genes_hive</displayCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>rjw_genes_fervent_ovipositor</defName>
+    <label>Fervent Ovipositor</label>	
+	<geneClass>RJW_Genes.Gene_FerventOvipositor</geneClass>
+    <description>Pawns that have a female (egg producing) ovipositor produce eggs at drastically increased speed.</description>
+    <iconPath>World/WorldObjects/Expanding/Insects</iconPath>
+    <displayOrderInCategory>55</displayOrderInCategory>
+	<displayCategory>rjw_genes_hive</displayCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+  
 </Defs>
