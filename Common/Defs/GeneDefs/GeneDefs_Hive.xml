@@ -151,7 +151,7 @@
 	<GeneDef>
 		<defName>rjw_genes_spawn_spelopede</defName>
 		<label>Spelopede Dispenser</label>
-		<labelShortAdj>cocooner</labelShortAdj>
+		<labelShortAdj>spelopede</labelShortAdj>
 		<description>Carriers of this gene can generate tame spelopedes. Higher psychic-sensitivity will spawn more spelopedes.</description>
 		<iconPath>World/WorldObjects/Expanding/Insects</iconPath>
 		<displayOrderInCategory>12</displayOrderInCategory>

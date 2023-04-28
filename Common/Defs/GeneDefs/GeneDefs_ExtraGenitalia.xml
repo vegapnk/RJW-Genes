@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<GeneDef Name="GeneExtraGenitaliaBase" Abstract="True">
+  <GeneDef Name="GeneExtraGenitaliaBase" Abstract="True">
     <displayCategory>rjw_genes_genitalia_extras</displayCategory>
   </GeneDef>
-
 
   <GeneDef ParentName="GeneExtraGenitaliaBase">
     <defName>rjw_genes_extra_penis</defName>
@@ -127,5 +126,19 @@
       <li>BreastAmount</li>
     </exclusionTags>
   </GeneDef>
-
+  <!-- 
+  See Comment in `RJW_Genes.Gene_UdderBreasts` why this is currently commented out.
+  
+  <GeneDef ParentName="GeneExtraGenitaliaBase">
+    <defName>rjw_genes_udder</defName>
+    <label>udder</label>
+    <description>Carriers of this gene have udders instead of breasts.</description>
+    <iconPath>Things/Mote/Heart</iconPath>
+    <geneClass>RJW_Genes.Gene_UdderBreasts</geneClass>
+    <displayOrderInCategory>711</displayOrderInCategory>
+    <exclusionTags>
+      <li>BreastAmount</li>
+    </exclusionTags>
+  </GeneDef>
+  -->
 </Defs>

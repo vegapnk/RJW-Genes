@@ -1,6 +1,5 @@
 ﻿using Verse;
 using rjw;
-using RimWorld;
 
 namespace RJW_Genes
 {
@@ -54,7 +53,7 @@ namespace RJW_Genes
         internal void AddFeaturelessBreast()
         {
             var partBPR = Genital_Helper.get_breastsBPR(pawn);
-            this.added_nipples = pawn.health.AddHediff(Genital_Helper.featureless_chest, partBPR);
+            added_nipples = pawn.health.AddHediff(Genital_Helper.featureless_chest, partBPR);
         }
         
     }
