@@ -24,8 +24,6 @@ namespace RJW_Genes
 
         private void AdjustPawnToFemale()
         {
-            Log.Message($"Gene_FemaleOnly AdjustPawnToFemale | {pawn} | {pawn.gender}");
-
             // Here we really use the Gender.Female and not our helper IsFemale(pawn)
             if (pawn.gender == Gender.Female)
                 return;
