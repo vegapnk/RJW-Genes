@@ -41,7 +41,7 @@ namespace RJW_Genes
         public override void Notify_OnPawnGeneration()
         {
             base.Notify_OnPawnGeneration();
-            // If this is Pawn generation, then we can assume that the pawn was never any gender other than female, so they shouldn't have sex change thoughts.
+            // If this is Pawn generation, then we can assume that the pawn was never any gender other than female, so they shouldn't have sex change thoughts. (Issue #32)
             GenderUtility.RemoveAllSexChangeThoughts(pawn);
         }
     }

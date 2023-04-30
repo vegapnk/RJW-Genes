@@ -16,6 +16,8 @@ namespace RJW_Genes
         /// <summary>
         /// Executed via PawnGenerator.GenerateGenes at Pawn generation
         /// Allows for execution of code that should only happen during PawnGeneration
+        /// 
+        /// This has an accompanying patch `Patch_AddNotifyOnGeneration.cs`.
         /// </summary>
         public virtual void Notify_OnPawnGeneration()
         {

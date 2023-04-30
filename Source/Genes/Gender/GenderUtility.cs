@@ -75,6 +75,13 @@ namespace RJW_Genes
         private static readonly List<HediffDef> wasSexThoughts = Traverse.Create(typeof(GenderHelper)).Field("old_sex_list").GetValue<List<HediffDef>>();
         private static readonly List<HediffDef> sexChangeThoughts = Traverse.Create(typeof(GenderHelper)).Field("SexChangeThoughts").GetValue<List<HediffDef>>();
 
+        /// <summary>
+        /// This method removes all RJW-Sexchange-Hediffs from the pawn. 
+        /// It used with the RJW_Gene.Notify_OnPawnGeneration() to check for pawns on spawn.
+        /// 
+        /// Fixes Issue #32, where pawns that spawn fresh with a "all female" gene may have m2f thoughts. 
+        /// </summary>
+        /// <param name="pawn">The pawn that needs to have SexChange-Thoughts removed.</param>
         public static void RemoveAllSexChangeThoughts(Pawn pawn)
         {
             // Shouldn't ever be true in the normal case, but this stops someone from calling this with an incorrect setup
@@ -83,7 +90,7 @@ namespace RJW_Genes
 
             if(wasSexThoughts == null || sexChangeThoughts == null || !wasSexThoughts.Any() || !sexChangeThoughts.Any())
             {
-                Log.Error($"Couldn't get values from RJW.\nold_sex_list: {wasSexThoughts.ToStringSafeEnumerable()}\nSexChangeThoughts: {sexChangeThoughts.ToStringSafeEnumerable()}");
+                Log.Warning($"Couldn't get values from RJW.\nold_sex_list: {wasSexThoughts.ToStringSafeEnumerable()}\nSexChangeThoughts: {sexChangeThoughts.ToStringSafeEnumerable()}");
                 return;
             }
 
