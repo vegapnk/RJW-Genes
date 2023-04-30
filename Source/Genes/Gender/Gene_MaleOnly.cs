@@ -4,7 +4,7 @@ using rjw;
 
 namespace RJW_Genes
 {
-    public class Gene_MaleOnly : Gene
+    public class Gene_MaleOnly : RJW_Gene
     {
         public override void PostMake()
         {
@@ -38,5 +38,11 @@ namespace RJW_Genes
             }
         }
 
+        public override void Notify_OnPawnGeneration()
+        {
+            base.Notify_OnPawnGeneration();
+            // If this is Pawn generation, then we can assume that the pawn was never any gender other than male, so they shouldn't have sex change thoughts.
+            GenderUtility.RemoveAllSexChangeThoughts(pawn);
+        }
     }
 }
