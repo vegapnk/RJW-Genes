@@ -5,7 +5,7 @@
 		<label>Hive Queen</label>
 		<labelShortAdj>queen</labelShortAdj>
 		<description>This gene represents the royal caste amongst its xenotype. Children of a queen are usually born as sterile workers, unless the father was a drone. Having multiple (adult) queens leads to intense rivalry and can throw the whole colony into chaos!</description>
-		<iconPath>Things/Mote/Heart</iconPath>
+		<iconPath>Genes/Icons/queen</iconPath>
 		<displayOrderInCategory>1</displayOrderInCategory>
 		<displayCategory>rjw_genes_hive</displayCategory>
 
@@ -46,7 +46,7 @@
 		<label>Hive Drone</label>
 		<labelShortAdj>drone</labelShortAdj>
 		<description>This gene represents the drone caste amongst its xenotype. Drones are highly specialised experts that ensure the hives functioning. Other than that, drones are the only xenotypes capable of producing fertile offspring with a queen.</description>
-		<iconPath>Things/Mote/Heart</iconPath>
+		<iconPath>Genes/Icons/drone</iconPath>
 		<displayOrderInCategory>2</displayOrderInCategory>
 		<displayCategory>rjw_genes_hive</displayCategory>
 
@@ -74,8 +74,8 @@
 		<defName>rjw_genes_worker</defName>
 		<label>Hive Worker</label>
 		<labelShortAdj>worker</labelShortAdj>
-		<description>This gene represents the lowest caste of a hive, the workers. Usually sterile, they are despised by higher castes and only live to serve with labour.</description>
-		<iconPath>Things/Mote/Heart</iconPath>
+		<description>This gene marks the lowest caste of a hive, the workers. Usually sterile, they are despised by higher castes and only live to serve with labour.</description>
+		<iconPath>Genes/Icons/worker</iconPath>
 		<displayOrderInCategory>3</displayOrderInCategory>
 		<displayCategory>rjw_genes_hive</displayCategory>
 
@@ -135,7 +135,7 @@
 		<label>Cocoon Weaver</label>
 		<labelShortAdj>cocooner</labelShortAdj>
 		<description>Carriers of this gene can produce a cocoon to prepare helpless victims for breeding.</description>
-		<iconPath>Things/Mote/Heart</iconPath>
+		<iconPath>Genes/Icons/Cocoon</iconPath>
 		<displayOrderInCategory>11</displayOrderInCategory>
 		<displayCategory>rjw_genes_hive</displayCategory>
 		<abilities>
@@ -172,7 +172,7 @@
     <label>Insect Incubator</label>	
 	<geneClass>RJW_Genes.Gene_InsectIncubator</geneClass>
     <description>Pawns with this gene are able to hold more insect eggs.</description>
-    <iconPath>Genes/Icons/More_Egg_Space</iconPath>
+    <iconPath>Genes/Icons/Egg</iconPath>
     <displayOrderInCategory>52</displayOrderInCategory>
     <displayCategory>rjw_genes_hive</displayCategory>
     <biostatCpx>1</biostatCpx>
@@ -195,7 +195,7 @@
     <label>Fervent Ovipositor</label>	
 	<geneClass>RJW_Genes.Gene_FerventOvipositor</geneClass>
     <description>Pawns that have a female (egg producing) ovipositor produce eggs at drastically increased speed.</description>
-    <iconPath>World/WorldObjects/Expanding/Insects</iconPath>
+    <iconPath>Genes/Icons/Fervent_Ovipositor</iconPath>
     <displayOrderInCategory>55</displayOrderInCategory>
 	<displayCategory>rjw_genes_hive</displayCategory>
     <biostatCpx>1</biostatCpx>

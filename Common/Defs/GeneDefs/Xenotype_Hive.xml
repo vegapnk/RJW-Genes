@@ -4,7 +4,7 @@
   <XenotypeDef>
     <defName>rjw_genes_test_queen_xenotype</defName>
     <label>Test Queen</label>
-    <iconPath>UI/Icons/Xenotypes/Sanguophage</iconPath>
+    <iconPath>Genes/Icons/Xenotypes/Xenotype-Queen</iconPath>
     <soundDefOnImplant>PawnBecameSanguophage</soundDefOnImplant>
 
     <genes>			
@@ -19,10 +19,23 @@
   <XenotypeDef>
     <defName>rjw_genes_test_drone_xenotype</defName>
     <label>Test Drone</label>
-    <iconPath>UI/Icons/Xenotypes/Sanguophage</iconPath>
+    <iconPath>Genes/Icons/Xenotypes/Xenotype-Guard</iconPath>
     <genes>			
         <li>rjw_genes_drone</li>
         <li>rjw_genes_male_only</li>
+        <li>rjw_genes_zealous_loyalty</li>
+        <li>Fertile</li>
+        <li>Skin_DeepRed</li>		
+    </genes>
+  </XenotypeDef>
+  
+  <XenotypeDef>
+    <defName>rjw_genes_test_breeder_xenotype</defName>
+    <label>Test Breeder</label>
+    <iconPath>Genes/Icons/Xenotypes/Xenotype-Breeder</iconPath>
+    <genes>			
+        <li>rjw_genes_drone</li>
+        <li>rjw_genes_female_only</li>
         <li>rjw_genes_zealous_loyalty</li>
         <li>Fertile</li>
         <li>Skin_DeepRed</li>		

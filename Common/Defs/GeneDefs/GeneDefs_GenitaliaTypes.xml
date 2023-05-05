@@ -67,7 +67,7 @@
     <defName>rjw_genes_ovipositor_genitalia</defName>
     <label>insect genitalia</label>
     <description>Carriers of this gene have ovipositors similar to insects.</description>
-    <iconPath>Genes/Icons/Genitalia_Insect</iconPath>
+    <iconPath>Genes/Icons/Ovipositor_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_OvipositorGenitalia</geneClass>
     <displayOrderInCategory>808</displayOrderInCategory>
   </GeneDef>
