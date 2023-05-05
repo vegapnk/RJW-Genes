@@ -2,7 +2,14 @@
 <Defs>
 <GeneDef Name="GeneGenitaliaSizeBase" Abstract="True">
     <displayCategory>rjw_genes_genitalia_size</displayCategory>
-    <!--These Genes need to be loaded quite last, otherwise e.g. genitalia types will re-roll and overrule genitalia size-->
+    <!--These Genes need to be loaded quite late, otherwise e.g. genitalia types will re-roll and overrule genitalia size-->
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <!-- Penis -->

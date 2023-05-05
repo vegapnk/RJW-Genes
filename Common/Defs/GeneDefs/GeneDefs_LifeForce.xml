@@ -31,6 +31,13 @@
 		<resourceLossPerDay>0.05</resourceLossPerDay>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>1</biostatMet>
+
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
 	</GeneDef>
 	
 	<GeneDef>
@@ -48,6 +55,13 @@
 		<displayOrderInCategory>-1</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>6</biostatMet>
+
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
 	</GeneDef>
 	
 	<GeneDef>
@@ -74,6 +88,13 @@
 				<li><symbol>heal</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
+
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
 	</GeneDef>
 	
 	<GeneDef>
@@ -100,6 +121,13 @@
 				<li><symbol>eat</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
+
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
 	</GeneDef>
 	
 	<GeneDef>
@@ -125,6 +153,13 @@
 				<li><symbol>kiss</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
+
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
 	</GeneDef>
 	
 	<GeneDef>
@@ -151,6 +186,13 @@
 				<li><symbol>kiss</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
+
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
 	</GeneDef>
 	
 	<GeneDef>
@@ -169,6 +211,13 @@
 		</descriptionHyperlinks>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
+
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
 	</GeneDef>
 	
 	<GeneDef>
@@ -180,6 +229,13 @@
 		<displayOrderInCategory>1</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<biostatCpx>1</biostatCpx>
+
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
 	</GeneDef>
 	
 	<GeneDef>
@@ -191,6 +247,13 @@
 		<displayOrderInCategory>2</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<biostatCpx>1</biostatCpx>
+
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
 	</GeneDef>
 	
 	<GeneDef>
@@ -203,5 +266,12 @@
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
+
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
 	</GeneDef>
 </Defs>

@@ -9,6 +9,12 @@
         <biostatMet>-2</biostatMet>
         <iconPath>UI/Memes/FleshPurity</iconPath>
         <displayOrderInCategory>1</displayOrderInCategory>
+        <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
     </GeneDef>
 	
     <GeneDef>
@@ -20,6 +26,13 @@
         <biostatMet>-2</biostatMet>
         <iconPath>UI/Ideoligions/FireLeaves</iconPath>
         <displayOrderInCategory>2</displayOrderInCategory>
+
+        <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
     </GeneDef>
     
     <GeneDef>
@@ -31,6 +44,13 @@
         <biostatMet>-1</biostatMet>
         <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
         <displayOrderInCategory>3</displayOrderInCategory>
+
+        <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
     </GeneDef>
     
     <GeneDef>
@@ -43,6 +63,13 @@
         <displayOrderInCategory>4</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>1</biostatMet>
+
+        <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
     </GeneDef>
     
 </Defs>
