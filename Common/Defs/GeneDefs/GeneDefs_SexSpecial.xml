@@ -1,75 +1,56 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <GeneDef>
+    
+    <GeneDef Name="SpecialBase" Abstract="True">
+      <displayCategory>rjw_genes_special</displayCategory>
+      
+      <modExtensions>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+            <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+            <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+          </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBaseBase">
         <defName>rjw_genes_orgasm_rush</defName>
         <label>Orgasm Rush</label>
-        <displayCategory>rjw_genes_special</displayCategory>
         <description>On Orgasm, carriers of this gene get a boost in activity. (rest-need is partially filled)</description>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-2</biostatMet>
         <iconPath>UI/Memes/FleshPurity</iconPath>
         <displayOrderInCategory>1</displayOrderInCategory>
-        <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
     </GeneDef>
 	
-    <GeneDef>
+    <GeneDef ParentName="SpecialBaseBase">
         <defName>rjw_genes_youth_fountain</defName>
         <label>Youth Fountain</label>
-        <displayCategory>rjw_genes_special</displayCategory>
         <description>Having sex with a carrier of this gene makes the partner slightly younger. (Partner stays adult)</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-2</biostatMet>
         <iconPath>UI/Ideoligions/FireLeaves</iconPath>
         <displayOrderInCategory>2</displayOrderInCategory>
-
-        <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
     </GeneDef>
     
-    <GeneDef>
+    <GeneDef ParentName="SpecialBaseBase">
         <defName>rjw_genes_sex_age_drain</defName>
         <label>Sexual Age Drain</label>
-        <displayCategory>rjw_genes_special</displayCategory>
         <description>Having sex transfers some of the partners life-time to themselves. (Pawn stays adult)</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-1</biostatMet>
         <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
         <displayOrderInCategory>3</displayOrderInCategory>
-
-        <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
     </GeneDef>
     
-    <GeneDef>
+    <GeneDef ParentName="SpecialBaseBase">
         <defName>rjw_genes_aphrodisiac_pheromones</defName>
         <label>Aphrodisiac Pheromones</label>
-        <displayCategory>rjw_genes_special</displayCategory>
 		    <geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass>
         <description>Pheremones of this pawn induce an incressed sexdrive to others nearby.</description>
         <iconPath>Genes/Icons/Pheromones</iconPath>
         <displayOrderInCategory>4</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>1</biostatMet>
-
-        <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
     </GeneDef>
     
 </Defs>

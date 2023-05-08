@@ -3,42 +3,41 @@
 **Changes:**
 
 - Cocoon Weaver Gene
-- Spawn Spelopede Gene (Can be changed to spawn Megascarabs or other insects via xml)
-- Queens & Caste Logic (see below)
+- Spawn Spelopede Gene (Can be changed to spawn megascarabs or other insects via xml)
+- Queens & Caste logic (see below)
 - Addition to InsectIncubator: Now fertilizes eggs once placed inside a host, and breeds out eggs twice as fast.
+- Many new icons 
+- Custom background icons when Vanilla-Expanded-Framework is loaded
 
 **Internal:**
 
-- Renamed Abilities to have _ability_ in their name, to not exactly match the gene-defnames.
-- Moved Insect-Incubator & Insect-Breeder to Hive Category and Folders
+- Renamed abilities to have _ability_ in their name, to not exactly match the gene-defnames.
+- Moved Insect-Incubator & Insect-Breeder to hive category and folders (from breeding)
 
 **Fixes:**
 
 - Cockeater Ability has now Icon of Cockeater Gene
 - Cockeater now leaves a bite wound!
 - Pythokin-Patch checks for Licentialabs (#30)
+- Removed Sex-Change thoughts for pawns born or spawned with a gender-altering gene (Issue #32, PR #33 by @callavico)
 
 **Queen & Caste Logic**
 
 There are 3 genes revolting around a new, hopefully flexible insect-caste system. Queens, Drones and Workers. These reproduce either through normal sex, or can utilize the insect birth once [this PR](https://gitgud.io/Ed86/rjw/-/merge_requests/266) has been merged in. 
+Update: It has been merged into [RJW 5.3.5](https://gitgud.io/Ed86/rjw/-/tags/5.3.5), make sure you update!
 
 In general, the logic is the following: 
 
 - A queen can have sex with anyone. If the partner was a drone, there is chance for the baby to become a queen, drone or worker. 
 - If the partner of the queen was not a drone, the baby will be a worker.
 - If the drone didn't mate with a queen but someone else, normal inheritance happens
-- The assignemnt is done by xenotypes for queen and drones. The baby will get all xenogenes of their parents xenotypes. 
+- The assignment is done by xenotypes for queen and drones. The baby will get all xenogenes of their parents chosen xenotypes. 
 - For workers, every queen can have a set of genes for their workers defined in [a special def](./Common/Defs/QueenWorkerMappingDefs/QueenWorkerMappingDefs_base.xml). These will be added as endogenes, so that pawns can still become xenotypes.
-- There is a default set for worker genes, making mentally dumb, sterile and servile pawns. 
-- Chances for Offsprings (Drone, Queen, Worker) is defined in an [XML-Def](./Common/Defs/HiveOffspringChanceDef/HiveOffspringChanceDefs.xml)
+- There is a default gene-set for workers, making dumb, sterile and servile pawns. 
+- Chances for Offsprings (Drone, Queen, Worker) is defined in an [XML-Def](./Common/Defs/HiveOffspringChanceDef/HiveOffspringChanceDefs.xml). They are set per Queen. 
 
-I am not sure if I want to have a specific mapping defining that Queen can only mate with certain Drones, let me know how you feel about it. 
+I am not sure if I want to have a specific mapping defining that queen can only mate with certain drones, let me know how you feel about it. 
 *Queens can be male*. I just used the female-term, but implementation is gender-neutral. 
-
-**ToDo:**
-
-- Icons: Cocoon, Spelopede Spawn
-- Sound: Spelopede Spawn
 
 # 1.1.4
 

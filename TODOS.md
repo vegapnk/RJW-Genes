@@ -39,14 +39,14 @@ Can't help but think about Rexxar Porn now I am a bad person.
 
 **Hive Mother:**
 
-- [] Spawn the small scarabs 
-- [] Fertilise Eggs inside her 
-- [] Produce cocoons
+- [X] Spawn the small scarabs 
+- [X] Fertilise Eggs inside her 
+- [X] Produce cocoons
 - [] Maybe: Insert "dropped" Insect eggs 
 - [] Very fragile, no use except breeding
 - [] Maybe: can only eat insect jelly
-- [] Should look like a nice green-yellow alien as we all know fuckable insects would look like. 
-- [] There can only be one Hive Mother, some penalties if there are others. This could be implement with an "Alpha Gene" that gives heavy penalties when other Alpha exists. 
+- [X] Should look like a nice green-yellow alien as we all know fuckable insects would look like. 
+- [X] There can only be one Hive Mother, some penalties if there are others. This could be implement with an "Alpha Gene" that gives heavy penalties when other Alpha exists. 
 
 ## Genes with Abilities and more Effects 
 
