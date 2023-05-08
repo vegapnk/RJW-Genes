@@ -40,7 +40,7 @@
     <defName>rjw_genes_extra_vagina</defName>
     <label>extra vagina</label>
     <description>Females of this species grow an additional vagina .</description>
-    <iconPath>Genes/Icons/extra_female</iconPath>
+    <iconPath>Genes/Icons/Extra_Vagina</iconPath>
     <geneClass>RJW_Genes.Gene_ExtraVagina</geneClass>
     <displayOrderInCategory>703</displayOrderInCategory>
     <exclusionTags>
@@ -52,7 +52,7 @@
     <defName>rjw_genes_no_vagina</defName>
     <label>no vagina</label>
     <description>Females of this do not have a vagina.</description>
-    <iconPath>Genes/Icons/No_Female_Genitalia</iconPath>
+    <iconPath>Genes/Icons/No_Vagina</iconPath>
     <geneClass>RJW_Genes.Gene_NoVagina</geneClass>
     <displayOrderInCategory>704</displayOrderInCategory>
     <exclusionTags>

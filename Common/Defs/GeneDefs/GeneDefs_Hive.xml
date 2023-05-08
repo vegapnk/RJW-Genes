@@ -232,7 +232,7 @@
     <defName>rjw_genes_insectbreeder</defName>
     <label>Insect Breeder</label>	
     <description>Pawns with this gene are able to fertilize eggs with any fertile penis.</description>
-    <iconPath>World/WorldObjects/Expanding/Insects</iconPath>
+    <iconPath>Genes/Icons/Insect_Breeder</iconPath>
     <displayOrderInCategory>53</displayOrderInCategory>
 	<displayCategory>rjw_genes_hive</displayCategory>
     <biostatCpx>1</biostatCpx>

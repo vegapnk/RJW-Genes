@@ -65,7 +65,7 @@
     <defName>rjw_genes_slime_genitalia</defName>
     <label>slime genitalia</label>
     <description>Carriers of this gene have slime genitalia.</description>
-    <iconPath>Genes/Icons/Genitalia_Slime</iconPath>
+    <iconPath>Genes/Icons/Slime_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_SlimeGenitalia</geneClass>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>

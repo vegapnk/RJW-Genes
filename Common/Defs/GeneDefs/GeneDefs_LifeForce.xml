@@ -135,7 +135,7 @@
 		<label>paralysing kiss</label>
 		<labelShortAdj>paralysing kiss</labelShortAdj>
 		<description>Carriers of this gene are able to briefly stun an enemy with a kiss.</description>
-		<iconPath>Genes/Icons/rjw_genes_lips</iconPath>
+		<iconPath>Genes/Icons/Paralysing_Kiss</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>12</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
@@ -260,7 +260,7 @@
 		<defName>rjw_genes_drainer</defName>
 		<label>vitality drainer</label>
 		<description>Carriers of this gene are able to absorb a great amount of fertilin by draining the vitality of the partner. This is done passively through having sex with a non-drained pawn that does not have this gene.</description>
-		<iconPath>Things/Mote/Heart</iconPath>
+		<iconPath>Genes/Icons/Vitality_Drainer</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>4</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
