@@ -8,6 +8,8 @@ Any help is very appreciated, even if it is just pointing me to existing similar
 
 **Incubi** - Add a forced striptease Ability
 
+**Age Transfer Genes** - Add (configurable) option to satisfy Bodymodders and their AgeReversalDemand
+
 ## Planned Genes 
 
 **Adjustable Cock-Size** like e.g. artificial genitalia have

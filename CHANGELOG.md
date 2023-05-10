@@ -8,6 +8,7 @@
 - Addition to InsectIncubator: Now fertilizes eggs once placed inside a host, and breeds out eggs twice as fast.
 - Many new icons 
 - Custom background icons when Vanilla-Expanded-Framework is loaded
+- Sexual Age Drainer & Youth Fountain now change age as configured in XML
 
 **Internal:**
 
@@ -20,6 +21,7 @@
 - Cockeater now leaves a bite wound!
 - Pythokin-Patch checks for Licentialabs (#30)
 - Removed Sex-Change thoughts for pawns born or spawned with a gender-altering gene (Issue #32, PR #33 by @callavico)
+- More consistent behavior for genitalia resizing over multiple game-starts (Issue #34)
 
 **Queen & Caste Logic**
 

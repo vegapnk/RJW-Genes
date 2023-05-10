@@ -2,6 +2,20 @@
 
 Collection of Known Bugs and reasons for their origin. 
 
+## My Youth Fountain / Age Drainer Pawns do not alter Ages!!!
+
+Issue: You had a pawn with Youth Fountain have Sex with another Pawn, and the other pawn did not get younger. 
+
+Please Check: 
+
+- Are both pawns in OK Age?
+- Did they maybe change age but you didn't notice? Default settings only change by days. 
+- Did they finish sex? If they are interrupted, nothing happens
+
+Otherwise: 
+
+Enable the Debug-Settings and provide me with a log. 
+
 ## I changed Parts of a pawn and my genes do not apply!
 
 Issue: You had a pawn with "huge genitalia" and add a horse-cock with licentia or surgery. This new genitalia is not huge. 
