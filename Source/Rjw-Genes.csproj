@@ -137,6 +137,7 @@
     <Compile Include="Genes\Life_Force\JobGivers\JobGiver_GetLifeForce.cs" />
     <Compile Include="Genes\Life_Force\ThinkNodes\ThinkNode_NewFlirtTarget.cs" />
     <Compile Include="Genes\Patch_AddNotifyOnGeneration.cs" />
+    <Compile Include="Genes\Special\AgeTransferExtension.cs" />
     <Compile Include="Genes\Special\Patch_AgeDrain.cs" />
     <Compile Include="Interactions\SuccubusTailjob\CompAbility_SexInteractionRequirements.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_PussyHeal.cs" />

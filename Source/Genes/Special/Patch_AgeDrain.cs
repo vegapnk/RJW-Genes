@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
+using Verse;
 
 namespace RJW_Genes.Genes.Special
 {
@@ -18,9 +20,9 @@ namespace RJW_Genes.Genes.Special
          * I am not sure how I feel about this, but as some people that I consider "normal" asked me about this I changed it as requested in #26 and #28
          */
 
-        const long AGE_TRANSFERED = 120000; // 120k == 2 days
+        const long AGE_TRANSFERED_FALLBACK = 120000; // 120k == 2 days
         // 18 Years * 60 Days / Year * 60k Ticks/Day + 1 for safety
-        const long MINIMUM_AGE = 18 * 60 * 60000 + 1;
+        const long MINIMUM_AGE_FALLBACK = 18 * 60 * 60000 + 1;
 
         public static void Postfix(SexProps props)
         {
@@ -28,18 +30,50 @@ namespace RJW_Genes.Genes.Special
             {
                 return;
             }
-            if (GeneUtility.IsAgeDrainer(props.pawn) && props.pawn.ageTracker.AgeBiologicalTicks > MINIMUM_AGE)
+
+            Pawn pawn = props.pawn;
+            Pawn partner = props.partner;
+
+            if (GeneUtility.IsAgeDrainer(pawn) && !GeneUtility.IsAgeDrainer(partner))
             {
-                var pawnAge = props.pawn.ageTracker.AgeBiologicalTicks;
-                //ModLog.Error($"Firing Age Drain \nMinimum Age is \t{MINIMUM_AGE} \nPawn Age is \t{pawnAge} \nTransferred \t{AGE_TRANSFERED}\nResulting in \t{pawnAge - AGE_TRANSFERED}");
-
-                // Make Partner older
-                props.partner.ageTracker.AgeBiologicalTicks += AGE_TRANSFERED;
-                // Make Pawn younger if he is older than minimum age
-                if (pawnAge - AGE_TRANSFERED > MINIMUM_AGE)
-                    props.pawn.ageTracker.AgeBiologicalTicks = Math.Max(MINIMUM_AGE, (pawnAge - AGE_TRANSFERED));
+                TransferAge(pawn, partner);
             }
+            else if (GeneUtility.IsAgeDrainer(partner) && !GeneUtility.IsAgeDrainer(pawn))
+            {
+                TransferAge(partner,pawn);
+            }
+            else if (GeneUtility.IsAgeDrainer(partner) && GeneUtility.IsAgeDrainer(pawn) && RJW_Genes_Settings.rjw_genes_detailed_debug)
+            {
+                ModLog.Message($"[Sexual Age Drainer] both {pawn} and {partner} are sexual-age-drainers - nothing happens.");
+            }
+        }
 
+        /// <summary>
+        /// Transfers age from the giver to the receiver.
+        /// </summary>
+        /// <param name="receiver">The pawn that will receive biological-Age-Ticks, and becomes younger if they are not already young. </param>
+        /// <param name="giver">The pawn that will be giving biological-Age-Ticks. This pawn is always aged, even if the other pawn is too young.</param>
+        private static void TransferAge(Pawn receiver, Pawn giver)
+        {
+            AgeTransferExtension transferExt = GeneDefOf.rjw_genes_sex_age_drain.GetModExtension<AgeTransferExtension>();
+            long age_transfered = transferExt?.ageTickChange ?? AGE_TRANSFERED_FALLBACK;
+            long minimum_age = transferExt?.minAgeInYears * 60 * 60000 + 1 ?? MINIMUM_AGE_FALLBACK;
+
+            var pawnAge = receiver.ageTracker.AgeBiologicalTicks;
+
+            if (RJW_Genes_Settings.rjw_genes_detailed_debug)
+                ModLog.Message($"[Sexual Age Drainer] {receiver} is aging {giver} by {age_transfered} ({Math.Round(age_transfered / 60000.0, 2)} days)");
+
+            // Giver ALWAYS ages 
+            giver.ageTracker.AgeBiologicalTicks += age_transfered;
+
+            // Make Receiver younger if they are older than minimum age
+            if (pawnAge - age_transfered > minimum_age)
+                receiver.ageTracker.AgeBiologicalTicks = Math.Max(minimum_age, (pawnAge - age_transfered));
+            else {
+                if (RJW_Genes_Settings.rjw_genes_detailed_debug)
+                    ModLog.Message($"[Sexual Age Drainer] {receiver} was too young ({receiver.ageTracker.AgeBiologicalYears}), and remains unchanged.");
+            }
         }
     }
 }
