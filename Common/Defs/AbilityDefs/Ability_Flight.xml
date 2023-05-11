@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <AbilityDef>
-    <defName>rjw_genes_flight</defName>
+    <defName>rjw_genes_ability_flight</defName>
     <label>fly</label>
     <description>Fly to a short location using your wings.</description>
     <iconPath>Genes/Icons/Succubus_Wings</iconPath>

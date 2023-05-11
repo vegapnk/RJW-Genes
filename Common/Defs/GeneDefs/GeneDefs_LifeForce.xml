@@ -74,10 +74,10 @@
 		<displayOrderInCategory>9</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<abilities>
-			<li>rjw_genes_pussyheal</li>
+			<li>rjw_genes_ability_pussyheal</li>
 		</abilities>
 		<descriptionHyperlinks>
-			<AbilityDef>rjw_genes_pussyheal</AbilityDef>
+			<AbilityDef>rjw_genes_ability_pussyheal</AbilityDef>
 		</descriptionHyperlinks>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
@@ -107,10 +107,10 @@
 		<displayOrderInCategory>11</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<abilities>
-			<li>rjw_genes_cockeater</li>
+			<li>rjw_genes_ability_cockeater</li>
 		</abilities>
 		<descriptionHyperlinks>
-			<AbilityDef>rjw_genes_cockeater</AbilityDef>
+			<AbilityDef>rjw_genes_ability_cockeater</AbilityDef>
 		</descriptionHyperlinks>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
@@ -140,10 +140,10 @@
 		<displayOrderInCategory>12</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<abilities>
-			<li>rjw_genes_paralysingkiss</li>
+			<li>rjw_genes_ability_paralysingkiss</li>
 		</abilities>
 		<descriptionHyperlinks>
-			<AbilityDef>rjw_genes_paralysingkiss</AbilityDef>
+			<AbilityDef>rjw_genes_ability_paralysingkiss</AbilityDef>
 		</descriptionHyperlinks>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
@@ -172,10 +172,10 @@
 		<displayOrderInCategory>13</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<abilities>
-			<li>rjw_genes_seduce</li>
+			<li>rjw_genes_ability_seduce</li>
 		</abilities>
 		<descriptionHyperlinks>
-			<AbilityDef>rjw_genes_seduce</AbilityDef>
+			<AbilityDef>rjw_genes_ability_seduce</AbilityDef>
 		</descriptionHyperlinks>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
@@ -204,10 +204,10 @@
 		<displayOrderInCategory>13</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<abilities>
-			<li>rjw_genes_naked_prowess</li>
+			<li>rjw_genes_ability_naked_prowess</li>
 		</abilities>
 		<descriptionHyperlinks>
-			<AbilityDef>rjw_genes_naked_prowess</AbilityDef>
+			<AbilityDef>rjw_genes_ability_naked_prowess</AbilityDef>
 		</descriptionHyperlinks>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>

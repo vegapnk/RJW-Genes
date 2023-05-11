@@ -12,12 +12,12 @@
 			</modExtensions>
 	</GeneDef>
 
-	<GeneDef ParentName="GeneGenitalTypeBase">
+	<GeneDef ParentName="HiveBase">
 		<defName>rjw_genes_queen</defName>
 		<label>Hive Queen</label>
 		<labelShortAdj>queen</labelShortAdj>
 		<description>This gene represents the royal caste amongst its xenotype. Children of a queen are usually born as sterile workers, unless the father was a drone. Having multiple (adult) queens leads to intense rivalry and can throw the whole colony into chaos!</description>
-		<iconPath>Genes/Icons/queen</iconPath>
+		<iconPath>Genes/Icons/Queen</iconPath>
 		<displayOrderInCategory>1</displayOrderInCategory>
 
 		<statOffsets>
@@ -57,7 +57,7 @@
 		<label>Hive Drone</label>
 		<labelShortAdj>drone</labelShortAdj>
 		<description>This gene represents the drone caste amongst its xenotype. Drones are highly specialised experts that ensure the hives functioning. Other than that, drones are the only xenotypes capable of producing fertile offspring with a queen.</description>
-		<iconPath>Genes/Icons/drone</iconPath>
+		<iconPath>Genes/Icons/Drone</iconPath>
 		<displayOrderInCategory>2</displayOrderInCategory>
 
 		<exclusionTags>
@@ -85,7 +85,7 @@
 		<label>Hive Worker</label>
 		<labelShortAdj>worker</labelShortAdj>
 		<description>This gene marks the lowest caste of a hive, the workers. Usually sterile, they are despised by higher castes and only live to serve with labour.</description>
-		<iconPath>Genes/Icons/worker</iconPath>
+		<iconPath>Genes/Icons/Worker</iconPath>
 		<displayOrderInCategory>3</displayOrderInCategory>
 
 		<exclusionTags>
@@ -121,13 +121,12 @@
 		<biostatMet>0</biostatMet>
 	</GeneDef>
 
-
 	<GeneDef ParentName="HiveBase">
 		<defName>rjw_genes_zealous_loyalty</defName>
 		<label>Zealous Loyalty</label>
 		<labelShortAdj>loyalty</labelShortAdj>
 		<description>Carriers of this gene are genetically wired to worship carriers of the 'Queen'-gene. They receive a massive relation-ship bonus towards the queen and a slight mood bonus. Having multiple queens in the colony causes severe distress.</description>
-		<iconPath>Things/Mote/Heart</iconPath>
+		<iconPath>Genes/Icons/Loyalty</iconPath>
 		<displayOrderInCategory>10</displayOrderInCategory>
 		
 		<exclusionTags>
@@ -167,7 +166,7 @@
 		<label>Spelopede Dispenser</label>
 		<labelShortAdj>spelopede</labelShortAdj>
 		<description>Carriers of this gene can generate tame spelopedes. Higher psychic-sensitivity will spawn more spelopedes.</description>
-		<iconPath>World/WorldObjects/Expanding/Insects</iconPath>
+		<iconPath>Genes/Icons/Spelopede_Dispenser</iconPath>
 		<displayOrderInCategory>12</displayOrderInCategory>
 		<abilities>
 			<li>rjw_genes_ability_spawn_spelopede</li>
@@ -199,13 +198,6 @@
     <displayOrderInCategory>53</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
-
-	<modExtensions>
-		<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-			<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-			<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-		</li>
-	</modExtensions>
   </GeneDef>
   
   <GeneDef>

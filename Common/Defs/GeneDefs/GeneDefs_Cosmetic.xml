@@ -19,10 +19,10 @@
     <iconColor>(0.75, 0.75, 0.75)</iconColor>
     <displayOrderInCategory>1000</displayOrderInCategory>
 	<abilities>
-		 <li>rjw_genes_flight</li>
+		 <li>rjw_genes_ability_flight</li>
 	</abilities>
 	<descriptionHyperlinks>
-		<AbilityDef>rjw_genes_flight</AbilityDef>
+		<AbilityDef>rjw_genes_ability_flight</AbilityDef>
 	</descriptionHyperlinks>
     <biostatCpx>1</biostatCpx>
 	<biostatMet>-1</biostatMet>

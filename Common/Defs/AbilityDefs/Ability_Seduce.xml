@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <AbilityDef>
-    <defName>rjw_genes_seduce</defName>
+    <defName>rjw_genes_ability_seduce</defName>
     <label>seduce</label>
     <description>Seduce the target to approach the caster.</description>
     <iconPath>Genes/Icons/seduce</iconPath>

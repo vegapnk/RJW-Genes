@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <AbilityDef>
-    <defName>rjw_genes_naked_prowess</defName>
+    <defName>rjw_genes_ability_naked_prowess</defName>
     <label>naked prowess</label>
     <description>Enhance the strength and resilience of your naked body with fertilin.</description>
     <iconPath>Genes/Icons/rjw_naked_prowess</iconPath>

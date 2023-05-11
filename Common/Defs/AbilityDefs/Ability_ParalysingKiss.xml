@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <AbilityDef ParentName="AbilityTouchBase">
-    <defName>rjw_genes_paralysingkiss</defName>
+    <defName>rjw_genes_ability_paralysingkiss</defName>
     <label>paralysing kiss</label>
     <description>Paralyse someone briefly with a kiss.</description>
     <iconPath>Genes/Icons/rjw_genes_lips</iconPath>
