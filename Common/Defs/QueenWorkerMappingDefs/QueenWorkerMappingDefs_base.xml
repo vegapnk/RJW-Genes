@@ -8,10 +8,15 @@
 		<defName>rjw_genes_default_worker_genes</defName>
         <queenXenotype>default</queenXenotype>
 		<workerGenes>
+			<li>StrongStomach</li>
+			<li MayRequire="sarg.alphagenes" >AG_FasterAging</li>
+			<li>PsychicAbility_Dull</li>
+			<li>FireTerror</li>
+			<li>Sterile</li>
+			<li>AptitudeTerrible_Intellectual</li>
+			<li>rjw_genes_featureless_chest</li>
 			<li>rjw_genes_worker</li>
-            <li>Sterile</li>
-			<li>rjw_genes_zealous_loyalty</li>
-            <li>Skin_Green</li>			
+			<li>rjw_genes_zealous_loyalty</li>	
 		</workerGenes>
 	</RJW_Genes.QueenWorkerMappingDef>
 
@@ -19,9 +24,19 @@
         <defName>rjw_genes_test_queen_worker_mapping</defName>
         <queenXenotype>rjw_genes_test_queen_xenotype</queenXenotype>
 		<workerGenes>
+			<li MayRequire="sarg.alphagenes" >AG_SmallerBodySize</li>
+			<li>StrongStomach</li>
+			<li MayRequire="sarg.alphagenes" >AG_EfficientMandibles</li>
+			<li MayRequire="sarg.alphagenes" >AG_FasterAging</li>
+			<li>PsychicAbility_Dull</li>
+			<li>FireTerror</li>
+			<li>Sterile</li>
+			<li MayRequire="sarg.alphagenes" >AG_FormicAntennas</li>
+			<li>Skin_DeepRed</li>
+			<li>AptitudeTerrible_Intellectual</li>
+			<li>rjw_genes_featureless_chest</li>
 			<li>rjw_genes_worker</li>
 			<li>rjw_genes_zealous_loyalty</li>
-            <li>Skin_InkBlack</li>		
 		</workerGenes>
 	</RJW_Genes.QueenWorkerMappingDef>
 	

@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!-- Alpha Genes ID: sarg.alphagenes -->
+
   <XenotypeDef>
     <defName>rjw_genes_test_queen_xenotype</defName>
     <label>Test Queen</label>
     <iconPath>Genes/Icons/Xenotypes/Xenotype-Queen</iconPath>
-    <soundDefOnImplant>PawnBecameSanguophage</soundDefOnImplant>
 
     <genes>			
-        <li>rjw_genes_queen</li>
+        <li MayRequire="sarg.alphagenes" >AG_LargerBodySize</li>
+        <li MayRequire="sarg.alphagenes" >AG_InsectBlood</li>
+        <li MayRequire="sarg.alphagenes" >AG_InsectJellyProduction</li>
+        <li MayRequire="sarg.alphagenes" >AG_SurvivalInstinct_Low</li>
+        <li>WoundHealing_Slow</li>
+        <li>PsychicAbility_Extreme</li>
+        <li>MoveSpeed_Slow</li>
+        <li>FireTerror</li>
+        <li>MeleeDamage_Weak</li>
+        <li>Sleepy</li>
+        <li>Delicate</li>
         <li>rjw_genes_hypersexual</li>
-        <li>rjw_genes_female_only</li>
-        <li>Fertile</li>
-        <li>Skin_PaleYellow</li>		
+        <li>rjw_genes_bisexual</li>
+        <li>Libido_High</li>
+        <li>Beauty_Beautiful</li>
+        <li MayRequire="sarg.alphagenes" >AG_OutwardsAntennas</li>
+        <li>Skin_DeepRed</li>
+        <li>Learning_Fast</li>
+        <li>rjw_genes_fervent_ovipositor</li>
+        <li>AptitudeTerrible_Shooting</li>
+        <li>AptitudeTerrible_Melee</li>
+        <li>AptitudeRemarkable_Social</li>
+        <li>AptitudeRemarkable_Sex</li>
+        <li>rjw_genes_ovipositor_genitalia</li>
+        <li>rjw_genes_aphrodisiac_pheromones</li>
+        <li>rjw_genes_queen</li>
+        <li>rjw_genes_cocoonweaver</li>
+        <li>rjw_genes_spawn_spelopede</li>
     </genes>
   </XenotypeDef>
   
@@ -21,11 +45,34 @@
     <label>Test Drone</label>
     <iconPath>Genes/Icons/Xenotypes/Xenotype-Guard</iconPath>
     <genes>			
-        <li>rjw_genes_drone</li>
+        <li MayRequire="sarg.alphagenes" >AG_InsectBlood</li>
+        <li MayRequire="sarg.alphagenes" >AG_EfficientMandibles</li>
+        <li>Immunity_Strong</li>
+        <li>WoundHealing_Fast</li>
+        <li>MoveSpeed_Quick</li>
+        <li>FireTerror</li>
+        <li>MeleeDamage_Strong</li>
+        <li>KillThirst</li>
+        <li>LowSleep</li>
+        <li MayRequire="sarg.alphagenes" >AG_WaspWings</li>
+        <li>Hair_ShortOnly</li>
+        <li MayRequire="sarg.alphagenes" >AG_DownwardsAntennas</li>
+        <li>Hair_DarkBlack</li>
+        <li>Skin_DeepRed</li>
+        <li MayRequire="sarg.alphagenes" >AG_FeraliskEyes</li>
+        <li>AptitudeTerrible_Shooting</li>
+        <li>AptitudeRemarkable_Melee</li>
+        <li>AptitudePoor_Construction</li>
+        <li>AptitudePoor_Cooking</li>
+        <li>AptitudePoor_Plants</li>
+        <li>AptitudePoor_Crafting</li>
+        <li>AptitudeTerrible_Artistic</li>
+        <li>AptitudeTerrible_Medicine</li>
+        <li>AptitudePoor_Social</li>
         <li>rjw_genes_male_only</li>
+        <li>rjw_genes_ovipositor_genitalia</li>
+        <li>rjw_genes_drone</li>
         <li>rjw_genes_zealous_loyalty</li>
-        <li>Fertile</li>
-        <li>Skin_DeepRed</li>		
     </genes>
   </XenotypeDef>
   
@@ -34,11 +81,20 @@
     <label>Test Breeder</label>
     <iconPath>Genes/Icons/Xenotypes/Xenotype-Breeder</iconPath>
     <genes>			
-        <li>rjw_genes_drone</li>
-        <li>rjw_genes_female_only</li>
-        <li>rjw_genes_zealous_loyalty</li>
-        <li>Fertile</li>
-        <li>Skin_DeepRed</li>		
+      <li MayRequire="sarg.alphagenes" >AG_Spinnerets</li>
+			<li MayRequire="sarg.alphagenes" >AG_InsectBlood</li>
+			<li MayRequire="sarg.alphagenes" >AG_InsectJellyProduction</li>
+			<li>FireTerror</li>
+			<li>VerySleepy</li>
+			<li>rjw_genes_bisexual</li>
+			<li MayRequire="sarg.alphagenes" >AG_BeeMandibles</li>
+			<li>Skin_DeepRed</li>
+			<li>AptitudeStrong_Social</li>
+			<li>rjw_genes_ovipositor_genitalia</li>
+			<li>rjw_genes_unbreakable</li>
+			<li>rjw_genes_drone</li>
+			<li>rjw_genes_zealous_loyalty</li>
+			<li>rjw_genes_insectincubator</li>	
     </genes>
   </XenotypeDef>
   
