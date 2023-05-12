@@ -4,10 +4,15 @@
   <!-- Alpha Genes ID: sarg.alphagenes -->
 
   <XenotypeDef>
-    <defName>rjw_genes_test_queen_xenotype</defName>
-    <label>Test Queen</label>
+    <defName>rjw_genes_halamyr_queen_xenotype</defName>
+    <label>Halamyr Queen</label>
     <iconPath>Genes/Icons/Xenotypes/Xenotype-Queen</iconPath>
+    <inheritable>false</inheritable>
+    <canGenerateAsCombatant>false</canGenerateAsCombatant>
 
+    <description>The Halamyr are a race of insect-xenotypes living in a caste-system. On top of the caste, the queens are the centerpiece of any hive. They are the only Halamyr that can produce drones, or mass-produce workers. A hive can virtually not live without a queen - without their royalty the drones and workers are irritated and receive sever penalties. Queens are very fragile and need to be kept safe and in best conditions. </description>
+    <descriptionShort>The fragile queens of the Halamyr are the center of the hives reproduction. Multiple queens, or and absence of a queen, can cause to fall the best hive into disarray real quick.</descriptionShort>
+    
     <genes>			
         <li MayRequire="sarg.alphagenes" >AG_LargerBodySize</li>
         <li MayRequire="sarg.alphagenes" >AG_InsectBlood</li>
@@ -41,9 +46,16 @@
   </XenotypeDef>
   
   <XenotypeDef>
-    <defName>rjw_genes_test_drone_xenotype</defName>
-    <label>Test Drone</label>
+    <defName>rjw_genes_halamyr_hiveguard_xenotype</defName>
+    <label>Halamyr Hiveguard</label>
     <iconPath>Genes/Icons/Xenotypes/Xenotype-Guard</iconPath>
+
+    <combatPowerFactor>1.5</combatPowerFactor>
+    <inheritable>false</inheritable>
+
+    <description>The Halamyr hiveguards are the bastion to protect the hive. Next to the walls, these meele specialists form the ultimate guard for the queen, for which they'd give their lifes. Their tuned bodies come with a price, crippling them for social interactions and increased hunger. </description>
+    <descriptionShort>Frontline of the Halamyr, guards of the hive, specialised in meele combat. Heavily handicapped without a queen.</descriptionShort>
+    
     <genes>			
         <li MayRequire="sarg.alphagenes" >AG_InsectBlood</li>
         <li MayRequire="sarg.alphagenes" >AG_EfficientMandibles</li>
@@ -77,9 +89,16 @@
   </XenotypeDef>
   
   <XenotypeDef>
-    <defName>rjw_genes_test_breeder_xenotype</defName>
-    <label>Test Breeder</label>
+    <defName>rjw_genes_halamyr_breeder_xenotype</defName>
+    <label>Halamyr Breeder</label>
     <iconPath>Genes/Icons/Xenotypes/Xenotype-Breeder</iconPath>
+    <inheritable>false</inheritable>
+    <canGenerateAsCombatant>false</canGenerateAsCombatant>
+    <combatPowerFactor>0.8</combatPowerFactor>
+
+    <description>The Halamyr breeders are the last backbone of the hive. Their special genes allow them to carry more eggs and hatch them faster, enabling a steady output of hivelings. To support their position in the hive, breeders spend most of their life in the queens cocoon, a task which they gladly accept.</description>
+    <descriptionShort>Made for incubating Halamyr eggs, breeders spend most of their life in the queens cocoon.</descriptionShort>
+
     <genes>			
       <li MayRequire="sarg.alphagenes" >AG_Spinnerets</li>
 			<li MayRequire="sarg.alphagenes" >AG_InsectBlood</li>

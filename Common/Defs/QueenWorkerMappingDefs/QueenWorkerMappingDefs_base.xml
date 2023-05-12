@@ -21,8 +21,8 @@
 	</RJW_Genes.QueenWorkerMappingDef>
 
 	<RJW_Genes.QueenWorkerMappingDef>
-        <defName>rjw_genes_test_queen_worker_mapping</defName>
-        <queenXenotype>rjw_genes_test_queen_xenotype</queenXenotype>
+        <defName>rjw_genes_halamyr_queen_worker_mapping</defName>
+        <queenXenotype>rjw_genes_halamyr_queen_xenotype</queenXenotype>
 		<workerGenes>
 			<li MayRequire="sarg.alphagenes" >AG_SmallerBodySize</li>
 			<li>StrongStomach</li>
