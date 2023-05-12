@@ -10,7 +10,7 @@
     <inheritable>false</inheritable>
     <canGenerateAsCombatant>false</canGenerateAsCombatant>
 
-    <description>The Halamyr are a race of insect-xenotypes living in a caste-system. On top of the caste, the queens are the centerpiece of any hive. They are the only Halamyr that can produce drones, or mass-produce workers. A hive can virtually not live without a queen - without their royalty the drones and workers are irritated and receive sever penalties. Queens are very fragile and need to be kept safe and in best conditions. </description>
+    <description>The Halamyr are a race of insect-xenotypes living in a caste-system. On top of the caste, the queens are the centerpiece of any hive. They are the only Halamyr that can produce drones, or mass-produce workers. A hive can virtually not live without a queen - without their royalty the drones and workers are irritated and receive sever penalties. Queens are very fragile and need to be kept safe and in best conditions.</description>
     <descriptionShort>The fragile queens of the Halamyr are the center of the hives reproduction. Multiple queens, or and absence of a queen, can cause to fall the best hive into disarray real quick.</descriptionShort>
     
     <genes>			
@@ -37,6 +37,7 @@
         <li>AptitudeTerrible_Melee</li>
         <li>AptitudeRemarkable_Social</li>
         <li>AptitudeRemarkable_Sex</li>
+        <li>rjw_genes_female_only</li>
         <li>rjw_genes_ovipositor_genitalia</li>
         <li>rjw_genes_aphrodisiac_pheromones</li>
         <li>rjw_genes_queen</li>
@@ -53,7 +54,7 @@
     <combatPowerFactor>1.5</combatPowerFactor>
     <inheritable>false</inheritable>
 
-    <description>The Halamyr hiveguards are the bastion to protect the hive. Next to the walls, these meele specialists form the ultimate guard for the queen, for which they'd give their lifes. Their tuned bodies come with a price, crippling them for social interactions and increased hunger. </description>
+    <description>The Halamyr hiveguards are the bastion to protect the hive. Next to the walls, these meele specialists form the ultimate guard for the queen, for which they'd give their lifes. Their tuned bodies come with a price, crippling them for social interactions and increased hunger.</description>
     <descriptionShort>Frontline of the Halamyr, guards of the hive, specialised in meele combat. Heavily handicapped without a queen.</descriptionShort>
     
     <genes>			
@@ -112,6 +113,7 @@
 			<li>rjw_genes_ovipositor_genitalia</li>
 			<li>rjw_genes_unbreakable</li>
 			<li>rjw_genes_drone</li>
+      <li>rjw_genes_female_only</li>
 			<li>rjw_genes_zealous_loyalty</li>
 			<li>rjw_genes_insectincubator</li>	
     </genes>
