@@ -9,11 +9,13 @@
 - Many new icons 
 - Custom background icons when Vanilla-Expanded-Framework is loaded
 - Sexual Age Drainer & Youth Fountain now change age as configured in XML
+- Draft for a Hive-Start Scenario
 
 **Internal:**
 
 - Renamed abilities to have _ability_ in their name, to not exactly match the gene-defnames.
 - Moved Insect-Incubator & Insect-Breeder to hive category and folders (from breeding)
+- Some exclusion-tags for Alpha Genes
 
 **Fixes:**
 
@@ -40,6 +42,16 @@ In general, the logic is the following:
 
 I am not sure if I want to have a specific mapping defining that queen can only mate with certain drones, let me know how you feel about it. 
 *Queens can be male*. I just used the female-term, but implementation is gender-neutral. 
+
+**On Alpha Genes** 
+
+Alpha genes might have colliding features, but I need some reports to find out about it. 
+I disabled the specific gender and the oviparious reproduction (when you have rjw-ovipos). 
+I recommend using alpha genes for the Hive-Playthroughs, as otherwise the Halamyr look a bit ... boring? 
+But i don't want to add a bunch of cosmetic genes on top of things. 
+
+*And what the fuck is a halamyr?* Well I had to name my little ants somehow. But I didn't want to call them `myr` as I maybe want to make some TiTs xenotypes separately.
+And I am aware that the TiTs-Myr work different than the things I built now. 
 
 # 1.1.4
 

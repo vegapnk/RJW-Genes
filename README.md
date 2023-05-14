@@ -12,6 +12,7 @@ This mod adds genes related and based on RJW to Rimworld.
 - Mech Breeding / Insect Breeding Additions 
 - Human-Animal Gene Inheritance merged from [Shabakur](https://github.com/Shabakur/RJW_Animal_Gene_Inheritance)
 - Succubi, Incubi & Cumazones that utilize Fertilin, similar to Hemogen
+- Insect-Caste Mechanics, with Queens, Drones and Workers and a conditional reproduction
 
 See [planned things](TODOS.md) and feel free to contribute. 
 With the Human-Animal-Gene Inheritance we have a lot of XML that you can contribute! 
@@ -39,3 +40,4 @@ Please load this after any mod adding genes, and after the used RJW-Mods (Licent
 1. Should not be used with the original RJW_Animal_Gene_Inheritance anymore. 
 2. There was an issue with other "Male-Only / Female-Only" Mods --- for which we provide our own Genes now. 
 3. CAI5000 will not crash, but will make *Seduce*-Ability fail. I think same goes for Combat Extended.
+4. Alpha Genes "Female / Male Only" Genes might overwrite later Genitalia-Changes and should be avoided in combination with RJW-Genes Features.

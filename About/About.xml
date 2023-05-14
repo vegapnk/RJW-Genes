@@ -9,6 +9,10 @@
 	<url>https://steamcommunity.com/id/Vegapnk/myworkshopfiles/?appid=294100</url>
 	<modDependencies>
 		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+		<li>
 			<packageId>rim.job.world</packageId>
 			<displayName>RimJobWorld</displayName>
 			<downloadUrl>https://www.loverslab.com/files/file/7257-rimjobworld/</downloadUrl>
@@ -27,11 +31,16 @@
 		</li>
 	</modDependencies>
 	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
 		<li>rim.job.world</li>
 		<li>brrainz.harmony</li>
-		<!--
-		<li>UnlimitedHugs.HugsLib</li>
-		-->
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>sarg.alphaanimals</li>
+
+		<li>Sl4vP0weR.DominantGene</li>
 	</loadAfter>
 
 </ModMetaData>
