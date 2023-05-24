@@ -80,12 +80,12 @@
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Silver</thingDef>
-          <count>200</count>
+          <count>400</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Pemmican</thingDef>
-          <count>150</count>
+          <count>250</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
@@ -102,15 +102,11 @@
           <thingDef>MeleeWeapon_Club</thingDef>
           <stuff>WoodLog</stuff>
         </li>
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
-          <thingDef>MeleeWeapon_Knife</thingDef>
-          <stuff>Jade</stuff>
-        </li>
 
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Pila</thingDef>
+          <thingDef>Throne</thingDef>
+          <stuff>Jade</stuff>
         </li>
         <li Class="ScenPart_StartingAnimal">
           <def>StartingAnimal</def>
@@ -140,6 +136,11 @@
           <def>ScatterThingsNearPlayerStart</def>
           <thingDef>Jade</thingDef>
           <count>100</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>200</count>
         </li>
 
         <!-- Game start dialog -->

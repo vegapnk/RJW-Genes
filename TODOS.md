@@ -20,11 +20,9 @@ Any help is very appreciated, even if it is just pointing me to existing similar
 
 **Cum-Drugs** eating cum has an effect similar to Go-Juice (including (separate?) addiction)
 
-**Self-Fertilizing Eggs** Pawns fertilize eggs that are put inside them (with themselves as a parent)
-
 **Death-Rest** until the pawn is cumflated. 
 
-**Alpha / Beta Genes** that you can only have one alpha, and the alpha makes mostly beta children (1:10). This might fit with the xenotypes below. As this is an RJW mod, this should also somewhat affect sex (e.g. betas cannot impregnate betas). 
+**STD Immunity** & maybe a potential to be carrier, but not suffer effects. 
 
 ## Planned Xenotypes 
 
@@ -39,17 +37,6 @@ Any help is very appreciated, even if it is just pointing me to existing similar
 
 Can't help but think about Rexxar Porn now I am a bad person. 
 
-**Hive Mother:**
-
-- [X] Spawn the small scarabs 
-- [X] Fertilise Eggs inside her 
-- [X] Produce cocoons
-- [] Maybe: Insert "dropped" Insect eggs 
-- [] Very fragile, no use except breeding
-- [] Maybe: can only eat insect jelly
-- [X] Should look like a nice green-yellow alien as we all know fuckable insects would look like. 
-- [X] There can only be one Hive Mother, some penalties if there are others. This could be implement with an "Alpha Gene" that gives heavy penalties when other Alpha exists. 
-
 ## Genes with Abilities and more Effects 
 
 There were some suggestions on the Discord I saved them somewhere else. I am far away from making that work, but to have them here: 
@@ -63,3 +50,15 @@ There were some suggestions on the Discord I saved them somewhere else. I am far
 - Streamline Filenames / Names to either be LifeForce or Fertilin (e.g. `Hediffs_Fertilin.xml` but `Pawnkind_LifeForce.xml`). I think most things are called LifeForce. 
 - Similar cleanup for the patches, and make a note what to find where in the patches
 - Change Project structure to the 1.3, 1.4 Structure of other mods
+
+## Split: 
+
+I plan to split this mod. 
+Namely, I want to make a 
+
+1. base-mod (with genitalia and size genes, anything alternating all base stats)
+2. bonus-mod, with Fertilin and other complex genes
+3. xenotype-mod (only xenotypes + scenarios)
+4. animal genes inheritance (Yes, bit of a meme that it was separate mod earlier)
+
+I first want to make a bit more content, and then I hope there will be a "breaking change" in RJW so I can also do a breaking change on top of that. 

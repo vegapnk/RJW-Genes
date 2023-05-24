@@ -1,5 +1,10 @@
 # 1.2
 
+**Since beta-1**:
+
+- Fix of icon-names (#36)
+- Changes to the scenario (more building items, throne for start). Wealth is now at 12k, which is the same as crashlanded and lost tribe.
+
 **Changes:**
 
 - Cocoon Weaver Gene
@@ -50,8 +55,8 @@ I disabled the specific gender and the oviparious reproduction (when you have rj
 I recommend using alpha genes for the Hive-Playthroughs, as otherwise the Halamyr look a bit ... boring? 
 But i don't want to add a bunch of cosmetic genes on top of things. 
 
-*And what the fuck is a halamyr?* Well I had to name my little ants somehow. But I didn't want to call them `myr` as I maybe want to make some TiTs xenotypes separately.
-And I am aware that the TiTs-Myr work different than the things I built now. 
+*And what the fuck is a halamyr?* Well I had to name my little ants somehow. But I didn't want to call them `myr` as I maybe want to make some [TiTs](https://www.fenoxo.com/play-games/) xenotypes separately.
+And I am aware that the TiTs-Myr work different than the things I made now. 
 
 # 1.1.4
 
