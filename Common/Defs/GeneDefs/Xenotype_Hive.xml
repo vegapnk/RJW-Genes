@@ -97,25 +97,27 @@
     <canGenerateAsCombatant>false</canGenerateAsCombatant>
     <combatPowerFactor>0.8</combatPowerFactor>
 
-    <description>The Halamyr breeders are the last backbone of the hive. Their special genes allow them to carry more eggs and hatch them faster, enabling a steady output of hivelings. To support their position in the hive, breeders spend most of their life in the queens cocoon, a task which they gladly accept.</description>
+    <description>The Halamyr breeders are the backbone of the hive. Their special genes allow them to carry more eggs and hatch them faster, enabling a steady output of hivelings. To support their position in the hive, breeders spend most of their life in the queens cocoon, a task which they gladly accept.</description>
     <descriptionShort>Made for incubating Halamyr eggs, breeders spend most of their life in the queens cocoon.</descriptionShort>
 
     <genes>			
       <li MayRequire="sarg.alphagenes" >AG_Spinnerets</li>
 			<li MayRequire="sarg.alphagenes" >AG_InsectBlood</li>
 			<li MayRequire="sarg.alphagenes" >AG_InsectJellyProduction</li>
+			<li MayRequire="sarg.alphagenes" >AG_FormicAntennas</li>
+      <li>Fertile</li>
+			<li MayRequire="sarg.alphagenes" >AG_FastGestation</li>
 			<li>FireTerror</li>
 			<li>VerySleepy</li>
 			<li>rjw_genes_bisexual</li>
-			<li MayRequire="sarg.alphagenes" >AG_BeeMandibles</li>
 			<li>Skin_DeepRed</li>
 			<li>AptitudeStrong_Social</li>
-			<li>rjw_genes_ovipositor_genitalia</li>
-			<li>rjw_genes_unbreakable</li>
 			<li>rjw_genes_drone</li>
       <li>rjw_genes_female_only</li>
 			<li>rjw_genes_zealous_loyalty</li>
 			<li>rjw_genes_insectincubator</li>	
+			<li>rjw_genes_zoophile</li>	
+      <li>rjw_genes_no_vagina</li>
     </genes>
   </XenotypeDef>
   

@@ -47,7 +47,7 @@
 
             <li>
               <xenotype>Baseliner</xenotype>
-              <count>1</count>
+              <count>2</count>
             </li>
           </xenotypeCounts>
         </li>
@@ -95,7 +95,7 @@
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>MedicineHerbal</thingDef>
-          <count>20</count>
+          <count>30</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
@@ -103,11 +103,6 @@
           <stuff>WoodLog</stuff>
         </li>
 
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
-          <thingDef>Throne</thingDef>
-          <stuff>Jade</stuff>
-        </li>
         <li Class="ScenPart_StartingAnimal">
           <def>StartingAnimal</def>
           <animalKind>Spelopede</animalKind>
