@@ -15,6 +15,8 @@ namespace RJW_Genes
     /// 1. Is it fertilized ? => tick it down "extra".
     /// 2. Is it not fertilized? => fertilize it with the Incubator as parent
     /// 
+    /// To save performance, this gene fires (default) every 0.5h, which also means a slight delay until fertilization happens. 
+    /// 
     /// Important: The other half of the behavior for the gene (more egg-capacity) is in `Patch_InsectINcubator_PregnancyHelper`.
     /// </summary>
     public class Gene_InsectIncubator : Gene
@@ -42,7 +44,8 @@ namespace RJW_Genes
                         egg.Fertilize(pawn);
                         if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"Gene_InsectIncubator: fertilized egg {egg} in {pawn}");
                     }
-                    else if (egg.fertilized)
+                    // DevNote: There is an issue with Eggs reaching too much gestation progress (>100%), which causes DownStream bugs. To avoid this, there are some extra checks in place.  
+                    else if (egg.fertilized && egg.GestationProgress <= .93)
                     {
                         egg.lastTick += TICK_INTERVAL;
                     }
