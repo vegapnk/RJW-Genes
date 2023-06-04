@@ -224,5 +224,6 @@ namespace RJW_Genes
             return offspringChanceDefs.FirstOrFallback(t => t.queenXenotype == queenDef.defName, LookupDefaultHiveInheritanceChances());
         }
 
+
     }
 }
