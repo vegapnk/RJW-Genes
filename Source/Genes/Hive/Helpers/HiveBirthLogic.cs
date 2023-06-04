@@ -50,8 +50,7 @@ namespace RJW_Genes
                 {
                     pawn.genes.SetXenotype(queenDef);
                     if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"{pawn} born as a new queen with xenotype {queenDef.defName} ({hiveOffspringChanceDef.queenChance * 100}% chance,rolled {roll})");
-                    // TODO: Make a letter ? Letter doesn't show :( 
-                    Find.LetterStack.ReceiveLetter("New Queen", "A new Queen was born! Make sure to adress inheritance before the new queen reaches adolesence.", LetterDefOf.BabyBirth, (LookTargets)(Thing)pawn);
+                    MakeQueenBornLetter(pawn);
                 }
                 // Case 2.b: New Drone born
                 else if (roll < hiveOffspringChanceDef.droneChance + hiveOffspringChanceDef.queenChance)
@@ -115,6 +114,16 @@ namespace RJW_Genes
             return null;
         }
 
+        public static void MakeQueenBornLetter(Pawn bornQueen)
+        {
+            if (bornQueen == null) return;
+
+            var letter= LetterMaker.MakeLetter(
+                "New Queen", "A new Queen was born! Make sure to adress inheritance before the new queen reaches adolesence.", LetterDefOf.NeutralEvent, bornQueen
+                );
+            //letter.Start();
+            Find.LetterStack.ReceiveLetter(letter); 
+        }
 
         /// <summary>
         /// Looks up if there is a Xenotype with Queen-Gene for the pawns parents. 
