@@ -1,7 +1,9 @@
 ﻿using RimWorld;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
@@ -43,7 +45,8 @@ namespace RJW_Genes
                 {
                     pawn.genes.SetXenotype(queenDef);
                     if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"{pawn} born as a new queen with xenotype {queenDef.defName} ({hiveOffspringChanceDef.queenChance * 100}% chance,rolled {roll})");
-                    // TODO: Make a letter ? 
+                    // TODO: Make a letter ? Letter doesn't show :( 
+                    Find.LetterStack.ReceiveLetter("New Queen", "A new Queen was born! Make sure to adress inheritance before the new queen reaches adolesence.", LetterDefOf.BabyBirth, (LookTargets)(Thing)pawn);
                 }
                 // Case 2.b: New Drone born
                 else if (roll < hiveOffspringChanceDef.droneChance + hiveOffspringChanceDef.queenChance)
@@ -82,6 +85,7 @@ namespace RJW_Genes
             foreach (var gene in genes)
                 pawnTobeWorker.genes.AddGene(gene, false);
 
+            pawnTobeWorker.genes.xenotypeName = "Worker";
         }
 
         /// <summary>
