@@ -33,6 +33,9 @@ namespace RJW_Genes
             {
                 List<Hediff_InsectEgg> eggs = new List<Hediff_InsectEgg>();
                 pawn.health.hediffSet.GetHediffs<Hediff_InsectEgg>(ref eggs);
+                // This part works as intended and shows Non-Human Eggs too
+                //if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"Gene_InsectIncubator: Found {eggs.Count} Hediff_InsectEgg in {pawn}");
+
 
                 foreach (Hediff_InsectEgg egg in eggs)
                 {
@@ -42,7 +45,17 @@ namespace RJW_Genes
 
                     if (!egg.fertilized && egg.implanter != null) { 
                         egg.Fertilize(pawn);
-                        if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"Gene_InsectIncubator: fertilized egg {egg} in {pawn}");
+                        // DevNote Issue 38: Sometimes Eggs are not fertilized here, because the normal Fertilize Function is called which has an upper Limit on Gestation.
+                        // I will not do anything about it here, maybe upstream, but I print here. 
+                        if (RJW_Genes_Settings.rjw_genes_detailed_debug)
+                        {
+                            if (egg.fertilized)
+                                ModLog.Message($"Gene_InsectIncubator: fertilized egg {egg} in {pawn}");
+                            else if (egg.GestationProgress > 0.5)
+                                ModLog.Message($"Gene_InsectIncubator: Failed to fertilize {egg} in {pawn} due to high gestation progress");
+                            else
+                                ModLog.Message($"Gene_InsectIncubator: failed to fertiliz egg {egg} in {pawn}");
+                        }
                     }
                     // DevNote: There is an issue with Eggs reaching too much gestation progress (>100%), which causes DownStream bugs. To avoid this, there are some extra checks in place.  
                     else if (egg.fertilized && egg.GestationProgress <= .93)
