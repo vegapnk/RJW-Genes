@@ -17,23 +17,29 @@ namespace RJW_Genes
 
         public static void OffsetLifeForce(IGeneResourceDrain drain, float offset)
         {                
-            float old_value = drain.Resource.Value;
-            drain.Resource.Value += offset;
-            PostOffSetLifeForce(drain, old_value);     
+            if (drain.Resource != null && drain.Resource.Active) {  
+                float old_value = drain.Resource.Value;
+                drain.Resource.Value += offset;
+                PostOffSetLifeForce(drain, old_value);
+            }
         }
 
         public static void PostOffSetLifeForce(IGeneResourceDrain drain, float old_value)
         {
-            if (old_value > 0.2f && drain.Resource.Value <= 0.2f)
-            {                
-                //TODO: Mood debuff
-            }
-            else if (old_value > 0f && drain.Resource.Value <= 0f)
+
+            if (drain.Resource != null && drain.Resource.Active)
             {
-                Pawn pawn = drain.Pawn;
-                if (!drain.Pawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_fertilin_craving))
+                if (old_value > 0.2f && drain.Resource.Value <= 0.2f)
                 {
-                    drain.Pawn.health.AddHediff(HediffDefOf.rjw_genes_fertilin_craving);
+                    //TODO: Mood debuff
+                }
+                else if (old_value > 0f && drain.Resource.Value <= 0f)
+                {
+                    Pawn pawn = drain.Pawn;
+                    if (!drain.Pawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_fertilin_craving))
+                    {
+                        drain.Pawn.health.AddHediff(HediffDefOf.rjw_genes_fertilin_craving);
+                    }
                 }
             }
         }
