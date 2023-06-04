@@ -10,6 +10,11 @@ using Verse;
 
 namespace RJW_Genes
 {
+    /// <summary>
+    /// DevNote: Issue #37 came along because I checked for getMother() and getFather(), but it can happen that a pawn has two mothers. 
+    /// They are called Mother if they have a ParentRelation and are female.
+    /// New behaviour iterates over all parents and returns the first queen/drone or null.
+    /// </summary>
     public class HiveBirthLogic
     {
         /// <summary>
@@ -100,13 +105,12 @@ namespace RJW_Genes
             if (pawn == null)
                 return null;
 
-            var motherXenotype = HiveUtility.TryGetDroneXenotype(pawn.GetMother());
-            var fatherXenotype = HiveUtility.TryGetDroneXenotype(pawn.GetFather());
-
-            if (motherXenotype != null)
-                return motherXenotype;
-            if (fatherXenotype != null)
-                return fatherXenotype;
+            List<DirectPawnRelation> parentRelations = pawn.relations.DirectRelations.FindAll(rel => rel.def.Equals(PawnRelationDefOf.Parent));
+            foreach (DirectPawnRelation parent in parentRelations)
+            {
+                XenotypeDef xenotype = HiveUtility.TryGetDroneXenotype(parent.otherPawn);
+                if (xenotype != null) return xenotype;
+            }
 
             return null;
         }
@@ -115,7 +119,7 @@ namespace RJW_Genes
         /// <summary>
         /// Looks up if there is a Xenotype with Queen-Gene for the pawns parents. 
         /// This is to account that maybe father or mother are the queen (instead of hardcoding things for father).
-        /// If both are queens, the mothers is returned.
+        /// If both are queens, the first is returned.
         /// </summary>
         /// <param name="pawn">The pawn for whichs parent the xenotypes is looked up.</param>
         /// <returns>The Queen-Xenotype of a parent or null. If both are queens, mothers are preferred.</returns>
@@ -124,13 +128,12 @@ namespace RJW_Genes
             if (pawn == null)
                 return null;
 
-            var motherXenotype = HiveUtility.TryGetQueenXenotype(pawn.GetMother());
-            var fatherXenotype = HiveUtility.TryGetQueenXenotype(pawn.GetFather());
-
-            if (motherXenotype != null)
-                return motherXenotype;
-            if (fatherXenotype != null)
-                return fatherXenotype;
+            List<DirectPawnRelation> parentRelations = pawn.relations.DirectRelations.FindAll(rel => rel.def.Equals(PawnRelationDefOf.Parent));
+            foreach (var parent in parentRelations)
+            {
+                XenotypeDef xenotype = HiveUtility.TryGetQueenXenotype(parent.otherPawn);
+                if (xenotype != null) return xenotype;
+            }
 
             return null;
         }
