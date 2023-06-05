@@ -141,6 +141,7 @@
     <Compile Include="Genes\Patch_AddNotifyOnGeneration.cs" />
     <Compile Include="Genes\Special\AgeTransferExtension.cs" />
     <Compile Include="Genes\Special\Patch_AgeDrain.cs" />
+    <Compile Include="Genes\Special\Patch_OrgasmMytosis.cs" />
     <Compile Include="Interactions\SuccubusTailjob\CompAbility_SexInteractionRequirements.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_PussyHeal.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompProperties_AbilityLifeForceCost.cs" />

@@ -67,4 +67,15 @@
         <biostatMet>1</biostatMet>
     </GeneDef>
     
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_sexual_mytosis</defName>
+        <label>Orgasmic Mytosis</label>
+		<!-- <geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass> -->
+        <description>Carriers of this gene grow more unstable with ongoing multiple orgasms - climaxing in a process of mytosis. This will result in an (biologically) identical pawn and both twins are set in a regenerative state. Also, the pawn can have multiple orgasms: In a state of higher unstableness, they come quicker.</description>
+        <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
+        <displayOrderInCategory>5</displayOrderInCategory>
+        <biostatCpx>5</biostatCpx>
+        <biostatMet>-7</biostatMet>
+    </GeneDef>    
+
 </Defs>

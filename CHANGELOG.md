@@ -4,6 +4,8 @@
 
 - Fix of icon-names (#36)
 - Changes to the scenario (more building items, throne for start). Wealth is now at 12k, which is the same as crashlanded and lost tribe.
+- Added the Orgasmic Mytosis Draft
+- Many touches on the Halamyr Hive Logic and Fertilizitation (#37,#38)
 
 **Changes:**
 
@@ -15,6 +17,7 @@
 - Custom background icons when Vanilla-Expanded-Framework is loaded
 - Sexual Age Drainer & Youth Fountain now change age as configured in XML
 - Draft for a Hive-Start Scenario
+- Added Orgasmic Mytosis Gene: On Multiple Orgasms, spawn an identical copy of a pawn. Items and Implants are not copied. 
 
 **Internal:**
 

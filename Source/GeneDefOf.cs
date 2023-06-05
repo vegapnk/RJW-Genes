@@ -76,9 +76,10 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_youth_fountain;
 		public static readonly GeneDef rjw_genes_sex_age_drain;
 		public static readonly GeneDef rjw_genes_aphrodisiac_pheromones;
+		public static readonly GeneDef rjw_genes_sexual_mytosis;
 
-		// LifeForce
-		public static readonly GeneDef rjw_genes_lifeforce;
+        // LifeForce
+        public static readonly GeneDef rjw_genes_lifeforce;
 		public static readonly GeneDef rjw_genes_pussyhealing;
 		public static readonly GeneDef rjw_genes_lifeforce_drain;
 		public static readonly GeneDef rjw_genes_cum_eater;

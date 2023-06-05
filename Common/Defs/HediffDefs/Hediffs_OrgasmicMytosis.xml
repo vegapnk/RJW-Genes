@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <defName>rjw_genes_orgasmic_mytosis_hediff</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Orgasmic Instability</label>
+    <description>Xenotypes with this Gene grow more unstable on orgasm - upon reaching critical level they will initate a process of mytosis.</description>
+    <defaultLabelColor>(240,200,110)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <tendable>false</tendable>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.9</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>stable</label>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.05</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.08</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>agitated</label>
+        <minSeverity>0.4</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.15</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.15</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>unstable</label>
+        <minSeverity>0.7</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>+0.2</offset>
+          </li>
+        </capMods>
+      </li>
+      
+      <li>
+        <label>critical</label>
+        <minSeverity>0.9</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.25</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.25</offset>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>+0.5</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>rjw_genes_mytosis_shock_hediff</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Mytosis Shock</label>
+    <description>Recently underwent (successful) mytosis. As this is a taxing process, some time for regeneration is required. While regenerating, no new mytosis can be started.</description>
+    <defaultLabelColor>(240,200,110)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>true</isBad>
+    <tendable>false</tendable>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.20</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>wearing off</label>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.25</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>fresh</label>
+        <minSeverity>0.6</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.50</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.7</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+
+
+</Defs>
+
