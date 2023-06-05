@@ -30,9 +30,10 @@ namespace RJW_Genes
         /// </summary>
         /// <param name="pawn">The pawn born, that maybe becomes a hive-xenotype.</param>
         /// <param name="hasDroneParent">whether there was a drone parent involved</param>
-        public static void ManageHiveBirth(Pawn pawn, bool hasDroneParent = false)
+        public static void ManageHiveBirth(Pawn pawn, bool hasDroneParent = false, XenotypeDef fallbackQueenDef = null, XenotypeDef fallbackDroneDef = null)
         {
             XenotypeDef queenDef = TryFindParentQueenXenotype(pawn);
+            if (queenDef == null) queenDef = fallbackQueenDef;
             HiveOffspringChanceDef hiveOffspringChanceDef = HiveUtility.LookupHiveInheritanceChances(queenDef);
 
             // Case 1: Mother is Queen, Father is something else. Produce Worker.
@@ -56,6 +57,7 @@ namespace RJW_Genes
                 else if (roll < hiveOffspringChanceDef.droneChance + hiveOffspringChanceDef.queenChance)
                 {
                     XenotypeDef droneDef = TryFindParentDroneXenotype(pawn);
+                    if (droneDef == null) droneDef = fallbackDroneDef;
                     pawn.genes.SetXenotype(droneDef);
                     if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"{pawn} born as a new drone with xenotype {droneDef.defName} ({(hiveOffspringChanceDef.droneChance + hiveOffspringChanceDef.queenChance) * 100}% chance,rolled {roll}))");
                 }
