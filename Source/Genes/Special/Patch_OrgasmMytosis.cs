@@ -17,7 +17,7 @@ namespace RJW_Genes
 	public static class Patch_OrgasmMytosis
 	{
 
-		private const float SEVERITY_INCREASE_PER_ORGASM = 0.10f;
+		private const float SEVERITY_INCREASE_PER_ORGASM = 0.075f;
 
 		public static void Postfix(JobDriver_Sex __instance, ref int __result)
 		{
@@ -41,8 +41,8 @@ namespace RJW_Genes
                 }
                 else
 				{
-                    float reduction = Math.Max(1.0f - mytosisHediff.Severity, 0.1f);
-                    __result = (int)(reduction * __result);
+                    float orgasm_time_reduction = Math.Max(1.0f - mytosisHediff.Severity, 0.1f);
+                    __result = (int)(orgasm_time_reduction * __result);
                 }
 
 			}
@@ -75,7 +75,7 @@ namespace RJW_Genes
 
 		public static Pawn Multiply(Pawn toMultiply)
 		{
-			ModLog.Message("Hitting Multiply of Mytosis Pawn!");
+			if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message("Hitting Multiply of Mytosis Pawn!");
 
             PawnGenerationRequest request = new PawnGenerationRequest(
                 kind: toMultiply.kindDef,
@@ -119,9 +119,7 @@ namespace RJW_Genes
             copy.equipment.DestroyAllEquipment();
             copy.apparel.DestroyAll();
 
-            //TODO:
-            // Birthmother doesn't show as relation (See log below)
-            // It is not blue :(
+            //TODO: Make a letter on birth!
 
 
             PawnUtility.TrySpawnHatchedOrBornPawn(copy, toMultiply);
@@ -132,7 +130,9 @@ namespace RJW_Genes
                     copy.Position = copy.Position + new IntVec3(0, 0, 1).RotatedBy(toMultiply.CurrentBed().Rotation);
                 }
 
-            copy.relations.AddDirectRelation(PawnRelationDefOf.ParentBirth, toMultiply);
+
+            // Birthmother doesn't show as relation (See log below)
+            // copy.relations.AddDirectRelation(PawnRelationDefOf.ParentBirth, toMultiply);
 
 
             copy.style = CopyStyleTracker(copy, toMultiply.style);
@@ -181,7 +181,7 @@ namespace RJW_Genes
             var skin = tracker.GetMelaninGene();
             var hair = tracker.GetHairColorGene();
 
-            ModLog.Message($"{toCopyTo} had Skin {skin.defName} and {hair.defName} as colour-genes");
+            //ModLog.Message($"{toCopyTo} had Skin {skin.defName} and {hair.defName} as colour-genes");
 
 
             return tracker;

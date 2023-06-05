@@ -75,7 +75,7 @@
         <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
         <displayOrderInCategory>5</displayOrderInCategory>
         <biostatCpx>5</biostatCpx>
-        <biostatMet>-7</biostatMet>
+        <biostatMet>-5</biostatMet>
     </GeneDef>    
 
 </Defs>
