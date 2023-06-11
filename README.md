@@ -9,14 +9,16 @@ This mod adds genes related and based on RJW to Rimworld.
 - Extra Genitalia (and a Futa Attempt)
 - Most RJW Traits, Cumflation Immunity, Elasticity
 - Cum-Amount Changes, Transfer Nutrition Boosts
-- Mech Breeding / Insect Breeding Additions 
+- Mech Breeding / Insect Breeding Additions & Orgasmic Mytosis
 - Human-Animal Gene Inheritance merged from [Shabakur](https://github.com/Shabakur/RJW_Animal_Gene_Inheritance)
 - Succubi, Incubi & Cumazones that utilize Fertilin, similar to Hemogen
 - Insect-Caste Mechanics, with Queens, Drones and Workers and a conditional reproduction
+- Patches for some popular / common Xenotypes from other Mods.
 
 See [planned things](TODOS.md) and feel free to contribute. 
 With the Human-Animal-Gene Inheritance we have a lot of XML that you can contribute! 
 We have a [template](./Common/Defs/RaceGeneDefs/RaceGeneDefs_template.xml) and you can add animals and/or genes from mods there (Racegroups are base-rjw). 
+If you want to make your own Hive-Xenotypes, please see the required XMLs at [Changelog - 1.2](./CHANGELOG.md).
 
 ## Bugs? 
 

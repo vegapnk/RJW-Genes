@@ -1,11 +1,4 @@
-# 1.2
-
-**Since beta-1**:
-
-- Fix of icon-names (#36)
-- Changes to the scenario (more building items, throne for start). Wealth is now at 12k, which is the same as crashlanded and lost tribe.
-- Added the Orgasmic Mytosis Draft
-- Many touches on the Halamyr Hive Logic and Fertilizitation (#37,#38)
+# 1.2 (11-06-2023)
 
 **Changes:**
 
@@ -64,6 +57,19 @@ But i don't want to add a bunch of cosmetic genes on top of things.
 
 *And what the fuck is a halamyr?* Well I had to name my little ants somehow. But I didn't want to call them `myr` as I maybe want to make some [TiTs](https://www.fenoxo.com/play-games/) xenotypes separately.
 And I am aware that the TiTs-Myr work different than the things I made now. 
+
+
+**Changes Since beta-1**:
+
+- Fix of icon-names (#36)
+- Changes to the scenario (more building items, throne for start). Wealth is now at 12k, which is the same as crashlanded and lost tribe.
+- Added the Orgasmic Mytosis Draft
+- Many touches on the Halamyr Hive Logic and Fertilizitation (#37,#38)
+
+**Changes Since beta-2**: 
+
+- Mostly Patches and Changes to the Halamyr Defs
+- Some re-arranging and mayRequires for other mods
 
 # 1.1.4
 
