@@ -17,8 +17,9 @@
 - Custom background icons when Vanilla-Expanded-Framework is loaded
 - Sexual Age Drainer & Youth Fountain now change age as configured in XML
 - Draft for a Hive-Start Scenario
-- Added Orgasmic Mytosis Gene: On Multiple Orgasms, spawn an identical copy of a pawn. Items and Implants are not copied. 
-- New Simple Genitalia Patches for popular Xenotypes (Thanks @Pali42K)
+- Added Orgasmic Mytosis Gene: On Multiple Orgasms, spawn an identical copy of a pawn. Items and Implants are not copied.
+- Patches for Alpha Genes Xenotypes and LTS Xenotech
+- New Simple Genitalia Patches for other popular Xenotypes (Thanks @Pali42K)
 
 **Internal:**
 
