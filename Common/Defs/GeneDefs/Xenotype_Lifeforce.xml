@@ -35,7 +35,10 @@
 
         <li>rjw_genes_paralysingkiss</li>
         <li>rjw_genes_seduce</li>
+        <li MayRequire="rjw.sexperience">AptitudeRemarkable_Sex</li>
 		
+        <li MayRequire="Sl4vP0weR.DominantGene">DominantGene</li>
+        <li MayRequire="LustLicentia.RJWLabs">rjw_genes_elasticity</li>
 		    <li>rjw_genes_succubus_wings</li>
         <li>rjw_genes_succubus_tail</li>
         <li>rjw_genes_aphrodisiac_pheromones</li>
@@ -77,6 +80,10 @@
 		    <li>rjw_genes_drainer</li>
 		    <li>rjw_genes_demonic_genitalia</li>
 	
+        <li MayRequire="rjw.sexperience">AptitudeRemarkable_Sex</li>
+        
+	
+        <li MayRequire="Sl4vP0weR.DominantGene">DominantGene</li>
         <li>rjw_genes_seduce</li>
 		    <li>rjw_genes_succubus_wings</li>
         <li>rjw_genes_succubus_tail</li>

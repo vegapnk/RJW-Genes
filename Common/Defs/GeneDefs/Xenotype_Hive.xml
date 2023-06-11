@@ -36,7 +36,7 @@
         <li>AptitudeTerrible_Shooting</li>
         <li>AptitudeTerrible_Melee</li>
         <li>AptitudeRemarkable_Social</li>
-        <li>AptitudeRemarkable_Sex</li>
+        <li MayRequire="rjw.sexperience">AptitudeRemarkable_Sex</li>
         <li>rjw_genes_female_only</li>
         <li>rjw_genes_ovipositor_genitalia</li>
         <li>rjw_genes_aphrodisiac_pheromones</li>
