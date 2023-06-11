@@ -65,7 +65,7 @@
           <context>PlayerStarter</context>
           <chance>0.5</chance>
           <hediff>Malnutrition</hediff>
-          <severityRange>0.2~0.4</severityRange>
+          <severityRange>0.1~0.2</severityRange>
         </li>
         <li Class="ScenPart_SetNeedLevel">
           <def>SetNeedLevel</def>
@@ -73,19 +73,19 @@
           <context>PlayerStarter</context>
           <chance>1.0</chance>
           <need>Food</need>
-          <levelRange>0~0.1</levelRange>
+          <levelRange>0.3~0.8</levelRange>
         </li>
 
         <!-- Player starting things -->
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Silver</thingDef>
-          <count>400</count>
+          <count>300</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Pemmican</thingDef>
-          <count>250</count>
+          <count>350</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
@@ -131,6 +131,12 @@
           <def>ScatterThingsNearPlayerStart</def>
           <thingDef>Jade</thingDef>
           <count>100</count>
+        </li>
+        
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Pemmican</thingDef>
+          <count>150</count>
         </li>
         <li Class="ScenPart_ScatterThingsNearPlayerStart">
           <def>ScatterThingsNearPlayerStart</def>
