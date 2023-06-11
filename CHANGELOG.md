@@ -18,6 +18,7 @@
 - Sexual Age Drainer & Youth Fountain now change age as configured in XML
 - Draft for a Hive-Start Scenario
 - Added Orgasmic Mytosis Gene: On Multiple Orgasms, spawn an identical copy of a pawn. Items and Implants are not copied. 
+- New Genitalia Patches for common Xenotypes (Thanks @Pali42K)
 
 **Internal:**
 
