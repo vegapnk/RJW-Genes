@@ -41,3 +41,4 @@ Please load this after any mod adding genes, and after the used RJW-Mods (Licent
 2. There was an issue with other "Male-Only / Female-Only" Mods --- for which we provide our own Genes now. 
 3. CAI5000 will not crash, but will make *Seduce*-Ability fail. I think same goes for Combat Extended.
 4. Alpha Genes "Female / Male Only" Genes might overwrite later Genitalia-Changes and should be avoided in combination with RJW-Genes Features.
+5. rjw.sexperience.cumgenes removes fertilin-gain from Cum item - I hope I addressed this by adding a load order but keep me posted (Issue #41)

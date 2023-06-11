@@ -12,6 +12,7 @@
 	<loadAfter>
         <li>RimJobWorld</li>
 		<li>HugsLib</li>
+		<li>RJWSexperience_CumGenes</li>
 	</loadAfter>
 	<suggests>
         <li>RJW-LicentiaLabs</li>

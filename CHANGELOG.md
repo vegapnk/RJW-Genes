@@ -12,19 +12,20 @@
 - Cocoon Weaver Gene
 - Spawn Spelopede Gene (Can be changed to spawn megascarabs or other insects via xml)
 - Queens & Caste logic (see below)
-- Addition to InsectIncubator: Now fertilizes eggs once placed inside a host, and breeds out eggs twice as fast.
+- Addition to InsectIncubator: Now fertilizes eggs once placed inside a host, and breeds out eggs roughly twice as fast.
 - Many new icons 
 - Custom background icons when Vanilla-Expanded-Framework is loaded
 - Sexual Age Drainer & Youth Fountain now change age as configured in XML
 - Draft for a Hive-Start Scenario
 - Added Orgasmic Mytosis Gene: On Multiple Orgasms, spawn an identical copy of a pawn. Items and Implants are not copied. 
-- New Genitalia Patches for common Xenotypes (Thanks @Pali42K)
+- New Simple Genitalia Patches for popular Xenotypes (Thanks @Pali42K)
 
 **Internal:**
 
 - Renamed abilities to have _ability_ in their name, to not exactly match the gene-defnames.
 - Moved Insect-Incubator & Insect-Breeder to hive category and folders (from breeding)
 - Some exclusion-tags for Alpha Genes
+- Removed Patches for conditional Genes, and moved them to `mayRequire` in the XenotypeDefs
 
 **Fixes:**
 
@@ -48,6 +49,7 @@ In general, the logic is the following:
 - For workers, every queen can have a set of genes for their workers defined in [a special def](./Common/Defs/QueenWorkerMappingDefs/QueenWorkerMappingDefs_base.xml). These will be added as endogenes, so that pawns can still become xenotypes.
 - There is a default gene-set for workers, making dumb, sterile and servile pawns. 
 - Chances for Offsprings (Drone, Queen, Worker) is defined in an [XML-Def](./Common/Defs/HiveOffspringChanceDef/HiveOffspringChanceDefs.xml). They are set per Queen. 
+- Birthlogic should apply for normal pregnancies, and for RJW-Insect Eggs. Other Pregnancies (from mods) are not supported.
 
 I am not sure if I want to have a specific mapping defining that queen can only mate with certain drones, let me know how you feel about it. 
 *Queens can be male*. I just used the female-term, but implementation is gender-neutral. 
