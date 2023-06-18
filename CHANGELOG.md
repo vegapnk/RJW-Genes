@@ -1,3 +1,10 @@
+# 1.2.1 
+
+**Fixes**: 
+
+- Issue with RJW Changes for Orgasms, #52. Methods were renamed. 
+- Notes on the Gene Inheritance #51
+
 # 1.2 (11-06-2023)
 
 **Changes:**

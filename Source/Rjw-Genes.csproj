@@ -198,8 +198,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="RJWSexperience">
-      <HintPath>..\..\RJW-Sexperience\1.4\Assemblies\RJWSexperience.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\RJW-Sexperience-1.1.4.0\1.4\Assemblies\RJWSexperience.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="UnityEngine">

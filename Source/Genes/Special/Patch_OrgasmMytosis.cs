@@ -12,14 +12,19 @@ using Verse;
 
 namespace RJW_Genes
 {
+
+    /// <summary>
+    /// There was a big change with RJW 5.3.6 and I got a new Issue #52 documenting it. 
+    /// Basically, the reroll and orgasm logic was changed. 
+    /// </summary>
 	
-	[HarmonyPatch(typeof(JobDriver_Sex), nameof(JobDriver_Sex.Roll_Orgasm_Duration_Reset))]
+	[HarmonyPatch(typeof(JobDriver_Sex), "SetupOrgasmTicks")]
 	public static class Patch_OrgasmMytosis
 	{
 
 		private const float SEVERITY_INCREASE_PER_ORGASM = 0.075f;
 
-		public static void Postfix(JobDriver_Sex __instance, ref int __result)
+		public static void Postfix(JobDriver_Sex __instance)
 		{
 			Pawn orgasmingPawn = __instance.pawn;
             if (orgasmingPawn != null && GeneUtility.HasGeneNullCheck(orgasmingPawn, GeneDefOf.rjw_genes_sexual_mytosis) && ! orgasmingPawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_mytosis_shock_hediff))
@@ -42,7 +47,7 @@ namespace RJW_Genes
                 else
 				{
                     float orgasm_time_reduction = Math.Max(1.0f - mytosisHediff.Severity, 0.1f);
-                    __result = (int)(orgasm_time_reduction * __result);
+                    __instance.sex_ticks = (int) (__instance.sex_ticks * orgasm_time_reduction);
                 }
 
 			}

@@ -34,6 +34,7 @@ Any help is very appreciated, even if it is just pointing me to existing similar
 - [] Maybe: Boost pregnancy times of Animals
 - [] Maybe: Make it Animal-Fertilin-Dependend
 - [] Either: Can only eat meat or cannot eat meat 
+- [] Gene to prefer hookups of animals that are in a menstrual cycle
 
 Can't help but think about Rexxar Porn now I am a bad person. 
 
