@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <GeneDef Name="GeneCumAmount" Abstract="True">
-        <displayCategory>rjw_genes_cum</displayCategory>
-        <exclusionTags>
-            <li>CumAmount</li>
-        </exclusionTags>  
+      <displayCategory>rjw_genes_cum</displayCategory>
+      <exclusionTags>
+          <li>CumAmount</li>
+      </exclusionTags>  
+        
+      <modExtensions>
+        <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+          <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+          <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+        </li>
+      </modExtensions>
     </GeneDef>
 
   <!-- Penis -->
@@ -23,7 +30,7 @@
     <defName>rjw_genes_much_cum</defName>
     <label>Much Cum</label>
     <description>Males of this species produce a lot of fluid.</description>
-    <iconPath>Genes/Icons/Bonus_Cum</iconPath>
+    <iconPath>Genes/Icons/Much_Cum</iconPath>
     <geneClass>RJW_Genes.Gene_MuchCum</geneClass>
     <displayOrderInCategory>534</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
@@ -34,7 +41,7 @@
     <defName>rjw_genes_very_much_cum</defName>
     <label>Very Much Cum</label>
     <description>Males of this species produce a whole lot of fluid. They are like fountains basically.</description>
-    <iconPath>Genes/Icons/Much_Bonus_Cum</iconPath>
+    <iconPath>Genes/Icons/Very_Much_Cum</iconPath>
     <geneClass>RJW_Genes.Gene_VeryMuchCum</geneClass>
     <displayOrderInCategory>535</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
@@ -55,7 +62,14 @@
     </forcedTraits>
     <exclusionTags>
         <li>NotCumflatable</li>
-    </exclusionTags>  
+    </exclusionTags>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <GeneDef MayRequire="LustLicentia.RJWLabs">
@@ -67,7 +81,14 @@
     <displayOrderInCategory>537</displayOrderInCategory>
     <exclusionTags>
         <li>NotCumflatable</li>
-    </exclusionTags>  
+    </exclusionTags>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
   </GeneDef>
 
 
@@ -78,6 +99,13 @@
     <description>When this Xenotype transfers nutrition via cumshot, the giver will not get hungry. (Licentia Configuration for Transfer Nutrition must be enabled).</description>
     <iconPath>Genes/Icons/Generous_Donor</iconPath>
     <displayOrderInCategory>538</displayOrderInCategory>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
   </GeneDef>
 
 </Defs>

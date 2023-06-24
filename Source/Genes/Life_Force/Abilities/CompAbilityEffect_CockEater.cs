@@ -51,9 +51,9 @@ namespace RJW_Genes
                         }
 						// Increase LifeForce for Biter
 						GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(CockBiter), gained_lifeforce);
-
 						// Handle Damage for Bitten 
-						CockBittenPawn.health.RemoveHediff(part);
+						CockBittenPawn.TakeDamage(new DamageInfo(DamageDefOf.Bite, 99999f, 999f, hitPart: Genital_Helper.get_genitalsBPR(CockBittenPawn)));
+						//CockBittenPawn.health.RemoveHediff(part);
 						CockBittenPawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDefOf.rjw_genes_cock_eaten, CockBittenPawn, null);
 
 						//Only one penis at the time

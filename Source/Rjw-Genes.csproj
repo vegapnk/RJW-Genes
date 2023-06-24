@@ -30,7 +30,6 @@
     <None Include="..\Common\Patches\**" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal_Inheritance\Harmony_Init.cs" />
     <Compile Include="Animal_Inheritance\InheritanceUtility.cs" />
     <Compile Include="Animal_Inheritance\Patches\Patch_RJW_BestialityPregnancyUtility.cs" />
     <Compile Include="Animal_Inheritance\Patches\Patch_RJW_HediffInsect_Egg.cs" />
@@ -44,8 +43,14 @@
     <Compile Include="GeneDefOf.cs" />
     <Compile Include="Genes\Breeding\Gene_MechBreeder.cs" />
     <Compile Include="Genes\Breeding\PatchMechBirth.cs" />
-    <Compile Include="Genes\Breeding\Patch_EggFertilization.cs" />
-    <Compile Include="Genes\Breeding\PatchPregnancyHelper.cs" />
+    <Compile Include="Genes\ExtraGenitalia\Gene_UdderBreasts.cs" />
+    <Compile Include="Genes\Hive\Defs\HiveOffspringChanceDef.cs" />
+    <Compile Include="Genes\Hive\Genes\Gene_FerventOvipositor.cs" />
+    <Compile Include="Genes\Hive\Genes\Gene_InsectIncubator.cs" />
+    <Compile Include="Genes\Hive\Helpers\HiveBirthLogic.cs" />
+    <Compile Include="Genes\Hive\Patches\Patch_InsectEggs_BirthBaby_SetHiveGenes.cs" />
+    <Compile Include="Genes\Hive\Patches\Patch_InsectBreeder_EggFertilization.cs" />
+    <Compile Include="Genes\Hive\Patches\Patch_InsectIncubator_PregnancyHelper.cs" />
     <Compile Include="Genes\Cum\CumUtility.cs" />
     <Compile Include="Genes\Cum\Gene_VeryMuchCum.cs" />
     <Compile Include="Genes\Cum\Gene_MuchCum.cs" />
@@ -87,6 +92,23 @@
     <Compile Include="Genes\Genitalia\Gene_DemonicGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_EquineGenitalia.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaChanger.cs" />
+    <Compile Include="Genes\Hive\Abilities\CompAbilityEffect_SpawnSpelopede.cs" />
+    <Compile Include="Genes\Hive\Abilities\CompAbilityEffect_CocoonWeaver.cs" />
+    <Compile Include="Genes\Hive\Abilities\CompProperties_AbilitySpawnSpelopede.cs" />
+    <Compile Include="Genes\Hive\Abilities\CompProperties_AbilityCocoonWeaver.cs" />
+    <Compile Include="Genes\Hive\Genes\ConditionalStatAffecters\ConditionalStatAffecter_MultipleQueens.cs" />
+    <Compile Include="Genes\Hive\Genes\ConditionalStatAffecters\ConditionalStatAffecter_QueenCloseBy.cs" />
+    <Compile Include="Genes\Hive\Genes\ConditionalStatAffecters\ConditionalStatAffecter_QueenAbsent.cs" />
+    <Compile Include="Genes\Hive\Helpers\HiveUtility.cs" />
+    <Compile Include="Genes\Hive\Defs\QueenWorkerMappingDef.cs" />
+    <Compile Include="Genes\Hive\Patches\Patch_BirthOutcome_SetHiveGenes.cs" />
+    <Compile Include="Genes\Hive\Thoughts\Thoughtworker_QueenAbsent_Mood.cs" />
+    <Compile Include="Genes\Hive\Thoughts\Thoughtworker_MultipleQueens_Mood.cs" />
+    <Compile Include="Genes\Hive\Thoughts\Thoughtworker_QueenPresent_Mood.cs" />
+    <Compile Include="Genes\Hive\Thoughts\ThoughtWorker_WorkerDespised_Social.cs" />
+    <Compile Include="Genes\Hive\Thoughts\Thoughtworker_RivalQueen_Mood.cs" />
+    <Compile Include="Genes\Hive\Thoughts\ThoughtWorker_QueenPresent_Social.cs" />
+    <Compile Include="Genes\Hive\Thoughts\ThoughtWorker_RivalQueen_Social.cs" />
     <Compile Include="Genes\Life_Force\Abilities\AbilityUtility.cs" />
     <Compile Include="Genes\Life_Force\UI\Alert_LowFertilin.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_CasterIsNaked.cs" />
@@ -116,7 +138,10 @@
     <Compile Include="Genes\Life_Force\ThinkNodes\ThinkNode_ConditionalCritcalLifeForce.cs" />
     <Compile Include="Genes\Life_Force\JobGivers\JobGiver_GetLifeForce.cs" />
     <Compile Include="Genes\Life_Force\ThinkNodes\ThinkNode_NewFlirtTarget.cs" />
+    <Compile Include="Genes\Patch_AddNotifyOnGeneration.cs" />
+    <Compile Include="Genes\Special\AgeTransferExtension.cs" />
     <Compile Include="Genes\Special\Patch_AgeDrain.cs" />
+    <Compile Include="Genes\Special\Patch_OrgasmMytosis.cs" />
     <Compile Include="Interactions\SuccubusTailjob\CompAbility_SexInteractionRequirements.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_PussyHeal.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompProperties_AbilityLifeForceCost.cs" />
@@ -173,8 +198,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="RJWSexperience">
-      <HintPath>..\..\RJW-Sexperience\1.4\Assemblies\RJWSexperience.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\RJW-Sexperience-1.1.4.0\1.4\Assemblies\RJWSexperience.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="UnityEngine">
@@ -192,5 +216,6 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

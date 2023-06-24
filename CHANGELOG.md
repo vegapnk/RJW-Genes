@@ -1,4 +1,83 @@
-<<<<<<< HEAD
+# 1.2.1 
+
+**Fixes**: 
+
+- Issue with RJW Changes for Orgasms, #52. Methods were renamed. 
+- Notes on the Gene Inheritance #51
+
+# 1.2 (11-06-2023)
+
+**Changes:**
+
+- Cocoon Weaver Gene
+- Spawn Spelopede Gene (Can be changed to spawn megascarabs or other insects via xml)
+- Queens & Caste logic (see below)
+- Addition to InsectIncubator: Now fertilizes eggs once placed inside a host, and breeds out eggs roughly twice as fast.
+- Many new icons 
+- Custom background icons when Vanilla-Expanded-Framework is loaded
+- Sexual Age Drainer & Youth Fountain now change age as configured in XML
+- Draft for a Hive-Start Scenario
+- Added Orgasmic Mytosis Gene: On Multiple Orgasms, spawn an identical copy of a pawn. Items and Implants are not copied.
+- Patches for Alpha Genes Xenotypes and LTS Xenotech
+- New Simple Genitalia Patches for other popular Xenotypes (Thanks @Pali42K)
+
+**Internal:**
+
+- Renamed abilities to have _ability_ in their name, to not exactly match the gene-defnames.
+- Moved Insect-Incubator & Insect-Breeder to hive category and folders (from breeding)
+- Some exclusion-tags for Alpha Genes
+- Removed Patches for conditional Genes, and moved them to `mayRequire` in the XenotypeDefs
+
+**Fixes:**
+
+- Cockeater Ability has now Icon of Cockeater Gene
+- Cockeater now leaves a bite wound!
+- Pythokin-Patch checks for Licentialabs (#30)
+- Removed Sex-Change thoughts for pawns born or spawned with a gender-altering gene (Issue #32, PR #33 by @callavico)
+- More consistent behavior for genitalia resizing over multiple game-starts (Issue #34)
+
+**Queen & Caste Logic**
+
+There are 3 genes revolting around a new, hopefully flexible insect-caste system. Queens, Drones and Workers. These reproduce either through normal sex, or can utilize the insect birth once [this PR](https://gitgud.io/Ed86/rjw/-/merge_requests/266) has been merged in. 
+Update: It has been merged into [RJW 5.3.5](https://gitgud.io/Ed86/rjw/-/tags/5.3.5), make sure you update!
+
+In general, the logic is the following: 
+
+- A queen can have sex with anyone. If the partner was a drone, there is chance for the baby to become a queen, drone or worker. 
+- If the partner of the queen was not a drone, the baby will be a worker.
+- If the drone didn't mate with a queen but someone else, normal inheritance happens
+- The assignment is done by xenotypes for queen and drones. The baby will get all xenogenes of their parents chosen xenotypes. 
+- For workers, every queen can have a set of genes for their workers defined in [a special def](./Common/Defs/QueenWorkerMappingDefs/QueenWorkerMappingDefs_base.xml). These will be added as endogenes, so that pawns can still become xenotypes.
+- There is a default gene-set for workers, making dumb, sterile and servile pawns. 
+- Chances for Offsprings (Drone, Queen, Worker) is defined in an [XML-Def](./Common/Defs/HiveOffspringChanceDef/HiveOffspringChanceDefs.xml). They are set per Queen. 
+- Birthlogic should apply for normal pregnancies, and for RJW-Insect Eggs. Other Pregnancies (from mods) are not supported.
+
+I am not sure if I want to have a specific mapping defining that queen can only mate with certain drones, let me know how you feel about it. 
+*Queens can be male*. I just used the female-term, but implementation is gender-neutral. 
+
+**On Alpha Genes** 
+
+Alpha genes might have colliding features, but I need some reports to find out about it. 
+I disabled the specific gender and the oviparious reproduction (when you have rjw-ovipos). 
+I recommend using alpha genes for the Hive-Playthroughs, as otherwise the Halamyr look a bit ... boring? 
+But i don't want to add a bunch of cosmetic genes on top of things. 
+
+*And what the fuck is a halamyr?* Well I had to name my little ants somehow. But I didn't want to call them `myr` as I maybe want to make some [TiTs](https://www.fenoxo.com/play-games/) xenotypes separately.
+And I am aware that the TiTs-Myr work different than the things I made now. 
+
+
+**Changes Since beta-1**:
+
+- Fix of icon-names (#36)
+- Changes to the scenario (more building items, throne for start). Wealth is now at 12k, which is the same as crashlanded and lost tribe.
+- Added the Orgasmic Mytosis Draft
+- Many touches on the Halamyr Hive Logic and Fertilizitation (#37,#38)
+
+**Changes Since beta-2**: 
+
+- Mostly Patches and Changes to the Halamyr Defs
+- Some re-arranging and mayRequires for other mods
+
 # 1.1.4
 
 Fixes: 

@@ -11,6 +11,13 @@
     <biostatMet>-1</biostatMet>
     <biostatCpx>1</biostatCpx>
     <displayOrderInCategory>1</displayOrderInCategory>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <GeneDef >
@@ -27,6 +34,13 @@
     <hediffGiversCannotGive>
       <li>FeelingBroken</li>
     </hediffGiversCannotGive>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
   </GeneDef>
 
 </Defs>

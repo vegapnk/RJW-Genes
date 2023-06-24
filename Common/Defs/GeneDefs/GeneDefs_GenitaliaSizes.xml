@@ -2,7 +2,14 @@
 <Defs>
 <GeneDef Name="GeneGenitaliaSizeBase" Abstract="True">
     <displayCategory>rjw_genes_genitalia_size</displayCategory>
-    <!--These Genes need to be loaded quite last, otherwise e.g. genitalia types will re-roll and overrule genitalia size-->
+    <!--These Genes need to be loaded quite late, otherwise e.g. genitalia types will re-roll and overrule genitalia size-->
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <!-- Penis -->
@@ -35,7 +42,7 @@
     <defName>rjw_genes_loose_female_genitalia</defName>
     <label>Loose Female Genitalia</label>
     <description>Vaginas of this Xenotype are quite spacy. (Resizing takes place at 20th Birthday)</description>
-    <iconPath>Genes/Icons/Loose_Female_Genitalia</iconPath>
+    <iconPath>Genes/Icons/Loose_Vagina</iconPath>
     <geneClass>RJW_Genes.Gene_LooseFemaleGenitalia</geneClass>
     <displayOrderInCategory>754</displayOrderInCategory>
     <exclusionTags>
@@ -47,7 +54,7 @@
     <defName>rjw_genes_tight_female_genitalia</defName>
     <label>Tight Female Genitalia</label>
     <description>Vaginas of this Xenotype are pretty tight.(Resizing takes place at 20th Birthday)</description>
-    <iconPath>Genes/Icons/Tight_Female_Genitalia</iconPath>
+    <iconPath>Genes/Icons/Tight_Vagina</iconPath>
     <geneClass>RJW_Genes.Gene_TightFemaleGenitalia</geneClass>
     <displayOrderInCategory>756</displayOrderInCategory>
     <exclusionTags>

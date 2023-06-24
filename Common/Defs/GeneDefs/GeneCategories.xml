@@ -67,6 +67,11 @@
     <displayPriorityInXenotype>8</displayPriorityInXenotype>
   </GeneCategoryDef>
   
+  <GeneCategoryDef>
+    <defName>rjw_genes_hive</defName>
+    <label>Hive</label>
+    <displayPriorityInXenotype>7</displayPriorityInXenotype>
+  </GeneCategoryDef>
   
   
 </Defs>

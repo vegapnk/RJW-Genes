@@ -52,15 +52,5 @@ namespace RJW_Genes
             }
         }
 
-        /*
-        /// <summary>
-        /// Adds a "rjw.featurelesschest", which means nipples but nothing else (like male human pawns do).
-        /// </summary>
-        internal void AddFeaturelessBreast()
-        {
-            var partBPR = Genital_Helper.get_breastsBPR(pawn);
-            //this.added_nipples = pawn.health.AddHediff(Genital_Helper.featureless_chest, partBPR);
-        }
-        */
     }
 }

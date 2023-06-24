@@ -9,6 +9,18 @@
         <iconPath>Genes/Icons/Female_Only</iconPath>
         <geneClass>RJW_Genes.Gene_FemaleOnly</geneClass>
         <displayOrderInCategory>1</displayOrderInCategory>
+
+        <exclusionTags>
+          <li>AG_Gender</li>
+          <li>Gender</li>
+        </exclusionTags>
+        
+        <modExtensions>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+            <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+            <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+          </li>
+        </modExtensions>
     </GeneDef>
 
     <GeneDef>
@@ -20,6 +32,18 @@
         <iconPath>Genes/Icons/Male_Only</iconPath>
         <geneClass>RJW_Genes.Gene_MaleOnly</geneClass>
         <displayOrderInCategory>2</displayOrderInCategory>
+        
+        <exclusionTags>
+          <li>AG_Gender</li>
+          <li>Gender</li>          
+        </exclusionTags>
+
+        <modExtensions>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+            <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+            <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+          </li>
+        </modExtensions>
     </GeneDef>
     
 </Defs>

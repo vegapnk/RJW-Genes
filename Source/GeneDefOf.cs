@@ -76,9 +76,10 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_youth_fountain;
 		public static readonly GeneDef rjw_genes_sex_age_drain;
 		public static readonly GeneDef rjw_genes_aphrodisiac_pheromones;
+		public static readonly GeneDef rjw_genes_sexual_mytosis;
 
-		// LifeForce
-		public static readonly GeneDef rjw_genes_lifeforce;
+        // LifeForce
+        public static readonly GeneDef rjw_genes_lifeforce;
 		public static readonly GeneDef rjw_genes_pussyhealing;
 		public static readonly GeneDef rjw_genes_lifeforce_drain;
 		public static readonly GeneDef rjw_genes_cum_eater;
@@ -91,6 +92,15 @@ namespace RJW_Genes
 		// Cosmetic
 		public static readonly GeneDef rjw_genes_succubus_tail;
 		public static readonly GeneDef rjw_genes_succubus_wings;
+
+		// Hive 
+		public static readonly GeneDef rjw_genes_queen;
+		public static readonly GeneDef rjw_genes_drone;
+		public static readonly GeneDef rjw_genes_worker;
+		public static readonly GeneDef rjw_genes_zealous_loyalty;
+		public static readonly GeneDef rjw_genes_cocoonweaver;
+		public static readonly GeneDef rjw_genes_spawn_spelopede;
+
 
 		//Other Defs
 		public static readonly XenotypeDef rjw_genes_succubus;

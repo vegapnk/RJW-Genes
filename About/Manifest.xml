@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
 	<identifier>RJW-Genes</identifier>
-	<version>1.1.0</version>
+	<version>1.2.1</version>
 	<dependencies>
         <li>RimJobWorld</li>
 		<li>HugsLib</li>
 	</dependencies>
-	<incompatibleWith />
+	<incompatibleWith> 
+		<li>Male- and Female- Only Genes</li>
+	</incompatibleWith>
 	<loadAfter>
         <li>RimJobWorld</li>
 		<li>HugsLib</li>
+		<li>RJWSexperience_CumGenes</li>
 	</loadAfter>
 	<suggests>
         <li>RJW-LicentiaLabs</li>

@@ -17,7 +17,7 @@ namespace RJW_Genes
             listing_Standard.ColumnWidth = rect.width / 2.05f;
             listing_Standard.Begin(rect);
             listing_Standard.Gap(24f);
-            listing_Standard.Label("Fertlin-Gain from Animals" + ": " +
+            listing_Standard.Label("Fertilin-Gain from Animals" + ": " +
                 Math.Round((double)(RJW_Genes_Settings.rjw_genes_fertilin_from_animals_factor * 100f), 0).ToString() + "%", -1f, "of fertilin gained (compared to human-baseline).");
             RJW_Genes_Settings.rjw_genes_fertilin_from_animals_factor = listing_Standard.Slider(RJW_Genes_Settings.rjw_genes_fertilin_from_animals_factor, 0f, 3f);
 

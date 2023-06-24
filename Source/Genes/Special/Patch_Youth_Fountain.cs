@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Verse;
 
 namespace RJW_Genes.Genes.Special
 {
@@ -18,9 +19,9 @@ namespace RJW_Genes.Genes.Special
          * I am not sure how I feel about this, but as some people that I consider "normal" asked me about this I changed it as requested in #26 and #28
          */
 
-        const long AGE_REDUCTION = 60000; // 60k == 1 day
+        const long AGE_REDUCTION_FALLBACK = 60000; // 60k == 1 day
         // 18 Years * 60 Days / Year * 60k Ticks/Day + 1 for safety
-        const long MINIMUM_AGE = 18 * 60 * 60000 + 1;
+        const long MINIMUM_AGE_FALLBACK = 18 * 60 * 60000 + 1;
 
         public static void Postfix(SexProps props)
         {
@@ -28,14 +29,34 @@ namespace RJW_Genes.Genes.Special
             {
                 return;
             }
-            if (GeneUtility.IsYouthFountain(props.pawn) && props.pawn.ageTracker.AgeBiologicalTicks >= MINIMUM_AGE)
-            {
-                var partnerAge = props.partner.ageTracker.AgeBiologicalTicks;
 
-                if(partnerAge - AGE_REDUCTION > MINIMUM_AGE)
-                    props.partner.ageTracker.AgeBiologicalTicks = Math.Max(MINIMUM_AGE, partnerAge - AGE_REDUCTION);
+            if (GeneUtility.IsYouthFountain(props.pawn))
+            {
+                ChangeAgeForPawn(props.partner, props.pawn);
+            }
+            if (GeneUtility.IsYouthFountain(props.partner))
+            {
+                ChangeAgeForPawn(props.pawn,props.partner);
             }
 
+        }
+
+        private static void ChangeAgeForPawn(Pawn ToYouth, Pawn YouthingPawn)
+        {
+            AgeTransferExtension transferExt = GeneDefOf.rjw_genes_youth_fountain.GetModExtension<AgeTransferExtension>();
+            long age_reduction = transferExt?.ageTickChange ?? AGE_REDUCTION_FALLBACK;
+            long minimum_age = transferExt?.minAgeInYears * 60 * 60000 + 1 ?? MINIMUM_AGE_FALLBACK;
+
+            var partnerAge = ToYouth.ageTracker.AgeBiologicalTicks;
+
+            if (RJW_Genes_Settings.rjw_genes_detailed_debug)
+                ModLog.Message($"Firing Youth Fountain - {YouthingPawn} is youthing {ToYouth} by {age_reduction} ({Math.Round(age_reduction / 60000.0, 2)} days)");
+
+            if (partnerAge - age_reduction > minimum_age) { 
+                ToYouth.ageTracker.AgeBiologicalTicks = Math.Max(minimum_age, partnerAge - age_reduction);
+            }
+            else if (RJW_Genes_Settings.rjw_genes_detailed_debug)
+                ModLog.Message($"[Youth Fountain] {ToYouth} was too young ({ToYouth.ageTracker.AgeBiologicalYears}), and remains unchanged.");
         }
 
     }

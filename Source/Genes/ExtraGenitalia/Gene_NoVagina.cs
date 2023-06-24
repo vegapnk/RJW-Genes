@@ -8,10 +8,7 @@ namespace RJW_Genes
     {
 
         internal Hediff removed_vagina;
-
-        // TODO: This gene only works if another Gene was set specifying the genitalia. 
-        // If it is added later, it still works, but on creation it needs a different 
-        // TODO: If all Genitalia are removed by genes, RJW adds some to the pawns at spawn
+        
         public override void PostMake()
         {
             base.PostMake();

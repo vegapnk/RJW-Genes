@@ -19,10 +19,10 @@
     <iconColor>(0.75, 0.75, 0.75)</iconColor>
     <displayOrderInCategory>1000</displayOrderInCategory>
 	<abilities>
-		 <li>rjw_genes_flight</li>
+		 <li>rjw_genes_ability_flight</li>
 	</abilities>
 	<descriptionHyperlinks>
-		<AbilityDef>rjw_genes_flight</AbilityDef>
+		<AbilityDef>rjw_genes_ability_flight</AbilityDef>
 	</descriptionHyperlinks>
     <biostatCpx>1</biostatCpx>
 	<biostatMet>-1</biostatMet>
@@ -34,6 +34,13 @@
       <drawOffsetSouth>(0.0, 0.0, -0.1)</drawOffsetSouth>
       <drawOffsetEast>(0.1, 0.0, 0.0)</drawOffsetEast>
     </graphicData>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
   </GeneDef>
   
    <GeneDef ParentName="GeneTailBase">
@@ -64,6 +71,13 @@
       <drawOffsetSouth>(0, -0.1, 0.1)</drawOffsetSouth>
       <drawOffsetEast>(0.2, 0.2, 0.1)</drawOffsetEast>
     </graphicData>
-	<randomChosen>true</randomChosen>
+	  <randomChosen>true</randomChosen>
+  
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
   </GeneDef>
 </Defs>

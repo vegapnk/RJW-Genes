@@ -17,23 +17,29 @@ namespace RJW_Genes
 
         public static void OffsetLifeForce(IGeneResourceDrain drain, float offset)
         {                
-            float old_value = drain.Resource.Value;
-            drain.Resource.Value += offset;
-            PostOffSetLifeForce(drain, old_value);     
+            if (drain.Resource != null && drain.Resource.Active) {  
+                float old_value = drain.Resource.Value;
+                drain.Resource.Value += offset;
+                PostOffSetLifeForce(drain, old_value);
+            }
         }
 
         public static void PostOffSetLifeForce(IGeneResourceDrain drain, float old_value)
         {
-            if (old_value > 0.2f && drain.Resource.Value <= 0.2f)
-            {                
-                //TODO: Mood debuff
-            }
-            else if (old_value > 0f && drain.Resource.Value <= 0f)
+
+            if (drain.Resource != null && drain.Resource.Active)
             {
-                Pawn pawn = drain.Pawn;
-                if (!drain.Pawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_fertilin_craving))
+                if (old_value > 0.2f && drain.Resource.Value <= 0.2f)
                 {
-                    drain.Pawn.health.AddHediff(HediffDefOf.rjw_genes_fertilin_craving);
+                    //TODO: Mood debuff
+                }
+                else if (old_value > 0f && drain.Resource.Value <= 0f)
+                {
+                    Pawn pawn = drain.Pawn;
+                    if (!drain.Pawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_fertilin_craving))
+                    {
+                        drain.Pawn.health.AddHediff(HediffDefOf.rjw_genes_fertilin_craving);
+                    }
                 }
             }
         }
@@ -127,26 +133,3 @@ namespace RJW_Genes
 
     }
 }
-
-/*
-Exception in Verse.AI.ThinkNode_Priority TryIssueJobPackage: System.NullReferenceException: Object reference not set to an instance of an object
-  at RJW_Genes.GeneUtility.HasLowLifeForce (Verse.Pawn pawn) [0x00014] in < 881b7541af8144a78a14c9dad08e43c7 >:0
-  at RJW_Genes.ThinkNode_ConditionalLowLifeForce.Satisfied(Verse.Pawn p) [0x00000] in < 881b7541af8144a78a14c9dad08e43c7 >:0
-  at Verse.AI.ThinkNode_Conditional.TryIssueJobPackage(Verse.Pawn pawn, Verse.AI.JobIssueParams jobParams) [0x00000] in < 38562b1a2ab64eacb931fb5df05ca994 >:0
-  at Verse.AI.ThinkNode_Priority.TryIssueJobPackage(Verse.Pawn pawn, Verse.AI.JobIssueParams jobParams) [0x00022] in < 38562b1a2ab64eacb931fb5df05ca994 >:0
-UnityEngine.StackTraceUtility:ExtractStackTrace()
-Verse.Log:Error(string)
-Verse.AI.ThinkNode_Priority:TryIssueJobPackage(Verse.Pawn, Verse.AI.JobIssueParams)
-Verse.AI.ThinkNode_SubtreesByTag:TryIssueJobPackage(Verse.Pawn, Verse.AI.JobIssueParams)
-Verse.AI.ThinkNode_Priority:TryIssueJobPackage(Verse.Pawn, Verse.AI.JobIssueParams)
-Verse.AI.Pawn_JobTracker:DetermineNextJob(Verse.ThinkTreeDef &)
-Verse.AI.Pawn_JobTracker:TryFindAndStartJob()
-Verse.AI.Pawn_JobTracker:EndCurrentJob(Verse.AI.JobCondition, bool, bool)
-Verse.AI.Pawn_JobTracker:JobTrackerTick()
-Verse.Pawn:Tick()
-Verse.TickList:Tick()
-(wrapper dynamic - method) Verse.TickManager:Verse.TickManager.DoSingleTick_Patch2(Verse.TickManager)
-Verse.TickManager:TickManagerUpdate()
-Verse.Game:UpdatePlay()
-Verse.Root_Play:Update()
-*/

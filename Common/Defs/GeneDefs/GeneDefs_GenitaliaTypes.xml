@@ -7,6 +7,13 @@
       <li>GenitalType</li>
     </exclusionTags>
     <biostatCpx>0</biostatCpx>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
   </GeneDef>
   
   <GeneDef ParentName="GeneGenitalTypeBase">
@@ -58,7 +65,7 @@
     <defName>rjw_genes_slime_genitalia</defName>
     <label>slime genitalia</label>
     <description>Carriers of this gene have slime genitalia.</description>
-    <iconPath>Genes/Icons/Genitalia_Slime</iconPath>
+    <iconPath>Genes/Icons/Slime_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_SlimeGenitalia</geneClass>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
@@ -67,9 +74,16 @@
     <defName>rjw_genes_ovipositor_genitalia</defName>
     <label>insect genitalia</label>
     <description>Carriers of this gene have ovipositors similar to insects.</description>
-    <iconPath>Genes/Icons/Genitalia_Insect</iconPath>
+    <iconPath>Genes/Icons/Ovipositor_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_OvipositorGenitalia</geneClass>
     <displayOrderInCategory>808</displayOrderInCategory>
+
+    <exclusionTags>
+			<li>Egglaying</li>
+			<li>AG_Egglaying</li>
+		</exclusionTags>
+    
   </GeneDef>
+
 
 </Defs>

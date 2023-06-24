@@ -99,6 +99,7 @@ namespace RJW_Genes
                 case "rjw_genes_demonic_genitalia": return Genital_Helper.average_breasts;
                 case "rjw_genes_dragon_genitalia": return Genital_Helper.average_breasts;
                 case "rjw_genes_slime_genitalia": return Genital_Helper.slime_breasts;
+                case "rjw_genes_udder_breasts": return Genital_Helper.udder_breasts;
                 case "rjw_genes_ovipositor_genitalia": return Genital_Helper.average_breasts;
 
                 default: return Genital_Helper.generic_breasts;

@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<GeneDef Name="GeneExtraGenitaliaBase" Abstract="True">
+  <GeneDef Name="GeneExtraGenitaliaBase" Abstract="True">
     <displayCategory>rjw_genes_genitalia_extras</displayCategory>
-  </GeneDef>
 
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
 
   <GeneDef ParentName="GeneExtraGenitaliaBase">
     <defName>rjw_genes_extra_penis</defName>
@@ -34,7 +40,7 @@
     <defName>rjw_genes_extra_vagina</defName>
     <label>extra vagina</label>
     <description>Females of this species grow an additional vagina .</description>
-    <iconPath>Genes/Icons/extra_female</iconPath>
+    <iconPath>Genes/Icons/Extra_Vagina</iconPath>
     <geneClass>RJW_Genes.Gene_ExtraVagina</geneClass>
     <displayOrderInCategory>703</displayOrderInCategory>
     <exclusionTags>
@@ -46,7 +52,7 @@
     <defName>rjw_genes_no_vagina</defName>
     <label>no vagina</label>
     <description>Females of this do not have a vagina.</description>
-    <iconPath>Genes/Icons/No_Female_Genitalia</iconPath>
+    <iconPath>Genes/Icons/No_Vagina</iconPath>
     <geneClass>RJW_Genes.Gene_NoVagina</geneClass>
     <displayOrderInCategory>704</displayOrderInCategory>
     <exclusionTags>
@@ -127,5 +133,19 @@
       <li>BreastAmount</li>
     </exclusionTags>
   </GeneDef>
-
+  <!-- 
+  See Comment in `RJW_Genes.Gene_UdderBreasts` why this is currently commented out.
+  
+  <GeneDef ParentName="GeneExtraGenitaliaBase">
+    <defName>rjw_genes_udder</defName>
+    <label>udder</label>
+    <description>Carriers of this gene have udders instead of breasts.</description>
+    <iconPath>Things/Mote/Heart</iconPath>
+    <geneClass>RJW_Genes.Gene_UdderBreasts</geneClass>
+    <displayOrderInCategory>711</displayOrderInCategory>
+    <exclusionTags>
+      <li>BreastAmount</li>
+    </exclusionTags>
+  </GeneDef>
+  -->
 </Defs>

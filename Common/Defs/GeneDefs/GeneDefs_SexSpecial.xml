@@ -1,48 +1,81 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <GeneDef>
+    
+    <GeneDef Name="SpecialBase" Abstract="True">
+      <displayCategory>rjw_genes_special</displayCategory>
+      
+      <modExtensions>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+            <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+            <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+          </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_orgasm_rush</defName>
         <label>Orgasm Rush</label>
-        <displayCategory>rjw_genes_special</displayCategory>
-        <description>On Orgasm, carriers of this gene get a boost in activity. (rest-need is partially filled)</description>
+        <description>On orgasm, carriers of this gene get a boost in activity. (rest-need is partially filled)</description>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-2</biostatMet>
         <iconPath>UI/Memes/FleshPurity</iconPath>
         <displayOrderInCategory>1</displayOrderInCategory>
     </GeneDef>
 	
-    <GeneDef>
+    <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_youth_fountain</defName>
         <label>Youth Fountain</label>
-        <displayCategory>rjw_genes_special</displayCategory>
         <description>Having sex with a carrier of this gene makes the partner slightly younger. (Partner stays adult)</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-2</biostatMet>
         <iconPath>UI/Ideoligions/FireLeaves</iconPath>
         <displayOrderInCategory>2</displayOrderInCategory>
+        <modExtensions>
+            <li Class="RJW_Genes.AgeTransferExtension">
+                <!-- 60k = 1 day -->
+                <ageTickChange>60000</ageTickChange>
+                <minAgeInYears>18</minAgeInYears>
+            </li>
+        </modExtensions>
     </GeneDef>
     
-    <GeneDef>
+    <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_sex_age_drain</defName>
         <label>Sexual Age Drain</label>
-        <displayCategory>rjw_genes_special</displayCategory>
         <description>Having sex transfers some of the partners life-time to themselves. (Pawn stays adult)</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-1</biostatMet>
         <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
         <displayOrderInCategory>3</displayOrderInCategory>
+        <modExtensions>
+            <li Class="RJW_Genes.AgeTransferExtension">
+                <!-- 120k = 2 days -->
+                <ageTickChange>120000</ageTickChange>
+                <minAgeInYears>18</minAgeInYears>
+            </li>
+        </modExtensions>
     </GeneDef>
     
-    <GeneDef>
+    <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_aphrodisiac_pheromones</defName>
         <label>Aphrodisiac Pheromones</label>
-        <displayCategory>rjw_genes_special</displayCategory>
-		    <geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass>
+		<geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass>
         <description>Pheremones of this pawn induce an incressed sexdrive to others nearby.</description>
-        <iconPath>UI/Memes/FleshPurity</iconPath>
+        <iconPath>Genes/Icons/Pheromones</iconPath>
         <displayOrderInCategory>4</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>1</biostatMet>
     </GeneDef>
     
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_sexual_mytosis</defName>
+        <label>Orgasmic Mytosis</label>
+		<!-- <geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass> -->
+        <description>Carriers of this gene grow more unstable with ongoing multiple orgasms - climaxing in a process of mytosis. This will result in an (biologically) identical pawn and both twins are set in a regenerative state. Also, the pawn can have multiple orgasms: In a state of higher unstableness, they come quicker.</description>
+        <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
+        <displayOrderInCategory>5</displayOrderInCategory>
+        <biostatCpx>5</biostatCpx>
+        <biostatMet>-5</biostatMet>
+    </GeneDef>    
+
 </Defs>

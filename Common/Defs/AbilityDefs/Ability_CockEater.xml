@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <AbilityDef ParentName="AbilityTouchBase">
-    <defName>rjw_genes_cockeater</defName>
+    <defName>rjw_genes_ability_cockeater</defName>
     <label>Eat Cock</label>
     <description>Eat the cock of another pawn, restoring fertilin based on the size of the cock.</description>
-    <iconPath>Things/Mote/Heart</iconPath>
+    <iconPath>Genes/Icons/cockeater</iconPath>
     <stunTargetWhileCasting>true</stunTargetWhileCasting>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
@@ -27,8 +27,7 @@
       </targetParams>
     </verbProperties>
     <comps>
-      <li Class="RJW_Genes.CompProperties_AbilityCockEater"> <!-- namespace needs to be changed when copied to another mod-->
-      </li>
+      <li Class="RJW_Genes.CompProperties_AbilityCockEater"/> <!-- namespace needs to be changed when copied to another mod-->
     </comps>
   </AbilityDef>
 </Defs>
