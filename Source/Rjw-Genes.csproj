@@ -44,6 +44,7 @@
     <Compile Include="Genes\Breeding\Gene_MechBreeder.cs" />
     <Compile Include="Genes\Breeding\PatchMechBirth.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_UdderBreasts.cs" />
+    <Compile Include="Genes\GenitaliaSize\Gene_EvergrowingGenitalia.cs" />
     <Compile Include="Genes\Hive\Defs\HiveOffspringChanceDef.cs" />
     <Compile Include="Genes\Hive\Genes\Gene_FerventOvipositor.cs" />
     <Compile Include="Genes\Hive\Genes\Gene_InsectIncubator.cs" />
