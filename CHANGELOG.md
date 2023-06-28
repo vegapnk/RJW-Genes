@@ -1,3 +1,14 @@
+# 1.2.2
+
+**Changes:**
+
+- New Gene for Evergrowing Cocks. Be careful. 
+
+**Fixes:**
+
+- New attempt at fixing condom consumption for Fertilin, adressing #41 & #48 provided by Infi
+- Copy of Infis patch for eating cum from sexperience, #41 and #48 
+
 # 1.2.1 
 
 **Fixes**: 

@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-<!-- Add RJW Sex meditation focus icon to VanillaPsycastsExpanded -->
+	<!-- 
+		DevNote:
+		There used to be an issue with a Gene-Mod Called "Cum-Addiction Gene". That mod just overwrote the complete UsedCondom.xml and Sexperience Cum.xml
+		This would lead to two types of failures: 
+		A) If this mod was before the other mod, changes were just overwritten
+		B) If this mod was after, there was an issue in targetting the XML throwing a patch error
+		Please if you write mods, do not just purge out XMLs. Thanks. 
+
+		This patch was kindly provided by Infi over Discord. 
+	-->
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="UsedCondom"]/ingestible/outcomeDoers</xpath>
 		<nomatch Class="PatchOperationAdd">
