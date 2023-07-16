@@ -32,9 +32,10 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_extra_anus;
 		public static readonly GeneDef rjw_genes_no_anus;
 		public static readonly GeneDef rjw_genes_futa;
+		public static readonly GeneDef rjw_genes_featureless_chest;
 
-		// Genitalia Sizes
-		public static readonly GeneDef rjw_genes_big_male_genitalia;
+        // Genitalia Sizes
+        public static readonly GeneDef rjw_genes_big_male_genitalia;
 		public static readonly GeneDef rjw_genes_small_male_genitalia;
 		public static readonly GeneDef rjw_genes_loose_female_genitalia;
 		public static readonly GeneDef rjw_genes_tight_female_genitalia;
@@ -46,6 +47,7 @@ namespace RJW_Genes
 		// Gender 
 		public static readonly GeneDef rjw_genes_female_only;
 		public static readonly GeneDef rjw_genes_male_only;
+		public static readonly GeneDef rjw_genes_gender_fluid;
 
 		// Breeding
 		public static readonly GeneDef rjw_genes_mechbreeder;

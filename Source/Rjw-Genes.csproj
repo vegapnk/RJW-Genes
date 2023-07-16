@@ -44,6 +44,8 @@
     <Compile Include="Genes\Breeding\Gene_MechBreeder.cs" />
     <Compile Include="Genes\Breeding\PatchMechBirth.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_UdderBreasts.cs" />
+    <Compile Include="Genes\Gender\Defs\GenderFluidExtension.cs" />
+    <Compile Include="Genes\Gender\Gene_GenderFluid.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_EvergrowingGenitalia.cs" />
     <Compile Include="Genes\Hive\Defs\HiveOffspringChanceDef.cs" />
     <Compile Include="Genes\Hive\Genes\Gene_FerventOvipositor.cs" />
@@ -217,6 +219,8 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Genes\Gender\Patches\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

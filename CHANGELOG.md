@@ -1,14 +1,20 @@
-# 1.2.2
+# 1.3.0
 
 **Changes:**
 
 - New Gene for Evergrowing Cocks. Be careful. 
+- New Gene for Genderfluid Pawns - daily chance to change sex. Futas just change "display" and keep genitalia, other pawns switch genitalia.
 
 **Fixes:**
 
 - New attempt at fixing condom consumption for Fertilin, adressing #41 & #48 provided by Infi
 - Copy of Infis patch for eating cum from sexperience, #41 and #48
 - Updated some Icons to have better backgrounds (thanks @WasmachenDennSachenSo #53)
+
+*Notes*: 
+The pawns that are gender fluid can get pregnant. 
+However, with RJW 5.3.7 these pregnancies disappear. 
+This is a change needed upstream, but I will have a look. 
 
 # 1.2.1 
 
