@@ -6,6 +6,7 @@
 - New Gene for Genderfluid Pawns - daily chance to change sex. Futas just change "display" and keep genitalia, other pawns switch genitalia. XML configurable times & chances. 
 - New Drawings for the Succubi Wings & Tail, thanks to @Monti (donated via Discord)
 - Simple Gene that removes Sex need (called asexual, `rjw_genes_no_sex_need`)
+- New Gene that grows Penisses on Oral sex. Configurable in XML. 
 
 **Fixes:**
 

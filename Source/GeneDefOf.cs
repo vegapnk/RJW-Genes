@@ -43,6 +43,7 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_small_breasts;
 		public static readonly GeneDef rjw_genes_loose_anus;
 		public static readonly GeneDef rjw_genes_tight_anus;
+		public static readonly GeneDef rjw_genes_evergrowth;
 
 		// Gender 
 		public static readonly GeneDef rjw_genes_female_only;
@@ -68,6 +69,7 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_rapist;
 		public static readonly GeneDef rjw_genes_homosexual;
 		public static readonly GeneDef rjw_genes_bisexual;
+		public static readonly GeneDef rjw_genes_no_sex_need;
 
 		// Damage & Side Effects 
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_elasticity;
@@ -79,6 +81,7 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_sex_age_drain;
 		public static readonly GeneDef rjw_genes_aphrodisiac_pheromones;
 		public static readonly GeneDef rjw_genes_sexual_mytosis;
+		public static readonly GeneDef rjw_genes_hormonal_saliva;
 
         // LifeForce
         public static readonly GeneDef rjw_genes_lifeforce;
