@@ -225,14 +225,13 @@ namespace RJW_Genes
                         pawn.health.RemoveHediff(extremeProlapsed);
                 };
             }
-            catch (TypeLoadException ex)
+            //TODO: Don't make this an "catch all" Exception!
+            catch (Exception ex)
             {
                 // To be expected for people without Licentia Labs, do nothing.
             }
         }
 
-        
-        }
 
         /// <summary>
         /// There are some actions that block sex change, 
