@@ -57,6 +57,9 @@
         <geneClass>RJW_Genes.Gene_GenderFluid</geneClass>
         <displayOrderInCategory>2</displayOrderInCategory>
         
+        <!-- Design Decision: GenderFluids like GenderFluids (slightly) more. -->
+        <missingGeneRomanceChanceFactor>0.9</missingGeneRomanceChanceFactor>
+
         <exclusionTags>
           <li>AG_Gender</li>
           <li>Gender</li>          
@@ -69,8 +72,8 @@
           </li>
           <li Class="RJW_Genes.GenderFluidExtension">
                 <!-- 120k = 2 days -->
-                <changeInterval>1000</changeInterval>
-                <changeChance>1</changeChance>
+                <changeInterval>120000</changeInterval>
+                <changeChance>0.25</changeChance>
           </li>
         </modExtensions>
     </GeneDef>

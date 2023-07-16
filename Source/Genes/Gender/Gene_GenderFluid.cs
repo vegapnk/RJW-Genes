@@ -136,6 +136,8 @@ namespace RJW_Genes
             }
 
             SwitchBreasts();
+
+            RemoveLicentiaVaginaHediffs();
         }
 
 
@@ -190,6 +192,33 @@ namespace RJW_Genes
             }
 
             return additional_breasts;
+        }
+
+        /// <summary>
+        /// Checks the pawn if it has any of the vagina-related hediffs (e.g. stretched) and removes them.
+        /// Anal Soreness, Stretching etc. remains. 
+        /// </summary>
+        private void RemoveLicentiaVaginaHediffs()
+        {
+            Hediff cumflation = pawn.health.hediffSet.GetFirstHediffOfDef(LicentiaLabs.Licentia.HediffDefs.Cumflation);
+            if (cumflation != null)
+                pawn.health.RemoveHediff(cumflation);
+
+            Hediff stretched = pawn.health.hediffSet.GetFirstHediffOfDef(LicentiaLabs.Licentia.HediffDefs.Stretched);
+            if (stretched != null && stretched.Part != Genital_Helper.get_anusBPR(pawn))
+                pawn.health.RemoveHediff(stretched);
+
+            Hediff torn = pawn.health.hediffSet.GetFirstHediffOfDef(LicentiaLabs.Licentia.HediffDefs.StretchTear);
+            if (torn != null && torn.Part != Genital_Helper.get_anusBPR(pawn))
+                pawn.health.RemoveHediff(torn);
+
+            Hediff prolapsed = pawn.health.hediffSet.GetFirstHediffOfDef(LicentiaLabs.Licentia.HediffDefs.Prolapse);
+            if (prolapsed != null && prolapsed.Part != Genital_Helper.get_anusBPR(pawn))
+                pawn.health.RemoveHediff(prolapsed);
+
+            Hediff extremeProlapsed = pawn.health.hediffSet.GetFirstHediffOfDef(LicentiaLabs.Licentia.HediffDefs.ExtremeProlapse);
+            if (extremeProlapsed != null && extremeProlapsed.Part != Genital_Helper.get_anusBPR(pawn))
+                pawn.health.RemoveHediff(extremeProlapsed);
         }
 
         /// <summary>
