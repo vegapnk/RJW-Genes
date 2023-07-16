@@ -4,6 +4,7 @@
 
 - New Gene for Evergrowing Cocks. Be careful. 
 - New Gene for Genderfluid Pawns - daily chance to change sex. Futas just change "display" and keep genitalia, other pawns switch genitalia.
+- New Drawings for the Succubi Wings & Tail, thanks to @Monti (donated via Discord)
 
 **Fixes:**
 
