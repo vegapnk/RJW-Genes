@@ -113,6 +113,8 @@
     <Compile Include="Genes\Hive\Thoughts\ThoughtWorker_QueenPresent_Social.cs" />
     <Compile Include="Genes\Hive\Thoughts\ThoughtWorker_RivalQueen_Social.cs" />
     <Compile Include="Genes\Life_Force\Abilities\AbilityUtility.cs" />
+    <Compile Include="Genes\Life_Force\Defs\LifeForceEmpathExtension.cs" />
+    <Compile Include="Genes\Life_Force\Genes\Gene_LifeForce_Empath.cs" />
     <Compile Include="Genes\Life_Force\UI\Alert_LowFertilin.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_CasterIsNaked.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompProperties_CasterIsNaked.cs" />

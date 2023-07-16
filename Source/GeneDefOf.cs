@@ -93,9 +93,10 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_seduce;
 		public static readonly GeneDef rjw_genes_paralysingkiss;
 		public static readonly GeneDef rjw_genes_cockeater;
+		public static readonly GeneDef rjw_genes_lifeforce_empath;
 
-		// Cosmetic
-		public static readonly GeneDef rjw_genes_succubus_tail;
+        // Cosmetic
+        public static readonly GeneDef rjw_genes_succubus_tail;
 		public static readonly GeneDef rjw_genes_succubus_wings;
 
 		// Hive 

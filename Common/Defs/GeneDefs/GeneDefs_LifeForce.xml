@@ -201,7 +201,7 @@
 		<description>Carriers of this gene are able to temporarily increase their strength and resilience, while they are naked.</description>
 		<iconPath>Genes/Icons/rjw_naked_prowess</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
-		<displayOrderInCategory>13</displayOrderInCategory>
+		<displayOrderInCategory>14</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
 		<abilities>
 			<li>rjw_genes_ability_naked_prowess</li>
@@ -256,6 +256,34 @@
 		</modExtensions>
 	</GeneDef>
 	
+	<GeneDef>
+		<defName>rjw_genes_lifeforce_empath</defName>
+		<label>empathic lifeforce</label>
+		<geneClass>RJW_Genes.Gene_LifeForce_Empath</geneClass>
+		<description>Carriers of this gene generate lifeforce if nearby pawns are sexually satisfied. Be careful: Sexually frustrated pawns will make your empath loose lifeforce!</description>
+		<iconPath>Genes/Icons/Hypersexual</iconPath>
+		<prerequisite>rjw_genes_lifeforce</prerequisite>
+		<displayOrderInCategory>3</displayOrderInCategory>
+		<displayCategory>rjw_genes_fertilin</displayCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+			<li Class="RJW_Genes.LifeForceEmpathExtension">
+				<!-- One day has 60k ticks, so we check every hour with 60000/24 = 2500-->
+				<tickInterval>2500</tickInterval>
+				<empathDistance>25</empathDistance>
+				<aheagoIncrement>0.02</aheagoIncrement>
+				<satisfactionIncrement>0.01</satisfactionIncrement>
+				<frustratedDecrement>-0.01</frustratedDecrement>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
 	<GeneDef>
 		<defName>rjw_genes_drainer</defName>
 		<label>vitality drainer</label>
