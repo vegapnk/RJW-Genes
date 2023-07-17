@@ -65,6 +65,17 @@
         <displayOrderInCategory>4</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>1</biostatMet>
+
+        <modExtensions>
+			<li Class="RJW_Genes.TickIntervalExtension">
+				<!-- One day has 60k ticks, so we check every hour with 60000/48 = 1250-->
+				<tickInterval>1250</tickInterval>
+			</li>
+			<li Class="RJW_Genes.DistanceExtension">
+				<!-- distance 25 means 25 tiles in every direction from the pheromone-pawn.-->
+				<distance>25</distance>
+			</li>
+        </modExtensions>
     </GeneDef>
     
     <GeneDef ParentName="SpecialBase">

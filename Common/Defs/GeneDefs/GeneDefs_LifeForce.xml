@@ -274,7 +274,6 @@
 				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
 			</li>
 			<li Class="RJW_Genes.LifeForceEmpathExtension">
-				<empathDistance>25</empathDistance>
 				<aheagoIncrement>0.02</aheagoIncrement>
 				<satisfactionIncrement>0.01</satisfactionIncrement>
 				<frustratedDecrement>-0.01</frustratedDecrement>

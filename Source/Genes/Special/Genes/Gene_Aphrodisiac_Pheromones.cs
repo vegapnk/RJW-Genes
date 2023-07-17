@@ -11,8 +11,8 @@ namespace RJW_Genes
         // This means that adding +.25 equals 1.5h of Libido. 
         // Tick Speed is hence set to 0.5h 
 
-        const int APHRODISIAC_DISTANCE = 25;
-        const int TICK_INTERVAL = 60000 / 48 ; // 60k = 1 day, we want 0.5h which is 1/48th of 1 day. 
+        const int APHRODISIAC_DISTANCE_FALLBACK = 25;
+        const int TICK_INTERVAL_FALLBACK = 60000 / 48 ; // 60k = 1 day, we want 0.5h which is 1/48th of 1 day. 
 
         const float SEXFREQ_THRESHOLD = 0.5f;
 
@@ -20,7 +20,10 @@ namespace RJW_Genes
         public override void Tick()
         {
             base.Tick();
-            if (this.pawn.IsHashIntervalTick(TICK_INTERVAL) && this.pawn.Map != null)
+
+            int tickInterval = ModExtensionHelper.GetTickIntervalFromModExtension(GeneDefOf.rjw_genes_aphrodisiac_pheromones, TICK_INTERVAL_FALLBACK);
+
+            if (this.pawn.IsHashIntervalTick(tickInterval) && this.pawn.Map != null)
             {
                 // Only spread pheromones if sexdrive above 1
                 float sexfrequency = this.pawn.GetStatValue(StatDef.Named("SexFrequency"));
@@ -57,7 +60,8 @@ namespace RJW_Genes
 
                 // Actual Logic: 
                 // Pawn qualifies in right distance and needs line of sight. 
-                if (pos.DistanceTo(pawn.Position) < APHRODISIAC_DISTANCE && GenSight.LineOfSight(pos, pawn.Position, pawn.Map))
+                int effectDistance = ModExtensionHelper.GetDistanceFromModExtension(GeneDefOf.rjw_genes_aphrodisiac_pheromones, APHRODISIAC_DISTANCE_FALLBACK);
+                if (pos.DistanceTo(pawn.Position) < effectDistance && GenSight.LineOfSight(pos, pawn.Position, pawn.Map))
                 {
                     yield return pawn;
                 }
