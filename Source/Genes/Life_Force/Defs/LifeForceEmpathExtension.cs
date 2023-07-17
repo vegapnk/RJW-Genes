@@ -9,9 +9,6 @@ namespace RJW_Genes
 {
     public class LifeForceEmpathExtension : DefModExtension
     {
-        public int tickInterval;
-        public int empathDistance;
-
         public float aheagoIncrement;
         public float satisfactionIncrement;
         public float frustratedDecrement;

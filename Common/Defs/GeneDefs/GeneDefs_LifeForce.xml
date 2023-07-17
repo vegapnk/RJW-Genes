@@ -274,12 +274,18 @@
 				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
 			</li>
 			<li Class="RJW_Genes.LifeForceEmpathExtension">
-				<!-- One day has 60k ticks, so we check every hour with 60000/24 = 2500-->
-				<tickInterval>2500</tickInterval>
 				<empathDistance>25</empathDistance>
 				<aheagoIncrement>0.02</aheagoIncrement>
 				<satisfactionIncrement>0.01</satisfactionIncrement>
 				<frustratedDecrement>-0.01</frustratedDecrement>
+			</li>
+			<li Class="RJW_Genes.TickIntervalExtension">
+				<!-- One day has 60k ticks, so we check every hour with 60000/24 = 2500-->
+				<tickInterval>2500</tickInterval>
+			</li>
+			<li Class="RJW_Genes.DistanceExtension">
+				<!-- distance 25 means 25 tiles in every direction from the empath.-->
+				<distance>25</distance>
 			</li>
 		</modExtensions>
 	</GeneDef>

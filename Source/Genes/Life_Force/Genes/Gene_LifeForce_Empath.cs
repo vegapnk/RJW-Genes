@@ -29,8 +29,8 @@ namespace RJW_Genes
         {
             LifeForceEmpathExtension empathExt = GeneDefOf.rjw_genes_lifeforce_empath.GetModExtension<LifeForceEmpathExtension>();
 
-            tickInterval = empathExt?.tickInterval ?? TICK_INTERVAL_FALLBACK;
-            empathDistance = empathExt?.empathDistance ?? EMPATH_DISTANCE_FALLBACK;
+            tickInterval =  ModExtensionHelper.GetTickIntervalFromModExtension(GeneDefOf.rjw_genes_lifeforce_empath, TICK_INTERVAL_FALLBACK);
+            empathDistance = ModExtensionHelper.GetTickIntervalFromModExtension(GeneDefOf.rjw_genes_lifeforce_empath, EMPATH_DISTANCE_FALLBACK);
 
             aheagoIncrement = empathExt?.aheagoIncrement ?? AHEAGO_FALLBACK;
             satisfiedIncrement = empathExt?.satisfactionIncrement ?? SATISFIED_FALLBACK;

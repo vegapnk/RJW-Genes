@@ -15,6 +15,6 @@ namespace RJW_Genes
     /// </summary>
     public class DistanceExtension : DefModExtension
     {
-        public int Distance;
+        public int distance;
     }
 }

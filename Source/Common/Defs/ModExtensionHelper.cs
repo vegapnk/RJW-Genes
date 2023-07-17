@@ -14,7 +14,7 @@ namespace RJW_Genes
         {
             DistanceExtension distanceExt = defOf.GetModExtension<DistanceExtension>();
 
-            int potentialDistance = distanceExt?.Distance ?? fallback;
+            int potentialDistance = distanceExt?.distance ?? fallback;
 
             if (potentialDistance > 0)
             {
