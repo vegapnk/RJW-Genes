@@ -8,6 +8,7 @@
 - Simple Gene that removes Sex need (called asexual, `rjw_genes_no_sex_need`)
 - New Gene that grows Penisses on Oral sex. Configurable in XML. 
 - New Gene Lifeforce Empath: Gain Lifeforce for sexually satisfied pawns, loose for frustrated pawns.
+- More genes are configurable with XML, e.g. tick speed, distances or multipliers. I am getting the hang of it. 
 
 **Fixes:**
 

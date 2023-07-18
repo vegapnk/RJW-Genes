@@ -265,8 +265,8 @@
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>3</displayOrderInCategory>
 		<displayCategory>rjw_genes_fertilin</displayCategory>
-		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>-2</biostatMet>
 
 		<modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">

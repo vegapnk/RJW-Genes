@@ -16,13 +16,14 @@ namespace RJW_Genes
         public const int RESIZING_AGE = 20;
 
         //public const int GROWTH_INTERVAL = 1000; // Test value for Quick Trials
-        public const int GROWTH_INTERVAL = 60000; // 60k == 1 day
+        public const int GROWTH_INTERVAL_FALLBACK = 60000; // 60k == 1 day
 
         public override void Tick()
         {
             base.Tick();
 
-            if (pawn.IsHashIntervalTick(GROWTH_INTERVAL) 
+            int interval = ModExtensionHelper.GetTickIntervalFromModExtension(GeneDefOf.rjw_genes_evergrowth, GROWTH_INTERVAL_FALLBACK);
+            if (pawn.IsHashIntervalTick(interval) 
                 && this.pawn.Map != null 
                 && pawn.ageTracker.AgeBiologicalYears >= RESIZING_AGE)
             {
