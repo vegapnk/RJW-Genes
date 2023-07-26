@@ -101,6 +101,11 @@ namespace RJW_Genes
                 hybridsThoughts = HediffMaker.MakeHediff(HediffDefOf.rjw_genes_evergrowth_sideeffect, pawn);
                 hybridsThoughts.Severity = 0.1f;
                 pawn.health.AddHediff(hybridsThoughts);
+
+                if (!xxx.is_nympho(pawn))
+                {
+                    pawn.story.traits.GainTrait(new Trait(xxx.nymphomaniac));
+                }
             }
         }
 
