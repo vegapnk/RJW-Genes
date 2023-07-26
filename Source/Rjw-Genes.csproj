@@ -41,6 +41,7 @@
     <Compile Include="Animal_Inheritance\Defs\BestialityGeneInheritanceDef.cs" />
     <Compile Include="Common\Defs\DistanceExtension.cs" />
     <Compile Include="Common\Defs\ModExtensionHelper.cs" />
+    <Compile Include="Common\Either.cs" />
     <Compile Include="Common\ModLog.cs" />
     <Compile Include="Common\Defs\TickIntervalExtension.cs" />
     <Compile Include="GeneDefOf.cs" />

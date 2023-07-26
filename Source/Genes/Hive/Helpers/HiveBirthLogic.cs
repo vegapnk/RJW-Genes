@@ -30,9 +30,9 @@ namespace RJW_Genes
         /// </summary>
         /// <param name="pawn">The pawn born, that maybe becomes a hive-xenotype.</param>
         /// <param name="hasDroneParent">whether there was a drone parent involved</param>
-        public static void ManageHiveBirth(Pawn pawn, bool hasDroneParent = false, XenotypeDef fallbackQueenDef = null, XenotypeDef fallbackDroneDef = null)
+        public static void ManageHiveBirth(Pawn pawn, bool hasDroneParent = false, Either<XenotypeDef, CustomXenotype> fallbackQueenDef = null, Either<XenotypeDef, CustomXenotype> fallbackDroneDef = null)
         {
-            XenotypeDef queenDef = TryFindParentQueenXenotype(pawn);
+            Either<XenotypeDef,CustomXenotype> queenDef = TryFindParentQueenXenotype(pawn);
             if (queenDef == null) queenDef = fallbackQueenDef;
             HiveOffspringChanceDef hiveOffspringChanceDef = HiveUtility.LookupHiveInheritanceChances(queenDef);
 
@@ -49,17 +49,15 @@ namespace RJW_Genes
                 // Case 2.a: New Queen born
                 if (roll < hiveOffspringChanceDef.queenChance)
                 {
-                    pawn.genes.SetXenotype(queenDef);
-                    if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"{pawn} born as a new queen with xenotype {queenDef.defName} ({hiveOffspringChanceDef.queenChance * 100}% chance,rolled {roll})");
-                    MakeQueenBornLetter(pawn);
+                    MakeQueen(pawn, queenDef);
+                    if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"Queen Chance: {hiveOffspringChanceDef.queenChance * 100}% chance,rolled { roll}");
                 }
                 // Case 2.b: New Drone born
                 else if (roll < hiveOffspringChanceDef.droneChance + hiveOffspringChanceDef.queenChance)
                 {
-                    XenotypeDef droneDef = TryFindParentDroneXenotype(pawn);
-                    if (droneDef == null) droneDef = fallbackDroneDef;
-                    pawn.genes.SetXenotype(droneDef);
-                    if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"{pawn} born as a new drone with xenotype {droneDef.defName} ({(hiveOffspringChanceDef.droneChance + hiveOffspringChanceDef.queenChance) * 100}% chance,rolled {roll}))");
+                    var droneDef = TryFindParentDroneXenotype(pawn); 
+                    MakeDrone(pawn,droneDef);
+                    if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"Drone Chance ({(hiveOffspringChanceDef.droneChance + hiveOffspringChanceDef.queenChance) * 100}% chance,rolled {roll}))");
                 }
                 // Case 2.c: Worker
                 else
@@ -70,6 +68,52 @@ namespace RJW_Genes
             }
         }
 
+        private static void MakeQueen(Pawn pawnToBeQueen, Either<XenotypeDef,CustomXenotype> queenDef) {
+            if (queenDef == null && pawnToBeQueen == null)
+                return;
+            if (queenDef.isLeft) {
+                var xenotype = queenDef.left;
+                pawnToBeQueen.genes.SetXenotype(xenotype);
+                if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"{pawnToBeQueen} born as a new queen with Xenotype {xenotype.defName}");
+            } else {
+                var customXenotype = queenDef.right;
+
+                foreach (var gene in customXenotype.genes)
+                    pawnToBeQueen.genes.AddGene(gene, true);
+
+                pawnToBeQueen.genes.xenotypeName = customXenotype.name;
+                pawnToBeQueen.genes.iconDef = customXenotype.iconDef;
+
+                if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"{pawnToBeQueen} born as a new queen with custom Xenotype {customXenotype.name}");
+            }
+
+            MakeQueenBornLetter(pawnToBeQueen);
+        }
+
+
+        private static void MakeDrone(Pawn pawnToBeDrone, Either<XenotypeDef, CustomXenotype> droneDef)
+        {
+            if (droneDef == null && pawnToBeDrone == null)
+                return;
+            if (droneDef.isLeft)
+            {
+                var xenotype = droneDef.left;
+                pawnToBeDrone.genes.SetXenotype(xenotype);
+                if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"{pawnToBeDrone} born as a new drone with Xenotype {xenotype.defName}");
+            }
+            else
+            {
+                var customXenotype = droneDef.right;
+
+                foreach (var gene in customXenotype.genes)
+                    pawnToBeDrone.genes.AddGene(gene, true);
+
+                pawnToBeDrone.genes.xenotypeName = customXenotype.name;
+                pawnToBeDrone.genes.iconDef = customXenotype.iconDef;
+
+                if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"{pawnToBeDrone} born as a new drone with custom Xenotype {customXenotype.name}");
+            }
+        }
 
         /// <summary>
         /// Turns a given pawn into a worker, by looking up the relevant genes as per queen.
@@ -79,14 +123,19 @@ namespace RJW_Genes
         /// </summary>
         /// <param name="pawnTobeWorker">The pawn for which the genes are added.</param>
         /// <param name="queenDef">The xenotype of the queen, used for lookup.</param>
-        private static void MakeWorker(Pawn pawnTobeWorker, XenotypeDef queenDef)
+        private static void MakeWorker(Pawn pawnTobeWorker, Either<XenotypeDef, CustomXenotype> queenDef)
         {
             if (pawnTobeWorker == null)
                 return;
 
             var mappings = HiveUtility.GetQueenWorkerMappings();
+            String queenDefName = HiveUtility.GetXenotypeDefName(queenDef);
+            if (queenDef == null || mappings.NullOrEmpty())
+                return;
 
-            var genes = mappings.TryGetValue(queenDef, HiveUtility.LookupDefaultWorkerGenes());
+            var genes = mappings.TryGetValue(queenDefName, HiveUtility.LookupDefaultWorkerGenes());
+            if (genes == null)
+                return;
 
             foreach (var gene in genes)
                 pawnTobeWorker.genes.AddGene(gene, false);
@@ -101,7 +150,7 @@ namespace RJW_Genes
         /// </summary>
         /// <param name="pawn">The pawn for whichs parent the xenotypes is looked up.</param>
         /// <returns>The Drone-Xenotype of a parent or null. If both are drones, mothers are preferred.</returns>
-        public static XenotypeDef TryFindParentDroneXenotype(Pawn pawn)
+        public static Either<XenotypeDef,CustomXenotype> TryFindParentDroneXenotype(Pawn pawn)
         {
             if (pawn == null)
                 return null;
@@ -109,7 +158,7 @@ namespace RJW_Genes
             List<DirectPawnRelation> parentRelations = pawn.relations.DirectRelations.FindAll(rel => rel.def.Equals(PawnRelationDefOf.Parent));
             foreach (DirectPawnRelation parent in parentRelations)
             {
-                XenotypeDef xenotype = HiveUtility.TryGetDroneXenotype(parent.otherPawn);
+                var xenotype = HiveUtility.TryGetDroneXenotype(parent.otherPawn);
                 if (xenotype != null) return xenotype;
             }
 
@@ -121,9 +170,8 @@ namespace RJW_Genes
             if (bornQueen == null) return;
 
             var letter= LetterMaker.MakeLetter(
-                "New Queen", "A new Queen was born! Make sure to adress inheritance before the new queen reaches adolesence.", LetterDefOf.NeutralEvent, bornQueen
+                "New Queen", "A new Queen was born! Make sure to adress succession before the new queen reaches adolesence.", LetterDefOf.NeutralEvent, bornQueen
                 );
-            //letter.Start();
             Find.LetterStack.ReceiveLetter(letter); 
         }
 
@@ -134,7 +182,7 @@ namespace RJW_Genes
         /// </summary>
         /// <param name="pawn">The pawn for whichs parent the xenotypes is looked up.</param>
         /// <returns>The Queen-Xenotype of a parent or null. If both are queens, mothers are preferred.</returns>
-        public static XenotypeDef TryFindParentQueenXenotype(Pawn pawn)
+        public static Either<XenotypeDef,CustomXenotype> TryFindParentQueenXenotype(Pawn pawn)
         {
             if (pawn == null)
                 return null;
@@ -142,7 +190,7 @@ namespace RJW_Genes
             List<DirectPawnRelation> parentRelations = pawn.relations.DirectRelations.FindAll(rel => rel.def.Equals(PawnRelationDefOf.Parent));
             foreach (var parent in parentRelations)
             {
-                XenotypeDef xenotype = HiveUtility.TryGetQueenXenotype(parent.otherPawn);
+                var xenotype = HiveUtility.TryGetQueenXenotype(parent.otherPawn);
                 if (xenotype != null) return xenotype;
             }
 

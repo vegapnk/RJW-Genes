@@ -15,6 +15,7 @@
 - New attempt at fixing condom consumption for Fertilin, adressing #41 & #48 provided by Infi
 - Copy of Infis patch for eating cum from sexperience, #41 and #48
 - Updated some Icons to have better backgrounds (thanks @WasmachenDennSachenSo #53)
+- Custom Queen- and Drone-Xenotypes should work now. 
 
 *Notes*: 
 The pawns that are gender fluid can get pregnant. 
