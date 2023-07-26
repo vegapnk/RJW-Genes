@@ -9,6 +9,7 @@
 - New Gene that grows Penisses on Oral sex. Configurable in XML. 
 - New Gene Lifeforce Empath: Gain Lifeforce for sexually satisfied pawns, loose for frustrated pawns.
 - More genes are configurable with XML, e.g. tick speed, distances or multipliers. I am getting the hang of it. 
+- Halfed Succubus Fertilin-Need, increased cost of abilities.
 
 **Fixes:**
 

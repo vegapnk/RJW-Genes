@@ -38,7 +38,7 @@
       </li>
 	  <li Class="RJW_Genes.CompProperties_CasterIsNaked"/>
 	  <li Class="RJW_Genes.CompProperties_AbilityLifeForceCost">
-        <fertilinCost>0.1</fertilinCost>
+        <fertilinCost>0.15</fertilinCost>
       </li>
     </comps>
 	
