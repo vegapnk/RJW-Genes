@@ -85,7 +85,7 @@ namespace RJW_Genes
                 if(colonyJoiners.Contains(pawn))
                 {
                     RecruitUtility.Recruit(pawn, Faction.OfPlayer);
-                    Find.LetterStack.ReceiveLetter("Guest Joins", string.Format("{0} enjoys it here and has decided to stay", xxx.get_pawnname(pawn)), LetterDefOf.PositiveEvent, pawn, null, null, null, null);
+                    Find.LetterStack.ReceiveLetter("rjw_genes_succubus_joins_letter_label".Translate(), string.Format("rjw_genes_succubus_joins_letter_description".Translate(), xxx.get_pawnname(pawn)), LetterDefOf.PositiveEvent, pawn, null, null, null, null);
                 }
                 else
                 {

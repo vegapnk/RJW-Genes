@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using rjw;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -169,9 +170,10 @@ namespace RJW_Genes
         {
             if (bornQueen == null) return;
 
-            var letter= LetterMaker.MakeLetter(
-                "New Queen", "A new Queen was born! Make sure to adress succession before the new queen reaches adolesence.", LetterDefOf.NeutralEvent, bornQueen
-                );
+            var letter = LetterMaker.MakeLetter(
+                "rjw_genes_queenbirth_letter_label".Translate(),
+                string.Format("rjw_genes_queenbirth_letter_description".Translate(), xxx.get_pawnname(bornQueen)),
+                LetterDefOf.NeutralEvent, bornQueen);
             Find.LetterStack.ReceiveLetter(letter); 
         }
 
