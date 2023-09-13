@@ -28,7 +28,7 @@
     </verbProperties>
     <comps>
 	  <li Class="RJW_Genes.CompProperties_AbilityLifeForceCost">
-        <fertilinCost>0.2</fertilinCost>
+        <fertilinCost>0.3</fertilinCost>
       </li>
       <li Class="RJW_Genes.CompProperties_AbilityPussyHeal"> 
         <tendQualityRange>0.4~0.8</tendQualityRange> 

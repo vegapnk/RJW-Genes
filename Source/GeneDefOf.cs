@@ -32,9 +32,10 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_extra_anus;
 		public static readonly GeneDef rjw_genes_no_anus;
 		public static readonly GeneDef rjw_genes_futa;
+		public static readonly GeneDef rjw_genes_featureless_chest;
 
-		// Genitalia Sizes
-		public static readonly GeneDef rjw_genes_big_male_genitalia;
+        // Genitalia Sizes
+        public static readonly GeneDef rjw_genes_big_male_genitalia;
 		public static readonly GeneDef rjw_genes_small_male_genitalia;
 		public static readonly GeneDef rjw_genes_loose_female_genitalia;
 		public static readonly GeneDef rjw_genes_tight_female_genitalia;
@@ -42,10 +43,12 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_small_breasts;
 		public static readonly GeneDef rjw_genes_loose_anus;
 		public static readonly GeneDef rjw_genes_tight_anus;
+		public static readonly GeneDef rjw_genes_evergrowth;
 
 		// Gender 
 		public static readonly GeneDef rjw_genes_female_only;
 		public static readonly GeneDef rjw_genes_male_only;
+		public static readonly GeneDef rjw_genes_gender_fluid;
 
 		// Breeding
 		public static readonly GeneDef rjw_genes_mechbreeder;
@@ -66,6 +69,7 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_rapist;
 		public static readonly GeneDef rjw_genes_homosexual;
 		public static readonly GeneDef rjw_genes_bisexual;
+		public static readonly GeneDef rjw_genes_no_sex_need;
 
 		// Damage & Side Effects 
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_elasticity;
@@ -77,6 +81,7 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_sex_age_drain;
 		public static readonly GeneDef rjw_genes_aphrodisiac_pheromones;
 		public static readonly GeneDef rjw_genes_sexual_mytosis;
+		public static readonly GeneDef rjw_genes_hormonal_saliva;
 
         // LifeForce
         public static readonly GeneDef rjw_genes_lifeforce;
@@ -88,9 +93,10 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_seduce;
 		public static readonly GeneDef rjw_genes_paralysingkiss;
 		public static readonly GeneDef rjw_genes_cockeater;
+		public static readonly GeneDef rjw_genes_lifeforce_empath;
 
-		// Cosmetic
-		public static readonly GeneDef rjw_genes_succubus_tail;
+        // Cosmetic
+        public static readonly GeneDef rjw_genes_succubus_tail;
 		public static readonly GeneDef rjw_genes_succubus_wings;
 
 		// Hive 

@@ -65,6 +65,17 @@
         <displayOrderInCategory>4</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>1</biostatMet>
+
+        <modExtensions>
+			<li Class="RJW_Genes.TickIntervalExtension">
+				<!-- One day has 60k ticks, so we check every hour with 60000/48 = 1250-->
+				<tickInterval>1250</tickInterval>
+			</li>
+			<li Class="RJW_Genes.DistanceExtension">
+				<!-- distance 25 means 25 tiles in every direction from the pheromone-pawn.-->
+				<distance>25</distance>
+			</li>
+        </modExtensions>
     </GeneDef>
     
     <GeneDef ParentName="SpecialBase">
@@ -77,5 +88,25 @@
         <biostatCpx>5</biostatCpx>
         <biostatMet>-5</biostatMet>
     </GeneDef>    
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_hormonal_saliva</defName>
+        <label>Hormonal Saliva</label>
+        <description>The saliva of this xenotype stimulates growth in penises. Regular contact will lead to noticable growth.</description>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <iconPath>Genes/Icons/Big_Male_Genitalia</iconPath>
+        <displayOrderInCategory>6</displayOrderInCategory>
+
+        <modExtensions>
+            <li Class="RJW_Genes.HormonalSalivaExtension">
+                <!-- SizeIncrement is applied "flat" -->
+                <sizeIncrement>0.02</sizeIncrement>
+                <maxBodySize>2.5</maxBodySize>
+                <!-- CumMultiplier is applied "exponential" -->
+                <cumMultiplier>1.05</cumMultiplier>
+            </li>
+        </modExtensions>
+    </GeneDef>
 
 </Defs>

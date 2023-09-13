@@ -46,4 +46,36 @@
         </modExtensions>
     </GeneDef>
     
+
+    <GeneDef>
+        <defName>rjw_genes_gender_fluid</defName>
+        <displayCategory>rjw_genes_gender</displayCategory>
+        <label>Gender Fluid</label>
+        <description>Everyday carriers of this gene might change their biological sex.</description>
+        <biostatCpx>0</biostatCpx>
+        <iconPath>Genes/Icons/Futa</iconPath>
+        <geneClass>RJW_Genes.Gene_GenderFluid</geneClass>
+        <displayOrderInCategory>2</displayOrderInCategory>
+        
+        <!-- Design Decision: GenderFluids like GenderFluids (slightly) more. -->
+        <missingGeneRomanceChanceFactor>0.9</missingGeneRomanceChanceFactor>
+
+        <exclusionTags>
+          <li>AG_Gender</li>
+          <li>Gender</li>          
+        </exclusionTags>
+
+        <modExtensions>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+            <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+            <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+          </li>
+          <li Class="RJW_Genes.GenderFluidExtension">
+                <!-- 120k = 2 days -->
+                <changeInterval>120000</changeInterval>
+                <changeChance>0.25</changeChance>
+          </li>
+        </modExtensions>
+    </GeneDef>
+
 </Defs>

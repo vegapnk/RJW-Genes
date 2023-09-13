@@ -36,7 +36,7 @@
         <fleckDef>Heart</fleckDef>
       </li>
 	  <li Class="RJW_Genes.CompProperties_AbilityLifeForceCost">
-        <fertilinCost>0.1</fertilinCost>
+        <fertilinCost>0.20</fertilinCost>
       </li>
     </comps>
   </AbilityDef>

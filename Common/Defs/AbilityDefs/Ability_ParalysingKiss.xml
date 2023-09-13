@@ -37,7 +37,7 @@
         <fleckDef>rjw_genes_lips</fleckDef> <!--Will change to kiss when I have a good icon/fleck for it-->
       </li>
 	  <li Class="RJW_Genes.CompProperties_AbilityLifeForceCost">
-        <fertilinCost>0.05</fertilinCost>
+        <fertilinCost>0.1</fertilinCost>
       </li>
     </comps> 
   </AbilityDef>
