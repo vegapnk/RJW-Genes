@@ -61,6 +61,9 @@ namespace RJW_Genes
         /// <returns>True if the pawn is on the home-map, False otherwise.</returns>
         public static bool PawnIsOnHomeMap(Pawn pawn)
         {
+            if  (Find.Maps.NullOrEmpty() || !Find.Maps.Where(mapCandidate => mapCandidate.IsPlayerHome).Any()) { 
+                return false; 
+            }
             Map homeMap = Find.Maps.Where(mapCandidate => mapCandidate.IsPlayerHome).First();
             return
                 homeMap != null && pawn != null

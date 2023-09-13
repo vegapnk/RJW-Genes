@@ -18,6 +18,7 @@
 - Copy of Infis patch for eating cum from sexperience, #41 and #48
 - Updated some Icons to have better backgrounds (thanks @WasmachenDennSachenSo #53)
 - Custom Queen- and Drone-Xenotypes should work now. 
+- Some more checks if Queen is on Map or not (fixing #60)
 
 *Notes*: 
 The pawns that are gender fluid can get pregnant. 
