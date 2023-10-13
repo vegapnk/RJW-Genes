@@ -1,3 +1,10 @@
+# 1.3.1 
+
+**Fixes:**
+
+- XML Missmatch for Succubus Letter (Fixed in #64, thanks @mwcrow)
+
+
 # 1.3.0
 
 **Changes:**
