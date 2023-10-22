@@ -3,7 +3,7 @@
 **Fixes:**
 
 - XML Missmatch for Succubus Letter (Fixed in #64, thanks @mwcrow)
-
+- Made constructor for Empathetic Lifeforce explicitly `public` to not hang up in character creation (Fixes #66)
 
 # 1.3.0
 

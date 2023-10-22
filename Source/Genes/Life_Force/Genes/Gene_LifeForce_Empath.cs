@@ -20,7 +20,7 @@ namespace RJW_Genes
         float frustratedDecrement = -0.01f;
 
 
-        Gene_LifeForce_Empath() : base()
+        public Gene_LifeForce_Empath() : base()
         {
             SetValuesFromExtension();
         }
