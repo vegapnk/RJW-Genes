@@ -1,5 +1,9 @@
 # 1.3.1 
 
+**Changes**
+
+- Added patches for Alpha-Genes Animusen, Drakonori and Malachai (Closes #65, thanks @Stars22223)
+
 **Fixes:**
 
 - XML Missmatch for Succubus Letter (Fixed in #64, thanks @mwcrow)
