@@ -3,13 +3,14 @@
 **Changes**
 
 - Added patches for Alpha-Genes Animusen, Drakonori and Malachai (Closes #65, thanks @Stars22223)
+- Little Social Boost for Pawns affected by pheromones (Closes #50)
 
 **Fixes:**
 
 - XML Missmatch for Succubus Letter (Fixed in #64, thanks @mwcrow)
 - Made constructor for Empathetic Lifeforce explicitly `public` to not hang up in character creation (Fixes #66)
 
-# 1.3.0
+# 1.3.0 (19-09-2023)
 
 **Changes:**
 

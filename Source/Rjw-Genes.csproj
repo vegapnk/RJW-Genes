@@ -153,6 +153,7 @@
     <Compile Include="Genes\Special\Patches\Patch_AgeDrain.cs" />
     <Compile Include="Genes\Special\Patches\Patch_HormonalSaliva.cs" />
     <Compile Include="Genes\Special\Patches\Patch_OrgasmMytosis.cs" />
+    <Compile Include="Genes\Special\Thoughts\ThoughtWorker_Aphrodisiac_Pheromones_Social.cs" />
     <Compile Include="Interactions\SuccubusTailjob\CompAbility_SexInteractionRequirements.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_PussyHeal.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompProperties_AbilityLifeForceCost.cs" />

@@ -11,7 +11,7 @@ namespace RJW_Genes
         // This means that adding +.25 equals 1.5h of Libido. 
         // Tick Speed is hence set to 0.5h 
 
-        const int APHRODISIAC_DISTANCE_FALLBACK = 25;
+        public const int APHRODISIAC_DISTANCE_FALLBACK = 25;
         const int TICK_INTERVAL_FALLBACK = 60000 / 48 ; // 60k = 1 day, we want 0.5h which is 1/48th of 1 day. 
 
         const float SEXFREQ_THRESHOLD = 0.5f;
@@ -83,6 +83,8 @@ namespace RJW_Genes
                 aphrodisiac = HediffMaker.MakeHediff(HediffDefOf.rjw_genes_aphrodisiac_pheromone, pawn);
                 aphrodisiac.Severity = 0.5f;
                 pawn.health.AddHediff(aphrodisiac);
+
+                
             }
         }
 
