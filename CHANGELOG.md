@@ -1,3 +1,9 @@
+# 1.3.2
+
+**Fixes:**
+
+- Removed patch for Malachai, needs a different patching operator but I don't want to have broken fixes for now (Tracked in a new Issue)
+
 # 1.3.1 
 
 **Changes**
