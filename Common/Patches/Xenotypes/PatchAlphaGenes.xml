@@ -1,86 +1,114 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-<Operation Class="PatchOperationSequence">
-    <operations>
-        <li Class="PatchOperationFindMod">
-            <mods>
-                <li>Alpha Genes</li>
-            </mods>
-            <match Class="PatchOperationAdd">
-                <xpath>Defs/XenotypeDef[defName="AG_Fleetkind"]/genes</xpath>
-                <value>
-                    <li>rjw_genes_slime_genitalia</li>
-                    <li MayRequire="LustLicentia.RJWLabs">rjw_genes_elasticity</li>
-                </value>
-            </match>
-        </li>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Alpha Genes</li>
+                </mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="AG_Fleetkind"]/genes</xpath>
+                    <value>
+                        <li>rjw_genes_slime_genitalia</li>
+                        <li MayRequire="LustLicentia.RJWLabs">rjw_genes_elasticity</li>
+                    </value>
+                </match>
+            </li>
 
-        <li Class="PatchOperationFindMod">
-            <mods>
-                <li>Alpha Genes</li>
-            </mods>
-            <match Class="PatchOperationAdd">
-                <xpath>Defs/XenotypeDef[defName="AG_Helixien"]/genes</xpath>
-                <value>
-                    <li>rjw_genes_slime_genitalia</li>
-                    <li MayRequire="LustLicentia.RJWLabs">rjw_genes_elasticity</li>
-                </value>
-            </match>
-        </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Alpha Genes</li>
+                </mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="AG_Helixien"]/genes</xpath>
+                    <value>
+                        <li>rjw_genes_slime_genitalia</li>
+                        <li MayRequire="LustLicentia.RJWLabs">rjw_genes_elasticity</li>
+                    </value>
+                </match>
+            </li>
 
-        <li Class="PatchOperationFindMod">
-            <mods>
-                <li>Alpha Genes</li>
-            </mods>
-            <match Class="PatchOperationAdd">
-                <xpath>Defs/XenotypeDef[defName="AG_Taukai"]/genes</xpath>
-                <value>
-                    <li>rjw_genes_sexual_mytosis</li>
-                </value>
-            </match>
-        </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Alpha Genes</li>
+                </mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="AG_Taukai"]/genes</xpath>
+                    <value>
+                        <li>rjw_genes_sexual_mytosis</li>
+                    </value>
+                </match>
+            </li>
 
-        <li Class="PatchOperationFindMod">
-            <mods>
-                <li>Alpha Genes</li>
-            </mods>
-            <match Class="PatchOperationAdd">
-                <xpath>Defs/XenotypeDef[defName="AG_MindDevourer"]/genes</xpath>
-                <value>
-                    <li>rjw_genes_demonic_genitalia</li>
-                    <li>rjw_genes_sex_age_drain</li>
-                </value>
-            </match>
-        </li>
-        
-        <li Class="PatchOperationFindMod">
-            <mods>
-                <li>Alpha Genes</li>
-            </mods>
-            <match Class="PatchOperationAdd">
-                <xpath>Defs/XenotypeDef[defName="AG_Lapis"]/genes</xpath>
-                <value>
-                    <li>rjw_genes_big_breasts</li>
-                    <li>rjw_genes_no_cum</li>
-                    <li>rjw_genes_big_male_genitalia</li>
-                </value>
-            </match>
-        </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Alpha Genes</li>
+                </mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="AG_MindDevourer"]/genes</xpath>
+                    <value>
+                        <li>rjw_genes_demonic_genitalia</li>
+                        <li>rjw_genes_sex_age_drain</li>
+                    </value>
+                </match>
+            </li>
 
-        <li Class="PatchOperationFindMod">
-            <mods>
-                <li>Alpha Genes</li>
-            </mods>
-            <match Class="PatchOperationAdd">
-                <xpath>Defs/XenotypeDef[defName="AG_Efreet"]/genes</xpath>
-                <value>
-                    <li>rjw_genes_demonic_genitalia</li>
-                    <li>rjw_genes_small_breasts</li>
-                    <li>rjw_genes_tight_female_genitalia</li>
-                    <li>rjw_genes_tight_anus</li>
-                </value>
-            </match>
-        </li>
-    </operations>
-</Operation>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Alpha Genes</li>
+                </mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="AG_Lapis"]/genes</xpath>
+                    <value>
+                        <li>rjw_genes_big_breasts</li>
+                        <li>rjw_genes_no_cum</li>
+                        <li>rjw_genes_big_male_genitalia</li>
+                    </value>
+                </match>
+            </li>
+
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Alpha Genes</li>
+                </mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="AG_Efreet"]/genes</xpath>
+                    <value>
+                        <li>rjw_genes_demonic_genitalia</li>
+                        <li>rjw_genes_small_breasts</li>
+                        <li>rjw_genes_tight_female_genitalia</li>
+                        <li>rjw_genes_tight_anus</li>
+                    </value>
+                </match>
+            </li>
+
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Alpha Genes</li>
+                </mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="AG_Drakonori"]/genes</xpath>
+                    <value>
+                        <li>rjw_genes_dragon_genitalia</li>
+                        <li>rjw_genes_big_male_genitalia</li>
+                        <li>rjw_genes_aphrodisiac_pheromones</li>
+                        <li>rjw_genes_big_breasts</li>
+                    </value>
+                </match>
+            </li>
+
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Alpha Genes</li>
+                </mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="AG_Animusen"]/genes</xpath>
+                    <value>
+                        <li>rjw_genes_canine_genitalia</li>
+                    </value>
+                </match>
+            </li>
+
+        </operations>
+    </Operation>
 </Patch>
