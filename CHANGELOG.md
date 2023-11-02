@@ -1,3 +1,9 @@
+# 1.3.3
+
+**Fixes:** 
+
+- Fixed the `GatheredCum`Fertilin Ingestion Patch throwing an Error for people without Sexperience (Fixes #69 (nice))
+
 # 1.3.2
 
 **Fixes:**
