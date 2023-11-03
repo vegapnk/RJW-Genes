@@ -39,11 +39,18 @@
     <Compile Include="Animal_Inheritance\Settings\RJW_BGSSettings.cs" />
     <Compile Include="Animal_Inheritance\Settings\RJW_BGSSettingsController.cs" />
     <Compile Include="Animal_Inheritance\Defs\BestialityGeneInheritanceDef.cs" />
+    <Compile Include="Common\Defs\DistanceExtension.cs" />
+    <Compile Include="Common\Defs\ModExtensionHelper.cs" />
+    <Compile Include="Common\Either.cs" />
     <Compile Include="Common\ModLog.cs" />
+    <Compile Include="Common\Defs\TickIntervalExtension.cs" />
     <Compile Include="GeneDefOf.cs" />
     <Compile Include="Genes\Breeding\Gene_MechBreeder.cs" />
     <Compile Include="Genes\Breeding\PatchMechBirth.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_UdderBreasts.cs" />
+    <Compile Include="Genes\Gender\Defs\GenderFluidExtension.cs" />
+    <Compile Include="Genes\Gender\Gene_GenderFluid.cs" />
+    <Compile Include="Genes\GenitaliaSize\Gene_EvergrowingGenitalia.cs" />
     <Compile Include="Genes\Hive\Defs\HiveOffspringChanceDef.cs" />
     <Compile Include="Genes\Hive\Genes\Gene_FerventOvipositor.cs" />
     <Compile Include="Genes\Hive\Genes\Gene_InsectIncubator.cs" />
@@ -110,6 +117,8 @@
     <Compile Include="Genes\Hive\Thoughts\ThoughtWorker_QueenPresent_Social.cs" />
     <Compile Include="Genes\Hive\Thoughts\ThoughtWorker_RivalQueen_Social.cs" />
     <Compile Include="Genes\Life_Force\Abilities\AbilityUtility.cs" />
+    <Compile Include="Genes\Life_Force\Defs\LifeForceEmpathExtension.cs" />
+    <Compile Include="Genes\Life_Force\Genes\Gene_LifeForce_Empath.cs" />
     <Compile Include="Genes\Life_Force\UI\Alert_LowFertilin.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_CasterIsNaked.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompProperties_CasterIsNaked.cs" />
@@ -139,9 +148,12 @@
     <Compile Include="Genes\Life_Force\JobGivers\JobGiver_GetLifeForce.cs" />
     <Compile Include="Genes\Life_Force\ThinkNodes\ThinkNode_NewFlirtTarget.cs" />
     <Compile Include="Genes\Patch_AddNotifyOnGeneration.cs" />
-    <Compile Include="Genes\Special\AgeTransferExtension.cs" />
-    <Compile Include="Genes\Special\Patch_AgeDrain.cs" />
-    <Compile Include="Genes\Special\Patch_OrgasmMytosis.cs" />
+    <Compile Include="Genes\Special\Defs\AgeTransferExtension.cs" />
+    <Compile Include="Genes\Special\Defs\HormonalSalivaExtension.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_AgeDrain.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_HormonalSaliva.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_OrgasmMytosis.cs" />
+    <Compile Include="Genes\Special\Thoughts\ThoughtWorker_Aphrodisiac_Pheromones_Social.cs" />
     <Compile Include="Interactions\SuccubusTailjob\CompAbility_SexInteractionRequirements.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_PussyHeal.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompProperties_AbilityLifeForceCost.cs" />
@@ -156,10 +168,10 @@
     <Compile Include="Genes\Life_Force\Genes\Gene_LifeForce.cs" />
     <Compile Include="Genes\RJW_Gene.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaUtility.cs" />
-    <Compile Include="Genes\Special\Gene_Aphrodisiac_Pheromones.cs" />
+    <Compile Include="Genes\Special\Genes\Gene_Aphrodisiac_Pheromones.cs" />
     <Compile Include="Genes\Life_Force\Patches\Patch_SatisfyPersonal_LifeForceGain.cs" />
-    <Compile Include="Genes\Special\Patch_OrgasmRush.cs" />
-    <Compile Include="Genes\Special\Patch_Youth_Fountain.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_OrgasmRush.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_Youth_Fountain.cs" />
     <Compile Include="HarmonyInit.cs" />
     <Compile Include="HediffDefOf.cs" />
     <Compile Include="Interactions\SuccubusTailjob\CustomSexInteraction_Helper.cs" />
@@ -199,6 +211,7 @@
     </Reference>
     <Reference Include="RJWSexperience">
       <HintPath>..\..\RJW-Sexperience-1.1.4.0\1.4\Assemblies\RJWSexperience.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="UnityEngine">
@@ -216,6 +229,8 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Genes\Gender\Patches\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

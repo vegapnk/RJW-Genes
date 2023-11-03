@@ -61,6 +61,9 @@ namespace RJW_Genes
         /// <returns>True if the pawn is on the home-map, False otherwise.</returns>
         public static bool PawnIsOnHomeMap(Pawn pawn)
         {
+            if  (Find.Maps.NullOrEmpty() || !Find.Maps.Where(mapCandidate => mapCandidate.IsPlayerHome).Any()) { 
+                return false; 
+            }
             Map homeMap = Find.Maps.Where(mapCandidate => mapCandidate.IsPlayerHome).First();
             return
                 homeMap != null && pawn != null
@@ -74,7 +77,7 @@ namespace RJW_Genes
         /// </summary>
         /// <param name="pawn"></param>
         /// <returns>A xenotype with a queen gene, or null.</returns>
-        public static XenotypeDef TryGetQueenXenotype(Pawn pawn)
+        public static Either<XenotypeDef,CustomXenotype> TryGetQueenXenotype(Pawn pawn)
         {
             if (pawn == null)
                 return null; 
@@ -84,8 +87,15 @@ namespace RJW_Genes
                 var potentialXenotype = pawn.genes.Xenotype;
                 if (potentialXenotype != null && potentialXenotype.genes.Contains(GeneDefOf.rjw_genes_queen))
                 {
-                    return potentialXenotype;
+                    return new Either<XenotypeDef,CustomXenotype>(potentialXenotype);
                 }
+
+                var potentialCustomXenotype = pawn.genes.CustomXenotype;
+                if (potentialCustomXenotype != null && potentialCustomXenotype.genes.Contains(GeneDefOf.rjw_genes_queen))
+                {
+                    return new Either<XenotypeDef, CustomXenotype>(potentialCustomXenotype);
+                }
+
             }
 
             return null;
@@ -98,7 +108,7 @@ namespace RJW_Genes
         /// </summary>
         /// <param name="pawn"></param>
         /// <returns>A xenotype with a drone gene, or null.</returns>
-        public static XenotypeDef TryGetDroneXenotype(Pawn pawn)
+        public static Either<XenotypeDef,CustomXenotype> TryGetDroneXenotype(Pawn pawn)
         {
             if (pawn == null)
                 return null;
@@ -108,7 +118,13 @@ namespace RJW_Genes
                 var potentialXenotype = pawn.genes.Xenotype;
                 if (potentialXenotype != null && potentialXenotype.genes.Contains(GeneDefOf.rjw_genes_drone))
                 {
-                    return potentialXenotype;
+                    return new Either<XenotypeDef,CustomXenotype>(potentialXenotype);
+                }
+
+                var potentialCustomXenotype = pawn.genes.CustomXenotype;
+                if (potentialCustomXenotype != null && potentialCustomXenotype.genes.Contains(GeneDefOf.rjw_genes_drone))
+                {
+                    return new Either<XenotypeDef, CustomXenotype>(potentialCustomXenotype);
                 }
             }
 
@@ -122,23 +138,35 @@ namespace RJW_Genes
         /// Prints a bigger piece of information when debug printing is enabled. 
         /// </summary>
         /// <returns>A mapping which Queen-Xenotypes should produce which worker genes.</returns>
-
-        public static Dictionary<XenotypeDef,List<GeneDef>> GetQueenWorkerMappings()
+        public static Dictionary<String,List<GeneDef>> GetQueenWorkerMappings()
         {
-            Dictionary<XenotypeDef,List<GeneDef>> dict = new Dictionary<XenotypeDef, List<GeneDef>>();
             IEnumerable<QueenWorkerMappingDef> mappingDefs = DefDatabase<QueenWorkerMappingDef>.AllDefs;
+
+            Dictionary<string, List<GeneDef>> results = new Dictionary<string, List<GeneDef>>();
 
             // Dev-Note: I first a nice lambda here, but I used nesting in favour of logging.
             foreach (QueenWorkerMappingDef mappingDef in mappingDefs)
             {
-               
+                // Option A) This is the default worker genes, expected, just ignore.
                 if (mappingDef.defName == "rjw_genes_default_worker_genes")
                 {
                     // Do nothing, there is no lookup but this entry is fine and should not log a warning. 
                     continue;
                 }
+                // Option B) The Xenotype is a "static" Xenotype, from a mod or something.
                 XenotypeDef queenDef = DefDatabase<XenotypeDef>.GetNamed(mappingDef.queenXenotype);
+                string defName = null;
                 if (queenDef != null)
+                {
+                    defName = queenDef.defName;
+                }
+                else if (Current.Game != null && Current.Game.customXenotypeDatabase != null)
+                {
+                    // Option C) The Xenotype is a Custom Xenotype, created by the player
+                    CustomXenotype customQueenDef = Current.Game.customXenotypeDatabase.customXenotypes.Find(f => f.name == mappingDef.defName);
+                    defName = customQueenDef?.name;
+                }
+                if (defName != null)
                 {
                     List<GeneDef> workerGenes = new List<GeneDef>();
                     foreach (string geneName in mappingDef.workerGenes)
@@ -149,15 +177,17 @@ namespace RJW_Genes
                         else if(RJW_Genes_Settings.rjw_genes_detailed_debug)
                             ModLog.Warning($"Could not look up Gene {geneName} for {mappingDef.queenXenotype}.");
                     }
-                    dict.Add(queenDef, workerGenes);
+                    results.Add(defName, workerGenes);
+                    continue;
                 }
-                else {
-                    if (RJW_Genes_Settings.rjw_genes_detailed_debug) 
-                        ModLog.Warning($"Did not find a matching xenotype for {mappingDef.queenXenotype}! Defaulting to rjw_genes_default_worker_genes.");
-                }
+
+                // Option D) Fallback, unknown
+                if (RJW_Genes_Settings.rjw_genes_detailed_debug) 
+                    ModLog.Warning($"Did not find a matching xenotype for {mappingDef.queenXenotype}! Defaulting to rjw_genes_default_worker_genes.");
+                
             }
 
-            return dict;
+            return results;
         }
 
         /// <summary>
@@ -203,6 +233,16 @@ namespace RJW_Genes
         }
 
 
+        public static String GetXenotypeDefName(Either<XenotypeDef, CustomXenotype> def)
+        {
+            if (def == null)
+                return null;
+            else if (def.isLeft)
+                return def.left.defName;
+            else
+                return def.right.name;
+        }
+
         public static HiveOffspringChanceDef LookupDefaultHiveInheritanceChances()
         {
             IEnumerable<HiveOffspringChanceDef> offspringChanceDefs = DefDatabase<HiveOffspringChanceDef>.AllDefs;
@@ -217,11 +257,16 @@ namespace RJW_Genes
             return defaultChance;
         }
 
-        public static HiveOffspringChanceDef LookupHiveInheritanceChances(XenotypeDef queenDef)
+        public static HiveOffspringChanceDef LookupHiveInheritanceChances(Either<XenotypeDef, CustomXenotype> queenDef)
         {
+            if (queenDef == null)
+                return LookupDefaultHiveInheritanceChances();
+
+            String queenDefName = queenDef.isLeft ? queenDef.left.defName : queenDef.right.name;
+
             IEnumerable<HiveOffspringChanceDef> offspringChanceDefs = DefDatabase<HiveOffspringChanceDef>.AllDefs;
 
-            return offspringChanceDefs.FirstOrFallback(t => t.queenXenotype == queenDef.defName, LookupDefaultHiveInheritanceChances());
+            return offspringChanceDefs.FirstOrFallback(t => t.queenXenotype == queenDefName, LookupDefaultHiveInheritanceChances());
         }
 
 

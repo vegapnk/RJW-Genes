@@ -111,4 +111,26 @@
       <li>AnusSize</li>
     </exclusionTags>
   </GeneDef>
+
+  <!-- Extra -->
+  
+  <GeneDef ParentName="GeneGenitaliaSizeBase">
+    <defName>rjw_genes_evergrowth</defName>
+    <label>Evergrowth</label>
+    <description>One of the most regretted gene-modifications in the Glitterworlds: The (primary) genitalia will continue growing forever. This affects size and fluid output. Excessive growth can also effect mental stability! (Resizing takes place at 20th Birthday)</description>
+    <iconPath>Genes/Icons/Big_Male_Genitalia</iconPath>
+    <geneClass>RJW_Genes.Gene_EvergrowingGenitalia</geneClass>
+    <displayOrderInCategory>767</displayOrderInCategory>
+    <exclusionTags>
+      <li>PenisSize</li>
+      <li>VaginaSize</li>
+    </exclusionTags>
+    <modExtensions>
+        	<li Class="RJW_Genes.TickIntervalExtension">
+				<!-- One day has 60k ticks-->
+				<tickInterval>60000</tickInterval>
+			</li>
+		</modExtensions>
+  </GeneDef> 
+  
 </Defs>

@@ -27,9 +27,9 @@
     <biostatCpx>1</biostatCpx>
 	<biostatMet>-1</biostatMet>
     <graphicData>
-      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/rjw_genes_Succubus_Wings/Succubus_Wings</graphicPath>
+      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/RJW_Genes_Succubus_Wings/RJW_Genes_Succubus_Wings</graphicPath>
       <colorType>Skin</colorType>
-	  <drawScale>2</drawScale>
+	    <drawScale>2</drawScale>
       <drawOffsetNorth>(0.0, 0.01, -0.1)</drawOffsetNorth>
       <drawOffsetSouth>(0.0, 0.0, -0.1)</drawOffsetSouth>
       <drawOffsetEast>(0.1, 0.0, 0.0)</drawOffsetEast>
@@ -59,14 +59,9 @@
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
     <graphicData>
-      <graphicPaths>
-		<li>Things/Pawn/Humanlike/BodyAttachments/rjw_genes_Succubus_Tail/Succubus_Tail_L1</li>
-		<li>Things/Pawn/Humanlike/BodyAttachments/rjw_genes_Succubus_Tail/Succubus_Tail_R1</li>
-		<li>Things/Pawn/Humanlike/BodyAttachments/rjw_genes_Succubus_Tail/Succubus_Tail_L2</li>
-		<li>Things/Pawn/Humanlike/BodyAttachments/rjw_genes_Succubus_Tail/Succubus_Tail_R2</li>
-	  </graphicPaths>
+      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/RJW_Genes_Succubus_Tail/RJW_Genes_Succubus_Tail</graphicPath>
       <colorType>Skin</colorType>
-	  <drawScale>2</drawScale>
+	    <drawScale>2</drawScale>
       <drawOffsetNorth>(0, 0.2, -0.1)</drawOffsetNorth>
       <drawOffsetSouth>(0, -0.1, 0.1)</drawOffsetSouth>
       <drawOffsetEast>(0.2, 0.2, 0.1)</drawOffsetEast>

@@ -1,3 +1,55 @@
+# 1.3.3
+
+**Fixes:** 
+
+- Added another check to the AG Malachai Xenotype (Fixes #68)
+- Fixed the `GatheredCum`Fertilin Ingestion Patch throwing an Error for people without Sexperience (Fixes #69 (nice))
+
+# 1.3.2
+
+**Fixes:**
+
+- Removed patch for Malachai, needs a different patching operator but I don't want to have broken fixes for now (Tracked in a new Issue)
+
+# 1.3.1 
+
+**Changes**
+
+- Added patches for Alpha-Genes Animusen, Drakonori and Malachai (Closes #65, thanks @Stars22223)
+- Little Social Boost for Pawns affected by pheromones (Closes #50)
+
+**Fixes:**
+
+- XML Missmatch for Succubus Letter (Fixed in #64, thanks @mwcrow)
+- Made constructor for Empathetic Lifeforce explicitly `public` to not hang up in character creation (Fixes #66)
+
+# 1.3.0 (19-09-2023)
+
+**Changes:**
+
+- New Gene for Evergrowing Cocks. Be careful. 
+- New Gene for Genderfluid Pawns - daily chance to change sex. Futas just change "display" and keep genitalia, other pawns switch genitalia. XML configurable times & chances. 
+- New Drawings for the Succubi Wings & Tail, thanks to @Monti (donated via Discord)
+- Simple Gene that removes Sex need (called asexual, `rjw_genes_no_sex_need`)
+- New Gene that grows Penisses on Oral sex. Configurable in XML. 
+- New Gene Lifeforce Empath: Gain Lifeforce for sexually satisfied pawns, loose for frustrated pawns.
+- More genes are configurable with XML, e.g. tick speed, distances or multipliers. I am getting the hang of it. 
+- Halfed Succubus Fertilin-Need, increased cost of abilities.
+- Translation Keys for some letters
+
+**Fixes:**
+
+- New attempt at fixing condom consumption for Fertilin, adressing #41 & #48 provided by Infi
+- Copy of Infis patch for eating cum from sexperience, #41 and #48
+- Updated some Icons to have better backgrounds (thanks @WasmachenDennSachenSo #53)
+- Custom Queen- and Drone-Xenotypes should work now. 
+- Some more checks if Queen is on Map or not (fixing #60)
+
+*Notes*: 
+The pawns that are gender fluid can get pregnant. 
+However, with RJW 5.3.7 these pregnancies disappear. 
+This is a change needed upstream, but I will have a look. 
+
 # 1.2.1 
 
 **Fixes**: 

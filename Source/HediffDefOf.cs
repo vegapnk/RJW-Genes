@@ -17,6 +17,8 @@ namespace RJW_Genes
         public static readonly HediffDef rjw_genes_orgasm_rush_hediff;
         public static readonly HediffDef rjw_genes_fertilin_craving;
 
+        public static readonly HediffDef rjw_genes_evergrowth_sideeffect;
+
         public static readonly HediffDef rjw_genes_orgasmic_mytosis_hediff;
         public static readonly HediffDef rjw_genes_mytosis_shock_hediff;
     }

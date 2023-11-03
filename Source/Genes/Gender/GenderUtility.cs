@@ -31,7 +31,8 @@ namespace RJW_Genes
         }
 
         /// <summary>
-        /// Adjusts the Body Type to match the given target gender 
+        /// Adjusts the Body Type to match the given target gender.
+        /// This is only for "drawing" attributes of the pawn, the genitalia are untouched at this point. 
         /// (for male and female only, baby,child and hulks don't change)
         /// </summary>
         /// <param name="pawn"></param>
