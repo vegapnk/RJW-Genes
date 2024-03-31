@@ -10,6 +10,7 @@
           <xpath>Defs/XenotypeDef[defName = "BS_Kitsune"]/genes</xpath>
           <value>
             <li>rjw_genes_canine_genitalia</li>
+            <li>LitteredBirths</li>
           </value>
         </li>
 
@@ -19,6 +20,7 @@
             <li>rjw_genes_feline_genitalia</li>
             <li>rjw_genes_extra_vagina</li>
             <li>rjw_genes_extra_penis</li>
+            <li>LitteredBirths</li>
           </value>
         </li>
 
@@ -26,6 +28,7 @@
           <xpath>Defs/XenotypeDef[defName = "BS_RedOni" or defName = "BS_BlueOni" or defName = "BS_LesserOni"]/genes</xpath>
           <value>
             <li>rjw_genes_demonic_genitalia</li>
+            <li>rjw_genes_much_cum</li>
           </value>
         </li>
 
@@ -33,7 +36,9 @@
           <xpath>Defs/XenotypeDef[defName = "BS_GreatBlueOni" or defName = "BS_GreatRedOni"]/genes</xpath>
           <value>
             <li>rjw_genes_demonic_genitalia</li>
-            <li>rjw_genes_much_cum</li>
+            <li>rjw_genes_big_male_genitalia</li>
+            <li>rjw_genes_loose_female_genitalia</li>
+            <li>rjw_genes_very_much_cum</li>
           </value>
         </li>
       </operations>

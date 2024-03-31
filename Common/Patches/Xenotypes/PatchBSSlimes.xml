@@ -4,19 +4,32 @@
     <mods>
       <li>Big and Small - Slimes</li>
     </mods>
-    <match Class="PatchOperationAdd">
-      <xpath>Defs/XenotypeDef[defName="BS_GreenSlime" 
-                            or defName="BS_PinkSlime" 
-                            or defName="BS_FrostSlime" 
-                            or defName="BS_LavaSlime" 
-                            or defName="BS_EmperorSlime" 
-                            or defName="BS_ElixirSlime" 
-                            or defName="BS_BananaSplitSlime" 
-                            or defName="BS_ToxicSludge"
-        ]/genes</xpath>
-      <value>
-        <li>rjw_genes_slime_genitalia</li>
-      </value>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_GreenSlime"
+                                    or defName="BS_PinkSlime"
+                                    or defName="BS_FrostSlime"
+                                    or defName="BS_LavaSlime"
+                                    or defName="BS_EmperorSlime"
+                                    or defName="BS_ElixirSlime"
+                                    or defName="BS_ToxicSludge"
+                                    or defName="BS_BananaSplitSlime"
+                                  ]/genes</xpath>
+          <value>
+            <li>rjw_genes_slime_genitalia</li>
+            <li>rjw_genes_much_cum</li>
+            <li MayRequire="LustLicentia.RJWLabs">rjw_genes_elasticity</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_BananaSplitSlime"]/genes</xpath>
+          <value>
+            <li>rjw_genes_hypersexual</li> <!-- :3c -->
+            <li>rjw_genes_bisexual</li>
+          </value>
+        </li>
+      </operations>
     </match>
   </Operation>
 </Patch>
