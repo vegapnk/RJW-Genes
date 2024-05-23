@@ -138,7 +138,6 @@ namespace RJW_Genes
 
             SwitchBreasts();
 
-            RemoveLicentiaVaginaHediffs();
         }
 
 
@@ -199,38 +198,7 @@ namespace RJW_Genes
         /// Checks the pawn if it has any of the vagina-related hediffs (e.g. stretched) and removes them.
         /// Anal Soreness, Stretching etc. remains. 
         /// </summary>
-        private void RemoveLicentiaVaginaHediffs()
-        {
-            try
-            {
-                if (ModsConfig.IsActive("LustLicentia.RJWLabs")){
-                    Hediff cumflation = pawn.health.hediffSet.GetFirstHediffOfDef(LicentiaLabs.Licentia.HediffDefs.Cumflation);
-                    if (cumflation != null)
-                        pawn.health.RemoveHediff(cumflation);
-
-                    Hediff stretched = pawn.health.hediffSet.GetFirstHediffOfDef(LicentiaLabs.Licentia.HediffDefs.Stretched);
-                    if (stretched != null && stretched.Part != Genital_Helper.get_anusBPR(pawn))
-                        pawn.health.RemoveHediff(stretched);
-
-                    Hediff torn = pawn.health.hediffSet.GetFirstHediffOfDef(LicentiaLabs.Licentia.HediffDefs.StretchTear);
-                    if (torn != null && torn.Part != Genital_Helper.get_anusBPR(pawn))
-                        pawn.health.RemoveHediff(torn);
-
-                    Hediff prolapsed = pawn.health.hediffSet.GetFirstHediffOfDef(LicentiaLabs.Licentia.HediffDefs.Prolapse);
-                    if (prolapsed != null && prolapsed.Part != Genital_Helper.get_anusBPR(pawn))
-                        pawn.health.RemoveHediff(prolapsed);
-
-                    Hediff extremeProlapsed = pawn.health.hediffSet.GetFirstHediffOfDef(LicentiaLabs.Licentia.HediffDefs.ExtremeProlapse);
-                    if (extremeProlapsed != null && extremeProlapsed.Part != Genital_Helper.get_anusBPR(pawn))
-                        pawn.health.RemoveHediff(extremeProlapsed);
-                };
-            }
-            //TODO: Don't make this an "catch all" Exception!
-            catch (Exception ex)
-            {
-                // To be expected for people without Licentia Labs, do nothing.
-            }
-        }
+       
 
 
         /// <summary>
@@ -252,8 +220,6 @@ namespace RJW_Genes
                 
                 || (pawn.jobs.curDriver is JobDriver_SexQuick)
                 || (pawn.jobs.curDriver is JobDriver_SexBaseRecieverQuickie)
-                || (pawn.jobs.curDriver is JobDriver_SexOnSpot)
-                || (pawn.jobs.curDriver is JobDriver_SexOnSpotReciever)
 
                 || (pawn.jobs.curDriver is JobDriver_Knotted)
                 || (pawn.jobs.curDriver is JobDriver_Mate)

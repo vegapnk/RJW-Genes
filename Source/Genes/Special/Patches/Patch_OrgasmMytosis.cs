@@ -143,7 +143,7 @@ namespace RJW_Genes
             copy.style = CopyStyleTracker(copy, toMultiply.style);
             copy.story = CopyStoryTracker(copy, toMultiply.story);
 
-            copy.Draw();
+
             return copy;
 		}
 

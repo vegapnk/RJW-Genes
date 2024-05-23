@@ -9,7 +9,7 @@ using HarmonyLib;
 using rjw;
 using RimWorld;
 using Verse;
-using LicentiaLabs;
+
 
 namespace RJW_Genes
 {
@@ -29,13 +29,6 @@ namespace RJW_Genes
             // I could have done some transpiler stuff, but that is scary and might need to be adjusted quite a lot 
             // Hence, I simply re-book the nutrition back to the giver in the Postfix. That should be robust and easy. 
 
-            if (GeneUtility.IsGenerousDonor(giver)) { 
-                float donatedNutrition = CumflationHelper.CalculateNutritionAmount(giver, cumAmount);
-                // TODO: In theory, there could be something weird happening if the donor has food less than X and the "IgnoreThermodynamics" is set on. 
-                // Then it can happen that the donor ends up with more food than he had before cumshot, but I think that is somewhat funny given that you have ignore Thermodynamics on. 
-                Need_Food inflatorFood = giver.needs.TryGetNeed<Need_Food>();
-                inflatorFood.CurLevel += donatedNutrition;
-            }
         }
     }
 }

@@ -18,13 +18,6 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/XenotypeDef[defName="Waster"]/genes</xpath>
-		<value>
-			<li>rjw_genes_insectbreeder</li>
-		</value>
-	</Operation>
-    
-	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/XenotypeDef[defName="Yttakin"]/genes</xpath>
 		<value>
 			<li>rjw_genes_big_male_genitalia</li>

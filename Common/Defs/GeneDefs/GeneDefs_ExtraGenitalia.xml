@@ -122,6 +122,19 @@
 	    </exclusionTags>
     </GeneDef>
 	
+	<GeneDef ParentName="GeneExtraGenitaliaBase">
+	    <defName>rjw_genes_femboy</defName>
+	    <label>femboy</label>
+	    <description>Males with this gene hare considered female despite having a penis</description>
+	    <iconPath>Genes/Icons/Futa</iconPath>
+	    <geneClass>RJW_Genes.Gene_Femboy</geneClass>
+	    <displayOrderInCategory>709</displayOrderInCategory>
+	    <exclusionTags>
+		    <li>PenisAmount</li>
+		    <li>VaginaAmount</li>
+	    </exclusionTags>
+    </GeneDef>
+	
   <GeneDef ParentName="GeneExtraGenitaliaBase">
     <defName>rjw_genes_featureless_chest</defName>
     <label>Featureless Chest</label>
