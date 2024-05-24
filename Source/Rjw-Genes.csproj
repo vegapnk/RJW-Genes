@@ -135,7 +135,7 @@
     </Reference>
     <Reference Include="RJW, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\rjw\1.4\Assemblies\RJW.dll</HintPath>
+      <HintPath>..\..\rjw\1.5\Assemblies\RJW.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RJWSexperience">
