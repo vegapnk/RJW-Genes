@@ -27,8 +27,6 @@
     <None Include="..\Common\Defs\Genes\GeneDefs_ExtraGenitaliaEndogenes.xml" />
     <None Include="..\Common\Defs\Genes\GeneDefs_GenitaliaTypeEndogenes.xml" />
     <None Include="..\Common\Languages\English\Keyed\Dialog_StatsReport.xml" />
-    <None Include="..\Common\Languages\English\Keyed\Hive.xml" />
-    <None Include="..\Common\Languages\English\Keyed\Lifeforce.xml" />
     <None Include="..\Common\Patches\**" />
   </ItemGroup>
   <ItemGroup>
@@ -86,6 +84,10 @@
     <Compile Include="Genes\GenitaliaSize\Gene_BigMaleGenitalia.cs" />
     <Compile Include="Genes\GenitaliaSize\Patch_ResizingOnAdulthood.cs" />
     <Compile Include="Genes\GenitaliaSize\SizeAdjuster.cs" />
+    <Compile Include="Genes\Genitalia\Gene_ReptilianGenitalia.cs" />
+    <Compile Include="Genes\Genitalia\Gene_CrocodilianGenitalia.cs" />
+    <Compile Include="Genes\Genitalia\Gene_RacoonGenitalia.cs" />
+    <Compile Include="Genes\Genitalia\Gene_DemonicGenitaliaTentacle.cs" />
     <Compile Include="Genes\Genitalia\Gene_SlimeGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_DragonGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_FelineGenitalia.cs" />

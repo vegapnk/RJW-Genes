@@ -69,6 +69,42 @@
     <geneClass>RJW_Genes.Gene_SlimeGenitalia</geneClass>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
+  
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_demonicT_genitalia</defName>
+    <label>demonic tentacle genitalia</label>
+    <description>Carriers of this gene have demonic tentacle genitalia.</description>
+    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <geneClass>RJW_Genes.Gene_DemonicGenitaliaTentacle</geneClass>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_crocodilian_genitalia</defName>
+    <label>crocodilian genitalia</label>
+    <description>Carriers of this gene have crocodilian genitalia.</description>
+    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <geneClass>RJW_Genes.Gene_CrocodilianGenitalia</geneClass>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_racoon_genitalia</defName>
+    <label>racoon genitalia</label>
+    <description>Carriers of this gene have racoon genitalia.</description>
+    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <geneClass>RJW_Genes.Gene_RacoonGenitalia</geneClass>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_reptilian_genitalia</defName>
+    <label>reptilian genitalia</label>
+    <description>Carriers of this gene have reptilian genitalia.</description>
+    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <geneClass>RJW_Genes.Gene_ReptilianGenitalia</geneClass>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
 
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_ovipositor_genitalia</defName>

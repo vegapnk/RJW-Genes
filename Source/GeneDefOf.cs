@@ -21,9 +21,13 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_ovipositor_genitalia;
 		public static readonly GeneDef rjw_genes_feline_genitalia;
 		public static readonly GeneDef rjw_genes_canine_genitalia;
+        public static readonly GeneDef rjw_genes_demonicT_genitalia;
+        public static readonly GeneDef rjw_genes_crocodilian_genitalia;
+        public static readonly GeneDef rjw_genes_racoon_genitalia;
+        public static readonly GeneDef rjw_genes_reptilian_genitalia;
 
-		// Extra Genitalia 
-		public static readonly GeneDef rjw_genes_extra_penis;
+        // Extra Genitalia 
+        public static readonly GeneDef rjw_genes_extra_penis;
 		public static readonly GeneDef rjw_genes_no_penis;
 		public static readonly GeneDef rjw_genes_extra_vagina;
 		public static readonly GeneDef rjw_genes_no_vagina;
