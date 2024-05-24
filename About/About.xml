@@ -1,7 +1,7 @@
 <ModMetaData>
 	<name>RJW Genes</name>
-	<author>Vegapnk</author>
-    <packageId>Vegapnk.rjw.genes</packageId>
+	<author>jaaldabaoth</author>
+    <packageId>jaaldabaoth.rjw.genes</packageId>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>

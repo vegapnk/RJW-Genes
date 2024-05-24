@@ -84,10 +84,18 @@
     <Compile Include="Genes\GenitaliaSize\Gene_BigMaleGenitalia.cs" />
     <Compile Include="Genes\GenitaliaSize\Patch_ResizingOnAdulthood.cs" />
     <Compile Include="Genes\GenitaliaSize\SizeAdjuster.cs" />
+    <Compile Include="Genes\Genitalia\Gene_TentacleGenitalia.cs" />
+    <Compile Include="Genes\Genitalia\Gene_GolemGenitalia.cs" />
+    <Compile Include="Genes\Genitalia\Gene_OrcGenitalia.cs" />
+    <Compile Include="Genes\Genitalia\Gene_GhostGenitalia.cs" />
+    <Compile Include="Genes\Genitalia\Gene_NecroGenitalia.cs" />
+    <Compile Include="Genes\Genitalia\Gene_MarineGenitalia.cs" />
+    <Compile Include="Genes\Genitalia\Gene_PigGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_ReptilianGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_CrocodilianGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_RacoonGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_DemonicGenitaliaTentacle.cs" />
+    <Compile Include="Genes\Genitalia\Gene_NeedleGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_SlimeGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_DragonGenitalia.cs" />
     <Compile Include="Genes\Genitalia\Gene_FelineGenitalia.cs" />
@@ -97,6 +105,7 @@
     <Compile Include="Genes\Genitalia\Gene_EquineGenitalia.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaChanger.cs" />
     <Compile Include="Genes\Patch_AddNotifyOnGeneration.cs" />
+    <Compile Include="Genes\Genital_Helper_2.cs" />
     <Compile Include="Genes\Special\Defs\AgeTransferExtension.cs" />
     <Compile Include="Genes\Special\Defs\HormonalSalivaExtension.cs" />
     <Compile Include="Genes\Special\Patches\Patch_AgeDrain.cs" />

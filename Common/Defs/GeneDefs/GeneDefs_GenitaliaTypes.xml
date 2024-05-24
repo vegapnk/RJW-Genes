@@ -105,6 +105,87 @@
     <geneClass>RJW_Genes.Gene_ReptilianGenitalia</geneClass>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
+  
+  
+  
+  
+  
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Ghost_genitalia</defName>
+    <label>ghost genitalia</label>
+    <description>Carriers of this gene have ghost genitalia.</description>
+    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <geneClass>RJW_Genes.Gene_GhostGenitalia</geneClass>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Golem_genitalia</defName>
+    <label>golem genitalia</label>
+    <description>Carriers of this gene have rocky golem genitalia.</description>
+    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <geneClass>RJW_Genes.Gene_GolemGenitalia</geneClass>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>  
+ 
+   <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Marine_genitalia</defName>
+    <label>marine genitalia</label>
+    <description>Carriers of this gene have marine mammal like genitalia.</description>
+    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <geneClass>RJW_Genes.Gene_MarineGenitalia</geneClass>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>  
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Necro_genitalia</defName>
+    <label>undead genitalia</label>
+    <description>Carriers of this gene have necrotic undead genitalia.</description>
+    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <geneClass>RJW_Genes.Gene_NecroGenitalia</geneClass>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>  
+  
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Needle_genitalia</defName>
+    <label>needle genitalia</label>
+    <description>Carriers of this gene have marine very thin genitalia.</description>
+    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <geneClass>RJW_Genes.Gene_NeedleGenitalia</geneClass>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>  
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Orc_genitalia</defName>
+    <label>orc genitalia</label>
+    <description>Carriers of this gene have orc genitalia.</description>
+    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <geneClass>RJW_Genes.Gene_OrcGenitalia</geneClass>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>  
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Pig_genitalia</defName>
+    <label>screw genitalia</label>
+    <description>Carriers of this gene have screw genitalia.</description>
+    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <geneClass>RJW_Genes.Gene_PigGenitalia</geneClass>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>  
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Tentacle_genitalia</defName>
+    <label>alien genitalia</label>
+    <description>Carriers of this gene have alien genitalia.</description>
+    <iconPath>Genes/Icons/Placeholder</iconPath>
+    <geneClass>RJW_Genes.Gene_TentacleGenitalia</geneClass>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>  
+
+
+
+
+
 
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_ovipositor_genitalia</defName>
