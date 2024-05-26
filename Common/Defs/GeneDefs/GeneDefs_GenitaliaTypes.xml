@@ -172,7 +172,13 @@
     <label>ghost genitalia</label>
     <description>Carriers of this gene have ghost genitalia.</description>
     <iconPath>Genes/Icons/Genitalia_ghost_icon</iconPath>
-    <geneClass>RJW_Genes.Gene_GhostGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>GhostPenis</penis>
+        <vagina>GhostVagina</vagina>
+        <anus>Anus</anus>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
   
@@ -181,7 +187,13 @@
     <label>golem genitalia</label>
     <description>Carriers of this gene have rocky golem genitalia.</description>
     <iconPath>Genes/Icons/penis_rock_icon</iconPath>
-    <geneClass>RJW_Genes.Gene_GolemGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>GolemPenis</penis>
+        <vagina>Vagina</vagina>
+        <anus>Anus</anus>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>  
  
@@ -190,7 +202,13 @@
     <label>marine genitalia</label>
     <description>Carriers of this gene have marine mammal like genitalia.</description>
     <iconPath>Genes/Icons/Genitalia_marine_icon</iconPath>
-    <geneClass>RJW_Genes.Gene_MarineGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>MarinePenis</penis>
+        <vagina>Vagina</vagina>
+        <anus>Anus</anus>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>  
 
@@ -199,16 +217,28 @@
     <label>undead genitalia</label>
     <description>Carriers of this gene have necrotic undead genitalia.</description>
     <iconPath>Genes/Icons/Genitalia_necro_icon</iconPath>
-    <geneClass>RJW_Genes.Gene_NecroGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>NecroPenis</penis>
+        <vagina>Vagina</vagina>
+        <anus>Anus</anus>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>  
   
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_Needle_genitalia</defName>
-    <label>needle genitalia</label>
-    <description>Carriers of this gene have marine very thin genitalia.</description>
+    <label>narrow genitalia</label>
+    <description>Carriers of this gene have very thin genitalia.</description>
     <iconPath>Genes/Icons/Genitalia_thin_icon</iconPath>
-    <geneClass>RJW_Genes.Gene_NeedleGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>NeedlePenis</penis>
+        <vagina>NarrowVagina</vagina>
+        <anus>Anus</anus>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>  
 
@@ -217,7 +247,13 @@
     <label>orc genitalia</label>
     <description>Carriers of this gene have orc genitalia.</description>
     <iconPath>Genes/Icons/Genitalia_orc_icon</iconPath>
-    <geneClass>RJW_Genes.Gene_OrcGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>OrcPenis</penis>
+        <vagina>Vagina</vagina>
+        <anus>Anus</anus>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>  
 
@@ -226,8 +262,13 @@
     <label>screw genitalia</label>
     <description>Carriers of this gene have screw genitalia.</description>
     <iconPath>Genes/Icons/Genitalia_screw_icon</iconPath>
-    <geneClass>RJW_Genes.Gene_PigGenitalia</geneClass>
-    <displayOrderInCategory>807</displayOrderInCategory>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>PigPenis</penis>
+        <vagina>Vagina</vagina>
+        <anus>Anus</anus>
+      </li>
+    </modExtensions>
   </GeneDef>  
 
   <GeneDef ParentName="GeneGenitalTypeBase">
@@ -235,7 +276,13 @@
     <label>alien genitalia</label>
     <description>Carriers of this gene have alien genitalia.</description>
     <iconPath>Genes/Icons/Genitalia_alien_icon</iconPath>
-    <geneClass>RJW_Genes.Gene_TentacleGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>TentaclePenis</penis>
+        <vagina>Vagina</vagina>
+        <anus>Anus</anus>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>  
 

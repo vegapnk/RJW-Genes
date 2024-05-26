@@ -87,13 +87,6 @@
     <Compile Include="Genes\GenitaliaSize\SizeAdjuster.cs" />
     <Compile Include="Genes\Genitalia\Gene_GenitaliaType.cs" />
     <Compile Include="Genes\Genitalia\Defs\GenitaliaTypeExtension.cs" />
-    <Compile Include="Genes\Genitalia\Gene_TentacleGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_GolemGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_OrcGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_GhostGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_NecroGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_MarineGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_PigGenitalia.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaChanger.cs" />
     <Compile Include="Genes\Patch_AddNotifyOnGeneration.cs" />
     <Compile Include="Genes\Genital_Helper_2.cs" />
