@@ -12,9 +12,10 @@ namespace RJW_Genes
     public static class HediffDefOf
     {
         public static readonly HediffDef rjw_genes_aphrodisiac_pheromone;
-        
+        public static readonly HediffDef rjw_genes_fertilin_lost;
+        public static readonly HediffDef rjw_genes_succubus_drained;
         public static readonly HediffDef rjw_genes_orgasm_rush_hediff;
-
+        public static readonly HediffDef rjw_genes_fertilin_craving;
 
         public static readonly HediffDef rjw_genes_evergrowth_sideeffect;
 

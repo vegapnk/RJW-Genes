@@ -27,7 +27,7 @@ namespace RJW_Genes
 			if (props.pawn.IsAnimal() || props.partner.IsAnimal())
 				return;
 
-			if (props.pawn.genes != null && props.pawn.genes.HasGene(GeneDefOf.rjw_genes_orgasm_rush))
+			if (props.pawn.genes != null && props.pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_orgasm_rush))
             {
 
 				// Pump up Wake-Ness
