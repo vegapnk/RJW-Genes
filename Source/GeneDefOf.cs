@@ -25,6 +25,14 @@ namespace RJW_Genes
         public static readonly GeneDef rjw_genes_crocodilian_genitalia;
         public static readonly GeneDef rjw_genes_racoon_genitalia;
         public static readonly GeneDef rjw_genes_reptilian_genitalia;
+        public static readonly GeneDef rjw_genes_Ghost_genitalia;
+        public static readonly GeneDef rjw_genes_Golem_genitalia;
+        public static readonly GeneDef rjw_genes_Marine_genitalia;
+        public static readonly GeneDef rjw_genes_Necro_genitalia;
+        public static readonly GeneDef rjw_genes_Needle_genitalia;
+        public static readonly GeneDef rjw_genes_Orc_genitalia;
+        public static readonly GeneDef rjw_genes_Pig_genitalia;
+        public static readonly GeneDef rjw_genes_Tentacle_genitalia;
 
         // Extra Genitalia 
         public static readonly GeneDef rjw_genes_extra_penis;
@@ -37,7 +45,8 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_no_anus;
 		public static readonly GeneDef rjw_genes_futa;
         public static readonly GeneDef rjw_genes_femboy;
-        public static readonly GeneDef rjw_genes_featureless_chest;
+        public static readonly GeneDef rjw_genes_featureless_chest; 
+		public static readonly GeneDef rjw_genes_udder;
 
         // Genitalia Sizes
         public static readonly GeneDef rjw_genes_big_male_genitalia;
