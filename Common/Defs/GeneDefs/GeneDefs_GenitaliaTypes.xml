@@ -3,6 +3,7 @@
 
   <GeneDef Name="GeneGenitalTypeBase" Abstract="True">
     <displayCategory>rjw_genes_genitalia_type</displayCategory>
+    <geneClass>RJW_Genes.Gene_GenitaliaType</geneClass>
     <exclusionTags>
       <li>GenitalType</li>
     </exclusionTags>
@@ -21,7 +22,12 @@
     <label>equine genitalia</label>
     <description>Carriers of this gene develop equine genitalia.</description>
     <iconPath>Genes/Icons/Genitalia_Equine</iconPath>
-    <geneClass>RJW_Genes.Gene_EquineGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>HorsePenis</penis>
+        <vagina>HorseVagina</vagina>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>802</displayOrderInCategory>
   </GeneDef>
   
@@ -30,7 +36,12 @@
     <label>canine genitalia</label>
     <description>Carriers of this gene develop canine genitalia.</description>
     <iconPath>Genes/Icons/Genitalia_Canine</iconPath>
-    <geneClass>RJW_Genes.Gene_CanineGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>DogPenis</penis>
+        <vagina>DogVagina</vagina>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>803</displayOrderInCategory>
   </GeneDef>
 
@@ -39,7 +50,12 @@
     <label>feline genitalia</label>
     <description>Carriers of this gene develop feline genitalia.</description>
     <iconPath>Genes/Icons/Genitalia_Feline</iconPath>
-    <geneClass>RJW_Genes.Gene_FelineGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>CatPenis</penis>
+        <vagina>CatVagina</vagina>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>804</displayOrderInCategory>
   </GeneDef>
 
@@ -48,7 +64,13 @@
     <label>demonic genitalia</label>
     <description>Carriers of this gene have demonic genitalia.</description>
     <iconPath>Genes/Icons/Genitalia_Demon</iconPath>
-    <geneClass>RJW_Genes.Gene_DemonicGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>DemonPenis</penis>
+        <vagina>DemonVagina</vagina>
+        <anus>DemonAnus</anus>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>805</displayOrderInCategory>
   </GeneDef>
 
@@ -57,7 +79,12 @@
     <label>dragon genitalia</label>
     <description>Carriers of this gene develop dragon genitalia.</description>
     <iconPath>Genes/Icons/Genitalia_Draconic</iconPath>
-    <geneClass>RJW_Genes.Gene_DragonGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>DragonPenis</penis>
+        <vagina>DragonVagina</vagina>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>806</displayOrderInCategory>
   </GeneDef>
 
@@ -66,7 +93,13 @@
     <label>slime genitalia</label>
     <description>Carriers of this gene have slime genitalia.</description>
     <iconPath>Genes/Icons/Slime_Genitalia</iconPath>
-    <geneClass>RJW_Genes.Gene_SlimeGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>SlimeTentacles</penis>
+        <vagina>SlimeVagina</vagina>
+        <anus>SlimeAnus</anus>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
   
@@ -75,7 +108,13 @@
     <label>demonic tentacle genitalia</label>
     <description>Carriers of this gene have demonic tentacle genitalia.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
-    <geneClass>RJW_Genes.Gene_DemonicGenitaliaTentacle</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>DemonTentaclePenis</penis>
+        <vagina>DemonVagina</vagina>
+        <anus>DemonAnus</anus>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
   
@@ -84,7 +123,13 @@
     <label>crocodilian genitalia</label>
     <description>Carriers of this gene have crocodilian genitalia.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
-    <geneClass>RJW_Genes.Gene_CrocodilianGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>CrocodilianPenis</penis>
+        <vagina>Vagina</vagina>
+        <anus>Anus</anus>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
   
@@ -93,7 +138,13 @@
     <label>racoon genitalia</label>
     <description>Carriers of this gene have racoon genitalia.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
-    <geneClass>RJW_Genes.Gene_RacoonGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>RaccoonPenis</penis>
+        <vagina>Vagina</vagina>
+        <anus>Anus</anus>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
   
@@ -102,7 +153,13 @@
     <label>reptilian genitalia</label>
     <description>Carriers of this gene have reptilian genitalia.</description>
     <iconPath>Genes/Icons/Placeholder</iconPath>
-    <geneClass>RJW_Genes.Gene_ReptilianGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>HemiPenis</penis>
+        <vagina>Vagina</vagina>
+        <anus>Anus</anus>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
 
@@ -111,7 +168,13 @@
     <label>insect genitalia</label>
     <description>Carriers of this gene have ovipositors similar to insects.</description>
     <iconPath>Genes/Icons/Ovipositor_Genitalia</iconPath>
-    <geneClass>RJW_Genes.Gene_OvipositorGenitalia</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>OvipositorM</penis>
+        <vagina>OvipositorF</vagina>
+        <anus>InsectAnus</anus>
+      </li>
+    </modExtensions>
     <displayOrderInCategory>808</displayOrderInCategory>
 
     <exclusionTags>
