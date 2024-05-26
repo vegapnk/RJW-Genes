@@ -67,9 +67,9 @@ namespace RJW_Genes
 		// Breeding
 		public static readonly GeneDef rjw_genes_mechbreeder;
 		public static readonly GeneDef rjw_genes_zoophile;
-
-		// Cum 
-		public static readonly GeneDef rjw_genes_no_cum;
+        public static readonly GeneDef rjw_genes_fertile_anus;
+        // Cum 
+        public static readonly GeneDef rjw_genes_no_cum;
 		public static readonly GeneDef rjw_genes_much_cum;
 		public static readonly GeneDef rjw_genes_very_much_cum;
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_likes_cumflation;

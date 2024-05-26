@@ -11,7 +11,7 @@ using rjw;
 namespace RJW_BGS
 {
     [HarmonyPatch(typeof(ParentRelationUtility))]
-    public class patchGetParents
+    public class PatchGetParents
     {
         // Token: 0x0600000F RID: 15
         [HarmonyPostfix]
