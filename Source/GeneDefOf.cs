@@ -95,8 +95,29 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_sexual_mytosis;
 		public static readonly GeneDef rjw_genes_hormonal_saliva;
 
-       
+        // Cosmetic
+        public static readonly GeneDef rjw_genes_succubus_tail;
+        public static readonly GeneDef rjw_genes_succubus_wings;
 
-	}
+        //life force
+        public static readonly GeneDef rjw_genes_lifeforce;
+        public static readonly GeneDef rjw_genes_pussyhealing;
+        public static readonly GeneDef rjw_genes_lifeforce_drain;
+        public static readonly GeneDef rjw_genes_cum_eater;
+        public static readonly GeneDef rjw_genes_fertilin_absorber;
+        public static readonly GeneDef rjw_genes_drainer;
+        public static readonly GeneDef rjw_genes_seduce;
+        public static readonly GeneDef rjw_genes_paralysingkiss;
+        public static readonly GeneDef rjw_genes_cockeater;
+        public static readonly GeneDef rjw_genes_lifeforce_empath;
+
+        //Other Defs
+        public static readonly XenotypeDef rjw_genes_succubus;
+        public static readonly DutyDef rjw_genes_flirt;
+        public static readonly MentalBreakDef rjw_genes_lifeforce_randomrape;
+
+
+
+    }
 
 }

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+  <DutyDef>
+    <defName>rjw_genes_flirt</defName>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+		<!-- first fulfill needs -->
+        <li Class="ThinkNode_Tagger">
+          <tagToGive>SatisfyingNeeds</tagToGive>
+          <subNodes>
+            <li Class="ThinkNode_PrioritySorter">
+              <subNodes>
+                <li Class="JobGiver_GetFood"/>
+                <li Class="JobGiver_GetRest"/>
+                <li Class="JobGiver_SatisfyChemicalNeed"/>
+                <li Class="JobGiver_SatifyChemicalDependency" MayRequire="Ludeon.RimWorld.Biotech" />
+              </subNodes>
+            </li>
+          </subNodes>
+        </li>
+		
+		<!-- switch target randomly or when target is unreachable/sleeping (similar to insults) -->
+		<li Class="RJW_Genes.ThinkNode_ConditionalCannotInteract">
+            <subNodes>
+                <li Class="RJW_Genes.ThinkNode_NewFlirtTarget" />
+            </subNodes>
+        </li>
+		
+		<li Class="ThinkNode_ConditionalRandom">
+			<chance>0.05</chance>
+			<subNodes>
+				<li Class="RJW_Genes.ThinkNode_NewFlirtTarget" />
+			</subNodes>
+		</li>
+		
+		<!--Go to target pawn-->
+        <li Class="JobGiver_AIFollowEscortee" />
+		
+		<li Class="rjw.ThinkNode_ConditionalSexChecks">
+			<subNodes>
+				<!--If sexneed is low do rape or masturbate (like a nymph)-->
+				<li Class="rjw.ThinkNode_ConditionalFrustrated">
+					<subNodes>		
+						<li Class="rjw.JobGiver_RandomRape" />
+						<li Class="rjw.JobGiver_Masturbate"/> <!--Won't work if fap everywhere is disabled-->
+					</subNodes>
+				</li>
+				<!--Will sometimes try and hookup with target pawn-->
+				<li Class="ThinkNode_ConditionalRandom">
+					<chance>0.1</chance>
+					<subNodes>
+						<li Class="RJW_Genes.JobGiver_TryQuickieWith" />
+					</subNodes>
+				</li>
+			</subNodes>
+		</li>
+		
+		<!--Flirt with target pawn, decreasing their sexneed. Flirt has no custom text yet-->
+		<li Class="RJW_Genes.JobGiver_Flirt" />
+				
+		<!--Just wander around if you can't flirt with anyone-->
+        <li Class="JobGiver_WanderAnywhere"/>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+</Defs>
+
