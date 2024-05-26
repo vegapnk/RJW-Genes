@@ -16,7 +16,7 @@ namespace RJW_Genes
         /// <param name="penisReplacement">the new type of penis</param>
         /// <param name="vaginaReplacement">the new type of vagina</param>
         /// <param name="anusReplacement">the new type of anus</param>
-        public static void ChangeGenitalia(Pawn pawn, HediffDef penisReplacement, HediffDef vaginaReplacement, HediffDef anusReplacement)
+        public static void ChangeGenitalia(Pawn pawn, HediffDef penisReplacement = null, HediffDef vaginaReplacement = null, HediffDef anusReplacement = null)
         {
             var oldParts = Genital_Helper.get_AllPartsHediffList(pawn);
 			BodyPartRecord correctBPR;
@@ -34,13 +34,13 @@ namespace RJW_Genes
 
 					replacementGenital = null;
 					CompHediff = null;
-					if (Genital_Helper.is_penis(existingGenital))
+					if (Genital_Helper.is_penis(existingGenital) && penisReplacement != null && existingGenital.def != penisReplacement)
 						replacementGenital = HediffMaker.MakeHediff(penisReplacement, pawn, correctBPR);
 
-					if (Genital_Helper.is_vagina(existingGenital))
+					if (Genital_Helper.is_vagina(existingGenital) && vaginaReplacement != null && existingGenital.def != vaginaReplacement)
 						replacementGenital = HediffMaker.MakeHediff(vaginaReplacement, pawn, correctBPR);
 
-                    if (IsAnus(existingGenital))
+                    if (IsAnus(existingGenital) && anusReplacement != null && existingGenital.def != anusReplacement)
 					{
 						correctBPR = Genital_Helper.get_anusBPR(pawn);
 						replacementGenital = HediffMaker.MakeHediff(anusReplacement, pawn, correctBPR);
