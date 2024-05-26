@@ -26,6 +26,7 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>HorsePenis</penis>
         <vagina>HorseVagina</vagina>
+        <anus>GenericAnus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>802</displayOrderInCategory>
@@ -40,6 +41,7 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>DogPenis</penis>
         <vagina>DogVagina</vagina>
+        <anus>GenericAnus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>803</displayOrderInCategory>
@@ -54,6 +56,7 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>CatPenis</penis>
         <vagina>CatVagina</vagina>
+        <anus>GenericAnus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>804</displayOrderInCategory>
@@ -83,6 +86,7 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>DragonPenis</penis>
         <vagina>DragonVagina</vagina>
+        <anus>GenericAnus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>806</displayOrderInCategory>
@@ -126,8 +130,6 @@
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>CrocodilianPenis</penis>
-        <vagina>Vagina</vagina>
-        <anus>Anus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
@@ -141,8 +143,6 @@
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>RaccoonPenis</penis>
-        <vagina>Vagina</vagina>
-        <anus>Anus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
@@ -156,8 +156,6 @@
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>HemiPenis</penis>
-        <vagina>Vagina</vagina>
-        <anus>Anus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
@@ -176,7 +174,6 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>GhostPenis</penis>
         <vagina>GhostVagina</vagina>
-        <anus>Anus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
@@ -190,8 +187,6 @@
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>GolemPenis</penis>
-        <vagina>Vagina</vagina>
-        <anus>Anus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
@@ -205,8 +200,6 @@
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>MarinePenis</penis>
-        <vagina>Vagina</vagina>
-        <anus>Anus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
@@ -220,8 +213,6 @@
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>NecroPenis</penis>
-        <vagina>Vagina</vagina>
-        <anus>Anus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
@@ -236,7 +227,6 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>NeedlePenis</penis>
         <vagina>NarrowVagina</vagina>
-        <anus>Anus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
@@ -250,8 +240,6 @@
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>OrcPenis</penis>
-        <vagina>Vagina</vagina>
-        <anus>Anus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
@@ -265,8 +253,6 @@
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>PigPenis</penis>
-        <vagina>Vagina</vagina>
-        <anus>Anus</anus>
       </li>
     </modExtensions>
   </GeneDef>  
@@ -279,8 +265,6 @@
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>TentaclePenis</penis>
-        <vagina>Vagina</vagina>
-        <anus>Anus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
