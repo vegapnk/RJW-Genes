@@ -1,5 +1,4 @@
 ﻿using Verse;
-using Verse;
 using RimWorld;
 using rjw;
 using System.Collections.Generic;

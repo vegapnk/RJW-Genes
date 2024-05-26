@@ -27,7 +27,7 @@ namespace RJW_Genes
 			}
 			
 
-			if (ModsConfig.IsActive("rjw.sexperience") && gene_lifeforce.StoredCumAllowed && genes.HasGene(GeneDefOf.rjw_genes_cum_eater))
+			if (ModsConfig.IsActive("rjw.sexperience") && gene_lifeforce.StoredCumAllowed && genes.HasActiveGene(GeneDefOf.rjw_genes_cum_eater))
             {
 				Thing gatheredCum = this.GetStoredCum(pawn);
 				if (gatheredCum == null)

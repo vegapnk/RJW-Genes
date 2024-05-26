@@ -146,6 +146,8 @@
     <Compile Include="Genes\Life_Force\ThinkNodes\ThinkNode_NewFlirtTarget.cs" />
     <Compile Include="Genes\Life_Force\UI\Alert_LowFertilin.cs" />
     <Compile Include="Genes\Life_Force\UI\GeneGizmo_ResourceLifeForce.cs" />
+    <Compile Include="Genes\Patches\LustFeeding.cs" />
+    <Compile Include="Genes\Patches\MultiplePregnancies.cs" />
     <Compile Include="Genes\Patch_AddNotifyOnGeneration.cs" />
     <Compile Include="Genes\Genital_Helper_2.cs" />
     <Compile Include="Genes\Special\Defs\AgeTransferExtension.cs" />
