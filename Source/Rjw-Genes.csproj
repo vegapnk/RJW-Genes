@@ -86,25 +86,8 @@
     <Compile Include="Genes\GenitaliaSize\Gene_BigMaleGenitalia.cs" />
     <Compile Include="Genes\GenitaliaSize\Patch_ResizingOnAdulthood.cs" />
     <Compile Include="Genes\GenitaliaSize\SizeAdjuster.cs" />
-    <Compile Include="Genes\Genitalia\Gene_TentacleGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_GolemGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_OrcGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_GhostGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_NecroGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_MarineGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_PigGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_ReptilianGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_CrocodilianGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_RacoonGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_DemonicGenitaliaTentacle.cs" />
-    <Compile Include="Genes\Genitalia\Gene_NeedleGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_SlimeGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_DragonGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_FelineGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_CanineGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_OvipositorGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_DemonicGenitalia.cs" />
-    <Compile Include="Genes\Genitalia\Gene_EquineGenitalia.cs" />
+    <Compile Include="Genes\Genitalia\Gene_GenitaliaType.cs" />
+    <Compile Include="Genes\Genitalia\Defs\GenitaliaTypeExtension.cs" />
     <Compile Include="Genes\Genitalia\GenitaliaChanger.cs" />
     <Compile Include="Genes\Life_Force\Abilities\AbilityUtility.cs" />
     <Compile Include="Genes\Life_Force\Abilities\CompAbilityEffect_CasterIsNaked.cs" />
@@ -189,7 +172,7 @@
     </Reference>
     <Reference Include="RJW, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\rjw\1.4\Assemblies\RJW.dll</HintPath>
+      <HintPath>..\..\rjw\1.5\Assemblies\RJW.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RJWSexperience">
