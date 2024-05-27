@@ -4,25 +4,16 @@
 		<mods>
 			<li>Vanilla Races Expanded - Highmate</li>
 		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/GeneDef[defName="VRE_Libido_VeryHigh"]/abilities</xpath>
-					<value>
-						<abilities>
-							<li>rjw_genes_ability_InitiateLovin</li>
-						</abilities>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/GeneDef[defName="VRE_Libido_VeryHigh"]/descriptionHyperlinks</xpath>
-					<value>
-						<descriptionHyperlinks>
-							<AbilityDef>rjw_genes_ability_InitiateLovin</AbilityDef>
-						</descriptionHyperlinks>
-					</value>
-				</li>				
-			</operations>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/AbilityDef[defName="VRE_InitiateLovin"]/comps</xpath>
+			<value>
+				<comps>
+					<li Class = "RJW_Genes.CompProperties_Seduce">
+						<compClass>RJW_Genes.CompAbilityEffect_Seduce</compClass>
+						<destination>Caster</destination>
+					</li>
+				</comps>
+			</value>
 		</match>
 	</Operation>
 </Patch>
