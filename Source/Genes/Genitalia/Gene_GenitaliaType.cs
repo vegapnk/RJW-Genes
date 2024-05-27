@@ -25,7 +25,7 @@ namespace RJW_Genes
                 ModLog.Error($"Gene {def} failed to change genitals - Need a modExtension with Class=\"{typeof(GenitaliaTypeExtension).FullName}\".");
                 return;
             }
-            GenitaliaChanger.ChangeGenitalia(pawn, genitals.Penis, genitals.Vagina, genitals.Anus);
+            GenitaliaChanger.ChangeGenitalia(pawn, genitals.penis, genitals.vagina, genitals.anus);
         }
     }
 }

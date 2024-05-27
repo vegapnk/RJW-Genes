@@ -29,28 +29,19 @@ namespace RJW_Genes
 
         public static HediffDef GetPenisForGene(GeneDef gene)
         {
-            if (gene == null)
-                return Genital_Helper.average_penis;
-
-            return gene.GetModExtension<GenitaliaTypeExtension>()?.Penis ?? Genital_Helper.average_penis;
+            return gene?.GetModExtension<GenitaliaTypeExtension>()?.penis ?? Genital_Helper.average_penis;
         }
 
 
         public static HediffDef GetVaginaForGene(GeneDef gene)
         {
-            if (gene == null)
-                return Genital_Helper.average_vagina;
-
-            return gene.GetModExtension<GenitaliaTypeExtension>()?.Vagina ?? Genital_Helper.average_vagina;
+            return gene?.GetModExtension<GenitaliaTypeExtension>()?.vagina ?? Genital_Helper.average_vagina;
         }
 
         public static HediffDef GetAnusForGene(GeneDef gene)
         {
-            if (gene == null)
-                return Genital_Helper.average_anus;
-            
             //TODO: Do I want the default to be generic or average for feline,equine and canine?
-            return gene.GetModExtension<GenitaliaTypeExtension>()?.Anus ?? Genital_Helper.average_anus;
+            return gene?.GetModExtension<GenitaliaTypeExtension>()?.anus ?? Genital_Helper.average_anus;
         }
 
         public static HediffDef GetBreastsForGene(GeneDef gene)
