@@ -119,6 +119,7 @@ namespace RJW_Genes
         [MayRequire("resplice.xotr.charmweavers")] public static GeneDef RS_LoveFeed = DefDatabase<GeneDef>.GetNamed("RS_LoveFeed", false);
         [MayRequire("resplice.xotr.charmweavers")] public static GeneDef RS_MultiPregnancy = DefDatabase<GeneDef>.GetNamed("RS_MultiPregnancy", false);
         [MayRequire("redmattis.bigsmall.core")] public static GeneDef VU_VampireLover = DefDatabase<GeneDef>.GetNamed("VU_VampireLover", false);
+        [MayRequire("vanillaracesexpanded.highmate")] public static GeneDef VRE_LovinDependency = DefDatabase<GeneDef>.GetNamed("VRE_LovinDependency", false);
 
 
 

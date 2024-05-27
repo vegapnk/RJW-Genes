@@ -13,6 +13,8 @@ namespace RJWLoveFeeding
         //[HarmonyPostfix]
         static Def LoveFeed = DefDatabase<GeneDef>.GetNamed("RS_LoveFeed", false);
         static Def VampireLover = DefDatabase<GeneDef>.GetNamed("VU_VampireLover", false);
+        static Def LovinDependency = DefDatabase<GeneDef>.GetNamed("VRE_LovinDependency", false);
+        static NeedDef VRE_Lovin = DefDatabase<NeedDef>.GetNamed("VRE_Lovin", false);
         public static void Postfix(SexProps props)
 		{
 			try
@@ -32,7 +34,10 @@ namespace RJWLoveFeeding
                 //ModLog.Message($" Patch Worked");
                 if(!props.pawn.IsCaravanMember() && !props.partner.IsCaravanMember())
                 {
-					RJWTryTakeBlood(props.pawn, props.partner);
+                    FillNeed(props.pawn);
+                    FillNeed(props.partner);
+
+                    RJWTryTakeBlood(props.pawn, props.partner);
 					RJWTryTakeBlood(props.partner, props.pawn);
 				}
 
@@ -40,8 +45,30 @@ namespace RJWLoveFeeding
 
         }
 
+        public static void FillNeed(Pawn pawn)
+        {
+            Pawn_GeneTracker genes;
+            if (LovinDependency != null)
+            {
+                genes = pawn.genes;
 
-        public static bool RJWTryTakeBlood(Pawn pawn, Pawn bloodBag)
+                if (genes == null)
+                {
+                    return;
+                }
+                if (pawn.genes.HasActiveGene(RJW_Genes.GeneDefOf.VRE_LovinDependency))
+                {
+                    if (VRE_Lovin != null)
+                    {
+                        Pawn_NeedsTracker needs = pawn.needs;
+                        ((needs != null) ? needs.TryGetNeed(VRE_Lovin) : null).CurLevel = 1f;
+                    }
+                }
+            }
+        }
+
+
+            public static bool RJWTryTakeBlood(Pawn pawn, Pawn bloodBag)
         {
 
 

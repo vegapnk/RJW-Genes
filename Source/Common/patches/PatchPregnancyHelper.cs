@@ -20,6 +20,7 @@ namespace RJW_BGS
         [HarmonyPatch("impregnate")]
         private static void ImpregnatePostfix(ref SexProps props)
         {
+            
             if (RJWSettings.DevMode) rjw.ModLog.Message("Rimjobworld::impregnate(" + props.sexType + "):: " + xxx.get_pawnname(props.pawn) + " + " + xxx.get_pawnname(props.partner) + ":");
 
             //"mech" pregnancy
@@ -33,7 +34,10 @@ namespace RJW_BGS
             List<Hediff> pawnparts = giver.GetGenitalsList();
             List<Hediff> partnerparts = receiver.GetGenitalsList();
             var interaction = rjw.Modules.Interactions.Helpers.InteractionHelper.GetWithExtension(props.dictionaryKey);
-
+            if (receiver.genes == null)
+            {
+                return;
+            }
 
             if (!(props.sexType == xxx.rjwSextype.Anal && receiver.genes.HasActiveGene(RJW_Genes.GeneDefOf.rjw_genes_fertile_anus)))
                 return;
