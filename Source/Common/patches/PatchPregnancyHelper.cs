@@ -15,6 +15,7 @@ namespace RJW_BGS
     [HarmonyPatch(typeof(PregnancyHelper))]
     public class PatchPregnancyHelper
     {
+        public static HediffDef vasectomydef = DefDatabase<HediffDef>.GetNamed("Vasectomy", true);
         // Token: 0x0600000F RID: 15
         [HarmonyPostfix]
         [HarmonyPatch("impregnate")]
@@ -31,6 +32,11 @@ namespace RJW_BGS
 
             Pawn giver = props.pawn; // orgasmer
             Pawn receiver = props.partner;
+            Hediff vasectomy;
+            receiver.health.hediffSet.TryGetHediff(vasectomydef, out vasectomy);
+            
+            
+            
             List<Hediff> pawnparts = giver.GetGenitalsList();
             List<Hediff> partnerparts = receiver.GetGenitalsList();
             var interaction = rjw.Modules.Interactions.Helpers.InteractionHelper.GetWithExtension(props.dictionaryKey);
@@ -69,10 +75,21 @@ namespace RJW_BGS
                 if (RJWSettings.DevMode) RJW_Genes.ModLog.Message(xxx.get_pawnname(giver) + " has no parts to Fertilize with");
                 return;
             }
-
+            if (vasectomy != null)
+            {
+                if (RJWSettings.DevMode) RJW_Genes.ModLog.Message("vasectomy check");
+                receiver.health.RemoveHediff(vasectomy);
+            }
             if (CanImpregnate2(giver, receiver, props.sexType))
             {
+                
                 PregnancyHelper.DoImpregnate(giver, receiver);
+               
+            }
+            if (vasectomy != null)
+            {
+                if (RJWSettings.DevMode) RJW_Genes.ModLog.Message("vasectomy check");
+                receiver.health.AddHediff(vasectomy);
             }
         }
 
