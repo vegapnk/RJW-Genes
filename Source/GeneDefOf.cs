@@ -74,10 +74,11 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_very_much_cum;
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_likes_cumflation;
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_cumflation_immunity;
-		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_generous_donor; 
-		
-		// Reproduction 
-		public static readonly GeneDef rjw_genes_hypersexual;
+		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_generous_donor;
+        
+
+        // Reproduction 
+        public static readonly GeneDef rjw_genes_hypersexual;
 		public static readonly GeneDef rjw_genes_rapist;
 		public static readonly GeneDef rjw_genes_homosexual;
 		public static readonly GeneDef rjw_genes_bisexual;
@@ -115,6 +116,9 @@ namespace RJW_Genes
         public static readonly XenotypeDef rjw_genes_succubus;
         public static readonly DutyDef rjw_genes_flirt;
         public static readonly MentalBreakDef rjw_genes_lifeforce_randomrape;
+        [MayRequire("resplice.xotr.charmweavers")] public static GeneDef RS_LoveFeed = DefDatabase<GeneDef>.GetNamed("RS_LoveFeed", false);
+        [MayRequire("resplice.xotr.charmweavers")] public static GeneDef RS_MultiPregnancy = DefDatabase<GeneDef>.GetNamed("RS_MultiPregnancy", false);
+        [MayRequire("redmattis.bigsmall.core")] public static GeneDef VU_VampireLover = DefDatabase<GeneDef>.GetNamed("VU_VampireLover", false);
 
 
 

@@ -39,10 +39,10 @@ namespace RJW_Genes
                     List<GeneDef> absorption_genes_parents = new List<GeneDef>();
                     foreach (GeneDef geneDef in FertilinSourceGenes)
                     {
-                        if(mother.genes != null && mother.genes.HasGene(geneDef))
+                        if(mother.genes != null && mother.genes.HasActiveGene(geneDef))
                             absorption_genes_parents.Add(geneDef);
 
-                        if (father.genes != null && father.genes.HasGene(geneDef))
+                        if (father.genes != null && father.genes.HasActiveGene(geneDef))
                             absorption_genes_parents.Add(geneDef);
                     }
                     // Parents had Genes - Pick a random one of them 

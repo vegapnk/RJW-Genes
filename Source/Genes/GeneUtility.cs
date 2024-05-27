@@ -105,7 +105,7 @@ namespace RJW_Genes
             {
                 return false;
             }
-            return pawn.genes.HasGene(genedef);
+            return pawn.genes.HasActiveGene(genedef);
         }
 
         public static bool HasLifeForce(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_lifeforce); }

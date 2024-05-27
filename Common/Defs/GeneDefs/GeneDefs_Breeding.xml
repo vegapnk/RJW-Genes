@@ -45,7 +45,7 @@
       <defName>rjw_genes_fertile_anus</defName>
       <label>Fertile Anus</label>
       <displayCategory>rjw_genes_breeding</displayCategory>
-      <description>Xenotypes with this gene have a functional uterus connected to the anal cavity even for males (you have to disable biotech pregnancy and use the RJW system for this to work)</description>
+      <description>Xenotypes with this gene have a functional uterus connected to the anal cavity even for males</description>
       <iconPath>Genes/Icons/Fertile_anus</iconPath>
       <displayOrderInCategory>54</displayOrderInCategory>    
   </GeneDef>
