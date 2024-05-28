@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>  
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>Bioscaffold</defName>
+    <label>bioscaffold</label>
+    <description>A single-use nanite-constructed lattice of organic mesh material meant to be installed inside a woman's womb prior to pregnancy. It provides an enriching environment for an unborn baby to grow more quickly.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallBioscaffold</RecipeDef>
+    </descriptionHyperlinks>
+    <techLevel>Spacer</techLevel>
+    <tickerType>Rare</tickerType>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <stackLimit>25</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <MarketValue>350</MarketValue>
+      <Mass>0.15</Mass>
+      <Flammability>1.3</Flammability>
+      <DeteriorationRate>6</DeteriorationRate>
+      <WorkToMake>800</WorkToMake>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <costList>
+      <Plasteel>5</Plasteel>
+      <BabyFood>10</BabyFood>
+      <MedicineUltratech>1</MedicineUltratech>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+        <Intellectual>4</Intellectual>
+      </skillRequirements> 
+      <researchPrerequisite>FertilityProcedures</researchPrerequisite>
+      <bulkRecipeCount>4</bulkRecipeCount>
+    </recipeMaker>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+</Defs>

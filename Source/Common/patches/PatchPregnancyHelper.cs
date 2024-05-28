@@ -10,7 +10,7 @@ using rjw;
 using RJW_Genes;
 using rjw.Modules.Interactions.Enums;
 
-namespace RJW_BGS
+namespace RJW_Genes
 {
     [HarmonyPatch(typeof(PregnancyHelper))]
     public class PatchPregnancyHelper
@@ -45,39 +45,39 @@ namespace RJW_BGS
                 return;
             }
 
-            if (!(props.sexType == xxx.rjwSextype.Anal && receiver.genes.HasActiveGene(RJW_Genes.GeneDefOf.rjw_genes_fertile_anus)))
+            if (!(props.sexType == xxx.rjwSextype.Anal && receiver.genes.HasActiveGene(GeneDefOf.rjw_genes_fertile_anus)))
                 return;
 
             //"normal" and "beastial" pregnancy
-            if (RJWSettings.DevMode) RJW_Genes.ModLog.Message(" 'normal' pregnancy checks");
+            if (RJWSettings.DevMode) ModLog.Message(" 'normal' pregnancy checks");
 
             //interaction stuff if for handling futa/see who penetrates who in interaction
             if (!props.isReceiver &&
                 interaction.DominantHasTag(GenitalTag.CanPenetrate) &&
                 interaction.SubmissiveHasFamily(GenitalFamily.Anus))
             {
-                if (RJWSettings.DevMode) RJW_Genes.ModLog.Message(" impregnate - by initiator");
+                if (RJWSettings.DevMode) ModLog.Message(" impregnate - by initiator");
             }
             else if (props.isReceiver && props.isRevese &&
                 interaction.DominantHasFamily(GenitalFamily.Anus) &&
                 interaction.SubmissiveHasTag(GenitalTag.CanPenetrate))
             {
-                if (RJWSettings.DevMode) RJW_Genes.ModLog.Message(" impregnate - by receiver (reverse)");
+                if (RJWSettings.DevMode) ModLog.Message(" impregnate - by receiver (reverse)");
             }
             else
             {
-                if (RJWSettings.DevMode) RJW_Genes.ModLog.Message(" no valid interaction tags/family");
+                if (RJWSettings.DevMode) ModLog.Message(" no valid interaction tags/family");
                 return;
             }
 
             if (!rjw.Modules.Interactions.Helpers.PartHelper.FindParts(giver, GenitalTag.CanFertilize).Any())
             {
-                if (RJWSettings.DevMode) RJW_Genes.ModLog.Message(xxx.get_pawnname(giver) + " has no parts to Fertilize with");
+                if (RJWSettings.DevMode) ModLog.Message(xxx.get_pawnname(giver) + " has no parts to Fertilize with");
                 return;
             }
             if (vasectomy != null)
             {
-                if (RJWSettings.DevMode) RJW_Genes.ModLog.Message("vasectomy check");
+                if (RJWSettings.DevMode) ModLog.Message("vasectomy check");
                 receiver.health.RemoveHediff(vasectomy);
             }
             if (CanImpregnate2(giver, receiver, props.sexType))
@@ -88,7 +88,7 @@ namespace RJW_BGS
             }
             if (vasectomy != null)
             {
-                if (RJWSettings.DevMode) RJW_Genes.ModLog.Message("vasectomy check");
+                if (RJWSettings.DevMode) ModLog.Message("vasectomy check");
                 receiver.health.AddHediff(vasectomy);
             }
         }
@@ -118,16 +118,16 @@ namespace RJW_BGS
                 {
                     if (RJWSettings.DevMode)
                     {
-                    RJW_Genes.ModLog.Message(" mechanoid 'pregnancy' disabled");
+                    ModLog.Message(" mechanoid 'pregnancy' disabled");
                     }
                 return false;
 
             }
-            if (sexType != xxx.rjwSextype.Vaginal && sexType != xxx.rjwSextype.DoublePenetration && !(sexType == xxx.rjwSextype.Anal && fucked.genes.HasActiveGene(RJW_Genes.GeneDefOf.rjw_genes_fertile_anus)))
+            if (sexType != xxx.rjwSextype.Vaginal && sexType != xxx.rjwSextype.DoublePenetration && !(sexType == xxx.rjwSextype.Anal && fucked.genes.HasActiveGene(GeneDefOf.rjw_genes_fertile_anus)))
                 {
                     if (RJWSettings.DevMode)
                     {
-                    RJW_Genes.ModLog.Message(" sextype cannot result in pregnancy");
+                    ModLog.Message(" sextype cannot result in pregnancy");
                     }
                 return false;
 
@@ -136,7 +136,7 @@ namespace RJW_BGS
                 {
                     if (RJWSettings.DevMode)
                     {
-                    RJW_Genes.ModLog.Message(xxx.get_pawnname(fucked) + " androids cant breed/reproduce androids");
+                    ModLog.Message(xxx.get_pawnname(fucked) + " androids cant breed/reproduce androids");
                     }
                 return false;
 
@@ -145,7 +145,7 @@ namespace RJW_BGS
                 {
                     if (RJWSettings.DevMode)
                     {
-                    RJW_Genes.ModLog.Message(" unsexy robot cant be pregnant");
+                    ModLog.Message(" unsexy robot cant be pregnant");
                     }
                 return false;
 
@@ -154,7 +154,7 @@ namespace RJW_BGS
                 {
                     if (RJWSettings.DevMode)
                     {
-                    RJW_Genes.ModLog.Message(xxx.get_pawnname(fucked) + " filtered race that cant be pregnant");
+                    ModLog.Message(xxx.get_pawnname(fucked) + " filtered race that cant be pregnant");
                     }
                 return false;
 
@@ -163,7 +163,7 @@ namespace RJW_BGS
                 {
                     if (RJWSettings.DevMode)
                     {
-                    RJW_Genes.ModLog.Message(xxx.get_pawnname(fucker) + " filtered race that cant impregnate");
+                    ModLog.Message(xxx.get_pawnname(fucker) + " filtered race that cant impregnate");
                     }
                 return false;
 
@@ -172,7 +172,7 @@ namespace RJW_BGS
                 {
                     if (RJWSettings.DevMode)
                     {
-                    RJW_Genes.ModLog.Message(" already pregnant.");
+                    ModLog.Message(" already pregnant.");
                     }
                 return false;
 
@@ -183,7 +183,7 @@ namespace RJW_BGS
                 {
                     if (RJWSettings.DevMode)
                     {
-                    RJW_Genes.ModLog.Message(xxx.get_pawnname(fucked) + " cant get pregnant while eggs inside");
+                    ModLog.Message(xxx.get_pawnname(fucked) + " cant get pregnant while eggs inside");
                     }
                 return false;
 
@@ -194,7 +194,7 @@ namespace RJW_BGS
             {
                 if (RJWSettings.DevMode)
                 {
-                    RJW_Genes.ModLog.Message(" missing genitals for impregnation"+ Genital_Helper.has_penis_fertile(fucker, genitalsList)+"  "+ Genital_Helper.has_anus(fucked, genitalsList2)+"  "+ Genital_Helper.has_penis_fertile(fucked, genitalsList2)+"   "+ Genital_Helper.has_anus(fucker, genitalsList));
+                    ModLog.Message(" missing genitals for impregnation"+ Genital_Helper.has_penis_fertile(fucker, genitalsList)+"  "+ Genital_Helper.has_anus(fucked, genitalsList2)+"  "+ Genital_Helper.has_penis_fertile(fucked, genitalsList2)+"   "+ Genital_Helper.has_anus(fucker, genitalsList));
                 }
                 return false;
             }
@@ -202,7 +202,7 @@ namespace RJW_BGS
                 {
                     if (RJWSettings.DevMode)
                     {
-                    RJW_Genes.ModLog.Message(" one (or both) pawn(s) infertile");
+                    ModLog.Message(" one (or both) pawn(s) infertile");
                     }
                 return false;
 
@@ -211,7 +211,7 @@ namespace RJW_BGS
                 {
                     if (RJWSettings.DevMode)
                     {
-                    RJW_Genes.ModLog.Message(" human pregnancy chance set to 0% or pregnancy disabled.");
+                    ModLog.Message(" human pregnancy chance set to 0% or pregnancy disabled.");
                     }
                 return false;
 
@@ -220,7 +220,7 @@ namespace RJW_BGS
                 {
                     if (RJWSettings.DevMode)
                     {
-                    RJW_Genes.ModLog.Message(" bestiality pregnancy chance set to 0% or pregnancy disabled.");
+                    ModLog.Message(" bestiality pregnancy chance set to 0% or pregnancy disabled.");
                     }
                 return false;
 
@@ -229,7 +229,7 @@ namespace RJW_BGS
                 {
                     if (RJWSettings.DevMode)
                     {
-                    RJW_Genes.ModLog.Message(" animal-animal pregnancy chance set to 0% or pregnancy disabled.");
+                    ModLog.Message(" animal-animal pregnancy chance set to 0% or pregnancy disabled.");
                     }
                 return false;
 
@@ -238,7 +238,7 @@ namespace RJW_BGS
                 {
                     if (RJWSettings.DevMode)
                     {
-                    RJW_Genes.ModLog.Message(" interspecies pregnancy disabled.");
+                    ModLog.Message(" interspecies pregnancy disabled.");
                     }
                 return false;
 
@@ -247,7 +247,7 @@ namespace RJW_BGS
                 {
                     if (RJWSettings.DevMode)
                     {
-                    RJW_Genes.ModLog.Message(xxx.get_pawnname(fucked) + " mother.RaceProps.gestationPeriodDays is " + fucked.RaceProps.gestationPeriodDays.ToString() + " cant impregnate");
+                    ModLog.Message(xxx.get_pawnname(fucked) + " mother.RaceProps.gestationPeriodDays is " + fucked.RaceProps.gestationPeriodDays.ToString() + " cant impregnate");
                     }
                     return false;
                 }

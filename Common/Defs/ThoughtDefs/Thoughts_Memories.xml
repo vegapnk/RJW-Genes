@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <ThoughtDef>
+		<defName>RegretsStealingLovin</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>1.5</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>regrets stealing some lovin'</label>
+				<description>I don't remember how or why, but I violated someone. It felt good in the moment, but it felt so wrong afterward. My cravings from my implant are just too strong!</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

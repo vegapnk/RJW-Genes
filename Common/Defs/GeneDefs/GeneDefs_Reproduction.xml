@@ -162,5 +162,17 @@
         </li>
     </modExtensions>
   </GeneDef>
+  
+   <GeneDef>
+    <defName>LitteredBirths</defName>
+    <label>littered births</label>
+	<displayCategory>Reproduction</displayCategory>
+    <description>Female carriers of this gene birth litters instead of just one baby, with a chance of having two to four babies per pregnancy.</description>
+    <iconPath>Genes/Icons/Gene_LitteredBirths</iconPath>
+    <displayOrderInCategory>110</displayOrderInCategory>
+    <marketValueFactor>1.10</marketValueFactor>
+    <biostatMet>-2</biostatMet>
+    <biostatCpx>1</biostatCpx>
+  </GeneDef>
 
 </Defs>

@@ -8,7 +8,7 @@ using RimWorld;
 using Verse;
 using rjw;
 
-namespace RJW_BGS
+namespace RJW_Genes
 {
     [HarmonyPatch(typeof(ParentRelationUtility))]
     public class PatchGetParents
