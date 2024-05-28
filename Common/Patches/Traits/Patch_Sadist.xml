@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="KnowGuestExecuted"]/nullifyingTraits</xpath>
+		<value>    
+            <li>rjw_genes_sadist</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="KnowPrisonerDiedInnocent"]/nullifyingTraits</xpath>
+		<value>    
+            <li>rjw_genes_sadist</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="KnowColonistDied"]/nullifyingTraits</xpath>
+		<value>    
+            <li>rjw_genes_sadist</li>
+		</value>
+	</Operation>
+
+
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="HarvestedOrgan_Bloodlust"]/requiredTraits</xpath>
+		<value>    
+            <li>rjw_genes_sadist</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="KnowGuestOrganHarvested"]/nullifyingTraits</xpath>
+		<value>    
+            <li>rjw_genes_sadist</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="KnowColonistOrganHarvested"]/nullifyingTraits</xpath>
+		<value>    
+            <li>rjw_genes_sadist</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="ButcheredHumanlikeCorpse"]/nullifyingTraits</xpath>
+		<value>    
+            <li>rjw_genes_sadist</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="KnowButcheredHumanlikeCorpse"]/nullifyingTraits</xpath>
+		<value>    
+            <li>rjw_genes_sadist</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="ButcheredHumanlikeCorpseOpinion"]/nullifyingTraits</xpath>
+		<value>    
+            <li>rjw_genes_sadist</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="ObservedLayingCorpse"]/nullifyingTraits</xpath>
+		<value>    
+            <li>rjw_genes_sadist</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="ObservedLayingRottingCorpse"]/nullifyingTraits</xpath>
+		<value>    
+            <li>rjw_genes_sadist</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="WitnessedDeathNonAlly"]/nullifyingTraits</xpath>
+		<value>    
+            <li>rjw_genes_sadist</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="KilledHumanlikeBloodlust"]/requiredTraits</xpath>
+		<value>    
+            <li>rjw_genes_sadist</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="DeadMansApparel"]/nullifyingTraits</xpath>
+		<value>    
+            <li>rjw_genes_sadist</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="HumanLeatherApparelSad"]/nullifyingTraits</xpath>
+		<value>    
+            <li>rjw_genes_sadist</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="HumanLeatherApparelHappy"]/requiredTraits</xpath>
+		<value>    
+            <li>rjw_genes_sadist</li>
+		</value>
+	</Operation>
+	
+</Patch>

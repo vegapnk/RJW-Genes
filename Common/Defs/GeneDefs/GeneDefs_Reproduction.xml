@@ -43,6 +43,50 @@
 			</li>
 		</modExtensions>
     </GeneDef>
+	
+	<GeneDef>
+        <defName>rjw_genes_sadist_gene</defName>
+        <label>Sadist</label>
+        <displayCategory>Reproduction</displayCategory>
+        <description>Xenotypes with this Gene are Sadists.</description>
+        <iconPath>Genes/Icons/Rape</iconPath>
+        <biostatMet>1</biostatMet>
+        <displayOrderInCategory>2</displayOrderInCategory>    
+        <forcedTraits>
+            <li>
+                <def>rjw_genes_sadist</def>
+            </li>
+        </forcedTraits>
+
+        <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    </GeneDef>
+	
+	<GeneDef>
+        <defName>rjw_genes_masochist</defName>
+        <label>Masochist</label>
+        <displayCategory>Reproduction</displayCategory>
+        <description>Xenotypes with this Gene are Masochists.</description>
+        <iconPath>Genes/Icons/Rape</iconPath>
+        <biostatMet>1</biostatMet>
+        <displayOrderInCategory>2</displayOrderInCategory>    
+        <forcedTraits>
+            <li>
+                <def>Masochist</def>
+            </li>
+        </forcedTraits>
+
+        <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    </GeneDef>
 
     <GeneDef>
         <defName>rjw_genes_homosexual</defName>
