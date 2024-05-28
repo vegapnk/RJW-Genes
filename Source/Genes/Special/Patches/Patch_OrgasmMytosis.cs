@@ -116,7 +116,6 @@ namespace RJW_Genes
 
             copy.ideo = toMultiply.ideo;
             copy.records = new Pawn_RecordsTracker(copy);
-            copy.outfits = toMultiply.outfits;
 
             copy.relations = toMultiply.relations;
             copy.skills = CopySkillTracker(copy,toMultiply.skills);
