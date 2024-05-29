@@ -135,7 +135,6 @@
     <Compile Include="Genes\Patches\LustFeeding.cs" />
     <Compile Include="Genes\Patches\MultiplePregnancies.cs" />
     <Compile Include="Genes\Patch_AddNotifyOnGeneration.cs" />
-    <Compile Include="Genes\Genital_Helper_2.cs" />
     <Compile Include="Genes\Special\Defs\AgeTransferExtension.cs" />
     <Compile Include="Genes\Special\Defs\HormonalSalivaExtension.cs" />
     <Compile Include="Genes\Special\Patches\Patch_AgeDrain.cs" />
