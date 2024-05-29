@@ -7,7 +7,6 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 using rjw;
-using LewdBiotech;
 
 namespace RJW_Genes
 {
@@ -33,11 +32,11 @@ namespace RJW_Genes
             // with littered births gene, move on
             if (!laborStateIsNull && hasLitteredBirthsGene)
             {
-                if (LBTSettings.devMode)
+                if (RJW_Genes_Settings.rjw_genes_detailed_debug)
                 {
-                    RJW_GenesLogger.MessageGroupHead("Found active LaborState and LitteredBirths gene - skipping additional Hediff_Labor_PostRemovedPostFix work");
-                    RJW_GenesLogger.MessageGroupBody("Pawn: " + __instance.pawn.NameShortColored + " (" + __instance.pawn.ThingID + ")");
-                    RJW_GenesLogger.MessageGroupFoot("birthCount: " + laborStateMap.TryGetValue(__instance.pawn.ThingID).birthCount);
+                    ModLog.Message("Found active LaborState and LitteredBirths gene - skipping additional Hediff_Labor_PostRemovedPostFix work");
+                    ModLog.Message("Pawn: " + __instance.pawn.NameShortColored + " (" + __instance.pawn.ThingID + ")");
+                    ModLog.Message("birthCount: " + laborStateMap.TryGetValue(__instance.pawn.ThingID).birthCount);
                 }
 
                 return;
@@ -46,7 +45,7 @@ namespace RJW_Genes
             // Make a new LaborState for the null case with littered births
             if (laborStateIsNull && hasLitteredBirthsGene)
             {
-                RJW_GenesLogger.Message("Found littered births gene");
+                ModLog.Message("Found littered births gene");
                 int litteredBirthsTotalRoll = Rand.RangeInclusive(2, 4);
                 laborStateMap.SetOrAdd(__instance.pawn.ThingID, new LaborState(__instance.pawn, litteredBirthsTotalRoll));
                 return;
@@ -56,9 +55,9 @@ namespace RJW_Genes
             // pawns that don't already have state, so return if state is !null (STATE SHOULD ALWAYS BE CLEANED IN LABORPUSHING POSTFIX)
             if (!laborStateIsNull)
             {
-                if (LBTSettings.devMode)
+                if (RJW_Genes_Settings.rjw_genes_detailed_debug)
                 {
-                    RJW_GenesLogger.Warning("Labor state for pawn " + __instance.pawn.NameShortColored + " (" + __instance.pawn.ThingID + ") is not null despite all checks passing for determining first instance of Hediff_Labor - this warning should never occur, and may indicate a bug in Hediff_LaborPushing of lingering labor state from a previous pregnancy");
+                    ModLog.Warning("Labor state for pawn " + __instance.pawn.NameShortColored + " (" + __instance.pawn.ThingID + ") is not null despite all checks passing for determining first instance of Hediff_Labor - this warning should never occur, and may indicate a bug in Hediff_LaborPushing of lingering labor state from a previous pregnancy");
                 }
                 return;
             }
@@ -77,12 +76,12 @@ namespace RJW_Genes
             if (!randomTwinsRoll && !hasAgitator)
             {
                 // We failed rolls, and we don't have an agitator - no additional processing, do vanilla single baby birth
-                if (LBTSettings.devMode)
+                if (RJW_Genes_Settings.rjw_genes_detailed_debug)
                 {
-                    RJW_GenesLogger.MessageGroupHead("Inside Hediff_Labor_PostRemovedPostFix random twins check fail");
-                    RJW_GenesLogger.MessageGroupBody("Pawn: " + __instance.pawn.NameShortColored);
-                    RJW_GenesLogger.MessageGroupBody("Random twins roll outcome: " + randomTwinsRoll);
-                    RJW_GenesLogger.MessageGroupFoot("Has OvaryAgitator: " + hasAgitator);
+                    ModLog.Message("Inside Hediff_Labor_PostRemovedPostFix random twins check fail");
+                    ModLog.Message("Pawn: " + __instance.pawn.NameShortColored);
+                    ModLog.Message("Random twins roll outcome: " + randomTwinsRoll);
+                    ModLog.Message("Has OvaryAgitator: " + hasAgitator);
                 }
                 return;
             }
@@ -134,9 +133,9 @@ namespace RJW_Genes
 
             if (!hasAgitator && !hasLitteredBirthsGene)
             {
-                if (LBTSettings.devMode)
+                if (RJW_Genes_Settings.rjw_genes_detailed_debug)
                 {
-                    RJW_GenesLogger.Message("Pawn " + __instance.pawn.NameShortColored + " (" + __instance.pawn.ThingID + ") is having random twins");
+                    ModLog.Message("Pawn " + __instance.pawn.NameShortColored + " (" + __instance.pawn.ThingID + ") is having random twins");
                 }
                 Find.LetterStack.ReceiveLetter("Twins!", __instance.pawn.NameShortColored + " is still in labor and is having twins!\n\nBe sure to gather your doctor and additional friends and family to ensure the other baby is also born healthy!", LetterDefOf.AnotherBaby, __instance.pawn);
                 return;

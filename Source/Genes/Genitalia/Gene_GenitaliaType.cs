@@ -8,7 +8,7 @@ namespace RJW_Genes
         public override void PostMake()
         {
             base.PostMake();
-            Apply();
+           
         }
 
         public override void PostAdd()
@@ -19,13 +19,16 @@ namespace RJW_Genes
 
         protected virtual void Apply()
         {
-            GenitaliaTypeExtension genitals = def.GetModExtension<GenitaliaTypeExtension>();
-            if (genitals == null && RJW_Genes_Settings.rjw_genes_detailed_debug)
+            if (this.Active)
             {
-                ModLog.Error($"Gene {def} failed to change genitals - Need a modExtension with Class=\"{typeof(GenitaliaTypeExtension).FullName}\".");
-                return;
+                GenitaliaTypeExtension genitals = def.GetModExtension<GenitaliaTypeExtension>();
+                if (genitals == null && RJW_Genes_Settings.rjw_genes_detailed_debug)
+                {
+                    ModLog.Error($"Gene {def} failed to change genitals - Need a modExtension with Class=\"{typeof(GenitaliaTypeExtension).FullName}\".");
+                    return;
+                }
+                GenitaliaChanger.ChangeGenitalia(pawn, genitals.penis, genitals.vagina, genitals.anus);
             }
-            GenitaliaChanger.ChangeGenitalia(pawn, genitals.penis, genitals.vagina, genitals.anus);
         }
     }
 }

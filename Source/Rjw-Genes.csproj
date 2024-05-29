@@ -43,11 +43,10 @@
     <Compile Include="Common\Defs\ModExtensionHelper.cs" />
     <Compile Include="Common\Either.cs" />
     <Compile Include="Common\Helpers\LaborState.cs" />
-    <Compile Include="Common\Helpers\RJW_GenesLogger.cs" />
     <Compile Include="Common\ModLog.cs" />
     <Compile Include="Common\Defs\TickIntervalExtension.cs" />
     <Compile Include="Common\Patches\PatchImplants.cs" />
-    <Compile Include="Common\Patches\PatchLitteredBirth.cs" />
+    <Compile Include="Genes\Patches\PatchLitteredBirth.cs" />
     <Compile Include="Common\Patches\PatchGetParents.cs" />
     <Compile Include="Common\Patches\PatchPregnancyHelper.cs" />
     <Compile Include="GeneDefOf.cs" />
@@ -157,7 +156,6 @@
     <Compile Include="JobDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RJW_Genes.cs" />
-    <Compile Include="Settings\LBTSettings.cs" />
     <Compile Include="Settings\RJW_Genes_Settings.cs" />
     <Compile Include="Settings\RJW_Genes_SettingsController.cs" />
     <Compile Include="ThoughtDefOf.cs" />

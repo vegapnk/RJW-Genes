@@ -33,6 +33,7 @@ namespace RJW_Genes
         public static readonly GeneDef rjw_genes_Orc_genitalia;
         public static readonly GeneDef rjw_genes_Pig_genitalia;
         public static readonly GeneDef rjw_genes_Tentacle_genitalia;
+        public static readonly GeneDef rjw_genes_human_genitalia;
 
         // Extra Genitalia 
         public static readonly GeneDef rjw_genes_extra_penis;

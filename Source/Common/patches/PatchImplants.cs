@@ -7,7 +7,7 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 using rjw;
-using LewdBiotech;
+
 
 namespace RJW_Genes
 {
@@ -24,16 +24,16 @@ namespace RJW_Genes
         {
             if (rapist.health.hediffSet.HasHediff(HediffDef.Named("LimbicStimulator")))
             {
-                if (LBTSettings.devMode)
+                if (RJW_Genes_Settings.rjw_genes_detailed_debug)
                 {
-                    RJW_GenesLogger.MessageGroupHead("Found LimbicStimulator hediff during xxx.would_rape check");
-                    RJW_GenesLogger.MessageGroupBody("Pawn: " + rapist.NameShortColored + " (" + rapist.ThingID + ")");
-                    RJW_GenesLogger.MessageGroupBody("__result (Before roll): " + __result);
+                    ModLog.Message("Found LimbicStimulator hediff during xxx.would_rape check");
+                    ModLog.Message("Pawn: " + rapist.NameShortColored + " (" + rapist.ThingID + ")");
+                    ModLog.Message("__result (Before roll): " + __result);
                 }
                 __result = Rand.Chance(0.95f);
-                if (LBTSettings.devMode)
+                if (RJW_Genes_Settings.rjw_genes_detailed_debug)
                 {
-                    RJW_GenesLogger.MessageGroupFoot("__result (After roll): " + __result);
+                    ModLog.Message("__result (After roll): " + __result);
                 }
             }
         }
@@ -42,9 +42,9 @@ namespace RJW_Genes
         {
             if (pawn.health.hediffSet.HasHediff(HediffDef.Named("LimbicStimulator")))
             {
-                if (LBTSettings.devMode)
+                if (RJW_Genes_Settings.rjw_genes_detailed_debug)
                 {
-                    RJW_GenesLogger.Message("Found LimbicStimulator hediff during xxx.is_rapist check for " + pawn.NameShortColored + " (" + pawn.ThingID + ")" + " with __result = " + __result + " - forcing to true");
+                    ModLog.Message("Found LimbicStimulator hediff during xxx.is_rapist check for " + pawn.NameShortColored + " (" + pawn.ThingID + ")" + " with __result = " + __result + " - forcing to true");
                     __result = true;
                 }
             }
@@ -52,7 +52,7 @@ namespace RJW_Genes
 
         static public void think_about_sex_Rapist_PostFix(ref ThoughtDef __result, Pawn pawn)
         {
-            if (LBTSettings.regretStealingLovinThoughtDisabled) return;
+            if (RJW_Genes_Settings.regretStealingLovinThoughtDisabled) return;
 
             if (pawn.health.hediffSet.HasHediff(HediffDef.Named("LimbicStimulator")) && (__result == stoleSomeLovin || __result == bloodlustStoleSomeLovin) && !pawn.story.traits.HasTrait(rapist) && !pawn.story.traits.HasTrait(sadist))
             {

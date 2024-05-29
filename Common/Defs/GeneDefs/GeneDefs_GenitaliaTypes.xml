@@ -7,6 +7,7 @@
     <exclusionTags>
       <li>GenitalType</li>
     </exclusionTags>
+	<randomChosen>true</randomChosen>
     <biostatCpx>0</biostatCpx>
     
     <modExtensions>
@@ -27,6 +28,21 @@
         <penis>HorsePenis</penis>
         <vagina>HorseVagina</vagina>
         <anus>GenericAnus</anus>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>802</displayOrderInCategory>
+  </GeneDef>
+  
+   <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_human_genitalia</defName>
+    <label>human genitalia</label>
+    <description>Carriers of this gene develop human genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_human</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>Penis</penis>
+        <vagina>Vagina</vagina>
+        <anus>Anus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>802</displayOrderInCategory>
