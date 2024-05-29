@@ -1,3 +1,16 @@
+# 1.3.3
+
+**Fixes:** 
+
+- Added another check to the AG Malachai Xenotype (Fixes #68)
+- Fixed the `GatheredCum`Fertilin Ingestion Patch throwing an Error for people without Sexperience (Fixes #69 (nice))
+
+# 1.3.2
+
+**Fixes:**
+
+- Removed patch for Malachai, needs a different patching operator but I don't want to have broken fixes for now (Tracked in a new Issue)
+
 # 1.3.1 
 
 **Changes**

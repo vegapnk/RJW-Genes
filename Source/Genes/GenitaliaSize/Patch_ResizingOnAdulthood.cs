@@ -16,7 +16,7 @@ namespace RJW_Genes
 
         static void Postfix(Pawn ___pawn, int birthdayAge)
         {
-            if (birthdayAge >= Gene_GenitaliaResizingGene.RESIZING_AGE)
+            if (birthdayAge >= RJW_Genes_Settings.rjw_genes_resizing_age)
             {
                 foreach(Gene_GenitaliaResizingGene gene in GeneUtility.GetGenitaliaResizingGenes(___pawn))
                 {

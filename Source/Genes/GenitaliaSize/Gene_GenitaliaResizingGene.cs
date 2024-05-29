@@ -17,10 +17,7 @@ namespace RJW_Genes
     public abstract class Gene_GenitaliaResizingGene : RJW_Gene
     {
 
-        /// <summary>
-        /// The age (in years) at which the Pawns Genes will take effect, resizing their genitalia. 
-        /// </summary>
-        public const int RESIZING_AGE = 20; 
+    
 
         /// <summary>
         /// Whether or not the gene was already applied. 
@@ -33,7 +30,7 @@ namespace RJW_Genes
         public override void PostMake()
         {
             base.PostMake();
-            if (pawn.ageTracker.AgeBiologicalYears >= RESIZING_AGE)
+            if (pawn.ageTracker.AgeBiologicalYears >= RJW_Genes_Settings.rjw_genes_resizing_age)
             {
                 Resize();
                 ResizingWasApplied = true;
@@ -43,7 +40,7 @@ namespace RJW_Genes
         public override void PostAdd()
         {
             base.PostAdd();
-            if (pawn.ageTracker.AgeBiologicalYears >= RESIZING_AGE)
+            if (pawn.ageTracker.AgeBiologicalYears >= RJW_Genes_Settings.rjw_genes_resizing_age)
             {
                 Resize();
                 ResizingWasApplied = true;

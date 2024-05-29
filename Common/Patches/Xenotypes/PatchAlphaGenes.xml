@@ -87,18 +87,6 @@
                     <li>Alpha Genes</li>
                 </mods>
                 <match Class="PatchOperationAdd">
-                    <xpath>Defs/XenotypeDef[defName="AG_Animusen"]/genes</xpath>
-                    <value>
-                        <li>rjw_genes_canine_genitalia</li>
-                    </value>
-                </match>
-            </li>
-
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Alpha Genes</li>
-                </mods>
-                <match Class="PatchOperationAdd">
                     <xpath>Defs/XenotypeDef[defName="AG_Drakonori"]/genes</xpath>
                     <value>
                         <li>rjw_genes_dragon_genitalia</li>
@@ -114,12 +102,30 @@
                     <li>Alpha Genes</li>
                 </mods>
                 <match Class="PatchOperationAdd">
-                    <xpath>Defs/XenotypeDef[defName="AG_Malachai"]/genes</xpath>
+                    <xpath>Defs/XenotypeDef[defName="AG_Animusen"]/genes</xpath>
                     <value>
-                        <li>rjw_genes_demonic_genitalia</li>
+                        <li>rjw_genes_canine_genitalia</li>
                     </value>
                 </match>
             </li>
+
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Alpha Genes</li>
+                </mods>
+                <match Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Races Expanded - Sanguophage</li>
+                    </mods>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/XenotypeDef[defName="AG_Malachai"]/genes</xpath>
+                        <value>
+                            <li>rjw_genes_demonic_genitalia</li>
+                        </value>
+                    </match>
+                </match>
+            </li>
+
         </operations>
     </Operation>
 </Patch>

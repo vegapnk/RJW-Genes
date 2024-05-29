@@ -1,5 +1,4 @@
 ﻿using Verse;
-using Verse;
 using RimWorld;
 using rjw;
 using System.Collections.Generic;
@@ -10,22 +9,15 @@ namespace RJW_Genes
     public class Gene_EvergrowingGenitalia : RJW_Gene
     {
 
-        /// <summary>
-        /// The age (in years) at which the Pawns Genes will take effect, resizing their genitalia. 
-        /// </summary>
-        public const int RESIZING_AGE = 20;
-
-        //public const int GROWTH_INTERVAL = 1000; // Test value for Quick Trials
-        public const int GROWTH_INTERVAL_FALLBACK = 60000; // 60k == 1 day
 
         public override void Tick()
         {
             base.Tick();
 
-            int interval = ModExtensionHelper.GetTickIntervalFromModExtension(GeneDefOf.rjw_genes_evergrowth, GROWTH_INTERVAL_FALLBACK);
+            int interval = ModExtensionHelper.GetTickIntervalFromModExtension(GeneDefOf.rjw_genes_evergrowth, RJW_Genes_Settings.rjw_genes_evergrowth_ticks);
             if (pawn.IsHashIntervalTick(interval) 
                 && this.pawn.Map != null 
-                && pawn.ageTracker.AgeBiologicalYears >= RESIZING_AGE)
+                && pawn.ageTracker.AgeBiologicalYears >= RJW_Genes_Settings.rjw_genes_resizing_age)
             {
                 GrowPenisses();
                 GrowVaginas();

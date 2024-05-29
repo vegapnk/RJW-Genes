@@ -64,10 +64,7 @@ namespace RJW_Genes
 			});
 			toil.AddFinishAction(delegate
 			{
-				if (xxx.is_human(this.pawn))
-				{
-					this.pawn.Drawer.renderer.graphics.ResolveApparelGraphics();
-				}
+
 				GlobalTextureAtlasManager.TryMarkPawnFrameSetDirty(this.pawn);
 				Hediff submitting = this.pawn.health.hediffSet.GetFirstHediffOfDef(xxx.submitting);
 				if (submitting != null)

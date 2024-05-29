@@ -122,6 +122,19 @@
 	    </exclusionTags>
     </GeneDef>
 	
+	<GeneDef ParentName="GeneExtraGenitaliaBase">
+	    <defName>rjw_genes_femboy</defName>
+	    <label>femboy</label>
+	    <description>Males with this gene are considered female despite having a penis</description>
+	    <iconPath>Genes/Icons/Futa</iconPath>
+	    <geneClass>RJW_Genes.Gene_Femboy</geneClass>
+	    <displayOrderInCategory>709</displayOrderInCategory>
+	    <exclusionTags>
+		    <li>PenisAmount</li>
+		    <li>VaginaAmount</li>
+	    </exclusionTags>
+    </GeneDef>
+	
   <GeneDef ParentName="GeneExtraGenitaliaBase">
     <defName>rjw_genes_featureless_chest</defName>
     <label>Featureless Chest</label>
@@ -133,13 +146,11 @@
       <li>BreastAmount</li>
     </exclusionTags>
   </GeneDef>
-  <!-- 
-  See Comment in `RJW_Genes.Gene_UdderBreasts` why this is currently commented out.
-  
+
   <GeneDef ParentName="GeneExtraGenitaliaBase">
     <defName>rjw_genes_udder</defName>
     <label>udder</label>
-    <description>Carriers of this gene have udders instead of breasts.</description>
+    <description>Carriers of this gene have udders and breasts.</description>
     <iconPath>Things/Mote/Heart</iconPath>
     <geneClass>RJW_Genes.Gene_UdderBreasts</geneClass>
     <displayOrderInCategory>711</displayOrderInCategory>
@@ -147,5 +158,5 @@
       <li>BreastAmount</li>
     </exclusionTags>
   </GeneDef>
-  -->
+
 </Defs>

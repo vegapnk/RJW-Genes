@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallBioscaffold</defName>
+    <label>install bioscaffold</label>
+    <description>Install a bioscaffold.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bioscaffold</ThingDef>
+      <HediffDef>Bioscaffold</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bioscaffold.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Bioscaffold</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Bioscaffold</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Bioscaffold</addsHediff>
+  </RecipeDef>
+</Defs>

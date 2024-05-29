@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
+		<defName>NeedlePenis</defName>
+		<label>needle penis</label>
+		<description>A long thin needle penis</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>0.40</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
+		<defName>PigPenis</defName>
+		<label>screw penis</label>
+		<description>A large screw penis.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>0.40</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
+		<defName>MarinePenis</defName>
+		<label>marine penis</label>
+		<description>A penis similar to those of marine mammals.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>0.40</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
+		<defName>TentaclePenis</defName>
+		<label>alien penis</label>
+		<description>A alien penis featuring multiples tentacles.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>0.40</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
+		<defName>GolemPenis</defName>
+		<label>golem penis</label>
+		<description>A large rocky golem penis.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>0.40</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
+		<defName>OrcPenis</defName>
+		<label>orc penis</label>
+		<description>A large orc penis.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>0.40</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
+		<defName>GhostPenis</defName>
+		<label>ghost penis</label>
+		<description>A evanescent ghost penis, you can barely feel it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>0.40</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
+		<defName>NecroPenis</defName>
+		<label>undead penis</label>
+		<description>A rotten, reanimated penis.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>0.40</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
+		<defName>GhostVagina</defName>
+		<label>ghost vagina</label>
+		<descriptionHyperlinks><ThingDef>GhostVagina</ThingDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>0.40</Mass>
+		</statBases>
+	</ThingDef>
+	
+
+
+</Defs>

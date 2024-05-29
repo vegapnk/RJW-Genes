@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallOvaryAgitator</defName>
+    <label>install ovary agitator</label>
+    <description>Install an ovary agitator.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OvaryAgitator</ThingDef>
+      <HediffDef>OvaryAgitator</HediffDef>
+    </descriptionHyperlinks>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing ovary agitator.</jobString>
+    <isViolation>true</isViolation>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OvaryAgitator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OvaryAgitator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OvaryAgitator</addsHediff>
+  </RecipeDef>
+</Defs>

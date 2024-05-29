@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Highmate</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/AbilityDef[defName="VRE_InitiateLovin"]/comps</xpath>
+			<value>
+				<comps>
+					<li Class = "RJW_Genes.CompProperties_Seduce">
+						<compClass>RJW_Genes.CompAbilityEffect_Seduce</compClass>
+						<destination>Caster</destination>
+					</li>
+				</comps>
+			</value>
+		</match>
+	</Operation>
+</Patch>
+

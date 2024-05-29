@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>  
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>OvaryAgitator</defName>
+    <label>ovary agitator</label>
+    <description>A crude slaver implant used to increase the number of eggs released during ovulation, increasing the likelihood of having multiple children per pregnancy. Their use is largely limited to rimworlds lacking in cloning infrastructure as most civilized and unified worlds have outlawed them.\n\nWhile it provides an initial boost in fertility, the implant will slowly deplete the victims's ovaries over several years until they're infertile. Allies of implanted victims will be angered.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallOvaryAgitator</RecipeDef>
+    </descriptionHyperlinks>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <MedicineIndustrial>1</MedicineIndustrial>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>FertilityProcedures</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

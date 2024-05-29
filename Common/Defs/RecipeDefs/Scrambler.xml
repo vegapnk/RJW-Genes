@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallScrambler</defName>
+    <label>install scrambler</label>
+    <description>Install a scrambler.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Scrambler</ThingDef>
+      <HediffDef>Scrambler</HediffDef>
+    </descriptionHyperlinks>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing scrambler.</jobString>
+    <isViolation>true</isViolation>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Scrambler</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Scrambler</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Scrambler</addsHediff>
+  </RecipeDef>
+</Defs>

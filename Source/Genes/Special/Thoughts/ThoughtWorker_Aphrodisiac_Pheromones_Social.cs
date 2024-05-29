@@ -36,8 +36,7 @@ namespace RJW_Genes
             if (!RelationsUtility.PawnsKnowEachOther(pawn, other))
                 return (ThoughtState)false;
             // If the pawn is not on Map (e.g. caravan), no mali 
-            if (!HiveUtility.PawnIsOnHomeMap(pawn))
-                return (ThoughtState)false;
+
 
 
             // Do nothing for pawns that also have pheromones

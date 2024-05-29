@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <TraitDef>
+    <defName>rjw_genes_sadist</defName>
+    <commonality>0.5</commonality>
+    <degreeDatas>
+      <li>
+        <label>Sadist</label>
+        <description>{PAWN_nameDef} is a sadist, enjoying blood and hurting others, may also be a little rapy.</description>
+        <socialFightChanceFactor>2</socialFightChanceFactor>
+        <allowedMeditationFocusTypes><li>Morbid</li></allowedMeditationFocusTypes>
+		<statOffsets>
+			<SexFrequency>0.1</SexFrequency>
+		</statOffsets>
+		<randomMentalState>RandomRape</randomMentalState>
+		<randomMentalStateMtbDaysMoodCurve>
+			<points>
+				<li>(0, 15)</li>
+				<li>(50, 50)</li>
+				<li>(100, 100)</li>
+			</points>
+		</randomMentalStateMtbDaysMoodCurve>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+
+</Defs>

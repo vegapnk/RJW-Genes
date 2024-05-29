@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <HediffDef>
+    <defName>Bioscaffold</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>bioscaffold</label>
+    <description>This woman has an bioscaffold mesh within her womb, providing an enriching environment for an unborn baby to grow more quickly.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bioscaffold</ThingDef>
+    </descriptionHyperlinks>
+    <initialSeverity>0.001</initialSeverity>
+    <everCurableByItem>false</everCurableByItem>
+    <!-- <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>true</showRemainingTime>
+        <disappearsAfterTicks>540000</disappearsAfterTicks> <!10 Days>
+      </li>
+    </comps> -->
+  </HediffDef>
+</Defs>

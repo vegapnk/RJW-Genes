@@ -43,6 +43,50 @@
 			</li>
 		</modExtensions>
     </GeneDef>
+	
+	<GeneDef>
+        <defName>rjw_genes_sadist_gene</defName>
+        <label>Sadist</label>
+        <displayCategory>Reproduction</displayCategory>
+        <description>Xenotypes with this Gene are Sadists.</description>
+        <iconPath>Genes/Icons/Rape</iconPath>
+        <biostatMet>1</biostatMet>
+        <displayOrderInCategory>2</displayOrderInCategory>    
+        <forcedTraits>
+            <li>
+                <def>rjw_genes_sadist</def>
+            </li>
+        </forcedTraits>
+
+        <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    </GeneDef>
+	
+	<GeneDef>
+        <defName>rjw_genes_masochist</defName>
+        <label>Masochist</label>
+        <displayCategory>Reproduction</displayCategory>
+        <description>Xenotypes with this Gene are Masochists.</description>
+        <iconPath>Genes/Icons/Rape</iconPath>
+        <biostatMet>1</biostatMet>
+        <displayOrderInCategory>2</displayOrderInCategory>    
+        <forcedTraits>
+            <li>
+                <def>Masochist</def>
+            </li>
+        </forcedTraits>
+
+        <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    </GeneDef>
 
     <GeneDef>
         <defName>rjw_genes_homosexual</defName>
@@ -117,6 +161,18 @@
             <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
         </li>
     </modExtensions>
+  </GeneDef>
+  
+   <GeneDef>
+    <defName>LitteredBirths</defName>
+    <label>littered births</label>
+	<displayCategory>Reproduction</displayCategory>
+    <description>Female carriers of this gene birth litters instead of just one baby, with a chance of having two to four babies per pregnancy.</description>
+    <iconPath>Genes/Icons/Gene_LitteredBirths</iconPath>
+    <displayOrderInCategory>110</displayOrderInCategory>
+    <marketValueFactor>1.10</marketValueFactor>
+    <biostatMet>-2</biostatMet>
+    <biostatCpx>1</biostatCpx>
   </GeneDef>
 
 </Defs>
