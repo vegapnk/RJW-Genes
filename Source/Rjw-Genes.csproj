@@ -60,9 +60,11 @@
     <Compile Include="Common\Defs\ModExtensionHelper.cs" />
     <Compile Include="Common\Either.cs" />
     <Compile Include="Common\Helpers\LaborState.cs" />
+    <Compile Include="Common\Helpers\MapUtility.cs" />
     <Compile Include="Common\ModLog.cs" />
     <Compile Include="Common\Defs\TickIntervalExtension.cs" />
     <Compile Include="Common\Patches\PatchImplants.cs" />
+    <Compile Include="Genes\Damage\Gene_Elasticity.cs" />
     <Compile Include="Genes\Patches\PatchLitteredBirth.cs" />
     <Compile Include="Common\Patches\PatchGetParents.cs" />
     <Compile Include="Common\Patches\PatchPregnancyHelper.cs" />
