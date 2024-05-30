@@ -12,23 +12,25 @@ namespace RJW_Genes
             //Copied from RJW settings mostly
             Rect outRect = new Rect(0f, 30f, inRect.width, inRect.height - 30f);
             Rect rect = new Rect(0f, 0f, inRect.width - 16f, inRect.height + 300f);
-            //Widgets.BeginScrollView(outRect, ref RJWSettings.scrollPosition, rect, true);
+
             Listing_Standard listing_Standard = new Listing_Standard();
             listing_Standard.maxOneColumn = true;
             listing_Standard.ColumnWidth = rect.width / 2.05f;
             listing_Standard.Begin(rect);
             listing_Standard.Gap(24f); 
+            // Genitalia Resizing Age
             listing_Standard.Label("Genitalia resizing age" + ": " +
                 Math.Round((double)(RJW_Genes_Settings.rjw_genes_resizing_age), 0).ToString() , -1f, "years.");
             RJW_Genes_Settings.rjw_genes_resizing_age = listing_Standard.Slider(RJW_Genes_Settings.rjw_genes_resizing_age, 18f, 100f);
             listing_Standard.Gap(4f);
-            listing_Standard.Label("Fertilin-Gain from Animals" + ": " +
+            // Evergrowth Speed 
+            listing_Standard.Label("number of ticks between genitalia evergrowth updates (600 tick for ~2cm/day)" + ": " +
                Math.Round((double)(RJW_Genes_Settings.rjw_genes_evergrowth_ticks), 0).ToString() , -1f, "ticks.");
             RJW_Genes_Settings.rjw_genes_evergrowth_ticks = (int) listing_Standard.Slider(RJW_Genes_Settings.rjw_genes_evergrowth_ticks, 600, 60000);
-
             listing_Standard.Gap(4f);
-            listing_Standard.Label("nunmber of ticks between genitalia evergrowth updates (600 tick for ~2cm/day)" + ": " +
-               Math.Round((double)(RJW_Genes_Settings.rjw_genes_fertilin_from_animals_factor * 100f), 0).ToString() + "%", -1f, "of fertilin gained (compared to human-baseline).");
+            // Fertilin Gain From Animals
+            listing_Standard.Label("Fertilin-Gain from Animals" + ": " +
+               Math.Round((double)(RJW_Genes_Settings.rjw_genes_fertilin_from_animals_factor * 100f), 0).ToString() + "", -1f, "of fertilin gained (compared to human-baseline).");
             RJW_Genes_Settings.rjw_genes_fertilin_from_animals_factor = listing_Standard.Slider(RJW_Genes_Settings.rjw_genes_fertilin_from_animals_factor, 0f, 3f);
 
             listing_Standard.Gap(5f);
@@ -43,13 +45,13 @@ namespace RJW_Genes
                 listing_Standard.CheckboxLabeled("  Succubi", ref rjw_genes_sexdemon_visit_succubi, "Allow incubi to spawn through this even", 0f, 1f);
                 listing_Standard.Gap(3f);
                 listing_Standard.CheckboxLabeled("  Incubi", ref rjw_genes_sexdemon_visit_incubi, "Allow incubi to spawn through this even", 0f, 1f);
-
             }
 
+            listing_Standard.Gap(4f);
 
 
             listing_Standard.Gap(4f);
-            listing_Standard.CheckboxLabeled("RegretStealingLovinThoughtDisabled".Translate(), ref regretStealingLovinThoughtDisabled, "RegretStealingLovinThoughtDisabledDesc".Translate());
+            listing_Standard.CheckboxLabeled("Regret Stealing Love", ref regretStealingLovinThoughtDisabled, "If off, pawns will not get bad thoughts for seduction.");
 
             listing_Standard.Gap(5f);
             listing_Standard.CheckboxLabeled("generous-donor cheatmode", ref rjw_genes_generous_donor_cheatmode, "When enabled, pawns with the 'generous donor' are not drained and not fertilin exhausted. Hence they can fuel succubi and incubi non-stop. This makes them drastically easier to keep, and you should not do it.", 0f, 1f);
