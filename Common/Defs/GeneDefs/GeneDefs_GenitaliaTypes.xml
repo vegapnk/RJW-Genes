@@ -89,6 +89,10 @@
         <vagina>DemonVagina</vagina>
         <anus>DemonAnus</anus>
       </li>
+	  	<li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>DemonLoverQuirk</Satisfiedquirk>
+		</li>
+
     </modExtensions>
     <displayOrderInCategory>805</displayOrderInCategory>
   </GeneDef>
@@ -104,6 +108,9 @@
         <vagina>DragonVagina</vagina>
         <anus>GenericAnus</anus>
       </li>
+	  <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
+		</li>
     </modExtensions>
     <displayOrderInCategory>806</displayOrderInCategory>
   </GeneDef>
@@ -119,6 +126,9 @@
         <vagina>SlimeVagina</vagina>
         <anus>SlimeAnus</anus>
       </li>
+	  <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>SlimeLoverQuirk</Satisfiedquirk>
+		</li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
@@ -134,6 +144,9 @@
         <vagina>DemonVagina</vagina>
         <anus>DemonAnus</anus>
       </li>
+	  <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>DemonLoverQuirk</Satisfiedquirk>
+		</li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
@@ -147,6 +160,9 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>CrocodilianPenis</penis>
       </li>
+	  <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
+		</li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
@@ -160,6 +176,7 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>RaccoonPenis</penis>
       </li>
+	  
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
@@ -173,6 +190,9 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>HemiPenis</penis>
       </li>
+	  <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
+		</li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
@@ -191,6 +211,9 @@
         <penis>GhostPenis</penis>
         <vagina>GhostVagina</vagina>
       </li>
+	  <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>TeratophileQuirk</Satisfiedquirk>
+		</li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
@@ -204,6 +227,9 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>GolemPenis</penis>
       </li>
+	  <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>TeratophileQuirk</Satisfiedquirk>
+		</li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>  
@@ -230,6 +256,9 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>NecroPenis</penis>
       </li>
+	  <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>TeratophileQuirk</Satisfiedquirk>
+		</li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>  
@@ -282,6 +311,9 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>TentaclePenis</penis>
       </li>
+	  <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>TeratophileQuirk</Satisfiedquirk>
+		</li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>  
@@ -302,6 +334,9 @@
         <vagina>OvipositorF</vagina>
         <anus>InsectAnus</anus>
       </li>
+	  <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>ChitinLoverQuirk</Satisfiedquirk>
+		</li>
     </modExtensions>
     <displayOrderInCategory>808</displayOrderInCategory>
 

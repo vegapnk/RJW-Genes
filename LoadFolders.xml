@@ -5,6 +5,6 @@
 		<li>Common</li>
 		<!-- Mods -->
 		<li IfModNotActive="asmr.rjw.racesupport">Mods/NotRaceSupport</li>
-		
+		<li IfModActive="vanillaracesexpanded.sanguophage">Mods/Sanguophage</li>
 	</v1.5>
 </loadFolders>

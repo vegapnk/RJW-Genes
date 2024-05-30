@@ -13,6 +13,13 @@ namespace RJW_Genes
         {
             Pawn pawn = props.pawn;
             Pawn partner = props.partner;
+            if(pawn!=null && partner != null)
+            {
+                if(!pawn.IsHuman()||!partner.IsHuman())
+                {
+                    return;
+                }
+            }
             int count = 0;
             List<string> listquirk = new List<string>();
             string s;
@@ -40,6 +47,7 @@ namespace RJW_Genes
                             if (q.LocaliztionKey==s2)
                             {
                                 count++;
+                                Quirk.AddThought(pawn);
                             }
                     }
                 }

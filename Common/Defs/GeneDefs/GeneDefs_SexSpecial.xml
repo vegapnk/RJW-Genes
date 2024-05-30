@@ -125,6 +125,11 @@
 		</descriptionHyperlinks>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
+		<modExtensions>
+		<li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>BreederQuirk</Satisfiedquirk>
+		</li>
+		</modExtensions>
 	</GeneDef>
 
 </Defs>
