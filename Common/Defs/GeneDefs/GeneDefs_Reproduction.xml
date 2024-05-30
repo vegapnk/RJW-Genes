@@ -44,6 +44,7 @@
 		</modExtensions>
     </GeneDef>
 	
+    <!-- 
 	<GeneDef>
         <defName>rjw_genes_sadist_gene</defName>
         <label>Sadist</label>
@@ -65,7 +66,8 @@
 			</li>
 		</modExtensions>
     </GeneDef>
-	
+	-->
+    
 	<GeneDef>
         <defName>rjw_genes_masochist</defName>
         <label>Masochist</label>

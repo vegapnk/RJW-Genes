@@ -18,7 +18,7 @@ namespace RJW_Genes
         public static readonly ThoughtDef stoleSomeLovin = DefDatabase<ThoughtDef>.GetNamed("StoleSomeLovin");
         public static readonly ThoughtDef bloodlustStoleSomeLovin = DefDatabase<ThoughtDef>.GetNamed("BloodlustStoleSomeLovin");
         public static readonly TraitDef rapist = DefDatabase<TraitDef>.GetNamed("Rapist");
-        public static readonly TraitDef sadist = DefDatabase<TraitDef>.GetNamed("rjw_genes_sadist");
+
         static Dictionary<string, LaborState> laborStateMap = new Dictionary<string, LaborState>();
         static public void would_rape_PostFix(ref bool __result, Pawn rapist)
         {
@@ -54,7 +54,7 @@ namespace RJW_Genes
         {
             if (RJW_Genes_Settings.regretStealingLovinThoughtDisabled) return;
 
-            if (pawn.health.hediffSet.HasHediff(HediffDef.Named("LimbicStimulator")) && (__result == stoleSomeLovin || __result == bloodlustStoleSomeLovin) && !pawn.story.traits.HasTrait(rapist) && !pawn.story.traits.HasTrait(sadist))
+            if (pawn.health.hediffSet.HasHediff(HediffDef.Named("LimbicStimulator")) && (__result == stoleSomeLovin || __result == bloodlustStoleSomeLovin) && !pawn.story.traits.HasTrait(rapist))
             {
                 __result = regretsStealingLovin;
             }

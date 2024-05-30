@@ -27,7 +27,24 @@
     <None Include="..\Common\Defs\Genes\GeneDefs_ExtraGenitaliaEndogenes.xml" />
     <None Include="..\Common\Defs\Genes\GeneDefs_GenitaliaTypeEndogenes.xml" />
     <None Include="..\Common\Languages\English\Keyed\Dialog_StatsReport.xml" />
-    <None Include="..\Common\Patches\**" />
+    <None Include="..\Common\Patches\Genes\Patch_Highmates.xml" />
+    <None Include="..\Common\Patches\Genes\Patch_Unbreakable.xml" />
+    <None Include="..\Common\Patches\Xenotypes\GenitaliaUpdate.xml" />
+    <None Include="..\Common\Patches\Xenotypes\PatchAlphaGenes.xml" />
+    <None Include="..\Common\Patches\Xenotypes\PatchBiotechNyaron.xml" />
+    <None Include="..\Common\Patches\Xenotypes\PatchErinsAuronya.xml" />
+    <None Include="..\Common\Patches\Xenotypes\PatchErinsShisune.xml" />
+    <None Include="..\Common\Patches\Xenotypes\PatchKijinRace3.xml" />
+    <None Include="..\Common\Patches\Xenotypes\PatchNarai.xml" />
+    <None Include="..\Common\Patches\Xenotypes\PatchNyaron.xml" />
+    <None Include="..\Common\Patches\Xenotypes\PatchPapou.xml" />
+    <None Include="..\Common\Patches\Xenotypes\PatchRoosFaun.xml" />
+    <None Include="..\Common\Patches\Xenotypes\PatchRoosMinotaur.xml" />
+    <None Include="..\Common\Patches\Xenotypes\PatchRoosSatyr.xml" />
+    <None Include="..\Common\Patches\Xenotypes\PatchSaurid.xml" />
+    <None Include="..\Common\Patches\Xenotypes\PatchVREPhytokin.xml" />
+    <None Include="..\Common\Patches\Xenotypes\PatchVRESanguophage.xml" />
+    <None Include="..\Common\Patches\Xenotypes\PatchXenotech.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal_Inheritance\InheritanceUtility.cs" />
