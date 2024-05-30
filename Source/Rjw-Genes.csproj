@@ -208,9 +208,11 @@
     </Reference>
     <Reference Include="RJW">
       <HintPath>..\..\rjw\1.5\Assemblies\RJW.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="RJWSexperience">
       <HintPath>..\..\rjw-sexperience-master\1.5\Assemblies\RJWSexperience.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="UnityEngine">
@@ -229,6 +231,7 @@
     </Reference>
     <Reference Include="VanillaRacesExpanded-Waster">
       <HintPath>..\..\..\..\..\workshop\content\294100\2983471725\1.5\Assemblies\VanillaRacesExpanded-Waster.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -9,16 +9,17 @@ namespace RJW_Genes
     public class QuirkPatcher
     {
         public static void CountSatisfiedPostfix(ref int __result, SexProps props)
-        {
+        {/*
             Pawn pawn = props.pawn;
             Pawn partner = props.partner;
             int count= 0;
             List<Quirk> listquirk= new List<Quirk>();
-
+            Quirk q = null;
             foreach(Gene g in partner.genes.GenesListForReading) {
                 if (partner.genes.HasActiveGene(g.def))
                 {
-                    listquirk.Add(g.def?.GetModExtension<QirkExtension>().Satisfiedquirk);
+                    //g.def?.GetModExtension<QirkExtension>().Satisfiedquirk;
+                  //  listquirk.Add(g.def?.GetModExtension<QirkExtension>().Satisfiedquirk);
                 }
             }
 
@@ -29,7 +30,7 @@ namespace RJW_Genes
                 }
             }
             __result = __result + count;
-            return;
+            return;*/
         }
 
     }
