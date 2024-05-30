@@ -35,6 +35,7 @@
 
 - Small changes to drawing Succubus Wings
 - Minor Format changes to lots of XML files
+- Pawns with ONLY an Archotech penis will not give Fertilin, and will not receive debugs (Fixes #71)
 
 **Hidden Changes:** 
 
