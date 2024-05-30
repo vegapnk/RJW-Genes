@@ -33,16 +33,15 @@ namespace RJW_Genes
             if (!other.RaceProps.Humanlike)
                 return (ThoughtState)false;
 
+            // Pawns that have not "met" wont give each other Mali
+            // Known-Each-Other is a key-word for Rimworld that shows they have had any interaction and stored each other in relations. 
             if (!RelationsUtility.PawnsKnowEachOther(pawn, other))
                 return (ThoughtState)false;
             // If the pawn is not on Map (e.g. caravan), no mali 
-            if (!HiveUtility.PawnIsOnHomeMap(pawn))
+            if (!MapUtility.PawnIsOnHomeMap(pawn))
                 return (ThoughtState)false;
-
-
             // Do nothing for pawns that also have pheromones
             if (GeneUtility.HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_aphrodisiac_pheromones))
-
                 return (ThoughtState)false;
 
             // Actual Logic: 

@@ -19,7 +19,7 @@ namespace RJW_Genes
            
             foreach (var gene in pawn.genes.GenesListForReading)
             {
-                if (gene.def.defName.Contains("rjw_genes") && gene.def.defName.EndsWith("_genitalia"))
+                if (gene is Gene_GenitaliaType)
                     if (!gene.Overridden)
                         return gene.def;
             }
@@ -29,60 +29,19 @@ namespace RJW_Genes
 
         public static HediffDef GetPenisForGene(GeneDef gene)
         {
-            if (gene == null)
-                return Genital_Helper.average_penis;
-
-            switch (gene.defName)
-            {
-                case "rjw_genes_equine_genitalia":      return Genital_Helper.equine_penis;
-                case "rjw_genes_canine_genitalia":      return Genital_Helper.canine_penis;
-                case "rjw_genes_feline_genitalia":      return Genital_Helper.feline_penis;
-                case "rjw_genes_demonic_genitalia":     return Genital_Helper.demon_penis;
-                case "rjw_genes_dragon_genitalia":      return Genital_Helper.dragon_penis;
-                case "rjw_genes_slime_genitalia":       return Genital_Helper.slime_penis;
-                case "rjw_genes_ovipositor_genitalia":  return Genital_Helper.ovipositorM;
-
-                default: return Genital_Helper.average_penis;
-            }
+            return gene?.GetModExtension<GenitaliaTypeExtension>()?.penis ?? Genital_Helper.average_penis;
         }
 
 
         public static HediffDef GetVaginaForGene(GeneDef gene)
         {
-            if (gene == null)
-                return Genital_Helper.average_vagina;
-
-            switch (gene.defName)
-            {
-                case "rjw_genes_equine_genitalia": return Genital_Helper.equine_vagina;
-                case "rjw_genes_canine_genitalia": return Genital_Helper.canine_vagina;
-                case "rjw_genes_feline_genitalia": return Genital_Helper.feline_vagina;
-                case "rjw_genes_demonic_genitalia": return Genital_Helper.demon_vagina;
-                case "rjw_genes_dragon_genitalia": return Genital_Helper.dragon_vagina;
-                case "rjw_genes_slime_genitalia": return Genital_Helper.slime_vagina;
-                case "rjw_genes_ovipositor_genitalia": return Genital_Helper.ovipositorF;
-
-                default: return Genital_Helper.average_vagina;
-            }
+            return gene?.GetModExtension<GenitaliaTypeExtension>()?.vagina ?? Genital_Helper.average_vagina;
         }
 
         public static HediffDef GetAnusForGene(GeneDef gene)
         {
-            if (gene == null)
-                return Genital_Helper.average_anus;
-            switch (gene.defName)
-            {
-                //TODO: Do I want the default to be generic or average for feline,equine and canine?
-                case "rjw_genes_equine_genitalia": return Genital_Helper.average_anus;
-                case "rjw_genes_canine_genitalia": return Genital_Helper.average_anus;
-                case "rjw_genes_feline_genitalia": return Genital_Helper.average_anus;
-                case "rjw_genes_demonic_genitalia": return Genital_Helper.demon_anus;
-                case "rjw_genes_dragon_genitalia": return Genital_Helper.average_anus;
-                case "rjw_genes_slime_genitalia": return Genital_Helper.slime_anus;
-                case "rjw_genes_ovipositor_genitalia": return Genital_Helper.insect_anus;
-
-                default: return Genital_Helper.generic_anus;
-            }
+            //TODO: Do I want the default to be generic or average for feline,equine and canine?
+            return gene?.GetModExtension<GenitaliaTypeExtension>()?.anus ?? Genital_Helper.average_anus;
         }
 
         public static HediffDef GetBreastsForGene(GeneDef gene)
@@ -102,7 +61,7 @@ namespace RJW_Genes
                 case "rjw_genes_udder_breasts": return Genital_Helper.udder_breasts;
                 case "rjw_genes_ovipositor_genitalia": return Genital_Helper.average_breasts;
 
-                default: return Genital_Helper.generic_breasts;
+                default: return Genital_Helper.average_breasts;
             }
         }
 

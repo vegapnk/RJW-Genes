@@ -9,7 +9,7 @@ namespace RJW_Genes
     //Based on LordJob_VisitColony
     public class LordJob_SuccubusVisit : LordJob
     {
-        public LordJob_SuccubusVisit(){}
+        public LordJob_SuccubusVisit() { }
         public LordJob_SuccubusVisit(Pawn target)
         {
             this.target = target;
@@ -82,10 +82,10 @@ namespace RJW_Genes
         {
             foreach (Pawn pawn in this.lord.ownedPawns)
             {
-                if(colonyJoiners.Contains(pawn))
+                if (colonyJoiners.Contains(pawn))
                 {
                     RecruitUtility.Recruit(pawn, Faction.OfPlayer);
-                    Find.LetterStack.ReceiveLetter("rjw_genes_succubus_joins_letter_label".Translate(), string.Format("rjw_genes_succubus_joins_letter_description".Translate(), xxx.get_pawnname(pawn)), LetterDefOf.PositiveEvent, pawn, null, null, null, null);
+                    Find.LetterStack.ReceiveLetter("rjw_genes_succubus_joins_letter_label".Translate(), string.Format("rjw_genes_succubus_joins_letter_description".Translate(), xxx.get_pawnname(pawn)), RimWorld.LetterDefOf.PositiveEvent, pawn, null, null, null, null);
                 }
                 else
                 {

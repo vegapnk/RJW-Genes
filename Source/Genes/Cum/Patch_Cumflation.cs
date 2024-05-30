@@ -9,7 +9,6 @@ using HarmonyLib;
 using rjw;
 using RimWorld;
 using Verse;
-using LicentiaLabs;
 
 namespace RJW_Genes
 {

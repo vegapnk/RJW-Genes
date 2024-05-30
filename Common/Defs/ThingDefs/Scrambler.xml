@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>  
+  <ThingDef ParentName="BodyPartProstheticImperialBase">
+    <defName>Scrambler</defName>
+    <label>scrambler</label>
+    <description>A slaver implant, made from a modified mindscrew, that can inject disorienting mind imagery directly into the visual cortex of the brain through a complex network of nanoelectrodes. Victims of scrambler implantation tend to socially withdraw to minimize additional stimulation. As a consequence of their confusion, they also become physically meek, making them easy to impose upon. Allies of implanted victims will be angered.</description>
+    <descriptionHyperlinks><RecipeDef>InstallScrambler</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>50</WorkToMake>
+    </statBases>
+    <costList>
+      <Mindscrew>1</Mindscrew>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>BrainWiring</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

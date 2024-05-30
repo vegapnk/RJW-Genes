@@ -21,7 +21,7 @@
 
   <GeneCategoryDef>
     <defName>rjw_genes_genitalia_type</defName>
-    <label>Genitalia Types</label>
+    <label>cosmetic - Genitalia Types</label>
     <displayPriorityInXenotype>19</displayPriorityInXenotype>
   </GeneCategoryDef>
 
@@ -65,12 +65,6 @@
     <defName>rjw_genes_special</defName>
     <label>Genital Based Special Abilities</label>
     <displayPriorityInXenotype>8</displayPriorityInXenotype>
-  </GeneCategoryDef>
-  
-  <GeneCategoryDef>
-    <defName>rjw_genes_hive</defName>
-    <label>Hive</label>
-    <displayPriorityInXenotype>7</displayPriorityInXenotype>
   </GeneCategoryDef>
   
   

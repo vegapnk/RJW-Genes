@@ -6,9 +6,6 @@
     <exclusionTags>
       <li>Wing</li>
     </exclusionTags>
-    <graphicData>
-      <drawLoc>Tailbone</drawLoc>
-    </graphicData>
   </GeneDef>
 
   <GeneDef ParentName="rjw_genes_wings">
@@ -26,14 +23,25 @@
 	</descriptionHyperlinks>
     <biostatCpx>1</biostatCpx>
 	<biostatMet>-1</biostatMet>
-    <graphicData>
-      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/RJW_Genes_Succubus_Wings/RJW_Genes_Succubus_Wings</graphicPath>
-      <colorType>Skin</colorType>
-	    <drawScale>2</drawScale>
-      <drawOffsetNorth>(0.0, 0.01, -0.1)</drawOffsetNorth>
-      <drawOffsetSouth>(0.0, 0.0, -0.1)</drawOffsetSouth>
-      <drawOffsetEast>(0.1, 0.0, 0.0)</drawOffsetEast>
-    </graphicData>
+	<selectionWeight>0</selectionWeight>
+	<renderNodeProperties>
+		<li>
+			<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+			<texPath>Things/Pawn/Humanlike/BodyAttachments/RJW_Genes_Succubus_Wings</texPath>
+			<drawSize>1.5</drawSize>
+			<parentTagDef>Body</parentTagDef>
+			<colorType>Skin</colorType>
+			<drawData>
+			<defaultData>
+				<layer>-2</layer>
+			</defaultData>
+			<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+			<dataNorth>
+			<layer>90</layer>
+			</dataNorth>
+			</drawData>
+		</li>
+	</renderNodeProperties>
     
     <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
@@ -53,19 +61,41 @@
     <capMods>
       <li>
         <capacity>Manipulation</capacity>
-        <offset>0.05</offset>
+        <offset>0.05</offset>  
       </li>
     </capMods>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
-    <graphicData>
-      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/RJW_Genes_Succubus_Tail/RJW_Genes_Succubus_Tail</graphicPath>
-      <colorType>Skin</colorType>
-	    <drawScale>2</drawScale>
-      <drawOffsetNorth>(0, 0.2, -0.1)</drawOffsetNorth>
-      <drawOffsetSouth>(0, -0.1, 0.1)</drawOffsetSouth>
-      <drawOffsetEast>(0.2, 0.2, 0.1)</drawOffsetEast>
-    </graphicData>
+    <selectionWeight>0</selectionWeight>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Pawn/Humanlike/BodyAttachments/RJW_Genes_Succubus_Tail</texPath>
+				<overrideMeshSize>(1.5, 1.5)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<colorType>Skin</colorType>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>-2</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0, -0.15)</offset>
+						<layer>90</layer>
+					</dataNorth>
+					<dataSouth>
+						<offset>(-0, 0, -0.15)</offset>
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.2, 0, -0.15)</offset>
+					</dataEast>
+					<dataWest>
+						<offset>(0.2, 0, -0.15)</offset>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
 	  <randomChosen>true</randomChosen>
   
     <modExtensions>

@@ -1,3 +1,50 @@
+# 2.0.0
+
+**Summary**:
+
+- 1.5 Support 
+- Femboys, MPReg
+- Couple Implants around Fertility / Sex / Pregnancy
+- Hive Removal (to be reintroduced somewhere else)
+- Licentia Genes became placeholders, no functions until Licentia is on 1.5
+
+**Additions**: 
+
+- initial Rimworld 1.5 thanks to @jaaldabaoth
+- Fertile Anus Gene, thanks to @jaaldabaoth
+- Femboy Genes, for male pawns with Vaginas @jaaldabaoth
+- Udder Gene @jaaldabaoth , Fixes #57
+- Some other Genitalia Sets (Crocodilian, Racoon, ...) thanks to @jaaldabaoth, Closes #57
+- LitteredBirthsGene thanks to @jaaldabaoth
+- OvaryAgitator that allows for a cyclic fertility. Thanks @jaaldabaoth. See [its description](./Common/Defs/ThingDefs/OvaryAgitator.xml)
+- LimbicStimulator / Scrambler thanks to @jaaldabaoth. See [Scrambler Description](Common/Defs/ThingDefs/Scrambler.xml) and [Limbic Stimulator](./Common/Defs/ThingDefs/LimbicStimulator.xml)
+- Bioscaffold that allows for faster pregnancies. thanks to @jaaldabaoth. See [its description](./Common/Defs/ThingDefs/Bioscaffold.xml)
+- Multi-Pregnancy Gene thanks to @jaaldabaoth
+- Many genes have settings configurable in their xml - tick speeds and distances.
+
+**Changes**: 
+
+- Modularised many "change gentialia sets"-genes into a XML configurations. Thanks to @flock-of-birds
+- **Removed** Hive Logic for now! This might break some of your save-games. 
+- Highmates "Initiate Loving" uses Succubus "Seduce" ability, thanks to @jaaldabaoth
+- Slider for Evergrowth Tick-Speed, thanks to @jaaldabaoth
+- Resizing Age for resizing Genes can be set in Settings @jaaldabaoth
+- **Licentia related genes are only placeholders**, as Licentia is not 1.5 yet
+- InsectIncubator only does self-fertilization now, but does not increase storage capacities for eggs anymore
+- Some Genes (GenitaliaTypes, Cum, some others) cannot be in quest-rewards anymore. Special, Size, Breeding and Lifeforce genes still can be quest rewards.
+
+**Fixes:** 
+
+- Small changes to drawing Succubus Wings
+- Minor Format changes to lots of XML files
+- Pawns with ONLY an Archotech penis will not give Fertilin, and will not receive debuffs (Fixes #71)
+
+**Hidden Changes:** 
+
+- Patches for "Same Mother" / "Same Father" to account for Male-Pregs. This should only extend behaviour but be warned a bit. 
+- Patches to RJW-Pregnancy Helper to account for Male Pregs. 
+- Some replacements from `hasGene` to `hasActiveGene` 
+
 # 1.3.3
 
 **Fixes:** 

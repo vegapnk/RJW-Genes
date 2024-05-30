@@ -13,7 +13,7 @@ namespace RJW_Genes
     {
         public GeneGizmo_ResourceLifeForce(Gene_Resource gene, List<IGeneResourceDrain> drainGenes, Color barColor, Color barhighlightColor) : base(gene, drainGenes, barColor, barhighlightColor)
         {
-            this.draggableBar = true;
+            
         }
 
         public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)

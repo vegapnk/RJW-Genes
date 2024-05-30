@@ -31,20 +31,7 @@ namespace RJW_Genes
                     {
 						Job newJob =JobMaker.MakeJob(xxx.quick_sex, target);
 						
-						//Pawn joins faction when lordJob ends instead of leaving
-						//in the future determine the chance of this another way
-						if (Rand.Chance(JoinChance(pawn, target)))
-                        {
-							Lord lord = pawn.GetLord();
-							LordJob_SuccubusVisit lordJob = lord == null? null : lord.LordJob as LordJob_SuccubusVisit;
-							if (lordJob != null)
-                            {
-								if (!lordJob.colonyJoiners.Contains(pawn))
-                                {
-									lordJob.colonyJoiners.Add(pawn);
-                                }
-                            }
-						}
+
 						return newJob;
 					}
 					else

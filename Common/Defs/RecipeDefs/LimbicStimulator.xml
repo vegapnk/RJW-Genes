@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallLimbicStimulator</defName>
+    <label>install limbic stimulator</label>
+    <description>Install a limbic stimulator.</description>
+    <descriptionHyperlinks>
+      <ThingDef>LimbicStimulator</ThingDef>
+      <HediffDef>LimbicStimulator</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing limbic stimulator.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LimbicStimulator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LimbicStimulator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>LimbicStimulator</addsHediff>
+  </RecipeDef>
+</Defs>

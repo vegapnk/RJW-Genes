@@ -2,28 +2,31 @@
 <Defs>
   <!-- rjw_genes_mechbreeder,rjw_genes_insectincubator and rjw_genes_insectbreeder were kindly supplied by `Shabalox` https://github.com/Shabalox/RJW_Genes_Addons/ -->
 
-  <GeneDef>
+  <GeneDef Name="BreedingBase" Abstract="True">
+		<displayCategory>rjw_genes_breeding</displayCategory>
+
+		<modExtensions>
+				<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+					<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+					<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+				</li>
+			</modExtensions>
+	</GeneDef>
+
+
+  <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_mechbreeder</defName>
     <label>Mechbreeder</label>
     <description>Pawns with this gene are able to birth mechanoids unharmed.</description>
     <iconPath>World/WorldObjects/Expanding/Mechanoids</iconPath>
     <displayOrderInCategory>51</displayOrderInCategory>
-	  <displayCategory>rjw_genes_breeding</displayCategory>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
-
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
   </GeneDef>
   
-  <GeneDef>
+  <GeneDef ParentName="BreedingBase">
       <defName>rjw_genes_zoophile</defName>
       <label>Zoophile</label>
-      <displayCategory>rjw_genes_breeding</displayCategory>
       <description>Xenotypes with this Gene are Zoophile.</description>
       <iconPath>Genes/Icons/Zoophile</iconPath>
       <displayOrderInCategory>54</displayOrderInCategory>    
@@ -32,13 +35,46 @@
               <def>Zoophile</def>
           </li>
       </forcedTraits>
+  </GeneDef>
+  
+  <GeneDef ParentName="BreedingBase">
+      <defName>rjw_genes_fertile_anus</defName>
+      <label>Fertile Anus</label>
+      <description>Xenotypes with this gene have a functional uterus connected to the anal cavity even for males</description>
+      <iconPath>Genes/Icons/Fertile_anus</iconPath>
+      <displayOrderInCategory>54</displayOrderInCategory>    
+  </GeneDef>
 
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
+  <GeneDef ParentName="BreedingBase">
+    <defName>rjw_genes_insectincubator</defName>
+    <label>Insect Incubator</label>	
+	  <geneClass>RJW_Genes.Gene_InsectIncubator</geneClass>
+    <description>Pawns with this gene fertilize insect eggs that are placed inside them.</description>
+    <iconPath>Genes/Icons/Egg</iconPath>
+    <displayOrderInCategory>52</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef ParentName="BreedingBase">
+    <defName>rjw_genes_insectbreeder</defName>
+    <label>Insect Breeder</label>	
+    <description>Pawns with this gene are able to fertilize eggs with any fertile penis.</description>
+    <iconPath>Genes/Icons/Insect_Breeder</iconPath>
+    <displayOrderInCategory>53</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef ParentName="BreedingBase">
+    <defName>rjw_genes_fervent_ovipositor</defName>
+    <label>Fervent Ovipositor</label>	
+	  <geneClass>RJW_Genes.Gene_FerventOvipositor</geneClass>
+    <description>Pawns that have a female (egg producing) ovipositor produce eggs at drastically increased speed.</description>
+    <iconPath>Genes/Icons/Fervent_Ovipositor</iconPath>
+    <displayOrderInCategory>55</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
   </GeneDef>
 
 </Defs>

@@ -6,37 +6,13 @@ This mod adds genes related and based on RJW to Rimworld.
 
 - Different Genitalia Types 
 - Genitalia Size Scaling 
-- Extra Genitalia (and a Futa Attempt)
-- Most RJW Traits, Cumflation Immunity, Elasticity
+- Extra Genitalia, Male Pregnancy, Futas, Femboys
+- Most RJW Traits
 - Cum-Amount Changes, Transfer Nutrition Boosts
-- Mech Breeding / Insect Breeding Additions & Orgasmic Mytosis
+- Sexual Vampires that need Cum, Cocks or some other sources.
+- Mech Breeding Additions & Orgasmic Mytosis
 - Human-Animal Gene Inheritance merged from [Shabakur](https://github.com/Shabakur/RJW_Animal_Gene_Inheritance)
-- Succubi, Incubi & Cumazones that utilize Fertilin, similar to Hemogen
-- Insect-Caste Mechanics, with Queens, Drones and Workers and a conditional reproduction
 - Patches for some popular / common Xenotypes from other Mods.
-
-See [planned things](TODOS.md) and feel free to contribute. 
-With the Human-Animal-Gene Inheritance we have a lot of XML that you can contribute! 
-We have a [template](./Common/Defs/RaceGeneDefs/RaceGeneDefs_template.xml) and you can add animals and/or genes from mods there (Racegroups are base-rjw). 
-If you want to make your own Hive-Xenotypes, please see the required XMLs at [Changelog - 1.2](./CHANGELOG.md).
-
-## Bugs? 
-
-I never wrote a bug in my life but if you found one please open an issue or find me somewhere on the RJW Discord. 
-
-Please consider looking at [the known bugs](./KNOWN_BUGS.md)
-
-## Genes vs. Races 
-
-I currently don't use Races after Biotech was introduced. 
-One of the main motivations was to have genes being added to the xenotypes that other mods and the base game add, e.g. adding demonic penis for impids. 
-
-Some HAR races change sex-ages and behave unfriendly with this mod. 
-You can make reports about that, but I might not fix it. 
-
-## Load Order, Dependencies and Conflicts 
-
-Please load this after any mod adding genes, and after the used RJW-Mods (Licentia, Sexperience). 
 
 **Conflicts:**
 1. Should not be used with the original RJW_Animal_Gene_Inheritance anymore. 
@@ -45,3 +21,11 @@ Please load this after any mod adding genes, and after the used RJW-Mods (Licent
 4. Alpha Genes "Female / Male Only" Genes might overwrite later Genitalia-Changes and should be avoided in combination with RJW-Genes features.
 5. rjw.sexperience.cumgenes removes fertilin-gain from Cum item - I hope I addressed this by adding a load order but keep me posted (Issue #41)
 6. [Consistent Gene Inheritance](https://steamcommunity.com/sharedfiles/filedetails/?id=2881479142&searchtext=Consistent+Gene+Inheritance) alters inheritance - it messes a bit with the Insect-Caste Logic. Your game will not crash, but the insect xenotypes will be a bit messed up. 
+
+## Structure
+
+- Toplevel: By Function (i.E. "Genes", "Animal Inheritance", "Utility")
+- Then: By Domain, following the Gene-Categories ("Cosmetic","Special", "Damage",...)
+- Last: By Type of Action (Def, Patch, etc.)
+
+So if you want to change / add a gene about shrinking cocks you were to go: `Genes -> GenitaliaSize -> Defs`. 

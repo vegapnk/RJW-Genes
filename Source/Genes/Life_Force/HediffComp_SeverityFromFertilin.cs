@@ -46,8 +46,8 @@ namespace RJW_Genes
         {
 			if (cachedLifeForceGene.Resource.Value <= cachedLifeForceGene.Resource.MinLevelForAlert && this.Pawn.IsHashIntervalTick(2500) && Rand.Chance(0.03f)) //~50% chance each day for mental break
 			{
-				if (this.Pawn.genes.HasGene(GeneDefOf.rjw_genes_cum_eater)
-				|| this.Pawn.genes.HasGene(GeneDefOf.rjw_genes_fertilin_absorber) || this.Pawn.genes.HasGene(GeneDefOf.rjw_genes_drainer))
+				if (this.Pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_cum_eater)
+				|| this.Pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_fertilin_absorber) || this.Pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_drainer))
 				{
 					//TODO: use mentalstatedef instead of mentalbreakdef
 					MentalBreakDef randomrape = GeneDefOf.rjw_genes_lifeforce_randomrape;

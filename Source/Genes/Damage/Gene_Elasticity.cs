@@ -1,6 +1,9 @@
-﻿using LicentiaLabs;
+﻿//using LicentiaLabs;
 using Verse;
 
+
+// TODO: Re-Introduce this once Licentia is 1.5
+// It should be rather simple 
 namespace RJW_Genes
 {
     /// <summary>
@@ -12,12 +15,13 @@ namespace RJW_Genes
     {
         private const int RESET_INTERVAL = 60000; // 60k should be 1 day 
 
+        /*
         public override void PostAdd()
         {
             base.PostAdd();
             // Doing it like this will add the hediff with a severity of ~0.5, but it will decay.
             // Hence we check with the Ticks to update.
-            this.pawn.health.AddHediff(Licentia.HediffDefs.Elasticised); 
+            this.pawn.health.AddHediff(Licentia.HediffDefs.Elasticised);
             ResetSeverity();
         }
 
@@ -47,5 +51,6 @@ namespace RJW_Genes
                 candidate.Severity = severity;
             }
         }
+        */
     }
 }

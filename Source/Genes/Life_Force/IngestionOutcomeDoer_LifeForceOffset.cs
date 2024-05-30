@@ -11,11 +11,11 @@ namespace RJW_Genes
 		public const float DEFAULT_FERTILIN_PER_UNIT = 1f;
 		public float FertilinPerUnit = 1f;
 
-		protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested)
+		protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested, int ingestedCount)
 		{
 			if (GeneUtility.HasLifeForce(pawn) && GeneUtility.IsCumEater(pawn))
             {
-				float num = ingested.stackCount * this.FertilinPerUnit / 100;
+				float num = ingestedCount * this.FertilinPerUnit / 100;
 				GeneUtility.OffsetLifeForce(GeneUtility.GetLifeForceGene(pawn), num);
 			}
 		}

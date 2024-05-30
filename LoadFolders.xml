@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<loadFolders>
+	<v1.5>
+		<li>/</li>
+		<li>Common</li>
+		<!-- Mods -->
+		<li IfModNotActive="asmr.rjw.racesupport">Mods/NotRaceSupport</li>
+	</v1.5>
+</loadFolders>

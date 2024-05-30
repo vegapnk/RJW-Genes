@@ -69,7 +69,6 @@ namespace RJW_Genes
             } 
 
             // Force Redraw at the spot
-            pawn.Drawer.renderer.graphics.SetAllGraphicsDirty();
         }
 
         // Fetch these once at load time because they don't change inside RJW
