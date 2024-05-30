@@ -64,6 +64,8 @@
     <Compile Include="Common\ModLog.cs" />
     <Compile Include="Common\Defs\TickIntervalExtension.cs" />
     <Compile Include="Common\Patches\PatchImplants.cs" />
+    <Compile Include="Genes\Breeding\Gene_FerventOvipositor.cs" />
+    <Compile Include="Genes\Breeding\Gene_InsectIncubator.cs" />
     <Compile Include="Genes\Damage\Gene_Elasticity.cs" />
     <Compile Include="Genes\Patches\PatchLitteredBirth.cs" />
     <Compile Include="Common\Patches\PatchGetParents.cs" />
@@ -154,6 +156,8 @@
     <Compile Include="Genes\Patches\LustFeeding.cs" />
     <Compile Include="Genes\Patches\MultiplePregnancies.cs" />
     <Compile Include="Genes\Patch_AddNotifyOnGeneration.cs" />
+    <Compile Include="Genes\Special\Abilities\CompAbilityEffect_CocoonWeaver.cs" />
+    <Compile Include="Genes\Special\Abilities\CompProperties_AbilityCocoonWeaver.cs" />
     <Compile Include="Genes\Special\Defs\AgeTransferExtension.cs" />
     <Compile Include="Genes\Special\Defs\HormonalSalivaExtension.cs" />
     <Compile Include="Genes\Special\Patches\Patch_AgeDrain.cs" />

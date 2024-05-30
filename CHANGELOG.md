@@ -29,6 +29,7 @@
 - Slider for Evergrowth Tick-Speed, thanks to @jaaldabaoth
 - Resizing Age for resizing Genes can be set in Settings @jaaldabaoth
 - **Licentia related genes are only placeholders**, as Licentia is not 1.5 yet
+- InsectIncubator only does self-fertilization now, but does not increase storage capacities for eggs anymore
 
 **Fixes:** 
 
