@@ -4,6 +4,7 @@ using System;
 using rjw;
 using RJWLoveFeeding;
 using RimWorld;
+using System.Linq;
 
 namespace RJW_Genes
 {
@@ -22,32 +23,41 @@ namespace RJW_Genes
             {
                 harmony.Patch(typeof(SexUtility).GetMethod("ProcessSex"), new HarmonyMethod(typeof(LustFeeding), "Postfix", null));
             }
-            // Non-rapist would_rape bypass for limbic stimulator
             harmony.Patch(AccessTools.Method(typeof(SexAppraiser), nameof(SexAppraiser.would_rape)),
                 postfix: new HarmonyMethod(typeof(PatchImplants), nameof(PatchImplants.would_rape_PostFix)));
-
-            // Non-rapist is_rapist bypass for limbic stimulator
             harmony.Patch(AccessTools.Method(typeof(xxx), nameof(xxx.is_rapist)),
                 postfix: new HarmonyMethod(typeof(PatchImplants), nameof(PatchImplants.is_rapist_PostFix)));
-
-            // Non-Rapist trait rape thoughts
             harmony.Patch(AccessTools.Method(typeof(AfterSexUtility), nameof(AfterSexUtility.think_about_sex_Rapist)),
                 postfix: new HarmonyMethod(typeof(PatchImplants), nameof(PatchImplants.think_about_sex_Rapist_PostFix)));
-
-            // Bioscaffold double gestation speed tick
             harmony.Patch(AccessTools.Method(typeof(PawnUtility), nameof(PawnUtility.BodyResourceGrowthSpeed)),
                 postfix: new HarmonyMethod(typeof(PatchImplants), nameof(PatchImplants.MultiplyPregnancy)));
-
-            // Hediff_Labor state capture
             harmony.Patch(AccessTools.Method(typeof(Hediff_Labor), nameof(Hediff_Labor.PostRemoved)),
                 postfix: new HarmonyMethod(typeof(PatchLitteredBirth), nameof(PatchLitteredBirth.Hediff_Labor_PostRemovedPostFix)));
-
-            // OvaryAgitator/Gene_LitteredBirths multibirth logic
             harmony.Patch(AccessTools.Method(typeof(Hediff_LaborPushing), nameof(Hediff_LaborPushing.PostRemoved)),
                 postfix: new HarmonyMethod(typeof(PatchLitteredBirth), nameof(PatchLitteredBirth.Hediff_LaborPushing_PostRemovedPostFix)));
-            // Patch Licentia, if Licentia exists
-            // Logic & Explanation taken from https://rimworldwiki.com/wiki/Modding_Tutorials/Compatibility_with_DLLs
-            // Adjusted to use ModsConfig (which makes it work, the example above does not run out of the box)
+  
+            harmony.Patch(AccessTools.Method(typeof(Quirk), nameof(Quirk.CountSatisfiedQuirks)),
+                postfix: new HarmonyMethod(typeof(QuirkPatcher), nameof(QuirkPatcher.CountSatisfiedPostfix)));
+
+            Type Gene_Randomizer_Instance = null;
+            try
+            {
+                Gene_Randomizer_Instance = (from asm in AppDomain.CurrentDomain.GetAssemblies()
+                                            from type in asm.GetTypes()
+                                            where type.IsClass && type.Name == "Gene_Randomizer"
+                                            select type).Single();
+            }
+            catch (Exception ex) { }
+            Def mytosis_mutation = DefDatabase<GeneDef>.GetNamed("rjw_genes_mytosis_mutation", false);
+            if (mytosis_mutation != null)
+            {
+                harmony.Patch(AccessTools.Method(Gene_Randomizer_Instance, "PostAdd"),
+                prefix: new HarmonyMethod(typeof(Patch_Waster), nameof(Patch_Waster.Gene_Randomizer_Prefix)));
+                harmony.Patch(AccessTools.Method(typeof(Quirk), nameof(Quirk.SatisfiesTeratophile)),
+                postfix: new HarmonyMethod(typeof(Patch_Waster), nameof(Patch_Waster.SatisfiesTeratophile_Postfix)));
+            }
+
+
 
         }
     }

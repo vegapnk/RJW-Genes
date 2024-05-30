@@ -161,6 +161,8 @@
     <Compile Include="Genes\Patches\LustFeeding.cs" />
     <Compile Include="Genes\Patches\MultiplePregnancies.cs" />
     <Compile Include="Genes\Patch_AddNotifyOnGeneration.cs" />
+    <Compile Include="Genes\QuirkPatching\Defs\QirkExtension.cs" />
+    <Compile Include="Genes\QuirkPatching\QuirkPatcher.cs" />
     <Compile Include="Genes\Special\Abilities\CompAbilityEffect_CocoonWeaver.cs" />
     <Compile Include="Genes\Special\Abilities\CompProperties_AbilityCocoonWeaver.cs" />
     <Compile Include="Genes\Special\Defs\AgeTransferExtension.cs" />
@@ -168,6 +170,7 @@
     <Compile Include="Genes\Special\Patches\Patch_AgeDrain.cs" />
     <Compile Include="Genes\Special\Patches\Patch_HormonalSaliva.cs" />
     <Compile Include="Genes\Special\Patches\Patch_OrgasmMytosis.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_Waster.cs" />
     <Compile Include="Genes\Special\Thoughts\ThoughtWorker_Aphrodisiac_Pheromones_Social.cs" />
     <Compile Include="LetterDefOf.cs" />
     <Compile Include="Interactions\SuccubusTailjob\CompAbility_SexInteractionRequirements.cs" />
@@ -203,14 +206,11 @@
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="RJW, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="RJW">
       <HintPath>..\..\rjw\1.5\Assemblies\RJW.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="RJWSexperience">
-      <HintPath>..\..\rjw-sexperience\1.5\Assemblies\RJWSexperience.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\rjw-sexperience-master\1.5\Assemblies\RJWSexperience.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="UnityEngine">
@@ -227,9 +227,15 @@
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="VanillaRacesExpanded-Waster">
+      <HintPath>..\..\..\..\..\workshop\content\294100\2983471725\1.5\Assemblies\VanillaRacesExpanded-Waster.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Genes\Gender\Patches\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

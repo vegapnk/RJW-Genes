@@ -5,5 +5,7 @@
 		<li>Common</li>
 		<!-- Mods -->
 		<li IfModNotActive="asmr.rjw.racesupport">Mods/NotRaceSupport</li>
+		<li IfModActive="vanillaracesexpanded.waster">Mods/VREwaster</li>
+		
 	</v1.5>
 </loadFolders>
