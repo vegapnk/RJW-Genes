@@ -7,7 +7,7 @@
     <exclusionTags>
       <li>GenitalType</li>
     </exclusionTags>
-	<randomChosen>true</randomChosen>
+	  <randomChosen>false</randomChosen>
     <biostatCpx>0</biostatCpx>
     
     <modExtensions>

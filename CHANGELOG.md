@@ -20,6 +20,7 @@
 - LimbicStimulator / Scrambler thanks to @jaaldabaoth. See [Scrambler Description](Common/Defs/ThingDefs/Scrambler.xml) and [Limbic Stimulator](./Common/Defs/ThingDefs/LimbicStimulator.xml)
 - Bioscaffold that allows for faster pregnancies. thanks to @jaaldabaoth. See [its description](./Common/Defs/ThingDefs/Bioscaffold.xml)
 - Multi-Pregnancy Gene thanks to @jaaldabaoth
+- Many genes have settings configurable in their xml - tick speeds and distances.
 
 **Changes**: 
 
@@ -30,12 +31,13 @@
 - Resizing Age for resizing Genes can be set in Settings @jaaldabaoth
 - **Licentia related genes are only placeholders**, as Licentia is not 1.5 yet
 - InsectIncubator only does self-fertilization now, but does not increase storage capacities for eggs anymore
+- Some Genes (GenitaliaTypes, Cum, some others) cannot be in quest-rewards anymore. Special, Size, Breeding and Lifeforce genes still can be quest rewards.
 
 **Fixes:** 
 
 - Small changes to drawing Succubus Wings
 - Minor Format changes to lots of XML files
-- Pawns with ONLY an Archotech penis will not give Fertilin, and will not receive debugs (Fixes #71)
+- Pawns with ONLY an Archotech penis will not give Fertilin, and will not receive debuffs (Fixes #71)
 
 **Hidden Changes:** 
 

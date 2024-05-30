@@ -24,7 +24,7 @@ namespace RJW_Genes
             RJW_Genes_Settings.rjw_genes_resizing_age = listing_Standard.Slider(RJW_Genes_Settings.rjw_genes_resizing_age, 18f, 100f);
             listing_Standard.Gap(4f);
             // Evergrowth Speed 
-            listing_Standard.Label("number of ticks between genitalia evergrowth updates (600 tick for ~2cm/day)" + ": " +
+            listing_Standard.Label("number of ticks between genitalia evergrowth updates (60000 ticks are 1 day)" + ": " +
                Math.Round((double)(RJW_Genes_Settings.rjw_genes_evergrowth_ticks), 0).ToString() , -1f, "ticks.");
             RJW_Genes_Settings.rjw_genes_evergrowth_ticks = (int) listing_Standard.Slider(RJW_Genes_Settings.rjw_genes_evergrowth_ticks, 600, 60000);
             listing_Standard.Gap(4f);
