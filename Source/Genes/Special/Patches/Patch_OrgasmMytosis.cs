@@ -10,7 +10,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
-using VanillaRacesExpandedWaster;
 
 
 namespace RJW_Genes
@@ -26,18 +25,12 @@ namespace RJW_Genes
 	{
 
 		private const float SEVERITY_INCREASE_PER_ORGASM = 0.075f;
-        public static Def mytosis_mutation = DefDatabase<GeneDef>.GetNamed("rjw_genes_mytosis_mutation",false);
+
         public static void Postfix(JobDriver_Sex __instance)
 		{
 			Pawn orgasmingPawn = __instance.pawn;
             bool hasPollutedMytosis = false;
-            if (mytosis_mutation != null)
-            {
-                if (GeneUtility.HasGeneNullCheck(orgasmingPawn, GeneDefOf.rjw_genes_mytosis_mutation))
-                {
-                    hasPollutedMytosis = true;
-                }
-            }
+
             if (orgasmingPawn != null && (GeneUtility.HasGeneNullCheck(orgasmingPawn, GeneDefOf.rjw_genes_sexual_mytosis) || hasPollutedMytosis) && ! orgasmingPawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_mytosis_shock_hediff))
 			{
 				var mytosisHediff = GetOrgasmMytosisHediff(orgasmingPawn);

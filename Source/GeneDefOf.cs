@@ -114,9 +114,6 @@ namespace RJW_Genes
         public static readonly GeneDef rjw_genes_cockeater;
         public static readonly GeneDef rjw_genes_lifeforce_empath;
 
-        //waster
-        [MayRequire("vanillaracesexpanded.waster")] public static readonly GeneDef rjw_genes_mytosis_mutation;
-
         //Other Defs
         public static readonly XenotypeDef rjw_genes_succubus;
         public static readonly DutyDef rjw_genes_flirt;

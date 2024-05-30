@@ -170,7 +170,6 @@
     <Compile Include="Genes\Special\Patches\Patch_AgeDrain.cs" />
     <Compile Include="Genes\Special\Patches\Patch_HormonalSaliva.cs" />
     <Compile Include="Genes\Special\Patches\Patch_OrgasmMytosis.cs" />
-    <Compile Include="Genes\Special\Patches\Patch_Waster.cs" />
     <Compile Include="Genes\Special\Thoughts\ThoughtWorker_Aphrodisiac_Pheromones_Social.cs" />
     <Compile Include="LetterDefOf.cs" />
     <Compile Include="Interactions\SuccubusTailjob\CompAbility_SexInteractionRequirements.cs" />
@@ -192,8 +191,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="GeneDefs_GenitaliaTypeEndogenes.xml" />
-    <Content Include="RJW.dll" />
-    <Content Include="RJWSexperience.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -227,10 +224,6 @@
     <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="VanillaRacesExpanded-Waster">
-      <HintPath>..\..\..\..\..\workshop\content\294100\2983471725\1.5\Assemblies\VanillaRacesExpanded-Waster.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

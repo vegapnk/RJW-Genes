@@ -11,6 +11,7 @@ namespace RJW_Genes
     [StaticConstructorOnStartup]
     internal static class HarmonyInit
     {
+        public static Type Gene_Randomizer_Instance = null;
         static HarmonyInit()
         {
             Harmony harmony = new Harmony("rjw_genes");
@@ -39,7 +40,7 @@ namespace RJW_Genes
             harmony.Patch(AccessTools.Method(typeof(Quirk), nameof(Quirk.CountSatisfiedQuirks)),
                 postfix: new HarmonyMethod(typeof(QuirkPatcher), nameof(QuirkPatcher.CountSatisfiedPostfix)));
 
-            Type Gene_Randomizer_Instance = null;
+            /*
             try
             {
                 Gene_Randomizer_Instance = (from asm in AppDomain.CurrentDomain.GetAssemblies()
@@ -53,9 +54,7 @@ namespace RJW_Genes
             {
                 harmony.Patch(AccessTools.Method(Gene_Randomizer_Instance, "PostAdd"),
                 prefix: new HarmonyMethod(typeof(Patch_Waster), nameof(Patch_Waster.Gene_Randomizer_Prefix)));
-                harmony.Patch(AccessTools.Method(typeof(Quirk), nameof(Quirk.SatisfiesTeratophile)),
-                postfix: new HarmonyMethod(typeof(Patch_Waster), nameof(Patch_Waster.SatisfiesTeratophile_Postfix)));
-            }
+            }*/
 
 
 

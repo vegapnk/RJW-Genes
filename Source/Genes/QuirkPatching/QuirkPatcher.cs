@@ -18,8 +18,8 @@ namespace RJW_Genes
             foreach(Gene g in partner.genes.GenesListForReading) {
                 if (partner.genes.HasActiveGene(g.def))
                 {
-                    //g.def?.GetModExtension<QirkExtension>().Satisfiedquirk;
-                  //  listquirk.Add(g.def?.GetModExtension<QirkExtension>().Satisfiedquirk);
+                    g.def?.GetModExtension<QirkExtension>().Satisfiedquirk;
+                    listquirk.Add(g.def?.GetModExtension<QirkExtension>().Satisfiedquirk);
                 }
             }
 
