@@ -77,4 +77,21 @@
     <biostatMet>-1</biostatMet>
   </GeneDef>
 
+
+  <GeneDef ParentName="BreedingBase">
+		<defName>rjw_genes_mating_call</defName>
+		<label>Mating Call</label>
+		<description>This gene allows to call nearby animals and invite them for mating.</description>
+		<iconPath>Genes/Icons/Cocoon</iconPath>
+		<displayOrderInCategory>65</displayOrderInCategory>
+		<abilities>
+			<li>rjw_genes_ability_mating_call</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>rjw_genes_ability_mating_call</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+
 </Defs>
