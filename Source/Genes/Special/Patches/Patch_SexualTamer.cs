@@ -19,15 +19,17 @@ namespace RJW_Genes
         public static void Postfix(SexProps props)
         {
             // ShortCuts: Exit Early if Pawn or Partner are null (can happen with Masturbation or other nieche-cases)
-            if (props == null || props.pawn == null || !props.hasPartner())
+            if (props == null || props.pawn == null || !props.hasPartner() || props.partner == null)
                 return;
-
             // Exit for non Animals or Animal on Animal
             if (!(props.pawn.IsAnimal() || props.partner.IsAnimal() ) )
                 return;
-
             Pawn animal =  props.pawn.IsAnimal() ? props.pawn : props.partner;
             Pawn human = props.pawn.IsAnimal() ? props.partner : props.pawn;
+
+            // Another Short Sanity Check
+            if (animal == null || human == null ) return;
+            if (human.genes == null) return;
 
             if (human.genes.HasActiveGene(GeneDefOf.rjw_genes_sex_tamer))
             {
@@ -39,7 +41,7 @@ namespace RJW_Genes
                     human.interactions.TryInteractWith(animal, InteractionDefOf.TameAttempt);
                 }
                 // Case 2: Colony Animal - Try to Train 
-                else if (animal.Faction == human.Faction && animal.training != null)
+                else if (human.Faction != null && animal.Faction == human.Faction && animal.training != null)
                 {
                     if (RJW_Genes_Settings.rjw_genes_detailed_debug)
                         ModLog.Message($"{human} is a sextamer with bestiality on colony animal {animal} - trying to train");
