@@ -6,9 +6,10 @@ This mod adds genes related and based on RJW to Rimworld.
 
 - Different Genitalia Types 
 - Genitalia Size Scaling 
-- Extra Genitalia (and a Futa Attempt)
-- Most RJW Traits, Cumflation Immunity, Elasticity
+- Extra Genitalia, Male Pregnancy, Futas, Femboys
+- Most RJW Traits
 - Cum-Amount Changes, Transfer Nutrition Boosts
+- Sexual Vampires that need Cum, Cocks or some other sources.
 - Mech Breeding Additions & Orgasmic Mytosis
 - Human-Animal Gene Inheritance merged from [Shabakur](https://github.com/Shabakur/RJW_Animal_Gene_Inheritance)
 - Patches for some popular / common Xenotypes from other Mods.
@@ -20,3 +21,11 @@ This mod adds genes related and based on RJW to Rimworld.
 4. Alpha Genes "Female / Male Only" Genes might overwrite later Genitalia-Changes and should be avoided in combination with RJW-Genes features.
 5. rjw.sexperience.cumgenes removes fertilin-gain from Cum item - I hope I addressed this by adding a load order but keep me posted (Issue #41)
 6. [Consistent Gene Inheritance](https://steamcommunity.com/sharedfiles/filedetails/?id=2881479142&searchtext=Consistent+Gene+Inheritance) alters inheritance - it messes a bit with the Insect-Caste Logic. Your game will not crash, but the insect xenotypes will be a bit messed up. 
+
+## Structure
+
+- Toplevel: By Function (i.E. "Genes", "Animal Inheritance", "Utility")
+- Then: By Domain, following the Gene-Categories ("Cosmetic","Special", "Damage",...)
+- Last: By Type of Action (Def, Patch, etc.)
+
+So if you want to change / add a gene about shrinking cocks you were to go: `Genes -> GenitaliaSize -> Defs`. 

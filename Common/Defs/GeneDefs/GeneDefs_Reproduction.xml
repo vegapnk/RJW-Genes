@@ -14,6 +14,7 @@
             </li>
         </forcedTraits>
 
+        <randomChosen>false</randomChosen>
         <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
@@ -36,6 +37,7 @@
             </li>
         </forcedTraits>
 
+        <randomChosen>false</randomChosen>
         <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
@@ -44,6 +46,7 @@
 		</modExtensions>
     </GeneDef>
 	
+    <!-- 
 	<GeneDef>
         <defName>rjw_genes_sadist_gene</defName>
         <label>Sadist</label>
@@ -65,7 +68,8 @@
 			</li>
 		</modExtensions>
     </GeneDef>
-	
+	-->
+
 	<GeneDef>
         <defName>rjw_genes_masochist</defName>
         <label>Masochist</label>
@@ -80,6 +84,7 @@
             </li>
         </forcedTraits>
 
+        <randomChosen>false</randomChosen>
         <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
@@ -105,6 +110,7 @@
             <li>rjw_genes_sexual_orientation</li>
         </exclusionTags>
 
+        <randomChosen>false</randomChosen>
         <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
@@ -130,6 +136,7 @@
             <li>rjw_genes_sexual_orientation</li>
         </exclusionTags>
 
+        <randomChosen>false</randomChosen>
         <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
@@ -151,6 +158,7 @@
     <biostatMet>-1</biostatMet>
     <biostatCpx>2</biostatCpx>
     
+    <randomChosen>false</randomChosen>
     <exclusionTags>
         <li>rjw_genes_sexual_orientation</li>
     </exclusionTags>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-
-<LanguageData>
-
-  <StatsReport_QueenCloseBy>queen in proximity</StatsReport_QueenCloseBy>
-  <StatsReport_QueenAbsent>queen absent</StatsReport_QueenAbsent>
-  <StatsReport_MultipleQueens>multiple queens present</StatsReport_MultipleQueens>
-
-</LanguageData>

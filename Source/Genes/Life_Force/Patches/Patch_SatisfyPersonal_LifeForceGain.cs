@@ -25,6 +25,12 @@ namespace RJW_Genes
 			{
 				return;
 			}
+			// Exit if the pawn has ONLY an archotech penis, and no other penises. Issue #72
+			if (props.pawn.health.hediffSet.hediffs.Any(x => x.def == rjw.Genital_Helper.archotech_penis) 
+				&& !(Genital_Helper.has_multipenis(props.pawn)))
+			{
+				return;
+			}
 
 			//Summary//
 			//We use the positions of the pawn (dom or sub) and based on that which interactions will transfer fertilin 

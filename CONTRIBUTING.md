@@ -17,6 +17,8 @@ But please consider also the following:
 
 - Shabalox (MechBreeding, InsectBreeding, Animal Gene Inheritance)
 - WasMachenDennSachen (Various Icons)
+- Jaaldabaoth (1.5 Migration, MPreg, Femboys)
+- Flock-of-Birds (Cosmetic Genitalia per XML)
 
 ## Other Credits 
 
