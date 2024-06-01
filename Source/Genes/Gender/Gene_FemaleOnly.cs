@@ -36,6 +36,18 @@ namespace RJW_Genes
                 });
                 GenderUtility.AdjustBodyToTargetGender(pawn, Gender.Female);
             }
+            foreach(Gene g in pawn.genes.GenesListForReading)
+            {
+                if(g.def.defName== "rjw_genes_hydrolic_genitalia")
+                {
+                    g.PostAdd();
+                }
+                if (g.def.defName == "rjw_genes_bionic_genitalia")
+                {
+                    g.PostAdd();
+                    return;
+                }
+            }
         }
 
         public override void Notify_OnPawnGeneration()

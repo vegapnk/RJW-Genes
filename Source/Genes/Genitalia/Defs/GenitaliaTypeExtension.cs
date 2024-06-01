@@ -11,5 +11,8 @@ namespace RJW_Genes
         public HediffDef_PartBase vagina;
 
         public HediffDef_PartBase anus;
+
+        public HediffDef_PartBase breasts;
+
     }
 }

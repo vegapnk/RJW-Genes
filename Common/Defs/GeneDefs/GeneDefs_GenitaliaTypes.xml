@@ -7,7 +7,7 @@
     <exclusionTags>
       <li>GenitalType</li>
     </exclusionTags>
-	  <randomChosen>false</randomChosen>
+	  <randomChosen>true</randomChosen>
     <biostatCpx>0</biostatCpx>
     
     <modExtensions>
@@ -43,6 +43,7 @@
         <penis>Penis</penis>
         <vagina>Vagina</vagina>
         <anus>Anus</anus>
+		<breasts>Breasts</breasts>
       </li>
     </modExtensions>
     <displayOrderInCategory>802</displayOrderInCategory>
@@ -125,6 +126,7 @@
         <penis>SlimeTentacles</penis>
         <vagina>SlimeVagina</vagina>
         <anus>SlimeAnus</anus>
+		<breasts>SlimeBreasts</breasts>
       </li>
 	  <li Class="RJW_Genes.QirkExtension">
         <Satisfiedquirk>SlimeLoverQuirk</Satisfiedquirk>
@@ -317,10 +319,6 @@
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>  
-
-
-
-
 
 
   <GeneDef ParentName="GeneGenitalTypeBase">

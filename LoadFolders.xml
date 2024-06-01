@@ -6,5 +6,13 @@
 		<!-- Mods -->
 		<li IfModNotActive="asmr.rjw.racesupport">Mods/NotRaceSupport</li>
 		<li IfModActive="vanillaracesexpanded.sanguophage">Mods/Sanguophage</li>
+		<li IfModActive="vanillaracesexpanded.saurid">Mods/Saurid</li>
+		<li IfModActive="vanillaracesexpanded.phytokin">Mods/Phytokin</li>
+		<li IfModActive="vanillaracesexpanded.lycanthrope">Mods/Lycanthrope</li>
+		<li IfModActive="vanillaracesexpanded.highmate">Mods/Highmate</li>
+		<li IfModActive="vanillaracesexpanded.genie">Mods/Genie</li>
+		<li IfModActive="vanillaracesexpanded.fungoid">Mods/Fungoid</li>
+		<li IfModActive="vanillaracesexpanded.archon">Mods/Archon</li>
+		<li IfModActive="vanillaracesexpanded.android">Mods/Android</li>
 	</v1.5>
 </loadFolders>

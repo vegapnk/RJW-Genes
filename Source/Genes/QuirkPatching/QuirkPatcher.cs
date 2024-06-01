@@ -20,7 +20,7 @@ namespace RJW_Genes
                     return;
                 }
             }
-            int count = 0;
+            int count = -1;
             List<string> listquirk = new List<string>();
             string s;
             foreach (Gene g in partner.genes.GenesListForReading)
@@ -52,7 +52,7 @@ namespace RJW_Genes
                     }
                 }
             }
-            __result = __result + count;
+            if(count>0)__result = __result + count;
             return;
         }
 
