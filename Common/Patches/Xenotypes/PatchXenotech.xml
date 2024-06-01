@@ -28,6 +28,7 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs/XenotypeDef[defName="LTS_Ork"]/genes</xpath>
           <value>
+            <li>rjw_genes_Orc_genitalia</li>
             <li>rjw_genes_big_male_genitalia</li>
             <li>rjw_genes_loose_female_genitalia</li>
           </value>
@@ -38,6 +39,14 @@
             <li>rjw_genes_demonic_genitalia</li>
             <li MayRequire="LustLicentia.RJWLabs">rjw_genes_elasticity</li>
             <li MayRequire="rjw.sexperience">AptitudeRemarkable_Sex</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="LTS_Anthrae"]/genes</xpath>
+          <value>
+            <li>rjw_genes_ovipositor_genitalia</li>
+            <li>rjw_genes_bisexual</li>
+            <li>rjw_genes_insectincubator</li>
           </value>
         </li>
       </operations>
