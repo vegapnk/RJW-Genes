@@ -3,7 +3,7 @@
 
     <GeneDef>
         <defName>rjw_genes_hypersexual</defName>
-        <label>Hypersexuality</label>
+        <label>hypersexuality</label>
         <displayCategory>Reproduction</displayCategory>
         <description>Xenotypes with this Gene are Hypersexual (Nymphs).</description>
         <iconPath>Genes/Icons/Hypersexual</iconPath>
@@ -25,7 +25,7 @@
     
     <GeneDef>
         <defName>rjw_genes_rapist</defName>
-        <label>Rapist</label>
+        <label>rapist</label>
         <displayCategory>Reproduction</displayCategory>
         <description>Xenotypes with this Gene are Rapists.</description>
         <iconPath>Genes/Icons/Rape</iconPath>
@@ -49,7 +49,7 @@
     <!-- 
 	<GeneDef>
         <defName>rjw_genes_sadist_gene</defName>
-        <label>Sadist</label>
+        <label>sadist</label>
         <displayCategory>Reproduction</displayCategory>
         <description>Xenotypes with this Gene are Sadists.</description>
         <iconPath>Genes/Icons/Rape</iconPath>
@@ -72,7 +72,7 @@
 
 	<GeneDef>
         <defName>rjw_genes_masochist</defName>
-        <label>Masochist</label>
+        <label>masochist</label>
         <displayCategory>Reproduction</displayCategory>
         <description>Xenotypes with this Gene are Masochists.</description>
         <iconPath>Genes/Icons/Rape</iconPath>
@@ -95,7 +95,7 @@
 
     <GeneDef>
         <defName>rjw_genes_homosexual</defName>
-        <label>Homosexual</label>
+        <label>homosexual</label>
         <displayCategory>Reproduction</displayCategory>
         <description>This Gene makes you gay.</description>
         <iconPath>UI\Ideoligions\Universal\RoundC</iconPath>
@@ -121,7 +121,7 @@
 
     <GeneDef>
         <defName>rjw_genes_bisexual</defName>
-        <label>Bisexual</label>
+        <label>bisexual</label>
         <displayCategory>Reproduction</displayCategory>
         <description>Carriers of this Gene are Bisexual.</description>
         <iconPath>UI\Ideoligions\Universal\RoundC</iconPath>
@@ -148,7 +148,7 @@
 
   <GeneDef>
     <defName>rjw_genes_no_sex_need</defName>
-    <label>Asexual</label>
+    <label>asexual</label>
     <description>Carriers of this gene do not have a sex-need. They can still participate in sex, </description>
     <iconPath>Genes/Icons/Empty</iconPath>
     <displayOrderInCategory>5</displayOrderInCategory>

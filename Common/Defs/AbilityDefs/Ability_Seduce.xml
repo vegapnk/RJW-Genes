@@ -9,13 +9,13 @@
     <stunTargetWhileCasting>true</stunTargetWhileCasting>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
-	  <statBases>
+    <statBases>
       <Ability_Duration>10</Ability_Duration>
     </statBases>
     <warmupMote>Mote_CoagulateStencil</warmupMote>
     <warmupEffecter>Coagulate</warmupEffecter>
     <warmupStartSound>Coagulate_Cast</warmupStartSound>
-	<verbProperties>
+    <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <range>10</range>
       <warmupTime>1</warmupTime>
@@ -35,7 +35,7 @@
       <li Class="CompProperties_AbilityFleckOnTarget">
         <fleckDef>Heart</fleckDef>
       </li>
-	  <li Class="RJW_Genes.CompProperties_AbilityLifeForceCost">
+      <li Class="RJW_Genes.CompProperties_AbilityLifeForceCost">
         <fertilinCost>0.20</fertilinCost>
       </li>
     </comps>

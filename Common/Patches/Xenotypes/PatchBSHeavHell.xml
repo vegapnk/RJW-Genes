@@ -84,6 +84,8 @@
             <li MayRequire="rjw.sexperience">AptitudeStrong_Sex</li>
           </value>
         </li>
+
+        <!-- Remaining demon patches are in PatchBSShared.xml. -->
       </operations>
     </match>
   </Operation>

@@ -14,7 +14,7 @@
 
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_orgasm_rush</defName>
-        <label>Orgasm Rush</label>
+        <label>orgasm rush</label>
         <description>On orgasm, carriers of this gene get a boost in activity. (rest-need is partially filled)</description>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-2</biostatMet>
@@ -24,7 +24,7 @@
 	
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_youth_fountain</defName>
-        <label>Youth Fountain</label>
+        <label>youth fountain</label>
         <description>Having sex with a carrier of this gene makes the partner slightly younger. (Partner stays adult)</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-2</biostatMet>
@@ -41,7 +41,7 @@
     
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_sex_age_drain</defName>
-        <label>Sexual Age Drain</label>
+        <label>sexual age drain</label>
         <description>Having sex transfers some of the partners life-time to themselves. (Pawn stays adult)</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-1</biostatMet>
@@ -58,7 +58,7 @@
     
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_aphrodisiac_pheromones</defName>
-        <label>Aphrodisiac Pheromones</label>
+        <label>aphrodisiac pheromones</label>
 		<geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass>
         <description>Pheremones of this pawn induce an incressed sexdrive to others nearby.</description>
         <iconPath>Genes/Icons/Pheromones</iconPath>
@@ -80,7 +80,7 @@
     
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_sexual_mytosis</defName>
-        <label>Orgasmic Mytosis</label>
+        <label>orgasmic mytosis</label>
 		<!-- <geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass> -->
         <description>Carriers of this gene grow more unstable with ongoing multiple orgasms - climaxing in a process of mytosis. This will result in an (biologically) identical pawn and both twins are set in a regenerative state. Also, the pawn can have multiple orgasms: In a state of higher unstableness, they come quicker.</description>
         <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
@@ -91,7 +91,7 @@
 
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_hormonal_saliva</defName>
-        <label>Hormonal Saliva</label>
+        <label>hormonal saliva</label>
         <description>The saliva of this xenotype stimulates growth in penises. Regular contact will lead to noticable growth.</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-1</biostatMet>
@@ -111,7 +111,7 @@
 
     <GeneDef ParentName="SpecialBase">
 		<defName>rjw_genes_cocoonweaver</defName>
-		<label>Cocoon Weaver</label>
+		<label>cocoon weaver</label>
 		<labelShortAdj>cocooner</labelShortAdj>
 		<description>Carriers of this gene can produce a cocoon to prepare helpless (or willing) victims for breeding.</description>
 		<iconPath>Genes/Icons/Cocoon</iconPath>
