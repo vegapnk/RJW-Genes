@@ -9,8 +9,8 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs/XenotypeDef[defName="BS_Authority"]/genes</xpath>
           <value>
-            <li>rjw_genes_large_male_genitalia</li>
-            <li>rjw_genes_large_breasts</li>
+            <li>rjw_genes_big_male_genitalia</li>
+            <li>rjw_genes_big_breasts</li>
             <li>rjw_genes_no_sex_need</li>
             <li MayRequire="LustLicentia.RJWLabs">rjw_genes_generous_donor</li>
             <li MayRequire="rjw.sexperience">AptitudePoor_Sex</li>
@@ -27,8 +27,8 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs/XenotypeDef[defName="BS_Satan"]/genes</xpath>
           <value>
-            <li>rjw_genes_large_male_genitalia</li>
-            <li>rjw_genes_large_breasts</li>
+            <li>rjw_genes_big_male_genitalia</li>
+            <li>rjw_genes_big_breasts</li>
             <li>rjw_genes_human_genitalia</li>
             <li>rjw_genes_equine_genitalia</li>
             <li>rjw_genes_reptilian_genitalia</li>
@@ -46,8 +46,8 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs/XenotypeDef[defName="BS_Nephilim"]/genes</xpath>
           <value>
-            <li>rjw_genes_large_male_genitalia</li>
-            <li>rjw_genes_large_breasts</li>
+            <li>rjw_genes_big_male_genitalia</li>
+            <li>rjw_genes_big_breasts</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -61,10 +61,10 @@
           <xpath>Defs/XenotypeDef[defName="BS_Glutton"]/genes</xpath>
           <value>
             <li>rjw_genes_demonic_genitalia</li>
-            <li>rjw_genes_large_male_genitalia</li>
+            <li>rjw_genes_big_male_genitalia</li>
             <li>rjw_genes_loose_female_genitalia</li>
             <li>rjw_genes_loose_anus</li>
-            <li>rjw_genes_extra_female_genitalia</li>
+            <li>rjw_genes_extra_vagina</li>
             <li>rjw_genes_extra_anus</li>
             <li MayRequire="LustLicentia.RJWLabs">rjw_genes_cumflation_immunity</li>
             <li MayRequire="rjw.sexperience">AptitudeStrong_Sex</li>
@@ -77,7 +77,7 @@
             <li>rjw_genes_small_male_genitalia</li>
             <li>rjw_genes_tight_female_genitalia</li>
             <li>rjw_genes_tight_anus</li>
-            <li>rjw_genes_extra_female_genitalia</li>
+            <li>rjw_genes_extra_vagina</li>
             <li>rjw_genes_extra_anus</li>
             <li MayRequire="LustLicentia.RJWLabs">rjw_genes_likes_cumflation</li>
             <li MayRequire="LustLicentia.RJWLabs">rjw_genes_elastic</li>
