@@ -67,6 +67,7 @@
 				<li>rjw_genes_big_male_genitalia</li>
 				<li>rjw_genes_loose_female_genitalia</li>
 				<li>rjw_genes_loose_anus</li>
+				<li>rjw_genes_equine_genitalia</li>
 				<li>rjw_genes_zoophile</li>
 			</value>
 		</match>
@@ -80,6 +81,7 @@
 			<value>
 				<li>rjw_genes_tight_female_genitalia</li>
 				<li>rjw_genes_tight_anus</li>
+				<li>rjw_genes_Needle_genitalia</li>
 				<li>LitteredBirths</li>
 				<li>rjw_genes_zoophile</li>
 			</value>
@@ -109,6 +111,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/XenotypeDef[defName="Cloudpuff"]/genes</xpath>
 			<value>
+				<li>rjw_genes_tight_female_genitalia</li>	
 				<li>rjw_genes_Needle_genitalia</li>
 				<li>rjw_genes_zoophile</li>
 			</value>
@@ -121,6 +124,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/XenotypeDef[defName="Devilpuff"]/genes</xpath>
 			<value>
+				<li>rjw_genes_tight_female_genitalia</li>
 				<li>rjw_genes_Needle_genitalia</li>
 				<li>rjw_genes_zoophile</li>
 			</value>
