@@ -23,7 +23,7 @@ namespace RJW_Genes
         public static readonly HediffDef OvaryAgitator;
         public static readonly HediffDef Bioscaffold;
 
-        public static HediffDef NeedlePenis = HediffDef.Named("NeedlePenis");
+        /*public static HediffDef NeedlePenis = HediffDef.Named("NeedlePenis");
         public static HediffDef PigPenis = HediffDef.Named("PigPenis");
         public static HediffDef MarinePenis = HediffDef.Named("MarinePenis");
         public static HediffDef TentaclePenis = HediffDef.Named("TentaclePenis");
@@ -34,6 +34,6 @@ namespace RJW_Genes
         public static HediffDef GhostVagina = HediffDef.Named("GhostVagina");
         public static HediffDef Vagina = HediffDef.Named("Vagina");
         public static HediffDef Penis = HediffDef.Named("Penis");
-        public static HediffDef Anus = HediffDef.Named("Anus");
+        public static HediffDef Anus = HediffDef.Named("Anus");*/
     }
 }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+			<xpath>/Defs/GeneDef[defName="VRE_FungalCrest"]</xpath>
+			<value>
+				<li Class="RJW_Genes.QirkExtension">
+				<Satisfiedquirk>PlantLoverQuirk</Satisfiedquirk>
+				</li>
+			</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+			<xpath>/Defs/GeneDef[defName="VRE_HairMushroom"]</xpath>
+			<value>
+				<li Class="RJW_Genes.QirkExtension">
+				<Satisfiedquirk>PlantLoverQuirk</Satisfiedquirk>
+				</li>
+			</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+			<xpath>/Defs/GeneDef[defName="VRE_FungalFlesh"]</xpath>
+			<value>
+				<li Class="RJW_Genes.QirkExtension">
+				<Satisfiedquirk>PlantLoverQuirk</Satisfiedquirk>
+				</li>
+			</value>
+	</Operation>
+</Patch>
+
