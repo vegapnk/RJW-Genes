@@ -1,4 +1,4 @@
-﻿//using LicentiaLabs;
+﻿using LicentiaLabs;
 using Verse;
 
 
@@ -15,7 +15,7 @@ namespace RJW_Genes
     {
         private const int RESET_INTERVAL = 60000; // 60k should be 1 day 
 
-        /*
+        
         public override void PostAdd()
         {
             base.PostAdd();
@@ -51,6 +51,6 @@ namespace RJW_Genes
                 candidate.Severity = severity;
             }
         }
-        */
+        
     }
 }

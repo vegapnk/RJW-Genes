@@ -19,6 +19,7 @@
 - Licentia Genes are back in and should work again. I used the [updated for by Jaaldabaoth](https://gitgud.io/Jaaldabaoth/licentia-labs) for my testing.
 - Lower-casing most labels to fit rimworld standards, thanks to @Flock-of-birds (#83)
 - X-Gender-Only Genes leave / re-add artificial genitalia. Thanks to @Jaaldabaoth (#84 / #88)
+- Issues with Elasticity References (#87)
 
 
 **Changes**:
