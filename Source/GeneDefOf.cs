@@ -69,7 +69,12 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_mechbreeder;
 		public static readonly GeneDef rjw_genes_zoophile;
         public static readonly GeneDef rjw_genes_fertile_anus;
-        // Cum 
+		public static readonly GeneDef rjw_genes_mating_call;
+		public static readonly GeneDef rjw_genes_fervent_ovipositor;
+		public static readonly GeneDef rjw_genes_insectbreeder;
+		public static readonly GeneDef rjw_genes_insectincubator;
+        
+		// Cum 
         public static readonly GeneDef rjw_genes_no_cum;
 		public static readonly GeneDef rjw_genes_much_cum;
 		public static readonly GeneDef rjw_genes_very_much_cum;
@@ -97,6 +102,8 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_aphrodisiac_pheromones;
 		public static readonly GeneDef rjw_genes_sexual_mytosis;
 		public static readonly GeneDef rjw_genes_hormonal_saliva;
+		public static readonly GeneDef rjw_genes_cocoonweaver;
+        public static readonly GeneDef rjw_genes_sex_tamer;
 
         // Cosmetic
         public static readonly GeneDef rjw_genes_succubus_tail;

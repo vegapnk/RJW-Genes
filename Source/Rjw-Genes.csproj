@@ -66,8 +66,13 @@
     <Compile Include="Common\ModLog.cs" />
     <Compile Include="Common\Defs\TickIntervalExtension.cs" />
     <Compile Include="Common\Patches\PatchImplants.cs" />
-    <Compile Include="Genes\Breeding\Gene_FerventOvipositor.cs" />
-    <Compile Include="Genes\Breeding\Gene_InsectIncubator.cs" />
+    <Compile Include="Genes\Breeding\Abilities\CompAbilityEffect_MatingCall.cs" />
+    <Compile Include="Genes\Breeding\Abilities\CompAbilityEffect_PheromoneSpit.cs" />
+    <Compile Include="Genes\Breeding\Abilities\CompProperties_AbilityMatingCall.cs" />
+    <Compile Include="Genes\Breeding\Abilities\CompProperties_AbilityPheromoneSpit.cs" />
+    <Compile Include="Genes\Breeding\AnimalBreedingHelper.cs" />
+    <Compile Include="Genes\Breeding\Genes\Gene_FerventOvipositor.cs" />
+    <Compile Include="Genes\Breeding\Genes\Gene_InsectIncubator.cs" />
     <Compile Include="Genes\Damage\Gene_Elasticity.cs" />
     <Compile Include="Genes\Life_Force\Events\SuccubusVisit\IncidentWorker_SuccubusVisit.cs" />
     <Compile Include="Genes\Life_Force\Events\SuccubusVisit\LordJob_SuccubusVisit.cs" />
@@ -78,8 +83,8 @@
     <Compile Include="Common\Patches\PatchGetParents.cs" />
     <Compile Include="Common\Patches\PatchPregnancyHelper.cs" />
     <Compile Include="GeneDefOf.cs" />
-    <Compile Include="Genes\Breeding\Gene_MechBreeder.cs" />
-    <Compile Include="Genes\Breeding\PatchMechBirth.cs" />
+    <Compile Include="Genes\Breeding\Genes\Gene_MechBreeder.cs" />
+    <Compile Include="Genes\Breeding\Patches\PatchMechBirth.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_Femboy.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_UdderBreasts.cs" />
     <Compile Include="Genes\Gender\Defs\GenderFluidExtension.cs" />
@@ -172,6 +177,7 @@
     <Compile Include="Genes\Special\Patches\Patch_AgeDrain.cs" />
     <Compile Include="Genes\Special\Patches\Patch_HormonalSaliva.cs" />
     <Compile Include="Genes\Special\Patches\Patch_OrgasmMytosis.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_SexualTamer.cs" />
     <Compile Include="Genes\Special\Thoughts\ThoughtWorker_Aphrodisiac_Pheromones_Social.cs" />
     <Compile Include="LetterDefOf.cs" />
     <Compile Include="Interactions\SuccubusTailjob\CompAbility_SexInteractionRequirements.cs" />

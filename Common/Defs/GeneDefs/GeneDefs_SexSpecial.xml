@@ -132,4 +132,15 @@
 		</modExtensions>
 	</GeneDef>
 
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_sex_tamer</defName>
+        <label>Sexual Tamer</label>
+        <labelShortAdj>sextamer</labelShortAdj>
+        <description>Bestiality has a chance to tame animals or advance their training.</description>
+        <iconPath>UI/Abilities/AnimalBerserkPulse</iconPath>
+		<displayOrderInCategory>14</displayOrderInCategory>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-1</biostatMet>
+    </GeneDef>
+    
 </Defs>
