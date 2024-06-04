@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
 	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
@@ -10,7 +10,7 @@
 			<Mass>0.40</Mass>
 		</statBases>
 	</ThingDef>
-
+	
 	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
 		<defName>PigPenis</defName>
 		<label>screw penis</label>
@@ -20,7 +20,7 @@
 			<Mass>0.40</Mass>
 		</statBases>
 	</ThingDef>
-
+	
 	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
 		<defName>MarinePenis</defName>
 		<label>marine penis</label>
@@ -30,7 +30,7 @@
 			<Mass>0.40</Mass>
 		</statBases>
 	</ThingDef>
-
+	
 	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
 		<defName>TentaclePenis</defName>
 		<label>alien penis</label>
@@ -40,7 +40,7 @@
 			<Mass>0.40</Mass>
 		</statBases>
 	</ThingDef>
-
+	
 	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
 		<defName>GolemPenis</defName>
 		<label>golem penis</label>
@@ -50,7 +50,7 @@
 			<Mass>0.40</Mass>
 		</statBases>
 	</ThingDef>
-
+	
 	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
 		<defName>OrcPenis</defName>
 		<label>orc penis</label>
@@ -60,7 +60,7 @@
 			<Mass>0.40</Mass>
 		</statBases>
 	</ThingDef>
-
+	
 	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
 		<defName>GhostPenis</defName>
 		<label>ghost penis</label>
@@ -70,7 +70,7 @@
 			<Mass>0.40</Mass>
 		</statBases>
 	</ThingDef>
-
+	
 	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
 		<defName>NecroPenis</defName>
 		<label>undead penis</label>
@@ -80,18 +80,17 @@
 			<Mass>0.40</Mass>
 		</statBases>
 	</ThingDef>
-
+	
 	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
 		<defName>GhostVagina</defName>
 		<label>ghost vagina</label>
-		<descriptionHyperlinks>
-			<ThingDef>GhostVagina</ThingDef>
-		</descriptionHyperlinks>
+		<descriptionHyperlinks><ThingDef>GhostVagina</ThingDef></descriptionHyperlinks>
 		<statBases>
 			<MarketValue>250</MarketValue>
 			<Mass>0.40</Mass>
 		</statBases>
 	</ThingDef>
+	
 
 
 </Defs>

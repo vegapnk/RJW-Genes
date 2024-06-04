@@ -1,14 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartPenis">
 		<defName>NeedlePenis</defName>
 		<label>needle penis</label>
 		<labelNoun>a needle penis</labelNoun>
 		<description>A long thin needle penis</description>
-		<descriptionHyperlinks>
-			<ThingDef>NeedlePenis</ThingDef>
-		</descriptionHyperlinks>
+		<descriptionHyperlinks><ThingDef>NeedlePenis</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>NeedlePenis</spawnThingOnRemoved>
 		<modExtensions>
 			<li Class="rjw.PartProps">
@@ -19,15 +16,12 @@
 			</li>
 		</modExtensions>
 	</rjw.HediffDef_PartBase>
-
 	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartPenis">
 		<defName>PigPenis</defName>
 		<label>screw penis</label>
 		<labelNoun>a screw penis</labelNoun>
 		<description>A large screw penis.</description>
-		<descriptionHyperlinks>
-			<ThingDef>PigPenis</ThingDef>
-		</descriptionHyperlinks>
+		<descriptionHyperlinks><ThingDef>PigPenis</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>PigPenis</spawnThingOnRemoved>
 		<modExtensions>
 			<li Class="rjw.PartProps">
@@ -39,15 +33,12 @@
 			</li>
 		</modExtensions>
 	</rjw.HediffDef_PartBase>
-
 	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartPenis">
 		<defName>MarinePenis</defName>
 		<label>marine penis</label>
 		<labelNoun>a marine penis</labelNoun>
 		<description>A penis similar to those of marine mammals.</description>
-		<descriptionHyperlinks>
-			<ThingDef>MarinePenis</ThingDef>
-		</descriptionHyperlinks>
+		<descriptionHyperlinks><ThingDef>MarinePenis</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>MarinePenis</spawnThingOnRemoved>
 		<modExtensions>
 			<li Class="rjw.PartProps">
@@ -58,15 +49,12 @@
 			</li>
 		</modExtensions>
 	</rjw.HediffDef_PartBase>
-
 	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartPenis">
 		<defName>TentaclePenis</defName>
 		<label>alien penis</label>
 		<labelNoun>an alien penis</labelNoun>
 		<description>A alien penis featuring multiples tentacles.</description>
-		<descriptionHyperlinks>
-			<ThingDef>TentaclePenis</ThingDef>
-		</descriptionHyperlinks>
+		<descriptionHyperlinks><ThingDef>TentaclePenis</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>TentaclePenis</spawnThingOnRemoved>
 		<modExtensions>
 			<li Class="rjw.PartProps">
@@ -83,9 +71,7 @@
 		<label>golem penis</label>
 		<labelNoun>an golem penis</labelNoun>
 		<description>A large rocky golem penis.</description>
-		<descriptionHyperlinks>
-			<ThingDef>GolemPenis</ThingDef>
-		</descriptionHyperlinks>
+		<descriptionHyperlinks><ThingDef>GolemPenis</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>GolemPenis</spawnThingOnRemoved>
 		<modExtensions>
 			<li Class="rjw.PartProps">
@@ -97,15 +83,12 @@
 			</li>
 		</modExtensions>
 	</rjw.HediffDef_PartBase>
-
 	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartPenis">
 		<defName>OrcPenis</defName>
 		<label>orc penis</label>
 		<labelNoun>an orc penis</labelNoun>
 		<description>A large orc penis.</description>
-		<descriptionHyperlinks>
-			<ThingDef>OrcPenis</ThingDef>
-		</descriptionHyperlinks>
+		<descriptionHyperlinks><ThingDef>OrcPenis</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>OrcPenis</spawnThingOnRemoved>
 		<modExtensions>
 			<li Class="rjw.PartProps">
@@ -116,15 +99,12 @@
 			</li>
 		</modExtensions>
 	</rjw.HediffDef_PartBase>
-
 	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartPenis">
 		<defName>GhostPenis</defName>
 		<label>ghost penis</label>
 		<labelNoun>an ghost penis</labelNoun>
 		<description>A evanescent ghost penis, you can barely feel it.</description>
-		<descriptionHyperlinks>
-			<ThingDef>GhostPenis</ThingDef>
-		</descriptionHyperlinks>
+		<descriptionHyperlinks><ThingDef>GhostPenis</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>GhostPenis</spawnThingOnRemoved>
 		<modExtensions>
 			<li Class="rjw.PartProps">
@@ -135,15 +115,12 @@
 			</li>
 		</modExtensions>
 	</rjw.HediffDef_PartBase>
-
 	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartPenis">
 		<defName>NecroPenis</defName>
 		<label>undead penis</label>
 		<labelNoun>an undead penis</labelNoun>
 		<description>A rotten, reanimated penis.</description>
-		<descriptionHyperlinks>
-			<ThingDef>NecroPenis</ThingDef>
-		</descriptionHyperlinks>
+		<descriptionHyperlinks><ThingDef>NecroPenis</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>NecroPenis</spawnThingOnRemoved>
 		<modExtensions>
 			<li Class="rjw.PartProps">
@@ -154,15 +131,12 @@
 			</li>
 		</modExtensions>
 	</rjw.HediffDef_PartBase>
-
 	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartVagina">
 		<defName>GhostVagina</defName>
 		<label>ghost vagina</label>
 		<labelNoun>a ghost vagina</labelNoun>
 		<description>A evanescent ghost vagina, you can barely feel it.</description>
-		<descriptionHyperlinks>
-			<ThingDef>GhostVagina</ThingDef>
-		</descriptionHyperlinks>
+		<descriptionHyperlinks><ThingDef>GhostVagina</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>GhostVagina</spawnThingOnRemoved>
 		<modExtensions>
 			<li Class="rjw.PartProps">
@@ -174,4 +148,5 @@
 		</modExtensions>
 	</rjw.HediffDef_PartBase>
 
+	
 </Defs>

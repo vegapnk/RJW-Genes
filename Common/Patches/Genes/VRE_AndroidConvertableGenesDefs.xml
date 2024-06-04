@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<VREAndroids.AndroidConvertableGenesDef>
+		<defName>rjw_genes_AndroidConvertableGenesDefs</defName>
+		<geneCategories>
+			<li>rjw_genes_gender</li>
+		</geneCategories>
+
+		
+	</VREAndroids.AndroidConvertableGenesDef>
+</Defs>

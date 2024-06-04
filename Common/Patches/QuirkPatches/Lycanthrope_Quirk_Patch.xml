@@ -1,32 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Races Expanded - Lycanthrope</li>
-		</mods>
-		<match Class="PatchOperationAddModExtension">
+	<Operation Class="PatchOperationAddModExtension">
 			<xpath>/Defs/GeneDef[defName="VRE_ChestFur"]</xpath>
 			<value>
 				<li Class="RJW_Genes.QirkExtension">
-					<Satisfiedquirk>FurLoverQuirk</Satisfiedquirk>
+				<Satisfiedquirk>FurLoverQuirk</Satisfiedquirk>
 				</li>
 			</value>
-		</match>
 	</Operation>
-
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Races Expanded - Lycanthrope</li>
-		</mods>
-		<match Class="PatchOperationAddModExtension">
+	<Operation Class="PatchOperationAddModExtension">
 			<xpath>/Defs/GeneDef[defName="VRE_CanineTail"]</xpath>
 			<value>
 				<li Class="RJW_Genes.QirkExtension">
-					<Satisfiedquirk>FurLoverQuirk</Satisfiedquirk>
+				<Satisfiedquirk>FurLoverQuirk</Satisfiedquirk>
 				</li>
 			</value>
-		</match>
 	</Operation>
-
 </Patch>
+
