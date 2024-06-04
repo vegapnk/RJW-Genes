@@ -35,6 +35,9 @@ namespace RJW_Genes
 
                     // TODO: Setting only for Rape
                     // TODO: Testing
+                    // Open Issues: 
+                    // Currently, if a "Dangerous Vagina" Pawn "Reverse rapes", the vagina pawn gets damaged.
+                    // I think there needs to be a check and logic for isReverse ... 
 
                     ModLog.Message($"Test - Tick {__instance.Sexprops.pawn} <> {__instance.Sexprops.partner} --- Thrust");
                     ApplyDangerousGenitaliaDamage(dangerousGenitaliaPawn, fuckedPawn, __instance.Sexprops);
