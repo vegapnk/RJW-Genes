@@ -4,21 +4,21 @@
 	<JobDef>
 		<defName>rjw_genes_lifeforce_randomrape</defName>
 		<driverClass>rjw.JobDriver_RandomRape</driverClass>
-		<reportString>Raping</reportString>
+		<reportString>raping</reportString>
 		<casualInterruptible>false</casualInterruptible>
 	</JobDef>
 	
 	<JobDef>
 		<defName>rjw_genes_lifeforce_healpussy</defName>
 		<driverClass>RJW_Genes.JobDriver_CastAbilityAfterSex</driverClass>
-		<reportString>Tending someones wounds with sex.</reportString>
+		<reportString>tending wounds with sex.</reportString>
 		<casualInterruptible>false</casualInterruptible>
 	</JobDef>
 	
 	<JobDef>
 		<defName>rjw_genes_lifeforce_seduced</defName>
 		<driverClass>RJW_Genes.JobDriver_Seduced</driverClass>
-		<reportString>Seduced.</reportString>
+		<reportString>seduced.</reportString>
 		<casualInterruptible>false</casualInterruptible>
 		<playerInterruptible>false</playerInterruptible>
 	</JobDef>
@@ -26,7 +26,7 @@
 	<JobDef>
 		<defName>rjw_genes_flirt</defName>
 		<driverClass>RJW_Genes.JobDriver_Flirt</driverClass>
-		<reportString>Seduced.</reportString>
+		<reportString>seduced.</reportString>
 		<casualInterruptible>false</casualInterruptible>
 	</JobDef>
 </Defs>

@@ -17,7 +17,7 @@
   <!-- Penis -->
   <GeneDef ParentName="GeneCumAmount">
     <defName>rjw_genes_no_cum</defName>
-    <label>No Cum</label>
+    <label>no cum</label>
     <description>Males of these species have no fluid.</description>
     <iconPath>Genes/Icons/No_Cum</iconPath>
     <geneClass>RJW_Genes.Gene_NoCum</geneClass>
@@ -28,7 +28,7 @@
 
   <GeneDef ParentName="GeneCumAmount">
     <defName>rjw_genes_much_cum</defName>
-    <label>Much Cum</label>
+    <label>much cum</label>
     <description>Males of this species produce a lot of fluid.</description>
     <iconPath>Genes/Icons/Much_Cum</iconPath>
     <geneClass>RJW_Genes.Gene_MuchCum</geneClass>
@@ -39,7 +39,7 @@
 
   <GeneDef ParentName="GeneCumAmount">
     <defName>rjw_genes_very_much_cum</defName>
-    <label>Very Much Cum</label>
+    <label>very much cum</label>
     <description>Males of this species produce a whole lot of fluid. They are like fountains basically.</description>
     <iconPath>Genes/Icons/Very_Much_Cum</iconPath>
     <geneClass>RJW_Genes.Gene_VeryMuchCum</geneClass>
@@ -50,7 +50,7 @@
 
   <GeneDef MayRequire="LustLicentia.RJWLabs">
     <defName>rjw_genes_likes_cumflation</defName>
-    <label>Likes Cumflation</label>
+    <label>likes cumflation</label>
     <displayCategory>rjw_genes_cum</displayCategory>
     <description>This Xenotype loves being cumflated.</description>
     <iconPath>Genes/Icons/Cumflation</iconPath>
@@ -74,7 +74,7 @@
 
   <GeneDef MayRequire="LustLicentia.RJWLabs">
     <defName>rjw_genes_cumflation_immunity</defName>
-    <label>Cumflation Immunity</label>
+    <label>cumflation immunity</label>
     <displayCategory>rjw_genes_cum</displayCategory>
     <description>This Xenotype cannot get cumflated.</description>
     <iconPath>Genes/Icons/Cumflation_Immunity</iconPath>
@@ -94,7 +94,7 @@
 
   <GeneDef MayRequire="LustLicentia.RJWLabs">
     <defName>rjw_genes_generous_donor</defName>
-    <label>Generous Donor</label>
+    <label>generous donor</label>
     <displayCategory>rjw_genes_cum</displayCategory>
     <description>When this Xenotype transfers nutrition via cumshot, the giver will not get hungry. (Licentia Configuration for Transfer Nutrition must be enabled).</description>
     <iconPath>Genes/Icons/Generous_Donor</iconPath>
