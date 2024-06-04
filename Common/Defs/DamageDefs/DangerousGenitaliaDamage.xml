@@ -41,7 +41,7 @@
 				<infectionChance>0.15</infectionChance>
 			</li>
 			<li Class="HediffCompProperties_GetsPermanent">
-				<permanentLabel>rupture scar</permanentLabel>
+				<permanentLabel>tear scar</permanentLabel>
 			</li>
 		</comps>
 		<injuryProps>

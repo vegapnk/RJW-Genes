@@ -53,6 +53,8 @@ namespace RJW_Genes
             switch (props.sexType)
             {
                 case xxx.rjwSextype.Oral:
+                case xxx.rjwSextype.Fellatio:
+                case xxx.rjwSextype.Cunnilingus:
                     {
                         float penetrated_bodysize = GetBodySize(damaged);
                         float damage = CalculateSizeRelatedDamage(penetrator_bodysize, penetrator_genitalsize, penetrated_bodysize, 0.0f);
@@ -66,9 +68,11 @@ namespace RJW_Genes
                         DamageWorker.Apply(dInfo, damaged);
                     } break;
 
+
                 case xxx.rjwSextype.Vaginal:
+                case xxx.rjwSextype.Scissoring:
                     {
-                        Hediff vagina = Genital_Helper.get_AllPartsHediffList(damaged).First(part => Genital_Helper.is_vagina(part));
+                        Hediff vagina = Genital_Helper.get_AllPartsHediffList(damaged).FirstOrDefault(part => Genital_Helper.is_vagina(part));
                         if (vagina == null) return;
                         CompHediffBodyPart comps = vagina.TryGetComp<rjw.CompHediffBodyPart>();
                         float penetrated_bodysize = GetBodySize(damaged, vagina);
@@ -85,7 +89,7 @@ namespace RJW_Genes
 
                 case xxx.rjwSextype.Anal:
                     {
-                        Hediff anus = Genital_Helper.get_AllPartsHediffList(damaged).First(part => Genital_Helper.is_anus(part));
+                        Hediff anus = Genital_Helper.get_AllPartsHediffList(damaged).FirstOrDefault(part => Genital_Helper.is_anus(part));
                         if (anus == null) return;
                         CompHediffBodyPart comps = anus.TryGetComp<rjw.CompHediffBodyPart>();
                         float penetrated_bodysize = GetBodySize(damaged, anus);
