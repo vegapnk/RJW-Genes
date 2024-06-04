@@ -1,3 +1,29 @@
+# 2.1.0
+
+**Additions**:
+
+- Human + Animal Pregnancy can (if enabled in settings) produce Vanilla Expanded Genetics Hybrids. Thanks to @Jaaldabaoth (#88)
+- Xenogenes for "Big and Small" Xenotypes thanks to @Flock-of-birds (#83)
+- Xenogenes for "Biotech Expansion Mammalia" and "Biotech Expansion - Mythic" thanks to @Ohreallyow (#86)
+- Xenogenes update for (many?) "Vanilla Races Expanded (VRE)" Mods - Thanks to @Jaaldabaoth (#84 / #88 )
+- Genes can now fulfill RJW Quirks, configurable in XML. Thanks to @Jaaldabaoth (#84 / #88)
+- "Genes" to support VRE Androids having Mechanical Genitalia. Thanks to @Jaaldabaoth (#88)
+- "Curiosity Genes" alongside other Curiosities from VRE. Thanks to @Jaaldabaoth (#88)
+- Support for many VE-Genetics Animals into the Animal-Framework. Thanks to @Jaaldabaoth (#88)
+
+**Fixes**:
+
+- Lower-casing most labels to fit rimworld standards, thanks to @Flock-of-birds (#83)
+- X-Gender-Only Genes leave / re-add artificial genitalia. Thanks to @Jaaldabaoth (#84 / #88)
+
+
+**Changes**:
+
+- Minified some Race-Patches, thanks to @Flock-of-birds (#83)
+- XML-Genitalia-Genes can now also provide Breasts. Thanks to @Jaaldabaoth (#84 / #88)
+- "Wasters" can have Orgasmic Mytosis, but need a special "polluted" version. Thanks to @Jaaldabaoth (#84 / #88)
+
+
 # 2.0.0
 
 **Summary**:

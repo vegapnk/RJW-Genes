@@ -171,7 +171,6 @@ namespace RJW_Genes
         private static Pawn_GeneTracker CopyGeneTracker(Pawn toCopyTo, Pawn_GeneTracker toCopyFrom)
         {
             var tracker = new Pawn_GeneTracker(toCopyTo);
-            
             // Due to Overwrite logics, we first add Endogenes and then a second pass on xenogenes
 
             // Pass 1: Endogenes
@@ -190,12 +189,6 @@ namespace RJW_Genes
             }
 
             tracker.Reset();
-            var skin = tracker.GetMelaninGene();
-            var hair = tracker.GetHairColorGene();
-
-            //ModLog.Message($"{toCopyTo} had Skin {skin.defName} and {hair.defName} as colour-genes");
-
-
             return tracker;
         }
 
@@ -302,9 +295,6 @@ namespace RJW_Genes
         }
     }
 
-
-
-
 }
 
 /*
@@ -328,5 +318,4 @@ Verse.TickList:Tick ()
 Verse.TickManager:TickManagerUpdate ()
 Verse.Game:UpdatePlay ()
 Verse.Root_Play:Update ()
-
  */

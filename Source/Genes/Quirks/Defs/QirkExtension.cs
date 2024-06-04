@@ -7,7 +7,6 @@ namespace RJW_Genes
 {
     public class QirkExtension : DefModExtension
     {
-        public String Satisfiedquirk;
-
+        public string Satisfiedquirk;
     }
 }

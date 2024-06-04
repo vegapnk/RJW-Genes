@@ -7,6 +7,7 @@ using Verse;
 using UnityEngine;
 using HarmonyLib;
 using rjw;
+using RimWorld;
 
 namespace RJW_BGS
 {
@@ -83,12 +84,14 @@ namespace RJW_BGS
             "Cobra",
             "Tortoise"
             };
-        public static HediffDef controler = DefDatabase<HediffDef>.GetNamed("RJWGenes_AnimalControlHediff", true);
+
+        //public static HediffDef controler = DefDatabase<HediffDef>.GetNamed("RJWGenes_AnimalControlHediff", true);
+
         [HarmonyPostfix]
         [HarmonyPatch("GenerateBabies")]
-        public static void addHedif (Hediff_BasePregnancy __instance)
+        public static void AddComfortableWithHumansHediff (Hediff_BasePregnancy __instance)
         {
-            if (controler == null) return;
+            //if (controler == null) return;
             
             foreach (Pawn p in __instance.babies)
             {
@@ -96,7 +99,7 @@ namespace RJW_BGS
                 {
                     if (racesgen1.Contains(p.kindDef.race.defName))
                     {
-                        p.health.AddHediff(controler);
+                        p.health.AddHediff(RJW_Genes.HediffDefOf.rjw_genes_animal_control_hediff);
                     }
                 }
             }
@@ -106,3 +109,26 @@ namespace RJW_BGS
 
     }
 }
+
+/*
+ * Error Received on 04.06.2024 
+ * Failed to find Verse.HediffDef named RJWGenes_AnimalControlHediff. There are 446 defs of this type loaded.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Log.Error_Patch1 (string)
+Verse.DefDatabase`1<Verse.HediffDef>:GetNamed (string,bool)
+RJW_BGS.BasePregnancyPatcher:.cctor ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:rjw.PregnancyHelper.AddPregnancyHediff_Patch1 (Verse.Pawn,Verse.Pawn)
+rjw.PregnancyHelper:DoImpregnate (Verse.Pawn,Verse.Pawn)
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:rjw.PregnancyHelper.impregnate_Patch1 (rjw.SexProps)
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:rjw.JobDriver_Sex.Orgasm_Patch1 (rjw.JobDriver_Sex)
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:rjw.JobDriver_Sex.SexTick_Patch2 (rjw.JobDriver_Sex,Verse.Pawn,Verse.Thing,bool,bool)
+rjw.JobDriver_Mating/<>c__DisplayClass1_0:<MakeNewToils>b__5 ()
+Verse.AI.JobDriver:DriverTick ()
+Verse.AI.Pawn_JobTracker:JobTrackerTick ()
+Verse.Pawn:Tick ()
+Verse.TickList:Tick ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.TickManager.DoSingleTick_Patch2 (Verse.TickManager)
+Verse.TickManager:TickManagerUpdate ()
+Verse.Game:UpdatePlay ()
+Verse.Root_Play:Update ()
+ */
