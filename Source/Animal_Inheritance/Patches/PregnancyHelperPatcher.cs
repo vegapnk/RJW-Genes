@@ -21,29 +21,29 @@ namespace RJW_BGS
         {
             if (!RJW_BGSSettings.rjw_bgs_VE_genetics) return true;
             if (mother == null || father == null) return true;
-            bool a = mother.IsHuman() && BasePregnancyPatcher.racesgen0.Contains(father.kindDef.race.defName);
-            bool b = mother.IsHuman() && BasePregnancyPatcher.racesgen1.Contains(father.kindDef.race.defName);
-            bool c = father.IsHuman() && BasePregnancyPatcher.racesgen0.Contains(mother.kindDef.race.defName);
-            bool d = father.IsHuman() && BasePregnancyPatcher.racesgen1.Contains(mother.kindDef.race.defName);
+            bool humanMotherAndSupportedAnimal = mother.IsHuman() && BasePregnancyPatcher.parentGenerationOffspringRaces.Contains(father.kindDef.race.defName);
+            bool humanMotherAndSupportedHybrid = mother.IsHuman() && BasePregnancyPatcher.firstGenerationOffspringRaces.Contains(father.kindDef.race.defName);
+            bool humanFatherAndSupportedAnimal = father.IsHuman() && BasePregnancyPatcher.parentGenerationOffspringRaces.Contains(mother.kindDef.race.defName);
+            bool humanFatherAndSupportedHybrid = father.IsHuman() && BasePregnancyPatcher.firstGenerationOffspringRaces.Contains(mother.kindDef.race.defName);
 
-            if (!(a || b||c|| d)) return true;
-            if (a)
+            if (!(humanMotherAndSupportedAnimal || humanMotherAndSupportedHybrid||humanFatherAndSupportedAnimal|| humanFatherAndSupportedHybrid)) return true;
+            if (humanMotherAndSupportedAnimal)
             {
                 Hediff_BasePregnancy.Create<Hediff_BestialPregnancy>(mother, father, DnaGivingParent.Father);
                 return false;
             }
-            else if (b)
+            else if (humanMotherAndSupportedHybrid)
             {
                 ModLog.Message("preg hediffdefof PregnantHuman " + RimWorld.HediffDefOf.PregnantHuman);
                 PregnancyHelper.StartVanillaPregnancy(mother, father);
                 return false;
             }
-            else if (c)
+            else if (humanFatherAndSupportedAnimal)
             {
                 Hediff_BasePregnancy.Create<Hediff_BestialPregnancy>(mother, father, DnaGivingParent.Mother);
                 return false;
             }
-            else if (d)
+            else if (humanFatherAndSupportedHybrid)
             {
                 Hediff_BasePregnancy.Create<Hediff_BestialPregnancy>(mother, father, DnaGivingParent.Father);
                 return false;

@@ -14,7 +14,10 @@ namespace RJW_BGS
     [HarmonyPatch(typeof(Hediff_BasePregnancy))]
     public class BasePregnancyPatcher
     {
-        public static List<string> racesgen1 = new List<string>()
+        /// <summary>
+        /// The supported races that are produced by Vanilla Genetics Expanded, that can lead to different offsprings when in Human - Animal Sex
+        /// </summary>
+        public static List<string> firstGenerationOffspringRaces = new List<string>()
             {
             "GR_Manbear",
             "GR_Bearman",
@@ -36,7 +39,10 @@ namespace RJW_BGS
             "GR_Lizardman"
             };
 
-        public static List<string> racesgen0 = new List<string>()
+        /// <summary>
+        /// The supported races that can produce Vanilla Genetics hybrids as Human - Animal Sex results. 
+        /// </summary>
+        public static List<string> parentGenerationOffspringRaces = new List<string>()
             {
             "Bear_Grizzly",
             "Bear_Polar",
@@ -85,50 +91,18 @@ namespace RJW_BGS
             "Tortoise"
             };
 
-        //public static HediffDef controler = DefDatabase<HediffDef>.GetNamed("RJWGenes_AnimalControlHediff", true);
-
         [HarmonyPostfix]
         [HarmonyPatch("GenerateBabies")]
         public static void AddComfortableWithHumansHediff (Hediff_BasePregnancy __instance)
         {
-            //if (controler == null) return;
-            
-            foreach (Pawn p in __instance.babies)
+            foreach (Pawn baby in __instance.babies)
             {
-                if(p != null)
+                if (baby != null && firstGenerationOffspringRaces.Contains(baby.kindDef.race.defName))
                 {
-                    if (racesgen1.Contains(p.kindDef.race.defName))
-                    {
-                        p.health.AddHediff(RJW_Genes.HediffDefOf.rjw_genes_animal_control_hediff);
-                    }
+                    baby.health.AddHediff(RJW_Genes.HediffDefOf.rjw_genes_animal_control_hediff);
                 }
             }
         }
 
-        
-
     }
 }
-
-/*
- * Error Received on 04.06.2024 
- * Failed to find Verse.HediffDef named RJWGenes_AnimalControlHediff. There are 446 defs of this type loaded.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Log.Error_Patch1 (string)
-Verse.DefDatabase`1<Verse.HediffDef>:GetNamed (string,bool)
-RJW_BGS.BasePregnancyPatcher:.cctor ()
-(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:rjw.PregnancyHelper.AddPregnancyHediff_Patch1 (Verse.Pawn,Verse.Pawn)
-rjw.PregnancyHelper:DoImpregnate (Verse.Pawn,Verse.Pawn)
-(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:rjw.PregnancyHelper.impregnate_Patch1 (rjw.SexProps)
-(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:rjw.JobDriver_Sex.Orgasm_Patch1 (rjw.JobDriver_Sex)
-(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:rjw.JobDriver_Sex.SexTick_Patch2 (rjw.JobDriver_Sex,Verse.Pawn,Verse.Thing,bool,bool)
-rjw.JobDriver_Mating/<>c__DisplayClass1_0:<MakeNewToils>b__5 ()
-Verse.AI.JobDriver:DriverTick ()
-Verse.AI.Pawn_JobTracker:JobTrackerTick ()
-Verse.Pawn:Tick ()
-Verse.TickList:Tick ()
-(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.TickManager.DoSingleTick_Patch2 (Verse.TickManager)
-Verse.TickManager:TickManagerUpdate ()
-Verse.Game:UpdatePlay ()
-Verse.Root_Play:Update ()
- */
