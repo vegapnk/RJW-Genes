@@ -14,5 +14,6 @@
 		<li IfModActive="vanillaracesexpanded.fungoid">Mods/Fungoid</li>
 		<li IfModActive="vanillaracesexpanded.archon">Mods/Archon</li>
 		<li IfModActive="vanillaracesexpanded.android">Mods/Android</li>
+		<li IfModActive="VanillaExpanded.VGeneticsE">Mods/VE_Genetics</li>
 	</v1.5>
 </loadFolders>

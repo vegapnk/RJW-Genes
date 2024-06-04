@@ -53,6 +53,8 @@
     <Compile Include="Animal_Inheritance\Patches\Patch_Vanilla_PregnancyUtility.cs" />
     <Compile Include="Animal_Inheritance\Defs\RaceGeneDef.cs" />
     <Compile Include="Animal_Inheritance\Defs\RaceGeneDef_Helper.cs" />
+    <Compile Include="Animal_Inheritance\Patches\PregnancyHelperPatcher.cs" />
+    <Compile Include="Animal_Inheritance\Patches\BasePregnancyPatcher.cs" />
     <Compile Include="Animal_Inheritance\Settings\RJW_BGSSettings.cs" />
     <Compile Include="Animal_Inheritance\Settings\RJW_BGSSettingsController.cs" />
     <Compile Include="Animal_Inheritance\Defs\BestialityGeneInheritanceDef.cs" />
