@@ -8,6 +8,7 @@ using RJW_BGS;
 using HarmonyLib;
 using rjw;
 using static rjw.Hediff_BasePregnancy;
+using RJW_Genes;
 
 namespace RJW_BGS
 {
@@ -34,7 +35,9 @@ namespace RJW_BGS
             }
             else if (humanMotherAndSupportedHybrid)
             {
-                ModLog.Message("preg hediffdefof PregnantHuman " + RimWorld.HediffDefOf.PregnantHuman);
+                if (RJW_Genes_Settings.rjw_genes_detailed_debug)
+                    RJW_Genes.ModLog.Message("preg hediffdefof PregnantHuman " + RimWorld.HediffDefOf.PregnantHuman);
+                
                 PregnancyHelper.StartVanillaPregnancy(mother, father);
                 return false;
             }
