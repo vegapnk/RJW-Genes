@@ -2,6 +2,9 @@
 
 **Additions**:
 
+- New Ability Gene *Mating-Call*: Get bred by all nearby animals. 
+- New Ability Gene *Pheromone Spit*: Mark a target to be bred by nearby animals
+- New Passive Gene *Sexual Tamer*: Chance to tame or train animals on bestiality.
 - Human + Animal Pregnancy can (if enabled in settings) produce Vanilla Expanded Genetics Hybrids. Thanks to @Jaaldabaoth (#88)
 - Xenogenes for "Big and Small" Xenotypes thanks to @Flock-of-birds (#83)
 - Xenogenes for "Biotech Expansion Mammalia" and "Biotech Expansion - Mythic" thanks to @Ohreallyow (#86)
@@ -13,6 +16,7 @@
 
 **Fixes**:
 
+- Licentia Genes are back in and should work again. I used the [updated for by Jaaldabaoth](https://gitgud.io/Jaaldabaoth/licentia-labs) for my testing.
 - Lower-casing most labels to fit rimworld standards, thanks to @Flock-of-birds (#83)
 - X-Gender-Only Genes leave / re-add artificial genitalia. Thanks to @Jaaldabaoth (#84 / #88)
 
@@ -21,8 +25,7 @@
 
 - Minified some Race-Patches, thanks to @Flock-of-birds (#83)
 - XML-Genitalia-Genes can now also provide Breasts. Thanks to @Jaaldabaoth (#84 / #88)
-- "Wasters" can have Orgasmic Mytosis, but need a special "polluted" version. Thanks to @Jaaldabaoth (#84 / #88)
-
+- Many patches and files went into a `Mods`Folder and use an `LoadFolders.xml`. Thanks to @Jaaldabaoth (#84 / #88)
 
 # 2.0.0
 
