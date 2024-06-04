@@ -7,8 +7,6 @@
 - Xenogenes for "Biotech Expansion Mammalia" and "Biotech Expansion - Mythic" thanks to @Ohreallyow (#86)
 - Xenogenes update for (many?) "Vanilla Races Expanded (VRE)" Mods - Thanks to @Jaaldabaoth (#84 / #88 )
 - Genes can now fulfill RJW Quirks, configurable in XML. Thanks to @Jaaldabaoth (#84 / #88)
-- "Genes" to support VRE Androids having Mechanical Genitalia. Thanks to @Jaaldabaoth (#88)
-- "Curiosity Genes" alongside other Curiosities from VRE. Thanks to @Jaaldabaoth (#88)
 - Support for many VE-Genetics Animals into the Animal-Framework. Thanks to @Jaaldabaoth (#88)
 
 **Fixes**:
