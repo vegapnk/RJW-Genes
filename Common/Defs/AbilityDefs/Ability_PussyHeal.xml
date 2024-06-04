@@ -2,7 +2,7 @@
 <Defs>
   <AbilityDef ParentName="AbilityTouchBase">
     <defName>rjw_genes_ability_pussyheal</defName>
-    <label>SexHeal</label>
+    <label>sexheal</label>
     <description>Rape another pawn, so you can heal them with your vagina's special healing power.</description>
     <iconPath>Things/Mote/Heart</iconPath>
     <stunTargetWhileCasting>false</stunTargetWhileCasting>

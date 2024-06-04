@@ -2,7 +2,7 @@
 <Defs>
   <AbilityDef ParentName="AbilityTouchBase">
     <defName>rjw_genes_ability_cockeater</defName>
-    <label>Eat Cock</label>
+    <label>eat cock</label>
     <description>Eat the cock of another pawn, restoring fertilin based on the size of the cock.</description>
     <iconPath>Genes/Icons/cockeater</iconPath>
     <stunTargetWhileCasting>true</stunTargetWhileCasting>

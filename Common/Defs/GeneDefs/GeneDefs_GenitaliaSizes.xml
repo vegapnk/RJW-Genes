@@ -15,7 +15,7 @@
   <!-- Penis -->
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_big_male_genitalia</defName>
-    <label>Big Male Genitaliasize</label>
+    <label>big male genitalia</label>
     <description>Penises of this Xenotype are bigger.(Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Big_Male_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_BigMaleGenitalia</geneClass>
@@ -27,7 +27,7 @@
 
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_small_male_genitalia</defName>
-    <label>Small Male Genitaliasize</label>
+    <label>small male genitalia</label>
     <description>Penises of this Xenotype are smaller. (Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Small_Male_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_SmallMaleGenitalia</geneClass>
@@ -40,7 +40,7 @@
   <!-- Vagina -->
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_loose_female_genitalia</defName>
-    <label>Loose Female Genitalia</label>
+    <label>loose female genitalia</label>
     <description>Vaginas of this Xenotype are quite spacy. (Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Loose_Vagina</iconPath>
     <geneClass>RJW_Genes.Gene_LooseFemaleGenitalia</geneClass>
@@ -52,7 +52,7 @@
 
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_tight_female_genitalia</defName>
-    <label>Tight Female Genitalia</label>
+    <label>tight female genitalia</label>
     <description>Vaginas of this Xenotype are pretty tight.(Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Tight_Vagina</iconPath>
     <geneClass>RJW_Genes.Gene_TightFemaleGenitalia</geneClass>
@@ -65,7 +65,7 @@
   <!-- Breasts -->
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_big_breasts</defName>
-    <label>Big Breasts</label>
+    <label>big breasts</label>
     <description>Females of this Xenotype have big honkers.(Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Big_Breasts</iconPath>
     <geneClass>RJW_Genes.Gene_BigBreasts</geneClass>
@@ -77,7 +77,7 @@
 
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_small_breasts</defName>
-    <label>Small Breasts</label>
+    <label>small breasts</label>
     <description>Females of this Xenotype have smaller breasts.(Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Small_Breasts</iconPath>
     <geneClass>RJW_Genes.Gene_SmallBreasts</geneClass>
@@ -90,7 +90,7 @@
   <!-- Anus -->
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_loose_anus</defName>
-    <label>Loose Anus</label>
+    <label>loose anus</label>
     <description>The Anus of this Xenotype is roomy.(Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Loose_Anus</iconPath>
     <geneClass>RJW_Genes.Gene_LooseAnus</geneClass>
@@ -102,7 +102,7 @@
 
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_tight_anus</defName>
-    <label>Tight Anus</label>
+    <label>tight anus</label>
     <description>The anus of this Xenotype is small.(Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Tight_Anus</iconPath>
     <geneClass>RJW_Genes.Gene_TightAnus</geneClass>
@@ -116,7 +116,7 @@
   
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_evergrowth</defName>
-    <label>Evergrowth</label>
+    <label>evergrowth</label>
     <description>One of the most regretted gene-modifications in the Glitterworlds: The (primary) genitalia will continue growing forever. This affects size and fluid output. Excessive growth can also effect mental stability! (Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Big_Male_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_EvergrowingGenitalia</geneClass>
