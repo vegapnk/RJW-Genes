@@ -71,7 +71,7 @@ namespace RJWLoveFeeding
             public static bool RJWTryTakeBlood(Pawn pawn, Pawn bloodBag)
         {
 
-
+            if (bloodBag == null || pawn == null) return false;
             Pawn_GeneTracker genes = bloodBag.genes;
             if ((genes.GetFirstGeneOfType<Gene_Hemogen>() != null))
             {

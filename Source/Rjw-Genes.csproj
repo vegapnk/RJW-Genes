@@ -219,7 +219,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="RJWSexperience">
-      <HintPath>..\..\rjw-sexperience\1.5\Assemblies\RJWSexperience.dll</HintPath>
+      <HintPath>..\..\rjw-sexperience-master\1.5\Assemblies\RJWSexperience.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
