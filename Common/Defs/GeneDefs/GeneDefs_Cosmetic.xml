@@ -48,6 +48,9 @@
 				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
 				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
 			</li>
+		<li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>DemonLoverQuirk</Satisfiedquirk>
+		</li>
 		</modExtensions>
   </GeneDef>
   
@@ -103,6 +106,9 @@
 				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
 				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
 			</li>
+			<li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>DemonLoverQuirk</Satisfiedquirk>
+		</li>
 		</modExtensions>
   </GeneDef>
 </Defs>

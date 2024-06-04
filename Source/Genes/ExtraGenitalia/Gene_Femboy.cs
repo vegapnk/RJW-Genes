@@ -55,6 +55,18 @@ namespace RJW_Genes
                 compHediffBodyPart.updatesize(0f);
             }
             this.pawn.health.AddHediff(this.additional_genital, part, null, null);
+            foreach (Gene g in pawn.genes.GenesListForReading)
+            {
+                if (g.def.defName == "rjw_genes_hydrolic_genitalia")
+                {
+                    g.PostAdd();
+                }
+                if (g.def.defName == "rjw_genes_bionic_genitalia")
+                {
+                    g.PostAdd();
+                    return;
+                }
+            }
         }
 
         // Token: 0x040001B0 RID: 432

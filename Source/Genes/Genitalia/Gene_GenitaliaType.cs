@@ -17,7 +17,7 @@ namespace RJW_Genes
             Apply();
         }
 
-        protected virtual void Apply()
+        public virtual void Apply()
         {
             if (this.Active)
             {
@@ -27,7 +27,7 @@ namespace RJW_Genes
                     ModLog.Error($"Gene {def} failed to change genitals - Need a modExtension with Class=\"{typeof(GenitaliaTypeExtension).FullName}\".");
                     return;
                 }
-                GenitaliaChanger.ChangeGenitalia(pawn, genitals.penis, genitals.vagina, genitals.anus);
+                GenitaliaChanger.ChangeGenitalia(pawn, genitals.penis, genitals.vagina, genitals.anus, genitals.breasts);
             }
         }
     }

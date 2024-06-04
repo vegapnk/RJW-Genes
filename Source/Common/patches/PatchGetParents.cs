@@ -125,5 +125,43 @@ namespace RJW_Genes
                 }
             }
         }
+
+        [HarmonyPrefix]
+        [HarmonyPatch("SetFather")]
+        private static bool SetFatherPrefix(Pawn pawn, Pawn newFather)
+        {
+            Pawn father = pawn.GetFather();
+            if (father != newFather)
+            {
+                if (father != null)
+                {
+                    pawn.relations.RemoveDirectRelation(PawnRelationDefOf.Parent, father);
+                }
+                if (newFather != null)
+                {
+                    pawn.relations.AddDirectRelation(PawnRelationDefOf.Parent, newFather);
+                }
+            }
+            return false;
+        }
+
+        [HarmonyPrefix]
+        [HarmonyPatch("SetMother")]
+        private static bool SetMotherPrefix(Pawn pawn, Pawn newMother)
+        {
+            Pawn mother = pawn.GetMother();
+            if (mother != newMother)
+            {
+                if (mother != null)
+                {
+                    pawn.relations.RemoveDirectRelation(PawnRelationDefOf.Parent, mother);
+                }
+                if (newMother != null)
+                {
+                    pawn.relations.AddDirectRelation(PawnRelationDefOf.Parent, newMother);
+                }
+            }
+            return false;
+        }
     }
 }

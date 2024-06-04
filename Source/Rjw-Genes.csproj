@@ -53,6 +53,8 @@
     <Compile Include="Animal_Inheritance\Patches\Patch_Vanilla_PregnancyUtility.cs" />
     <Compile Include="Animal_Inheritance\Defs\RaceGeneDef.cs" />
     <Compile Include="Animal_Inheritance\Defs\RaceGeneDef_Helper.cs" />
+    <Compile Include="Animal_Inheritance\Patches\PregnancyHelperPatcher.cs" />
+    <Compile Include="Animal_Inheritance\Patches\BasePregnancyPatcher.cs" />
     <Compile Include="Animal_Inheritance\Settings\RJW_BGSSettings.cs" />
     <Compile Include="Animal_Inheritance\Settings\RJW_BGSSettingsController.cs" />
     <Compile Include="Animal_Inheritance\Defs\BestialityGeneInheritanceDef.cs" />
@@ -161,6 +163,8 @@
     <Compile Include="Genes\Patches\LustFeeding.cs" />
     <Compile Include="Genes\Patches\MultiplePregnancies.cs" />
     <Compile Include="Genes\Patch_AddNotifyOnGeneration.cs" />
+    <Compile Include="Genes\QuirkPatching\Defs\QirkExtension.cs" />
+    <Compile Include="Genes\QuirkPatching\QuirkPatcher.cs" />
     <Compile Include="Genes\Special\Abilities\CompAbilityEffect_CocoonWeaver.cs" />
     <Compile Include="Genes\Special\Abilities\CompProperties_AbilityCocoonWeaver.cs" />
     <Compile Include="Genes\Special\Defs\AgeTransferExtension.cs" />
@@ -189,8 +193,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="GeneDefs_GenitaliaTypeEndogenes.xml" />
-    <Content Include="RJW.dll" />
-    <Content Include="RJWSexperience.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -203,13 +205,12 @@
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="RJW, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="RJW">
       <HintPath>..\..\rjw\1.5\Assemblies\RJW.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RJWSexperience">
-      <HintPath>..\..\rjw-sexperience\1.5\Assemblies\RJWSexperience.dll</HintPath>
+      <HintPath>..\..\rjw-sexperience-master\1.5\Assemblies\RJWSexperience.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -230,6 +231,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Genes\Gender\Patches\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

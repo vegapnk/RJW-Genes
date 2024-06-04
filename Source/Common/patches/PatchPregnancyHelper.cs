@@ -32,6 +32,11 @@ namespace RJW_Genes
 
             Pawn giver = props.pawn; // orgasmer
             Pawn receiver = props.partner;
+
+            if (receiver.genes == null)
+            {
+                return;
+            }
             Hediff vasectomy;
             receiver.health.hediffSet.TryGetHediff(vasectomydef, out vasectomy);
             
@@ -40,10 +45,7 @@ namespace RJW_Genes
             List<Hediff> pawnparts = giver.GetGenitalsList();
             List<Hediff> partnerparts = receiver.GetGenitalsList();
             var interaction = rjw.Modules.Interactions.Helpers.InteractionHelper.GetWithExtension(props.dictionaryKey);
-            if (receiver.genes == null)
-            {
-                return;
-            }
+            
 
             if (!(props.sexType == xxx.rjwSextype.Anal && receiver.genes.HasActiveGene(GeneDefOf.rjw_genes_fertile_anus)))
                 return;

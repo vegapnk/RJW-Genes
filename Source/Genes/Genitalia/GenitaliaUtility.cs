@@ -16,12 +16,11 @@ namespace RJW_Genes
         /// <returns>The first GeneDef of the pawn related to GenitaliaTypes</returns>
         public static GeneDef GetGenitaliaTypeGeneForPawn(Pawn pawn)
         {
-           
-            foreach (var gene in pawn.genes.GenesListForReading)
-            {
+            foreach (var gene in pawn.genes.GenesListForReading)         
+            { 
                 if (gene is Gene_GenitaliaType)
                     if (!gene.Overridden)
-                        return gene.def;
+                            return gene.def;                       
             }
             return null;
         }
@@ -46,23 +45,7 @@ namespace RJW_Genes
 
         public static HediffDef GetBreastsForGene(GeneDef gene)
         {
-            if (gene == null)
-                return Genital_Helper.average_breasts;
-
-            switch (gene.defName)
-            {
-                //TODO: Do I want the default to be generic or average?
-                case "rjw_genes_equine_genitalia": return Genital_Helper.average_breasts;
-                case "rjw_genes_canine_genitalia": return Genital_Helper.average_breasts;
-                case "rjw_genes_feline_genitalia": return Genital_Helper.average_breasts;
-                case "rjw_genes_demonic_genitalia": return Genital_Helper.average_breasts;
-                case "rjw_genes_dragon_genitalia": return Genital_Helper.average_breasts;
-                case "rjw_genes_slime_genitalia": return Genital_Helper.slime_breasts;
-                case "rjw_genes_udder_breasts": return Genital_Helper.udder_breasts;
-                case "rjw_genes_ovipositor_genitalia": return Genital_Helper.average_breasts;
-
-                default: return Genital_Helper.average_breasts;
-            }
+            return gene?.GetModExtension<GenitaliaTypeExtension>()?.breasts ?? Genital_Helper.average_breasts;
         }
 
         public static bool PawnStillNeedsGenitalia(Pawn pawn)

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+			<xpath>/Defs/GeneDef[defName="VRE_ChestFur"]</xpath>
+			<value>
+				<li Class="RJW_Genes.QirkExtension">
+				<Satisfiedquirk>FurLoverQuirk</Satisfiedquirk>
+				</li>
+			</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+			<xpath>/Defs/GeneDef[defName="VRE_CanineTail"]</xpath>
+			<value>
+				<li Class="RJW_Genes.QirkExtension">
+				<Satisfiedquirk>FurLoverQuirk</Satisfiedquirk>
+				</li>
+			</value>
+	</Operation>
+</Patch>
+

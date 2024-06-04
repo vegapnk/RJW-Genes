@@ -30,6 +30,8 @@ namespace RJW_BGS
             listing_Standard.Gap(5f);
             listing_Standard.CheckboxLabeled("genes as xenogenes", ref rjw_bgs_animal_genes_as_xenogenes, "If toggled, animal genes will be added as xenogenes.", 0f, 1f);
             listing_Standard.Gap(5f);
+            listing_Standard.CheckboxLabeled("enable VE genetics hybridation", ref rjw_bgs_VE_genetics, "If enabled and if you have VE genetics it will enable the hybridation system.", 0f, 1f);
+            listing_Standard.Gap(5f);
             listing_Standard.CheckboxLabeled("detailed-debug", ref rjw_bgs_detailed_debug, "Adds detailed information to the log about pregnancies and genes.", 0f, 1f);
             listing_Standard.End();
         }
@@ -41,11 +43,13 @@ namespace RJW_BGS
             Scribe_Values.Look<float>(ref RJW_BGSSettings.rjw_bgs_global_gene_chance, "rjw_bgs_global_gene_chance", RJW_BGSSettings.rjw_bgs_global_gene_chance, true);
             Scribe_Values.Look<bool>(ref RJW_BGSSettings.rjw_bgs_animal_genes_as_xenogenes, "rjw_bgs_animal_genes_as_xenogenes", RJW_BGSSettings.rjw_bgs_animal_genes_as_xenogenes, true);
             Scribe_Values.Look<bool>(ref RJW_BGSSettings.rjw_bgs_detailed_debug, "rjw_bgs_detailed_debug", RJW_BGSSettings.rjw_bgs_detailed_debug, true);
+            Scribe_Values.Look<bool>(ref RJW_BGSSettings.rjw_bgs_VE_genetics, "rjw_bgs_VE_genetics", RJW_BGSSettings.rjw_bgs_VE_genetics, true);
         }
 
         public static float rjw_bgs_global_gene_chance = 1f;
         public static bool rjw_bgs_enabled = true;
         public static bool rjw_bgs_animal_genes_as_xenogenes = false;
         public static bool rjw_bgs_detailed_debug = false;
+        public static bool rjw_bgs_VE_genetics = true;
     }
 }
