@@ -22,7 +22,5 @@ namespace RJW_Genes
 
         public static readonly HediffDef OvaryAgitator;
         public static readonly HediffDef Bioscaffold;
-
-        public static readonly HediffDef rjw_genes_animal_control_hediff;
     }
 }

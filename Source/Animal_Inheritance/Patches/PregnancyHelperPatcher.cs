@@ -21,10 +21,10 @@ namespace RJW_BGS
         {
             if (!RJW_BGSSettings.rjw_bgs_VE_genetics) return true;
             if (mother == null || father == null) return true;
-            bool humanMotherAndSupportedAnimal = mother.IsHuman() && BasePregnancyPatcher.parentGenerationOffspringRaces.Contains(father.kindDef.race.defName);
-            bool humanMotherAndSupportedHybrid = mother.IsHuman() && BasePregnancyPatcher.firstGenerationOffspringRaces.Contains(father.kindDef.race.defName);
-            bool humanFatherAndSupportedAnimal = father.IsHuman() && BasePregnancyPatcher.parentGenerationOffspringRaces.Contains(mother.kindDef.race.defName);
-            bool humanFatherAndSupportedHybrid = father.IsHuman() && BasePregnancyPatcher.firstGenerationOffspringRaces.Contains(mother.kindDef.race.defName);
+            bool humanMotherAndSupportedAnimal = mother.IsHuman() && BasePregnancyPatcher.supportedInitialAnimalRaces.Contains(father.kindDef.race.defName);
+            bool humanMotherAndSupportedHybrid = mother.IsHuman() && BasePregnancyPatcher.supportedHybridRaces.Contains(father.kindDef.race.defName);
+            bool humanFatherAndSupportedAnimal = father.IsHuman() && BasePregnancyPatcher.supportedInitialAnimalRaces.Contains(mother.kindDef.race.defName);
+            bool humanFatherAndSupportedHybrid = father.IsHuman() && BasePregnancyPatcher.supportedHybridRaces.Contains(mother.kindDef.race.defName);
 
             if (!(humanMotherAndSupportedAnimal || humanMotherAndSupportedHybrid||humanFatherAndSupportedAnimal|| humanFatherAndSupportedHybrid)) return true;
             if (humanMotherAndSupportedAnimal)

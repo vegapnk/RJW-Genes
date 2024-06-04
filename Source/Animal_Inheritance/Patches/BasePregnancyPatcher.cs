@@ -7,17 +7,13 @@ using Verse;
 using UnityEngine;
 using HarmonyLib;
 using rjw;
-using RimWorld;
 
 namespace RJW_BGS
 {
     [HarmonyPatch(typeof(Hediff_BasePregnancy))]
     public class BasePregnancyPatcher
     {
-        /// <summary>
-        /// The supported races that are produced by Vanilla Genetics Expanded, that can lead to different offsprings when in Human - Animal Sex
-        /// </summary>
-        public static List<string> firstGenerationOffspringRaces = new List<string>()
+        public static List<string> supportedHybridRaces = new List<string>()
             {
             "GR_Manbear",
             "GR_Bearman",
@@ -39,10 +35,7 @@ namespace RJW_BGS
             "GR_Lizardman"
             };
 
-        /// <summary>
-        /// The supported races that can produce Vanilla Genetics hybrids as Human - Animal Sex results. 
-        /// </summary>
-        public static List<string> parentGenerationOffspringRaces = new List<string>()
+        public static List<string> supportedInitialAnimalRaces = new List<string>()
             {
             "Bear_Grizzly",
             "Bear_Polar",
@@ -91,16 +84,18 @@ namespace RJW_BGS
             "Tortoise"
             };
 
+        public static HediffDef controler = DefDatabase<HediffDef>.GetNamed("rjw_genes_animal_control_hediff", false);
+
         [HarmonyPostfix]
         [HarmonyPatch("GenerateBabies")]
-        public static void AddComfortableWithHumansHediff (Hediff_BasePregnancy __instance)
+        public static void addHedif (Hediff_BasePregnancy __instance)
         {
+            if (controler == null) return;
+            
             foreach (Pawn baby in __instance.babies)
             {
-                if (baby != null && firstGenerationOffspringRaces.Contains(baby.kindDef.race.defName))
-                {
-                    baby.health.AddHediff(RJW_Genes.HediffDefOf.rjw_genes_animal_control_hediff);
-                }
+                if(baby != null && supportedHybridRaces.Contains(baby.kindDef.race.defName))
+                   baby.health.AddHediff(controler);
             }
         }
 
