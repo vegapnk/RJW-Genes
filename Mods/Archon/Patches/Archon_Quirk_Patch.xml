@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+			<xpath>/Defs/GeneDef[defName="VRE_Leatherskin"]</xpath>
+			<value>
+				<li Class="RJW_Genes.QirkExtension">
+				<Satisfiedquirk>SkinLoverQuirk</Satisfiedquirk>
+				</li>
+			</value>
+	</Operation>
+</Patch>
+

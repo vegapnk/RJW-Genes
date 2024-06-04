@@ -181,6 +181,13 @@
     <marketValueFactor>1.10</marketValueFactor>
     <biostatMet>-2</biostatMet>
     <biostatCpx>1</biostatCpx>
+	
+			<modExtensions>
+				<li Class="RJW_Genes.QirkExtension">
+				<Satisfiedquirk>ImpregnationFetishQuirk</Satisfiedquirk>
+				</li>
+			</modExtensions>
+	
   </GeneDef>
 
 </Defs>
