@@ -148,8 +148,8 @@
 	
   <GeneDef ParentName="GeneExtraGenitaliaBase">
     <defName>rjw_genes_featureless_chest</defName>
-    <label>Featureless Chest</label>
     <displayCategory>rjw_genes_genitalia_extras</displayCategory>
+    <label>featureless chest</label>
     <description>Carriers of this gene do not have breasts or nipples.</description>
     <iconPath>Genes/Icons/No_Breasts</iconPath>
     <geneClass>RJW_Genes.Gene_FeaturelessChest</geneClass>

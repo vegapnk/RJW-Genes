@@ -3,7 +3,7 @@
 
   <XenotypeDef>
     <defName>rjw_genes_succubus</defName>
-    <label>Succubus</label>
+    <label>succubus</label>
     <description>Succubi are strongly enhanced xenohumans. These overnaturally beautiful creatures strive parasitically on the Fertilin found in semen.</description>
     <descriptionShort>Succubi are beautiful and extremely hungry Xenohumans. They strive on having sex and extracting their victims life-force through this. </descriptionShort>
     <iconPath>Genes/Icons/Xenotypes/Xenotype-Succubus</iconPath>
@@ -53,7 +53,7 @@
   
   <XenotypeDef>
     <defName>rjw_genes_incubus</defName>
-    <label>Incubus</label>
+    <label>incubus</label>
     <description>Incubi are strongly enhanced xenohumans. These overnaturally beautiful creatures strive parasitically on the Fertilin found in semen.</description>
     <descriptionShort>Incubi are beautiful and extremely hungry Xenohumans. They strive on having sex and extracting their victims life-force through this. </descriptionShort>
     <iconPath>Genes/Icons/Xenotypes/Xenotype-Incubus</iconPath>

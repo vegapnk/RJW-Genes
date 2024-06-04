@@ -15,55 +15,55 @@
 
   <GeneCategoryDef>
     <defName>rjw_genes_gender</defName>
-    <label>Gender</label>
+    <label>gender</label>
     <displayPriorityInXenotype>21</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <GeneCategoryDef>
     <defName>rjw_genes_genitalia_type</defName>
-    <label>cosmetic - Genitalia Types</label>
+    <label>cosmetic - genitalia type</label>
     <displayPriorityInXenotype>19</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <GeneCategoryDef>
     <defName>rjw_genes_genitalia_extras</defName>
-    <label>Genitalia Amounts</label>
+    <label>genitalia count</label>
     <displayPriorityInXenotype>17</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <GeneCategoryDef>
     <defName>rjw_genes_genitalia_size</defName>
-    <label>Genitalia Size / Attributes</label>
+    <label>genitalia size / attributes</label>
     <displayPriorityInXenotype>15</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <GeneCategoryDef>
     <defName>rjw_genes_fertilin</defName>
-    <label>Fertilin</label>
+    <label>fertilin</label>
     <displayPriorityInXenotype>14</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <GeneCategoryDef>
     <defName>rjw_genes_breeding</defName>
-    <label>Breeding</label>
+    <label>breeding</label>
     <displayPriorityInXenotype>13</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <GeneCategoryDef>
     <defName>rjw_genes_cum</defName>
-    <label>Cum</label>
+    <label>cum</label>
     <displayPriorityInXenotype>12</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <GeneCategoryDef>
     <defName>rjw_genes_damage</defName>
-    <label>Genital Related Damage</label>
+    <label>genital-related damage</label>
     <displayPriorityInXenotype>11</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <GeneCategoryDef>
     <defName>rjw_genes_special</defName>
-    <label>Genital Based Special Abilities</label>
+    <label>genital-based special abilities</label>
     <displayPriorityInXenotype>8</displayPriorityInXenotype>
   </GeneCategoryDef>
   

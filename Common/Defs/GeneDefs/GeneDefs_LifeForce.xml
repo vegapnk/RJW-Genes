@@ -62,7 +62,7 @@
 	
 	<GeneDef ParentName="LifeForceBase">
 		<defName>rjw_genes_pussyhealing</defName>
-		<label>Pussy Healer</label>
+		<label>pussy healer</label>
 		<labelShortAdj>pussyhealer</labelShortAdj>
 		<description>Carriers of this gene are able use vaginal sex to tend to other's wounds.</description>
 		<iconPath>Genes/Icons/Healpussy</iconPath>
@@ -87,7 +87,7 @@
 	
 	<GeneDef ParentName="LifeForceBase">
 		<defName>rjw_genes_cockeater</defName>
-		<label>Cockeater</label>
+		<label>cockeater</label>
 		<labelShortAdj>cockeater</labelShortAdj>
 		<description>Carriers of this gene are able eat cocks to restore their fertilin supply. Cocks are consumed during that process.</description>
 		<iconPath>Genes/Icons/cockeater</iconPath>
@@ -178,7 +178,7 @@
 	
 	<GeneDef ParentName="LifeForceBase">
 		<defName>rjw_genes_cum_eater</defName>
-		<label>Cum eater</label>
+		<label>cum eater</label>
 		<description>Carriers of this gene are able to absorb fertilin through eating cum. This includes oral sex, eating cum for food or sucking out cumflated pawns. </description>
 		<iconPath>Genes/Icons/cumeater</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
@@ -188,7 +188,7 @@
 	
 	<GeneDef ParentName="LifeForceBase">
 		<defName>rjw_genes_fertilin_absorber</defName>
-		<label>Fertilin Absorber</label>
+		<label>fertilin absorber</label>
 		<description>Carriers of this gene are able to absorb the fertilin inside sperm through their vagina and anus.</description>
 		<iconPath>Genes/Icons/Vaginal_cum_absorption</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Big and Small - Vampires and the Undead</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="VU_Returned" or defName="VU_Ghoul" or defName="VU_Frankenstein"]/genes</xpath>
+          <value>
+            <li>rjw_genes_Necro_genitalia</li>
+            <li>rjw_genes_no_sex_need</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="VU_Revenant"]/genes</xpath>
+          <value>
+            <li>rjw_genes_Necro_genitalia</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="VU_Lycantrope"]/genes</xpath> <!-- sic -->
+          <value>
+            <li>rjw_genes_canine_genitalia</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="VU_Nosferatu" or defName="VU_Dracul_Feral"]/genes</xpath>
+          <value>
+            <li>rjw_genes_demonic_genitalia</li>
+            <li>rjw_genes_no_sex_need</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="VU_Dracul_Spawn" 
+                                  or defName="VU_Dracul" 
+                                  or defName="VU_Dracul_Mature" 
+                                  or defName="VU_Dracul_Progenitor"
+                                ]/genes</xpath>
+          <value>
+            <li>rjw_genes_demonic_genitalia</li>
+          </value>
+        </li>        
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="VU_WhiteRose"]/genes</xpath>
+          <value>
+            <li>rjw_genes_demonic_genitalia</li>
+            <li>rjw_genes_aphrodisiac_pheromones</li>
+            <li>rjw_genes_bisexual</li>
+            <li MayRequire="rjw.sexperience">AptitudeRemarkable_Sex</li>
+            <li MayRequire="LustLicentia.RJWLabs">rjw_genes_elasticity</li>
+          </value>
+        </li>
+
+        <!-- See PatchBSShared.xml for demon patches. -->
+      </operations>
+    </match>
+  </Operation>
+</Patch>

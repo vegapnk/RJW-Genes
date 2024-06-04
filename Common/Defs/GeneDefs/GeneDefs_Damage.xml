@@ -3,7 +3,7 @@
 
   <GeneDef MayRequire="LustLicentia.RJWLabs">
     <defName>rjw_genes_elasticity</defName>
-    <label>Elasticity</label>
+    <label>elasticity</label>
     <displayCategory>rjw_genes_damage</displayCategory>
     <description>This Xenotype cannot get stretched by huge penetrators.</description>
     <iconPath>Genes/Icons/Elasticity</iconPath>
@@ -22,7 +22,7 @@
 
   <GeneDef >
     <defName>rjw_genes_unbreakable</defName>
-    <label>Unbreakable</label>
+    <label>unbreakable</label>
     <displayCategory>rjw_genes_damage</displayCategory>
     <description>This Gene makes the Carrier unable to get mood or social penalties from being raped and they cannot be broken for a long period of time.</description>
     <iconPath>UI/Icons/Rituals/TrialDefend</iconPath>
