@@ -1,44 +1,73 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationAddModExtension">
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Saurid</li>
+		</mods>
+		<match Class="PatchOperationAddModExtension">
 			<xpath>/Defs/GeneDef[defName="VRESaurids_FrilledEars"]</xpath>
 			<value>
 				<li Class="RJW_Genes.QirkExtension">
-				<Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
+					<Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
 				</li>
 			</value>
+		</match>
 	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-			<xpath>/Defs/GeneDef[defName="VRESaurids_CenterFrill"]</xpath>
-			<value>
-				<li Class="RJW_Genes.QirkExtension">
-				<Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
-				</li>
-			</value>
-	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Saurid</li>
+		</mods>
+		<match Class="PatchOperationAddModExtension">
 			<xpath>/Defs/GeneDef[defName="VRESaurids_GeckoTail"]</xpath>
 			<value>
 				<li Class="RJW_Genes.QirkExtension">
-				<Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
+					<Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
 				</li>
 			</value>
+		</match>
 	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Saurid</li>
+		</mods>
+		<match Class="PatchOperationAddModExtension">
+			<xpath>/Defs/GeneDef[defName="VRESaurids_CenterFrill"]</xpath>
+			<value>
+				<li Class="RJW_Genes.QirkExtension">
+					<Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Saurid</li>
+		</mods>
+		<match Class="PatchOperationAddModExtension">
 			<xpath>/Defs/GeneDef[defName="VRESaurids_SauridClaws"]</xpath>
 			<value>
 				<li Class="RJW_Genes.QirkExtension">
-				<Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
+					<Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
 				</li>
 			</value>
+		</match>
 	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Saurid</li>
+		</mods>
+		<match Class="PatchOperationAddModExtension">
 			<xpath>/Defs/GeneDef[defName="VRESaurids_ScaleSkin"]</xpath>
 			<value>
 				<li Class="RJW_Genes.QirkExtension">
-				<Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
+					<Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
 				</li>
 			</value>
+		</match>
 	</Operation>
-</Patch>
 
+</Patch>

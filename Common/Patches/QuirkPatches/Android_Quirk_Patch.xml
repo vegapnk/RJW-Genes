@@ -1,26 +1,44 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationAddModExtension">
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Android</li>
+		</mods>
+		<match Class="PatchOperationAddModExtension">
 			<xpath>/Defs/VREAndroids.AndroidGeneDef[defName="VREA_SyntheticBody"]</xpath>
 			<value>
 				<li Class="RJW_Genes.QirkExtension">
-				<Satisfiedquirk>RobotLoverQuirk</Satisfiedquirk>
+					<Satisfiedquirk>RobotLoverQuirk</Satisfiedquirk>
 				</li>
 			</value>
+		</match>
 	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Android</li>
+		</mods>
+		<match Class="PatchOperationAddModExtension">
 			<xpath>/Defs/VREAndroids.AndroidGeneDef[defName="VREA_SyntheticSkin"]</xpath>
 			<value>
 				<li Class="RJW_Genes.QirkExtension">
-				<Satisfiedquirk>RobotLoverQuirk</Satisfiedquirk>
+					<Satisfiedquirk>RobotLoverQuirk</Satisfiedquirk>
 				</li>
 			</value>
+		</match>
 	</Operation>
-		<Operation Class="PatchOperationReplace">
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Android</li>
+		</mods>
+		<match Class="PatchOperationReplace">
 			<xpath>/Defs/GeneCategoryDef[defName="VREA_Subroutine"]/displayPriorityInXenotype</xpath>
 			<value>
 				<displayPriorityInXenotype>10</displayPriorityInXenotype>
 			</value>
+		</match>
 	</Operation>
-</Patch>
 
+</Patch>
