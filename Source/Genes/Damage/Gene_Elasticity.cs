@@ -2,8 +2,6 @@
 using Verse;
 
 
-// TODO: Re-Introduce this once Licentia is 1.5
-// It should be rather simple 
 namespace RJW_Genes
 {
     /// <summary>

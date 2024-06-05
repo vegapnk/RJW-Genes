@@ -131,8 +131,6 @@ namespace RJW_Genes
             copy.equipment.DestroyAllEquipment();
             copy.apparel.DestroyAll();
 
-            //TODO: Make a letter on birth!
-
 
             PawnUtility.TrySpawnHatchedOrBornPawn(copy, toMultiply);
             // Move the copy in front of the origin, rather than on top
@@ -150,6 +148,9 @@ namespace RJW_Genes
             copy.style = CopyStyleTracker(copy, toMultiply.style);
             copy.story = CopyStoryTracker(copy, toMultiply.story);
 
+
+            Find.LetterStack.ReceiveLetter("Orgasmic Mytosis", $"{toMultiply.NameShortColored} performed mytosis on orgasm! The pawn and its clone entered a regenerative state.",
+                RimWorld.LetterDefOf.NeutralEvent, copy);
 
             return copy;
 		}

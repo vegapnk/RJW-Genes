@@ -16,7 +16,6 @@ namespace RJW_Genes
     public class CompAbilityEffect_MatingCall : CompAbilityEffect
     {
 
-        bool fired = false; 
         private new CompProperties_AbilityMatingCall Props
         {
             get

@@ -12,7 +12,6 @@ namespace RJW_Genes
 {
     public class CompAbilityEffect_PheromoneSpit : CompAbilityEffect
     {
-        bool fired = false;
         private new CompProperties_AbilityPheromoneSpit Props
         {
             get

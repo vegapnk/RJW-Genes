@@ -13,19 +13,26 @@ using RJW_Genes;
 namespace RJW_BGS
 {
     [HarmonyPatch(typeof(PregnancyHelper))]
-    public class PregnancyHelperPatcher
+    public class Patch_RJW_PregnancyHelper_VanillaExpandedGenetics
     {
 
+        /// <summary>
+        /// This Patch changes the pregnancy logic to check for possible hybridization. 
+        /// Iff the hybrdiization applies, this prefix skips the normal AddPregnancyHediff (by returning false). 
+        ///
+        /// Small Note: Below we use `Hediff_BasePregnancy.Create<Hediff_BestialPregnancy>(mother, father, DnaGivingParent.Mother);`
+        /// This completely creates the pregnancy, it does not need to be assigned to anything or added to some hediffs. 
+        /// </summary>
         [HarmonyPrefix]
         [HarmonyPatch("AddPregnancyHediff")]
         public static bool AddPregnancyHediffPrefix(Pawn mother, Pawn father)
         {
             if (!RJW_BGSSettings.rjw_bgs_VE_genetics) return true;
             if (mother == null || father == null) return true;
-            bool humanMotherAndSupportedAnimal = mother.IsHuman() && BasePregnancyPatcher.supportedInitialAnimalRaces.Contains(father.kindDef.race.defName);
-            bool humanMotherAndSupportedHybrid = mother.IsHuman() && BasePregnancyPatcher.supportedHybridRaces.Contains(father.kindDef.race.defName);
-            bool humanFatherAndSupportedAnimal = father.IsHuman() && BasePregnancyPatcher.supportedInitialAnimalRaces.Contains(mother.kindDef.race.defName);
-            bool humanFatherAndSupportedHybrid = father.IsHuman() && BasePregnancyPatcher.supportedHybridRaces.Contains(mother.kindDef.race.defName);
+            bool humanMotherAndSupportedAnimal = mother.IsHuman() && Patch_RJW_BasePregnancy_VanillaExpandedGenetics.supportedInitialAnimalRaces.Contains(father.kindDef.race.defName);
+            bool humanMotherAndSupportedHybrid = mother.IsHuman() && Patch_RJW_BasePregnancy_VanillaExpandedGenetics.supportedHybridRaces.Contains(father.kindDef.race.defName);
+            bool humanFatherAndSupportedAnimal = father.IsHuman() && Patch_RJW_BasePregnancy_VanillaExpandedGenetics.supportedInitialAnimalRaces.Contains(mother.kindDef.race.defName);
+            bool humanFatherAndSupportedHybrid = father.IsHuman() && Patch_RJW_BasePregnancy_VanillaExpandedGenetics.supportedHybridRaces.Contains(mother.kindDef.race.defName);
 
             if (!(humanMotherAndSupportedAnimal || humanMotherAndSupportedHybrid||humanFatherAndSupportedAnimal|| humanFatherAndSupportedHybrid)) return true;
             if (humanMotherAndSupportedAnimal)
