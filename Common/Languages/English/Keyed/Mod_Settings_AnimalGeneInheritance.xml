@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+    <rjw_genes_animal_inheritance_settings_enabled_key>enabled</rjw_genes_animal_inheritance_settings_enabled_key>
+    <rjw_genes_animal_inheritance_settings_enabled_explanation>If toggled, Animal Pregnancies will try inherit genes.</rjw_genes_animal_inheritance_settings_enabled_explanation>
+
+    <rjw_genes_animal_inheritance_settings_chance_key></rjw_genes_animal_inheritance_settings_chance_key>
+    <rjw_genes_animal_inheritance_settings_chance_explanation></rjw_genes_animal_inheritance_settings_chance_explanation>
+
+    <rjw_genes_animal_inheritance_settings_added_as_xenogene_key>genes as xenogenes</rjw_genes_animal_inheritance_settings_added_as_xenogene_key>
+    <rjw_genes_animal_inheritance_settings_added_as_xenogene_explanation>If toggled on, animal genes will be added as xenogenes.</rjw_genes_animal_inheritance_settings_added_as_xenogene_explanation>
+
+    <rjw_genes_animal_inheritance_settings_ve_genetics_hybridization_key>enable VE genetics hybridation</rjw_genes_animal_inheritance_settings_ve_genetics_hybridization_key>
+    <rjw_genes_animal_inheritance_settings_ve_genetics_hybridization_explanation>If enabled and if you have VE genetics it will enable the hybridation system.</rjw_genes_animal_inheritance_settings_ve_genetics_hybridization_explanation>
+
+    <rjw_genes_animal_inheritance_settings_detailed_debug_key></rjw_genes_animal_inheritance_settings_detailed_debug_key>
+    <rjw_genes_animal_inheritance_settings_detailed_debug_explanation></rjw_genes_animal_inheritance_settings_detailed_debug_explanation>
+</LanguageData>
