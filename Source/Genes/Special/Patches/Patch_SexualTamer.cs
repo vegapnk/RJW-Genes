@@ -45,7 +45,9 @@ namespace RJW_Genes
                 {
                     if (RJW_Genes_Settings.rjw_genes_detailed_debug)
                         ModLog.Message($"{human} is a sextamer with bestiality on colony animal {animal} - trying to train");
+                    if (animal.training == null) return;
                     var trainable = animal.training.NextTrainableToTrain();
+                    if (trainable == null) return;
                     animal.training.Train(trainable, human);
                 }
             }
