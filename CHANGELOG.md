@@ -31,6 +31,9 @@
 - Minified some Race-Patches, thanks to @Flock-of-birds (#83)
 - XML-Genitalia-Genes can now also provide Breasts. Thanks to @Jaaldabaoth (#84 / #88)
 - Many patches and files went into a `Mods`Folder and use an `LoadFolders.xml`. Thanks to @Jaaldabaoth (#84 / #88)
+- Translate-Keys for Settings 
+- Translate-Key for Animal Hybrid Race-Names
+- "Tick-Speed" for Evergrowth moved from Mod-Settings to XML
 
 # 2.0.0
 

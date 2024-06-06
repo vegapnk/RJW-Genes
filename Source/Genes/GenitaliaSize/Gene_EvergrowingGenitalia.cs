@@ -15,7 +15,7 @@ namespace RJW_Genes
         {
             base.Tick();
 
-            int interval = ModExtensionHelper.GetTickIntervalFromModExtension(GeneDefOf.rjw_genes_evergrowth, BASE_TICKS);
+            int interval = ModExtensionHelper.GetTickIntervalFromModExtension(GeneDefOf.rjw_genes_evergrowth, ModExtensionHelper.GetTickIntervalFromModExtension(this.def, BASE_TICKS));
             if (pawn.IsHashIntervalTick(interval) 
                 && this.pawn.Map != null 
                 && pawn.ageTracker.AgeBiologicalYears >= RJW_Genes_Settings.rjw_genes_resizing_age)
