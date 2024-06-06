@@ -66,7 +66,7 @@ namespace RJW_Genes
                             postfix: new HarmonyMethod(typeof(Patch_SexTicks_ChangePsyfocus), nameof(Patch_SexTicks_ChangePsyfocus.Postfix)));
                         // Gene: Likes Cumflation [Postfix Patch]
                         harmony.Patch(AccessTools.Method(typeof(LicentiaLabs.CumflationHelper), nameof(LicentiaLabs.CumflationHelper.Cumflation)),
-                            prefix: new HarmonyMethod(typeof(Patch_LikesCumflation), nameof(Patch_LikesCumflation.PostFix)));
+                            postfix: new HarmonyMethod(typeof(Patch_LikesCumflation), nameof(Patch_LikesCumflation.PostFix)));
                     }
                 }))();
             }

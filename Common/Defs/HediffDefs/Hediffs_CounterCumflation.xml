@@ -24,6 +24,7 @@
           <li>
             <label>slight</label>
             <minSeverity>0.2</minSeverity>
+            <becomeVisible>false</becomeVisible>
             <statOffsets>
               <Vulnerability>-0.1</Vulnerability>
             </statOffsets>
@@ -37,6 +38,7 @@
           <li>
             <label>moderate</label>
             <minSeverity>0.4</minSeverity>
+            <becomeVisible>false</becomeVisible>
             <statOffsets>
               <Vulnerability>-0.3</Vulnerability>
             </statOffsets>
@@ -51,6 +53,7 @@
           <li>
             <label>intense</label>
             <minSeverity>0.65</minSeverity>
+            <becomeVisible>false</becomeVisible>
             <statOffsets>
               <Vulnerability>+0.5</Vulnerability>
             </statOffsets>
@@ -65,6 +68,7 @@
           <li>
             <label>extreme</label>
             <minSeverity>0.9</minSeverity>
+            <becomeVisible>false</becomeVisible>
             <statOffsets>
               <Vulnerability>-0.7</Vulnerability>
             </statOffsets>
@@ -113,6 +117,7 @@
         <label>bloated</label>
         <minSeverity>0.2</minSeverity>
         <hungerRateFactor>0.95</hungerRateFactor>
+        <becomeVisible>false</becomeVisible>
         <statOffsets>
           <Vulnerability>-0.05</Vulnerability>
         </statOffsets>
@@ -130,6 +135,7 @@
         <statOffsets>
           <Vulnerability>-0.1</Vulnerability>
         </statOffsets>
+        <becomeVisible>false</becomeVisible>
         <capMods>
           <li>
             <capacity>Moving</capacity>
@@ -141,6 +147,7 @@
         <label>stuffed</label>
         <minSeverity>0.6</minSeverity>
         <hungerRateFactor>0.75</hungerRateFactor>
+        <becomeVisible>false</becomeVisible>
         <statOffsets>
           <Vulnerability>-0.15</Vulnerability>
         </statOffsets>
@@ -156,6 +163,7 @@
         <label>overstuffed</label>
         <minSeverity>0.8</minSeverity>
         <hungerRateFactor>0.5</hungerRateFactor>
+        <becomeVisible>false</becomeVisible>
         <statOffsets>
           <Vulnerability>-0.2</Vulnerability>
         </statOffsets>

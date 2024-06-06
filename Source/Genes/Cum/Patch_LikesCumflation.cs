@@ -9,8 +9,6 @@ using HarmonyLib;
 using rjw;
 using RimWorld;
 using Verse;
-using static LicentiaLabs.Licentia;
-using static HarmonyLib.Code;
 
 namespace RJW_Genes
 {
@@ -43,36 +41,23 @@ namespace RJW_Genes
 
         public static void AddOrIncreaseCumflationCounterHediff(Pawn inflated)
         {
-            //Hediff cumstuffed_hediff = inflated.health.hediffSet.GetFirstHediffOfDef(LicentiaLabs.Licentia.HediffDefs.Cumstuffed);
-            Hediff cumstuffed_hediff = LicentiaLabs.CumflationHelper.GetCumflationHediff(inflated, LicentiaLabs.Licentia.HediffDefs.Cumstuffed, "stomach");
+            Hediff cumstuffed_hediff = inflated.health.hediffSet.GetFirstHediffOfDef(LicentiaLabs.Licentia.HediffDefs.Cumstuffed);
+            //Hediff cumstuffed_hediff = LicentiaLabs.CumflationHelper.GetCumflationHediff(inflated, LicentiaLabs.Licentia.HediffDefs.Cumstuffed, "stomach");
             if (cumstuffed_hediff != null && cumstuffed_hediff.Severity >= 0.01) {
-
                 ModLog.Message($"{inflated} got cumstuffed and gets the counter-part");
                 var bodyPartRecord = inflated.RaceProps.body.AllParts.Find(bpr => bpr.def.defName.Contains("stomach") || bpr.def.defName.Contains("stomach".ToLower()));
                 var counter_hediff = CreateOrGetCumflationCounterHediff(inflated, HediffDefOf.rjw_genes_cumstuffed_counter, bodyPartRecord);
                 counter_hediff.Severity = cumstuffed_hediff.Severity;
             }
-            else if (cumstuffed_hediff != null)
-            {
-                ModLog.Message("cumstuffed_hediff was too un-sever");
-            }
-            else
-                ModLog.Message("cumstuffed_hediff was null");
 
             Hediff cumflation_hediff = inflated.health.hediffSet.GetFirstHediffOfDef(LicentiaLabs.Licentia.HediffDefs.Cumflation);
             if (cumflation_hediff != null && cumflation_hediff.Severity >= 0.01)
             {
                 ModLog.Message($"{inflated} got cumflated and gets the counter-part");
                 var bodyPartRecord = Genital_Helper.get_genitalsBPR(inflated);
-                var counter_hediff = CreateOrGetCumflationCounterHediff(inflated, HediffDefOf.rjw_genes_cumstuffed_counter, bodyPartRecord);
-                counter_hediff.Severity = cumstuffed_hediff.Severity;
+                var counter_hediff = CreateOrGetCumflationCounterHediff(inflated, HediffDefOf.rjw_genes_cumflation_counter, bodyPartRecord);
+                counter_hediff.Severity = cumflation_hediff.Severity;
             }
-            else if (cumflation_hediff != null)
-            {
-                ModLog.Message("Cumflation Hediff was too un-sever");
-            }
-            else
-                ModLog.Message("Cumflation Hediff was null");
         }
 
         public static Hediff CreateOrGetCumflationCounterHediff(Pawn inflated, HediffDef counterCumflationDef, BodyPartRecord bodyPartRecord)
@@ -83,8 +68,6 @@ namespace RJW_Genes
                 cumflationHediff = HediffMaker.MakeHediff(counterCumflationDef, inflated, bodyPartRecord);
                 cumflationHediff.Severity = 0;
                 inflated.health.AddHediff(cumflationHediff, bodyPartRecord);
-            } else {
-                ModLog.Message("Did not find a correct Counter-CumflationDef ");
             }
             return cumflationHediff;
 
