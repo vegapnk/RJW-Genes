@@ -48,13 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal_Inheritance\InheritanceUtility.cs" />
-    <Compile Include="Animal_Inheritance\Patches\BasePregnancyPatcher.cs" />
     <Compile Include="Animal_Inheritance\Patches\Patch_RJW_BestialityPregnancyUtility.cs" />
     <Compile Include="Animal_Inheritance\Patches\Patch_RJW_HediffInsect_Egg.cs" />
     <Compile Include="Animal_Inheritance\Patches\Patch_Vanilla_PregnancyUtility.cs" />
     <Compile Include="Animal_Inheritance\Defs\RaceGeneDef.cs" />
     <Compile Include="Animal_Inheritance\Defs\RaceGeneDef_Helper.cs" />
-    <Compile Include="Animal_Inheritance\Patches\PregnancyHelperPatcher.cs" />
     <Compile Include="Animal_Inheritance\Settings\RJW_BGSSettings.cs" />
     <Compile Include="Animal_Inheritance\Settings\RJW_BGSSettingsController.cs" />
     <Compile Include="Animal_Inheritance\Defs\BestialityGeneInheritanceDef.cs" />
@@ -80,7 +78,6 @@
     <Compile Include="Genes\Life_Force\Interactions\SuccubusTailjob\GenesPartKindUsageRule.cs" />
     <Compile Include="Genes\Life_Force\Interactions\SuccubusTailjob\SubSuccubusTailCustomRequirementHandler.cs" />
     <Compile Include="Genes\Patches\PatchLitteredBirth.cs" />
-    <Compile Include="Common\Patches\PatchGetParents.cs" />
     <Compile Include="Common\Patches\PatchPregnancyHelper.cs" />
     <Compile Include="GeneDefOf.cs" />
     <Compile Include="Genes\Breeding\Genes\Gene_MechBreeder.cs" />
@@ -219,7 +216,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="RJWSexperience">
-      <HintPath>..\..\rjw-sexperience-master\1.5\Assemblies\RJWSexperience.dll</HintPath>
+      <HintPath>..\..\rjw-sexperience\1.5\Assemblies\RJWSexperience.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

@@ -14,13 +14,17 @@
 - "Curiosity Genes" alongside other Curiosities from VRE. Thanks to @Jaaldabaoth (#88)
 - Support for many VE-Genetics Animals into the Animal-Framework. Thanks to @Jaaldabaoth (#88)
 
+**Removals**:
+
+- Removed the Implants introduced in 2.0.0 - they imposed a hidden dependency on Royalty (Fixes #89)
+
 **Fixes**:
 
 - Licentia Genes are back in and should work again. I used the [updated for by Jaaldabaoth](https://gitgud.io/Jaaldabaoth/licentia-labs) for my testing.
 - Lower-casing most labels to fit rimworld standards, thanks to @Flock-of-birds (#83)
 - X-Gender-Only Genes leave / re-add artificial genitalia. Thanks to @Jaaldabaoth (#84 / #88)
 - Issues with Elasticity References (#87)
-
+- Null Pointer for LoveFeeding when finding Mechs. Thanks to @Jaaldabaoth (Fixes #90)
 
 **Changes**:
 
