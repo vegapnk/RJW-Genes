@@ -13,6 +13,7 @@
 - "Genes" to support VRE Androids having Mechanical Genitalia. Thanks to @Jaaldabaoth (#88)
 - "Curiosity Genes" alongside other Curiosities from VRE. Thanks to @Jaaldabaoth (#88)
 - Support for many VE-Genetics Animals into the Animal-Framework. Thanks to @Jaaldabaoth (#88)
+- "Likes Cumflation"-Gene now also makes pawns immune against the effects of cumflations. They are still cumflated. 
 
 **Removals**:
 
@@ -34,6 +35,7 @@
 - Translate-Keys for Settings 
 - Translate-Key for Animal Hybrid Race-Names
 - "Tick-Speed" for Evergrowth moved from Mod-Settings to XML
+- Some new Icons thanks to Kira-Bad-Artist
 
 # 2.0.0
 

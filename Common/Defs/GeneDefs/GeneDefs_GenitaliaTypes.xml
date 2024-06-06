@@ -68,7 +68,7 @@
     <defName>rjw_genes_feline_genitalia</defName>
     <label>feline genitalia</label>
     <description>Carriers of this gene develop feline genitalia.</description>
-    <iconPath>Genes/Icons/Genitalia_Feline</iconPath>
+    <iconPath>Genes/Icons/RJW_Genes_Feline_Genitalia</iconPath>
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>CatPenis</penis>

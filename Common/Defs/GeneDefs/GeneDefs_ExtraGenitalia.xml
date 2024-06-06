@@ -164,7 +164,7 @@
     <label>udder</label>
     <displayCategory>rjw_genes_genitalia_extras</displayCategory>
     <description>Carriers of this gene have udders and breasts.</description>
-    <iconPath>Things/Mote/Heart</iconPath>
+    <iconPath>Genes/Icons/RJW_Genes_Udder</iconPath>
     <geneClass>RJW_Genes.Gene_UdderBreasts</geneClass>
     <displayOrderInCategory>711</displayOrderInCategory>
     <exclusionTags>
