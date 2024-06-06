@@ -57,13 +57,16 @@ namespace RJW_Genes
                     {
                         // Gene: Cumflation Immunity [Prefix Patch]
                         harmony.Patch(AccessTools.Method(typeof(LicentiaLabs.CumflationHelper), nameof(LicentiaLabs.CumflationHelper.Cumflation)),
-                            prefix: new HarmonyMethod(typeof(Patch_Cumflation), nameof(Patch_Cumflation.Prefix)));
+                            prefix: new HarmonyMethod(typeof(Patch_CumflationImmunity), nameof(Patch_CumflationImmunity.Prefix)));
                         // Gene: Generous Donor [Postfix Patch]
                         harmony.Patch(AccessTools.Method(typeof(LicentiaLabs.CumflationHelper), nameof(LicentiaLabs.CumflationHelper.TransferNutrition)),
                             postfix: new HarmonyMethod(typeof(Patch_TransferNutrition), nameof(Patch_TransferNutrition.Postfix)));
                         // Gene: CumEater [Postfix Patch] -- This is not exactly licentia, but the Generous-Donor Gene is only active with Licentia
                         harmony.Patch(AccessTools.Method(typeof(rjw.JobDriver_Sex), nameof(rjw.JobDriver_Sex.ChangePsyfocus)),
                             postfix: new HarmonyMethod(typeof(Patch_SexTicks_ChangePsyfocus), nameof(Patch_SexTicks_ChangePsyfocus.Postfix)));
+                        // Gene: Likes Cumflation [Postfix Patch]
+                        harmony.Patch(AccessTools.Method(typeof(LicentiaLabs.CumflationHelper), nameof(LicentiaLabs.CumflationHelper.Cumflation)),
+                            prefix: new HarmonyMethod(typeof(Patch_LikesCumflation), nameof(Patch_LikesCumflation.PostFix)));
                     }
                 }))();
             }

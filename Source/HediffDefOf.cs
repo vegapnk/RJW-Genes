@@ -20,6 +20,9 @@ namespace RJW_Genes
         public static readonly HediffDef rjw_genes_orgasmic_mytosis_hediff;
         public static readonly HediffDef rjw_genes_mytosis_shock_hediff;
 
+        [MayRequire("LustLicentia.RJWLabs")] public static readonly HediffDef rjw_genes_cumstuffed_counter;
+        [MayRequire("LustLicentia.RJWLabs")] public static readonly HediffDef rjw_genes_cumflation_counter;
+
         public static readonly HediffDef OvaryAgitator;
         public static readonly HediffDef Bioscaffold;
     }
