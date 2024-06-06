@@ -9,12 +9,13 @@ namespace RJW_Genes
     public class Gene_EvergrowingGenitalia : RJW_Gene
     {
 
+        const int BASE_TICKS = 60000;
 
         public override void Tick()
         {
             base.Tick();
 
-            int interval = ModExtensionHelper.GetTickIntervalFromModExtension(GeneDefOf.rjw_genes_evergrowth, RJW_Genes_Settings.rjw_genes_evergrowth_ticks);
+            int interval = ModExtensionHelper.GetTickIntervalFromModExtension(GeneDefOf.rjw_genes_evergrowth, BASE_TICKS);
             if (pawn.IsHashIntervalTick(interval) 
                 && this.pawn.Map != null 
                 && pawn.ageTracker.AgeBiologicalYears >= RJW_Genes_Settings.rjw_genes_resizing_age)
