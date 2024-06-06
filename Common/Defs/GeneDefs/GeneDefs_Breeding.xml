@@ -82,7 +82,7 @@
 		<defName>rjw_genes_mating_call</defName>
 		<label>Mating Call</label>
 		<description>This gene allows to call nearby animals and invite them for mating.</description>
-    <iconPath>UI/Abilities/AnimalBerserkPulse</iconPath>
+    <iconPath>Genes/Icons/Animal_Mating_Call</iconPath>
 		<displayOrderInCategory>65</displayOrderInCategory>
 		<abilities>
 			<li>rjw_genes_ability_mating_call</li>
@@ -99,7 +99,7 @@
 		<defName>rjw_genes_pheromone_spit</defName>
 		<label>Pheromone Spit</label>
 		<description>This gene allows to mark targets for breeding, enticing nearby animals for a ride.</description>
-    <iconPath>UI/Abilities/AnimalBerserkPulse</iconPath>
+    <iconPath>Genes/Icons/Pheromone_Spit</iconPath>
 		<displayOrderInCategory>66</displayOrderInCategory>
 		<abilities>
 			<li>rjw_genes_ability_pheromone_spit</li>

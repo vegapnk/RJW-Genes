@@ -137,7 +137,7 @@
         <label>Sexual Tamer</label>
         <labelShortAdj>sextamer</labelShortAdj>
         <description>Bestiality has a chance to tame animals or advance their training.</description>
-        <iconPath>UI/Abilities/AnimalBerserkPulse</iconPath>
+        <iconPath>Genes/Icons/Sexual_Tamer</iconPath>
 		<displayOrderInCategory>14</displayOrderInCategory>
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>-1</biostatMet>

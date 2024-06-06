@@ -4,7 +4,8 @@
     <defName>rjw_genes_ability_pheromone_spit</defName>
     <label>pheromone spit</label>
     <description>Spit a condensed ball of animal pheromones to mark a target. Nearby Animals will try to breed the target. This means all animals - hostile, friendly and wild.</description>
-    <iconPath>UI/Abilities/PiercingSpine</iconPath>
+    <iconPath>Genes/Icons/Pheromone_Spit</iconPath>
+
     <cooldownTicksRange>3000</cooldownTicksRange>
     <displayOrder>201</displayOrder>
     <aiCanUse>true</aiCanUse>

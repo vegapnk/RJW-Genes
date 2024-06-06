@@ -5,8 +5,8 @@
     <defName>rjw_genes_ability_mating_call</defName>
     <label>Mating Call</label>
     <description>Calls nearby animals to breed me.</description>
-    <iconPath>UI/Abilities/AnimalBerserkPulse</iconPath>
-
+    <iconPath>Genes/Icons/Animal_Mating_Call</iconPath>
+    
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 
