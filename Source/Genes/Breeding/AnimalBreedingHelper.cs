@@ -29,8 +29,13 @@ namespace RJW_Genes
             {
                 if (ends_manhunter)
                     EndManHunter(animal);
-                ForceBreedingJob(toBeBred, animal);
-                breeder_counter++;
+
+                if (!RJW_Genes_Settings.animalMatingPulseCheckForGenitals || rjw.xxx.can_rape(animal))
+                {
+                    ForceBreedingJob(toBeBred, animal);
+                    breeder_counter++;
+                }
+               
             }
             ModLog.Message($"{breeder_counter} of {animals.Count()} Animals in range are trying to breed {toBeBred}");
         }

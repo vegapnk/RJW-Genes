@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-	<!-- Fertilin strings -->
 	<rjw_genes_settings_genitalia_resizing_age>Genitalia resizing age:</rjw_genes_settings_genitalia_resizing_age>
     <rjw_genes_settings_genitalia_resizing_postfix>years</rjw_genes_settings_genitalia_resizing_postfix>
     <rjw_genes_settings_genitalia_resizing_age_explanation>At this age (in biological years) any resizing gene will be applied. This is done to prevent changes and issues related to genitalia changing in the pawns growth, but also for 'ethics'.</rjw_genes_settings_genitalia_resizing_age_explanation>
@@ -21,6 +20,10 @@
 
     <rjw_genes_settings_regret_stealing_love_key>Regret Stealing Love</rjw_genes_settings_regret_stealing_love_key>
     <rjw_genes_settings_regret_stealing_love_explanation>If off, pawns will not get bad thoughts for seduction.</rjw_genes_settings_regret_stealing_love_explanation>
+
+
+    <rjw_genes_settings_animal_mating_needs_penis_key>Animal-Mating GenitalCheck</rjw_genes_settings_animal_mating_needs_penis_key>
+    <rjw_genes_settings_animal_mating_needs_penis_explanation>If on, only animals that 'can rape' will be engaging in bestiality after being hit by a animal mating pulse. This usually means that only male animals will start breeding.</rjw_genes_settings_animal_mating_needs_penis_explanation>
 
     <rjw_genes_settings_generous_donor_cheatmode_key>generous-donor cheatmode</rjw_genes_settings_generous_donor_cheatmode_key>
     <rjw_genes_settings_generous_donor_cheatmode_explanation>When enabled, pawns with the 'generous donor' are not drained and not fertilin exhausted. Hence they can fuel succubi and incubi non-stop. This makes them drastically easier to keep, and you should not do it.</rjw_genes_settings_generous_donor_cheatmode_explanation>
