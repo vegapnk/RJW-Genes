@@ -31,7 +31,7 @@
 - Pawns with "rjw_genes_no_sexneed" wont go raping (or atleast way less, #100)
 - Extra Nullcheck for Genes in Orgasmic Mytosis (#95)
 - Orgasmic Mytosis Pawns *should* inherit the Xenotypename and favorite colour now 
-
+- Babies should not have "SexChangeThoughts" anymore when they had a (fe)male-only gene (#103)
 
 **Changes**:
 

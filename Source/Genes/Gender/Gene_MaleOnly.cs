@@ -14,12 +14,15 @@ namespace RJW_Genes
             // Here we call Sexualization after the Sex-Change
             if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn))
                 Sexualizer.sexualize_pawn(pawn);
+
+            GenderUtility.RemoveSexChangeThoughtsIfTooYoung(this.pawn);
         }
 
         public override void PostAdd()
         {
             base.PostMake();
             AdjustPawnToMale();
+            GenderUtility.RemoveSexChangeThoughtsIfTooYoung(this.pawn);
         }
 
         private void AdjustPawnToMale()

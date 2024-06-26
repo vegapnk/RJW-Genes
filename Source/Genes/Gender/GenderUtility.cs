@@ -101,5 +101,20 @@ namespace RJW_Genes
                     pawn.health.RemoveHediff(hediff);
             }
         }
+
+        /// <summary>
+        /// This check helps to get babies after birth, if the pawn was born with the gene it does not need to have thoughts.
+        /// There are very different ways to do the life stages, and there are also HAR people still around, 
+        /// so instead of checking for stages I intentionally check for the biological ticks to be very low (that they can only exist basically if they are born right before).
+        /// Issue is tracked in #103.
+        /// </summary>
+        /// <param name="pawn"></param>
+        public static void RemoveSexChangeThoughtsIfTooYoung(Pawn pawn)
+        {
+            if (pawn.ageTracker.AgeBiologicalTicks < 1000)
+            {
+                GenderUtility.RemoveAllSexChangeThoughts(pawn);
+            }
+        }
     }
 }
