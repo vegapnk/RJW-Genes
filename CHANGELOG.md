@@ -29,6 +29,8 @@
 - Youth Fountain cannot youth on masturbation anymore (#99)
 - Documented the HasActiveGene Error Message (#104)
 - Pawns with "rjw_genes_no_sexneed" wont go raping (or atleast way less, #100)
+- Extra Nullcheck for Genes in Orgasmic Mytosis (#95)
+- Orgasmic Mytosis Pawns *should* inherit the Xenotypename and favorite colour now 
 
 
 **Changes**:

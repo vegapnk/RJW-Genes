@@ -166,6 +166,7 @@
     <Compile Include="Genes\Life_Force\UI\GeneGizmo_ResourceLifeForce.cs" />
     <Compile Include="Genes\Patches\LustFeeding.cs" />
     <Compile Include="Genes\Patches\MultiplePregnancies.cs" />
+    <Compile Include="Genes\Patches\Patch_Asexual_CanRape.cs" />
     <Compile Include="Genes\Patch_AddNotifyOnGeneration.cs" />
     <Compile Include="Genes\Quirks\Defs\QirkExtension.cs" />
     <Compile Include="Genes\Quirks\QuirkPatcher.cs" />

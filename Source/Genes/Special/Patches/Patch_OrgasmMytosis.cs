@@ -31,7 +31,9 @@ namespace RJW_Genes
 			Pawn orgasmingPawn = __instance.pawn;
             bool hasPollutedMytosis = false;
 
-            if (orgasmingPawn != null && (GeneUtility.HasGeneNullCheck(orgasmingPawn, GeneDefOf.rjw_genes_sexual_mytosis) || hasPollutedMytosis) && ! orgasmingPawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_mytosis_shock_hediff))
+            if (orgasmingPawn == null || orgasmingPawn.genes == null) { return; }
+
+            if ((GeneUtility.HasGeneNullCheck(orgasmingPawn, GeneDefOf.rjw_genes_sexual_mytosis) || hasPollutedMytosis) && ! orgasmingPawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_mytosis_shock_hediff))
 			{
 				var mytosisHediff = GetOrgasmMytosisHediff(orgasmingPawn);
 				mytosisHediff.Severity += SEVERITY_INCREASE_PER_ORGASM;
@@ -148,6 +150,8 @@ namespace RJW_Genes
             copy.style = CopyStyleTracker(copy, toMultiply.style);
             copy.story = CopyStoryTracker(copy, toMultiply.story);
 
+            copy.genes.xenotypeName = toMultiply.genes.xenotypeName;
+            copy.story.favoriteColor = toMultiply.story.favoriteColor;
 
             Find.LetterStack.ReceiveLetter("Orgasmic Mytosis", $"{toMultiply.NameShortColored} performed mytosis on orgasm! The pawn and its clone entered a regenerative state.",
                 RimWorld.LetterDefOf.NeutralEvent, copy);
