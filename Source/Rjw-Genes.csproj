@@ -64,6 +64,7 @@
     <Compile Include="Common\ModLog.cs" />
     <Compile Include="Common\Defs\TickIntervalExtension.cs" />
     <Compile Include="Common\Patches\PatchImplants.cs" />
+    <Compile Include="Common\Patches\Patch_ParentRelationUtility_GetParents.cs" />
     <Compile Include="Genes\Breeding\Abilities\CompAbilityEffect_MatingCall.cs" />
     <Compile Include="Genes\Breeding\Abilities\CompAbilityEffect_PheromoneSpit.cs" />
     <Compile Include="Genes\Breeding\Abilities\CompProperties_AbilityMatingCall.cs" />
@@ -217,7 +218,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="RJWSexperience">
-      <HintPath>..\..\rjw-sexperience\1.5\Assemblies\RJWSexperience.dll</HintPath>
+      <HintPath>..\..\rjw-sexperience-master\1.5\Assemblies\RJWSexperience.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
