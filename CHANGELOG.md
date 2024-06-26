@@ -25,6 +25,7 @@
 - Changes to the Implants introduced in 2.0.0 - they imposed a hidden dependency on Royalty (Fixes #89)
 - Issues when generating relations (#98, fixed in #106 thanks @Jaaldabaoth)
 - Hardening of Licentia Dependencies (#105)
+- Littered Birth and Chest-Burst Pregnancy are now mutually exclusive (#96)
 
 
 **Changes**:

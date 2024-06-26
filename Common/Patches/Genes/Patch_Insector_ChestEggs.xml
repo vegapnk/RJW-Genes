@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Races Expanded - Insector</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName = "VRE_ChestburstPregnancy"]/exclusionTags</xpath>
+            <value>
+                <li>rjw_genes_littered_birth_vs_chestburst</li>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>
