@@ -26,6 +26,9 @@
 - Issues when generating relations (#98, fixed in #106 thanks @Jaaldabaoth)
 - Hardening of Licentia Dependencies (#105)
 - Littered Birth and Chest-Burst Pregnancy are now mutually exclusive (#96)
+- Youth Fountain cannot youth on masturbation anymore (#99)
+- Documented the HasActiveGene Error Message (#104)
+- Pawns with "rjw_genes_no_sexneed" wont go raping (or atleast way less, #100)
 
 
 **Changes**:
@@ -37,6 +40,7 @@
 - Translate-Key for Animal Hybrid Race-Names
 - "Tick-Speed" for Evergrowth moved from Mod-Settings to XML
 - Some new Icons thanks to Kira-Bad-Artist
+- Some new Icons thanks to Archer 
 
 # 2.0.0
 
