@@ -28,6 +28,9 @@ namespace RJW_Genes
             
             if (props == null || props.pawn == null || props.partner == null) return;
 
+            // Minor Hardening to help with #105
+            if (!ModsConfig.IsActive("LustLicentia.RJWLabs")) return;
+
             if (props.pawn.genes != null && props.pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_likes_cumflation) )
             {
                 AddOrIncreaseCumflationCounterHediff(props.pawn);
