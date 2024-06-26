@@ -30,6 +30,12 @@ namespace RJW_Genes.Genes.Special
                 return;
             }
 
+            if (props.pawn == props.partner || props.sexType == xxx.rjwSextype.Masturbation || props.sexType == xxx.rjwSextype.None)
+            {
+                // This case was reported but is a bit strange, I hardened it after reports in #99
+                return;
+            }
+
             if (GeneUtility.IsYouthFountain(props.pawn))
             {
                 ChangeAgeForPawn(props.partner, props.pawn);
