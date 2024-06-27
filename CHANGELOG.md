@@ -14,6 +14,7 @@
 - "Curiosity Genes" alongside other Curiosities from VRE. Thanks to @Jaaldabaoth (#88)
 - Support for many VE-Genetics Animals into the Animal-Framework. Thanks to @Jaaldabaoth (#88)
 - "Likes Cumflation"-Gene now also makes pawns immune against the effects of cumflations. They are still cumflated. 
+- Gasmasks make immune against Aphrodisiac Pheromones (#108)
 
 **Fixes**:
 
