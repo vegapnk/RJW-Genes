@@ -6,7 +6,7 @@
 		<li>1.5</li>
 	</supportedVersions>
 	<description>Adds Genes for RJW Content</description>
-	<url>https://steamcommunity.com/id/Vegapnk/myworkshopfiles/?appid=294100</url>
+	<url>https://github.com/vegapnk/RJW-Genes</url>
 	<modDependencies>
 		<li>
 			<packageId>Ludeon.RimWorld.Biotech</packageId>
