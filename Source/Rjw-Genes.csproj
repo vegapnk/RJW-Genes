@@ -64,8 +64,15 @@
     <Compile Include="Common\ModLog.cs" />
     <Compile Include="Common\Defs\TickIntervalExtension.cs" />
     <Compile Include="Common\Patches\PatchImplants.cs" />
-    <Compile Include="Genes\Breeding\Gene_FerventOvipositor.cs" />
-    <Compile Include="Genes\Breeding\Gene_InsectIncubator.cs" />
+    <Compile Include="Common\Patches\Patch_ParentRelationUtility_GetParents.cs" />
+    <Compile Include="Genes\Breeding\Abilities\CompAbilityEffect_MatingCall.cs" />
+    <Compile Include="Genes\Breeding\Abilities\CompAbilityEffect_PheromoneSpit.cs" />
+    <Compile Include="Genes\Breeding\Abilities\CompProperties_AbilityMatingCall.cs" />
+    <Compile Include="Genes\Breeding\Abilities\CompProperties_AbilityPheromoneSpit.cs" />
+    <Compile Include="Genes\Breeding\AnimalBreedingHelper.cs" />
+    <Compile Include="Genes\Breeding\Genes\Gene_FerventOvipositor.cs" />
+    <Compile Include="Genes\Breeding\Genes\Gene_InsectIncubator.cs" />
+    <Compile Include="Genes\Cum\Patch_LikesCumflation.cs" />
     <Compile Include="Genes\Damage\Gene_Elasticity.cs" />
     <Compile Include="Genes\Life_Force\Events\SuccubusVisit\IncidentWorker_SuccubusVisit.cs" />
     <Compile Include="Genes\Life_Force\Events\SuccubusVisit\LordJob_SuccubusVisit.cs" />
@@ -73,11 +80,10 @@
     <Compile Include="Genes\Life_Force\Interactions\SuccubusTailjob\GenesPartKindUsageRule.cs" />
     <Compile Include="Genes\Life_Force\Interactions\SuccubusTailjob\SubSuccubusTailCustomRequirementHandler.cs" />
     <Compile Include="Genes\Patches\PatchLitteredBirth.cs" />
-    <Compile Include="Common\Patches\PatchGetParents.cs" />
     <Compile Include="Common\Patches\PatchPregnancyHelper.cs" />
     <Compile Include="GeneDefOf.cs" />
-    <Compile Include="Genes\Breeding\Gene_MechBreeder.cs" />
-    <Compile Include="Genes\Breeding\PatchMechBirth.cs" />
+    <Compile Include="Genes\Breeding\Genes\Gene_MechBreeder.cs" />
+    <Compile Include="Genes\Breeding\Patches\PatchMechBirth.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_Femboy.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_UdderBreasts.cs" />
     <Compile Include="Genes\Gender\Defs\GenderFluidExtension.cs" />
@@ -89,7 +95,7 @@
     <Compile Include="Genes\Cum\Gene_NoCum.cs" />
     <Compile Include="Genes\Cum\Patch_TransferNutrition.cs" />
     <Compile Include="Genes\Damage\Gene_Unbreakable.cs" />
-    <Compile Include="Genes\Cum\Patch_Cumflation.cs" />
+    <Compile Include="Genes\Cum\Patch_CumflationImmunity.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraBreasts.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraAnus.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_Futa.cs" />
@@ -160,7 +166,10 @@
     <Compile Include="Genes\Life_Force\UI\GeneGizmo_ResourceLifeForce.cs" />
     <Compile Include="Genes\Patches\LustFeeding.cs" />
     <Compile Include="Genes\Patches\MultiplePregnancies.cs" />
+    <Compile Include="Genes\Patches\Patch_Asexual_CanRape.cs" />
     <Compile Include="Genes\Patch_AddNotifyOnGeneration.cs" />
+    <Compile Include="Genes\Quirks\Defs\QirkExtension.cs" />
+    <Compile Include="Genes\Quirks\QuirkPatcher.cs" />
     <Compile Include="Genes\Special\Abilities\CompAbilityEffect_CocoonWeaver.cs" />
     <Compile Include="Genes\Special\Abilities\CompProperties_AbilityCocoonWeaver.cs" />
     <Compile Include="Genes\Special\Defs\AgeTransferExtension.cs" />
@@ -168,6 +177,7 @@
     <Compile Include="Genes\Special\Patches\Patch_AgeDrain.cs" />
     <Compile Include="Genes\Special\Patches\Patch_HormonalSaliva.cs" />
     <Compile Include="Genes\Special\Patches\Patch_OrgasmMytosis.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_SexualTamer.cs" />
     <Compile Include="Genes\Special\Thoughts\ThoughtWorker_Aphrodisiac_Pheromones_Social.cs" />
     <Compile Include="LetterDefOf.cs" />
     <Compile Include="Interactions\SuccubusTailjob\CompAbility_SexInteractionRequirements.cs" />
@@ -189,8 +199,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="GeneDefs_GenitaliaTypeEndogenes.xml" />
-    <Content Include="RJW.dll" />
-    <Content Include="RJWSexperience.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -203,14 +211,15 @@
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="RJW, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="LicentiaLabs">
+      <HintPath>..\..\licentia-labs-master\Assemblies\LicentiaLabs.dll</HintPath>
+    </Reference>
+    <Reference Include="RJW">
       <HintPath>..\..\rjw\1.5\Assemblies\RJW.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RJWSexperience">
       <HintPath>..\..\rjw-sexperience\1.5\Assemblies\RJWSexperience.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="UnityEngine">
@@ -230,6 +239,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Genes\Gender\Patches\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

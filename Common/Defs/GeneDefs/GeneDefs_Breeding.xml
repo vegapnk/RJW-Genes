@@ -1,54 +1,57 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <!-- rjw_genes_mechbreeder,rjw_genes_insectincubator and rjw_genes_insectbreeder were kindly supplied by `Shabalox` https://github.com/Shabalox/RJW_Genes_Addons/ -->
+  <!-- rjw_genes_mechbreeder,rjw_genes_insectincubator and rjw_genes_insectbreeder were kindly
+  supplied by `Shabalox` https://github.com/Shabalox/RJW_Genes_Addons/ -->
 
   <GeneDef Name="BreedingBase" Abstract="True">
-		<displayCategory>rjw_genes_breeding</displayCategory>
+    <displayCategory>rjw_genes_breeding</displayCategory>
 
-		<modExtensions>
-				<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-					<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-					<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-				</li>
-			</modExtensions>
-	</GeneDef>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+        Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+        <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
 
 
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_mechbreeder</defName>
-    <label>Mechbreeder</label>
+    <label>mechbreeder</label>
     <description>Pawns with this gene are able to birth mechanoids unharmed.</description>
     <iconPath>World/WorldObjects/Expanding/Mechanoids</iconPath>
     <displayOrderInCategory>51</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
   </GeneDef>
-  
+
   <GeneDef ParentName="BreedingBase">
-      <defName>rjw_genes_zoophile</defName>
-      <label>Zoophile</label>
-      <description>Xenotypes with this Gene are Zoophile.</description>
-      <iconPath>Genes/Icons/Zoophile</iconPath>
-      <displayOrderInCategory>54</displayOrderInCategory>    
-      <forcedTraits>
-          <li>
-              <def>Zoophile</def>
-          </li>
-      </forcedTraits>
+    <defName>rjw_genes_zoophile</defName>
+    <label>zoophile</label>
+    <description>Xenotypes with this Gene are Zoophile.</description>
+    <iconPath>Genes/Icons/Zoophile</iconPath>
+    <displayOrderInCategory>54</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>Zoophile</def>
+      </li>
+    </forcedTraits>
   </GeneDef>
-  
+
   <GeneDef ParentName="BreedingBase">
-      <defName>rjw_genes_fertile_anus</defName>
-      <label>Fertile Anus</label>
-      <description>Xenotypes with this gene have a functional uterus connected to the anal cavity even for males</description>
-      <iconPath>Genes/Icons/Fertile_anus</iconPath>
-      <displayOrderInCategory>54</displayOrderInCategory>    
+    <defName>rjw_genes_fertile_anus</defName>
+    <label>fertile anus</label>
+    <description>Xenotypes with this gene have a functional uterus connected to the anal cavity even
+      for males</description>
+    <iconPath>Genes/Icons/Fertile_anus</iconPath>
+    <displayOrderInCategory>54</displayOrderInCategory>
   </GeneDef>
 
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_insectincubator</defName>
-    <label>Insect Incubator</label>	
-	  <geneClass>RJW_Genes.Gene_InsectIncubator</geneClass>
+    <label>insect incubator</label>
+    <geneClass>RJW_Genes.Gene_InsectIncubator</geneClass>
     <description>Pawns with this gene fertilize insect eggs that are placed inside them.</description>
     <iconPath>Genes/Icons/Egg</iconPath>
     <displayOrderInCategory>52</displayOrderInCategory>
@@ -58,7 +61,7 @@
 
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_insectbreeder</defName>
-    <label>Insect Breeder</label>	
+    <label>insect breeder</label>
     <description>Pawns with this gene are able to fertilize eggs with any fertile penis.</description>
     <iconPath>Genes/Icons/Insect_Breeder</iconPath>
     <displayOrderInCategory>53</displayOrderInCategory>
@@ -68,12 +71,47 @@
 
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_fervent_ovipositor</defName>
-    <label>Fervent Ovipositor</label>	
-	  <geneClass>RJW_Genes.Gene_FerventOvipositor</geneClass>
-    <description>Pawns that have a female (egg producing) ovipositor produce eggs at drastically increased speed.</description>
+    <label>fervent ovipositor</label>
+    <geneClass>RJW_Genes.Gene_FerventOvipositor</geneClass>
+    <description>Pawns that have a female (egg producing) ovipositor produce eggs at drastically
+      increased speed.</description>
     <iconPath>Genes/Icons/Fervent_Ovipositor</iconPath>
     <displayOrderInCategory>55</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+
+  <GeneDef ParentName="BreedingBase">
+    <defName>rjw_genes_mating_call</defName>
+    <label>Mating Call</label>
+    <description>This gene allows to call nearby animals and invite them for mating.</description>
+    <iconPath>Genes/Icons/RJW_Genes_Mating_Call</iconPath>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <abilities>
+      <li>rjw_genes_ability_mating_call</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>rjw_genes_ability_mating_call</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+
+  <GeneDef ParentName="BreedingBase">
+    <defName>rjw_genes_pheromone_spit</defName>
+    <label>Pheromone Spit</label>
+    <description>This gene allows to mark targets for breeding, enticing nearby animals for a ride.</description>
+    <iconPath>Genes/Icons/RJW_Genes_PheromoneSpit</iconPath>
+    <displayOrderInCategory>66</displayOrderInCategory>
+    <abilities>
+      <li>rjw_genes_ability_pheromone_spit</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>rjw_genes_ability_pheromone_spit</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatCpx>2</biostatCpx>
     <biostatMet>-1</biostatMet>
   </GeneDef>
 

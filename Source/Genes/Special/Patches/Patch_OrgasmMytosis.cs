@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using RimWorld;
+using RimWorld.BaseGen;
 using RimWorld.QuestGen;
 using rjw;
 using rjw.Modules.Shared.Extensions;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+
 
 namespace RJW_Genes
 {
@@ -24,13 +26,21 @@ namespace RJW_Genes
 
 		private const float SEVERITY_INCREASE_PER_ORGASM = 0.075f;
 
-		public static void Postfix(JobDriver_Sex __instance)
+        public static void Postfix(JobDriver_Sex __instance)
 		{
 			Pawn orgasmingPawn = __instance.pawn;
-            if (orgasmingPawn != null && GeneUtility.HasGeneNullCheck(orgasmingPawn, GeneDefOf.rjw_genes_sexual_mytosis) && ! orgasmingPawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_mytosis_shock_hediff))
+            bool hasPollutedMytosis = false;
+
+            if (orgasmingPawn == null || orgasmingPawn.genes == null) { return; }
+
+            if ((GeneUtility.HasGeneNullCheck(orgasmingPawn, GeneDefOf.rjw_genes_sexual_mytosis) || hasPollutedMytosis) && ! orgasmingPawn.health.hediffSet.HasHediff(HediffDefOf.rjw_genes_mytosis_shock_hediff))
 			{
 				var mytosisHediff = GetOrgasmMytosisHediff(orgasmingPawn);
 				mytosisHediff.Severity += SEVERITY_INCREASE_PER_ORGASM;
+                if(hasPollutedMytosis && orgasmingPawn.Spawned && GridsUtility.IsPolluted(orgasmingPawn.Position, orgasmingPawn.Map))
+                {
+                    mytosisHediff.Severity -= SEVERITY_INCREASE_PER_ORGASM;
+                }
 
 				if (mytosisHediff.Severity >= 1.0)
                 {
@@ -123,8 +133,6 @@ namespace RJW_Genes
             copy.equipment.DestroyAllEquipment();
             copy.apparel.DestroyAll();
 
-            //TODO: Make a letter on birth!
-
 
             PawnUtility.TrySpawnHatchedOrBornPawn(copy, toMultiply);
             // Move the copy in front of the origin, rather than on top
@@ -142,6 +150,11 @@ namespace RJW_Genes
             copy.style = CopyStyleTracker(copy, toMultiply.style);
             copy.story = CopyStoryTracker(copy, toMultiply.story);
 
+            copy.genes.xenotypeName = toMultiply.genes.xenotypeName;
+            copy.story.favoriteColor = toMultiply.story.favoriteColor;
+
+            Find.LetterStack.ReceiveLetter("Orgasmic Mytosis", $"{toMultiply.NameShortColored} performed mytosis on orgasm! The pawn and its clone entered a regenerative state.",
+                RimWorld.LetterDefOf.NeutralEvent, copy);
 
             return copy;
 		}
@@ -163,7 +176,6 @@ namespace RJW_Genes
         private static Pawn_GeneTracker CopyGeneTracker(Pawn toCopyTo, Pawn_GeneTracker toCopyFrom)
         {
             var tracker = new Pawn_GeneTracker(toCopyTo);
-            
             // Due to Overwrite logics, we first add Endogenes and then a second pass on xenogenes
 
             // Pass 1: Endogenes
@@ -182,12 +194,6 @@ namespace RJW_Genes
             }
 
             tracker.Reset();
-            var skin = tracker.GetMelaninGene();
-            var hair = tracker.GetHairColorGene();
-
-            //ModLog.Message($"{toCopyTo} had Skin {skin.defName} and {hair.defName} as colour-genes");
-
-
             return tracker;
         }
 
@@ -294,7 +300,6 @@ namespace RJW_Genes
         }
     }
 
-
 }
 
 /*
@@ -318,5 +323,4 @@ Verse.TickList:Tick ()
 Verse.TickManager:TickManagerUpdate ()
 Verse.Game:UpdatePlay ()
 Verse.Root_Play:Update ()
-
  */

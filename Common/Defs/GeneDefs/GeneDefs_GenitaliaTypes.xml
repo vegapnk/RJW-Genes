@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
   <GeneDef Name="GeneGenitalTypeBase" Abstract="True">
@@ -7,17 +7,18 @@
     <exclusionTags>
       <li>GenitalType</li>
     </exclusionTags>
-	  <randomChosen>false</randomChosen>
+    <randomChosen>true</randomChosen>
     <biostatCpx>0</biostatCpx>
-    
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+        Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+        <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
   </GeneDef>
-  
+
+
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_equine_genitalia</defName>
     <label>equine genitalia</label>
@@ -32,8 +33,8 @@
     </modExtensions>
     <displayOrderInCategory>802</displayOrderInCategory>
   </GeneDef>
-  
-   <GeneDef ParentName="GeneGenitalTypeBase">
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_human_genitalia</defName>
     <label>human genitalia</label>
     <description>Carriers of this gene develop human genitalia.</description>
@@ -43,11 +44,12 @@
         <penis>Penis</penis>
         <vagina>Vagina</vagina>
         <anus>Anus</anus>
+        <breasts>Breasts</breasts>
       </li>
     </modExtensions>
     <displayOrderInCategory>802</displayOrderInCategory>
   </GeneDef>
-  
+
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_canine_genitalia</defName>
     <label>canine genitalia</label>
@@ -67,7 +69,7 @@
     <defName>rjw_genes_feline_genitalia</defName>
     <label>feline genitalia</label>
     <description>Carriers of this gene develop feline genitalia.</description>
-    <iconPath>Genes/Icons/Genitalia_Feline</iconPath>
+    <iconPath>Genes/Icons/RJW_Genes_Feline_Genitalia</iconPath>
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>CatPenis</penis>
@@ -89,6 +91,9 @@
         <vagina>DemonVagina</vagina>
         <anus>DemonAnus</anus>
       </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>DemonLoverQuirk</Satisfiedquirk>
+      </li>
     </modExtensions>
     <displayOrderInCategory>805</displayOrderInCategory>
   </GeneDef>
@@ -104,6 +109,9 @@
         <vagina>DragonVagina</vagina>
         <anus>GenericAnus</anus>
       </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
+      </li>
     </modExtensions>
     <displayOrderInCategory>806</displayOrderInCategory>
   </GeneDef>
@@ -118,11 +126,15 @@
         <penis>SlimeTentacles</penis>
         <vagina>SlimeVagina</vagina>
         <anus>SlimeAnus</anus>
+        <breasts>SlimeBreasts</breasts>
+      </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>SlimeLoverQuirk</Satisfiedquirk>
       </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
-  
+
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_demonicT_genitalia</defName>
     <label>demonic tentacle genitalia</label>
@@ -134,10 +146,13 @@
         <vagina>DemonVagina</vagina>
         <anus>DemonAnus</anus>
       </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>DemonLoverQuirk</Satisfiedquirk>
+      </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
-  
+
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_crocodilian_genitalia</defName>
     <label>crocodilian genitalia</label>
@@ -147,10 +162,13 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>CrocodilianPenis</penis>
       </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
+      </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
-  
+
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_racoon_genitalia</defName>
     <label>racoon genitalia</label>
@@ -163,7 +181,7 @@
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
-  
+
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_reptilian_genitalia</defName>
     <label>reptilian genitalia</label>
@@ -173,14 +191,13 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>HemiPenis</penis>
       </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
+      </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
-  
-  
-  
-  
-  
+
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_Ghost_genitalia</defName>
     <label>ghost genitalia</label>
@@ -191,10 +208,13 @@
         <penis>GhostPenis</penis>
         <vagina>GhostVagina</vagina>
       </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>TeratophileQuirk</Satisfiedquirk>
+      </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
-  
+
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_Golem_genitalia</defName>
     <label>golem genitalia</label>
@@ -204,11 +224,14 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>GolemPenis</penis>
       </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>TeratophileQuirk</Satisfiedquirk>
+      </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
-  </GeneDef>  
- 
-   <GeneDef ParentName="GeneGenitalTypeBase">
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_Marine_genitalia</defName>
     <label>marine genitalia</label>
     <description>Carriers of this gene have marine mammal like genitalia.</description>
@@ -219,7 +242,7 @@
       </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
-  </GeneDef>  
+  </GeneDef>
 
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_Necro_genitalia</defName>
@@ -230,10 +253,13 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>NecroPenis</penis>
       </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>TeratophileQuirk</Satisfiedquirk>
+      </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
-  </GeneDef>  
-  
+  </GeneDef>
+
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_Needle_genitalia</defName>
     <label>narrow genitalia</label>
@@ -246,7 +272,7 @@
       </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
-  </GeneDef>  
+  </GeneDef>
 
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_Orc_genitalia</defName>
@@ -259,7 +285,7 @@
       </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
-  </GeneDef>  
+  </GeneDef>
 
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_Pig_genitalia</defName>
@@ -271,7 +297,7 @@
         <penis>PigPenis</penis>
       </li>
     </modExtensions>
-  </GeneDef>  
+  </GeneDef>
 
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_Tentacle_genitalia</defName>
@@ -282,14 +308,12 @@
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>TentaclePenis</penis>
       </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>TeratophileQuirk</Satisfiedquirk>
+      </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
-  </GeneDef>  
-
-
-
-
-
+  </GeneDef>
 
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_ovipositor_genitalia</defName>
@@ -302,15 +326,15 @@
         <vagina>OvipositorF</vagina>
         <anus>InsectAnus</anus>
       </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>ChitinLoverQuirk</Satisfiedquirk>
+      </li>
     </modExtensions>
     <displayOrderInCategory>808</displayOrderInCategory>
-
     <exclusionTags>
-			<li>Egglaying</li>
-			<li>AG_Egglaying</li>
-		</exclusionTags>
-    
+      <li>Egglaying</li>
+      <li>AG_Egglaying</li>
+    </exclusionTags>
   </GeneDef>
-
 
 </Defs>

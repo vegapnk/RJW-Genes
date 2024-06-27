@@ -2,6 +2,34 @@
 
 Collection of Known Bugs and reasons for their origin. 
 
+## System.MissingMethodException: bool RimWorld.Pawn_GeneTracker.HasActiveGene(Verse.GeneDef)
+
+You might see a bug like this: 
+
+```
+Exception in Verse.AI.ThinkNode_Priority TryIssueJobPackage: System.MissingMethodException: bool RimWorld.Pawn_GeneTracker.HasActiveGene(Verse.GeneDef)
+[Ref A8629303] Duplicate stacktrace, see ref for original
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Log.Error_Patch2 (string)
+Verse.AI.ThinkNode_Priority:TryIssueJobPackage (Verse.Pawn,Verse.AI.JobIssueParams)
+Verse.AI.ThinkNode_SubtreesByTag:TryIssueJobPackage (Verse.Pawn,Verse.AI.JobIssueParams)
+Verse.AI.ThinkNode_Priority:TryIssueJobPackage (Verse.Pawn,Verse.AI.JobIssueParams)
+Verse.AI.Pawn_JobTracker:DetermineNextJob (Verse.ThinkTreeDef&,bool)
+Verse.AI.Pawn_JobTracker:TryFindAndStartJob ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.AI.Pawn_JobTracker.EndCurrentJob_Patch1 (Verse.AI.Pawn_JobTracker,Verse.AI.JobCondition,bool,bool)
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.AI.Pawn_JobTracker.JobTrackerTick_Patch0 (Verse.AI.Pawn_JobTracker)
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Pawn.Tick_Patch2 (Verse.Pawn)
+Verse.TickList:Tick ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.TickManager.DoSingleTick_Patch3 (Verse.TickManager)
+Verse.TickManager:TickManagerUpdate ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Game.UpdatePlay_Patch2 (Verse.Game)
+Verse.Root_Play:Update ()
+```
+
+This is due to the game not being updated - hasActiveGene has been introduced later than 1.5.
+
+You will have to update your game. 
+
 ## My Youth Fountain / Age Drainer Pawns do not alter Ages!!!
 
 Issue: You had a pawn with Youth Fountain have Sex with another Pawn, and the other pawn did not get younger. 

@@ -7,6 +7,7 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 using rjw;
+using static RimWorld.PsychicRitualRoleDef;
 
 namespace RJW_BGS
 {
@@ -43,7 +44,9 @@ namespace RJW_BGS
 
                     // The mix-breed babies should be labelled hybrids
                     baby.genes.hybrid = true;
-                    baby.genes.xenotypeName = "Hybrid";
+
+                    //reason = "AbilityDisabledNoFertilinGene".Translate(this.parent.pawn);
+                    baby.genes.xenotypeName = "rjw_genes_bestiality_hybrid".Translate();
                 }
             }
         }

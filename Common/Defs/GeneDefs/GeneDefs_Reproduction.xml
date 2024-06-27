@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
     <GeneDef>
         <defName>rjw_genes_hypersexual</defName>
-        <label>Hypersexuality</label>
+        <label>hypersexuality</label>
         <displayCategory>Reproduction</displayCategory>
         <description>Xenotypes with this Gene are Hypersexual (Nymphs).</description>
         <iconPath>Genes/Icons/Hypersexual</iconPath>
-        <displayOrderInCategory>1</displayOrderInCategory>    
+        <displayOrderInCategory>1</displayOrderInCategory>
         <forcedTraits>
             <li>
                 <def>Nymphomaniac</def>
@@ -16,21 +16,22 @@
 
         <randomChosen>false</randomChosen>
         <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+                Class="VanillaGenesExpanded.GeneExtension">
+                <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+                <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+            </li>
+        </modExtensions>
     </GeneDef>
-    
+
     <GeneDef>
         <defName>rjw_genes_rapist</defName>
-        <label>Rapist</label>
+        <label>rapist</label>
         <displayCategory>Reproduction</displayCategory>
         <description>Xenotypes with this Gene are Rapists.</description>
         <iconPath>Genes/Icons/Rape</iconPath>
         <biostatMet>1</biostatMet>
-        <displayOrderInCategory>2</displayOrderInCategory>    
+        <displayOrderInCategory>2</displayOrderInCategory>
         <forcedTraits>
             <li>
                 <def>Rapist</def>
@@ -39,17 +40,18 @@
 
         <randomChosen>false</randomChosen>
         <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+                Class="VanillaGenesExpanded.GeneExtension">
+                <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+                <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+            </li>
+        </modExtensions>
     </GeneDef>
-	
+
     <!-- 
 	<GeneDef>
         <defName>rjw_genes_sadist_gene</defName>
-        <label>Sadist</label>
+        <label>sadist</label>
         <displayCategory>Reproduction</displayCategory>
         <description>Xenotypes with this Gene are Sadists.</description>
         <iconPath>Genes/Icons/Rape</iconPath>
@@ -62,7 +64,8 @@
         </forcedTraits>
 
         <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+    Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
 				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
 			</li>
@@ -70,14 +73,14 @@
     </GeneDef>
 	-->
 
-	<GeneDef>
+    <GeneDef>
         <defName>rjw_genes_masochist</defName>
-        <label>Masochist</label>
+        <label>masochist</label>
         <displayCategory>Reproduction</displayCategory>
         <description>Xenotypes with this Gene are Masochists.</description>
         <iconPath>Genes/Icons/Rape</iconPath>
         <biostatMet>1</biostatMet>
-        <displayOrderInCategory>2</displayOrderInCategory>    
+        <displayOrderInCategory>2</displayOrderInCategory>
         <forcedTraits>
             <li>
                 <def>Masochist</def>
@@ -86,21 +89,22 @@
 
         <randomChosen>false</randomChosen>
         <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+                Class="VanillaGenesExpanded.GeneExtension">
+                <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+                <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+            </li>
+        </modExtensions>
     </GeneDef>
 
     <GeneDef>
         <defName>rjw_genes_homosexual</defName>
-        <label>Homosexual</label>
+        <label>homosexual</label>
         <displayCategory>Reproduction</displayCategory>
         <description>This Gene makes you gay.</description>
         <iconPath>UI\Ideoligions\Universal\RoundC</iconPath>
         <biostatMet>0</biostatMet>
-        <displayOrderInCategory>3</displayOrderInCategory>    
+        <displayOrderInCategory>3</displayOrderInCategory>
         <forcedTraits>
             <li>
                 <def>Gay</def>
@@ -112,21 +116,22 @@
 
         <randomChosen>false</randomChosen>
         <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+                Class="VanillaGenesExpanded.GeneExtension">
+                <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+                <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+            </li>
+        </modExtensions>
     </GeneDef>
 
     <GeneDef>
         <defName>rjw_genes_bisexual</defName>
-        <label>Bisexual</label>
+        <label>bisexual</label>
         <displayCategory>Reproduction</displayCategory>
         <description>Carriers of this Gene are Bisexual.</description>
         <iconPath>UI\Ideoligions\Universal\RoundC</iconPath>
         <biostatMet>0</biostatMet>
-        <displayOrderInCategory>4</displayOrderInCategory>    
+        <displayOrderInCategory>4</displayOrderInCategory>
         <forcedTraits>
             <li>
                 <def>Bisexual</def>
@@ -138,49 +143,61 @@
 
         <randomChosen>false</randomChosen>
         <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+                Class="VanillaGenesExpanded.GeneExtension">
+                <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+                <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+            </li>
+        </modExtensions>
     </GeneDef>
 
 
-  <GeneDef>
-    <defName>rjw_genes_no_sex_need</defName>
-    <label>Asexual</label>
-    <description>Carriers of this gene do not have a sex-need. They can still participate in sex, </description>
-    <iconPath>Genes/Icons/Empty</iconPath>
-    <displayOrderInCategory>5</displayOrderInCategory>
-    <disablesNeeds>
-      <li>Sex</li>
-    </disablesNeeds>
-    <biostatMet>-1</biostatMet>
-    <biostatCpx>2</biostatCpx>
-    
-    <randomChosen>false</randomChosen>
-    <exclusionTags>
-        <li>rjw_genes_sexual_orientation</li>
-    </exclusionTags>
+    <GeneDef>
+        <defName>rjw_genes_no_sex_need</defName>
+        <label>asexual</label>
+        <description>Carriers of this gene do not have a sex-need. They can still participate in
+            sex, </description>
+        <iconPath>Genes/Icons/Empty</iconPath>
+        <displayOrderInCategory>5</displayOrderInCategory>
+        <disablesNeeds>
+            <li>Sex</li>
+        </disablesNeeds>
+        <biostatMet>-1</biostatMet>
+        <biostatCpx>2</biostatCpx>
 
-    <modExtensions>
-        <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-            <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-            <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-        </li>
-    </modExtensions>
-  </GeneDef>
-  
-   <GeneDef>
-    <defName>LitteredBirths</defName>
-    <label>littered births</label>
-	<displayCategory>Reproduction</displayCategory>
-    <description>Female carriers of this gene birth litters instead of just one baby, with a chance of having two to four babies per pregnancy.</description>
-    <iconPath>Genes/Icons/Gene_LitteredBirths</iconPath>
-    <displayOrderInCategory>110</displayOrderInCategory>
-    <marketValueFactor>1.10</marketValueFactor>
-    <biostatMet>-2</biostatMet>
-    <biostatCpx>1</biostatCpx>
-  </GeneDef>
+        <randomChosen>false</randomChosen>
+        <exclusionTags>
+            <li>rjw_genes_sexual_orientation</li>
+        </exclusionTags>
+
+        <modExtensions>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+                Class="VanillaGenesExpanded.GeneExtension">
+                <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+                <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>LitteredBirths</defName>
+        <label>littered births</label>
+        <displayCategory>Reproduction</displayCategory>
+        <description>Female carriers of this gene birth litters instead of just one baby, with a
+            chance of having two to four babies per pregnancy.</description>
+        <iconPath>Genes/Icons/Gene_LitteredBirths</iconPath>
+        <displayOrderInCategory>110</displayOrderInCategory>
+        <marketValueFactor>1.10</marketValueFactor>
+        <biostatMet>-2</biostatMet>
+        <biostatCpx>1</biostatCpx>
+        <modExtensions>
+            <li Class="RJW_Genes.QirkExtension">
+                <Satisfiedquirk>ImpregnationFetishQuirk</Satisfiedquirk>
+            </li>
+        </modExtensions>
+        <exclusionTags>
+            <li>rjw_genes_littered_birth_vs_chestburst</li>
+        </exclusionTags>
+    </GeneDef>
 
 </Defs>

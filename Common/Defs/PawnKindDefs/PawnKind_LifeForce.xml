@@ -45,7 +45,7 @@
 	
 	<PawnKindDef>
 		<defName>rjw_genes_incubus</defName>
-		<label>succubus</label>
+		<label>incubus</label>
 		<combatPower>50</combatPower>
 		<race>Human</race>
 		<xenotypeSet>

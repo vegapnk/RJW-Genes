@@ -29,3 +29,7 @@ But please consider also the following:
 - Hypersexual & Zoophile comes from [RJW](https://gitgud.io/Ed86/rjw)
 - Cockeater & Naked Prowess come from *WasMachenDennSachen* but I copied it from Discord Chat. 
 - Fertilin, Fertilin Drain, Healpussy, Succubus Wing & Tail come from Shabakur
+- Littered Birth, Many of the Penis Types are from Jaaldabaoth
+- Feline Genitalia, Animal Mating Call and Udder are from Kira-Bad-Artist
+- Sexual Tamer, Pheromone Spit and Mating call are from Archer
+- The Preview was started with [Yodayo](https://yodayo.com/) 

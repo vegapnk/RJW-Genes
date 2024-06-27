@@ -14,12 +14,15 @@ namespace RJW_Genes
             // Here we call Sexualization after the Sex-Change
             if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn))
                 Sexualizer.sexualize_pawn(pawn);
+
+            GenderUtility.RemoveSexChangeThoughtsIfTooYoung(this.pawn);
         }
 
         public override void PostAdd()
         {
             base.PostMake();
             AdjustPawnToFemale();
+            GenderUtility.RemoveSexChangeThoughtsIfTooYoung(this.pawn);
         }
 
         private void AdjustPawnToFemale()
@@ -35,6 +38,18 @@ namespace RJW_Genes
                     Sexualizer.sexualize_pawn(pawn);
                 });
                 GenderUtility.AdjustBodyToTargetGender(pawn, Gender.Female);
+            }
+            foreach(Gene g in pawn.genes.GenesListForReading)
+            {
+                if(g.def.defName== "rjw_genes_hydrolic_genitalia")
+                {
+                    g.PostAdd();
+                }
+                if (g.def.defName == "rjw_genes_bionic_genitalia")
+                {
+                    g.PostAdd();
+                    return;
+                }
             }
         }
 

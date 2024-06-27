@@ -18,7 +18,7 @@ namespace RJW_Genes
     /// Patched File: https://gitgud.io/John-the-Anabaptist/licentia-labs/-/blob/master/Source/LicentiaLabs/LicentiaLabs/Cumflation.cs
     /// </summary>
     /// 
-    class Patch_Cumflation
+    class Patch_CumflationImmunity
     {
         // This patch does not need the normal Harmony Targetting, 
         // as it needs to be added only on demand (See HarmonyInit.cs)

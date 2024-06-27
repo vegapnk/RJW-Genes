@@ -57,7 +57,9 @@ namespace RJW_Genes
             {
                 if (RJW_Genes_Settings.rjw_genes_detailed_debug)
                 {
-                    ModLog.Warning("Labor state for pawn " + __instance.pawn.NameShortColored + " (" + __instance.pawn.ThingID + ") is not null despite all checks passing for determining first instance of Hediff_Labor - this warning should never occur, and may indicate a bug in Hediff_LaborPushing of lingering labor state from a previous pregnancy");
+                    ModLog.Warning("Labor state for pawn " + __instance.pawn.NameShortColored + " (" + __instance.pawn.ThingID + 
+                        ") is not null despite all checks passing for determining first instance of Hediff_Labor - this warning should never occur, " +
+                        "and may indicate a bug in Hediff_LaborPushing of lingering labor state from a previous pregnancy");
                 }
                 return;
             }
@@ -137,11 +139,15 @@ namespace RJW_Genes
                 {
                     ModLog.Message("Pawn " + __instance.pawn.NameShortColored + " (" + __instance.pawn.ThingID + ") is having random twins");
                 }
-                Find.LetterStack.ReceiveLetter("Twins!", __instance.pawn.NameShortColored + " is still in labor and is having twins!\n\nBe sure to gather your doctor and additional friends and family to ensure the other baby is also born healthy!", LetterDefOf.AnotherBaby, __instance.pawn);
+                Find.LetterStack.ReceiveLetter("Twins!", __instance.pawn.NameShortColored + " is still in labor and is having twins!\n\n" +
+                    "Be sure to gather your doctor and additional friends and family to ensure the other baby is also born healthy!", 
+                    LetterDefOf.AnotherBaby, __instance.pawn);
                 return;
             }
 
-            Find.LetterStack.ReceiveLetter("Another baby!", __instance.pawn.NameShortColored + " is still in labor and is having another baby!\n\nBe sure to gather your doctor and additional friends and family to ensure the next baby is also born healthy!", LetterDefOf.AnotherBaby, __instance.pawn);
+            Find.LetterStack.ReceiveLetter("Another baby!", __instance.pawn.NameShortColored + " is still in labor and is having another baby!\n\n" +
+                "Be sure to gather your doctor and additional friends and family to ensure the next baby is also born healthy!", 
+                LetterDefOf.AnotherBaby, __instance.pawn);
         }
     }
 }

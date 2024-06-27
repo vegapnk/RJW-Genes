@@ -2,6 +2,7 @@
 using RimWorld;
 using Verse;
 using System.Collections.Generic;
+using rjw.Modules.Interactions.DefModExtensions;
 
 namespace RJW_Genes
 {
@@ -16,7 +17,7 @@ namespace RJW_Genes
         /// <param name="penisReplacement">the new type of penis</param>
         /// <param name="vaginaReplacement">the new type of vagina</param>
         /// <param name="anusReplacement">the new type of anus</param>
-        public static void ChangeGenitalia(Pawn pawn, HediffDef penisReplacement = null, HediffDef vaginaReplacement = null, HediffDef anusReplacement = null)
+        public static void ChangeGenitalia(Pawn pawn, HediffDef penisReplacement = null, HediffDef vaginaReplacement = null, HediffDef anusReplacement = null , HediffDef breastsReplacement = null)
         {
             var oldParts = Genital_Helper.get_AllPartsHediffList(pawn);
 			BodyPartRecord correctBPR;
@@ -39,6 +40,12 @@ namespace RJW_Genes
 
 					if (Genital_Helper.is_vagina(existingGenital) && vaginaReplacement != null && existingGenital.def != vaginaReplacement)
 						replacementGenital = HediffMaker.MakeHediff(vaginaReplacement, pawn, correctBPR);
+
+					if (is_breast(existingGenital) && breastsReplacement != null && existingGenital.def != breastsReplacement)
+					{
+                        correctBPR = Genital_Helper.get_breastsBPR(pawn);
+                        replacementGenital = HediffMaker.MakeHediff(breastsReplacement, pawn, correctBPR);
+					}
 
                     if (IsAnus(existingGenital) && anusReplacement != null && existingGenital.def != anusReplacement)
 					{
@@ -74,7 +81,18 @@ namespace RJW_Genes
         {
             return candidate.def.defName.ToLower().Contains("anus");        }
 
-		public static bool IsArtificial(Hediff candidate)
+
+        public static bool is_breast(Hediff hed)
+        {
+            if (!GenitalPartExtension.TryGet(hed, out var ext))
+            {
+                return false;
+            }
+
+            return ext.family == rjw.Modules.Interactions.Enums.GenitalFamily.Breasts;
+        }
+
+        public static bool IsArtificial(Hediff candidate)
         {
 			return candidate.def.defName.ToLower().Contains("bionic") || candidate.def.defName.ToLower().Contains("archo");
         }
@@ -87,6 +105,8 @@ namespace RJW_Genes
 				pawn.health.RemoveHediff(part);
             }
 		}
+
+
 
     }
 }

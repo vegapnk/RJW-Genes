@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>rjw_genes_animal_control_hediff</defName>
+		<label>part human</label>
+		<description>This creature is more controlable with a natural human part.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_Draftable">
+				<makeNonFleeingToo>true</makeNonFleeingToo>
+			</li>
+		</comps>
+		<isBad>false</isBad>
+	</HediffDef>
+
+</Defs>

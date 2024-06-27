@@ -20,8 +20,6 @@ namespace RJWLoveFeeding
         [HarmonyPostfix]
         public static void Postfix(ref bool __result, Pawn pawn, bool mustBeVisible)
         {
-
-            //Log.Message(xxx.get_pawnname(pawn) + " is in patch" + __result);
             bool isPregnant = __result;
             if (MultiPregnancy != null)
             {
@@ -31,7 +29,6 @@ namespace RJWLoveFeeding
                     try
                     {
                         isPregnant = MultiplePregnancies.RJWMultiplePregnancy(isPregnant, pawn);
-                        //Log.Message(xxx.get_pawnname(pawn) + " is " + isPregnant);
                     }
                     catch (Exception e)
                     {
@@ -40,14 +37,11 @@ namespace RJWLoveFeeding
                 }
                 __result = isPregnant;
             }
-
         }
-
 
 
         public static bool RJWMultiplePregnancy(bool isPregnant, Pawn fucked)
         {
-
             if ((fucked != null) && !xxx.is_animal(fucked))
             {
 
@@ -59,17 +53,11 @@ namespace RJWLoveFeeding
 
                 if (setNoPreggo.NullOrEmpty())
                 {
-                    //Log.Message("No other hediffs preventing pregnancy");
                     Pawn_GeneTracker genes = fucked.genes;
                     if (genes.HasActiveGene(RJW_Genes.GeneDefOf.RS_MultiPregnancy))
                     {
                         Log.Message(xxx.get_pawnname(fucked) + " has multipregnancy gene");
-
                         return false;
-                    }
-                    else
-                    {
-                        //Log.Message(xxx.get_pawnname(fucked) + " has NOT multipreg gene");
                     }
                 }
                 else

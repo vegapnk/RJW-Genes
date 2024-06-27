@@ -4,7 +4,7 @@
   <HediffDef>
     <defName>rjw_genes_orgasm_rush_hediff</defName>
     <hediffClass>HediffWithComps</hediffClass>
-    <label>Orgasm Rush</label>
+    <label>orgasm rush</label>
     <description>Xenotypes with this Gene are pushed beyond normal limits when they have an orgasm.</description>
     <defaultLabelColor>(240,200,110)</defaultLabelColor>
     <scenarioCanAdd>false</scenarioCanAdd>
@@ -75,4 +75,3 @@
   </HediffDef>
 
 </Defs>
-

@@ -1,12 +1,25 @@
 <ModMetaData>
 	<name>RJW Genes</name>
 	<author>Vegapnk</author>
-    <packageId>Vegapnk.rjw.genes</packageId>
+	<packageId>Vegapnk.rjw.genes</packageId>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
-	<description>Adds Genes for RJW Content</description>
-	<url>https://steamcommunity.com/id/Vegapnk/myworkshopfiles/?appid=294100</url>
+	<description>
+Adds Genes for RJW Content.
+Adds:
+- Genes for Genitalia Types and Sizes
+- Fertilin, a resource similiar to Hemogen, and accompanying sex-vampires
+- Mechanics for Breeding and being Breed by Animals and Insects
+- Inherit genes from bestiality or produce VGE-Hybrids
+- Male / Female Only, MPreg, Genderfluid Pawns
+- Orgasmic Mytosis, Orgasmic Supercharging, Age-Transfer on Sex, Pheromones
+- Cum-Amount changes, Cumflation Immunity
+- Horny Pheromones, Animal Mating Call
+- Patches for some popular Xenotypes from the Workshop
+- Sexual Taming of Animals
+	</description>
+	<url>https://github.com/vegapnk/RJW-Genes</url>
 	<modDependencies>
 		<li>
 			<packageId>Ludeon.RimWorld.Biotech</packageId>

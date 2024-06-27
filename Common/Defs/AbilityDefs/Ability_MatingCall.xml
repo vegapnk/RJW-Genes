@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <AbilityDef>
+    <defName>rjw_genes_ability_mating_call</defName>
+    <label>Mating Call</label>
+    <description>Calls nearby animals to breed me.</description>
+    <iconPath>Genes/Icons/Mating_Call_2</iconPath>
+    
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+        <Ability_Duration>50</Ability_Duration>
+        <Ability_EffectRadius>0</Ability_EffectRadius>
+    </statBases>
+
+    <displayOrder>410</displayOrder>
+    <!-- 30k Ticks = 12h -->
+    <cooldownTicksRange>30000</cooldownTicksRange>
+    <verbProperties>
+        <warmupTime>5</warmupTime>
+        <verbClass>Verb_CastAbility</verbClass>
+        <targetParams>
+          <canTargetHumans>False</canTargetHumans>
+          <canTargetMechs>False</canTargetMechs>
+          <canTargetAnimals>True</canTargetAnimals>
+          <canTargetLocations>True</canTargetLocations>
+        </targetParams>
+      </verbProperties>
+    
+      <comps>
+        <li Class="CompProperties_AbilityFleckOnTarget">
+          <fleckDef>PsycastPsychicEffect</fleckDef>
+        </li>
+        <li Class="RJW_Genes.CompProperties_AbilityMatingCall">
+            <calldistance>40</calldistance>
+        </li>
+        <li Class="CompProperties_AbilityGiveHediff">
+            <compClass>CompAbilityEffect_GiveHediff</compClass>
+            <hediffDef>Hediff_Submitting</hediffDef>
+            <onlyApplyToSelf>True</onlyApplyToSelf>
+        </li>
+     </comps>   
+     <confirmationDialogText>Being Bred is not an easy business.\nThis might lead to a broken pawn, torn genitalia and hybrid-pregnancies.\nMaybe this is what you want.\nThe pawn will `submit` and e.g. Insects might cocoon him.\n\nAre you sure to proceed?</confirmationDialogText>
+      
+  </AbilityDef>
+
+</Defs>

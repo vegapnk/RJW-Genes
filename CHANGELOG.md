@@ -1,3 +1,50 @@
+# 2.1.0
+
+**Additions**:
+
+- New Ability Gene *Mating-Call*: Get bred by all nearby animals. 
+- New Ability Gene *Pheromone Spit*: Mark a target to be bred by nearby animals
+- New Passive Gene *Sexual Tamer*: Chance to tame or train animals on bestiality.
+- Human + Animal Pregnancy can (if enabled in settings) produce Vanilla Expanded Genetics Hybrids. Thanks to @Jaaldabaoth (#88)
+- Xenogenes for "Big and Small" Xenotypes thanks to @Flock-of-birds (#83)
+- Xenogenes for "Biotech Expansion Mammalia" and "Biotech Expansion - Mythic" thanks to @Ohreallyow (#86)
+- Xenogenes update for (many?) "Vanilla Races Expanded (VRE)" Mods - Thanks to @Jaaldabaoth (#84 / #88 )
+- Genes can now fulfill RJW Quirks, configurable in XML. Thanks to @Jaaldabaoth (#84 / #88)
+- "Genes" to support VRE Androids having Mechanical Genitalia. Thanks to @Jaaldabaoth (#88)
+- "Curiosity Genes" alongside other Curiosities from VRE. Thanks to @Jaaldabaoth (#88)
+- Support for many VE-Genetics Animals into the Animal-Framework. Thanks to @Jaaldabaoth (#88)
+- "Likes Cumflation"-Gene now also makes pawns immune against the effects of cumflations. They are still cumflated. 
+- Gasmasks make immune against Aphrodisiac Pheromones (#108)
+
+**Fixes**:
+
+- Licentia Genes are back in and should work again. I used the [updated for by Jaaldabaoth](https://gitgud.io/Jaaldabaoth/licentia-labs) for my testing.
+- Lower-casing most labels to fit rimworld standards, thanks to @Flock-of-birds (#83)
+- X-Gender-Only Genes leave / re-add artificial genitalia. Thanks to @Jaaldabaoth (#84 / #88)
+- Issues with Elasticity References (#87)
+- Null Pointer for LoveFeeding when finding Mechs. Thanks to @Jaaldabaoth (Fixes #90)
+- Changes to the Implants introduced in 2.0.0 - they imposed a hidden dependency on Royalty (Fixes #89)
+- Issues when generating relations (#98, fixed in #106 thanks @Jaaldabaoth)
+- Hardening of Licentia Dependencies (#105)
+- Littered Birth and Chest-Burst Pregnancy are now mutually exclusive (#96)
+- Youth Fountain cannot youth on masturbation anymore (#99)
+- Documented the HasActiveGene Error Message (#104)
+- Pawns with "rjw_genes_no_sexneed" wont go raping (or atleast way less, #100)
+- Extra Nullcheck for Genes in Orgasmic Mytosis (#95)
+- Orgasmic Mytosis Pawns *should* inherit the Xenotypename and favorite colour now 
+- Babies should not have "SexChangeThoughts" anymore when they had a (fe)male-only gene (#103)
+
+**Changes**:
+
+- Minified some Race-Patches, thanks to @Flock-of-birds (#83)
+- XML-Genitalia-Genes can now also provide Breasts. Thanks to @Jaaldabaoth (#84 / #88)
+- Many patches and files went into a `Mods`Folder and use an `LoadFolders.xml`. Thanks to @Jaaldabaoth (#84 / #88)
+- Translate-Keys for Settings 
+- Translate-Key for Animal Hybrid Race-Names
+- "Tick-Speed" for Evergrowth moved from Mod-Settings to XML
+- Some new Icons thanks to Kira-Bad-Artist
+- Some new Icons thanks to Archer 
+
 # 2.0.0
 
 **Summary**:

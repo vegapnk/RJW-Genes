@@ -14,6 +14,8 @@ This mod adds genes related and based on RJW to Rimworld.
 - Human-Animal Gene Inheritance merged from [Shabakur](https://github.com/Shabakur/RJW_Animal_Gene_Inheritance)
 - Patches for some popular / common Xenotypes from other Mods.
 
+*You might not see all of them. Many genes just show up if other mods are loaded*.
+
 **Conflicts:**
 1. Should not be used with the original RJW_Animal_Gene_Inheritance anymore. 
 2. There was an issue with other "Male-Only / Female-Only" Mods --- for which we provide our own Genes now. 

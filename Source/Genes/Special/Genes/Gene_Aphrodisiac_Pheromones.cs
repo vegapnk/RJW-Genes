@@ -57,6 +57,10 @@ namespace RJW_Genes
                 // Do nothing for pawns that also have pheromones
                 if (GeneUtility.HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_aphrodisiac_pheromones))
                     continue;
+                // Do nothing for pawns that wear Gas-Masks
+                if (pawn.apparel != null && pawn.apparel.AnyApparel)
+                    if (pawn.apparel.WornApparel.Any(apparel => apparel.def == RimWorld.ThingDefOf.Apparel_GasMask))
+                        continue;
 
                 // Actual Logic: 
                 // Pawn qualifies in right distance and needs line of sight. 

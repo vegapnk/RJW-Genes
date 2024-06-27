@@ -20,20 +20,10 @@ namespace RJW_Genes
         public static readonly HediffDef rjw_genes_orgasmic_mytosis_hediff;
         public static readonly HediffDef rjw_genes_mytosis_shock_hediff;
 
+        [MayRequire("LustLicentia.RJWLabs")] public static readonly HediffDef rjw_genes_cumstuffed_counter;
+        [MayRequire("LustLicentia.RJWLabs")] public static readonly HediffDef rjw_genes_cumflation_counter;
+
         public static readonly HediffDef OvaryAgitator;
         public static readonly HediffDef Bioscaffold;
-
-        public static HediffDef NeedlePenis = HediffDef.Named("NeedlePenis");
-        public static HediffDef PigPenis = HediffDef.Named("PigPenis");
-        public static HediffDef MarinePenis = HediffDef.Named("MarinePenis");
-        public static HediffDef TentaclePenis = HediffDef.Named("TentaclePenis");
-        public static HediffDef GolemPenis = HediffDef.Named("GolemPenis");
-        public static HediffDef OrcPenis = HediffDef.Named("OrcPenis");
-        public static HediffDef GhostPenis = HediffDef.Named("GhostPenis");
-        public static HediffDef NecroPenis = HediffDef.Named("NecroPenis");
-        public static HediffDef GhostVagina = HediffDef.Named("GhostVagina");
-        public static HediffDef Vagina = HediffDef.Named("Vagina");
-        public static HediffDef Penis = HediffDef.Named("Penis");
-        public static HediffDef Anus = HediffDef.Named("Anus");
     }
 }

@@ -1,9 +1,7 @@
-﻿//using LicentiaLabs;
+﻿using LicentiaLabs;
 using Verse;
 
 
-// TODO: Re-Introduce this once Licentia is 1.5
-// It should be rather simple 
 namespace RJW_Genes
 {
     /// <summary>
@@ -15,7 +13,7 @@ namespace RJW_Genes
     {
         private const int RESET_INTERVAL = 60000; // 60k should be 1 day 
 
-        /*
+        
         public override void PostAdd()
         {
             base.PostAdd();
@@ -51,6 +49,6 @@ namespace RJW_Genes
                 candidate.Severity = severity;
             }
         }
-        */
+        
     }
 }
