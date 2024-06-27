@@ -5,7 +5,19 @@
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
-	<description>Adds Genes for RJW Content</description>
+	<description>
+		Adds Genes for RJW Content. 
+		Adds: 
+			- Genes for Genitalia Types and Sizes
+			- Fertilin, a resource similiar to Hemogen, and accompanying sex-vampires 
+			- Breeding and being Breed by Animals and Insects
+			- Inherit genes from bestiality or produce VGE-Hybrids 
+			- Male / Female Only, MPreg, Genderfluid Pawns
+			- Orgasmic Mytosis, Orgasmic Supercharging, Age-Transfer on Sex, Pheromones
+			- Cum-Amount changes, Cumflation Immunity
+			- Horny Pheromones, Animal Mating Call
+			- Patches for some popular Xenotypes from the Workshop
+	</description>
 	<url>https://github.com/vegapnk/RJW-Genes</url>
 	<modDependencies>
 		<li>

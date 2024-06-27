@@ -1,18 +1,19 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <GeneDef Name="GeneCumAmount" Abstract="True">
-      <displayCategory>rjw_genes_cum</displayCategory>
-      <exclusionTags>
-          <li>CumAmount</li>
-      </exclusionTags>  
-      <randomChosen>false</randomChosen>
-      <modExtensions>
-        <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-          <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-          <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-        </li>
-      </modExtensions>
-    </GeneDef>
+  <GeneDef Name="GeneCumAmount" Abstract="True">
+    <displayCategory>rjw_genes_cum</displayCategory>
+    <exclusionTags>
+      <li>CumAmount</li>
+    </exclusionTags>
+    <randomChosen>false</randomChosen>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+        Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+        <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
 
   <!-- Penis -->
   <GeneDef ParentName="GeneCumAmount">
@@ -40,7 +41,8 @@
   <GeneDef ParentName="GeneCumAmount">
     <defName>rjw_genes_very_much_cum</defName>
     <label>very much cum</label>
-    <description>Males of this species produce a whole lot of fluid. They are like fountains basically.</description>
+    <description>Males of this species produce a whole lot of fluid. They are like fountains
+      basically.</description>
     <iconPath>Genes/Icons/Very_Much_Cum</iconPath>
     <geneClass>RJW_Genes.Gene_VeryMuchCum</geneClass>
     <displayOrderInCategory>535</displayOrderInCategory>

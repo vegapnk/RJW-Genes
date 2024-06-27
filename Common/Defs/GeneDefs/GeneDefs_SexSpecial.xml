@@ -1,31 +1,33 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    
+
     <GeneDef Name="SpecialBase" Abstract="True">
-      <displayCategory>rjw_genes_special</displayCategory>
-      
-      <modExtensions>
-          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-            <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-            <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-          </li>
+        <displayCategory>rjw_genes_special</displayCategory>
+        <modExtensions>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+                Class="VanillaGenesExpanded.GeneExtension">
+                <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+                <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+            </li>
         </modExtensions>
     </GeneDef>
 
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_orgasm_rush</defName>
         <label>orgasm rush</label>
-        <description>On orgasm, carriers of this gene get a boost in activity. (rest-need is partially filled)</description>
+        <description>On orgasm, carriers of this gene get a boost in activity. (rest-need is
+            partially filled)</description>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-2</biostatMet>
         <iconPath>UI/Memes/FleshPurity</iconPath>
         <displayOrderInCategory>1</displayOrderInCategory>
     </GeneDef>
-	
+
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_youth_fountain</defName>
         <label>youth fountain</label>
-        <description>Having sex with a carrier of this gene makes the partner slightly younger. (Partner stays adult)</description>
+        <description>Having sex with a carrier of this gene makes the partner slightly younger.
+            (Partner stays adult)</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-2</biostatMet>
         <iconPath>UI/Ideoligions/FireLeaves</iconPath>
@@ -38,11 +40,12 @@
             </li>
         </modExtensions>
     </GeneDef>
-    
+
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_sex_age_drain</defName>
         <label>sexual age drain</label>
-        <description>Having sex transfers some of the partners life-time to themselves. (Pawn stays adult)</description>
+        <description>Having sex transfers some of the partners life-time to themselves. (Pawn stays
+            adult)</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-1</biostatMet>
         <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
@@ -55,50 +58,52 @@
             </li>
         </modExtensions>
     </GeneDef>
-    
+
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_aphrodisiac_pheromones</defName>
         <label>aphrodisiac pheromones</label>
-		<geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass>
+        <geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass>
         <description>Pheremones of this pawn induce an incressed sexdrive to others nearby.</description>
         <iconPath>Genes/Icons/Pheromones</iconPath>
         <displayOrderInCategory>4</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>1</biostatMet>
-
         <modExtensions>
-			<li Class="RJW_Genes.TickIntervalExtension">
-				<!-- One day has 60k ticks, so we check every hour with 60000/48 = 1250-->
-				<tickInterval>1250</tickInterval>
-			</li>
-			<li Class="RJW_Genes.DistanceExtension">
-				<!-- distance 25 means 25 tiles in every direction from the pheromone-pawn.-->
-				<distance>25</distance>
-			</li>
+            <li Class="RJW_Genes.TickIntervalExtension">
+                <!-- One day has 60k ticks, so we check every hour with 60000/48 = 1250-->
+                <tickInterval>1250</tickInterval>
+            </li>
+            <li Class="RJW_Genes.DistanceExtension">
+                <!-- distance 25 means 25 tiles in every direction from the pheromone-pawn.-->
+                <distance>25</distance>
+            </li>
         </modExtensions>
     </GeneDef>
-    
+
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_sexual_mytosis</defName>
         <label>orgasmic mytosis</label>
-		<!-- <geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass> -->
-        <description>Carriers have malfunctioning regenerative archites that grow more unstable with ongoing multiple orgasms - climaxing in a process of mytosis. This will result in an (biologically) identical pawn and both twins are set in a regenerative state. Also, the pawn can have multiple orgasms: In a state of higher unstableness, they come quicker.</description>
+        <!-- <geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass> -->
+        <description>Carriers have malfunctioning regenerative archites that grow more unstable with
+            ongoing multiple orgasms - climaxing in a process of mytosis. This will result in an
+            (biologically) identical pawn and both twins are set in a regenerative state. Also, the
+            pawn can have multiple orgasms: In a state of higher unstableness, they come quicker.</description>
         <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
         <displayOrderInCategory>5</displayOrderInCategory>
         <biostatCpx>5</biostatCpx>
         <biostatMet>-5</biostatMet>
-		<biostatArc>1</biostatArc>
-    </GeneDef>    
+        <biostatArc>1</biostatArc>
+    </GeneDef>
 
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_hormonal_saliva</defName>
         <label>hormonal saliva</label>
-        <description>The saliva of this xenotype stimulates growth in penises. Regular contact will lead to noticable growth.</description>
+        <description>The saliva of this xenotype stimulates growth in penises. Regular contact will
+            lead to noticable growth.</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-1</biostatMet>
         <iconPath>Genes/Icons/Big_Male_Genitalia</iconPath>
         <displayOrderInCategory>6</displayOrderInCategory>
-
         <modExtensions>
             <li Class="RJW_Genes.HormonalSalivaExtension">
                 <!-- SizeIncrement is applied "flat" -->
@@ -111,26 +116,27 @@
     </GeneDef>
 
     <GeneDef ParentName="SpecialBase">
-		<defName>rjw_genes_cocoonweaver</defName>
-		<label>cocoon weaver</label>
-		<labelShortAdj>cocooner</labelShortAdj>
-		<description>Carriers of this gene can produce a cocoon to prepare helpless (or willing) victims for breeding.</description>
-		<iconPath>Genes/Icons/Cocoon</iconPath>
-		<displayOrderInCategory>11</displayOrderInCategory>
-		<abilities>
-			<li>rjw_genes_ability_cocoonweaver</li>
-		</abilities>
-		<descriptionHyperlinks>
-			<AbilityDef>rjw_genes_ability_cocoonweaver</AbilityDef>
-		</descriptionHyperlinks>
-		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
-		<modExtensions>
-		<li Class="RJW_Genes.QirkExtension">
-        <Satisfiedquirk>BreederQuirk</Satisfiedquirk>
-		</li>
-		</modExtensions>
-	</GeneDef>
+        <defName>rjw_genes_cocoonweaver</defName>
+        <label>cocoon weaver</label>
+        <labelShortAdj>cocooner</labelShortAdj>
+        <description>Carriers of this gene can produce a cocoon to prepare helpless (or willing)
+            victims for breeding.</description>
+        <iconPath>Genes/Icons/Cocoon</iconPath>
+        <displayOrderInCategory>11</displayOrderInCategory>
+        <abilities>
+            <li>rjw_genes_ability_cocoonweaver</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>rjw_genes_ability_cocoonweaver</AbilityDef>
+        </descriptionHyperlinks>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <modExtensions>
+            <li Class="RJW_Genes.QirkExtension">
+                <Satisfiedquirk>BreederQuirk</Satisfiedquirk>
+            </li>
+        </modExtensions>
+    </GeneDef>
 
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_sex_tamer</defName>
@@ -138,9 +144,9 @@
         <labelShortAdj>sextamer</labelShortAdj>
         <description>Bestiality has a chance to tame animals or advance their training.</description>
         <iconPath>Genes/Icons/RJW_Genes_SexualTamer</iconPath>
-		<displayOrderInCategory>14</displayOrderInCategory>
-		<biostatCpx>2</biostatCpx>
-		<biostatMet>-1</biostatMet>
+        <displayOrderInCategory>14</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
     </GeneDef>
-    
+
 </Defs>
