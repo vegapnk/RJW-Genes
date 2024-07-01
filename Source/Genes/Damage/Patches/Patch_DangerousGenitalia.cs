@@ -1,12 +1,15 @@
 ﻿using HarmonyLib;
 using rjw;
+using rjw.Modules.Shared.Extensions;
 using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 using static rjw.Dialog_Sexcard;
 
 namespace RJW_Genes
@@ -40,12 +43,26 @@ namespace RJW_Genes
                     // I think there needs to be a check and logic for isReverse ... 
 
                     ModLog.Message($"Test - Tick {__instance.Sexprops.pawn} <> {__instance.Sexprops.partner} --- Thrust");
-                    ApplyDangerousGenitaliaDamage(dangerousGenitaliaPawn, fuckedPawn, __instance.Sexprops);
+
+                    bool importantPartDestroyed = ApplyDangerousGenitaliaDamage(dangerousGenitaliaPawn, fuckedPawn, __instance.Sexprops);
+                    if (importantPartDestroyed)
+                    {
+                        ModLog.Message("Genital was destroyed - aborting the SexDriver");
+                        //__instance.EndJobWith(Verse.AI.JobCondition.InterruptForced);
+                        __instance.AddFailCondition( () => true);
+                    }
                 }
             }
         }
 
-        private static void ApplyDangerousGenitaliaDamage(Pawn damager, Pawn damaged, SexProps props)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="damager"></param>
+        /// <param name="damaged"></param>
+        /// <param name="props"></param>
+        /// <returns>True if a part was destroyed, False otherwise</returns>
+        private static bool ApplyDangerousGenitaliaDamage(Pawn damager, Pawn damaged, SexProps props)
         {
             DamageWorker DamageWorker = new DamageWorker_AddInjury();
             bool damagerIsMaleOrFuta = GenderUtility.IsMale(damager) || Genital_Helper.has_penis_fertile(damager) || Genital_Helper.has_penis_infertile(damager);
@@ -68,15 +85,17 @@ namespace RJW_Genes
                             damage,
                             instigator: damager, category: DamageInfo.SourceCategory.ThingOrUnknown,
                             hitPart: GetRandomOralBodyPartRecord(damaged, allow_for_inner_damage));
-                        DamageWorker.Apply(dInfo, damaged);
-                    } break;
 
+
+                        var result = DamageWorker.Apply(dInfo, damaged);
+                        return result.LastHitPart.IsMissingForPawn(damaged);
+                    }
 
                 case xxx.rjwSextype.Vaginal:
                 case xxx.rjwSextype.Scissoring:
                     {
                         Hediff vagina = Genital_Helper.get_AllPartsHediffList(damaged).FirstOrDefault(part => Genital_Helper.is_vagina(part));
-                        if (vagina == null) return;
+                        if (vagina == null) return false;
                         CompHediffBodyPart comps = vagina.TryGetComp<rjw.CompHediffBodyPart>();
                         float penetrated_bodysize = GetBodySize(damaged, vagina);
                         float damage = CalculateSizeRelatedDamage(penetrator_bodysize, penetrator_genitalsize, penetrated_bodysize, vagina.Severity);
@@ -87,13 +106,15 @@ namespace RJW_Genes
                             damage,
                             instigator: damager, category: DamageInfo.SourceCategory.ThingOrUnknown,
                             hitPart: GetRandomGenitalBodyPartRecord(damaged, allow_for_inner_damage));
-                        DamageWorker.Apply(dInfo, damaged);
-                    } break;
+
+                        var result = DamageWorker.Apply(dInfo, damaged);
+                        return result.LastHitPart.IsMissingForPawn(damaged);
+                    }
 
                 case xxx.rjwSextype.Anal:
                     {
                         Hediff anus = Genital_Helper.get_AllPartsHediffList(damaged).FirstOrDefault(part => Genital_Helper.is_anus(part));
-                        if (anus == null) return;
+                        if (anus == null) return false;
                         CompHediffBodyPart comps = anus.TryGetComp<rjw.CompHediffBodyPart>();
                         float penetrated_bodysize = GetBodySize(damaged, anus);
                         float damage = CalculateSizeRelatedDamage(penetrator_bodysize, penetrator_genitalsize, penetrated_bodysize, anus.Severity);
@@ -104,10 +125,16 @@ namespace RJW_Genes
                             damage,
                             instigator: damager, category: DamageInfo.SourceCategory.ThingOrUnknown,
                             hitPart: GetRandomAnalBodyPartRecord(damaged, allow_for_inner_damage));
-                        DamageWorker.Apply(dInfo, damaged);
-                    } break;
 
-                default: return;
+
+                        dInfo.SetApplyAllDamage(false);
+                        dInfo.SetAllowDamagePropagation(true);
+
+                        var result = DamageWorker.Apply(dInfo, damaged);
+                        return result.LastHitPart.IsMissingForPawn(damaged);
+                    }
+
+                default: return false;
             }
         }
 
