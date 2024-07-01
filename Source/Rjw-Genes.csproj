@@ -73,7 +73,8 @@
     <Compile Include="Genes\Breeding\Genes\Gene_FerventOvipositor.cs" />
     <Compile Include="Genes\Breeding\Genes\Gene_InsectIncubator.cs" />
     <Compile Include="Genes\Cum\Patch_LikesCumflation.cs" />
-    <Compile Include="Genes\Damage\Gene_Elasticity.cs" />
+    <Compile Include="Genes\Damage\Genes\Gene_Elasticity.cs" />
+    <Compile Include="Genes\Damage\Patches\Patch_DangerousGenitalia.cs" />
     <Compile Include="Genes\Life_Force\Events\SuccubusVisit\IncidentWorker_SuccubusVisit.cs" />
     <Compile Include="Genes\Life_Force\Events\SuccubusVisit\LordJob_SuccubusVisit.cs" />
     <Compile Include="Genes\Life_Force\Interactions\SuccubusTailjob\DomSuccubusTailCustomRequirementHandler.cs" />
@@ -94,8 +95,8 @@
     <Compile Include="Genes\Cum\Gene_MuchCum.cs" />
     <Compile Include="Genes\Cum\Gene_NoCum.cs" />
     <Compile Include="Genes\Cum\Patch_TransferNutrition.cs" />
-    <Compile Include="Genes\Damage\Gene_Unbreakable.cs" />
     <Compile Include="Genes\Cum\Patch_CumflationImmunity.cs" />
+    <Compile Include="Genes\Damage\Genes\Gene_Unbreakable.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraBreasts.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraAnus.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_Futa.cs" />
@@ -196,6 +197,7 @@
     <Compile Include="Settings\RJW_Genes_Settings.cs" />
     <Compile Include="Settings\RJW_Genes_SettingsController.cs" />
     <Compile Include="ThoughtDefOf.cs" />
+    <Compile Include="VariousDefOf.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="GeneDefs_GenitaliaTypeEndogenes.xml" />

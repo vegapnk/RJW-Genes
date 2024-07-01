@@ -22,6 +22,8 @@ namespace RJW_Genes
 
         [MayRequire("LustLicentia.RJWLabs")] public static readonly HediffDef rjw_genes_cumstuffed_counter;
         [MayRequire("LustLicentia.RJWLabs")] public static readonly HediffDef rjw_genes_cumflation_counter;
+        
+        public static readonly HediffDef rjw_genes_dangerous_genitalia_damage_hediff;
 
         public static readonly HediffDef OvaryAgitator;
         public static readonly HediffDef Bioscaffold;

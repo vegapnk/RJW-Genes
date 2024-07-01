@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<DamageDef>
+        <defName>rjw_genes_dangerous_genitalia_damage</defName>
+		<label>stretch</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<hediff>rjw_genes_dangerous_genitalia_damage_hediff</hediff>
+		<impactSoundType>Slice</impactSoundType>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<externalViolence>true</externalViolence>
+		<canInterruptJobs>false</canInterruptJobs>
+		<deathMessage>{0} was fucked to death by dangerous genitalia.</deathMessage>
+		<harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+		<overkillPctToDestroyPart>0.5~1</overkillPctToDestroyPart>
+	</DamageDef>
+
+    <HediffDef ParentName="InjuryBase">
+		<defName>rjw_genes_dangerous_genitalia_damage_hediff</defName>
+        <initialSeverity>0.1</initialSeverity>
+		<displayWound>false</displayWound>
+		<stages>
+			<li>
+				<label>minor</label>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+			</li>
+		</stages>
+
+		<label>tear</label>
+		<labelNoun>an internal tear</labelNoun>
+		<description>Damage caused by close interaction with dangerous genitalia.</description>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>sutured</labelTendedWellInner>
+				<labelSolidTendedWell>set</labelSolidTendedWell>
+			</li>
+			<li Class="HediffCompProperties_Infecter">
+				<infectionChance>0.15</infectionChance>
+			</li>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>rupture scar</permanentLabel>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.025</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.0125</averagePainPerSeverityPermanent>
+			<bleedRate>0.1</bleedRate>
+			<canMerge>true</canMerge>
+			<destroyedLabel>Torn off</destroyedLabel>
+			<destroyedOutLabel>Torn out</destroyedOutLabel>
+		</injuryProps>
+	</HediffDef>
+
+</Defs>

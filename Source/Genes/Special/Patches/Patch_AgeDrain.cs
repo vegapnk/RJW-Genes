@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace RJW_Genes.Genes.Special
+namespace RJW_Genes
 {
     [HarmonyPatch(typeof(SexUtility), "Aftersex")]
     public static class Patch_AgeDrain

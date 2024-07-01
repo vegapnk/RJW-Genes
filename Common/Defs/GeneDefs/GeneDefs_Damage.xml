@@ -26,4 +26,23 @@
     </modExtensions>
   </GeneDef>
 
+  <GeneDef >
+    <defName>rjw_genes_dangerous_genitalia</defName>
+    <label>Dangerous Genitalia</label>
+    <displayCategory>rjw_genes_damage</displayCategory>
+    <description>Carriers of this genes have spikes, hooks, rings, and other nasty things at their genitalia. They will harm partners, unless the partners are similiarly equipped. The damage is based on the difference in body- and part-size.</description>
+    <iconPath>UI/Icons/Rituals/TrialDefend</iconPath>
+    <displayOrderInCategory>5</displayOrderInCategory>
+    <biostatMet>-2</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <!-- Note: This Gene is mostly handled by a Patch "Patch_DangerousGenitalia.cs" -->
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
 </Defs>
