@@ -109,7 +109,7 @@ namespace RJW_Genes
         public static readonly GeneDef rjw_genes_succubus_tail;
         public static readonly GeneDef rjw_genes_succubus_wings;
 
-        //life force
+        // Life force | Fertilin
         public static readonly GeneDef rjw_genes_lifeforce;
         public static readonly GeneDef rjw_genes_pussyhealing;
         public static readonly GeneDef rjw_genes_lifeforce_drain;
@@ -120,6 +120,10 @@ namespace RJW_Genes
         public static readonly GeneDef rjw_genes_paralysingkiss;
         public static readonly GeneDef rjw_genes_cockeater;
         public static readonly GeneDef rjw_genes_lifeforce_empath;
+
+		// Diseases
+		public static readonly GeneDef rjw_genes_genetic_disease_immunity;
+		public static readonly GeneDef rjw_genes_minor_vulnerability;
 
         //Other Defs
         public static readonly XenotypeDef rjw_genes_succubus;
