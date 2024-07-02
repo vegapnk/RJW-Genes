@@ -86,9 +86,8 @@ namespace RJW_Genes
                             instigator: damager, category: DamageInfo.SourceCategory.ThingOrUnknown,
                             hitPart: GetRandomOralBodyPartRecord(damaged, allow_for_inner_damage));
 
-
-                        var result = DamageWorker.Apply(dInfo, damaged);
-                        return result.LastHitPart.IsMissingForPawn(damaged);
+                        DamageWorker.DamageResult result = DamageWorker.Apply(dInfo, damaged);
+                        return CheckIfNeedsToAbortSexDriver(damaged, result);
                     }
 
                 case xxx.rjwSextype.Vaginal:
@@ -107,8 +106,8 @@ namespace RJW_Genes
                             instigator: damager, category: DamageInfo.SourceCategory.ThingOrUnknown,
                             hitPart: GetRandomGenitalBodyPartRecord(damaged, allow_for_inner_damage));
 
-                        var result = DamageWorker.Apply(dInfo, damaged);
-                        return result.LastHitPart.IsMissingForPawn(damaged);
+                        DamageWorker.DamageResult result = DamageWorker.Apply(dInfo, damaged);
+                        return CheckIfNeedsToAbortSexDriver(damaged, result);
                     }
 
                 case xxx.rjwSextype.Anal:
@@ -126,16 +125,19 @@ namespace RJW_Genes
                             instigator: damager, category: DamageInfo.SourceCategory.ThingOrUnknown,
                             hitPart: GetRandomAnalBodyPartRecord(damaged, allow_for_inner_damage));
 
-
-                        dInfo.SetApplyAllDamage(false);
-                        dInfo.SetAllowDamagePropagation(true);
-
-                        var result = DamageWorker.Apply(dInfo, damaged);
-                        return result.LastHitPart.IsMissingForPawn(damaged);
+                        DamageWorker.DamageResult result = DamageWorker.Apply(dInfo, damaged);
+                        return CheckIfNeedsToAbortSexDriver(damaged, result);
                     }
 
                 default: return false;
             }
+        }
+
+        private static bool CheckIfNeedsToAbortSexDriver(Pawn damaged, DamageWorker.DamageResult result)
+        {
+            bool partner_killed = damaged.Dead;
+            bool part_destroyed = result.LastHitPart.IsMissingForPawn(damaged);
+            return partner_killed || part_destroyed;
         }
 
         /// <summary>
