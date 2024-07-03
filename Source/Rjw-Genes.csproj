@@ -58,6 +58,7 @@
     <Compile Include="Animal_Inheritance\Defs\BestialityGeneInheritanceDef.cs" />
     <Compile Include="Common\Defs\DistanceExtension.cs" />
     <Compile Include="Common\Defs\ModExtensionHelper.cs" />
+    <Compile Include="Common\Defs\TickBasedChanceExtension.cs" />
     <Compile Include="Common\Either.cs" />
     <Compile Include="Common\Helpers\LaborState.cs" />
     <Compile Include="Common\Helpers\MapUtility.cs" />
@@ -88,8 +89,7 @@
     <Compile Include="Genes\Breeding\Patches\PatchMechBirth.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_Femboy.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_UdderBreasts.cs" />
-    <Compile Include="Genes\Gender\Defs\GenderFluidExtension.cs" />
-    <Compile Include="Genes\Gender\Gene_GenderFluid.cs" />
+    <Compile Include="Genes\Gender\Genes\Gene_GenderFluid.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_EvergrowingGenitalia.cs" />
     <Compile Include="Genes\Cum\CumUtility.cs" />
     <Compile Include="Genes\Cum\Gene_VeryMuchCum.cs" />
@@ -109,8 +109,8 @@
     <Compile Include="Genes\ExtraGenitalia\Gene_NoPenis.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraPenis.cs" />
     <Compile Include="Genes\Gender\GenderUtility.cs" />
-    <Compile Include="Genes\Gender\Gene_FemaleOnly.cs" />
-    <Compile Include="Genes\Gender\Gene_MaleOnly.cs" />
+    <Compile Include="Genes\Gender\Genes\Gene_FemaleOnly.cs" />
+    <Compile Include="Genes\Gender\Genes\Gene_MaleOnly.cs" />
     <Compile Include="Genes\GeneUtility.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_BigBreasts.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_GenitaliaResizingGene.cs" />
@@ -241,7 +241,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Genes\Diseases\Genes\" />
-    <Folder Include="Genes\Gender\Patches\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
