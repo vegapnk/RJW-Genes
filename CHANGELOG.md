@@ -1,4 +1,4 @@
-# 2.2.0
+# 2.2.0 (dd-mm-2024)
 
 **Genetic Diseases** 
 
@@ -32,7 +32,7 @@ I know that this is some overlap with the STD mod, but well ... you are free to 
 - GenderFluid-Gene now uses a generalized `TickBasedChanceExtension` over its unique special `GenderFluidExtension`
 - Introduced a `ModLog.Debug` Function that checks for the settings before printing - trying to spread it over the whole project. 
 
-# 2.1.0
+# 2.1.0 (27-06-2024)
 
 **Additions**:
 
@@ -79,7 +79,7 @@ I know that this is some overlap with the STD mod, but well ... you are free to 
 - Some new Icons thanks to Kira-Bad-Artist
 - Some new Icons thanks to Archer 
 
-# 2.0.0
+# 2.0.0 (30-05-2024)
 
 **Summary**:
 
@@ -126,20 +126,20 @@ I know that this is some overlap with the STD mod, but well ... you are free to 
 - Patches to RJW-Pregnancy Helper to account for Male Pregs. 
 - Some replacements from `hasGene` to `hasActiveGene` 
 
-# 1.3.3
+# 1.3.3 (02-11-2023)
 
 **Fixes:** 
 
 - Added another check to the AG Malachai Xenotype (Fixes #68)
 - Fixed the `GatheredCum`Fertilin Ingestion Patch throwing an Error for people without Sexperience (Fixes #69 (nice))
 
-# 1.3.2
+# 1.3.2 (24-10-2023)
 
 **Fixes:**
 
 - Removed patch for Malachai, needs a different patching operator but I don't want to have broken fixes for now (Tracked in a new Issue)
 
-# 1.3.1 
+# 1.3.1 (22-10-2023)
 
 **Changes**
 
@@ -178,7 +178,7 @@ The pawns that are gender fluid can get pregnant.
 However, with RJW 5.3.7 these pregnancies disappear. 
 This is a change needed upstream, but I will have a look. 
 
-# 1.2.1 
+# 1.2.1 (18-06-2023)
 
 **Fixes**: 
 
@@ -258,9 +258,9 @@ And I am aware that the TiTs-Myr work different than the things I made now.
 - Mostly Patches and Changes to the Halamyr Defs
 - Some re-arranging and mayRequires for other mods
 
-# 1.1.4
+# 1.1.4 (06-04-2023)
 
-Fixes: 
+**Fixes:**
 
 - Youth Fountain and Age Drainer **really** "stop" at 18 (#26, #28) and never age pawns
 - Drastically reduced vomiting time due to an missunderstanding (#29). `0.4` instead of `0.01`
@@ -268,37 +268,37 @@ Fixes:
 Sometimes life is like that, and you have to fix the fixes. 
 It was never really broken, life is just very long. 
 
-# 1.1.3
+# 1.1.3 (28-03-2023)
 
-Changes:
+**Changes:**
 
 - Youth Fountain and Age Drainer "stop" at 18 (#26)
 - Youth Fountain and Age Drainer activate only for pawns at 18 (#26)
 - Drained Pawns vomit less (from mtb 0.05 to 0.01)(#29)
 
-Fixes: 
+**Fixes:**
 
 - InsectBreeder would mess with normal Pawn-Animal pregancy for egg laying animals (#23)
 
-# 1.1.2
+# 1.1.2 (19-03-2023)
 
-Changes:
+**Changes:**
 
 - Added more cool images from WasMachenDennSachen (#22)
 
-Fixes: 
+**Fixes:** 
 
 - Aphrodisiac Pheromones checks for children and other conditions (#25)
 
-# 1.1.1 
+# 1.1.1 (10-03-2023)
 
-Changes: 
+**Changes:** 
 
 - Drastically increased mood-penalty for Fertilin-Loss (if the pawn is still too happy, there will never be a breakdown for missing fertilin)
 - No-Breast Genes add Nipples
 - Featureless Chest Gene (No Nipples at all, adds the RJW Featureless Chest as requested per some Kobold fetishists)
 
-Fixes: 
+**Fixes:** 
 
 - Small and Big Male Genitalia had images wrong way round 
 - Fertilin should activate at a MinAge of 18 
