@@ -75,7 +75,6 @@
     <Compile Include="Genes\Cum\Patch_LikesCumflation.cs" />
     <Compile Include="Genes\Damage\Gene_Elasticity.cs" />
     <Compile Include="Genes\Diseases\Defs\GeneticDiseaseExtension.cs" />
-    <Compile Include="Genes\Diseases\Genes\DiseaseGene.cs" />
     <Compile Include="Genes\Diseases\Patches\Patch_AftersexUtility_TransferGeneticDiseases.cs" />
     <Compile Include="Genes\Life_Force\Events\SuccubusVisit\IncidentWorker_SuccubusVisit.cs" />
     <Compile Include="Genes\Life_Force\Events\SuccubusVisit\LordJob_SuccubusVisit.cs" />
@@ -241,6 +240,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Genes\Diseases\Genes\" />
     <Folder Include="Genes\Gender\Patches\" />
   </ItemGroup>
   <ItemGroup>

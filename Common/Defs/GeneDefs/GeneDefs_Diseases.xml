@@ -2,12 +2,9 @@
 <Defs>
 
     <GeneDef>
-        
 		<displayCategory>rjw_genes_diseases</displayCategory>
         <defName>rjw_genes_genetic_disease_immunity</defName>
-
         <displayOrderInCategory>1</displayOrderInCategory>
-
         <label>genetic disease immunity</label>
         <description>This gene makes the pawn immune against genetic STDs and other genes that imply negative side-effects. </description>
         <biostatCpx>2</biostatCpx>
@@ -17,15 +14,12 @@
                 Class="VanillaGenesExpanded.GeneExtension">
                 <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
                 <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-            </li>
+        </li>
     </GeneDef>
 
 	<GeneDef>
 		<displayCategory>rjw_genes_diseases</displayCategory>
         <defName>rjw_genes_minor_vulnerability</defName>
-
-        <geneClass>RJW_Genes.DiseaseGene</geneClass>
-
         <label>minor vulnerability</label>
         <description>This gene makes the pawn more vulnerable, and a more attractive target for rape. </description>
         <biostatCpx>2</biostatCpx>

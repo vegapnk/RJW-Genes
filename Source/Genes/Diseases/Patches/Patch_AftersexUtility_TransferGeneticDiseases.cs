@@ -87,7 +87,9 @@ namespace RJW_Genes.Genes.Diseases.Patches
 
         private static bool IsGeneticDiseaseGene(GeneDef geneDef)
         {
-            return geneDef.geneClass.FullName.Contains("DiseaseGene");
+            if (geneDef == null) return false;
+            GeneticDiseaseExtension diseaseExt = geneDef.GetModExtension<GeneticDiseaseExtension>();
+            return diseaseExt != null;
         }
 
         private static float LookupDiseaseInfectionChance(GeneDef geneDef)
