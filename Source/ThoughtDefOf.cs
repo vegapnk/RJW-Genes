@@ -15,6 +15,8 @@ namespace RJW_Genes
 
         public static readonly ThoughtDef rjw_genes_pheromone_carrier_nearby;
 
+        public static readonly ThoughtDef rjw_genes_appealing_cock;
+
         //Others with same names but other defs than in genedefof
         public static readonly InteractionDef rjw_genes_flirt;
     }
