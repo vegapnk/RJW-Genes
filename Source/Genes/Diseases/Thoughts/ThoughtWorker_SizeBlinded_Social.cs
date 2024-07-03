@@ -26,6 +26,8 @@ namespace RJW_Genes
             // Do nothing if Pawn is Baby or Child (#25)
             if (!pawn.ageTracker.Adult)
                 return (ThoughtState)false;
+            if (!other.ageTracker.Adult)
+                return (ThoughtState)false;
             // Only check if they are spawned humans
             if (!pawn.Spawned || !other.Spawned)
                 return (ThoughtState)false;

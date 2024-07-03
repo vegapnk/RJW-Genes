@@ -26,7 +26,8 @@ I know that this is some overlap with the STD mod, but well ... you are free to 
 - Disease Gene: Vulnerability. Pawn is likelier to be raped 
 - Disease Gene: Infectious Hypersexuality
 - Disease Gene: Infectious Homosexuality & Bisexuality
-- Disease Gene: Fluctual Sexual Need. (Configurable) Chance to reset sex-need to near-zero and gain a bit of rest-need. 
+- Disease Gene: Fluctual Sexual Need. (Configurable) Chance to reset sex-need to near-zero and gain a bit of rest-need.
+- Disease Gene: Size Blinded. Pawns have a higher chance for hooking up with pawns with a big cock, lower chance for small cocks.
 
 **Fixes:**
 
@@ -36,6 +37,7 @@ I know that this is some overlap with the STD mod, but well ... you are free to 
 
 - GenderFluid-Gene now uses a generalized `TickBasedChanceExtension` over its unique special `GenderFluidExtension`
 - Introduced a `ModLog.Debug` Function that checks for the settings before printing - trying to spread it over the whole project. 
+- Removed TODO File. I have enough to do. 
 
 # 2.1.0 (27-06-2024)
 
