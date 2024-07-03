@@ -15,6 +15,8 @@ namespace RJW_Genes.Genes.Diseases.Patches
 
         public static void Postfix(SexProps props)
         {
+            if (!RJW_Genes_Settings.rjw_genes_genetic_disease_spread) return;
+            
             if (props == null || props.pawn == null || props.partner == null) return;
 
             Pawn pawn = props.pawn;
@@ -25,6 +27,9 @@ namespace RJW_Genes.Genes.Diseases.Patches
             if (pawn.genes == null || partner.genes == null) return;
             // No Infections on Condom Use
             if (props.usedCondom) return;
+
+            // Exit early if settings require penetrative sex, but this is not penetrative sex
+            if (!IsPenetrativeSex(props) && RJW_Genes_Settings.rjw_genes_genetic_disease_spread_only_on_penetrative_sex) return;
 
             ModLog.Debug($"Firing Patch_TransferGeneticDiseases for {pawn} and {partner}");
             TryTransferGeneticDiseases(pawn, partner, props);
@@ -47,7 +52,7 @@ namespace RJW_Genes.Genes.Diseases.Patches
 
                 if ((new Random()).NextDouble() <= LookupDiseaseInfectionChance(disease))
                 {
-                    infected.genes.AddGene(disease, false);
+                    infected.genes.AddGene(disease, !RJW_Genes_Settings.rjw_genes_genetic_disease_as_endogenes);
                 }
             }
         }
@@ -65,6 +70,19 @@ namespace RJW_Genes.Genes.Diseases.Patches
             }
 
             return new List<GeneDef>() { };
+        }
+
+        private static bool IsPenetrativeSex(SexProps props)
+        {
+            if (props == null) return false;
+
+            return props.sexType ==
+                xxx.rjwSextype.Vaginal
+                || props.sexType == xxx.rjwSextype.Anal
+                || props.sexType == xxx.rjwSextype.Oral
+                || props.sexType == xxx.rjwSextype.DoublePenetration
+                || props.sexType == xxx.rjwSextype.Fellatio
+                || props.sexType == xxx.rjwSextype.Sixtynine;
         }
 
         private static bool IsGeneticDiseaseGene(GeneDef geneDef)
