@@ -20,7 +20,7 @@
         <marketValueFactor>0.95</marketValueFactor>
         <label>genetic disease immunity</label>
         <description>This gene makes the pawn immune against genetic STDs and some other genes that
-            imply negative side-effects. </description>
+            imply negative side-effects.</description>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
         <iconPath>UI/Icons/Rituals/TrialDefend</iconPath>
@@ -38,7 +38,7 @@
         <defName>rjw_genes_minor_vulnerability</defName>
         <label>minor vulnerability</label>
         <description>This gene makes the pawn a bit more vulnerable, and a slightly more attractive
-            target for rape. </description>
+            target for rape.</description>
         <biostatCpx>1</biostatCpx>
         <biostatMet>1</biostatMet>
         <marketValueFactor>0.85</marketValueFactor>
@@ -64,7 +64,7 @@
         <defName>rjw_genes_major_vulnerability</defName>
         <label>major vulnerability</label>
         <description>This gene makes the pawn more vulnerable, and a more attractive target for
-            rape. </description>
+            rape.</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>1</biostatMet>
         <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
@@ -89,7 +89,7 @@
         <defName>rjw_genes_infectious_hypersexuality</defName>
         <label>infectious hypersexuality</label>
         <description>This gene makes the pawn hypersexual, and has a chance to spread on
-            intercourse. </description>
+            intercourse.</description>
         <iconPath>Genes/Icons/Hypersexual</iconPath>
         <biostatCpx>2</biostatCpx>
         <biostatMet>2</biostatMet>
@@ -114,7 +114,7 @@
     <GeneDef ParentName="RJWGeneDisease">
         <defName>rjw_genes_infectious_bisexuality</defName>
         <label>infectious bisexuality</label>
-        <description>This gene makes the pawn bisexual, and has a chance to spread on intercourse. </description>
+        <description>This gene makes the pawn bisexual, and has a chance to spread on intercourse.</description>
         <iconPath>UI\Ideoligions\Universal\RoundC</iconPath>
         <biostatCpx>1</biostatCpx>
         <biostatMet>0</biostatMet>
@@ -141,7 +141,7 @@
     <GeneDef ParentName="RJWGeneDisease">
         <defName>rjw_genes_infectious_homosexuality</defName>
         <label>infectious homosexuality</label>
-        <description>This gene makes the pawn homosexual, and has a chance to spread on intercourse. </description>
+        <description>This gene makes the pawn homosexual, and has a chance to spread on intercourse.</description>
         <iconPath>UI\Ideoligions\Universal\RoundC</iconPath>
         <biostatCpx>1</biostatCpx>
         <biostatMet>0</biostatMet>
@@ -161,6 +161,27 @@
         <modExtensions>
             <li Class="RJW_Genes.GeneticDiseaseExtension">
                 <infectionChance>0.1</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_fluctual_sexual_needs</defName>
+        <label>fluctual sexual needs</label>
+        <description>Carriers of this genetic disease have a chance to suddenly require sex, gaining a bit of energy to find quick relief.</description>
+        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <displayOrderInCategory>11</displayOrderInCategory>
+        <geneClass>RJW_Genes.Gene_FluctualSexualNeed</geneClass>
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.1</infectionChance>
+            </li>
+            <li Class="RJW_Genes.TickBasedChanceExtension">
+                <!-- 30k = 1/2 days -->
+                <tickInterval>30000</tickInterval>
+                <eventChance>0.15</eventChance>
             </li>
         </modExtensions>
     </GeneDef>

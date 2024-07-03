@@ -124,6 +124,8 @@ namespace RJW_Genes
 		// Diseases
 		public static readonly GeneDef rjw_genes_genetic_disease_immunity;
 		public static readonly GeneDef rjw_genes_minor_vulnerability;
+        public static readonly GeneDef rjw_genes_major_vulnerability;
+		public static readonly GeneDef rjw_genes_fluctual_sexual_needs;
 
         //Other Defs
         public static readonly XenotypeDef rjw_genes_succubus;
