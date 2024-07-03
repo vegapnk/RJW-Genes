@@ -186,4 +186,20 @@
         </modExtensions>
     </GeneDef>
 
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_size_blinded</defName>
+        <label>size blinded</label>
+        <description>This genetic disease makes the carrier dramatically more drawn to pawns with huge cocks.</description>
+        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <displayOrderInCategory>11</displayOrderInCategory>
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.1</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
 </Defs>
