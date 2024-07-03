@@ -1,3 +1,37 @@
+# 2.2.0
+
+**Genetic Diseases** 
+
+This update introduces genetic diseases that are shared on sex. 
+Infection is handled when sex finishes, so a coitus-interruptus will not result in infections. 
+
+Infections can be 
+
+- Turned off entirely 
+- Spread only on penetrative sex
+- Chances are adjustable per XML per Gene
+
+By turning their spread off, you effectively have a set of normal negative genes. 
+
+*Why???* 
+
+Most of the genes so far were positive or neutral, 
+so I got some fair requests to introduce negative genes to keep xenotypes balanced. 
+I know that this is some overlap with the STD mod, but well ... you are free to turn things off? 
+
+**Additions** 
+
+- Passive Gene: *Genetic Disease Immunity* - cannot get infected by any genetic diseases, and won't be affected by some other genes (see relevant genes)
+- Disease Gene: Vulnerability. Pawn is likelier to be raped 
+- Disease Gene: Infectious Hypersexuality
+- Disease Gene: Infectious Homosexuality & Bisexuality
+- Disease Gene: Fluctual Sexual Need. (Configurable) Chance to reset sex-need to near-zero and gain a bit of rest-need. 
+
+**Internal**
+
+- GenderFluid-Gene now uses a generalized `TickBasedChanceExtension` over its unique special `GenderFluidExtension`
+- Introduced a `ModLog.Debug` Function that checks for the settings before printing - trying to spread it over the whole project. 
+
 # 2.1.0
 
 **Additions**:
