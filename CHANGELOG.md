@@ -12,6 +12,7 @@ Infections can be
 - Chances are adjustable per XML per Gene
 
 By turning their spread off, you effectively have a set of normal negative genes. 
+Dead pawns can spread diseases, but cannot receive them. For all you necros out there. 
 
 *Why???* 
 

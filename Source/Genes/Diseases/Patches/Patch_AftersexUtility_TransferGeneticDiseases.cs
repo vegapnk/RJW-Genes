@@ -43,6 +43,11 @@ namespace RJW_Genes.Genes.Diseases.Patches
                 ModLog.Debug($"{infected} is immune to genetic diseases");
                 return;
             }
+            if (infected.Dead)
+            {
+                // Dead people can spread, but not receive, diseases.
+                return;
+            }
 
             foreach (GeneDef disease in GetGeneticDiseaseGenes(infector)) {
                 ModLog.Debug($"Found genetic disease {disease} in {infector}, trying to infect {infected}");
