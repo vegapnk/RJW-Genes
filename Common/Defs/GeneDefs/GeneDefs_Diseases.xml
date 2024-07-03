@@ -1,43 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <GeneDef>
-		<displayCategory>rjw_genes_diseases</displayCategory>
-        <defName>rjw_genes_genetic_disease_immunity</defName>
-        <displayOrderInCategory>1</displayOrderInCategory>
-        <label>genetic disease immunity</label>
-        <description>This gene makes the pawn immune against genetic STDs and other genes that imply negative side-effects. </description>
-        <biostatCpx>2</biostatCpx>
-        <biostatMet>-1</biostatMet>
-        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
-        <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
-                Class="VanillaGenesExpanded.GeneExtension">
-                <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-                <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-        </li>
-    </GeneDef>
-
-	<GeneDef>
-		<displayCategory>rjw_genes_diseases</displayCategory>
-        <defName>rjw_genes_minor_vulnerability</defName>
-        <label>minor vulnerability</label>
-        <description>This gene makes the pawn more vulnerable, and a more attractive target for rape. </description>
-        <biostatCpx>2</biostatCpx>
-        <biostatMet>-1</biostatMet>
-        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
-        <displayOrderInCategory>3</displayOrderInCategory>
-
+    <GeneDef Name="RJWGeneDisease" Abstract="True">
+        <displayCategory>rjw_genes_diseases</displayCategory>
+        <randomChosen>false</randomChosen>
         <modExtensions>
             <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
                 Class="VanillaGenesExpanded.GeneExtension">
                 <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
                 <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
             </li>
-            
-            <li Class="RJW_Genes.GeneticDiseaseExtension">
-                <infectionChance>1.0</infectionChance>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef>
+        <displayCategory>rjw_genes_diseases</displayCategory>
+        <defName>rjw_genes_genetic_disease_immunity</defName>
+        <displayOrderInCategory>1</displayOrderInCategory>
+        <marketValueFactor>0.95</marketValueFactor>
+        <label>genetic disease immunity</label>
+        <description>This gene makes the pawn immune against genetic STDs and some other genes that
+            imply negative side-effects. </description>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <iconPath>UI/Icons/Rituals/TrialDefend</iconPath>
+        <modExtensions>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+                Class="VanillaGenesExpanded.GeneExtension">
+                <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+                <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
             </li>
         </modExtensions>
-	</GeneDef>
+    </GeneDef>
+
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_minor_vulnerability</defName>
+        <label>minor vulnerability</label>
+        <description>This gene makes the pawn a bit more vulnerable, and a slightly more attractive
+            target for rape. </description>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <marketValueFactor>0.85</marketValueFactor>
+        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <displayOrderInCategory>5</displayOrderInCategory>
+
+        <statOffsets>
+            <Vulnerability>0.15</Vulnerability>
+        </statOffsets>
+
+        <exclusionTags>
+            <li>RJW_Genes_Vulnerability</li>
+        </exclusionTags>
+
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.05</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_major_vulnerability</defName>
+        <label>major vulnerability</label>
+        <description>This gene makes the pawn more vulnerable, and a more attractive target for
+            rape. </description>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <displayOrderInCategory>6</displayOrderInCategory>
+
+        <exclusionTags>
+            <li>RJW_Genes_Vulnerability</li>
+        </exclusionTags>
+
+        <statOffsets>
+            <Vulnerability>0.3</Vulnerability>
+        </statOffsets>
+
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.03</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_infectious_hypersexuality</defName>
+        <label>infectious hypersexuality</label>
+        <description>This gene makes the pawn hypersexual, and has a chance to spread on
+            intercourse. </description>
+        <iconPath>Genes/Icons/Hypersexual</iconPath>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <displayOrderInCategory>7</displayOrderInCategory>
+        <exclusionTags>
+            <li>rjw_genes_hypersexuality_trait_giver</li>
+        </exclusionTags>
+
+        <forcedTraits>
+            <li>
+                <def>Nymphomaniac</def>
+            </li>
+        </forcedTraits>
+
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.05</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_infectious_bisexuality</defName>
+        <label>infectious bisexuality</label>
+        <description>This gene makes the pawn bisexual, and has a chance to spread on intercourse. </description>
+        <iconPath>UI\Ideoligions\Universal\RoundC</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <displayOrderInCategory>8</displayOrderInCategory>
+
+        <exclusionTags>
+            <li>rjw_genes_bisexuality_trait_giver</li>
+            <li>rjw_genes_sexual_orientation</li>
+        </exclusionTags>
+
+        <forcedTraits>
+            <li>
+                <def>Bisexual</def>
+            </li>
+        </forcedTraits>
+
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.1</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_infectious_homosexuality</defName>
+        <label>infectious homosexuality</label>
+        <description>This gene makes the pawn homosexual, and has a chance to spread on intercourse. </description>
+        <iconPath>UI\Ideoligions\Universal\RoundC</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <displayOrderInCategory>9</displayOrderInCategory>
+
+        <exclusionTags>
+            <li>rjw_genes_homosexuality_trait_giver</li>
+            <li>rjw_genes_sexual_orientation</li>
+        </exclusionTags>
+
+        <forcedTraits>
+            <li>
+                <def>Gay</def>
+            </li>
+        </forcedTraits>
+
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.1</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
 
 </Defs>
