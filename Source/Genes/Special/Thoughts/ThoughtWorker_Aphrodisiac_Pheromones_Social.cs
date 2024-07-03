@@ -40,9 +40,19 @@ namespace RJW_Genes
             // If the pawn is not on Map (e.g. caravan), no mali 
             if (!MapUtility.PawnIsOnHomeMap(pawn))
                 return (ThoughtState)false;
-            // Do nothing for pawns that also have pheromones
-            if (GeneUtility.HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_aphrodisiac_pheromones))
+
+            // Do nothing if the pawn does not have the pheromones
+            if (!GeneUtility.HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_aphrodisiac_pheromones))
                 return (ThoughtState)false;
+
+            // Do nothing for others that also have pheromones
+            if (GeneUtility.HasGeneNullCheck(other, GeneDefOf.rjw_genes_aphrodisiac_pheromones))
+                return (ThoughtState)false;
+
+            // Do nothing for pawns that wear Gas-Masks
+            if (other.apparel != null && other.apparel.AnyApparel)
+                if (other.apparel.WornApparel.Any(apparel => apparel.def == RimWorld.ThingDefOf.Apparel_GasMask))
+                    return (ThoughtState)false;
 
             // Actual Logic: 
             // Pawn qualifies in right distance and needs line of sight.
