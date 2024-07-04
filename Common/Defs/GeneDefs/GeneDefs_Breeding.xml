@@ -124,29 +124,27 @@
 
     <conditionalStatAffecters>
       <li Class="RJW_Genes.ConditionalStatAffecter_NoChildren">
-        <statFactors>
-          <MoveSpeed>0.7</MoveSpeed>
-        </statFactors>
         <statOffsets>
-          <WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+          <WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
           <Fertility>1.2</Fertility>
+          <SexFrequency>1.2</SexFrequency>
+          <MentalBreakThreshold>-0.15</MentalBreakThreshold>
+          <GlobalLearningFactor>-0.1</GlobalLearningFactor>
         </statOffsets>
       </li>
       <li Class="RJW_Genes.ConditionalStatAffecter_ManyChildren">
-        <statFactors>
-          <MoveSpeed>1.05</MoveSpeed>
-        </statFactors>
         <statOffsets>
+          <MoveSpeed>0.05</MoveSpeed>
           <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
           <Fertility>0.1</Fertility>
+          <SexFrequency>0.4</SexFrequency>
         </statOffsets>
       </li>
       <li Class="RJW_Genes.ConditionalStatAffecter_VeryManyChildren">
-        <statFactors>
-          <MoveSpeed>1.1</MoveSpeed>
-        </statFactors>
         <statOffsets>
+          <MoveSpeed>0.15</MoveSpeed>
           <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+          <MentalBreakThreshold>0.25</MentalBreakThreshold>
         </statOffsets>
       </li>
     </conditionalStatAffecters>
