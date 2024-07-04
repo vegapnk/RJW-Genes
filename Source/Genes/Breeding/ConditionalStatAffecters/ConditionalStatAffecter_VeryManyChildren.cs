@@ -20,6 +20,10 @@ namespace RJW_Genes
 
             if (req.Thing is Pawn pawn)
             {
+                // Do nothing if Pawn is Baby or Child (#25)
+                if (!pawn.ageTracker.Adult)
+                    return false;
+
                 if (GeneUtility.HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_hardwired_progenity))
                 {
                     return pawn.relations.ChildrenCount >= THRESHOLD_FOR_CHILDREN;
