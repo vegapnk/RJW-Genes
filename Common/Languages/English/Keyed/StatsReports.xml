@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<StatsReport_NoChildren>Pawn doesn't have any children.</StatsReport_NoChildren>
+	<StatsReport_ManyChildren>Pawn has a decent amount of children.</StatsReport_ManyChildren>
+	<StatsReport_VeryManyChildren>Pawn has a lot of children.</StatsReport_VeryManyChildren>
+
+</LanguageData>

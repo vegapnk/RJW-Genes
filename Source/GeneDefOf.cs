@@ -73,6 +73,7 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_fervent_ovipositor;
 		public static readonly GeneDef rjw_genes_insectbreeder;
 		public static readonly GeneDef rjw_genes_insectincubator;
+		public static readonly GeneDef rjw_genes_hardwired_progenity;
         
 		// Cum 
         public static readonly GeneDef rjw_genes_no_cum;

@@ -71,6 +71,9 @@
     <Compile Include="Genes\Breeding\Abilities\CompProperties_AbilityMatingCall.cs" />
     <Compile Include="Genes\Breeding\Abilities\CompProperties_AbilityPheromoneSpit.cs" />
     <Compile Include="Genes\Breeding\AnimalBreedingHelper.cs" />
+    <Compile Include="Genes\Breeding\ConditionalStatAffecters\ConditionalStatAffecter_NoChildren.cs" />
+    <Compile Include="Genes\Breeding\ConditionalStatAffecters\ConditionalStatAffecter_ManyChildren.cs" />
+    <Compile Include="Genes\Breeding\ConditionalStatAffecters\ConditionalStatAffecter_VeryManyChildren.cs" />
     <Compile Include="Genes\Breeding\Genes\Gene_FerventOvipositor.cs" />
     <Compile Include="Genes\Breeding\Genes\Gene_InsectIncubator.cs" />
     <Compile Include="Genes\Cum\Patch_LikesCumflation.cs" />

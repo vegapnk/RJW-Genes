@@ -115,4 +115,43 @@
     <biostatMet>-1</biostatMet>
   </GeneDef>
 
+  <GeneDef ParentName="BreedingBase">
+    <defName>rjw_genes_hardwired_progenity</defName>
+    <label>Hardwired Progenity</label>
+    <description>Carriers of this gene need to procreate. They suffer negative effects if they are childless, and have increased capabilities if they reach a high amount of offsprings.</description>
+    <iconPath>Genes/Icons/RJW_Genes_PheromoneSpit</iconPath>
+    <displayOrderInCategory>70</displayOrderInCategory>
+
+    <conditionalStatAffecters>
+      <li Class="RJW_Genes.ConditionalStatAffecter_NoChildren">
+        <statFactors>
+          <MoveSpeed>0.7</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+          <Fertility>1.2</Fertility>
+        </statOffsets>
+      </li>
+      <li Class="RJW_Genes.ConditionalStatAffecter_ManyChildren">
+        <statFactors>
+          <MoveSpeed>1.05</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+          <Fertility>0.1</Fertility>
+        </statOffsets>
+      </li>
+      <li Class="RJW_Genes.ConditionalStatAffecter_VeryManyChildren">
+        <statFactors>
+          <MoveSpeed>1.1</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+        </statOffsets>
+      </li>
+    </conditionalStatAffecters>
+
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+  </GeneDef>
 </Defs>
