@@ -140,13 +140,44 @@
 
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_sex_tamer</defName>
-        <label>Sexual Tamer</label>
+        <label>sexual tamer</label>
         <labelShortAdj>sextamer</labelShortAdj>
         <description>Bestiality has a chance to tame animals or advance their training.</description>
         <iconPath>Genes/Icons/RJW_Genes_SexualTamer</iconPath>
         <displayOrderInCategory>14</displayOrderInCategory>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_sexual_genetic_swap</defName>
+        <label>sexual genetic swap</label>
+        <description>Carriers with this gene may switch a gene with their sex-partner. Switched Genes are always endogenes.</description>
+        <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
+        <displayOrderInCategory>20</displayOrderInCategory>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <modExtensions>
+            <li Class="RJW_Genes.ChanceExtension">
+                <chance>0.1</chance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_sexual_genetic_thief</defName>
+        <label>sexual gene thief</label>
+        <description>Carriers with this gene may steal a gene from their sex-partner. Stolen genes are always xenogenes.</description>
+        <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
+        <displayOrderInCategory>21</displayOrderInCategory>
+        <biostatCpx>5</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <biostatArc>1</biostatArc>
+        <modExtensions>
+            <li Class="RJW_Genes.ChanceExtension">
+                <chance>0.2</chance>
+            </li>
+        </modExtensions>
     </GeneDef>
 
 </Defs>

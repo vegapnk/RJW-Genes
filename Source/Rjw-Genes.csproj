@@ -56,6 +56,7 @@
     <Compile Include="Animal_Inheritance\Settings\RJW_BGSSettings.cs" />
     <Compile Include="Animal_Inheritance\Settings\RJW_BGSSettingsController.cs" />
     <Compile Include="Animal_Inheritance\Defs\BestialityGeneInheritanceDef.cs" />
+    <Compile Include="Common\Defs\ChanceExtension.cs" />
     <Compile Include="Common\Defs\DistanceExtension.cs" />
     <Compile Include="Common\Defs\ModExtensionHelper.cs" />
     <Compile Include="Common\Defs\TickBasedChanceExtension.cs" />
@@ -188,6 +189,8 @@
     <Compile Include="Genes\Special\Defs\AgeTransferExtension.cs" />
     <Compile Include="Genes\Special\Defs\HormonalSalivaExtension.cs" />
     <Compile Include="Genes\Special\Patches\Patch_AgeDrain.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_GeneticSexSwap.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_GeneticSexThief.cs" />
     <Compile Include="Genes\Special\Patches\Patch_HormonalSaliva.cs" />
     <Compile Include="Genes\Special\Patches\Patch_OrgasmMytosis.cs" />
     <Compile Include="Genes\Special\Patches\Patch_SexualTamer.cs" />

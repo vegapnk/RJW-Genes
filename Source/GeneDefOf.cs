@@ -105,6 +105,8 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_hormonal_saliva;
 		public static readonly GeneDef rjw_genes_cocoonweaver;
         public static readonly GeneDef rjw_genes_sex_tamer;
+		public static readonly GeneDef rjw_genes_sexual_genetic_swap;
+		public static readonly GeneDef rjw_genes_sexual_genetic_thief;
 
         // Cosmetic
         public static readonly GeneDef rjw_genes_succubus_tail;

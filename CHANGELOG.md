@@ -68,7 +68,7 @@ but they are meant mostly to have infectors immune against their own diseases.
 
 **Additions:** 
 
-- Passive Gene: *Genetic Disease Immunity* - cannot get infected by any genetic diseases, and won't be affected by some other genes (see relevant genes)
+- Passive Gene: Genetic Disease Immunity. cannot get infected by any genetic diseases, and won't be affected by some other genes (see relevant genes)
 - Disease Gene: Vulnerability. Pawn is likelier to be raped 
 - Disease Gene: Infectious Hypersexuality
 - Disease Gene: Infectious Homosexuality & Bisexuality
@@ -78,6 +78,8 @@ but they are meant mostly to have infectors immune against their own diseases.
 - Disease Gene: Size Blinded. Pawns have a higher chance for hooking up with pawns with a big cock, lower chance for small cocks.
 - Infector Gene: Genetic Stretcher. Pawns can infect other pawns with *Size Blinded*
 - Gene: Hardwired Progenity. Pawns with this get a malus on having no-children, and bonus on having a lot. 
+- Gene: Sexual Genetic Swap. Pawns have a chance to switch a random gene with their sexpartner. 
+- (Archite) Gene: Sexual Genetic Thief. Pawns have a chance to steal a gene from their sexpartner. Genetic Disease Immunity shields against this. 
 - Pawns will have negative thoughts about pawns with more genetic diseases than themselves. 
 
 **Fixes:**
