@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace RJW_Genes.Genes.Diseases.Patches
+namespace RJW_Genes
 {
     [HarmonyPatch(typeof(SexUtility), "Aftersex")]
     public class Patch_AftersexUtility_TransferGeneticDiseases
@@ -31,7 +31,7 @@ namespace RJW_Genes.Genes.Diseases.Patches
             // Exit early if settings require penetrative sex, but this is not penetrative sex
             if (!DiseaseHelper.IsPenetrativeSex(props) && RJW_Genes_Settings.rjw_genes_genetic_disease_spread_only_on_penetrative_sex) return;
 
-            ModLog.Debug($"Firing Patch_TransferGeneticDiseases for {pawn} and {partner}");
+            //ModLog.Debug($"Firing Patch_TransferGeneticDiseases for {pawn} and {partner}");
             TryTransferGeneticDiseases(pawn, partner, props);
             TryTransferGeneticDiseases(partner, pawn, props);
         }

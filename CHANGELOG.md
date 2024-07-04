@@ -1,6 +1,8 @@
 # 2.2.0 (dd-mm-2024)
 
-**Genetic Diseases** 
+## Explanations
+
+**Genetic Diseases**:
 
 This update introduces genetic diseases that are shared on sex. 
 Infection is handled when sex finishes, so a coitus-interruptus will not result in infections. 
@@ -20,6 +22,50 @@ Most of the genes so far were positive or neutral,
 so I got some fair requests to introduce negative genes to keep xenotypes balanced. 
 I know that this is some overlap with the STD mod, but well ... you are free to turn things off? 
 
+**Genetic Infectors**:
+
+These Genes can apply a genetic disease, but are not genetic diseases themselves. 
+A single infector gene can have multiple resulting diseases, see this extension example: 
+
+```xml
+<li Class="RJW_Genes.GeneticInfectorExtension">
+    <infectionChance>0.05</infectionChance>
+    <infectionGenes>
+        <li>rjw_genes_size_blinded</li>
+        <li>rjw_genes_infectious_bisexuality</li>
+    </infectionGenes>
+</li>
+```
+
+The infection-chance is applied per gene - for the example above there would be a 5% chance to apply `size_blinded` and 5% chance to apply `infectious_bisexuality`.
+Multiple infections can happen on a single sex. 
+The `infectionGenes` can be any gene, this is not limited to genetic diseases (e.g. ugly or something). 
+
+*Infectors* are always applied even if the genetic disease spread is turned off. 
+The created genetic diseases will follow the logic outlined above. 
+
+**Disease Immunity**: 
+
+Pawns can be immune to genetic diseases. 
+
+This is either done with a specialised gene (`rjw_genes_genetic_disease_immunity`)
+or by genes giving specific immunities. 
+
+Any gene can give immunity against any genetic disease using an extension: 
+
+```xml
+<li Class="RJW_Genes.ImmunityAgainstGenesExtension">
+    <givesImmunityAgainst>
+        <li>rjw_genes_size_blinded</li>
+    </givesImmunityAgainst>
+</li>
+```
+
+These extensions can be slapped on any gene, 
+but they are meant mostly to have infectors immune against their own diseases. 
+
+## Changelog
+
 **Additions:** 
 
 - Passive Gene: *Genetic Disease Immunity* - cannot get infected by any genetic diseases, and won't be affected by some other genes (see relevant genes)
@@ -28,6 +74,7 @@ I know that this is some overlap with the STD mod, but well ... you are free to 
 - Disease Gene: Infectious Homosexuality & Bisexuality
 - Disease Gene: Fluctual Sexual Need. (Configurable) Chance to reset sex-need to near-zero and gain a bit of rest-need.
 - Disease Gene: Size Blinded. Pawns have a higher chance for hooking up with pawns with a big cock, lower chance for small cocks.
+- Infector Gene: Genetic Stretcher. Pawns can infect other pawns with *Size Blinded*
 
 **Fixes:**
 

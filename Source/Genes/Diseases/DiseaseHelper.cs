@@ -71,6 +71,31 @@ namespace RJW_Genes
             return new List<GeneDef>() { };
         }
 
+        public static List<GeneDef> GetGeneticInfectorGenes(Pawn pawn)
+        {
+            if (pawn != null && pawn.genes != null)
+            {
+                return pawn.genes
+                    .GenesListForReading
+                    .ConvertAll(gene => gene.def)
+                    .Where(genedef => pawn.genes.HasActiveGene(genedef))
+                    .Where(IsGeneticInfectorGene)
+                    .ToList();
+            }
+
+            return new List<GeneDef>() { };
+        }
+
+        public static List<GeneDef> LookupInfectionGeneDefs(GeneticInfectorExtension infectorExt)
+        {
+            if (infectorExt == null) new List<GeneDef>();
+
+            return RimWorld.GeneUtility
+                .GenesInOrder
+                .Where(genedef => infectorExt.infectionGenes.Contains(genedef.defName))
+                .ToList();
+        }
+
         /// <summary>
         /// Checks if the performed sex was penetrative. 
         /// Condom check is not done here!
@@ -97,6 +122,13 @@ namespace RJW_Genes
             return diseaseExt != null;
         }
 
+        public static bool IsGeneticInfectorGene(GeneDef geneDef)
+        {
+            if (geneDef == null) return false;
+            GeneticInfectorExtension infectorExt = geneDef.GetModExtension<GeneticInfectorExtension>();
+            return infectorExt != null;
+        }
+
         public static float LookupDiseaseInfectionChance(GeneDef geneDef)
         {
             if (IsGeneticDiseaseGene(geneDef))
@@ -107,5 +139,7 @@ namespace RJW_Genes
             else
                 return 0.0f;
         }
+
+
     }
 }

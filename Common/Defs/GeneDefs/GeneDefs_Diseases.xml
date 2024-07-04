@@ -205,7 +205,7 @@
     <GeneDef ParentName="RJWGeneDisease">
         <defName>rjw_genes_stretcher</defName>
         <label>genetic stretcher</label>
-        <description>Pawns with this gene have a chance to make sexual partners prefer large genitalia as part of their genetics.</description>
+        <description>Pawns with this gene have a chance to alter the genes of their sexual partners to prefer large cocks.</description>
         <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
         <biostatCpx>1</biostatCpx>
         <biostatMet>0</biostatMet>
@@ -215,6 +215,12 @@
                 <givesImmunityAgainst>
                     <li>rjw_genes_size_blinded</li>
                 </givesImmunityAgainst>
+            </li>
+            <li Class="RJW_Genes.GeneticInfectorExtension">
+                <infectionChance>0.05</infectionChance>
+                <infectionGenes>
+                    <li>rjw_genes_size_blinded</li>
+                </infectionGenes>
             </li>
         </modExtensions>
     </GeneDef>
