@@ -86,6 +86,7 @@
     <Compile Include="Genes\Diseases\Patches\Patch_AfterSexUtility_ApplyGeneticInfectors.cs" />
     <Compile Include="Genes\Diseases\Patches\Patch_AftersexUtility_TransferGeneticDiseases.cs" />
     <Compile Include="Genes\Diseases\Patches\Patch_SecondaryRomanceChanceFactor_Gene_SizeBlinded.cs" />
+    <Compile Include="Genes\Diseases\Thoughts\ThoughtWorker_HasMoreDiseasesThanMe_Social.cs" />
     <Compile Include="Genes\Diseases\Thoughts\ThoughtWorker_SizeBlinded_Social.cs" />
     <Compile Include="Genes\Life_Force\Events\SuccubusVisit\IncidentWorker_SuccubusVisit.cs" />
     <Compile Include="Genes\Life_Force\Events\SuccubusVisit\LordJob_SuccubusVisit.cs" />

@@ -1,16 +1,14 @@
 ﻿using RimWorld;
-using rjw;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UnityEngine;
 using Verse;
 
 namespace RJW_Genes
 {
-    public class ThoughtWorker_SizeBlinded_Social : ThoughtWorker
+    public class ThoughtWorker_HasMoreDiseasesThanMe_Social : ThoughtWorker
     {
         protected override ThoughtState CurrentSocialStateInternal(Pawn pawn, Pawn other)
         {
@@ -44,26 +42,18 @@ namespace RJW_Genes
             if (!MapUtility.PawnIsOnHomeMap(pawn))
                 return (ThoughtState)false;
 
+            int pawn_diseases = DiseaseHelper.GetGeneticDiseaseGenes(pawn).Count();
+            int other_diseases = DiseaseHelper.GetGeneticDiseaseGenes(other).Count();
+            int disease_diff = other_diseases - pawn_diseases;
 
-            // Do nothing if there is no size-blinded involved 
-            if (!GeneUtility.HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_size_blinded))
-                return (ThoughtState)false;
-            else
-                ModLog.Debug($"{pawn} has the size blinded gene");
-
-            // Iff the pawn has a penis, retrieve it's size. 
-            var penis = GenitaliaUtility.GetBiggestPenis(other);
-            // Do Nothing if the other pawn has no penis 
-            if (penis == null) return (ThoughtState)false;
-            var bodysize = GenitaliaUtility.GetBodySizeOfSexPart(penis);
-
-            if (penis.Severity + (bodysize) - 1.0 > 1.0)
+            if (disease_diff >= 5)
                 return ThoughtState.ActiveAtStage(2);
-            else if (penis.Severity >= 0.8f)
+            else if (disease_diff >= 2)
                 return ThoughtState.ActiveAtStage(1);
-            else
+            else if (disease_diff >= 1)
                 return ThoughtState.ActiveAtStage(0);
-
+            else
+                return (ThoughtState)false;
         }
     }
 }

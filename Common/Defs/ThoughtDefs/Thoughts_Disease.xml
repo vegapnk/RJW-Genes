@@ -24,4 +24,26 @@
     </stages>
   </ThoughtDef>
   
+  <ThoughtDef>
+    <defName>rjw_genes_has_more_diseases</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>RJW_Genes.ThoughtWorker_HasMoreDiseasesThanMe_Social</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    
+    <stages>
+      <li>
+        <label>carries more genetic diseases than me</label>
+        <baseOpinionOffset>-3</baseOpinionOffset>
+      </li>
+      <li>
+        <label>carries more way genetic diseases than me</label>
+        <baseOpinionOffset>-8</baseOpinionOffset>
+      </li>
+      <li>
+        <label>the genetic diseases on this fellow are off charts</label>
+        <baseOpinionOffset>-18</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
 </Defs>

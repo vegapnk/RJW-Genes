@@ -75,6 +75,8 @@ but they are meant mostly to have infectors immune against their own diseases.
 - Disease Gene: Fluctual Sexual Need. (Configurable) Chance to reset sex-need to near-zero and gain a bit of rest-need.
 - Disease Gene: Size Blinded. Pawns have a higher chance for hooking up with pawns with a big cock, lower chance for small cocks.
 - Infector Gene: Genetic Stretcher. Pawns can infect other pawns with *Size Blinded*
+- Gene: Hardwired Progenity. Pawns with this get a malus on having no-children, and bonus on having a lot. 
+- Pawns will have negative thoughts about pawns with more genetic diseases than themselves. 
 
 **Fixes:**
 
