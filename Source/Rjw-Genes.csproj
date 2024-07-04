@@ -76,6 +76,8 @@
     <Compile Include="Genes\Cum\Patch_LikesCumflation.cs" />
     <Compile Include="Genes\Damage\Gene_Elasticity.cs" />
     <Compile Include="Genes\Diseases\Defs\GeneticDiseaseExtension.cs" />
+    <Compile Include="Genes\Diseases\Defs\ImmunityAgainstGenesExtension.cs" />
+    <Compile Include="Genes\Diseases\DiseaseHelper.cs" />
     <Compile Include="Genes\Diseases\Genes\Gene_FluctualSexualNeed.cs" />
     <Compile Include="Genes\Diseases\Patches\Patch_AftersexUtility_TransferGeneticDiseases.cs" />
     <Compile Include="Genes\Diseases\Patches\Patch_SecondaryRomanceChanceFactor_Gene_SizeBlinded.cs" />

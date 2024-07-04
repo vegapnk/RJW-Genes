@@ -202,4 +202,21 @@
         </modExtensions>
     </GeneDef>
 
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_stretcher</defName>
+        <label>genetic stretcher</label>
+        <description>Pawns with this gene have a chance to make sexual partners prefer large genitalia as part of their genetics.</description>
+        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <displayOrderInCategory>12</displayOrderInCategory>
+        <modExtensions>
+            <li Class="RJW_Genes.ImmunityAgainstGenesExtension">
+                <givesImmunityAgainst>
+                    <li>rjw_genes_size_blinded</li>
+                </givesImmunityAgainst>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
 </Defs>
