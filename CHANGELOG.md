@@ -72,6 +72,8 @@ but they are meant mostly to have infectors immune against their own diseases.
 - Disease Gene: Vulnerability. Pawn is likelier to be raped 
 - Disease Gene: Infectious Hypersexuality
 - Disease Gene: Infectious Homosexuality & Bisexuality
+- Disease Gene: Infectious lower fertility
+- Disease Gene: Infectious higher sex need
 - Disease Gene: Fluctual Sexual Need. (Configurable) Chance to reset sex-need to near-zero and gain a bit of rest-need.
 - Disease Gene: Size Blinded. Pawns have a higher chance for hooking up with pawns with a big cock, lower chance for small cocks.
 - Infector Gene: Genetic Stretcher. Pawns can infect other pawns with *Size Blinded*

@@ -86,6 +86,69 @@
     </GeneDef>
 
     <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_infectious_low_fertility</defName>
+        <label>infectious low fertility vulnerability</label>
+        <description>Carriers of this genetic disease have lower fertility.</description>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <marketValueFactor>0.9</marketValueFactor>
+        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <displayOrderInCategory>5</displayOrderInCategory>
+
+        <statOffsets>
+            <Fertility>-0.15</Fertility>
+        </statOffsets>
+
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.05</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_infectious_increased_sex_need</defName>
+        <label>infectious increased sexneed</label>
+        <description>Carriers of this genetic disease need more sex.</description>
+        <biostatCpx>0</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <marketValueFactor>0.9</marketValueFactor>
+        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <displayOrderInCategory>5</displayOrderInCategory>
+
+        <statOffsets>
+            <SexFrequency>0.15</SexFrequency>
+        </statOffsets>
+
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.08</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_infectious_major_increased_sex_need</defName>
+        <label>major infectious increased sexneed</label>
+        <description>Carriers of this genetic disease need a lot more sex.</description>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <marketValueFactor>0.85</marketValueFactor>
+        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <displayOrderInCategory>5</displayOrderInCategory>
+
+        <statOffsets>
+            <SexFrequency>1.0</SexFrequency>
+        </statOffsets>
+
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.03</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
         <defName>rjw_genes_infectious_hypersexuality</defName>
         <label>infectious hypersexuality</label>
         <description>This gene makes the pawn hypersexual, and has a chance to spread on
