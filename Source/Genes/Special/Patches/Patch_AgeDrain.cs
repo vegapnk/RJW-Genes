@@ -84,19 +84,8 @@ namespace RJW_Genes.Genes.Special
                     ModLog.Message($"[Sexual Age Drainer] {receiver} was too young ({receiver.ageTracker.AgeBiologicalYears}), and remains unchanged.");
             }
 
-            HandleFactionGoodWillPenalties(receiver, giver);
+            FactionUtility.HandleFactionGoodWillPenalties(receiver, giver, "rjw_genes_GoodwillChangedReason_aged_pawn_with_sex_gene",FACTION_GOODWILL_CHANGE);
         }
 
-        private static void HandleFactionGoodWillPenalties(Pawn actor, Pawn target)
-        {
-            if (
-                target.Faction != null && actor.Faction != null
-                && target.Faction != actor.Faction
-                && target.Faction != Faction.OfPlayer)
-            {
-                HistoryEventDef reason = DefDatabase<HistoryEventDef>.GetNamedSilentFail("rjw_genes_GoodwillChangedReason_youthed_pawn_with_sex_gene");
-                target.Faction.TryAffectGoodwillWith(actor.Faction, FACTION_GOODWILL_CHANGE, true, true, reason, target);
-            }
-        }
     }
 }

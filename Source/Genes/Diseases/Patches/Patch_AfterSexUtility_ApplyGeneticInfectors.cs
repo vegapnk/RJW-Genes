@@ -54,21 +54,9 @@ namespace RJW_Genes
                     if ((new Random()).NextDouble() < application_chance)
                     {
                         partner.genes.AddGene(diseaseGeneDef, !RJW_Genes_Settings.rjw_genes_genetic_disease_as_endogenes);
-                        HandleFactionGoodWillPenalties(infector, partner);
+                        FactionUtility.HandleFactionGoodWillPenalties(infector, partner, "rjw_genes_GoodwillChangedReason_infected_with_disease",FACTION_GOODWILL_CHANGE);
                     }
                 }
-            }
-        }
-
-        private static void HandleFactionGoodWillPenalties(Pawn infector, Pawn partner)
-        {
-            if (
-                partner.Faction != null && infector.Faction != null
-                && partner.Faction != infector.Faction
-                && partner.Faction != Faction.OfPlayer)
-            {
-                HistoryEventDef reason = DefDatabase<HistoryEventDef>.GetNamedSilentFail("rjw_genes_GoodwillChangedReason_infected_with_disease");
-                partner.Faction.TryAffectGoodwillWith(infector.Faction, FACTION_GOODWILL_CHANGE, true, true, reason, partner);
             }
         }
 

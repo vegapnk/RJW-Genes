@@ -42,12 +42,12 @@ namespace RJW_Genes.Genes.Special
             if (GeneUtility.IsYouthFountain(props.pawn))
             {
                 ChangeAgeForPawn(props.partner, props.pawn);
-                HandleFactionGoodWillPenalties(props.pawn, props.partner);
+                FactionUtility.HandleFactionGoodWillPenalties(props.pawn, props.partner, "rjw_genes_GoodwillChangedReason_youthed_pawn_with_sex_gene",+1);
             }
             if (GeneUtility.IsYouthFountain(props.partner))
             {
                 ChangeAgeForPawn(props.pawn,props.partner);
-                HandleFactionGoodWillPenalties(props.partner, props.pawn);
+                FactionUtility.HandleFactionGoodWillPenalties(props.pawn, props.partner, "rjw_genes_GoodwillChangedReason_youthed_pawn_with_sex_gene", +1);
             }
 
         }
@@ -71,17 +71,6 @@ namespace RJW_Genes.Genes.Special
         }
 
 
-        private static void HandleFactionGoodWillPenalties(Pawn actor, Pawn target)
-        {
-            if (
-                target.Faction != null && actor.Faction != null
-                && target.Faction != actor.Faction
-                && target.Faction != Faction.OfPlayer)
-            {
-                HistoryEventDef reason = DefDatabase<HistoryEventDef>.GetNamedSilentFail("rjw_genes_GoodwillChangedReason_youthed_pawn_with_sex_gene");
-                target.Faction.TryAffectGoodwillWith(actor.Faction, FACTION_GOODWILL_CHANGE, true, true, reason, target);
-            }
-        }
     }
 
 }

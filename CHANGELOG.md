@@ -81,6 +81,7 @@ but they are meant mostly to have infectors immune against their own diseases.
 - Gene: Sexual Genetic Swap. Pawns have a chance to switch a random gene with their sexpartner. 
 - (Archite) Gene: Sexual Genetic Thief. Pawns have a chance to steal a gene from their sexpartner. Genetic Disease Immunity shields against this. 
 - Pawns will have negative thoughts about pawns with more genetic diseases than themselves. 
+- Faction Penalties for spreading diseases, stealing genes and aging pawns with age transfer
 
 **Fixes:**
 

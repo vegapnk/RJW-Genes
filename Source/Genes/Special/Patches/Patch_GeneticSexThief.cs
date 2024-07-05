@@ -68,14 +68,7 @@ namespace RJW_Genes
             stealer.genes.AddGene(stolenGene.def, AddAsXenogene);
             victim.genes.RemoveGene(stolenGene);
 
-            if (
-                victim.Faction != null && stealer.Faction != null 
-                && victim.Faction != stealer.Faction
-                && victim.Faction != Faction.OfPlayer) {
-
-                HistoryEventDef reason = DefDatabase<HistoryEventDef>.GetNamedSilentFail("rjw_genes_GoodwillChangedReason_StoleGene");
-                victim.Faction.TryAffectGoodwillWith(stealer.Faction, FACTION_GOODWILL_CHANGE, true, true, reason, victim);
-            }
+            FactionUtility.HandleFactionGoodWillPenalties(stealer, victim, "rjw_genes_GoodwillChangedReason_StoleGene", FACTION_GOODWILL_CHANGE);
         }
 
     }
