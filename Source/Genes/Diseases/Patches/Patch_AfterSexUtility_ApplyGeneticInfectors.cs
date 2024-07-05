@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using RimWorld;
 using rjw;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,9 @@ namespace RJW_Genes
     [HarmonyPatch(typeof(SexUtility), "Aftersex")]
     public class Patch_AfterSexUtility_ApplyGeneticInfectors
     {
+
+        const int FACTION_GOODWILL_CHANGE = -3;
+
         public static void Postfix(SexProps props)
         {
             if (props == null || props.pawn == null || props.partner == null) return;
@@ -48,8 +52,23 @@ namespace RJW_Genes
                         continue;
 
                     if ((new Random()).NextDouble() < application_chance)
+                    {
                         partner.genes.AddGene(diseaseGeneDef, !RJW_Genes_Settings.rjw_genes_genetic_disease_as_endogenes);
+                        HandleFactionGoodWillPenalties(infector, partner);
+                    }
                 }
+            }
+        }
+
+        private static void HandleFactionGoodWillPenalties(Pawn infector, Pawn partner)
+        {
+            if (
+                partner.Faction != null && infector.Faction != null
+                && partner.Faction != infector.Faction
+                && partner.Faction != Faction.OfPlayer)
+            {
+                HistoryEventDef reason = DefDatabase<HistoryEventDef>.GetNamedSilentFail("rjw_genes_GoodwillChangedReason_infected_with_disease");
+                partner.Faction.TryAffectGoodwillWith(infector.Faction, FACTION_GOODWILL_CHANGE, true, true, reason, partner);
             }
         }
 

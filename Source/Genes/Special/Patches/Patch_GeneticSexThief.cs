@@ -1,4 +1,6 @@
 ﻿using HarmonyLib;
+using RimWorld;
+using RimWorld.Planet;
 using rjw;
 using System;
 using System.Collections.Generic;
@@ -13,6 +15,9 @@ namespace RJW_Genes
     [HarmonyPatch(typeof(SexUtility), "Aftersex")]
     public class Patch_GeneticSexThief
     {
+
+        public const int FACTION_GOODWILL_CHANGE = -10;
+
         public static void Postfix(SexProps props)
         {
             if (props == null || props.pawn == null || props.partner == null || props.partner.IsAnimal())
@@ -62,6 +67,15 @@ namespace RJW_Genes
 
             stealer.genes.AddGene(stolenGene.def, AddAsXenogene);
             victim.genes.RemoveGene(stolenGene);
+
+            if (
+                victim.Faction != null && stealer.Faction != null 
+                && victim.Faction != stealer.Faction
+                && victim.Faction != Faction.OfPlayer) {
+
+                HistoryEventDef reason = DefDatabase<HistoryEventDef>.GetNamedSilentFail("rjw_genes_GoodwillChangedReason_StoleGene");
+                victim.Faction.TryAffectGoodwillWith(stealer.Faction, FACTION_GOODWILL_CHANGE, true, true, reason, victim);
+            }
         }
 
     }

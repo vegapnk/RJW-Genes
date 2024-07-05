@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HistoryEventDef>
+        <defName>rjw_genes_GoodwillChangedReason_StoleGene</defName>
+        <label>Stole a gene</label>
+    </HistoryEventDef>
+
+    <HistoryEventDef>
+        <defName>rjw_genes_GoodwillChangedReason_infected_with_disease</defName>
+        <label>Infected a pawn with a genetic disease</label>
+    </HistoryEventDef>
+
+    <HistoryEventDef>
+        <defName>rjw_genes_GoodwillChangedReason_spread_genetic_disease</defName>
+        <label>Spread a genetic disease</label>
+    </HistoryEventDef>
+
+</Defs>

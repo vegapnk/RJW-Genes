@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using RimWorld;
 using rjw;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,8 @@ namespace RJW_Genes.Genes.Special
         // 18 Years * 60 Days / Year * 60k Ticks/Day + 1 for safety
         const long MINIMUM_AGE_FALLBACK = 18 * 60 * 60000 + 1;
 
+        const int FACTION_GOODWILL_CHANGE = 1;
+
         public static void Postfix(SexProps props)
         {
             if (props == null || props.pawn == null || props.partner == null || props.partner.IsAnimal())
@@ -39,10 +42,12 @@ namespace RJW_Genes.Genes.Special
             if (GeneUtility.IsYouthFountain(props.pawn))
             {
                 ChangeAgeForPawn(props.partner, props.pawn);
+                HandleFactionGoodWillPenalties(props.pawn, props.partner);
             }
             if (GeneUtility.IsYouthFountain(props.partner))
             {
                 ChangeAgeForPawn(props.pawn,props.partner);
+                HandleFactionGoodWillPenalties(props.partner, props.pawn);
             }
 
         }
@@ -65,6 +70,18 @@ namespace RJW_Genes.Genes.Special
                 ModLog.Message($"[Youth Fountain] {ToYouth} was too young ({ToYouth.ageTracker.AgeBiologicalYears}), and remains unchanged.");
         }
 
+
+        private static void HandleFactionGoodWillPenalties(Pawn actor, Pawn target)
+        {
+            if (
+                target.Faction != null && actor.Faction != null
+                && target.Faction != actor.Faction
+                && target.Faction != Faction.OfPlayer)
+            {
+                HistoryEventDef reason = DefDatabase<HistoryEventDef>.GetNamedSilentFail("rjw_genes_GoodwillChangedReason_youthed_pawn_with_sex_gene");
+                target.Faction.TryAffectGoodwillWith(actor.Faction, FACTION_GOODWILL_CHANGE, true, true, reason, target);
+            }
+        }
     }
 
 }
