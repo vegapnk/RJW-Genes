@@ -107,6 +107,7 @@ namespace RJW_Genes
         public static readonly GeneDef rjw_genes_sex_tamer;
 		public static readonly GeneDef rjw_genes_sexual_genetic_swap;
 		public static readonly GeneDef rjw_genes_sexual_genetic_thief;
+		public static readonly GeneDef rjw_genes_pregnancy_overwrite;
 
         // Cosmetic
         public static readonly GeneDef rjw_genes_succubus_tail;

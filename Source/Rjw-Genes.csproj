@@ -61,6 +61,7 @@
     <Compile Include="Common\Defs\ModExtensionHelper.cs" />
     <Compile Include="Common\Defs\TickBasedChanceExtension.cs" />
     <Compile Include="Common\Either.cs" />
+    <Compile Include="Common\Helpers\FactionUtility.cs" />
     <Compile Include="Common\Helpers\LaborState.cs" />
     <Compile Include="Common\Helpers\MapUtility.cs" />
     <Compile Include="Common\ModLog.cs" />
@@ -193,6 +194,7 @@
     <Compile Include="Genes\Special\Patches\Patch_GeneticSexThief.cs" />
     <Compile Include="Genes\Special\Patches\Patch_HormonalSaliva.cs" />
     <Compile Include="Genes\Special\Patches\Patch_OrgasmMytosis.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_PregnancyOverwrite.cs" />
     <Compile Include="Genes\Special\Patches\Patch_SexualTamer.cs" />
     <Compile Include="Genes\Special\Thoughts\ThoughtWorker_Aphrodisiac_Pheromones_Social.cs" />
     <Compile Include="LetterDefOf.cs" />
