@@ -82,6 +82,7 @@ but they are meant mostly to have infectors immune against their own diseases.
 - (Archite) Gene: Sexual Genetic Thief. Pawns have a chance to steal a gene from their sexpartner. Genetic Disease Immunity shields against this. 
 - Pawns will have negative thoughts about pawns with more genetic diseases than themselves. 
 - Faction Penalties for spreading diseases, stealing genes and aging pawns with age transfer
+- Patch  for [Imphilee Xeno](https://steamcommunity.com/sharedfiles/filedetails/?id=2990674516) by @Bunuffin
 
 **Fixes:**
 
