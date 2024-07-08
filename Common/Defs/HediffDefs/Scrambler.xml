@@ -13,7 +13,7 @@
       <li>
         <minSeverity>0</minSeverity>
         <statOffsets>
-          <SlaveSuppressionOffset>0.40</SlaveSuppressionOffset>
+          <SlaveSuppressionOffset MayRequire="Ideology">0.40</SlaveSuppressionOffset>
           <Vulnerability>3.0</Vulnerability>
         </statOffsets>
         <capMods>

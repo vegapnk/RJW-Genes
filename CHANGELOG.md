@@ -22,6 +22,8 @@ Most of the genes so far were positive or neutral,
 so I got some fair requests to introduce negative genes to keep xenotypes balanced. 
 I know that this is some overlap with the STD mod, but well ... you are free to turn things off? 
 
+In theory, you can specify and gene of any kind to be spreadable by sex, not only ones written by this mod. 
+
 **Genetic Infectors**:
 
 These Genes can apply a genetic disease, but are not genetic diseases themselves. 
@@ -93,6 +95,7 @@ but they are meant mostly to have infectors immune against their own diseases.
 **Fixes:**
 
 - Fixed an Issue where pawns would always get the Pheromone social boost, unless they had the pheromone (#113)
+- Fixed two hidden dependencies on Ideology and Royalty (#115)
 
 **Internal:**
 
