@@ -84,6 +84,10 @@ but they are meant mostly to have infectors immune against their own diseases.
 - Faction Penalties for spreading diseases, stealing genes and aging pawns with age transfer
 - Patch  for [Imphilee Xeno](https://steamcommunity.com/sharedfiles/filedetails/?id=2990674516) by @Bunuffin
 
+**Changes**::
+
+- Cum-Amount-Changing genes now are XML Adjustable and share a single `.cs`-class
+
 **Fixes:**
 
 - Fixed an Issue where pawns would always get the Pheromone social boost, unless they had the pheromone (#113)

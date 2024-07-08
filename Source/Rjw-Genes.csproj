@@ -59,6 +59,7 @@
     <Compile Include="Common\Defs\ChanceExtension.cs" />
     <Compile Include="Common\Defs\DistanceExtension.cs" />
     <Compile Include="Common\Defs\ModExtensionHelper.cs" />
+    <Compile Include="Common\Defs\MultiplierExtension.cs" />
     <Compile Include="Common\Defs\TickBasedChanceExtension.cs" />
     <Compile Include="Common\Either.cs" />
     <Compile Include="Common\Helpers\FactionUtility.cs" />
@@ -105,9 +106,7 @@
     <Compile Include="Genes\Gender\Genes\Gene_GenderFluid.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_EvergrowingGenitalia.cs" />
     <Compile Include="Genes\Cum\CumUtility.cs" />
-    <Compile Include="Genes\Cum\Gene_VeryMuchCum.cs" />
-    <Compile Include="Genes\Cum\Gene_MuchCum.cs" />
-    <Compile Include="Genes\Cum\Gene_NoCum.cs" />
+    <Compile Include="Genes\Cum\Gene_ChangeCumAmount.cs" />
     <Compile Include="Genes\Cum\Patch_TransferNutrition.cs" />
     <Compile Include="Genes\Damage\Gene_Unbreakable.cs" />
     <Compile Include="Genes\Cum\Patch_CumflationImmunity.cs" />
