@@ -10,4 +10,9 @@
         <label>Youthed a pawn with youth fountain</label>
     </HistoryEventDef>
     
+    <HistoryEventDef>
+        <defName>rjw_genes_GoodwillChangedReason_OverwritePregnancy</defName>
+        <label>Replaced a pregnancy</label>
+    </HistoryEventDef>
+
 </Defs>

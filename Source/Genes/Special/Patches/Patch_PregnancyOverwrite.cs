@@ -51,29 +51,49 @@ namespace RJW_Genes
                 TryReplacePregnancy(pawn, partner);
         }
 
+        /// <summary>
+        /// Tries to replace an existing pregnancy with a new pregnancy at the same gestation process. 
+        /// The new pregnancy will have the same mother, but a new father and a new set of genes. 
+        /// 
+        /// There is a check for pregnancy that checks for the general fertility (using Vanilla Functions) and multiplies it with a xml-configurable chance.
+        /// If anything is replaced, there will be a faction penalty applied. 
+        /// </summary>
+        /// <param name="replacer"></param>
+        /// <param name="pregnant"></param>
         public static void TryReplacePregnancy(Pawn replacer, Pawn pregnant)
         {
-            // TODO: This mostly works, but needs some more checks.
-            // - Check if there is a pregnancy occurring
-            // - Check for Disease Immunity
-            // - Add Faction Penalties
-
+            
             ModLog.Debug($"Firing Pregnancy Overwrite for {replacer} and {pregnant}");
-
-            // The "CanImpregnate" does not work as I want, as the pawn is already pregnant, so it wont allow to be pregnated. 
-            //PregnancyHelper.CanImpregnate(pawn, partner, props.sexType)
 
             Hediff pregnancyHediff = PregnancyUtility.GetPregnancyHediff(pregnant);
             if (pregnancyHediff == null)
                 return;
 
-            float gestationProgress = pregnancyHediff.Severity;
+            if (DiseaseHelper.IsImmuneAgainstGeneticDisease(pregnant, GeneDefOf.rjw_genes_pregnancy_overwrite))
+            {
+                ModLog.Debug($"{pregnant} is immune against rjw_genes_pregnancy_overwrite from {replacer}");
+                return;
+            }
 
-            PregnancyUtility.ForceEndPregnancy(pregnant);
+            ChanceExtension chanceExt = GeneDefOf.rjw_genes_pregnancy_overwrite.GetModExtension<ChanceExtension>();
+            float chance = chanceExt != null ? chanceExt.chance : 0.25f;
+            chance *= PregnancyUtility.PregnancyChanceForPartners(pregnant, replacer);
 
-            PregnancyHelper.StartVanillaPregnancy(pregnant, replacer);
-            Hediff replacementPregnancyHediff = PregnancyUtility.GetPregnancyHediff(pregnant);
-            replacementPregnancyHediff.Severity = gestationProgress;
+            if ((new Random()).Next() < chance)
+            {
+                float gestationProgress = pregnancyHediff.Severity;
+
+                PregnancyUtility.ForceEndPregnancy(pregnant);
+
+                PregnancyHelper.StartVanillaPregnancy(pregnant, replacer);
+                Hediff replacementPregnancyHediff = PregnancyUtility.GetPregnancyHediff(pregnant);
+                replacementPregnancyHediff.Severity = gestationProgress;
+
+                FactionUtility.HandleFactionGoodWillPenalties(replacer, pregnant, "rjw_genes_GoodwillChangedReason_OverwritePregnancy", FACTION_GOODWILL_CHANGE);
+            } else
+            {
+                ModLog.Debug($"Did not Pregnancy-Overwrite for {replacer} and {pregnant}. Failed: roll<({chanceExt.chance} x {PregnancyUtility.PregnancyChanceForPartners(pregnant,replacer)}[PregnancyChance for Pawns])");
+            }
         }
 
     }

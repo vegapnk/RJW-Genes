@@ -162,6 +162,12 @@
 
     <biostatCpx>4</biostatCpx>
     <biostatMet>-2</biostatMet>
+    <modExtensions>
+        <!-- DevNote: The chance will be multiplied by both pawns' Fertility! -->
+        <li Class="RJW_Genes.ChanceExtension">
+            <chance>0.5</chance>
+        </li>
+    </modExtensions>
   </GeneDef>
 
 </Defs>

@@ -115,7 +115,6 @@
             </li>
         </forcedTraits>
         <exclusionTags>
-            
             <li>rjw_genes_homosexuality_trait_giver</li>
             <li>rjw_genes_sexual_orientation</li>
         </exclusionTags>
@@ -144,7 +143,7 @@
             </li>
         </forcedTraits>
         <exclusionTags>
-            <li>rjw_genes_sexual_orientation</li>        
+            <li>rjw_genes_sexual_orientation</li>
             <li>rjw_genes_bisexuality_trait_giver</li>
         </exclusionTags>
 
@@ -207,4 +206,28 @@
         </exclusionTags>
     </GeneDef>
 
+    <GeneDef>
+        <defName>rjw_genes_pregnancy_overwrite</defName>
+        <label>Sperm Displacement</label>
+        <displayCategory>Reproduction</displayCategory>
+        <description>Carriers of this gene can 'overwrite' an existing pregnancy, keeping the
+            progress but effectively replacing the father.</description>
+        <iconPath>Genes/Icons/RJW_Genes_PheromoneSpit</iconPath>
+        <displayOrderInCategory>120</displayOrderInCategory>
+
+        <biostatCpx>4</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <modExtensions>
+            <!-- DevNote: The chance will be multiplied by both pawns' Fertility! -->
+            <li Class="RJW_Genes.ChanceExtension">
+                <chance>0.5</chance>
+            </li>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+                Class="VanillaGenesExpanded.GeneExtension">
+                <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+                <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+            </li>
+        </modExtensions>
+    </GeneDef>
+    
 </Defs>
