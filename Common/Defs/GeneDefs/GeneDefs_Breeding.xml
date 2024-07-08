@@ -153,21 +153,4 @@
     <biostatMet>0</biostatMet>
   </GeneDef>
 
-  <GeneDef ParentName="BreedingBase">
-    <defName>rjw_genes_pregnancy_overwrite</defName>
-    <label>Sperm Displacement</label>
-    <description>Carriers of this gene can 'overwrite' an existing pregnancy, keeping the progress but effectively replacing the father.</description>
-    <iconPath>Genes/Icons/RJW_Genes_PheromoneSpit</iconPath>
-    <displayOrderInCategory>75</displayOrderInCategory>
-
-    <biostatCpx>4</biostatCpx>
-    <biostatMet>-2</biostatMet>
-    <modExtensions>
-        <!-- DevNote: The chance will be multiplied by both pawns' Fertility! -->
-        <li Class="RJW_Genes.ChanceExtension">
-            <chance>0.5</chance>
-        </li>
-    </modExtensions>
-  </GeneDef>
-
 </Defs>

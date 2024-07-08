@@ -60,7 +60,7 @@
     <biostatMet>-1</biostatMet>
     <modExtensions>
       <li Class="RJW_Genes.MultiplierExtension">
-        <multiplier>20.0</multiplier>
+        <multiplier>15.0</multiplier>
       </li>
     </modExtensions>
   </GeneDef>

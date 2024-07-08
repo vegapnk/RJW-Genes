@@ -40,8 +40,6 @@ namespace RJW_Genes
             if (!pawn.IsPregnant() && !partner.IsPregnant())
                 return;
 
-            ModLog.Debug("Firing Pregnancy Overwrite Patch - Passed Simple NullChecks");
-
             if (pawn.IsPregnant() 
                 && GeneUtility.HasGeneNullCheck(partner, GeneDefOf.rjw_genes_pregnancy_overwrite))
                     TryReplacePregnancy(partner, pawn);
@@ -62,9 +60,10 @@ namespace RJW_Genes
         /// <param name="pregnant"></param>
         public static void TryReplacePregnancy(Pawn replacer, Pawn pregnant)
         {
-            
-            ModLog.Debug($"Firing Pregnancy Overwrite for {replacer} and {pregnant}");
 
+            // DevNote:
+            // There are some issues with just checking PregnancyUtility.PregnancyChanceForPartners or rjw.PregnancyHelper.CanImpregnate
+            // Both do give 0.0 chance when the pawn is already pregnant, which does not help me :/
             Hediff pregnancyHediff = PregnancyUtility.GetPregnancyHediff(pregnant);
             if (pregnancyHediff == null)
                 return;
@@ -77,10 +76,12 @@ namespace RJW_Genes
 
             ChanceExtension chanceExt = GeneDefOf.rjw_genes_pregnancy_overwrite.GetModExtension<ChanceExtension>();
             float chance = chanceExt != null ? chanceExt.chance : 0.25f;
-            chance *= PregnancyUtility.PregnancyChanceForPartners(pregnant, replacer);
-
-            if ((new Random()).Next() < chance)
+            float replacerFert = replacer.GetStatValueForPawn(StatDefOf.Fertility, replacer);
+            chance *=  replacerFert ;
+            double roll = (new Random()).NextDouble();
+            if (roll < chance)
             {
+                ModLog.Debug($"Pregnancy-Overwrite for {replacer} and {pregnant}.");
                 float gestationProgress = pregnancyHediff.Severity;
 
                 PregnancyUtility.ForceEndPregnancy(pregnant);
@@ -92,7 +93,7 @@ namespace RJW_Genes
                 FactionUtility.HandleFactionGoodWillPenalties(replacer, pregnant, "rjw_genes_GoodwillChangedReason_OverwritePregnancy", FACTION_GOODWILL_CHANGE);
             } else
             {
-                ModLog.Debug($"Did not Pregnancy-Overwrite for {replacer} and {pregnant}. Failed: roll<({chanceExt.chance} x {PregnancyUtility.PregnancyChanceForPartners(pregnant,replacer)}[PregnancyChance for Pawns])");
+                ModLog.Debug($"Did not Pregnancy-Overwrite for {replacer} and {pregnant}. Failed: Rolled {roll} <({chanceExt.chance}[XML-Chance] x {replacerFert} [Fert:{replacer}])");
             }
         }
 
