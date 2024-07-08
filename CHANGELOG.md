@@ -80,6 +80,7 @@ but they are meant mostly to have infectors immune against their own diseases.
 - Gene: Hardwired Progenity. Pawns with this get a malus on having no-children, and bonus on having a lot. 
 - Gene: Sexual Genetic Swap. Pawns have a chance to switch a random gene with their sexpartner. 
 - (Archite) Gene: Sexual Genetic Thief. Pawns have a chance to steal a gene from their sexpartner. Genetic Disease Immunity shields against this. 
+- Gene: Sperm Displacement. Pawns might overwrite an existing pregnancy, becoming the new father. The pregnancy will stay in its gestation progress.
 - Pawns will have negative thoughts about pawns with more genetic diseases than themselves. 
 - Faction Penalties for spreading diseases, stealing genes and aging pawns with age transfer
 - Patch  for [Imphilee Xeno](https://steamcommunity.com/sharedfiles/filedetails/?id=2990674516) by @Bunuffin
@@ -87,6 +88,7 @@ but they are meant mostly to have infectors immune against their own diseases.
 **Changes**::
 
 - Cum-Amount-Changing genes now are XML Adjustable and share a single `.cs`-class
+- Incubi are now Bisexual too, as they should be. 
 
 **Fixes:**
 
@@ -97,6 +99,18 @@ but they are meant mostly to have infectors immune against their own diseases.
 - GenderFluid-Gene now uses a generalized `TickBasedChanceExtension` over its unique special `GenderFluidExtension`
 - Introduced a `ModLog.Debug` Function that checks for the settings before printing - trying to spread it over the whole project. 
 - Removed TODO File. I have enough to do. 
+
+**Notes:**
+
+The changes to the cum-gene will give a 1-time warning on loading the save. The warning looks like this: 
+```
+Could not find class RJW_Genes.Gene_MuchCum while resolving node li. Trying to use Verse.Gene instead. Full node: <li Class="RJW_Genes.Gene_MuchCum"><def>rjw_genes_much_cum</def><pawn>Thing_Human697</pawn><overriddenByGene>null</overriddenByGene><loadID>82</loadID></li>
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Error (string)
+...
+```
+
+This is not dangerous.
 
 # 2.1.0 (27-06-2024)
 
