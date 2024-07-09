@@ -42,8 +42,8 @@
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_fertile_anus</defName>
     <label>fertile anus</label>
-    <description>Xenotypes with this gene have a functional uterus connected to the anal cavity even
-      for males</description>
+    <description>Xenotypes with this gene have a functional uterus if they do not possess one by means of their vagina. 
+      For males, it is connected to the anal cavity and leads to a normal pregnancy.</description>
     <iconPath>Genes/Icons/Fertile_anus</iconPath>
     <displayOrderInCategory>54</displayOrderInCategory>
   </GeneDef>
