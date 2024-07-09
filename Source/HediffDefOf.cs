@@ -20,6 +20,10 @@ namespace RJW_Genes
         public static readonly HediffDef rjw_genes_orgasmic_mytosis_hediff;
         public static readonly HediffDef rjw_genes_mytosis_shock_hediff;
 
+        public static readonly HediffDef rjw_genes_twinkification_progress;
+        public static readonly HediffDef rjw_genes_feminization_progress;
+
+        // Note: Counter does meant it counters it, not it's counting
         [MayRequire("LustLicentia.RJWLabs")] public static readonly HediffDef rjw_genes_cumstuffed_counter;
         [MayRequire("LustLicentia.RJWLabs")] public static readonly HediffDef rjw_genes_cumflation_counter;
 
