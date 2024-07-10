@@ -23,7 +23,7 @@
             imply negative side-effects.</description>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
-        <iconPath>UI/Icons/Rituals/TrialDefend</iconPath>
+        <iconPath>Genes/Icons/TrialDefend</iconPath>
         <modExtensions>
             <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
                 Class="VanillaGenesExpanded.GeneExtension">

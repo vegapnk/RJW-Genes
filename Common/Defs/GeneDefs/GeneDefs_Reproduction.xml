@@ -52,31 +52,6 @@
         </modExtensions>
     </GeneDef>
 
-    <!-- 
-	<GeneDef>
-        <defName>rjw_genes_sadist_gene</defName>
-        <label>sadist</label>
-        <displayCategory>Reproduction</displayCategory>
-        <description>Xenotypes with this Gene are Sadists.</description>
-        <iconPath>Genes/Icons/Rape</iconPath>
-        <biostatMet>1</biostatMet>
-        <displayOrderInCategory>2</displayOrderInCategory>    
-        <forcedTraits>
-            <li>
-                <def>rjw_genes_sadist</def>
-            </li>
-        </forcedTraits>
-
-        <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
-    Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
-    </GeneDef>
-	-->
-
     <GeneDef>
         <defName>rjw_genes_masochist</defName>
         <label>masochist</label>
@@ -106,7 +81,7 @@
         <label>homosexual</label>
         <displayCategory>Reproduction</displayCategory>
         <description>This Gene makes you gay.</description>
-        <iconPath>UI\Ideoligions\Universal\RoundC</iconPath>
+        <iconPath>Genes/Icons/RoundC</iconPath>
         <biostatMet>0</biostatMet>
         <displayOrderInCategory>3</displayOrderInCategory>
         <forcedTraits>
@@ -134,7 +109,7 @@
         <label>bisexual</label>
         <displayCategory>Reproduction</displayCategory>
         <description>Carriers of this Gene are Bisexual.</description>
-        <iconPath>UI\Ideoligions\Universal\RoundC</iconPath>
+        <iconPath>Genes/Icons/RoundC</iconPath>
         <biostatMet>0</biostatMet>
         <displayOrderInCategory>4</displayOrderInCategory>
         <forcedTraits>

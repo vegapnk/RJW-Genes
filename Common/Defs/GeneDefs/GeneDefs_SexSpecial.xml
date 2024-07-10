@@ -19,7 +19,7 @@
             partially filled)</description>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-2</biostatMet>
-        <iconPath>UI/Memes/FleshPurity</iconPath>
+        <iconPath>Genes/Icons/FleshPurity</iconPath>
         <displayOrderInCategory>1</displayOrderInCategory>
     </GeneDef>
 
@@ -30,7 +30,7 @@
             (Partner stays adult)</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-2</biostatMet>
-        <iconPath>UI/Ideoligions/FireLeaves</iconPath>
+        <iconPath>Genes/Icons/FireLeaves</iconPath>
         <displayOrderInCategory>2</displayOrderInCategory>
         <modExtensions>
             <li Class="RJW_Genes.AgeTransferExtension">
@@ -194,6 +194,15 @@
                     <li>rjw_genes_feminizer</li>
                 </givesImmunityAgainst>
             </li>
+            <li Class="RJW_Genes.HediffIncreaseOnSexExtension">
+                <hediffDef>rjw_genes_feminization_progress</hediffDef>
+                <canCreateHediff>true</canCreateHediff>
+                <severityIncrease>0.01</severityIncrease>
+                <applicationChance>1.00</applicationChance>
+                <applicableForWomen>false</applicableForWomen>
+                <applicableForMen>true</applicableForMen>
+                <requiresPenetrativeSex>false</requiresPenetrativeSex>
+            </li>
         </modExtensions>
     </GeneDef>
 
@@ -211,6 +220,15 @@
                 <givesImmunityAgainst>
                     <li>rjw_genes_twinkifier</li>
                 </givesImmunityAgainst>
+            </li>
+            <li Class="RJW_Genes.HediffIncreaseOnSexExtension">
+                <hediffDef>rjw_genes_twinkification_progress</hediffDef>
+                <canCreateHediff>true</canCreateHediff>
+                <severityIncrease>0.01</severityIncrease>
+                <applicationChance>1.00</applicationChance>
+                <applicableForWomen>false</applicableForWomen>
+                <applicableForMen>true</applicableForMen>
+                <requiresPenetrativeSex>false</requiresPenetrativeSex>
             </li>
         </modExtensions>
     </GeneDef>
