@@ -1,5 +1,8 @@
 # RJW-Genes [NSFW]
 
+[![BuyMeACoffee](https://raw.githubusercontent.com/pachadotdev/buymeacoffee-badges/main/bmc-white.svg)](https://buymeacoffee.com/vegapnk)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This mod adds genes related and based on RJW to Rimworld. 
 
 ## Current Features 

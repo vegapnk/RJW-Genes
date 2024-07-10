@@ -105,6 +105,8 @@ but they are meant mostly to have infectors immune against their own diseases.
 
 **Notes:**
 
+*One Time Error Load*
+
 The changes to the cum-gene will give a 1-time warning on loading the save. The warning looks like this: 
 ```
 Could not find class RJW_Genes.Gene_MuchCum while resolving node li. Trying to use Verse.Gene instead. Full node: <li Class="RJW_Genes.Gene_MuchCum"><def>rjw_genes_much_cum</def><pawn>Thing_Human697</pawn><overriddenByGene>null</overriddenByGene><loadID>82</loadID></li>
@@ -114,6 +116,12 @@ Verse.Log:Error (string)
 ```
 
 This is not dangerous.
+
+*Supporting*
+
+You can now support me with [buying me a coffee](https://buymeacoffee.com/vegapnk). 
+The mod will remain free, open source and I will not hide or lock any features. 
+Its just meant if you want to drop me a tip. 
 
 # 2.1.0 (27-06-2024)
 
