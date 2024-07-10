@@ -133,6 +133,12 @@ namespace RJW_Genes
         public static readonly GeneDef rjw_genes_major_vulnerability;
 		public static readonly GeneDef rjw_genes_fluctual_sexual_needs;
 		public static readonly GeneDef rjw_genes_size_blinded;
+		public static readonly GeneDef rjw_genes_infectious_low_fertility;
+        public static readonly GeneDef rjw_genes_infectious_increased_sex_need;
+        public static readonly GeneDef rjw_genes_infectious_bisexuality;
+        public static readonly GeneDef rjw_genes_infectious_homosexuality;
+		public static readonly GeneDef rjw_genes_infectious_hypersexuality;
+        public static readonly GeneDef rjw_genes_stretcher;
 
         //Other Defs
         public static readonly XenotypeDef rjw_genes_succubus;
