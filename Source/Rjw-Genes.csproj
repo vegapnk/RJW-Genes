@@ -58,6 +58,7 @@
     <Compile Include="Animal_Inheritance\Defs\BestialityGeneInheritanceDef.cs" />
     <Compile Include="Common\Defs\ChanceExtension.cs" />
     <Compile Include="Common\Defs\DistanceExtension.cs" />
+    <Compile Include="Common\Defs\HediffIncreaseOnSexExtension.cs" />
     <Compile Include="Common\Defs\ModExtensionHelper.cs" />
     <Compile Include="Common\Defs\MultiplierExtension.cs" />
     <Compile Include="Common\Defs\TickBasedChanceExtension.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Common\ModLog.cs" />
     <Compile Include="Common\Defs\TickIntervalExtension.cs" />
     <Compile Include="Common\Patches\PatchImplants.cs" />
+    <Compile Include="Common\Patches\Patch_HediffIncreaseOnSex.cs" />
     <Compile Include="Common\Patches\Patch_ParentRelationUtility_GetParents.cs" />
     <Compile Include="Genes\Breeding\Abilities\CompAbilityEffect_MatingCall.cs" />
     <Compile Include="Genes\Breeding\Abilities\CompAbilityEffect_PheromoneSpit.cs" />
