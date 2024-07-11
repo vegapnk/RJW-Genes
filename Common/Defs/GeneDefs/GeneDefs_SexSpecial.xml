@@ -186,7 +186,7 @@
         <description>Carriers with this gene slowly turn male sexual partners into females.</description>
         <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
         <displayOrderInCategory>31</displayOrderInCategory>
-        <biostatCpx>5</biostatCpx>
+        <biostatCpx>4</biostatCpx>
         <biostatMet>-1</biostatMet>
         <modExtensions>
             <li Class="RJW_Genes.ImmunityAgainstGenesExtension">
@@ -214,7 +214,7 @@
         <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
         <displayOrderInCategory>50</displayOrderInCategory>
         <biostatCpx>4</biostatCpx>
-        <biostatMet>0</biostatMet>
+        <biostatMet>-1</biostatMet>
         <modExtensions>
             <li Class="RJW_Genes.ImmunityAgainstGenesExtension">
                 <givesImmunityAgainst>
