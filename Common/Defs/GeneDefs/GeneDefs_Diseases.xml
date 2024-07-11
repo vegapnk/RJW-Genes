@@ -85,6 +85,23 @@
         </modExtensions>
     </GeneDef>
 
+    
+    <GeneDef ParentName="BreedingBase">
+        <defName>rjw_genes_infectious_blocked_masturbation</defName>
+        <label>infectious masturbation block</label>
+        <description>Carriers of this gene are unable to masturbate - they need a partner or equipment.</description>
+        <iconPath>Genes/Icons/Hypersexual</iconPath>
+        <displayOrderInCategory>60</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>2</biostatMet>
+        
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.05</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+    
     <GeneDef ParentName="RJWGeneDisease">
         <defName>rjw_genes_infectious_low_fertility</defName>
         <label>infectious low fertility vulnerability</label>

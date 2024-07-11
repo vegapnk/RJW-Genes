@@ -14,10 +14,11 @@ namespace RJW_Genes
     {
         public void PostFix(Pawn pawn, ref bool __result)
         {
-            // Simply check if the pawn has genes, and if so, if they have the active gene for blocked masturbation
-            if (pawn.genes != null)
+            if (pawn != null && !pawn.IsAnimal() && pawn.genes != null)
             {
-                __result = __result && !pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_blocked_masturbation);
+                __result = __result 
+                    && !pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_blocked_masturbation)
+                    && !pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_infectious_blocked_masturbation);
             }
         }
 

@@ -127,6 +127,7 @@ Because this is the genes mod, and I find things here quite robust.
 - Gene: Twinkification: Pawns turn their (male) sexual partners into breedable twinks.
 - Gene: Feminization: Pawns turn their (male) sexual partners into women.
 - Gene: Blocked Masturbation: Pawns cannot masturbate. 
+- Disease Gene: Infectious Blocked Masturbation
 - Pawns will have negative thoughts about pawns with more genetic diseases than themselves. 
 - Faction Penalties for spreading diseases, stealing genes and aging pawns with age transfer
 - Patch  for [Imphilee Xeno](https://steamcommunity.com/sharedfiles/filedetails/?id=2990674516) by @Bunuffin
