@@ -197,6 +197,7 @@
     <Compile Include="Genes\Special\Patches\Patch_OrgasmMytosis.cs" />
     <Compile Include="Genes\Special\Patches\Patch_PregnancyOverwrite.cs" />
     <Compile Include="Genes\Special\Patches\Patch_SexualTamer.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_Feminizer.cs" />
     <Compile Include="Genes\Special\Patches\Patch_Twinkifier.cs" />
     <Compile Include="Genes\Special\Thoughts\ThoughtWorker_Aphrodisiac_Pheromones_Social.cs" />
     <Compile Include="LetterDefOf.cs" />

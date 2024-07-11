@@ -91,7 +91,21 @@ and might try to add a gene that already exists - then nothing happens.
 - (Major) Beauty Pretty
 - (Major) Fertile Anus
 
+*Feminization Genepool*:
+- (Minor) Long Hair
+- (Minor) No-Beard
+- (Minor) Small Male Genitals
+- (Minor) No Cum
+- (Minor) Big Breasts (will only show later)
+- (Major) Female Only
+- (Major) No Penis
+- (Major) Minor Vulnerability
+
 These are currently hardcoded but I can change them on popular demand. 
+In general minor changes are only cosmetic and wont change metabolism. 
+
+*Why are these changes Genetic?* 
+Because this is the genes mod, and I find things here quite robust.
 
 ## Changelog
 
@@ -110,7 +124,8 @@ These are currently hardcoded but I can change them on popular demand.
 - Gene: Sexual Genetic Swap. Pawns have a chance to switch a random gene with their sexpartner. 
 - (Archite) Gene: Sexual Genetic Thief. Pawns have a chance to steal a gene from their sexpartner. Genetic Disease Immunity shields against this. 
 - Gene: Sperm Displacement. Pawns might overwrite an existing pregnancy, becoming the new father. The pregnancy will stay in its gestation progress.
-- Gene: Twinkification. Pawns turn their (male) sexual partners into breedable twinks.
+- Gene: Twinkification: Pawns turn their (male) sexual partners into breedable twinks.
+- Gene: Feminization: Pawns turn their (male) sexual partners into women. 
 - Pawns will have negative thoughts about pawns with more genetic diseases than themselves. 
 - Faction Penalties for spreading diseases, stealing genes and aging pawns with age transfer
 - Patch  for [Imphilee Xeno](https://steamcommunity.com/sharedfiles/filedetails/?id=2990674516) by @Bunuffin
