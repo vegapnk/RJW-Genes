@@ -35,44 +35,87 @@ namespace RJW_Genes
             if (pawn == null) return;
             Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.rjw_genes_twinkification_progress); 
             if (hediff == null) return;
-            
+
             var Random = new Random();
-            switch (hediff.SeverityLabel)
+            // DevNote: I first had a switch (hediff.SeverityLabel) but SeverityLabel was null.
+            // So now I have this approach which feels a bit more robust. 
+            // I was thinking about looking for strings in the label, but I think that will break the logic in case of translations.
+            switch (hediff.Severity)
             {
-                case "severe":
-                case "critical":
+                case float f when f > 0.8f:
                     {
                         if (Random.NextDouble() < MAJOR_APPLICATION_CHANCE)
-                            majorChange(pawn);
+                            MajorChange(pawn);
                     } break;
-                case "minor":
+                case float f when f > 0.6f:
                     {
                         if (Random.NextDouble() < MINOR_APPLICATION_CHANCE)
-                            minorChange(pawn);
+                            MinorChange(pawn);
+                    } break;
+                default:
+                    {
+                        ModLog.Debug($"Tried to twinkify {pawn} - severity of twinkification was too low ({hediff.def} @ {hediff.Severity} - {hediff.Label})") ;
                     } break;
             }
 
         }
 
-        private static void minorChange(Pawn pawn)
+        private static void MinorChange(Pawn pawn)
         {
-            // Minor Infectious Vulnerability
-            // Smaller Genitalia 
-            // Remove Beard 
-            // Thin Body Type
+            List<GeneDef> possibleGenes = new List<GeneDef>() {
+                GeneDefOf.rjw_genes_small_male_genitalia,
+                DefDatabase<GeneDef>.GetNamed("Beard_NoBeardOnly"),
+                DefDatabase<GeneDef>.GetNamed("Body_Thin"),
+                GeneDefOf.rjw_genes_homosexual
+            };
+
+            GeneDef chosen = possibleGenes.RandomElement();
+            if (chosen == null)
+            {
+                ModLog.Warning($"Error in retrieving a minor-twinkification gene for twinkifying {pawn}");
+                return;
+            }
+
+            // DevNote: I could do "hasActiveGene" but that could lead to the gene being there but not active. 
+            if (!pawn.genes.GenesListForReading.Any(p => p.def == chosen))
+            {
+                ModLog.Debug($"{pawn} experienced a minor twinkification change; {pawn} got new gene {chosen}.");
+                pawn.genes.AddGene(chosen, !RJW_Genes_Settings.rjw_genes_genetic_disease_as_endogenes);
+            } else
+            {
+                ModLog.Debug($"Tryed a minor twinkification for {pawn} - {pawn} already had {chosen}");
+            }
         }
 
-        private static void majorChange(Pawn pawn)
+        private static void MajorChange(Pawn pawn)
         {
-            // Final Gene-Pool should have: 
-            // - Fragile (?)
-            // - Infectious Vulnerability
-            // - Infectious Homosexuality
-            // - Beauty
-            // - Fertile Anus 
+            List<GeneDef> possibleGenes = new List<GeneDef>() {
+                GeneDefOf.rjw_genes_fertile_anus,
+                DefDatabase<GeneDef>.GetNamed("Beauty_Pretty"),
+                DefDatabase<GeneDef>.GetNamed("Delicate"),
+                GeneDefOf.rjw_genes_minor_vulnerability, 
+                GeneDefOf.rjw_genes_infectious_homosexuality
+            };
 
-            pawn.genes.AddGene(GeneDefOf.rjw_genes_fertile_anus, !RJW_Genes_Settings.rjw_genes_genetic_disease_as_endogenes);
-            pawn.genes.AddGene(GeneDefOf.rjw_genes_infectious_homosexuality, !RJW_Genes_Settings.rjw_genes_genetic_disease_as_endogenes);
+            GeneDef chosen = possibleGenes.RandomElement();
+            if (chosen == null)
+            {
+                ModLog.Warning($"Error in retrieving a minor-twinkification gene for twinkifying {pawn}");
+                return;
+            }
+
+            // DevNote: I could do "hasActiveGene" but that could lead to the gene being there but not active. 
+            if (!pawn.genes.GenesListForReading.Any(p => p.def == chosen))
+            {
+                ModLog.Debug($"{pawn} experienced a major twinkification change; {pawn} got new gene {chosen}.");
+                pawn.genes.AddGene(chosen, !RJW_Genes_Settings.rjw_genes_genetic_disease_as_endogenes);
+            }
+            else
+            {
+                ModLog.Debug($"Tryed a major twinkification for {pawn} - {pawn} already had {chosen}");
+                ModLog.Debug($"Trying minor twinkification for {pawn} instead ...");
+                MinorChange(pawn);
+            }
         }
     }
 }

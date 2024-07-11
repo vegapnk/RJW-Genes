@@ -17,7 +17,7 @@
             </li>
         </comps>
         <stages>
-
+            <!-- DevNote: The labels and their effects can be changed, but the logic triggers at >0.6 for minor and >0.8 for major ! -->
             <li>
                 <label>neglectable</label>
                 <becomeVisible>false</becomeVisible>
@@ -89,7 +89,7 @@
             </li>
         </comps>
         <stages>
-
+            <!-- DevNote: The labels and their effects can be changed, but the logic triggers at >0.6 for minor and >0.8 for major ! -->
             <li>
                 <label>neglectable</label>
                 <becomeVisible>false</becomeVisible>

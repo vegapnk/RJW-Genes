@@ -66,6 +66,33 @@ Any gene can give immunity against any genetic disease using an extension:
 These extensions can be slapped on any gene, 
 but they are meant mostly to have infectors immune against their own diseases. 
 
+**Twinkification / Feminization**:
+
+Both approaches follow the same general logic. 
+
+- Pawn `A` has Twinkifier Gene and fucks Pawn `B`
+- `B` receives a `twinkification progress` hediff with some effects
+- Upon having ANY sex, `B` can gain genes from a relevant genepool. 
+- Genes can be minor or major, depending on the progress of twinkification. 
+
+Pawn `B` might be immune against twinkifier as normal immunity logic against diseases. 
+But once the hediff is there, the twinkification can happen unless you wait for it to cool down.
+Gene additions are subject to an application chance (25% for minor, 10% for major)
+and might try to add a gene that already exists - then nothing happens. 
+
+*Twink Genepool*: 
+- (Minor) Body_Thin
+- (Minor) Homosexual
+- (Minor) Beard_NoBeardOnly
+- (Minor) Small male genitalia
+- (Major) Minor Vulnerability
+- (Major) Infectious Homosexuality
+- (Major) Delicate
+- (Major) Beauty Pretty
+- (Major) Fertile Anus
+
+These are currently hardcoded but I can change them on popular demand. 
+
 ## Changelog
 
 **Additions:** 
@@ -83,6 +110,7 @@ but they are meant mostly to have infectors immune against their own diseases.
 - Gene: Sexual Genetic Swap. Pawns have a chance to switch a random gene with their sexpartner. 
 - (Archite) Gene: Sexual Genetic Thief. Pawns have a chance to steal a gene from their sexpartner. Genetic Disease Immunity shields against this. 
 - Gene: Sperm Displacement. Pawns might overwrite an existing pregnancy, becoming the new father. The pregnancy will stay in its gestation progress.
+- Gene: Twinkification. Pawns turn their (male) sexual partners into breedable twinks.
 - Pawns will have negative thoughts about pawns with more genetic diseases than themselves. 
 - Faction Penalties for spreading diseases, stealing genes and aging pawns with age transfer
 - Patch  for [Imphilee Xeno](https://steamcommunity.com/sharedfiles/filedetails/?id=2990674516) by @Bunuffin
