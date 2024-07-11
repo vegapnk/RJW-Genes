@@ -111,7 +111,7 @@ Because this is the genes mod, and I find things here quite robust.
 
 **Additions:** 
 
-- Passive Gene: Genetic Disease Immunity. cannot get infected by any genetic diseases, and won't be affected by some other genes (see relevant genes)
+- Gene: Genetic Disease Immunity. cannot get infected by any genetic diseases, and won't be affected by some other genes (see relevant genes)
 - Disease Gene: Vulnerability. Pawn is likelier to be raped 
 - Disease Gene: Infectious Hypersexuality
 - Disease Gene: Infectious Homosexuality & Bisexuality
@@ -125,7 +125,8 @@ Because this is the genes mod, and I find things here quite robust.
 - (Archite) Gene: Sexual Genetic Thief. Pawns have a chance to steal a gene from their sexpartner. Genetic Disease Immunity shields against this. 
 - Gene: Sperm Displacement. Pawns might overwrite an existing pregnancy, becoming the new father. The pregnancy will stay in its gestation progress.
 - Gene: Twinkification: Pawns turn their (male) sexual partners into breedable twinks.
-- Gene: Feminization: Pawns turn their (male) sexual partners into women. 
+- Gene: Feminization: Pawns turn their (male) sexual partners into women.
+- Gene: Blocked Masturbation: Pawns cannot masturbate. 
 - Pawns will have negative thoughts about pawns with more genetic diseases than themselves. 
 - Faction Penalties for spreading diseases, stealing genes and aging pawns with age transfer
 - Patch  for [Imphilee Xeno](https://steamcommunity.com/sharedfiles/filedetails/?id=2990674516) by @Bunuffin
@@ -160,6 +161,11 @@ Verse.Log:Error (string)
 ```
 
 This is not dangerous.
+
+*Blocked Masturbation* 
+
+Might not be fully working - for testing, I run things in DevMode, and I can just order people to masturbate. 
+Please playtest this a bit for me, as I want to make it work nicely. 
 
 *Supporting*
 

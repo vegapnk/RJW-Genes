@@ -153,4 +153,14 @@
     <biostatMet>0</biostatMet>
   </GeneDef>
 
+  <GeneDef ParentName="BreedingBase">
+    <defName>rjw_genes_blocked_masturbation</defName>
+    <label>no masturbation</label>
+    <description>Carriers of this gene are unable to masturbate - they need a partner or equipment.</description>
+    <iconPath>Genes/Icons/Hypersexual</iconPath>
+    <displayOrderInCategory>60</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+  </GeneDef>
+
 </Defs>
