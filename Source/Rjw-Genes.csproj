@@ -81,6 +81,7 @@
     <Compile Include="Genes\Breeding\ConditionalStatAffecters\ConditionalStatAffecter_VeryManyChildren.cs" />
     <Compile Include="Genes\Breeding\Genes\Gene_FerventOvipositor.cs" />
     <Compile Include="Genes\Breeding\Genes\Gene_InsectIncubator.cs" />
+    <Compile Include="Genes\Breeding\Patches\Patch_BlockedMasturbation.cs" />
     <Compile Include="Genes\Cum\Patch_LikesCumflation.cs" />
     <Compile Include="Genes\Damage\Gene_Elasticity.cs" />
     <Compile Include="Genes\Diseases\Defs\GeneticDiseaseExtension.cs" />
