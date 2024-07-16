@@ -85,7 +85,20 @@ namespace RJW_Genes
 
         private void SpawnCum(Pawn pawn, IntVec3 cell, Map map)
         {
-            ModLog.Warning($"This will be spawning cum for {pawn} at {cell}");
+            ThingDef cumDef = DefDatabase<ThingDef>.GetNamed("GatheredCum", true);
+
+            Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.rjw_genes_filled_living_cumbucket);
+            if (hediff == null)
+            {
+                ModLog.Warning($"{pawn} has the JobDriver_ProcessCumbucket but does not have the Hediff for filled cumbucket.");
+                return;
+            }
+
+            Thing cum = ThingMaker.MakeThing(cumDef);
+            cum.Position = cell;
+            int stacks = Math.Max(1, (int)(hediff.Severity * 3));
+            cum.stackCount = stacks;
+            cum.SpawnSetup(map, false);
         }
 
         private int ticksLeft;
