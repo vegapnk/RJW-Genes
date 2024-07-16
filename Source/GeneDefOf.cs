@@ -83,6 +83,7 @@ namespace RJW_Genes
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_likes_cumflation;
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_cumflation_immunity;
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_generous_donor;
+		[MayRequire("rjw.sexperience")] public static readonly GeneDef rjw_genes_living_cumbucket;
         
 
         // Reproduction 

@@ -16,5 +16,6 @@
 		<li IfModActive="vanillaracesexpanded.android">Mods/Android</li>
 		<li IfModActive="VanillaExpanded.VGeneticsE">Mods/VE_Genetics</li>
 		<li IfModActive="LustLicentia.RJWLabs">Mods/LicentiaLabs</li>
+		<li IfModActive="rjw.sexperience">Mods/Sexperience</li>
 	</v1.5>
 </loadFolders>

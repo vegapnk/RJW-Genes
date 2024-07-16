@@ -82,7 +82,8 @@
     <Compile Include="Genes\Breeding\Genes\Gene_FerventOvipositor.cs" />
     <Compile Include="Genes\Breeding\Genes\Gene_InsectIncubator.cs" />
     <Compile Include="Genes\Breeding\Patches\Patch_BlockedMasturbation.cs" />
-    <Compile Include="Genes\Cum\Patch_LikesCumflation.cs" />
+    <Compile Include="Genes\Cum\Patches\Patch_LikesCumflation.cs" />
+    <Compile Include="Genes\Cum\Patches\Patch_LivingCumbucket_StackHediff.cs" />
     <Compile Include="Genes\Damage\Gene_Elasticity.cs" />
     <Compile Include="Genes\Diseases\Defs\GeneticDiseaseExtension.cs" />
     <Compile Include="Genes\Diseases\Defs\GeneticInfectorExtension.cs" />
@@ -109,10 +110,10 @@
     <Compile Include="Genes\Gender\Genes\Gene_GenderFluid.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_EvergrowingGenitalia.cs" />
     <Compile Include="Genes\Cum\CumUtility.cs" />
-    <Compile Include="Genes\Cum\Gene_ChangeCumAmount.cs" />
-    <Compile Include="Genes\Cum\Patch_TransferNutrition.cs" />
+    <Compile Include="Genes\Cum\Genes\Gene_ChangeCumAmount.cs" />
+    <Compile Include="Genes\Cum\Patches\Patch_TransferNutrition.cs" />
     <Compile Include="Genes\Damage\Gene_Unbreakable.cs" />
-    <Compile Include="Genes\Cum\Patch_CumflationImmunity.cs" />
+    <Compile Include="Genes\Cum\Patches\Patch_CumflationImmunity.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraBreasts.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraAnus.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_Futa.cs" />
