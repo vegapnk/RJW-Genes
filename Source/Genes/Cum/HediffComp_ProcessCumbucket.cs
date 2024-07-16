@@ -7,6 +7,7 @@ namespace RJW_Genes
 {
     public class HediffComp_ProcessCumbucket : HediffComp
     {
+
         public HediffsCompProperties_ProcessCumbucketMTB Props
         {
             get

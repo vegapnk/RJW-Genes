@@ -11,7 +11,7 @@ namespace RJW_Genes
     {
         public HediffsCompProperties_ProcessCumbucketMTB()
         {
-            this.compClass = typeof(HediffsCompProperties_ProcessCumbucketMTB);
+            this.compClass = typeof(HediffComp_ProcessCumbucket);
         }
 
         public override IEnumerable<string> ConfigErrors(HediffDef parentDef)
