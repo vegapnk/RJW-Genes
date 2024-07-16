@@ -17,7 +17,7 @@ namespace RJW_Genes
 
         /// <summary>
         /// This is the amount of fluid required if the pawn has a bodysize of 1, to reach a severity in the hediff of 1. 
-        /// The hediff can still be increased. 
+        /// The hediff can still be increased over 1.0. 
         /// </summary>
         const float fluid_amount_required_for_hediff_severity_ = 100.0f;
 
@@ -48,7 +48,6 @@ namespace RJW_Genes
         {
             float bodysize = pawn.BodySize;
             float result_severity_increase = cumamount / (fluid_amount_required_for_hediff_severity_ * bodysize);
-            ModLog.Message($"Pumping the living cumbucket {pawn} (Bodysize {bodysize}) with {cumamount} cum, resulting in severity {result_severity_increase}");
 
 
             Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.rjw_genes_filled_living_cumbucket);
@@ -59,6 +58,7 @@ namespace RJW_Genes
             }
 
             hediff.Severity += result_severity_increase;
+            ModLog.Debug($"Pumping the living cumbucket {pawn} (Bodysize {bodysize}) with {cumamount} cum, resulting in severity {hediff.Severity} (+{result_severity_increase})");
         }
     }
 }

@@ -82,6 +82,9 @@
     <Compile Include="Genes\Breeding\Genes\Gene_FerventOvipositor.cs" />
     <Compile Include="Genes\Breeding\Genes\Gene_InsectIncubator.cs" />
     <Compile Include="Genes\Breeding\Patches\Patch_BlockedMasturbation.cs" />
+    <Compile Include="Genes\Cum\HediffComp_ProcessCumbucket.cs" />
+    <Compile Include="Genes\Cum\HediffsCompProperties_ProcessCumbucketMTB.cs" />
+    <Compile Include="Genes\Cum\JobDriver_ProcessingCumbucket.cs" />
     <Compile Include="Genes\Cum\Patches\Patch_LikesCumflation.cs" />
     <Compile Include="Genes\Cum\Patches\Patch_LivingCumbucket_StackHediff.cs" />
     <Compile Include="Genes\Damage\Gene_Elasticity.cs" />

@@ -14,6 +14,14 @@
           <li Class="HediffCompProperties_SeverityPerDay">
             <severityPerDay>-0.5</severityPerDay>
           </li>
+          <li Class="RJW_Genes.HediffsCompProperties_ProcessCumbucketMTB">
+            <mtbDaysPerStage>
+              <li>0</li>
+              <li>0.5</li>
+              <li>0.25</li>
+              <li>0.1</li>
+            </mtbDaysPerStage>
+          </li>
         </comps>
         <stages>
           <li>
