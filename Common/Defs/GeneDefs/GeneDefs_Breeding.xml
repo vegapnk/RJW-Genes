@@ -125,7 +125,7 @@
           <WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
           <Fertility>1.2</Fertility>
           <SexFrequency>1.2</SexFrequency>
-          <MentalBreakThreshold>-0.15</MentalBreakThreshold>
+          <MentalBreakThreshold>+0.15</MentalBreakThreshold>
           <GlobalLearningFactor>-0.1</GlobalLearningFactor>
         </statOffsets>
       </li>
@@ -141,7 +141,7 @@
         <statOffsets>
           <MoveSpeed>0.15</MoveSpeed>
           <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
-          <MentalBreakThreshold>0.25</MentalBreakThreshold>
+          <MentalBreakThreshold>-0.25</MentalBreakThreshold>
         </statOffsets>
       </li>
     </conditionalStatAffecters>
