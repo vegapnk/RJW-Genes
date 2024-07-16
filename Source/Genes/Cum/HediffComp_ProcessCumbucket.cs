@@ -18,11 +18,9 @@ namespace RJW_Genes
 
         public override void CompPostTick(ref float severityAdjustment)
         {
-            ModLog.Debug("Running HediffComp_ProcessCumbucket CompPostTick");
             if (this.Props.mtbDaysPerStage[this.parent.CurStageIndex] > 0f && base.Pawn.IsHashIntervalTick(60) && Rand.MTBEventOccurs(this.Props.mtbDaysPerStage[this.parent.CurStageIndex], 60000f, 60f))
             {
-
-                ModLog.Debug("Firing HediffComp_ProcessCumbucket CompPostTick");
+                ModLog.Debug($"Triggered HediffComp_ProcessCumbucket CompPostTick - Starting a JobDriver ProcessCumbucket for {this.parent.pawn}");
                 this.Pawn.jobs.StartJob(JobMaker.MakeJob(DefDatabase<JobDef>.GetNamed("ProcessCumbucket")), lastJobEndCondition: Verse.AI.JobCondition.InterruptForced, resumeCurJobAfterwards: true);
             }
         }

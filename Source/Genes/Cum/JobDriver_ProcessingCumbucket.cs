@@ -22,10 +22,8 @@ namespace RJW_Genes
 
         protected override IEnumerable<Toil> MakeNewToils()
         {
-            if (ModsConfig.IsActive("rjw.sexperience"))
+            if (!ModsConfig.IsActive("rjw.sexperience"))
                 yield break;
-
-            ModLog.Debug("Starting Toils for Processing Cumbucket");
 
             Toil toil = new Toil();
             toil.initAction = delegate ()
