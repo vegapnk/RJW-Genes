@@ -142,6 +142,7 @@ Because this is the genes mod, and I find things here quite robust.
 - Fixed an Issue where pawns would always get the Pheromone social boost, unless they had the pheromone (#113)
 - Fixed two hidden dependencies on Ideology and Royalty (#115)
 - Fixed some more hidden dependencies on Ideology Icons (#118)
+- Fixed a hidden dependency on Licentialabs (#119)
 
 **Internal:**
 
