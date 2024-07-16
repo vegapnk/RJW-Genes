@@ -190,6 +190,7 @@
     <Compile Include="Genes\Special\Abilities\CompAbilityEffect_CocoonWeaver.cs" />
     <Compile Include="Genes\Special\Abilities\CompProperties_AbilityCocoonWeaver.cs" />
     <Compile Include="Genes\Special\Defs\AgeTransferExtension.cs" />
+    <Compile Include="Genes\Special\Defs\GeneAlteringExtension.cs" />
     <Compile Include="Genes\Special\Defs\HormonalSalivaExtension.cs" />
     <Compile Include="Genes\Special\Patches\Patch_AgeDrain.cs" />
     <Compile Include="Genes\Special\Patches\Patch_GeneticSexSwap.cs" />

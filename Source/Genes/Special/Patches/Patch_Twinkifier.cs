@@ -16,8 +16,8 @@ namespace RJW_Genes
     [HarmonyPatch(typeof(SexUtility), "Aftersex")]
     public static class Patch_Twinkifier
     {
-        const float MINOR_APPLICATION_CHANCE = 0.25f; // = 25% to have a minor transformation
-        const float MAJOR_APPLICATION_CHANCE = 0.10f; // = 10% to have a major transformation
+
+        static GeneAlteringExtension geneAlteringExtension = GeneDefOf.rjw_genes_twinkifier.GetModExtension<GeneAlteringExtension>();
 
         public static void Postfix(SexProps props)
         {
@@ -25,6 +25,12 @@ namespace RJW_Genes
                 return;
             if (props.pawn.IsAnimal() || props.partner.IsAnimal())
                 return;
+
+            if (geneAlteringExtension == null)
+            {
+                ModLog.Warning("Did not find a (well-formed) GeneAlteringExtension for Twinkifier");
+                return;
+            }
 
             ApplyTwinkification(props.pawn);
             ApplyTwinkification(props.partner);
@@ -44,12 +50,12 @@ namespace RJW_Genes
             {
                 case float f when f > 0.8f:
                     {
-                        if (Random.NextDouble() < MAJOR_APPLICATION_CHANCE)
+                        if (Random.NextDouble() < geneAlteringExtension.majorApplicationChance)
                             MajorChange(pawn);
                     } break;
                 case float f when f > 0.6f:
                     {
-                        if (Random.NextDouble() < MINOR_APPLICATION_CHANCE)
+                        if (Random.NextDouble() < geneAlteringExtension.minorApplicationChance)
                             MinorChange(pawn);
                     } break;
                 default:
@@ -62,12 +68,7 @@ namespace RJW_Genes
 
         private static void MinorChange(Pawn pawn)
         {
-            List<GeneDef> possibleGenes = new List<GeneDef>() {
-                GeneDefOf.rjw_genes_small_male_genitalia,
-                DefDatabase<GeneDef>.GetNamed("Beard_NoBeardOnly"),
-                DefDatabase<GeneDef>.GetNamed("Body_Thin"),
-                GeneDefOf.rjw_genes_homosexual
-            };
+            List<GeneDef> possibleGenes = geneAlteringExtension.minorGenes.ToList();
 
             GeneDef chosen = possibleGenes.RandomElement();
             if (chosen == null)
@@ -89,13 +90,7 @@ namespace RJW_Genes
 
         private static void MajorChange(Pawn pawn)
         {
-            List<GeneDef> possibleGenes = new List<GeneDef>() {
-                GeneDefOf.rjw_genes_fertile_anus,
-                DefDatabase<GeneDef>.GetNamed("Beauty_Pretty"),
-                DefDatabase<GeneDef>.GetNamed("Delicate"),
-                GeneDefOf.rjw_genes_minor_vulnerability, 
-                GeneDefOf.rjw_genes_infectious_homosexuality
-            };
+            List<GeneDef> possibleGenes = geneAlteringExtension.majorGenes.ToList();
 
             GeneDef chosen = possibleGenes.RandomElement();
             if (chosen == null)

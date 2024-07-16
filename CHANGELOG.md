@@ -101,8 +101,7 @@ and might try to add a gene that already exists - then nothing happens.
 - (Major) No Penis
 - (Major) Minor Vulnerability
 
-These are currently hardcoded but I can change them on popular demand. 
-In general minor changes are only cosmetic and wont change metabolism. 
+You can configure all genes, as well as their application chance, in the Genes` XML. 
 
 *Why are these changes Genetic?* 
 Because this is the genes mod, and I find things here quite robust.
@@ -174,6 +173,11 @@ Please playtest this a bit for me, as I want to make it work nicely.
 You can now support me with [buying me a coffee](https://buymeacoffee.com/vegapnk). 
 The mod will remain free, open source and I will not hide or lock any features. 
 Its just meant if you want to drop me a tip. 
+
+**Since Beta-1** (11-07-2024) 
+
+- Made the Feminizer and Twinkifier configurable with XML.
+
 
 # 2.1.0 (27-06-2024)
 

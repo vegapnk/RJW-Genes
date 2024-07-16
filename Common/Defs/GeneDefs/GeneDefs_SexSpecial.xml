@@ -203,9 +203,23 @@
                 <applicableForMen>true</applicableForMen>
                 <requiresPenetrativeSex>false</requiresPenetrativeSex>
             </li>
+            <li Class="RJW_Genes.GeneAlteringExtension">
+                <majorGenes>
+                    <li>rjw_genes_female_only</li>
+                    <li>rjw_genes_no_penis</li>
+                    <li>rjw_genes_minor_vulnerability</li>
+                </majorGenes>
+                <minorGenes>
+                    <li>rjw_genes_small_male_genitalia</li>
+                    <li>rjw_genes_big_breasts</li>
+                    <li>Beard_NoBeardOnly</li>
+                    <li>Hair_LongOnly</li>
+                </minorGenes>
+                <minorApplicationChance>0.25</minorApplicationChance>
+                <majorApplicationChance>0.1</majorApplicationChance>
+            </li>
         </modExtensions>
     </GeneDef>
-
     
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_twinkifier</defName>
@@ -229,6 +243,23 @@
                 <applicableForWomen>false</applicableForWomen>
                 <applicableForMen>true</applicableForMen>
                 <requiresPenetrativeSex>false</requiresPenetrativeSex>
+            </li>
+            <li Class="RJW_Genes.GeneAlteringExtension">
+                <majorGenes>
+                    <li>rjw_genes_fertile_anus</li>
+                    <li>Beauty_Pretty</li>
+                    <li>Delicate</li>
+                    <li>rjw_genes_minor_vulnerability</li>
+                    <li>rjw_genes_infectious_homosexuality</li>
+                </majorGenes>
+                <minorGenes>
+                    <li>rjw_genes_small_male_genitalia</li>
+                    <li>Beard_NoBeardOnly</li>
+                    <li>Body_Thin</li>
+                    <li>rjw_genes_homosexual</li>
+                </minorGenes>
+                <minorApplicationChance>0.25</minorApplicationChance>
+                <majorApplicationChance>0.1</majorApplicationChance>
             </li>
         </modExtensions>
     </GeneDef>
