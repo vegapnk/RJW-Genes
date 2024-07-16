@@ -97,8 +97,12 @@ namespace RJW_Genes
             Thing cum = ThingMaker.MakeThing(cumDef);
             cum.Position = cell;
             int stacks = Math.Max(1, (int)(hediff.Severity * 3));
+            stacks = Math.Min(stacks, 75); // 75 is the default max stacksize ...
             cum.stackCount = stacks;
             cum.SpawnSetup(map, false);
+
+            //TODO: Reduce this ... better? 
+            hediff.Severity -= stacks / 50;
         }
 
         private int ticksLeft;
