@@ -184,6 +184,8 @@ Its just meant if you want to drop me a tip.
 - Living Cum-Bucket & Rut Genes
 - Great images by @WasMachenDennSachen
 
+**Beta-2** (17-07-2024)
+
 # 2.1.0 (27-06-2024)
 
 **Additions**:
