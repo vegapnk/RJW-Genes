@@ -128,6 +128,8 @@ Because this is the genes mod, and I find things here quite robust.
 - Gene: Blocked Masturbation. Pawns cannot masturbate. 
 - {Sexperience} Gene: Living Cumbucket. Pawns with this Gene get "filled" upon sex, and slowly disperse usable gathered cum. 
 - Disease Gene: Infectious Blocked Masturbation
+- Gene: Rut. Pawns have a chance to go into heat and need more sex for a day. (Default: 5% chance per day, to go 1 day in heat).
+- Disease Gene: Infectious Rut.
 - Pawns will have negative thoughts about pawns with more genetic diseases than themselves. 
 - Faction Penalties for spreading diseases, stealing genes and aging pawns with age transfer
 - Patch  for [Imphilee Xeno](https://steamcommunity.com/sharedfiles/filedetails/?id=2990674516) by @Bunuffin
@@ -178,7 +180,8 @@ Its just meant if you want to drop me a tip.
 **Since Beta-1** (11-07-2024) 
 
 - Made the Feminizer and Twinkifier configurable with XML.
-- Typos in the Hediff Defs, tweaking of some values. 
+- Typos in the Hediff Defs, tweaking of some values.
+- Living Cum-Bucket & Rut Genes
 
 
 # 2.1.0 (27-06-2024)

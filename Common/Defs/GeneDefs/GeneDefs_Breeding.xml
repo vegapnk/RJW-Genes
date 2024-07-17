@@ -41,7 +41,8 @@
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_fertile_anus</defName>
     <label>fertile anus</label>
-    <description>Xenotypes with this gene have a functional uterus if they do not possess one by means of their vagina. 
+    <description>Xenotypes with this gene have a functional uterus if they do not possess one by
+      means of their vagina.
       For males, it is connected to the anal cavity and leads to a normal pregnancy.</description>
     <iconPath>Genes/Icons/Fertile_anus</iconPath>
     <displayOrderInCategory>54</displayOrderInCategory>
@@ -115,7 +116,8 @@
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_hardwired_progenity</defName>
     <label>Hardwired Progenity</label>
-    <description>Carriers of this gene need to procreate. They suffer negative effects if they are childless, and have increased capabilities if they reach a high amount of offsprings.</description>
+    <description>Carriers of this gene need to procreate. They suffer negative effects if they are
+      childless, and have increased capabilities if they reach a high amount of offsprings.</description>
     <iconPath>Genes/Icons/RJW_Genes_PheromoneSpit</iconPath>
     <displayOrderInCategory>70</displayOrderInCategory>
 
@@ -148,6 +150,25 @@
 
     <biostatCpx>1</biostatCpx>
     <biostatMet>0</biostatMet>
+  </GeneDef>
+
+  <GeneDef ParentName="BreedingBase">
+    <defName>rjw_genes_basic_rut</defName>
+    <label>Rut</label>
+    <description>Carriers of this gene can enter a state of heat, resulting in drastically higher
+      sexual activity.</description>
+    <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+    <displayOrderInCategory>11</displayOrderInCategory>
+    <geneClass>RJW_Genes.Gene_Rut</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.TickBasedChanceExtension">
+        <!-- 60k = 1 days -->
+        <tickInterval>60000</tickInterval>
+        <eventChance>0.05</eventChance>
+      </li>
+    </modExtensions>
   </GeneDef>
 
 </Defs>

@@ -75,6 +75,7 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_insectincubator;
 		public static readonly GeneDef rjw_genes_hardwired_progenity;
 		public static readonly GeneDef rjw_genes_blocked_masturbation;
+		public static readonly GeneDef rjw_genes_basic_rut;
 
         // Cum 
         public static readonly GeneDef rjw_genes_no_cum;
@@ -142,6 +143,7 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_infectious_hypersexuality;
         public static readonly GeneDef rjw_genes_stretcher;
 		public static readonly GeneDef rjw_genes_infectious_blocked_masturbation;
+        public static readonly GeneDef rjw_genes_infectious_rut;
 
         //Other Defs
         public static readonly XenotypeDef rjw_genes_succubus;

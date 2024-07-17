@@ -304,4 +304,28 @@
         </modExtensions>
     </GeneDef>
 
+
+    <GeneDef ParentName="BreedingBase">
+        <defName>rjw_genes_infectious_rut</defName>
+        <label>Rut</label>
+        <description>Carriers of this gene can enter a state of heat, resulting in drastically higher
+          sexual activity.</description>
+        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <displayOrderInCategory>11</displayOrderInCategory>
+        <geneClass>RJW_Genes.Gene_Rut</geneClass>
+        <modExtensions>
+          <li Class="RJW_Genes.TickBasedChanceExtension">
+            <!-- 60k = 1 days -->
+            <tickInterval>60000</tickInterval>
+            <eventChance>0.05</eventChance>
+          </li>
+          <li Class="RJW_Genes.GeneticDiseaseExtension">
+            <infectionChance>0.1</infectionChance>
+        </li>
+        </modExtensions>
+      </GeneDef>
+    
+
 </Defs>
