@@ -153,7 +153,7 @@
         <defName>rjw_genes_sexual_genetic_swap</defName>
         <label>sexual genetic swap</label>
         <description>Carriers with this gene may switch a gene with their sex-partner. Switched Genes are always endogenes.</description>
-        <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
+        <iconPath>Genes/Icons/sexual_genetic_swap</iconPath>
         <displayOrderInCategory>20</displayOrderInCategory>
         <biostatCpx>3</biostatCpx>
         <biostatMet>0</biostatMet>
@@ -168,7 +168,7 @@
         <defName>rjw_genes_sexual_genetic_thief</defName>
         <label>sexual gene thief</label>
         <description>Carriers with this gene may steal a gene from their sex-partner. Stolen genes are always xenogenes.</description>
-        <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
+        <iconPath>Genes/Icons/sexual_genetic_thief</iconPath>
         <displayOrderInCategory>21</displayOrderInCategory>
         <biostatCpx>5</biostatCpx>
         <biostatMet>-2</biostatMet>
@@ -184,7 +184,7 @@
         <defName>rjw_genes_feminizer</defName>
         <label>feminizer</label>
         <description>Carriers with this gene slowly turn male sexual partners into females.</description>
-        <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
+        <iconPath>Genes/Icons/feminizer</iconPath>
         <displayOrderInCategory>31</displayOrderInCategory>
         <biostatCpx>4</biostatCpx>
         <biostatMet>-1</biostatMet>
@@ -225,7 +225,7 @@
         <defName>rjw_genes_twinkifier</defName>
         <label>twinkifier</label>
         <description>Carriers with this gene slowly turn male sexual partners into breedabel cute twinks.</description>
-        <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
+        <iconPath>Genes/Icons/twinkifier</iconPath>
         <displayOrderInCategory>50</displayOrderInCategory>
         <biostatCpx>4</biostatCpx>
         <biostatMet>-1</biostatMet>
@@ -263,7 +263,5 @@
             </li>
         </modExtensions>
     </GeneDef>
-
-    
 
 </Defs>

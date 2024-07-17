@@ -182,7 +182,7 @@ Its just meant if you want to drop me a tip.
 - Made the Feminizer and Twinkifier configurable with XML.
 - Typos in the Hediff Defs, tweaking of some values.
 - Living Cum-Bucket & Rut Genes
-
+- Great images by @WasMachenDennSachen
 
 # 2.1.0 (27-06-2024)
 

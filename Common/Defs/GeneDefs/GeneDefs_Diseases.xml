@@ -23,7 +23,7 @@
             imply negative side-effects.</description>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
-        <iconPath>Genes/Icons/TrialDefend</iconPath>
+        <iconPath>Genes/Icons/disease_immunity</iconPath>
         <modExtensions>
             <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
                 Class="VanillaGenesExpanded.GeneExtension">
@@ -42,7 +42,7 @@
         <biostatCpx>1</biostatCpx>
         <biostatMet>1</biostatMet>
         <marketValueFactor>0.85</marketValueFactor>
-        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <iconPath>Genes/Icons/minor_vulnerability</iconPath>
         <displayOrderInCategory>5</displayOrderInCategory>
 
         <statOffsets>
@@ -67,7 +67,7 @@
             rape.</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>1</biostatMet>
-        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <iconPath>Genes/Icons/major_vulnerability</iconPath>
         <displayOrderInCategory>6</displayOrderInCategory>
 
         <exclusionTags>
@@ -90,7 +90,7 @@
         <defName>rjw_genes_infectious_blocked_masturbation</defName>
         <label>infectious masturbation block</label>
         <description>Carriers of this gene are unable to masturbate - they need a partner or equipment.</description>
-        <iconPath>Genes/Icons/Hypersexual</iconPath>
+        <iconPath>Genes/Icons/blocked_masturbation</iconPath>
         <displayOrderInCategory>55</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>2</biostatMet>
@@ -194,7 +194,7 @@
         <defName>rjw_genes_infectious_bisexuality</defName>
         <label>infectious bisexuality</label>
         <description>This gene makes the pawn bisexual, and has a chance to spread on intercourse.</description>
-        <iconPath>Genes/Icons/RoundC</iconPath>
+        <iconPath>Genes/Icons/bisexuality</iconPath>
         <biostatCpx>1</biostatCpx>
         <biostatMet>0</biostatMet>
         <displayOrderInCategory>8</displayOrderInCategory>
@@ -221,7 +221,7 @@
         <defName>rjw_genes_infectious_homosexuality</defName>
         <label>infectious homosexuality</label>
         <description>This gene makes the pawn homosexual, and has a chance to spread on intercourse.</description>
-        <iconPath>Genes/Icons/RoundC</iconPath>
+        <iconPath>Genes/Icons/homosexuality</iconPath>
         <biostatCpx>1</biostatCpx>
         <biostatMet>0</biostatMet>
         <displayOrderInCategory>9</displayOrderInCategory>
@@ -270,7 +270,7 @@
         <defName>rjw_genes_size_blinded</defName>
         <label>size blinded</label>
         <description>This genetic disease makes the carrier dramatically more drawn to pawns with huge cocks.</description>
-        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <iconPath>Genes/Icons/size_blinded</iconPath>
         <biostatCpx>1</biostatCpx>
         <biostatMet>1</biostatMet>
         <displayOrderInCategory>11</displayOrderInCategory>
@@ -285,7 +285,7 @@
         <defName>rjw_genes_stretcher</defName>
         <label>genetic stretcher</label>
         <description>Pawns with this gene have a chance to alter the genes of their sexual partners to prefer large cocks.</description>
-        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <iconPath>Genes/Icons/stretcher</iconPath>
         <biostatCpx>1</biostatCpx>
         <biostatMet>0</biostatMet>
         <displayOrderInCategory>12</displayOrderInCategory>

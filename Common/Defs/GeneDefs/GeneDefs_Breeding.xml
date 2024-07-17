@@ -118,7 +118,7 @@
     <label>Hardwired Progenity</label>
     <description>Carriers of this gene need to procreate. They suffer negative effects if they are
       childless, and have increased capabilities if they reach a high amount of offsprings.</description>
-    <iconPath>Genes/Icons/RJW_Genes_PheromoneSpit</iconPath>
+    <iconPath>Genes/Icons/hardwired_progenity</iconPath>
     <displayOrderInCategory>70</displayOrderInCategory>
 
     <conditionalStatAffecters>
