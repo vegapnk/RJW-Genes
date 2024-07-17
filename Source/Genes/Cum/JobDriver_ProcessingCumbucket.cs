@@ -41,6 +41,9 @@ namespace RJW_Genes
                     }
                     if (c.InBounds(this.pawn.Map) && c.Standable(this.pawn.Map))
                     {
+                        // DevNote: I am not 100% what this all means, but IL_77 is a jump to the case below (it says IL_77).
+                        // basically, this calls the next part of the function, but I am not super sure why this has to be like this. 
+                        // JobDrivers are scary. 
                         goto IL_77;
                     }
                 }
@@ -93,16 +96,16 @@ namespace RJW_Genes
                 ModLog.Warning($"{pawn} has the JobDriver_ProcessCumbucket but does not have the Hediff for filled cumbucket.");
                 return;
             }
+            
+            //TODO: Fine-Tune the amount and how things calm down. 
 
             Thing cum = ThingMaker.MakeThing(cumDef);
             cum.Position = cell;
-            int stacks = Math.Max(1, (int)(hediff.Severity * 3));
+            int stacks = Math.Max(1, (int)(hediff.Severity * 1.5));
             stacks = Math.Min(stacks, 75); // 75 is the default max stacksize ...
             cum.stackCount = stacks;
             cum.SpawnSetup(map, false);
-
-            //TODO: Reduce this ... better? 
-            hediff.Severity -= stacks / 50;
+            hediff.Severity -= (stacks / 50);
         }
 
         private int ticksLeft;

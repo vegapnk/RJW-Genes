@@ -123,9 +123,10 @@ Because this is the genes mod, and I find things here quite robust.
 - Gene: Sexual Genetic Swap. Pawns have a chance to switch a random gene with their sexpartner. 
 - (Archite) Gene: Sexual Genetic Thief. Pawns have a chance to steal a gene from their sexpartner. Genetic Disease Immunity shields against this. 
 - Gene: Sperm Displacement. Pawns might overwrite an existing pregnancy, becoming the new father. The pregnancy will stay in its gestation progress.
-- Gene: Twinkification: Pawns turn their (male) sexual partners into breedable twinks.
-- Gene: Feminization: Pawns turn their (male) sexual partners into women.
-- Gene: Blocked Masturbation: Pawns cannot masturbate. 
+- Gene: Twinkification. Pawns turn their (male) sexual partners into breedable twinks.
+- Gene: Feminization. Pawns turn their (male) sexual partners into women.
+- Gene: Blocked Masturbation. Pawns cannot masturbate. 
+- {Sexperience} Gene: Living Cumbucket. Pawns with this Gene get "filled" upon sex, and slowly disperse usable gathered cum. 
 - Disease Gene: Infectious Blocked Masturbation
 - Pawns will have negative thoughts about pawns with more genetic diseases than themselves. 
 - Faction Penalties for spreading diseases, stealing genes and aging pawns with age transfer
