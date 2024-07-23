@@ -20,7 +20,7 @@
               <li>0.5</li>
               <li>0.25</li>
               <li>0.1</li>
-              <li>0.005</li>
+              <li>0.5</li>
             </mtbDaysPerStage>
           </li>
         </comps>
@@ -74,7 +74,7 @@
             </capMods>
           </li>
           <li>
-            <label>living fountain</label>
+            <label>living reservior</label>
             <minSeverity>10.1</minSeverity>
             <hungerRateFactor>0.1</hungerRateFactor>
             <statOffsets>

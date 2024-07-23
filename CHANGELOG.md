@@ -182,9 +182,11 @@ Its just meant if you want to drop me a tip.
 - Made the Feminizer and Twinkifier configurable with XML.
 - Typos in the Hediff Defs, tweaking of some values.
 - Living Cum-Bucket & Rut Genes
-- Great images by @WasMachenDennSachen
+- Great icons by @Alpenglow
 
-**Beta-2** (17-07-2024)
+**Since Beta-2** (17-07-2024)
+
+- Changed behaviour of living cumbucket. Now, once "really full" the output happens more rarely but is much more at once. 
 
 # 2.1.0 (27-06-2024)
 

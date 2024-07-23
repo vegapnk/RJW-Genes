@@ -6,7 +6,7 @@
   <JobDef>
     <defName>ProcessCumbucket</defName>
     <driverClass>RJW_Genes.JobDriver_ProcessingCumbucket</driverClass>
-    <playerInterruptible>true</playerInterruptible>
+    <playerInterruptible>false</playerInterruptible>
     <casualInterruptible>false</casualInterruptible>
     <reportString>processing internal cumbucket.</reportString>
     <suspendable>false</suspendable>

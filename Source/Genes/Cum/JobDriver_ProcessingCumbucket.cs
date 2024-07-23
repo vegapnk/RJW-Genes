@@ -97,15 +97,32 @@ namespace RJW_Genes
                 return;
             }
             
-            //TODO: Fine-Tune the amount and how things calm down. 
+            // Case 1: "Normal Severity", just puke out a bit of cum here and there. 
+            if (hediff.Severity <= 10)
+            {
+                Thing cum = ThingMaker.MakeThing(cumDef);
+                cum.Position = cell;
+                int stacks = Math.Max(1, (int)(hediff.Severity * 1.5));
+                stacks = Math.Min(stacks, 75); // 75 is the default max stacksize ...
+                cum.stackCount = stacks;
+                cum.SpawnSetup(map, false);
+                hediff.Severity -= (stacks / 50);
+            } else
+            // Case 2: Reserviour mode, put out a lot of cum at once but less often. 
+            {
+                int stacks = Math.Max(1, (int)(hediff.Severity * 1.5));
 
-            Thing cum = ThingMaker.MakeThing(cumDef);
-            cum.Position = cell;
-            int stacks = Math.Max(1, (int)(hediff.Severity * 1.5));
-            stacks = Math.Min(stacks, 75); // 75 is the default max stacksize ...
-            cum.stackCount = stacks;
-            cum.SpawnSetup(map, false);
-            hediff.Severity -= (stacks / 50);
+                while (stacks > 0)
+                {
+                    Thing cum = ThingMaker.MakeThing(cumDef);
+                    cum.Position = cell;
+                    var curStacks = Math.Min(stacks, 75); // 75 is the default max stacksize ...
+                    cum.stackCount = stacks;
+                    cum.SpawnSetup(map, false);
+                    hediff.Severity -= (curStacks / 50);
+                    stacks -= curStacks;
+                }
+            }
         }
 
         private int ticksLeft;
