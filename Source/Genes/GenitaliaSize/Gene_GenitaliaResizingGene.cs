@@ -17,8 +17,6 @@ namespace RJW_Genes
     public abstract class Gene_GenitaliaResizingGene : RJW_Gene
     {
 
-    
-
         /// <summary>
         /// Whether or not the gene was already applied. 
         /// If not, it is checked on every birthday and will be applied accordingly.

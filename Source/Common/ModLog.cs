@@ -30,5 +30,12 @@ namespace RJW_Genes
 			Log.Warning($"[{ModId}] {message}");
 		}
 
+		public static void Debug(string message)
+		{
+			if (RJW_Genes_Settings.rjw_genes_detailed_debug)
+			{
+				Log.Message($"[{ModId}][debug] {message}");
+			}
+		}
 	}
 }

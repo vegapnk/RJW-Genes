@@ -15,7 +15,6 @@
     </modExtensions>
   </GeneDef>
 
-
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_mechbreeder</defName>
     <label>mechbreeder</label>
@@ -42,8 +41,9 @@
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_fertile_anus</defName>
     <label>fertile anus</label>
-    <description>Xenotypes with this gene have a functional uterus connected to the anal cavity even
-      for males</description>
+    <description>Xenotypes with this gene have a functional uterus if they do not possess one by
+      means of their vagina.
+      For males, it is connected to the anal cavity and leads to a normal pregnancy.</description>
     <iconPath>Genes/Icons/Fertile_anus</iconPath>
     <displayOrderInCategory>54</displayOrderInCategory>
   </GeneDef>
@@ -81,7 +81,6 @@
     <biostatMet>-1</biostatMet>
   </GeneDef>
 
-
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_mating_call</defName>
     <label>Mating Call</label>
@@ -98,7 +97,6 @@
     <biostatMet>-1</biostatMet>
   </GeneDef>
 
-
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_pheromone_spit</defName>
     <label>Pheromone Spit</label>
@@ -113,6 +111,64 @@
     </descriptionHyperlinks>
     <biostatCpx>2</biostatCpx>
     <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef ParentName="BreedingBase">
+    <defName>rjw_genes_hardwired_progenity</defName>
+    <label>Hardwired Progenity</label>
+    <description>Carriers of this gene need to procreate. They suffer negative effects if they are
+      childless, and have increased capabilities if they reach a high amount of offsprings.</description>
+    <iconPath>Genes/Icons/hardwired_progenity</iconPath>
+    <displayOrderInCategory>70</displayOrderInCategory>
+
+    <conditionalStatAffecters>
+      <li Class="RJW_Genes.ConditionalStatAffecter_NoChildren">
+        <statOffsets>
+          <WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+          <Fertility>1.2</Fertility>
+          <SexFrequency>1.2</SexFrequency>
+          <MentalBreakThreshold>+0.15</MentalBreakThreshold>
+          <GlobalLearningFactor>-0.1</GlobalLearningFactor>
+        </statOffsets>
+      </li>
+      <li Class="RJW_Genes.ConditionalStatAffecter_ManyChildren">
+        <statOffsets>
+          <MoveSpeed>0.05</MoveSpeed>
+          <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+          <Fertility>0.1</Fertility>
+          <SexFrequency>0.4</SexFrequency>
+        </statOffsets>
+      </li>
+      <li Class="RJW_Genes.ConditionalStatAffecter_VeryManyChildren">
+        <statOffsets>
+          <MoveSpeed>0.15</MoveSpeed>
+          <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+          <MentalBreakThreshold>-0.25</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+    </conditionalStatAffecters>
+
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+  </GeneDef>
+
+  <GeneDef ParentName="BreedingBase">
+    <defName>rjw_genes_basic_rut</defName>
+    <label>Rut</label>
+    <description>Carriers of this gene can enter a state of heat, resulting in drastically higher
+      sexual activity.</description>
+    <iconPath>Genes/Icons/rut</iconPath>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+    <displayOrderInCategory>11</displayOrderInCategory>
+    <geneClass>RJW_Genes.Gene_Rut</geneClass>
+    <modExtensions>
+      <li Class="RJW_Genes.TickBasedChanceExtension">
+        <!-- 60k = 1 days -->
+        <tickInterval>60000</tickInterval>
+        <eventChance>0.05</eventChance>
+      </li>
+    </modExtensions>
   </GeneDef>
 
 </Defs>

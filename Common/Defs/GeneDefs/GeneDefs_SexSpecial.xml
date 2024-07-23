@@ -19,7 +19,7 @@
             partially filled)</description>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-2</biostatMet>
-        <iconPath>UI/Memes/FleshPurity</iconPath>
+        <iconPath>Genes/Icons/FleshPurity</iconPath>
         <displayOrderInCategory>1</displayOrderInCategory>
     </GeneDef>
 
@@ -30,7 +30,7 @@
             (Partner stays adult)</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-2</biostatMet>
-        <iconPath>UI/Ideoligions/FireLeaves</iconPath>
+        <iconPath>Genes/Icons/FireLeaves</iconPath>
         <displayOrderInCategory>2</displayOrderInCategory>
         <modExtensions>
             <li Class="RJW_Genes.AgeTransferExtension">
@@ -140,13 +140,128 @@
 
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_sex_tamer</defName>
-        <label>Sexual Tamer</label>
+        <label>sexual tamer</label>
         <labelShortAdj>sextamer</labelShortAdj>
         <description>Bestiality has a chance to tame animals or advance their training.</description>
         <iconPath>Genes/Icons/RJW_Genes_SexualTamer</iconPath>
         <displayOrderInCategory>14</displayOrderInCategory>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_sexual_genetic_swap</defName>
+        <label>sexual genetic swap</label>
+        <description>Carriers with this gene may switch a gene with their sex-partner. Switched Genes are always endogenes.</description>
+        <iconPath>Genes/Icons/sexual_genetic_swap</iconPath>
+        <displayOrderInCategory>20</displayOrderInCategory>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <modExtensions>
+            <li Class="RJW_Genes.ChanceExtension">
+                <chance>0.1</chance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_sexual_genetic_thief</defName>
+        <label>sexual gene thief</label>
+        <description>Carriers with this gene may steal a gene from their sex-partner. Stolen genes are always xenogenes.</description>
+        <iconPath>Genes/Icons/sexual_genetic_thief</iconPath>
+        <displayOrderInCategory>21</displayOrderInCategory>
+        <biostatCpx>5</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <biostatArc>1</biostatArc>
+        <modExtensions>
+            <li Class="RJW_Genes.ChanceExtension">
+                <chance>0.2</chance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_feminizer</defName>
+        <label>feminizer</label>
+        <description>Carriers with this gene slowly turn male sexual partners into females.</description>
+        <iconPath>Genes/Icons/feminizer</iconPath>
+        <displayOrderInCategory>31</displayOrderInCategory>
+        <biostatCpx>4</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <modExtensions>
+            <li Class="RJW_Genes.ImmunityAgainstGenesExtension">
+                <givesImmunityAgainst>
+                    <li>rjw_genes_feminizer</li>
+                </givesImmunityAgainst>
+            </li>
+            <li Class="RJW_Genes.HediffIncreaseOnSexExtension">
+                <hediffDef>rjw_genes_feminization_progress</hediffDef>
+                <canCreateHediff>true</canCreateHediff>
+                <severityIncrease>0.01</severityIncrease>
+                <applicationChance>1.00</applicationChance>
+                <applicableForWomen>false</applicableForWomen>
+                <applicableForMen>true</applicableForMen>
+                <requiresPenetrativeSex>false</requiresPenetrativeSex>
+            </li>
+            <li Class="RJW_Genes.GeneAlteringExtension">
+                <majorGenes>
+                    <li>rjw_genes_female_only</li>
+                    <li>rjw_genes_no_penis</li>
+                    <li>rjw_genes_minor_vulnerability</li>
+                </majorGenes>
+                <minorGenes>
+                    <li>rjw_genes_small_male_genitalia</li>
+                    <li>rjw_genes_big_breasts</li>
+                    <li>Beard_NoBeardOnly</li>
+                    <li>Hair_LongOnly</li>
+                </minorGenes>
+                <minorApplicationChance>0.25</minorApplicationChance>
+                <majorApplicationChance>0.1</majorApplicationChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+    
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_twinkifier</defName>
+        <label>twinkifier</label>
+        <description>Carriers with this gene slowly turn male sexual partners into breedabel cute twinks.</description>
+        <iconPath>Genes/Icons/twinkifier</iconPath>
+        <displayOrderInCategory>50</displayOrderInCategory>
+        <biostatCpx>4</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <modExtensions>
+            <li Class="RJW_Genes.ImmunityAgainstGenesExtension">
+                <givesImmunityAgainst>
+                    <li>rjw_genes_twinkifier</li>
+                </givesImmunityAgainst>
+            </li>
+            <li Class="RJW_Genes.HediffIncreaseOnSexExtension">
+                <hediffDef>rjw_genes_twinkification_progress</hediffDef>
+                <canCreateHediff>true</canCreateHediff>
+                <severityIncrease>0.01</severityIncrease>
+                <applicationChance>1.00</applicationChance>
+                <applicableForWomen>false</applicableForWomen>
+                <applicableForMen>true</applicableForMen>
+                <requiresPenetrativeSex>false</requiresPenetrativeSex>
+            </li>
+            <li Class="RJW_Genes.GeneAlteringExtension">
+                <majorGenes>
+                    <li>rjw_genes_fertile_anus</li>
+                    <li>Beauty_Pretty</li>
+                    <li>Delicate</li>
+                    <li>rjw_genes_minor_vulnerability</li>
+                    <li>rjw_genes_infectious_homosexuality</li>
+                </majorGenes>
+                <minorGenes>
+                    <li>rjw_genes_small_male_genitalia</li>
+                    <li>Beard_NoBeardOnly</li>
+                    <li>Body_Thin</li>
+                    <li>rjw_genes_homosexual</li>
+                </minorGenes>
+                <minorApplicationChance>0.25</minorApplicationChance>
+                <majorApplicationChance>0.1</majorApplicationChance>
+            </li>
+        </modExtensions>
     </GeneDef>
 
 </Defs>

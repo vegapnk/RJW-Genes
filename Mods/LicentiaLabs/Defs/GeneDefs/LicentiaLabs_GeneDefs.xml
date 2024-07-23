@@ -27,6 +27,8 @@
     <description>This Xenotype loves being cumflated.</description>
     <iconPath>Genes/Icons/Cumflation</iconPath>
     <displayOrderInCategory>536</displayOrderInCategory>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>2</biostatCpx>
     <forcedTraits>
       <li>
         <def>LikesCumflation</def>
@@ -71,6 +73,8 @@
     <iconPath>Genes/Icons/Generous_Donor</iconPath>
     <displayOrderInCategory>538</displayOrderInCategory>
     
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
     <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>

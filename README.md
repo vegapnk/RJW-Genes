@@ -1,5 +1,8 @@
 # RJW-Genes [NSFW]
 
+[![BuyMeACoffee](https://raw.githubusercontent.com/pachadotdev/buymeacoffee-badges/main/bmc-white.svg)](https://buymeacoffee.com/vegapnk)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This mod adds genes related and based on RJW to Rimworld. 
 
 ## Current Features 
@@ -12,6 +15,7 @@ This mod adds genes related and based on RJW to Rimworld.
 - Sexual Vampires that need Cum, Cocks or some other sources.
 - Mech Breeding Additions & Orgasmic Mytosis
 - Human-Animal Gene Inheritance merged from [Shabakur](https://github.com/Shabakur/RJW_Animal_Gene_Inheritance)
+- Genetic Diseases that spread on Intercourse
 - Patches for some popular / common Xenotypes from other Mods.
 
 *You might not see all of them. Many genes just show up if other mods are loaded*.

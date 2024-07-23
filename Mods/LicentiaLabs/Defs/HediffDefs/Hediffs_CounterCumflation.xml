@@ -98,15 +98,6 @@
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.75</severityPerDay>
       </li>
-      <li Class="LicentiaLabs.Hediffs.HediffCompProperties_VomitCumMtb">
-        <mtbDaysPerStage>
-          <li>0</li>
-          <li>0</li>
-          <li>0.75</li>
-          <li>0.5</li>
-          <li>0.2</li>
-        </mtbDaysPerStage>
-      </li>
     </comps>
     <stages>
       <li>

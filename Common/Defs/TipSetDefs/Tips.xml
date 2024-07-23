@@ -23,6 +23,8 @@
       
       <li TKey="BestialityGeneSettings">The Settings for Animal-Gene Inheritance are distributed between RJW-Pregnancy-Settings and their own Mod-Options.</li>
       
+      <li TKey="FertilaAnusJoke">Children born by pawns with the `Fertile Anus` gene might be bullied at school, but they can still live a fulfilling and happy life.</li>
+      
     </tips>
   </TipSetDef>
 

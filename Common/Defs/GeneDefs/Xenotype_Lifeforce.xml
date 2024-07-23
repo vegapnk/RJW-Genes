@@ -75,6 +75,7 @@
     </doubleXenotypeChances>
     <genes>
       <li>rjw_genes_hypersexual</li>
+      <li>rjw_genes_bisexual</li>
       <li>rjw_genes_male_only</li>
       <li>rjw_genes_lifeforce</li>
       <li>rjw_genes_lifeforce_drain</li>

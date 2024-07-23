@@ -1,4 +1,196 @@
-# 2.1.0
+# 2.2.0 (23-07-2024)
+
+## Explanations
+
+**Genetic Diseases**:
+
+This update introduces genetic diseases that are shared on sex. 
+Infection is handled when sex finishes, so a coitus-interruptus will not result in infections. 
+
+Infections can be 
+
+- Turned off entirely 
+- Spread only on penetrative sex
+- Chances are adjustable per XML per Gene
+
+By turning their spread off, you effectively have a set of normal negative genes. 
+Dead pawns can spread diseases, but cannot receive them. For all you necros out there. 
+
+*Why???* 
+
+Most of the genes so far were positive or neutral, 
+so I got some fair requests to introduce negative genes to keep xenotypes balanced. 
+I know that this is some overlap with the STD mod, but well ... you are free to turn things off? 
+
+In theory, you can specify and gene of any kind to be spreadable by sex, not only ones written by this mod. 
+
+**Genetic Infectors**:
+
+These Genes can apply a genetic disease, but are not genetic diseases themselves. 
+A single infector gene can have multiple resulting diseases, see this extension example: 
+
+```xml
+<li Class="RJW_Genes.GeneticInfectorExtension">
+    <infectionChance>0.05</infectionChance>
+    <infectionGenes>
+        <li>rjw_genes_size_blinded</li>
+        <li>rjw_genes_infectious_bisexuality</li>
+    </infectionGenes>
+</li>
+```
+
+The infection-chance is applied per gene - for the example above there would be a 5% chance to apply `size_blinded` and 5% chance to apply `infectious_bisexuality`.
+Multiple infections can happen on a single sex. 
+The `infectionGenes` can be any gene, this is not limited to genetic diseases (e.g. ugly or something). 
+
+*Infectors* are always applied even if the genetic disease spread is turned off. 
+The created genetic diseases will follow the logic outlined above. 
+
+**Disease Immunity**: 
+
+Pawns can be immune to genetic diseases. 
+
+This is either done with a specialised gene (`rjw_genes_genetic_disease_immunity`)
+or by genes giving specific immunities. 
+
+Any gene can give immunity against any genetic disease using an extension: 
+
+```xml
+<li Class="RJW_Genes.ImmunityAgainstGenesExtension">
+    <givesImmunityAgainst>
+        <li>rjw_genes_size_blinded</li>
+    </givesImmunityAgainst>
+</li>
+```
+
+These extensions can be slapped on any gene, 
+but they are meant mostly to have infectors immune against their own diseases. 
+
+**Twinkification / Feminization**:
+
+Both approaches follow the same general logic. 
+
+- Pawn `A` has Twinkifier Gene and fucks Pawn `B`
+- `B` receives a `twinkification progress` hediff with some effects
+- Upon having ANY sex, `B` can gain genes from a relevant genepool. 
+- Genes can be minor or major, depending on the progress of twinkification. 
+
+Pawn `B` might be immune against twinkifier as normal immunity logic against diseases. 
+But once the hediff is there, the twinkification can happen unless you wait for it to cool down.
+Gene additions are subject to an application chance (25% for minor, 10% for major)
+and might try to add a gene that already exists - then nothing happens. 
+
+*Twink Genepool*: 
+- (Minor) Body_Thin
+- (Minor) Homosexual
+- (Minor) Beard_NoBeardOnly
+- (Minor) Small male genitalia
+- (Major) Minor Vulnerability
+- (Major) Infectious Homosexuality
+- (Major) Delicate
+- (Major) Beauty Pretty
+- (Major) Fertile Anus
+
+*Feminization Genepool*:
+- (Minor) Long Hair
+- (Minor) No-Beard
+- (Minor) Small Male Genitals
+- (Minor) No Cum
+- (Minor) Big Breasts (will only show later)
+- (Major) Female Only
+- (Major) No Penis
+- (Major) Minor Vulnerability
+
+You can configure all genes, as well as their application chance, in the Genes` XML. 
+
+*Why are these changes Genetic?* 
+Because this is the genes mod, and I find things here quite robust.
+
+## Changelog
+
+**Additions:** 
+
+- Gene: Genetic Disease Immunity. cannot get infected by any genetic diseases, and won't be affected by some other genes (see relevant genes)
+- Disease Gene: Vulnerability. Pawn is likelier to be raped 
+- Disease Gene: Infectious Hypersexuality
+- Disease Gene: Infectious Homosexuality & Bisexuality
+- Disease Gene: Infectious lower fertility
+- Disease Gene: Infectious higher sex need
+- Disease Gene: Fluctual Sexual Need. (Configurable) Chance to reset sex-need to near-zero and gain a bit of rest-need.
+- Disease Gene: Size Blinded. Pawns have a higher chance for hooking up with pawns with a big cock, lower chance for small cocks.
+- Infector Gene: Genetic Stretcher. Pawns can infect other pawns with *Size Blinded*
+- Gene: Hardwired Progenity. Pawns with this get a malus on having no-children, and bonus on having a lot. 
+- Gene: Sexual Genetic Swap. Pawns have a chance to switch a random gene with their sexpartner. 
+- (Archite) Gene: Sexual Genetic Thief. Pawns have a chance to steal a gene from their sexpartner. Genetic Disease Immunity shields against this. 
+- Gene: Sperm Displacement. Pawns might overwrite an existing pregnancy, becoming the new father. The pregnancy will stay in its gestation progress.
+- Gene: Twinkification. Pawns turn their (male) sexual partners into breedable twinks.
+- Gene: Feminization. Pawns turn their (male) sexual partners into women.
+- Gene: Blocked Masturbation. Pawns cannot masturbate. 
+- {Sexperience} Gene: Living Cumbucket. Pawns with this Gene get "filled" upon sex, and slowly disperse usable gathered cum. 
+- Disease Gene: Infectious Blocked Masturbation
+- Gene: Rut. Pawns have a chance to go into heat and need more sex for a day. (Default: 5% chance per day, to go 1 day in heat).
+- Disease Gene: Infectious Rut.
+- Pawns will have negative thoughts about pawns with more genetic diseases than themselves. 
+- Faction Penalties for spreading diseases, stealing genes and aging pawns with age transfer
+- Patch  for [Imphilee Xeno](https://steamcommunity.com/sharedfiles/filedetails/?id=2990674516) by @Bunuffin
+
+**Changes**::
+
+- Cum-Amount-Changing genes now are XML Adjustable and share a single `.cs`-class
+- Incubi are now Bisexual too, as they should be. 
+
+**Fixes:**
+
+- Fixed an Issue where pawns would always get the Pheromone social boost, unless they had the pheromone (#113)
+- Fixed two hidden dependencies on Ideology and Royalty (#115)
+- Fixed some more hidden dependencies on Ideology Icons (#118)
+- Fixed a hidden dependency on Licentialabs (#119)
+
+**Internal:**
+
+- GenderFluid-Gene now uses a generalized `TickBasedChanceExtension` over its unique special `GenderFluidExtension`
+- Introduced a `ModLog.Debug` Function that checks for the settings before printing - trying to spread it over the whole project. 
+- Removed TODO File. I have enough to do. 
+
+**Notes:**
+
+*One Time Error Load*
+
+The changes to the cum-gene will give a 1-time warning on loading the save. The warning looks like this: 
+```
+Could not find class RJW_Genes.Gene_MuchCum while resolving node li. Trying to use Verse.Gene instead. Full node: <li Class="RJW_Genes.Gene_MuchCum"><def>rjw_genes_much_cum</def><pawn>Thing_Human697</pawn><overriddenByGene>null</overriddenByGene><loadID>82</loadID></li>
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Error (string)
+...
+```
+
+This is not dangerous.
+
+*Blocked Masturbation* 
+
+Might not be fully working - for testing, I run things in DevMode, and I can just order people to masturbate. 
+Please playtest this a bit for me, as I want to make it work nicely. 
+
+*Supporting*
+
+You can now support me with [buying me a coffee](https://buymeacoffee.com/vegapnk). 
+The mod will remain free, open source and I will not hide or lock any features. 
+Its just meant if you want to drop me a tip. 
+
+**Since Beta-1** (11-07-2024) 
+
+- Made the Feminizer and Twinkifier configurable with XML.
+- Typos in the Hediff Defs, tweaking of some values.
+- Living Cum-Bucket & Rut Genes
+- Great icons by @Alpenglow
+
+**Since Beta-2** (17-07-2024)
+
+- Changed behaviour of living cumbucket. Now, once "really full" the output happens more rarely but is much more at once.
+- More Icons by @Alpenglow <3 this time attributed correct. 
+- Adjusted some of the metabolic values - likes cumflation, generous donor and living cumbucket have small costs.
+
+# 2.1.0 (27-06-2024)
 
 **Additions**:
 
@@ -45,7 +237,7 @@
 - Some new Icons thanks to Kira-Bad-Artist
 - Some new Icons thanks to Archer 
 
-# 2.0.0
+# 2.0.0 (30-05-2024)
 
 **Summary**:
 
@@ -92,20 +284,20 @@
 - Patches to RJW-Pregnancy Helper to account for Male Pregs. 
 - Some replacements from `hasGene` to `hasActiveGene` 
 
-# 1.3.3
+# 1.3.3 (02-11-2023)
 
 **Fixes:** 
 
 - Added another check to the AG Malachai Xenotype (Fixes #68)
 - Fixed the `GatheredCum`Fertilin Ingestion Patch throwing an Error for people without Sexperience (Fixes #69 (nice))
 
-# 1.3.2
+# 1.3.2 (24-10-2023)
 
 **Fixes:**
 
 - Removed patch for Malachai, needs a different patching operator but I don't want to have broken fixes for now (Tracked in a new Issue)
 
-# 1.3.1 
+# 1.3.1 (22-10-2023)
 
 **Changes**
 
@@ -144,7 +336,7 @@ The pawns that are gender fluid can get pregnant.
 However, with RJW 5.3.7 these pregnancies disappear. 
 This is a change needed upstream, but I will have a look. 
 
-# 1.2.1 
+# 1.2.1 (18-06-2023)
 
 **Fixes**: 
 
@@ -224,9 +416,9 @@ And I am aware that the TiTs-Myr work different than the things I made now.
 - Mostly Patches and Changes to the Halamyr Defs
 - Some re-arranging and mayRequires for other mods
 
-# 1.1.4
+# 1.1.4 (06-04-2023)
 
-Fixes: 
+**Fixes:**
 
 - Youth Fountain and Age Drainer **really** "stop" at 18 (#26, #28) and never age pawns
 - Drastically reduced vomiting time due to an missunderstanding (#29). `0.4` instead of `0.01`
@@ -234,37 +426,37 @@ Fixes:
 Sometimes life is like that, and you have to fix the fixes. 
 It was never really broken, life is just very long. 
 
-# 1.1.3
+# 1.1.3 (28-03-2023)
 
-Changes:
+**Changes:**
 
 - Youth Fountain and Age Drainer "stop" at 18 (#26)
 - Youth Fountain and Age Drainer activate only for pawns at 18 (#26)
 - Drained Pawns vomit less (from mtb 0.05 to 0.01)(#29)
 
-Fixes: 
+**Fixes:**
 
 - InsectBreeder would mess with normal Pawn-Animal pregancy for egg laying animals (#23)
 
-# 1.1.2
+# 1.1.2 (19-03-2023)
 
-Changes:
+**Changes:**
 
 - Added more cool images from WasMachenDennSachen (#22)
 
-Fixes: 
+**Fixes:** 
 
 - Aphrodisiac Pheromones checks for children and other conditions (#25)
 
-# 1.1.1 
+# 1.1.1 (10-03-2023)
 
-Changes: 
+**Changes:** 
 
 - Drastically increased mood-penalty for Fertilin-Loss (if the pawn is still too happy, there will never be a breakdown for missing fertilin)
 - No-Breast Genes add Nipples
 - Featureless Chest Gene (No Nipples at all, adds the RJW Featureless Chest as requested per some Kobold fetishists)
 
-Fixes: 
+**Fixes:** 
 
 - Small and Big Male Genitalia had images wrong way round 
 - Fertilin should activate at a MinAge of 18 

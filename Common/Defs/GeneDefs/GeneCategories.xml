@@ -67,5 +67,11 @@
     <displayPriorityInXenotype>8</displayPriorityInXenotype>
   </GeneCategoryDef>
   
+  <GeneCategoryDef>
+    <defName>rjw_genes_diseases</defName>
+    <label>genetic STDs</label>
+    <displayPriorityInXenotype>22</displayPriorityInXenotype>
+  </GeneCategoryDef>
+  
   
 </Defs>
