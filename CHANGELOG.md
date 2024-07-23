@@ -1,4 +1,4 @@
-# 2.2.0 (dd-mm-2024)
+# 2.2.0 (23-07-2024)
 
 ## Explanations
 
@@ -188,6 +188,7 @@ Its just meant if you want to drop me a tip.
 
 - Changed behaviour of living cumbucket. Now, once "really full" the output happens more rarely but is much more at once.
 - More Icons by @Alpenglow <3 this time attributed correct. 
+- Adjusted some of the metabolic values - likes cumflation, generous donor and living cumbucket have small costs.
 
 # 2.1.0 (27-06-2024)
 
