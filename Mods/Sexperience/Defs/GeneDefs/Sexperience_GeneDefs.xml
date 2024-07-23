@@ -6,7 +6,7 @@
     <label>living cumbucket</label>
     <displayCategory>rjw_genes_cum</displayCategory>
     <description>When this Xenotype partakes in sexual activity, they store cum and produce it as an item.</description>
-    <iconPath>Genes/Icons/Generous_Donor</iconPath>
+    <iconPath>Genes/Icons/living_cumbucket</iconPath>
     <displayOrderInCategory>559</displayOrderInCategory>
     
     <modExtensions>

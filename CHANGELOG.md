@@ -186,7 +186,8 @@ Its just meant if you want to drop me a tip.
 
 **Since Beta-2** (17-07-2024)
 
-- Changed behaviour of living cumbucket. Now, once "really full" the output happens more rarely but is much more at once. 
+- Changed behaviour of living cumbucket. Now, once "really full" the output happens more rarely but is much more at once.
+- More Icons by @Alpenglow <3 this time attributed correct. 
 
 # 2.1.0 (27-06-2024)
 

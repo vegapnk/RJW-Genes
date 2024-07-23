@@ -157,7 +157,7 @@
     <label>Rut</label>
     <description>Carriers of this gene can enter a state of heat, resulting in drastically higher
       sexual activity.</description>
-    <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+    <iconPath>Genes/Icons/rut</iconPath>
     <biostatCpx>1</biostatCpx>
     <biostatMet>1</biostatMet>
     <displayOrderInCategory>11</displayOrderInCategory>

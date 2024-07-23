@@ -85,11 +85,12 @@
         </modExtensions>
     </GeneDef>
 
-    
+
     <GeneDef ParentName="RJWGeneDisease">
         <defName>rjw_genes_infectious_blocked_masturbation</defName>
         <label>infectious masturbation block</label>
-        <description>Carriers of this gene are unable to masturbate - they need a partner or equipment.</description>
+        <description>Carriers of this gene are unable to masturbate - they need a partner or
+            equipment.</description>
         <iconPath>Genes/Icons/blocked_masturbation</iconPath>
         <displayOrderInCategory>55</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
@@ -100,7 +101,7 @@
             </li>
         </modExtensions>
     </GeneDef>
-    
+
     <GeneDef ParentName="RJWGeneDisease">
         <defName>rjw_genes_infectious_low_fertility</defName>
         <label>infectious low fertility vulnerability</label>
@@ -247,7 +248,8 @@
     <GeneDef ParentName="RJWGeneDisease">
         <defName>rjw_genes_fluctual_sexual_needs</defName>
         <label>fluctual sexual needs</label>
-        <description>Carriers of this genetic disease have a chance to suddenly require sex, gaining a bit of energy to find quick relief.</description>
+        <description>Carriers of this genetic disease have a chance to suddenly require sex, gaining
+            a bit of energy to find quick relief.</description>
         <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
         <biostatCpx>1</biostatCpx>
         <biostatMet>2</biostatMet>
@@ -269,7 +271,8 @@
     <GeneDef ParentName="RJWGeneDisease">
         <defName>rjw_genes_size_blinded</defName>
         <label>size blinded</label>
-        <description>This genetic disease makes the carrier dramatically more drawn to pawns with huge cocks.</description>
+        <description>This genetic disease makes the carrier dramatically more drawn to pawns with
+            huge cocks.</description>
         <iconPath>Genes/Icons/size_blinded</iconPath>
         <biostatCpx>1</biostatCpx>
         <biostatMet>1</biostatMet>
@@ -284,7 +287,8 @@
     <GeneDef ParentName="RJWGeneDisease">
         <defName>rjw_genes_stretcher</defName>
         <label>genetic stretcher</label>
-        <description>Pawns with this gene have a chance to alter the genes of their sexual partners to prefer large cocks.</description>
+        <description>Pawns with this gene have a chance to alter the genes of their sexual partners
+            to prefer large cocks.</description>
         <iconPath>Genes/Icons/stretcher</iconPath>
         <biostatCpx>1</biostatCpx>
         <biostatMet>0</biostatMet>
@@ -305,27 +309,28 @@
     </GeneDef>
 
 
-    <GeneDef ParentName="BreedingBase">
+    <GeneDef ParentName="RJWGeneDisease">
         <defName>rjw_genes_infectious_rut</defName>
         <label>Rut</label>
-        <description>Carriers of this gene can enter a state of heat, resulting in drastically higher
-          sexual activity.</description>
-        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <description>Carriers of this gene can enter a state of heat, resulting in drastically
+            higher
+            sexual activity.</description>
+        <iconPath>Genes/Icons/rut</iconPath>
         <biostatCpx>1</biostatCpx>
         <biostatMet>2</biostatMet>
         <displayOrderInCategory>11</displayOrderInCategory>
         <geneClass>RJW_Genes.Gene_Rut</geneClass>
         <modExtensions>
-          <li Class="RJW_Genes.TickBasedChanceExtension">
-            <!-- 60k = 1 days -->
-            <tickInterval>60000</tickInterval>
-            <eventChance>0.05</eventChance>
-          </li>
-          <li Class="RJW_Genes.GeneticDiseaseExtension">
-            <infectionChance>0.1</infectionChance>
-        </li>
+            <li Class="RJW_Genes.TickBasedChanceExtension">
+                <!-- 60k = 1 days -->
+                <tickInterval>60000</tickInterval>
+                <eventChance>0.05</eventChance>
+            </li>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.1</infectionChance>
+            </li>
         </modExtensions>
-      </GeneDef>
-    
+    </GeneDef>
+
 
 </Defs>
