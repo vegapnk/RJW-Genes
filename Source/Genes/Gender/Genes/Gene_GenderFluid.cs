@@ -39,9 +39,9 @@ namespace RJW_Genes
         private bool sexChangeWasBlocked = false;
 
         public Gene_GenderFluid() : base() {
-            GenderFluidExtension genderFluidExt = GeneDefOf.rjw_genes_gender_fluid.GetModExtension<GenderFluidExtension>();
-            change_interval = genderFluidExt?.changeInterval ?? CHANGE_INTERVAL_FALLBACK;
-            switch_chance = genderFluidExt?.changeChance ?? SWITCH_CHANCE_FALLBACK;
+            TickBasedChanceExtension tickbasedChanceExt = GeneDefOf.rjw_genes_gender_fluid.GetModExtension<TickBasedChanceExtension>();
+            change_interval = tickbasedChanceExt?.tickInterval ?? CHANGE_INTERVAL_FALLBACK;
+            switch_chance = tickbasedChanceExt?.eventChance ?? SWITCH_CHANCE_FALLBACK;
         }
 
         public override void Tick()

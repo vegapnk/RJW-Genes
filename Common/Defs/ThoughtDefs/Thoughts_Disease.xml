@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <ThoughtDef>
+    <defName>rjw_genes_appealing_cock</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>RJW_Genes.ThoughtWorker_SizeBlinded_Social</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    
+    <stages>
+      <li>
+        <label>small cock</label>
+        <baseOpinionOffset>-10</baseOpinionOffset>
+      </li>
+      <li>
+        <label>big cock</label>
+        <baseOpinionOffset>10</baseOpinionOffset>
+      </li>
+      <li>
+        <label>monster cock</label>
+        <baseOpinionOffset>20</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>rjw_genes_has_more_diseases</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>RJW_Genes.ThoughtWorker_HasMoreDiseasesThanMe_Social</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    
+    <stages>
+      <li>
+        <label>carries more genetic diseases than me</label>
+        <baseOpinionOffset>-3</baseOpinionOffset>
+      </li>
+      <li>
+        <label>carries more way genetic diseases than me</label>
+        <baseOpinionOffset>-8</baseOpinionOffset>
+      </li>
+      <li>
+        <label>the genetic diseases on this fellow are off charts</label>
+        <baseOpinionOffset>-18</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

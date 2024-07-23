@@ -73,14 +73,18 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_fervent_ovipositor;
 		public static readonly GeneDef rjw_genes_insectbreeder;
 		public static readonly GeneDef rjw_genes_insectincubator;
-        
-		// Cum 
+		public static readonly GeneDef rjw_genes_hardwired_progenity;
+		public static readonly GeneDef rjw_genes_blocked_masturbation;
+		public static readonly GeneDef rjw_genes_basic_rut;
+
+        // Cum 
         public static readonly GeneDef rjw_genes_no_cum;
 		public static readonly GeneDef rjw_genes_much_cum;
 		public static readonly GeneDef rjw_genes_very_much_cum;
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_likes_cumflation;
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_cumflation_immunity;
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_generous_donor;
+		[MayRequire("rjw.sexperience")] public static readonly GeneDef rjw_genes_living_cumbucket;
         
 
         // Reproduction 
@@ -104,12 +108,17 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_hormonal_saliva;
 		public static readonly GeneDef rjw_genes_cocoonweaver;
         public static readonly GeneDef rjw_genes_sex_tamer;
+		public static readonly GeneDef rjw_genes_sexual_genetic_swap;
+		public static readonly GeneDef rjw_genes_sexual_genetic_thief;
+		public static readonly GeneDef rjw_genes_pregnancy_overwrite;
+		public static readonly GeneDef rjw_genes_feminizer;
+		public static readonly GeneDef rjw_genes_twinkifier;
 
         // Cosmetic
         public static readonly GeneDef rjw_genes_succubus_tail;
         public static readonly GeneDef rjw_genes_succubus_wings;
 
-        //life force
+        // Life force | Fertilin
         public static readonly GeneDef rjw_genes_lifeforce;
         public static readonly GeneDef rjw_genes_pussyhealing;
         public static readonly GeneDef rjw_genes_lifeforce_drain;
@@ -120,6 +129,21 @@ namespace RJW_Genes
         public static readonly GeneDef rjw_genes_paralysingkiss;
         public static readonly GeneDef rjw_genes_cockeater;
         public static readonly GeneDef rjw_genes_lifeforce_empath;
+
+		// Diseases
+		public static readonly GeneDef rjw_genes_genetic_disease_immunity;
+		public static readonly GeneDef rjw_genes_minor_vulnerability;
+        public static readonly GeneDef rjw_genes_major_vulnerability;
+		public static readonly GeneDef rjw_genes_fluctual_sexual_needs;
+		public static readonly GeneDef rjw_genes_size_blinded;
+		public static readonly GeneDef rjw_genes_infectious_low_fertility;
+        public static readonly GeneDef rjw_genes_infectious_increased_sex_need;
+        public static readonly GeneDef rjw_genes_infectious_bisexuality;
+        public static readonly GeneDef rjw_genes_infectious_homosexuality;
+		public static readonly GeneDef rjw_genes_infectious_hypersexuality;
+        public static readonly GeneDef rjw_genes_stretcher;
+		public static readonly GeneDef rjw_genes_infectious_blocked_masturbation;
+        public static readonly GeneDef rjw_genes_infectious_rut;
 
         //Other Defs
         public static readonly XenotypeDef rjw_genes_succubus;

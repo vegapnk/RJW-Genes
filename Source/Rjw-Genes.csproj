@@ -56,24 +56,49 @@
     <Compile Include="Animal_Inheritance\Settings\RJW_BGSSettings.cs" />
     <Compile Include="Animal_Inheritance\Settings\RJW_BGSSettingsController.cs" />
     <Compile Include="Animal_Inheritance\Defs\BestialityGeneInheritanceDef.cs" />
+    <Compile Include="Common\Defs\ChanceExtension.cs" />
     <Compile Include="Common\Defs\DistanceExtension.cs" />
+    <Compile Include="Common\Defs\HediffIncreaseOnSexExtension.cs" />
     <Compile Include="Common\Defs\ModExtensionHelper.cs" />
+    <Compile Include="Common\Defs\MultiplierExtension.cs" />
+    <Compile Include="Common\Defs\TickBasedChanceExtension.cs" />
     <Compile Include="Common\Either.cs" />
+    <Compile Include="Common\Helpers\FactionUtility.cs" />
     <Compile Include="Common\Helpers\LaborState.cs" />
     <Compile Include="Common\Helpers\MapUtility.cs" />
     <Compile Include="Common\ModLog.cs" />
     <Compile Include="Common\Defs\TickIntervalExtension.cs" />
     <Compile Include="Common\Patches\PatchImplants.cs" />
+    <Compile Include="Common\Patches\Patch_HediffIncreaseOnSex.cs" />
     <Compile Include="Common\Patches\Patch_ParentRelationUtility_GetParents.cs" />
     <Compile Include="Genes\Breeding\Abilities\CompAbilityEffect_MatingCall.cs" />
     <Compile Include="Genes\Breeding\Abilities\CompAbilityEffect_PheromoneSpit.cs" />
     <Compile Include="Genes\Breeding\Abilities\CompProperties_AbilityMatingCall.cs" />
     <Compile Include="Genes\Breeding\Abilities\CompProperties_AbilityPheromoneSpit.cs" />
     <Compile Include="Genes\Breeding\AnimalBreedingHelper.cs" />
+    <Compile Include="Genes\Breeding\ConditionalStatAffecters\ConditionalStatAffecter_NoChildren.cs" />
+    <Compile Include="Genes\Breeding\ConditionalStatAffecters\ConditionalStatAffecter_ManyChildren.cs" />
+    <Compile Include="Genes\Breeding\ConditionalStatAffecters\ConditionalStatAffecter_VeryManyChildren.cs" />
     <Compile Include="Genes\Breeding\Genes\Gene_FerventOvipositor.cs" />
     <Compile Include="Genes\Breeding\Genes\Gene_InsectIncubator.cs" />
-    <Compile Include="Genes\Cum\Patch_LikesCumflation.cs" />
+    <Compile Include="Genes\Breeding\Genes\Gene_Rut.cs" />
+    <Compile Include="Genes\Breeding\Patches\Patch_BlockedMasturbation.cs" />
+    <Compile Include="Genes\Cum\HediffComp_ProcessCumbucket.cs" />
+    <Compile Include="Genes\Cum\HediffsCompProperties_ProcessCumbucketMTB.cs" />
+    <Compile Include="Genes\Cum\JobDriver_ProcessingCumbucket.cs" />
+    <Compile Include="Genes\Cum\Patches\Patch_LikesCumflation.cs" />
+    <Compile Include="Genes\Cum\Patches\Patch_LivingCumbucket_StackHediff.cs" />
     <Compile Include="Genes\Damage\Gene_Elasticity.cs" />
+    <Compile Include="Genes\Diseases\Defs\GeneticDiseaseExtension.cs" />
+    <Compile Include="Genes\Diseases\Defs\GeneticInfectorExtension.cs" />
+    <Compile Include="Genes\Diseases\Defs\ImmunityAgainstGenesExtension.cs" />
+    <Compile Include="Genes\Diseases\DiseaseHelper.cs" />
+    <Compile Include="Genes\Diseases\Genes\Gene_FluctualSexualNeed.cs" />
+    <Compile Include="Genes\Diseases\Patches\Patch_AfterSexUtility_ApplyGeneticInfectors.cs" />
+    <Compile Include="Genes\Diseases\Patches\Patch_AftersexUtility_TransferGeneticDiseases.cs" />
+    <Compile Include="Genes\Diseases\Patches\Patch_SecondaryRomanceChanceFactor_Gene_SizeBlinded.cs" />
+    <Compile Include="Genes\Diseases\Thoughts\ThoughtWorker_HasMoreDiseasesThanMe_Social.cs" />
+    <Compile Include="Genes\Diseases\Thoughts\ThoughtWorker_SizeBlinded_Social.cs" />
     <Compile Include="Genes\Life_Force\Events\SuccubusVisit\IncidentWorker_SuccubusVisit.cs" />
     <Compile Include="Genes\Life_Force\Events\SuccubusVisit\LordJob_SuccubusVisit.cs" />
     <Compile Include="Genes\Life_Force\Interactions\SuccubusTailjob\DomSuccubusTailCustomRequirementHandler.cs" />
@@ -86,16 +111,13 @@
     <Compile Include="Genes\Breeding\Patches\PatchMechBirth.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_Femboy.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_UdderBreasts.cs" />
-    <Compile Include="Genes\Gender\Defs\GenderFluidExtension.cs" />
-    <Compile Include="Genes\Gender\Gene_GenderFluid.cs" />
+    <Compile Include="Genes\Gender\Genes\Gene_GenderFluid.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_EvergrowingGenitalia.cs" />
     <Compile Include="Genes\Cum\CumUtility.cs" />
-    <Compile Include="Genes\Cum\Gene_VeryMuchCum.cs" />
-    <Compile Include="Genes\Cum\Gene_MuchCum.cs" />
-    <Compile Include="Genes\Cum\Gene_NoCum.cs" />
-    <Compile Include="Genes\Cum\Patch_TransferNutrition.cs" />
+    <Compile Include="Genes\Cum\Genes\Gene_ChangeCumAmount.cs" />
+    <Compile Include="Genes\Cum\Patches\Patch_TransferNutrition.cs" />
     <Compile Include="Genes\Damage\Gene_Unbreakable.cs" />
-    <Compile Include="Genes\Cum\Patch_CumflationImmunity.cs" />
+    <Compile Include="Genes\Cum\Patches\Patch_CumflationImmunity.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraBreasts.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraAnus.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_Futa.cs" />
@@ -107,8 +129,8 @@
     <Compile Include="Genes\ExtraGenitalia\Gene_NoPenis.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraPenis.cs" />
     <Compile Include="Genes\Gender\GenderUtility.cs" />
-    <Compile Include="Genes\Gender\Gene_FemaleOnly.cs" />
-    <Compile Include="Genes\Gender\Gene_MaleOnly.cs" />
+    <Compile Include="Genes\Gender\Genes\Gene_FemaleOnly.cs" />
+    <Compile Include="Genes\Gender\Genes\Gene_MaleOnly.cs" />
     <Compile Include="Genes\GeneUtility.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_BigBreasts.cs" />
     <Compile Include="Genes\GenitaliaSize\Gene_GenitaliaResizingGene.cs" />
@@ -173,11 +195,17 @@
     <Compile Include="Genes\Special\Abilities\CompAbilityEffect_CocoonWeaver.cs" />
     <Compile Include="Genes\Special\Abilities\CompProperties_AbilityCocoonWeaver.cs" />
     <Compile Include="Genes\Special\Defs\AgeTransferExtension.cs" />
+    <Compile Include="Genes\Special\Defs\GeneAlteringExtension.cs" />
     <Compile Include="Genes\Special\Defs\HormonalSalivaExtension.cs" />
     <Compile Include="Genes\Special\Patches\Patch_AgeDrain.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_GeneticSexSwap.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_GeneticSexThief.cs" />
     <Compile Include="Genes\Special\Patches\Patch_HormonalSaliva.cs" />
     <Compile Include="Genes\Special\Patches\Patch_OrgasmMytosis.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_PregnancyOverwrite.cs" />
     <Compile Include="Genes\Special\Patches\Patch_SexualTamer.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_Feminizer.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_Twinkifier.cs" />
     <Compile Include="Genes\Special\Thoughts\ThoughtWorker_Aphrodisiac_Pheromones_Social.cs" />
     <Compile Include="LetterDefOf.cs" />
     <Compile Include="Interactions\SuccubusTailjob\CompAbility_SexInteractionRequirements.cs" />
@@ -237,9 +265,7 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Genes\Gender\Patches\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>

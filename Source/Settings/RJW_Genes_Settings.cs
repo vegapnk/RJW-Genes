@@ -51,9 +51,19 @@ namespace RJW_Genes
             listing_Standard.Gap(4f);
             listing_Standard.CheckboxLabeled("rjw_genes_settings_animal_mating_needs_penis_key".Translate(), ref animalMatingPulseCheckForGenitals, "rjw_genes_settings_animal_mating_needs_penis_explanation".Translate());
 
-            listing_Standard.Gap(5f);
-            listing_Standard.CheckboxLabeled("rjw_genes_settings_generous_donor_cheatmode_key".Translate(), ref rjw_genes_generous_donor_cheatmode, "rjw_genes_settings_generous_donor_cheatmode_explanation".Translate(), 0f, 1f);
 
+            listing_Standard.Gap(5f);
+            listing_Standard.Label("rjw_genes_genetic_disease_header_key".Translate());
+            listing_Standard.Gap(4f);
+            listing_Standard.CheckboxLabeled("\t" + "rjw_genes_settings_genetic_disease_spread_key".Translate(), ref rjw_genes_genetic_disease_spread, "rjw_genes_settings_genetic_disease_spread_explanation".Translate(), 0f, 1f);
+            listing_Standard.Gap(4f);
+            listing_Standard.CheckboxLabeled("\t" + "rjw_genes_genetic_disease_as_endogenes_key".Translate(), ref rjw_genes_genetic_disease_as_endogenes, "rjw_genes_genetic_disease_as_endogenes_explanation".Translate(), 0f, 1f);
+            listing_Standard.Gap(4f);
+            listing_Standard.CheckboxLabeled("\t" + "rjw_genes_genetic_disease_spread_only_on_penetrative_sex_key".Translate(), ref rjw_genes_genetic_disease_spread_only_on_penetrative_sex, "rjw_genes_genetic_disease_spread_only_on_penetrative_sex_explanation".Translate(), 0f, 1f);
+
+
+            listing_Standard.Gap(10f);
+            listing_Standard.CheckboxLabeled("rjw_genes_settings_generous_donor_cheatmode_key".Translate(), ref rjw_genes_generous_donor_cheatmode, "rjw_genes_settings_generous_donor_cheatmode_explanation".Translate(), 0f, 1f);
             listing_Standard.Gap(5f);
             listing_Standard.CheckboxLabeled("rjw_genes_settings_detailed_debug_key".Translate(), ref rjw_genes_detailed_debug, "rjw_genes_settings_detailed_debug_explanation".Translate(), 0f, 1f);
             listing_Standard.End();
@@ -74,6 +84,11 @@ namespace RJW_Genes
             Scribe_Values.Look<bool>(ref RJW_Genes_Settings.rjw_genes_sexdemon_visit_groups, "rjw_genes_sexdemon_groups", RJW_Genes_Settings.rjw_genes_sexdemon_visit_groups, true);
             Scribe_Values.Look<bool>(ref RJW_Genes_Settings.rjw_genes_sexdemon_visit_succubi, "rjw_genes_sexdemon_succubi", RJW_Genes_Settings.rjw_genes_sexdemon_visit_succubi, true);
             Scribe_Values.Look<bool>(ref RJW_Genes_Settings.rjw_genes_sexdemon_visit_incubi, "rjw_genes_sexdemon_incubi", RJW_Genes_Settings.rjw_genes_sexdemon_visit_incubi, true);
+
+            Scribe_Values.Look<bool>(ref RJW_Genes_Settings.rjw_genes_genetic_disease_spread, "rjw_genes_genetic_disease_spread", RJW_Genes_Settings.rjw_genes_genetic_disease_spread, true);
+            Scribe_Values.Look<bool>(ref RJW_Genes_Settings.rjw_genes_genetic_disease_as_endogenes, "rjw_genes_genetic_disease_as_endogenes", RJW_Genes_Settings.rjw_genes_genetic_disease_as_endogenes, true);
+            Scribe_Values.Look<bool>(ref RJW_Genes_Settings.rjw_genes_genetic_disease_spread_only_on_penetrative_sex, "rjw_genes_genetic_disease_spread_only_on_penetrative", RJW_Genes_Settings.rjw_genes_genetic_disease_spread_only_on_penetrative_sex, true);
+
         }
 
         public static bool rjw_genes_detailed_debug = false;
@@ -88,8 +103,9 @@ namespace RJW_Genes
         public static bool rjw_genes_sexdemon_visit_succubi = true;
         public static bool rjw_genes_sexdemon_visit_incubi = true;
 
-
-
+        public static bool rjw_genes_genetic_disease_spread = true;
+        public static bool rjw_genes_genetic_disease_as_endogenes = true;
+        public static bool rjw_genes_genetic_disease_spread_only_on_penetrative_sex = false;
 
         public static bool rjw_genes_generous_donor_cheatmode = false;
     }

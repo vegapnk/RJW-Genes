@@ -73,5 +73,48 @@ namespace RJW_Genes
         {
             return candidate.def.defName.ToLower().Contains("breast");
         }
+
+        /// <summary>
+        /// Returns the biggest penis of a pawn. 
+        /// In case of a identical severity, the highest body size is returned. 
+        /// For women, or pawns without a penis, null is returned. 
+        /// </summary>
+        /// <param name="pawn"></param>
+        /// <returns>The biggest penis of a pawn. Null on women or error.</returns>
+        public static Hediff GetBiggestPenis(Pawn pawn)
+        {
+            Hediff best = null;
+            var parts = Genital_Helper.get_AllPartsHediffList(pawn);
+
+            foreach (var part in parts)
+            {
+                if (Genital_Helper.is_sex_part(part) && Genital_Helper.is_penis(part))
+                {
+                    if (best == null) best = part;
+
+                    // On a draw of size, we check the body-size. 
+                    if (part.Severity == best.Severity) {
+                        var partSize = part.TryGetComp<rjw.CompHediffBodyPart>();
+                        var bestSize = part.TryGetComp<rjw.CompHediffBodyPart>();
+                        if (partSize == null || bestSize == null) { continue; }
+
+                        best = partSize.SizeOwner > bestSize.SizeOwner ? part : best;
+                    } else if (part.Severity > best.Severity) {
+                        best = part;
+                    }
+                }
+            }
+
+            return best;
+        }
+
+        public static float GetBodySizeOfSexPart(Hediff part)
+        {
+            if (part == null || part.TryGetComp<rjw.CompHediffBodyPart>() == null)
+                return 0.0f;
+            else
+                return part.TryGetComp<rjw.CompHediffBodyPart>().SizeOwner;
+        }
     }
+
 }

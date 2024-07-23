@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using RimWorld;
 using rjw;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,8 @@ namespace RJW_Genes.Genes.Special
         const long AGE_TRANSFERED_FALLBACK = 120000; // 120k == 2 days
         // 18 Years * 60 Days / Year * 60k Ticks/Day + 1 for safety
         const long MINIMUM_AGE_FALLBACK = 18 * 60 * 60000 + 1;
+
+        const int FACTION_GOODWILL_CHANGE = -1;
 
         public static void Postfix(SexProps props)
         {
@@ -80,6 +83,9 @@ namespace RJW_Genes.Genes.Special
                 if (RJW_Genes_Settings.rjw_genes_detailed_debug)
                     ModLog.Message($"[Sexual Age Drainer] {receiver} was too young ({receiver.ageTracker.AgeBiologicalYears}), and remains unchanged.");
             }
+
+            FactionUtility.HandleFactionGoodWillPenalties(receiver, giver, "rjw_genes_GoodwillChangedReason_aged_pawn_with_sex_gene",FACTION_GOODWILL_CHANGE);
         }
+
     }
 }

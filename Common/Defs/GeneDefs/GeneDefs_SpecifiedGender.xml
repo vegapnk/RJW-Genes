@@ -65,10 +65,10 @@
         <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
         <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
       </li>
-      <li Class="RJW_Genes.GenderFluidExtension">
+      <li Class="RJW_Genes.TickBasedChanceExtension">
         <!-- 120k = 2 days -->
-        <changeInterval>120000</changeInterval>
-        <changeChance>0.25</changeChance>
+        <tickInterval>120000</tickInterval>
+        <eventChance>0.25</eventChance>
       </li>
     </modExtensions>
   </GeneDef>

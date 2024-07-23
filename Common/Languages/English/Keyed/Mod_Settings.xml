@@ -21,10 +21,17 @@
     <rjw_genes_settings_regret_stealing_love_key>Regret Stealing Love</rjw_genes_settings_regret_stealing_love_key>
     <rjw_genes_settings_regret_stealing_love_explanation>If off, pawns will not get bad thoughts for seduction.</rjw_genes_settings_regret_stealing_love_explanation>
 
-
     <rjw_genes_settings_animal_mating_needs_penis_key>Animal-Mating GenitalCheck</rjw_genes_settings_animal_mating_needs_penis_key>
     <rjw_genes_settings_animal_mating_needs_penis_explanation>If on, only animals that 'can rape' will be engaging in bestiality after being hit by a animal mating pulse. This usually means that only male animals will start breeding.</rjw_genes_settings_animal_mating_needs_penis_explanation>
 
+    <rjw_genes_genetic_disease_header_key>Genetic STDS</rjw_genes_genetic_disease_header_key>
+    <rjw_genes_settings_genetic_disease_spread_key>Genetic STD Spread</rjw_genes_settings_genetic_disease_spread_key>
+    <rjw_genes_settings_genetic_disease_spread_explanation>If checked, certain Genes will spread on sex.</rjw_genes_settings_genetic_disease_spread_explanation>
+    <rjw_genes_genetic_disease_as_endogenes_key>Genetic STDs as Endogenes</rjw_genes_genetic_disease_as_endogenes_key>
+    <rjw_genes_genetic_disease_as_endogenes_explanation>If checked, genetic diseases will be added as Endogenes. Otherwise they are added as Xenogenes.</rjw_genes_genetic_disease_as_endogenes_explanation>
+    <rjw_genes_genetic_disease_spread_only_on_penetrative_sex_key>Genetic STDs on penetrative-sex only</rjw_genes_genetic_disease_spread_only_on_penetrative_sex_key>
+    <rjw_genes_genetic_disease_spread_only_on_penetrative_sex_explanation>If checked, genetic STDs are only spread on penetrative sex. Otherwise, any sextype is considered for spread.</rjw_genes_genetic_disease_spread_only_on_penetrative_sex_explanation>
+    
     <rjw_genes_settings_generous_donor_cheatmode_key>generous-donor cheatmode</rjw_genes_settings_generous_donor_cheatmode_key>
     <rjw_genes_settings_generous_donor_cheatmode_explanation>When enabled, pawns with the 'generous donor' are not drained and not fertilin exhausted. Hence they can fuel succubi and incubi non-stop. This makes them drastically easier to keep, and you should not do it.</rjw_genes_settings_generous_donor_cheatmode_explanation>
 

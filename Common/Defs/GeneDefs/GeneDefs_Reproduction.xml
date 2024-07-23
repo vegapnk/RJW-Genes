@@ -14,6 +14,10 @@
             </li>
         </forcedTraits>
 
+        <exclusionTags>
+            <li>rjw_genes_hypersexuality_trait_giver</li>
+        </exclusionTags>
+
         <randomChosen>false</randomChosen>
         <modExtensions>
             <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
@@ -48,31 +52,6 @@
         </modExtensions>
     </GeneDef>
 
-    <!-- 
-	<GeneDef>
-        <defName>rjw_genes_sadist_gene</defName>
-        <label>sadist</label>
-        <displayCategory>Reproduction</displayCategory>
-        <description>Xenotypes with this Gene are Sadists.</description>
-        <iconPath>Genes/Icons/Rape</iconPath>
-        <biostatMet>1</biostatMet>
-        <displayOrderInCategory>2</displayOrderInCategory>    
-        <forcedTraits>
-            <li>
-                <def>rjw_genes_sadist</def>
-            </li>
-        </forcedTraits>
-
-        <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
-    Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
-    </GeneDef>
-	-->
-
     <GeneDef>
         <defName>rjw_genes_masochist</defName>
         <label>masochist</label>
@@ -102,7 +81,7 @@
         <label>homosexual</label>
         <displayCategory>Reproduction</displayCategory>
         <description>This Gene makes you gay.</description>
-        <iconPath>UI\Ideoligions\Universal\RoundC</iconPath>
+        <iconPath>Genes/Icons/RoundC</iconPath>
         <biostatMet>0</biostatMet>
         <displayOrderInCategory>3</displayOrderInCategory>
         <forcedTraits>
@@ -111,6 +90,7 @@
             </li>
         </forcedTraits>
         <exclusionTags>
+            <li>rjw_genes_homosexuality_trait_giver</li>
             <li>rjw_genes_sexual_orientation</li>
         </exclusionTags>
 
@@ -129,7 +109,7 @@
         <label>bisexual</label>
         <displayCategory>Reproduction</displayCategory>
         <description>Carriers of this Gene are Bisexual.</description>
-        <iconPath>UI\Ideoligions\Universal\RoundC</iconPath>
+        <iconPath>Genes/Icons/RoundC</iconPath>
         <biostatMet>0</biostatMet>
         <displayOrderInCategory>4</displayOrderInCategory>
         <forcedTraits>
@@ -139,6 +119,7 @@
         </forcedTraits>
         <exclusionTags>
             <li>rjw_genes_sexual_orientation</li>
+            <li>rjw_genes_bisexuality_trait_giver</li>
         </exclusionTags>
 
         <randomChosen>false</randomChosen>
@@ -200,4 +181,46 @@
         </exclusionTags>
     </GeneDef>
 
+    <GeneDef>
+        <defName>rjw_genes_pregnancy_overwrite</defName>
+        <label>Sperm Displacement</label>
+        <displayCategory>Reproduction</displayCategory>
+        <description>Carriers of this gene can 'overwrite' an existing pregnancy, keeping the
+            progress but effectively replacing the father.</description>
+        <iconPath>Genes/Icons/pregnancy_overwrite</iconPath>
+        <displayOrderInCategory>120</displayOrderInCategory>
+
+        <biostatCpx>4</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <modExtensions>
+            <!-- DevNote: The chance will be multiplied by both pawns' Fertility! -->
+            <li Class="RJW_Genes.ChanceExtension">
+                <chance>0.5</chance>
+            </li>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+                Class="VanillaGenesExpanded.GeneExtension">
+                <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+                <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+            </li>
+        </modExtensions>
+    </GeneDef>
+    
+  <GeneDef>
+    <defName>rjw_genes_blocked_masturbation</defName>
+    <label>no masturbation</label>
+    <displayCategory>Reproduction</displayCategory>
+    <description>Carriers of this gene are unable to masturbate - they need a partner or equipment.</description>
+    <iconPath>Genes/Icons/blocked_masturbation</iconPath>
+    <displayOrderInCategory>60</displayOrderInCategory>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>1</biostatMet>
+    <modExtensions>
+        <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+            Class="VanillaGenesExpanded.GeneExtension">
+            <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+            <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+        </li>
+    </modExtensions>
+  </GeneDef>
+  
 </Defs>

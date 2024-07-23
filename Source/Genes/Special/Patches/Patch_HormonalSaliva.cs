@@ -12,7 +12,6 @@ namespace RJW_Genes
     [HarmonyPatch(typeof(SexUtility), "Aftersex")]
     public class Patch_HormonalSaliva
     {
-        // TODO: Reduce to 0.02 after debug. 
         const float SIZE_INCREMENT_FALLBACK = 0.02f;
         const float MAX_BODY_SIZE_FALLBACK = 2.5f;
         const float CUM_MULTIPLIER_FALLBACK = 1.05f;

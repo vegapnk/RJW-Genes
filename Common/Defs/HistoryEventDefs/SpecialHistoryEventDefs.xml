@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HistoryEventDef>
+        <defName>rjw_genes_GoodwillChangedReason_aged_pawn_with_sex_gene</defName>
+        <label>Aged a pawn with sexual age transfer</label>
+    </HistoryEventDef>
+
+    <HistoryEventDef>
+        <defName>rjw_genes_GoodwillChangedReason_youthed_pawn_with_sex_gene</defName>
+        <label>Youthed a pawn with youth fountain</label>
+    </HistoryEventDef>
+    
+    <HistoryEventDef>
+        <defName>rjw_genes_GoodwillChangedReason_OverwritePregnancy</defName>
+        <label>Replaced a pregnancy</label>
+    </HistoryEventDef>
+
+</Defs>
