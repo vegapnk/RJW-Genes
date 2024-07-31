@@ -6,7 +6,10 @@
 			<li>Canine_Group</li>
 			<li>CanineAnimal</li> 
 			<li>CanineSingleGenderAnimal</li>
-			<li>CanineSkinAnimal</li> 
+			<li>CanineSkinAnimal</li>
+			<!--Mod: Alpha Animals-->
+			<li>Canine_Dick_AA</li>
+			<li>Canine_Dick_Skin_AA</li>
 		</raceGroups>
 		<genes>
 			<li>
@@ -48,6 +51,12 @@
 			<li>ArthropodAnimal</li>
 			<li>ArthropodOvipositorAnimal</li> 
 			<li>ArthropodOvipositorHornyAnimal</li>
+			<!--Mod: Alpha Animals-->
+			<li>Insect_Dick_AA</li>
+			<li>Insect_Dick_AA_Ovipositors</li>
+			<li>Insect_bumbleQ_AA</li>
+			<li>Insect_Prince_AA</li>
+			<li>Insect_Bumbledrone_AA</li>
 		</raceGroups>
 		<genes>
 			<li>
@@ -88,7 +97,9 @@
 			<li>FelineAnimal</li> 
 			<li>FelineHornyAnimal</li>
 			<li>FelineSingleGenderAnimal</li>
-			<li>AA_SandProwlerAnimal</li> 
+			<!--Mod: Alpha Animals-->
+			<li>Feline_Dick_AA</li>
+			<li>Feline_Dick_AA_Scales</li> 
 		</raceGroups>
 
 		<genes>
@@ -127,7 +138,9 @@
 		<defName>Equine</defName> 
 		<raceGroups>
 			<li>Equine_Group</li>
-			<li>HorseAnimal</li> 
+			<li>HorseAnimal</li>
+			<!--Mod: Alpha Animals-->
+			<li>AA_Equinelike</li> 
 		</raceGroups>
 		<genes>
 			<li>
@@ -167,7 +180,9 @@
 			<li>Dragon_Group</li>
 			<li>ThrumboAnimal</li> 
 			<li>DragonAnimal</li> 
-			<li>DragonSingleGenderAnimal</li> 
+			<li>DragonSingleGenderAnimal</li>
+			<!--Mod: Alpha Animals-->
+			<li>Dragon_Dick_AA</li>
 		</raceGroups>
 		<genes>
 			<li>
@@ -218,7 +233,9 @@
 		<raceGroups>
 			<li>Rodent_Group</li>
 			<li>RodentAnimal</li> 
-			<li>RodentSingleGenderAnimal</li> 
+			<li>RodentSingleGenderAnimal</li>
+			<!--Mod: Alpha Animals-->
+			<li>Rodent_Dick_AA</li>
 		</raceGroups>
 		<genes>
 			<li>
@@ -286,6 +303,8 @@
 		<defName>Crocodilian</defName> 
 		<raceGroups>
 			<li>CrocodilianAnimal</li>
+			<!--Mod: Alpha Animals-->
+			<li>Crocodilian_Dick_AA</li>
 		</raceGroups>	
 		<genes>
 			<li>
@@ -312,6 +331,8 @@
 		<defName>Avian</defName> 
 		<raceGroups>
 			<li>AvianAnimal</li>
+			<!--Mod: Alpha Animals-->
+			<li>Avian_Dick_AA</li>
 		</raceGroups>	
 		<genes>
 			<li>
@@ -338,6 +359,8 @@
 		<defName>DinosaurFeathers</defName> 
 		<raceGroups>
 			<li>DinoFeatheredAnimal</li>
+			<!--Mod: Alpha Animals-->
+			<li>Dinosauria_Feathery_AA</li>
 		</raceGroups>	
 		<genes>
 			<li>
@@ -364,6 +387,8 @@
 		<defName>Elephant</defName> 
 		<raceGroups>
 			<li>ElephantAnimal</li>
+			<!--Mod: Alpha Animals-->
+			<li>Elephant_Dick_AA</li>
 		</raceGroups>	
 		<genes>
 			<li>
@@ -385,21 +410,6 @@
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
-
-	<!--
-	<RJW_BGS.RaceGeneDef Name = "Marsupial">
-		<defName>Marsupial</defName> 
-		<raceGroups>
-			<li>MarsupialAnimal</li>
-		</raceGroups>	
-		<genes>
-			<li>
-				<defName></defName>
-				<chance></chance>
-			</li>
-		</genes>
-	</RJW_BGS.RaceGeneDef>
-	-->
 
 	<RJW_BGS.RaceGeneDef Name = "Marsupial">
 		<defName>Marsupial</defName> 
@@ -431,6 +441,8 @@
 		<defName>Pig</defName> 
 		<raceGroups>
 			<li>PigAnimal</li>
+			<!--Mod: Alpha Animals-->
+			<li>Pig_Dick_AA</li>
 		</raceGroups>	
 		<genes>
 			<li>
@@ -459,7 +471,8 @@
 	<RJW_BGS.RaceGeneDef Name = "Lizard">
 		<defName>Lizard</defName>
 		<raceGroups>
-			<li></li>
+			<!--Mod: Alpha Animals-->
+			<li>Reptile_Dick_AA</li>
 		</raceGroups>
 		<raceNames>
 			<li>Iguana</li>
@@ -515,6 +528,8 @@
 		<defName>Bovine</defName> 
 		<raceGroups>
 			<li>BovineAnimal</li>
+			<!--Mod: Alpha Animals-->
+			<li>Bovine_Dick_AA</li>
 		</raceGroups>	
 		<genes>
 			<li>
