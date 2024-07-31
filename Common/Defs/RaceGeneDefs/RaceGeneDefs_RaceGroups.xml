@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+	<!--	Those RaceGroupDefs add rudementary support for adding genes to specific race families. If you want to add more specific genes to a RaceName, add an entrie to /RaceGeneDefs/RaceNameSpecific/(Mod).xml
+
+			The RaceGroupDefs can be found in the "Race Support" mod and in "RJW" itself. 
+			
+			Code of conduct: The genes added here should fit every race inside of the RaceGroup.	-->
+
 <Defs>
 	<RJW_BGS.RaceGeneDef Name = "Canine">
 		<defName>Canine</defName> 
