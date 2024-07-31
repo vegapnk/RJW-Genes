@@ -315,8 +315,76 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Body_Hulk</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>Body_Fat</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>VoiceRoar</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>Robust</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>Learning_Slow</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Learning</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Plants</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Ranged</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>AptitudeTerrible_Animals</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>RobustDigestion</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>DarkVision</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>Aggression_Aggressive</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>Aggression_HyperAggressive</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>KillThirst</defName>
+				<chance>0.1</chance>
+			</li>
+			<li>
+				<defName>MoveSpeed_Slow</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>Beard_NoBeardOnly</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>Hair_BaldOnly</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_reptilian_genitalia</defName>
+				<chance>0.7</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -328,8 +396,8 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Body_Thin</defName>
+				<chance>0.5</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -343,8 +411,8 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Body_Thin</defName>
+				<chance>0.5</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -356,8 +424,8 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Body_Thin</defName>
+				<chance>0.5</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -371,8 +439,8 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Body_Thin</defName>
+				<chance>0.5</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -384,8 +452,8 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Body_Thin</defName>
+				<chance>0.5</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -399,8 +467,8 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Body_Thin</defName>
+				<chance>0.5</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -412,8 +480,8 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Body_Thin</defName>
+				<chance>0.5</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -425,21 +493,21 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Body_Thin</defName>
+				<chance>0.5</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
-	<RJW_BGS.RaceGeneDef ParentName = "Marsupial"; Name = "MarsupialBi">
+	<RJW_BGS.RaceGeneDef Name = "MarsupialBi">
 		<defName>MarsupialBi</defName> 
 		<raceGroups>
 			<li>MarsupialBiAnimal</li>
 		</raceGroups>
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Body_Thin</defName>
+				<chance>0.5</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -453,24 +521,21 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Body_Thin</defName>
+				<chance>0.5</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
 	<RJW_BGS.RaceGeneDef Name = "Snake">
 		<defName>Snake</defName>
-		<raceGroups>
-			<li></li>
-		</raceGroups>
 		<raceNames>
 			<li>Cobra</li>
 		</raceNames>
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Body_Thin</defName>
+				<chance>0.5</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -486,8 +551,8 @@
 		</raceNames>
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Body_Thin</defName>
+				<chance>0.5</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -499,8 +564,8 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Body_Thin</defName>
+				<chance>0.5</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -512,8 +577,8 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Body_Thin</defName>
+				<chance>0.5</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -525,8 +590,8 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Body_Thin</defName>
+				<chance>0.5</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -540,8 +605,8 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName></defName>
-				<chance></chance>
+				<defName>Robust</defName>
+				<chance>1.0</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
