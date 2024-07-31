@@ -41,10 +41,11 @@
 	</RJW_BGS.RaceGeneDef>
 	
 	
-	<RJW_BGS.RaceGeneDef>
-		<defName>Insect</defName> 
+	<RJW_BGS.RaceGeneDef Name = "Arthropod">
+		<defName>Arthropod</defName> 
 		<raceGroups>
 			<li>Insect_Group</li>
+			<li>ArthropodAnimal</li>
 			<li>ArthropodOvipositorAnimal</li> 
 			<li>ArthropodOvipositorHornyAnimal</li>
 		</raceGroups>
@@ -80,7 +81,7 @@
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 	
-	<RJW_BGS.RaceGeneDef>
+	<RJW_BGS.RaceGeneDef Name = "Feline">
 		<defName>Feline</defName> 
 		<raceGroups>
 			<li>Feline_Group</li>
@@ -122,7 +123,7 @@
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 	
-	<RJW_BGS.RaceGeneDef>
+	<RJW_BGS.RaceGeneDef Name = "Equine">
 		<defName>Equine</defName> 
 		<raceGroups>
 			<li>Equine_Group</li>
@@ -160,7 +161,7 @@
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
-	<RJW_BGS.RaceGeneDef>
+	<RJW_BGS.RaceGeneDef Name = "Dragon">
 		<defName>Dragon</defName> 
 		<raceGroups>
 			<li>Dragon_Group</li>
@@ -212,13 +213,12 @@
 		</genes> 
 	</RJW_BGS.RaceGeneDef>
 	
-	<RJW_BGS.RaceGeneDef>
+	<RJW_BGS.RaceGeneDef Name = "Rodent">
 		<defName>Rodent</defName> 
 		<raceGroups>
 			<li>Rodent_Group</li>
 			<li>RodentAnimal</li> 
 			<li>RodentSingleGenderAnimal</li> 
-			<li>DragonSingleGenderAnimal</li> 
 		</raceGroups>
 		<genes>
 			<li>
@@ -252,7 +252,7 @@
 		</genes> 
 	</RJW_BGS.RaceGeneDef>
 	
-	<RJW_BGS.RaceGeneDef>
+	<RJW_BGS.RaceGeneDef Name = "Raccon">
 		<defName>Racoon</defName> 
 		<raceGroups>
 			<li>Raccon_Group</li>
@@ -279,6 +279,248 @@
 				<defName>ToxicEnvironmentResistance_Partial</defName>
 				<chance>0.1</chance>
 			</li>				
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Crocodilian">
+		<defName>Crocodilian</defName> 
+		<raceGroups>
+			<li>CrocodilianAnimal</li>
+		</raceGroups>	
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Ape">
+		<defName>Ape</defName> 
+		<raceGroups>
+			<li>ApeAnimal</li>
+		</raceGroups>	
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Avian">
+		<defName>Avian</defName> 
+		<raceGroups>
+			<li>AvianAnimal</li>
+		</raceGroups>	
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Cervine">
+		<defName>Cervine</defName> 
+		<raceGroups>
+			<li>CervineAnimal</li>
+		</raceGroups>	
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "DinosaurFeathers">
+		<defName>DinosaurFeathers</defName> 
+		<raceGroups>
+			<li>DinoFeatheredAnimal</li>
+		</raceGroups>	
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "DinosaurScales">
+		<defName>DinosaurScales</defName> 
+		<raceGroups>
+			<li>DinoScaledAnimal</li>
+		</raceGroups>	
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Elephant">
+		<defName>Elephant</defName> 
+		<raceGroups>
+			<li>ElephantAnimal</li>
+		</raceGroups>	
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Marine">
+		<defName>Marine</defName> 
+		<raceGroups>
+			<li>MarineMammalAnimal</li>
+		</raceGroups>	
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<!--
+	<RJW_BGS.RaceGeneDef Name = "Marsupial">
+		<defName>Marsupial</defName> 
+		<raceGroups>
+			<li>MarsupialAnimal</li>
+		</raceGroups>	
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+	-->
+
+	<RJW_BGS.RaceGeneDef Name = "Marsupial">
+		<defName>Marsupial</defName> 
+		<raceGroups>
+			<li>MarsupialAnimal</li>
+		</raceGroups>	
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef ParentName = "Marsupial"; Name = "MarsupialBi">
+		<defName>MarsupialBi</defName> 
+		<raceGroups>
+			<li>MarsupialBiAnimal</li>
+		</raceGroups>
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Pig">
+		<defName>Pig</defName> 
+		<raceGroups>
+			<li>PigAnimal</li>
+		</raceGroups>	
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Snake">
+		<defName>Snake</defName>
+		<raceGroups>
+			<li></li>
+		</raceGroups>
+		<raceNames>
+			<li>Cobra</li>
+		</raceNames>
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Lizard">
+		<defName>Lizard</defName>
+		<raceGroups>
+			<li></li>
+		</raceGroups>
+		<raceNames>
+			<li>Iguana</li>
+		</raceNames>
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Plant">
+		<defName>Plant</defName> 
+		<raceGroups>
+			<li>TreeAnimal</li>
+		</raceGroups>	
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Turtle">
+		<defName>Turtle</defName> 
+		<raceGroups>
+			<li>TurtleAnimal</li>
+		</raceGroups>	
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Ursine">
+		<defName>Ursine</defName> 
+		<raceGroups>
+			<li>UrsineAnimal</li>
+		</raceGroups>	
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef Name = "Bovine">
+		<defName>Bovine</defName> 
+		<raceGroups>
+			<li>BovineAnimal</li>
+		</raceGroups>	
+		<genes>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
