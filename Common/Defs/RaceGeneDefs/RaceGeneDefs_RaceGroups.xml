@@ -112,15 +112,15 @@
 		<genes>
 			<li>
 				<defName>Tail_Furry</defName>
-				<chance>0.2</chance>
+				<chance>0.7</chance>
 			</li>
 			<li>
 				<defName>Furskin</defName>
-				<chance>0.5</chance>
+				<chance>0.7</chance>
 			</li>
 			<li>
 				<defName>Ears_Cat</defName>
-				<chance>0.9</chance>
+				<chance>0.7</chance>
 			</li>
 			<li>
 				<defName>PsychicBonding</defName>
@@ -152,11 +152,11 @@
 		<genes>
 			<li>
 				<defName>Furskin</defName>
-				<chance>0.2</chance>
+				<chance>0.6</chance>
 			</li>
 			<li>
 				<defName>rjw_genes_equine_genitalia</defName>
-				<chance>0.25</chance>
+				<chance>0.6</chance>
 			</li>
 			<li>
 				<defName>MoveSpeed_Quick</defName>
@@ -332,14 +332,14 @@
 			</li>
 			<li>
 				<defName>Learning_Slow</defName>
-				<chance>0.4</chance>
+				<chance>0.3</chance>
 			</li>
 			<li>
 				<defName>AptitudePoor_Learning</defName>
 				<chance>0.4</chance>
 			</li>
 			<li>
-				<defName>AptitudePoor_Plants</defName>
+				<defName>AptitudeTerrible_Plants</defName>
 				<chance>0.6</chance>
 			</li>
 			<li>
@@ -356,7 +356,7 @@
 			</li>
 			<li>
 				<defName>DarkVision</defName>
-				<chance>0.5</chance>
+				<chance>0.4</chance>
 			</li>
 			<li>
 				<defName>Aggression_Aggressive</defName>
@@ -383,7 +383,7 @@
 				<chance>0.7</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_reptilian_genitalia</defName>
+				<defName>rjw_genes_crocodilian_genitalia</defName>
 				<chance>0.7</chance>
 			</li>
 		</genes>
@@ -397,7 +397,35 @@
 		<genes>
 			<li>
 				<defName>Body_Thin</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Furskin</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>MoveSpeed_Quick</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Hair_ShortOnly</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_small_genitalia</defName>
 				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>AptitudeGood_Social</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>AptitudeGood_Crafting</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Melee</defName>
+				<chance>0.6</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -414,6 +442,22 @@
 				<defName>Body_Thin</defName>
 				<chance>0.5</chance>
 			</li>
+			<li>
+				<defName>Delicate</defName>
+				<chance>0.8</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Crafting</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>AptitudeTerrible_Ranged</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>AptitudeGood_Social</defName>
+				<chance>0.7</chance>
+			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
@@ -424,8 +468,64 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName>Body_Thin</defName>
+				<defName>Furskin</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Tail_Furry</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Hands_pig</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>MoveSpeed_Quick</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Delicate</defName>
+				<chance>0.2</chance>
+			</li>
+			<li>
+				<defName>PsychicAbility_Dull</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>LongjumpLegs</defName>
+				<chance>0.1</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Melee</defName>
 				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>AptitudeTerrible_Ranged</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>AptitudeGood_Animals</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Construction</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>AptitudeTerrible_Learning</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>Learning_Slow</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>Nearsighted</defName>
+				<chance>0.2</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_Needle_genitalia</defName>
+				<chance>0.6</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -467,8 +567,52 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName>Body_Thin</defName>
+				<defName>Body_Fat</defName>
+				<chance>0.8</chance>
+			</li>
+			<li>
+				<defName>Jaw_Heavy</defName>
 				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>Brow_Heavy</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>Ears_Floppy</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Beard_NoBeardOnly</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Hair_BaldOnly</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Robust</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Hands_pig</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>MoveSpeed_Slow</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_big_male_genitalia</defName>
+				<chance>0.8</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_loose_female_genitalia</defName>
+				<chance>0.8</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_very_much_cum</defName>
+				<chance>0.3</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -480,7 +624,31 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName>Body_Thin</defName>
+				<defName>Beard_NoBeardOnly</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>Hair_BaldOnly</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>UVSensitivity_Mild</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>UVSensitivity_Intense</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_Marine_genitalia</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>MoveSpeed_Slow</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_featureless_chest</defName>
 				<chance>0.5</chance>
 			</li>
 		</genes>
@@ -506,7 +674,7 @@
 		</raceGroups>
 		<genes>
 			<li>
-				<defName>Body_Thin</defName>
+				<defName>rjw_genes_extra_penis</defName>
 				<chance>0.5</chance>
 			</li>
 		</genes>
@@ -521,8 +689,60 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName>Body_Thin</defName>
+				<defName>VoicePig</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>Ears_Pig</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>Hands_Pig</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Nose_Pig</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_Pig_genitalia</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_very_much_cum</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>Pain_Reduced</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>Beauty_Ugly</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Immunity_Strong</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>StrongStomach</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>Nearsighted</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Construction</defName>
 				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Cooking</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Ranged</defName>
+				<chance>0.4</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
