@@ -67,11 +67,11 @@
 	</RJW_BGS.RaceGeneDef>
 	
 	
-	<RJW_BGS.RaceGeneDef Name = "ArthropodOvi">
-		<defName>ArthropodOvi</defName> 
+	<RJW_BGS.RaceGeneDef Name = "Arthropod">
+		<defName>Arthropod</defName> 
 		<raceGroups>
 			<li>Insect_Group</li>
-			<!--<li>ArthropodAnimal</li>-->
+			<li>ArthropodAnimal</li>
 			<li>ArthropodOvipositorAnimal</li> 
 			<li>ArthropodOvipositorHornyAnimal</li>
 			<!--Mod: Alpha Animals-->
@@ -146,7 +146,6 @@
 			<li>FelineSingleGenderAnimal</li>
 			<!--Mod: Alpha Animals-->
 			<li>Feline_Dick_AA</li>
-			<li>Feline_Dick_AA_Scales</li> 
 		</raceGroups>
 		<genes>
 			<li>
