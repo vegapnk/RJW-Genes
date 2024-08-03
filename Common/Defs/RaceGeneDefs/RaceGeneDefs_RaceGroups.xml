@@ -429,7 +429,7 @@
 				<chance>0.3</chance>
 			</li>
 			<li>
-				<defName>AptitudePoor_Learning</defName>
+				<defName>AptitudePoor_Intellectual</defName>
 				<chance>0.4</chance>
 			</li>
 			<li>
@@ -441,7 +441,7 @@
 				<chance>0.6</chance>
 			</li>
 			<li>
-				<defName>AptitudePoor_Ranged</defName>
+				<defName>AptitudePoor_Shooting</defName>
 				<chance>0.6</chance>
 			</li>
 			<li>
@@ -577,7 +577,7 @@
 				<chance>0.6</chance>
 			</li>
 			<li>
-				<defName>AptitudeTerrible_Ranged</defName>
+				<defName>AptitudeTerrible_Shooting</defName>
 				<chance>0.4</chance>
 			</li>
 			<li>
@@ -614,7 +614,7 @@
 				<chance>0.6</chance>
 			</li>
 			<li>
-				<defName>Hands_pig</defName>
+				<defName>Hand</defName>
 				<chance>0.6</chance>
 			</li>
 			<li>
@@ -638,7 +638,7 @@
 				<chance>0.5</chance>
 			</li>
 			<li>
-				<defName>AptitudeTerrible_Ranged</defName>
+				<defName>AptitudeTerrible_Shooting</defName>
 				<chance>0.4</chance>
 			</li>
 			<li>
@@ -650,7 +650,7 @@
 				<chance>0.3</chance>
 			</li>
 			<li>
-				<defName>AptitudeTerrible_Learning</defName>
+				<defName>AptitudeTerrible_Intellectual</defName>
 				<chance>0.7</chance>
 			</li>
 			<li>
@@ -801,7 +801,7 @@
 				<chance>0.6</chance>
 			</li>
 			<li>
-				<defName>Hands_pig</defName>
+				<defName>Hands_Pig</defName>
 				<chance>0.6</chance>
 			</li>
 			<li>
@@ -995,7 +995,7 @@
 				<chance>0.3</chance>
 			</li>
 			<li>
-				<defName>AptitudePoor_Ranged</defName>
+				<defName>AptitudePoor_Shooting</defName>
 				<chance>0.4</chance>
 			</li>
 			<li>
@@ -1024,7 +1024,7 @@
 				<chance>0.8</chance>
 			</li>
 			<li>
-				<defName>AptitudePoor_Learning</defName>
+				<defName>AptitudePoor_Intellectual</defName>
 				<chance>0.3</chance>
 			</li>
 			<li>
@@ -1032,7 +1032,7 @@
 				<chance>0.6</chance>
 			</li>
 			<li>
-				<defName>AptitudeTerrible_Ranged</defName>
+				<defName>AptitudeTerrible_Shooting</defName>
 				<chance>0.7</chance>
 			</li>
 			<li>
@@ -1105,7 +1105,7 @@
 				<chance>0.2</chance>
 			</li>
 			<li>
-				<defName>AptitudePoor_Learning</defName>
+				<defName>AptitudePoor_Intellectual</defName>
 				<chance>0.3</chance>
 			</li>
 			<li>
@@ -1113,7 +1113,7 @@
 				<chance>0.6</chance>
 			</li>
 			<li>
-				<defName>AptitudePoor_Ranged</defName>
+				<defName>AptitudePoor_Shooting</defName>
 				<chance>0.6</chance>
 			</li>
 			<li>
@@ -1332,7 +1332,7 @@
 				<chance>0.4</chance>
 			</li>
 			<li>
-				<defName>AptitudePoor_Ranged</defName>
+				<defName>AptitudePoor_Shooting</defName>
 				<chance>0.3</chance>
 			</li>
 			<li>
@@ -1375,7 +1375,7 @@
 				<chance>0.6</chance>
 			</li>
 			<li>
-				<defName>Hands_pig</defName>
+				<defName>Hands_Pig</defName>
 				<chance>0.6</chance>
 			</li>
 			<li>
@@ -1391,7 +1391,7 @@
 				<chance>0.6</chance>
 			</li>
 			<li>
-				<defName>AptitudeTerrible_Ranged</defName>
+				<defName>AptitudeTerrible_Shooting</defName>
 				<chance>0.4</chance>
 			</li>
 			<li>
@@ -1403,7 +1403,7 @@
 				<chance>0.3</chance>
 			</li>
 			<li>
-				<defName>AptitudeTerrible_Learning</defName>
+				<defName>AptitudeTerrible_Intellectual</defName>
 				<chance>0.8</chance>
 			</li>
 			<li>
