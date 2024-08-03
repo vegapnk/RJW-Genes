@@ -324,11 +324,11 @@
 				<chance>0.25</chance>
 			</li>
 			<li>
-				<defName>FastRunner</defName>
+				<defName>MoveSpeed_Quick</defName>
 				<chance>0.6</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_small_genitalia</defName>
+				<defName>rjw_genes_small_male_genitalia</defName>
 				<chance>0.6</chance>
 			</li>
 			<li>
@@ -526,7 +526,7 @@
 				<chance>0.6</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_small_genitalia</defName>
+				<defName>rjw_genes_small_male_genitalia</defName>
 				<chance>0.5</chance>
 			</li>
 			<li>
