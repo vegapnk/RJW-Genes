@@ -21,19 +21,19 @@
 		<genes>
 			<li>
 				<defName>Ears_Floppy</defName>
-				<chance>0.75</chance>
+				<chance>0.6</chance>
 			</li>
 			<li>
 				<defName>Tail_Furry</defName>
-				<chance>0.2</chance>
+				<chance>0.6</chance>
 			</li>
 			<li>
 				<defName>Furskin</defName>
-				<chance>0.5</chance>
+				<chance>0.6</chance>
 			</li>
 			<li>
 				<defName>rjw_genes_canine_genitalia</defName>
-				<chance>0.4</chance>
+				<chance>0.6</chance>
 			</li>
 			<li>
 				<defName>ViolenceDisabled</defName>
@@ -46,16 +46,32 @@
 			<li>
 				<defName>Mood_Sanguine</defName>
 				<chance>0.1</chance>
-			</li>			
+			</li>
+			<li>
+				<defName>AptitudeGood_Animals</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.2</chance>
+			</li>
 		</genes> 
 	</RJW_BGS.RaceGeneDef>
 	
 	
-	<RJW_BGS.RaceGeneDef Name = "Arthropod">
-		<defName>Arthropod</defName> 
+	<RJW_BGS.RaceGeneDef Name = "ArthropodOvi">
+		<defName>ArthropodOvi</defName> 
 		<raceGroups>
 			<li>Insect_Group</li>
-			<li>ArthropodAnimal</li>
+			<!--<li>ArthropodAnimal</li>-->
 			<li>ArthropodOvipositorAnimal</li> 
 			<li>ArthropodOvipositorHornyAnimal</li>
 			<!--Mod: Alpha Animals-->
@@ -80,20 +96,44 @@
 			</li>
 			<li>
 				<defName>rjw_genes_ovipositor_genitalia</defName>
-				<chance>0.15</chance>
+				<chance>0.3</chance>
 			</li>
 			<li>
 				<defName>rjw_genes_insectincubator</defName>
-				<chance>0.1</chance>
+				<chance>0.2</chance>
 			</li>
 			<li>
 				<defName>rjw_genes_insectbreeder</defName>
-				<chance>0.1</chance>
+				<chance>0.2</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_fervent_ovipositor</defName>
+				<chance>0.05</chance>
 			</li>
 			<li>
 				<defName>Body_Thin</defName>
-				<chance>0.3</chance>
-			</li>			
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.1</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_rapist</defName>
+				<chance>0.2</chance>
+			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 	
@@ -108,15 +148,14 @@
 			<li>Feline_Dick_AA</li>
 			<li>Feline_Dick_AA_Scales</li> 
 		</raceGroups>
-
 		<genes>
 			<li>
 				<defName>Tail_Furry</defName>
-				<chance>0.7</chance>
+				<chance>0.6</chance>
 			</li>
 			<li>
 				<defName>Furskin</defName>
-				<chance>0.7</chance>
+				<chance>0.6</chance>
 			</li>
 			<li>
 				<defName>Ears_Cat</defName>
@@ -128,7 +167,7 @@
 			</li>
 			<li>
 				<defName>Sleepy</defName>
-				<chance>0.25</chance>
+				<chance>0.4</chance>
 			</li>
 			<li>
 				<defName>DarkVision</defName>
@@ -136,8 +175,20 @@
 			</li>
 			<li>
 				<defName>rjw_genes_feline_genitalia</defName>
-				<chance>0.25</chance>
-			</li>			
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.2</chance>
+			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 	
@@ -169,15 +220,23 @@
 			<li>
 				<defName>rjw_genes_much_cum</defName>
 				<chance>0.3</chance>
-			</li>	
-			<li>
-				<defName>rjw_genes_very_much_cum</defName>
-				<chance>0.05</chance>
 			</li>
 			<li>
 				<defName>Body_Hulk</defName>
 				<chance>0.4</chance>
-			</li>		
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.2</chance>
+			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
@@ -231,7 +290,19 @@
 			<li>
 				<defName>Body_Hulk</defName>
 				<chance>0.7</chance>
-			</li>			
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.2</chance>
+			</li>
 		</genes> 
 	</RJW_BGS.RaceGeneDef>
 	
@@ -247,7 +318,7 @@
 		<genes>
 			<li>
 				<defName>Furskin</defName>
-				<chance>0.2</chance>
+				<chance>0.4</chance>
 			</li>
 			<li>
 				<defName>Fertile</defName>
@@ -271,8 +342,20 @@
 			</li>
 			<li>
 				<defName>Body_Thin</defName>
-				<chance>0.45</chance>
-			</li>			
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.2</chance>
+			</li>
 		</genes> 
 	</RJW_BGS.RaceGeneDef>
 	
@@ -302,7 +385,19 @@
 			<li>
 				<defName>ToxicEnvironmentResistance_Partial</defName>
 				<chance>0.1</chance>
-			</li>				
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.1</chance>
+			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
@@ -336,6 +431,10 @@
 			</li>
 			<li>
 				<defName>AptitudePoor_Learning</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>AptitudeStrong_Melee</defName>
 				<chance>0.4</chance>
 			</li>
 			<li>
@@ -383,8 +482,24 @@
 				<chance>0.7</chance>
 			</li>
 			<li>
+				<defName>WoundHealing_Fast</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
 				<defName>rjw_genes_crocodilian_genitalia</defName>
 				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.2</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -416,16 +531,28 @@
 				<chance>0.5</chance>
 			</li>
 			<li>
-				<defName>AptitudeGood_Social</defName>
+				<defName>AptitudeStrong_Social</defName>
 				<chance>0.7</chance>
 			</li>
 			<li>
-				<defName>AptitudeGood_Crafting</defName>
+				<defName>AptitudeStrong_Crafting</defName>
 				<chance>0.6</chance>
 			</li>
 			<li>
 				<defName>AptitudePoor_Melee</defName>
 				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.1</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -440,7 +567,7 @@
 		<genes>
 			<li>
 				<defName>Body_Thin</defName>
-				<chance>0.5</chance>
+				<chance>0.7</chance>
 			</li>
 			<li>
 				<defName>Delicate</defName>
@@ -452,11 +579,23 @@
 			</li>
 			<li>
 				<defName>AptitudeTerrible_Ranged</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>AptitudeStrong_Social</defName>
 				<chance>0.5</chance>
 			</li>
 			<li>
-				<defName>AptitudeGood_Social</defName>
-				<chance>0.7</chance>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.2</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -504,7 +643,7 @@
 				<chance>0.4</chance>
 			</li>
 			<li>
-				<defName>AptitudeGood_Animals</defName>
+				<defName>AptitudeStrong_Animals</defName>
 				<chance>0.4</chance>
 			</li>
 			<li>
@@ -527,6 +666,18 @@
 				<defName>rjw_genes_Needle_genitalia</defName>
 				<chance>0.6</chance>
 			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.1</chance>
+			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
@@ -539,8 +690,32 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName>Body_Thin</defName>
+				<defName>Body_Hulk</defName>
+				<chance>0.9</chance>
+			</li>
+			<li>
+				<defName>AptitudeRemarkable_Melee</defName>
+				<chance>0.8</chance>
+			</li>
+			<li>
+				<defName>WoundHealing_Fast</defName>
 				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_reptilian_genitalia</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.2</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -552,8 +727,40 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName>Body_Thin</defName>
+				<defName>Body_Hulk</defName>
+				<chance>0.9</chance>
+			</li>
+			<li>
+				<defName>Hair_BaldOnly</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Beard_NoBeardOnly</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>AptitudeRemarkable_Melee</defName>
+				<chance>0.8</chance>
+			</li>
+			<li>
+				<defName>WoundHealing_Fast</defName>
 				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_reptilian_genitalia</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.2</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -614,6 +821,18 @@
 				<defName>rjw_genes_very_much_cum</defName>
 				<chance>0.3</chance>
 			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.05</chance>
+			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
@@ -651,6 +870,18 @@
 				<defName>rjw_genes_featureless_chest</defName>
 				<chance>0.5</chance>
 			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.1</chance>
+			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
@@ -661,8 +892,20 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName>Body_Thin</defName>
-				<chance>0.5</chance>
+				<defName></defName>
+				<chance></chance>
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.1</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -676,6 +919,18 @@
 			<li>
 				<defName>rjw_genes_extra_penis</defName>
 				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.1</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -744,6 +999,18 @@
 				<defName>AptitudePoor_Ranged</defName>
 				<chance>0.4</chance>
 			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.1</chance>
+			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
@@ -755,7 +1022,67 @@
 		<genes>
 			<li>
 				<defName>Body_Thin</defName>
+				<chance>0.8</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Learning</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>AptitudeTerrible_Plants</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>AptitudeTerrible_Ranged</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>AptitudeTerrible_Animals</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>RobustDigestion</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>DarkVision</defName>
 				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>Aggression_Aggressive</defName>
+				<chance>0.2</chance>
+			</li>
+			<li>
+				<defName>MoveSpeed_Quick</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>Beard_NoBeardOnly</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>Hair_BaldOnly</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>WoundHealing_Fast</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_reptilian_genitalia</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.2</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -771,8 +1098,76 @@
 		</raceNames>
 		<genes>
 			<li>
-				<defName>Body_Thin</defName>
+				<defName>VoiceRoar</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>Learning_Slow</defName>
+				<chance>0.2</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Learning</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>AptitudeTerrible_Plants</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Ranged</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>AptitudeTerrible_Animals</defName>
 				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>RobustDigestion</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>DarkVision</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>Aggression_Aggressive</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>Aggression_HyperAggressive</defName>
+				<chance>0.1</chance>
+			</li>
+			<li>
+				<defName>MoveSpeed_Quick</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>Beard_NoBeardOnly</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>Hair_BaldOnly</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>WoundHealing_Fast</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_reptilian_genitalia</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.2</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -785,7 +1180,51 @@
 		<genes>
 			<li>
 				<defName>Body_Thin</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>WoundHealing_Fast</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>PsychicAbility_Dull</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>PsychicAbility_Deaf</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>MinTemp_SmallIncrease</defName>
 				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>Tinderskin</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>Pyrophobia</defName>
+				<chance>0.2</chance>
+			</li>
+			<li>
+				<defName>DeadCalm</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>AptitudeRemarkable_Plants</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Animals</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>AddictionImmune_Smokeleaf</defName>
+				<chance>0.2</chance>
+			</li>
+			<li>
+				<defName>AddictionImmune_Psychite</defName>
+				<chance>0.2</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -797,8 +1236,36 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName>Body_Thin</defName>
-				<chance>0.5</chance>
+				<defName>Hair_BaldOnly</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Beard_NoBeardOnly</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Robust</defName>
+				<chance>0.8</chance>
+			</li>
+			<li>
+				<defName>MoveSpeed_Slow</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_crocodilian_genitalia</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.3</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -810,8 +1277,76 @@
 		</raceGroups>	
 		<genes>
 			<li>
-				<defName>Body_Thin</defName>
+				<defName>Furskin</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>VoiceRoar</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Body_Hulk</defName>
 				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>Body_Fat</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>Sleepy</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>Aggression_Aggressive</defName>
+				<chance>0.2</chance>
+			</li>
+			<li>
+				<defName>Libido_Low</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>Nearsighted</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>DarkVision</defName>
+				<chance>0.2</chance>
+			</li>
+			<li>
+				<defName>MeleeDamage_Strong</defName>
+				<chance>0.2</chance>
+			</li>
+			<li>
+				<defName>AptitudeStrong_Melee</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>AptitudeStrong_Cooking</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>AptitudeStrong_Mining</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Social</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Ranged</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.05</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -825,8 +1360,76 @@
 		</raceGroups>	
 		<genes>
 			<li>
+				<defName>Body_Hulk</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>Body_Fat</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Furskin</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Tail_Furry</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Hands_pig</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
 				<defName>Robust</defName>
-				<chance>1.0</chance>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>PsychicAbility_Dull</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Melee</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>AptitudeTerrible_Ranged</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>AptitudeRemarkable_Animals</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>AptitudePoor_Construction</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>AptitudeTerrible_Learning</defName>
+				<chance>0.8</chance>
+			</li>
+			<li>
+				<defName>Learning_Slow</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>Nearsighted</defName>
+				<chance>0.2</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_Needle_genitalia</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_zoophile</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_ability_mating_call</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.2</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
