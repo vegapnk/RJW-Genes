@@ -56,7 +56,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -119,7 +119,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -181,7 +181,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -229,7 +229,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -295,7 +295,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -348,7 +348,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -390,7 +390,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -493,7 +493,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -546,7 +546,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -589,7 +589,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -670,7 +670,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -709,7 +709,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -754,7 +754,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -825,7 +825,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -874,7 +874,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -899,7 +899,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -924,7 +924,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -1003,7 +1003,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -1076,7 +1076,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -1161,7 +1161,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -1259,7 +1259,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -1340,7 +1340,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
@@ -1423,7 +1423,7 @@
 				<chance>0.15</chance>
 			</li>
 			<li>
-				<defName>rjw_genes_ability_mating_call</defName>
+				<defName>rjw_genes_mating_call</defName>
 				<chance>0.05</chance>
 			</li>
 			<li>
