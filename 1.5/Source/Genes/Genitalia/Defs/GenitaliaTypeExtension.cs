@@ -6,13 +6,13 @@ namespace RJW_Genes
 {
     public class GenitaliaTypeExtension : DefModExtension
     {
-        public HediffDef_PartBase penis;
+        public HediffDef_SexPart penis;
 
-        public HediffDef_PartBase vagina;
+        public HediffDef_SexPart vagina;
 
-        public HediffDef_PartBase anus;
+        public HediffDef_SexPart anus;
 
-        public HediffDef_PartBase breasts;
+        public HediffDef_SexPart breasts;
 
     }
 }
