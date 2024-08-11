@@ -94,11 +94,11 @@ namespace RJW_Genes
 
                     // On a draw of size, we check the body-size. 
                     if (part.Severity == best.Severity) {
-                        var partSize = part.TryGetComp<rjw.CompHediffBodyPart>();
-                        var bestSize = part.TryGetComp<rjw.CompHediffBodyPart>();
+                        var partSize = part.TryGetComp<rjw.HediffComp_SexPart>();
+                        var bestSize = part.TryGetComp<rjw.HediffComp_SexPart>();
                         if (partSize == null || bestSize == null) { continue; }
 
-                        best = partSize.SizeOwner > bestSize.SizeOwner ? part : best;
+                        best = partSize.originalOwnerSize > bestSize.originalOwnerSize ? part : best;
                     } else if (part.Severity > best.Severity) {
                         best = part;
                     }
@@ -110,10 +110,10 @@ namespace RJW_Genes
 
         public static float GetBodySizeOfSexPart(Hediff part)
         {
-            if (part == null || part.TryGetComp<rjw.CompHediffBodyPart>() == null)
+            if (part == null || part.TryGetComp<rjw.HediffComp_SexPart>() == null)
                 return 0.0f;
             else
-                return part.TryGetComp<rjw.CompHediffBodyPart>().SizeOwner;
+                return part.TryGetComp<rjw.HediffComp_SexPart>().originalOwnerSize;
         }
 
         /// <summary>

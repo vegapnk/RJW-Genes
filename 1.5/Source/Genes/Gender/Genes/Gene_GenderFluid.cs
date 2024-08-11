@@ -184,11 +184,11 @@ namespace RJW_Genes
             var partBPR = Genital_Helper.get_breastsBPR(pawn);
             var additional_breasts = HediffMaker.MakeHediff(breastDef, pawn,partBPR);
 
-            var CompHediff = additional_breasts.TryGetComp<rjw.CompHediffBodyPart>();
+            var CompHediff = additional_breasts.TryGetComp<rjw.HediffComp_SexPart>();
             if (CompHediff != null)
             {
-                CompHediff.initComp(pawn);
-                CompHediff.updatesize();
+                CompHediff.Init(pawn);
+                CompHediff.UpdateSeverity();
             }
 
             return additional_breasts;

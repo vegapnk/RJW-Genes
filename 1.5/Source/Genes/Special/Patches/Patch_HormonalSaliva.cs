@@ -52,22 +52,22 @@ namespace RJW_Genes
             List<Hediff> AllPenisses = Genital_Helper.get_AllPartsHediffList(pawn).FindAll(x => Genital_Helper.is_penis(x));
             foreach (Hediff penis in AllPenisses)
             {
-                CompHediffBodyPart CompHediff = penis.TryGetComp<rjw.CompHediffBodyPart>();
+                HediffComp_SexPart CompHediff = penis.TryGetComp<rjw.HediffComp_SexPart>();
                 if (penis.Severity < 1.00)
                 {
                     penis.Severity = Math.Min(1.01f, penis.Severity + size_increment);
                 }
                 else
                 {
-                    if (CompHediff != null && CompHediff.SizeOwner <= maximum_body_size)
+                    if (CompHediff != null && CompHediff.originalOwnerSize <= maximum_body_size)
                     {
-                        CompHediff.SizeOwner += size_increment;
+                        CompHediff.originalOwnerSize += size_increment;
                     }
                 }
 
                 // Increase Fluid
                 if (CompHediff != null)
-                    CompHediff.FluidAmmount *= cum_multiplier;
+                    CompHediff.partFluidFactor *= cum_multiplier;
             }
         }
 
