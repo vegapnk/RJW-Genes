@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: canine genitalia -->
+  <rjw_genes_canine_genitalia.label>犬科生殖器</rjw_genes_canine_genitalia.label>
+  <!-- EN: Carriers of this gene develop canine genitalia. -->
+  <rjw_genes_canine_genitalia.description>此基因携带者会长出犬科生殖器。</rjw_genes_canine_genitalia.description>
+  
+  <!-- EN: crocodilian genitalia -->
+  <rjw_genes_crocodilian_genitalia.label>鳄鱼生殖器</rjw_genes_crocodilian_genitalia.label>
+  <!-- EN: Carriers of this gene have crocodilian genitalia. -->
+  <rjw_genes_crocodilian_genitalia.description>此基因携带者会长出鳄鱼生殖器。</rjw_genes_crocodilian_genitalia.description>
+  
+  <!-- EN: demonic genitalia -->
+  <rjw_genes_demonic_genitalia.label>恶魔生殖器</rjw_genes_demonic_genitalia.label>
+  <!-- EN: Carriers of this gene have demonic genitalia. -->
+  <rjw_genes_demonic_genitalia.description>此基因携带者会长出恶魔生殖器。</rjw_genes_demonic_genitalia.description>
+  
+  <!-- EN: demonic tentacle genitalia -->
+  <rjw_genes_demonicT_genitalia.label>魔触生殖器</rjw_genes_demonicT_genitalia.label>
+  <!-- EN: Carriers of this gene have demonic tentacle genitalia. -->
+  <rjw_genes_demonicT_genitalia.description>此基因携带者会长出恶魔的触手生殖器。</rjw_genes_demonicT_genitalia.description>
+  
+  <!-- EN: dragon genitalia -->
+  <rjw_genes_dragon_genitalia.label>龙族生殖器</rjw_genes_dragon_genitalia.label>
+  <!-- EN: Carriers of this gene develop dragon genitalia. -->
+  <rjw_genes_dragon_genitalia.description>此基因携带者会长出龙族生殖器。</rjw_genes_dragon_genitalia.description>
+  
+  <!-- EN: equine genitalia -->
+  <rjw_genes_equine_genitalia.label>马科生殖器</rjw_genes_equine_genitalia.label>
+  <!-- EN: Carriers of this gene develop equine genitalia. -->
+  <rjw_genes_equine_genitalia.description>此基因携带者会长出马科生殖器。</rjw_genes_equine_genitalia.description>
+  
+  <!-- EN: feline genitalia -->
+  <rjw_genes_feline_genitalia.label>猫科生殖器</rjw_genes_feline_genitalia.label>
+  <!-- EN: Carriers of this gene develop feline genitalia. -->
+  <rjw_genes_feline_genitalia.description>此基因携带者会长出猫科生殖器。</rjw_genes_feline_genitalia.description>
+  
+  <!-- EN: ghost genitalia -->
+  <rjw_genes_Ghost_genitalia.label>幽魂生殖器</rjw_genes_Ghost_genitalia.label>
+  <!-- EN: Carriers of this gene have ghost genitalia. -->
+  <rjw_genes_Ghost_genitalia.description>此基因携带者会长出幽魂生殖器。</rjw_genes_Ghost_genitalia.description>
+  
+  <!-- EN: golem genitalia -->
+  <rjw_genes_Golem_genitalia.label>魔像生殖器</rjw_genes_Golem_genitalia.label>
+  <!-- EN: Carriers of this gene have rocky golem genitalia. -->
+  <rjw_genes_Golem_genitalia.description>此基因携带者会长出岩石质的魔像生殖器。</rjw_genes_Golem_genitalia.description>
+  
+  <!-- EN: human genitalia -->
+  <rjw_genes_human_genitalia.label>人类生殖器</rjw_genes_human_genitalia.label>
+  <!-- EN: Carriers of this gene develop human genitalia. -->
+  <rjw_genes_human_genitalia.description>此基因携带者会长出人类生殖器。</rjw_genes_human_genitalia.description>
+  
+  <!-- EN: marine genitalia -->
+  <rjw_genes_Marine_genitalia.label>水生生殖器</rjw_genes_Marine_genitalia.label>
+  <!-- EN: Carriers of this gene have marine mammal like genitalia. -->
+  <rjw_genes_Marine_genitalia.description>此基因携带者会长出海洋哺乳动物的生殖器。</rjw_genes_Marine_genitalia.description>
+  
+  <!-- EN: undead genitalia -->
+  <rjw_genes_Necro_genitalia.label>不死生殖器</rjw_genes_Necro_genitalia.label>
+  <!-- EN: Carriers of this gene have necrotic undead genitalia. -->
+  <rjw_genes_Necro_genitalia.description>此基因携带者会长出不死亡灵的生殖器。</rjw_genes_Necro_genitalia.description>
+  
+  <!-- EN: narrow genitalia -->
+  <rjw_genes_Needle_genitalia.label>细小殖器</rjw_genes_Needle_genitalia.label>
+  <!-- EN: Carriers of this gene have very thin genitalia. -->
+  <rjw_genes_Needle_genitalia.description>此基因的携带者生殖器非常细小。</rjw_genes_Needle_genitalia.description>
+  
+  <!-- EN: orc genitalia -->
+  <rjw_genes_Orc_genitalia.label>兽人生殖器</rjw_genes_Orc_genitalia.label>
+  <!-- EN: Carriers of this gene have orc genitalia. -->
+  <rjw_genes_Orc_genitalia.description>此基因携带者会长出兽人生殖器。</rjw_genes_Orc_genitalia.description>
+  
+  <!-- EN: insect genitalia -->
+  <rjw_genes_ovipositor_genitalia.label>昆虫生殖器</rjw_genes_ovipositor_genitalia.label>
+  <!-- EN: Carriers of this gene have ovipositors similar to insects. -->
+  <rjw_genes_ovipositor_genitalia.description>此基因携带者会长出昆虫般的注卵器</rjw_genes_ovipositor_genitalia.description>
+  
+  <!-- EN: screw genitalia -->
+  <rjw_genes_Pig_genitalia.label>螺旋生殖器</rjw_genes_Pig_genitalia.label>
+  <!-- EN: Carriers of this gene have screw genitalia. -->
+  <rjw_genes_Pig_genitalia.description>此基因携带者会长出螺旋状的生殖器。</rjw_genes_Pig_genitalia.description>
+  
+  <!-- EN: racoon genitalia -->
+  <rjw_genes_racoon_genitalia.label>浣熊生殖器</rjw_genes_racoon_genitalia.label>
+  <!-- EN: Carriers of this gene have racoon genitalia. -->
+  <rjw_genes_racoon_genitalia.description>此基因携带者会长出浣熊生殖器。</rjw_genes_racoon_genitalia.description>
+  
+  <!-- EN: reptilian genitalia -->
+  <rjw_genes_reptilian_genitalia.label>爬行生殖器</rjw_genes_reptilian_genitalia.label>
+  <!-- EN: Carriers of this gene have reptilian genitalia. -->
+  <rjw_genes_reptilian_genitalia.description>此基因携带者会长出爬行动物的生殖器。</rjw_genes_reptilian_genitalia.description>
+  
+  <!-- EN: slime genitalia -->
+  <rjw_genes_slime_genitalia.label>粘液生殖器</rjw_genes_slime_genitalia.label>
+  <!-- EN: Carriers of this gene have slime genitalia. -->
+  <rjw_genes_slime_genitalia.description>此基因携带者会长出史莱姆的生殖器。</rjw_genes_slime_genitalia.description>
+  
+  <!-- EN: alien genitalia -->
+  <rjw_genes_Tentacle_genitalia.label>异星生殖器</rjw_genes_Tentacle_genitalia.label>
+  <!-- EN: Carriers of this gene have alien genitalia. -->
+  <rjw_genes_Tentacle_genitalia.description>此基因携带者会长出触手状生殖器。</rjw_genes_Tentacle_genitalia.description>
+  
+</LanguageData>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: random rape -->
+  <rjw_genes_lifeforce_randomrape.label>随机强奸</rjw_genes_lifeforce_randomrape.label>
+  <!-- EN: Mental state: Random Rape -->
+  <rjw_genes_lifeforce_randomrape.baseInspectLine>精神状态：随意强奸</rjw_genes_lifeforce_randomrape.baseInspectLine>
+  <!-- EN: {0} has run out of lifeforce and is looking to obtain some. -->
+  <rjw_genes_lifeforce_randomrape.beginLetter>{0}耗尽了生命能量，正在寻觅补充。</rjw_genes_lifeforce_randomrape.beginLetter>
+  <!-- EN: random rape -->
+  <rjw_genes_lifeforce_randomrape.beginLetterLabel>随意强奸</rjw_genes_lifeforce_randomrape.beginLetterLabel>
+  <!-- EN: {0} is no longer raping randomly. -->
+  <rjw_genes_lifeforce_randomrape.recoveryMessage>{0}不再随意强奸。</rjw_genes_lifeforce_randomrape.recoveryMessage>
+  
+</LanguageData>

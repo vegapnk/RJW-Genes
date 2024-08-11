@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: succubustail anal -->
+  <Sex_SuccubusTail_Reverse_Anal.label>TODO</Sex_SuccubusTail_Reverse_Anal.label>
+  <!-- EN:
+    <li>r_logentry->Was given anal tailsex by [RECIPIENT_nameDef].</li>
+  -->
+  <Sex_SuccubusTail_Reverse_Anal.logRulesInitiator.rulesStrings>TODO</Sex_SuccubusTail_Reverse_Anal.logRulesInitiator.rulesStrings>
+  <!-- EN:
+    <li>r_logentry->Gave anal tailsex to [INITIATOR_nameDef].</li>
+  -->
+  <Sex_SuccubusTail_Reverse_Anal.logRulesRecipient.rulesStrings>TODO</Sex_SuccubusTail_Reverse_Anal.logRulesRecipient.rulesStrings>
+  <!-- EN: Anal Tailsex -->
+  <Sex_SuccubusTail_Reverse_Anal.modExtensions.0.RMBLabel>TODO</Sex_SuccubusTail_Reverse_Anal.modExtensions.0.RMBLabel>
+  
+  <!-- EN: succubustail envelop -->
+  <Sex_SuccubusTail_Reverse_Envelop.label>TODO</Sex_SuccubusTail_Reverse_Envelop.label>
+  <!-- EN:
+    <li>r_logentry->Gave special tailjob to [RECIPIENT_nameDef].</li>
+  -->
+  <Sex_SuccubusTail_Reverse_Envelop.logRulesInitiator.rulesStrings>TODO</Sex_SuccubusTail_Reverse_Envelop.logRulesInitiator.rulesStrings>
+  <!-- EN:
+    <li>r_logentry->Was given special tailjob by [INITIATOR_nameDef].</li>
+  -->
+  <Sex_SuccubusTail_Reverse_Envelop.logRulesRecipient.rulesStrings>TODO</Sex_SuccubusTail_Reverse_Envelop.logRulesRecipient.rulesStrings>
+  
+  <!-- EN: succubustail tailjob -->
+  <Sex_SuccubusTail_Reverse_Tailjob.label>TODO</Sex_SuccubusTail_Reverse_Tailjob.label>
+  <!-- EN:
+    <li>r_logentry->Gave tailjob to [RECIPIENT_nameDef].</li>
+  -->
+  <Sex_SuccubusTail_Reverse_Tailjob.logRulesInitiator.rulesStrings>TODO</Sex_SuccubusTail_Reverse_Tailjob.logRulesInitiator.rulesStrings>
+  <!-- EN:
+    <li>r_logentry->Was given tailjob by [INITIATOR_nameDef].</li>
+  -->
+  <Sex_SuccubusTail_Reverse_Tailjob.logRulesRecipient.rulesStrings>TODO</Sex_SuccubusTail_Reverse_Tailjob.logRulesRecipient.rulesStrings>
+  
+  <!-- EN: succubustail vaginal -->
+  <Sex_SuccubusTail_Reverse_Vaginal.label>TODO</Sex_SuccubusTail_Reverse_Vaginal.label>
+  <!-- EN:
+    <li>r_logentry->Was given vaginal tailsex by [RECIPIENT_nameDef].</li>
+  -->
+  <Sex_SuccubusTail_Reverse_Vaginal.logRulesInitiator.rulesStrings>TODO</Sex_SuccubusTail_Reverse_Vaginal.logRulesInitiator.rulesStrings>
+  <!-- EN:
+    <li>r_logentry->Gave vaginal tailsex to [INITIATOR_nameDef].</li>
+  -->
+  <Sex_SuccubusTail_Reverse_Vaginal.logRulesRecipient.rulesStrings>TODO</Sex_SuccubusTail_Reverse_Vaginal.logRulesRecipient.rulesStrings>
+  <!-- EN: Vaginal Tailsex -->
+  <Sex_SuccubusTail_Reverse_Vaginal.modExtensions.0.RMBLabel>TODO</Sex_SuccubusTail_Reverse_Vaginal.modExtensions.0.RMBLabel>
+  
+</LanguageData>

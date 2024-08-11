@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ovary agitator -->
+  <OvaryAgitator.label>卵巢促动器</OvaryAgitator.label>
+  <!-- EN: An installed ovary agitator. -->
+  <OvaryAgitator.description>一种植入式卵巢促动器</OvaryAgitator.description>
+  
+</LanguageData>

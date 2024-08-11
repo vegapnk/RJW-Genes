@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: aphrodisiac pheromones -->
+  <rjw_genes_aphrodisiac_pheromones.label>催情信息素</rjw_genes_aphrodisiac_pheromones.label>
+  <!-- EN: Pheremones of this pawn induce an incressed sexdrive to others nearby. -->
+  <rjw_genes_aphrodisiac_pheromones.description>该单位的费洛蒙可以增加旁人的性冲动。</rjw_genes_aphrodisiac_pheromones.description>
+  
+  <!-- EN: cocoon weaver -->
+  <rjw_genes_cocoonweaver.label>虫茧编织者</rjw_genes_cocoonweaver.label>
+  <!-- EN: Carriers of this gene can produce a cocoon to prepare helpless (or willing)\n            victims for breeding. -->
+  <rjw_genes_cocoonweaver.description>该基因的携带者可以产生一个茧，将手足无措（倒地）的受害者变为苗床。</rjw_genes_cocoonweaver.description>
+  <!-- EN: cocooner -->
+  <rjw_genes_cocoonweaver.labelShortAdj>茧芯</rjw_genes_cocoonweaver.labelShortAdj>
+  
+  <!-- EN: feminizer -->
+  <rjw_genes_feminizer.label>雌化</rjw_genes_feminizer.label>
+  <!-- EN: Carriers with this gene slowly turn male sexual partners into females. -->
+  <rjw_genes_feminizer.description>该基因的携带者会缓慢地将雄性性伴侣变为雌性。</rjw_genes_feminizer.description>
+  
+  <!-- EN: hormonal saliva -->
+  <rjw_genes_hormonal_saliva.label>唾液激素</rjw_genes_hormonal_saliva.label>
+  <!-- EN: The saliva of this xenotype stimulates growth in penises. Regular contact will\n            lead to noticable growth. -->
+  <rjw_genes_hormonal_saliva.description>该异种的唾液可以刺激阴茎生长，经常接触会导致明显的成长。</rjw_genes_hormonal_saliva.description>
+  
+  <!-- EN: orgasm rush -->
+  <rjw_genes_orgasm_rush.label>如上云霄</rjw_genes_orgasm_rush.label>
+  <!-- EN: On orgasm, carriers of this gene get a boost in activity. (rest-need is\n            partially filled) -->
+  <rjw_genes_orgasm_rush.description>高潮时，该基因的携带者会获得临时增益，并恢复少量休息槽。</rjw_genes_orgasm_rush.description>
+  
+  <!-- EN: sexual age drain -->
+  <rjw_genes_sex_age_drain.label>采补秘术</rjw_genes_sex_age_drain.label>
+  <!-- EN: Having sex transfers some of the partners life-time to themselves. (Pawn stays\n            adult) -->
+  <rjw_genes_sex_age_drain.description>做爱会吸取对手的寿命。（目标会维持在成年）</rjw_genes_sex_age_drain.description>
+  
+  <!-- EN: sexual tamer -->
+  <rjw_genes_sex_tamer.label>性爱驯养</rjw_genes_sex_tamer.label>
+  <!-- EN: Bestiality has a chance to tame animals or advance their training. -->
+  <rjw_genes_sex_tamer.description>兽交可能驯服动物或提升其训练程度。</rjw_genes_sex_tamer.description>
+  <!-- EN: sextamer -->
+  <rjw_genes_sex_tamer.labelShortAdj>性爱驯养</rjw_genes_sex_tamer.labelShortAdj>
+  
+  <!-- EN: sexual genetic swap -->
+  <rjw_genes_sexual_genetic_swap.label>基因交换</rjw_genes_sexual_genetic_swap.label>
+  <!-- EN: Carriers with this gene may switch a gene with their sex-partner. Switched Genes are always endogenes. -->
+  <rjw_genes_sexual_genetic_swap.description>该基因的携带者可能会与性伴侣交换一段内源性基因。</rjw_genes_sexual_genetic_swap.description>
+  
+  <!-- EN: sexual gene thief -->
+  <rjw_genes_sexual_genetic_thief.label>基因窃贼</rjw_genes_sexual_genetic_thief.label>
+  <!-- EN: Carriers with this gene may steal a gene from their sex-partner. Stolen genes are always xenogenes. -->
+  <rjw_genes_sexual_genetic_thief.description>该基因的携带者可能窃取性伴侣的一段异种基因。</rjw_genes_sexual_genetic_thief.description>
+  
+  <!-- EN: orgasmic mytosis -->
+  <rjw_genes_sexual_mytosis.label>高潮分裂</rjw_genes_sexual_mytosis.label>
+  <!-- EN: Carriers have malfunctioning regenerative archites that grow more unstable with\n            ongoing multiple orgasms - climaxing in a process of mytosis. This will result in an\n            (biologically) identical pawn and both twins are set in a regenerative state. Also, the\n            pawn can have multiple orgasms: In a state of higher unstableness, they come quicker. -->
+  <rjw_genes_sexual_mytosis.description>携带者的再生能力失调，在多重高潮时会变得不稳定，发生有丝分裂。这会产生一个生物学上完全相同的克隆体，两者都处于再生状态。并且该单位能够多重高潮，这种高度不稳定的状态会使其去的更快。</rjw_genes_sexual_mytosis.description>
+  
+  <!-- EN: twinkifier -->
+  <rjw_genes_twinkifier.label>大猛1</rjw_genes_twinkifier.label>
+  <!-- EN: Carriers with this gene slowly turn male sexual partners into breedabel cute twinks. -->
+  <rjw_genes_twinkifier.description>该基因的携带者会将雄性性伴侣缓慢地转化为小烧0。</rjw_genes_twinkifier.description>
+  
+  <!-- EN: youth fountain -->
+  <rjw_genes_youth_fountain.label>青春源泉</rjw_genes_youth_fountain.label>
+  <!-- EN: Having sex with a carrier of this gene makes the partner slightly younger.\n            (Partner stays adult) -->
+  <rjw_genes_youth_fountain.description>与该基因的携带者做爱能使伴侣稍微变年轻。（目标会维持在成年）</rjw_genes_youth_fountain.description>
+  
+</LanguageData>

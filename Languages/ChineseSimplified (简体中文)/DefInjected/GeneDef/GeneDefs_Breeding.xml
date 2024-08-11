@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Rut -->
+  <rjw_genes_basic_rut.label>发情</rjw_genes_basic_rut.label>
+  <!-- EN: Carriers of this gene can enter a state of heat, resulting in drastically higher\n      sexual activity. -->
+  <rjw_genes_basic_rut.description>此基因的携带者可以进入一个狂热状态，大幅提升性活动。</rjw_genes_basic_rut.description>
+  
+  <!-- EN: fertile anus -->
+  <rjw_genes_fertile_anus.label>后庭受孕</rjw_genes_fertile_anus.label>
+  <!-- EN: Xenotypes with this gene have a functional uterus if they do not possess one by\n      means of their vagina.\n      For males, it is connected to the anal cavity and leads to a normal pregnancy. -->
+  <rjw_genes_fertile_anus.description>如果异种人的阴道内本没有子宫，此基因会使它们会拥有一个功能性子宫。对于男性，它会链接到菊穴，可以用来正常怀孕。</rjw_genes_fertile_anus.description>
+  
+  <!-- EN: fervent ovipositor -->
+  <rjw_genes_fervent_ovipositor.label>注卵热忱</rjw_genes_fervent_ovipositor.label>
+  <!-- EN: Pawns that have a female (egg producing) ovipositor produce eggs at drastically\n      increased speed. -->
+  <rjw_genes_fervent_ovipositor.description>大幅加速雌性注卵器的产卵速度。</rjw_genes_fervent_ovipositor.description>
+  
+  <!-- EN: Hardwired Progenity -->
+  <rjw_genes_hardwired_progenity.label>多子多福</rjw_genes_hardwired_progenity.label>
+  <!-- EN: Carriers of this gene need to procreate. They suffer negative effects if they are\n      childless, and have increased capabilities if they reach a high amount of offsprings. -->
+  <rjw_genes_hardwired_progenity.description>此基因的携带者渴望繁育。如果它们没有后代，就会受到惩罚；但如果后代数量很多，它们会获得增益。</rjw_genes_hardwired_progenity.description>
+  
+  <!-- EN: insect breeder -->
+  <rjw_genes_insectbreeder.label>昆虫饲主</rjw_genes_insectbreeder.label>
+  <!-- EN: Pawns with this gene are able to fertilize eggs with any fertile penis. -->
+  <rjw_genes_insectbreeder.description>携带该基因的单位可以用任意有生育能力的阴茎使虫卵受精</rjw_genes_insectbreeder.description>
+  
+  <!-- EN: insect incubator -->
+  <rjw_genes_insectincubator.label>昆虫苗床</rjw_genes_insectincubator.label>
+  <!-- EN: Pawns with this gene fertilize insect eggs that are placed inside them. -->
+  <rjw_genes_insectincubator.description>携带该基因的单位可以使被注入体内的虫卵受精。</rjw_genes_insectincubator.description>
+  
+  <!-- EN: Mating Call -->
+  <rjw_genes_mating_call.label>野性呼唤</rjw_genes_mating_call.label>
+  <!-- EN: This gene allows to call nearby animals and invite them for mating. -->
+  <rjw_genes_mating_call.description>此基因允许召唤附近的动物前来交配。</rjw_genes_mating_call.description>
+  
+  <!-- EN: mechbreeder -->
+  <rjw_genes_mechbreeder.label>机械育母</rjw_genes_mechbreeder.label>
+  <!-- EN: Pawns with this gene are able to birth mechanoids unharmed. -->
+  <rjw_genes_mechbreeder.description>携带此基因的单位生育机械体时不会受伤。</rjw_genes_mechbreeder.description>
+  
+  <!-- EN: Pheromone Spit -->
+  <rjw_genes_pheromone_spit.label>费洛蒙标记</rjw_genes_pheromone_spit.label>
+  <!-- EN: This gene allows to mark targets for breeding, enticing nearby animals for a ride. -->
+  <rjw_genes_pheromone_spit.description>此基因允许标记用于繁殖的目标，勾引附近的动物来兜个风。</rjw_genes_pheromone_spit.description>
+  
+  <!-- EN: zoophile -->
+  <rjw_genes_zoophile.label>恋兽癖</rjw_genes_zoophile.label>
+  <!-- EN: Xenotypes with this Gene are Zoophile. -->
+  <rjw_genes_zoophile.description>携带此基因的异种人都是恋兽癖。</rjw_genes_zoophile.description>
+  
+</LanguageData>
