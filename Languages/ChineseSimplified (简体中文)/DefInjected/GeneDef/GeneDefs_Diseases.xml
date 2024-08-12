@@ -14,7 +14,7 @@
   <!-- EN: infectious bisexuality -->
   <rjw_genes_infectious_bisexuality.label>传染性双性恋</rjw_genes_infectious_bisexuality.label>
   <!-- EN: This gene makes the pawn bisexual, and has a chance to spread on intercourse. -->
-  <rjw_genes_infectious_bisexuality.description>该基因将携带者变为双性恋，并且有一次通过社交传播的机会。</rjw_genes_infectious_bisexuality.description>
+  <rjw_genes_infectious_bisexuality.description>该基因将携带者变为双性恋，概率通过性行为传播。</rjw_genes_infectious_bisexuality.description>
   
   <!-- EN: infectious masturbation block -->
   <rjw_genes_infectious_blocked_masturbation.label>传染性自慰障碍</rjw_genes_infectious_blocked_masturbation.label>
@@ -24,12 +24,12 @@
   <!-- EN: infectious homosexuality -->
   <rjw_genes_infectious_homosexuality.label>传染性同性恋</rjw_genes_infectious_homosexuality.label>
   <!-- EN: This gene makes the pawn homosexual, and has a chance to spread on intercourse. -->
-  <rjw_genes_infectious_homosexuality.description>该基因将携带者变为同性恋，并且有一次通过社交传播的机会。</rjw_genes_infectious_homosexuality.description>
+  <rjw_genes_infectious_homosexuality.description>该基因将携带者变为同性恋，概率通过性行为传播。</rjw_genes_infectious_homosexuality.description>
   
   <!-- EN: infectious hypersexuality -->
   <rjw_genes_infectious_hypersexuality.label>传染性性瘾</rjw_genes_infectious_hypersexuality.label>
   <!-- EN: This gene makes the pawn hypersexual, and has a chance to spread on\n            intercourse. -->
-  <rjw_genes_infectious_hypersexuality.description>该基因的携带者性爱成瘾，并且有一次通过社交传播的机会。</rjw_genes_infectious_hypersexuality.description>
+  <rjw_genes_infectious_hypersexuality.description>该基因的携带者性爱成瘾，概率通过性行为传播。</rjw_genes_infectious_hypersexuality.description>
   
   <!-- EN: infectious increased sexneed -->
   <rjw_genes_infectious_increased_sex_need.label>传染性性需求增强</rjw_genes_infectious_increased_sex_need.label>
