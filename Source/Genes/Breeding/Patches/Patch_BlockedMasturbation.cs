@@ -9,18 +9,18 @@ using Verse;
 
 namespace RJW_Genes
 {
-    [HarmonyPatch(typeof(xxx), "can_masturbate")]
-    public class Patch_BlockedMasturbation
+    [HarmonyPatch(typeof(ThinkNode_ChancePerHour_Fappin), "MtbHours")]
+    public static class Patch_BlockedMasturbation
     {
-        public void PostFix(Pawn pawn, ref bool __result)
+        public static void Postfix(Pawn p, ref float __result)
         {
-            if (pawn != null && !pawn.IsAnimal() && pawn.genes != null)
+            if (p != null && !p.IsAnimal() && p.genes != null)
             {
-                __result = __result 
-                    && !pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_blocked_masturbation)
-                    && !pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_infectious_blocked_masturbation);
+                if (p.genes.HasActiveGene(GeneDefOf.rjw_genes_blocked_masturbation) || p.genes.HasActiveGene(GeneDefOf.rjw_genes_infectious_blocked_masturbation))
+                {
+                    __result = -2f;
+                }
             }
         }
-
     }
 }
