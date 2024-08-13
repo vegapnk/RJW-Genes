@@ -31,7 +31,7 @@ namespace RJW_Genes
 
             if (OvipositorF == null) return;
 
-            OvipositorF.AsHediff.TryGetComp<HediffComp_Ovipositor>().NewEggCheckInterval = 10000 / 3;
+            OvipositorF.AsHediff.TryGetComp<HediffComp_Ovipositor>().NewEggCheckInterval = 10000 / MULTIPLIER;
 
             // DevNote: I first had a for-loop calling OviPositorF.tick(), but I fear that would be a performance sink.
             // Also, it would double other aspects as well, such as bleeding out through your insect-PP or dropping out the eggs.
