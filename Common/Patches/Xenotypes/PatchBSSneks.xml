@@ -10,8 +10,6 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs/XenotypeDef[defName = "LoS_Lamia" 
                                   or defName = "LoS_TrueLamia" 
-                                  or defName = "LoS_Siren" 
-                                  or defName = "LoS_Gorgon"
                                   or defName = "Naga"
                                   or defName = "Los_Adderman"
                                   or defName = "Los_Anacondaman"
@@ -21,10 +19,18 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs/XenotypeDef[defName = "Nagaraj" or defName = "Los_Silver"]/genes</xpath>
+          <xpath>Defs/XenotypeDef[defName = "Nagaraj" or defName = "LoS_Silver" or defName = "LoS_Gorgon"]/genes</xpath>
           <value>
             <li>rjw_genes_reptilian_genitalia</li>
             <li>rjw_genes_unbreakable</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName = "LoS_Siren"]/genes</xpath>
+          <value>
+            <li>rjw_genes_reptilian_genitalia</li>
+            <li>rjw_genes_aphrodisiac_pheromones</li>
+            <li MayRequire="rjw.sexperience">AptitudeStrong_Sex</li>
           </value>
         </li>
       </operations>
