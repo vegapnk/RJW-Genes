@@ -83,7 +83,7 @@
 
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_mating_call</defName>
-    <label>Mating Call</label>
+    <label>mating call</label>
     <description>This gene allows to call nearby animals and invite them for mating.</description>
     <iconPath>Genes/Icons/RJW_Genes_Mating_Call</iconPath>
     <displayOrderInCategory>65</displayOrderInCategory>
@@ -99,7 +99,7 @@
 
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_pheromone_spit</defName>
-    <label>Pheromone Spit</label>
+    <label>pheromone spit</label>
     <description>This gene allows to mark targets for breeding, enticing nearby animals for a ride.</description>
     <iconPath>Genes/Icons/RJW_Genes_PheromoneSpit</iconPath>
     <displayOrderInCategory>66</displayOrderInCategory>
@@ -115,7 +115,7 @@
 
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_hardwired_progenity</defName>
-    <label>Hardwired Progenity</label>
+    <label>hardwired progenity</label>
     <description>Carriers of this gene need to procreate. They suffer negative effects if they are
       childless, and have increased capabilities if they reach a high amount of offsprings.</description>
     <iconPath>Genes/Icons/hardwired_progenity</iconPath>
@@ -154,7 +154,7 @@
 
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_basic_rut</defName>
-    <label>Rut</label>
+    <label>rut</label>
     <description>Carriers of this gene can enter a state of heat, resulting in drastically higher
       sexual activity.</description>
     <iconPath>Genes/Icons/rut</iconPath>
