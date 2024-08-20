@@ -183,7 +183,7 @@
 
     <GeneDef>
         <defName>rjw_genes_pregnancy_overwrite</defName>
-        <label>Sperm Displacement</label>
+        <label>sperm displacement</label>
         <displayCategory>Reproduction</displayCategory>
         <description>Carriers of this gene can 'overwrite' an existing pregnancy, keeping the
             progress but effectively replacing the father.</description>
