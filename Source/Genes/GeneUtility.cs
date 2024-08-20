@@ -17,6 +17,9 @@ namespace RJW_Genes
 
         public static void OffsetLifeForce(IGeneResourceDrain drain, float offset)
         {
+            if (drain == null || offset == 0.0)
+                return;
+
             if (drain.Resource != null && drain.Resource.Active)
             {
                 float old_value = drain.Resource.Value;
