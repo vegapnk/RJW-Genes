@@ -1,3 +1,9 @@
+# 2.2.1 (xx-08-2024)
+
+**Fixes**:
+
+- Trying to harden the behaviour of VGE children (#116)
+
 # 2.2.0 (23-07-2024)
 
 ## Explanations

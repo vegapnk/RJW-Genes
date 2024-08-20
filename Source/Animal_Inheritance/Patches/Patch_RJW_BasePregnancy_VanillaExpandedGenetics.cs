@@ -11,7 +11,7 @@ using rjw;
 namespace RJW_BGS
 {
     [HarmonyPatch(typeof(Hediff_BasePregnancy))]
-    public class BasePregnancyPatcher
+    public class Patch_RJW_BasePregnancy_VanillaExpandedGenetics
     {
         public static List<string> supportedHybridRaces = new List<string>()
             {
@@ -91,7 +91,9 @@ namespace RJW_BGS
         public static void addHedif (Hediff_BasePregnancy __instance)
         {
             if (controler == null) return;
-            
+
+            if (!RJW_BGSSettings.rjw_bgs_VE_genetics) return;
+
             foreach (Pawn baby in __instance.babies)
             {
                 if(baby != null && supportedHybridRaces.Contains(baby.kindDef.race.defName))

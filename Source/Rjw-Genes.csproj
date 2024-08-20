@@ -48,8 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal_Inheritance\InheritanceUtility.cs" />
+    <Compile Include="Animal_Inheritance\Patches\Patch_RJW_BasePregnancy_VanillaExpandedGenetics.cs" />
     <Compile Include="Animal_Inheritance\Patches\Patch_RJW_BestialityPregnancyUtility.cs" />
     <Compile Include="Animal_Inheritance\Patches\Patch_RJW_HediffInsect_Egg.cs" />
+    <Compile Include="Animal_Inheritance\Patches\Patch_RJW_PregnancyHelper_VanillaExpandedGenetics.cs" />
     <Compile Include="Animal_Inheritance\Patches\Patch_Vanilla_PregnancyUtility.cs" />
     <Compile Include="Animal_Inheritance\Defs\RaceGeneDef.cs" />
     <Compile Include="Animal_Inheritance\Defs\RaceGeneDef_Helper.cs" />
