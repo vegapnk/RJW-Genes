@@ -3,6 +3,7 @@
 **Fixes**:
 
 - Trying to harden the behaviour of VGE children (#116)
+- Changed Version number in manifest.xml (#132)
 
 # 2.2.0 (23-07-2024)
 
