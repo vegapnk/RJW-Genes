@@ -1,5 +1,9 @@
 # 2.2.1 (xx-08-2024)
 
+**Changes**:
+
+- Biotechs Highmates do not get patched Hypersexual anymore. This was wished because Hypersexual is rather heavy. 
+
 **Fixes**:
 
 - Trying to harden the behaviour of VGE children (#116)
