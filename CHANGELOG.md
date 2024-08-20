@@ -3,6 +3,7 @@
 **Changes**:
 
 - Biotechs Highmates do not get patched Hypersexual anymore. This was wished because Hypersexual is rather heavy. 
+- "No-XXX"-Genes add a `Missing Body Part` Hediff. This was wanted to work better with OTY sized apparel (#133)
 
 **Fixes**:
 
