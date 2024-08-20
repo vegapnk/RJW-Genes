@@ -9,6 +9,10 @@ using Verse;
 
 namespace RJW_Genes
 {
+    /// <summary>
+    /// Makes the `can_masturbate` return false with certain genes.
+    /// This is not the only relevant file, please check #127 and #147 on the matter.
+    /// </summary>
     [HarmonyPatch(typeof(xxx), "can_masturbate")]
     public class Patch_BlockedMasturbation
     {
