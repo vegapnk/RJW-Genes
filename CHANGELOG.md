@@ -7,7 +7,7 @@
 
 **Fixes**:
 
-- Trying to harden the behaviour of VGE children (#116)
+- Trying to harden the behaviour of VGE children (#116), but it does not seem fixed ... 
 - Changed Version number in manifest.xml (#132)
 - Reduced Log-Level for Likes-Cumflation Debug Messages (#131)
 - Fixed the Localization String for Animal Hybrids (#144) ("Baseliner Bug" still persists, thats all RW not me)
@@ -17,6 +17,12 @@
 - Added another Patch for `Blocked Masturbation` that disables the ThinkNode like Sexperience does (#127,#147). Thanks @TinyMechanoid333 !
 - Fixed males spawning with small-female breasts (#138) by adding a detailed check `should have breasts`
 - Added a `MayRequire="rjw.sexperience"` to the Genies Sex-Curiosity, which was a hidden dependency on sexperience (#136)
+- Updated some Labels and References in patches (#149), thanks @flock-of-birds
+
+**Internal**:
+
+- Way more debug-logs for Animal Pregnancies.
+- Removed seperate debug-logging for Animal_BGS - Just uses the normal setting from RJW-Genes.
 
 # 2.2.0 (23-07-2024)
 

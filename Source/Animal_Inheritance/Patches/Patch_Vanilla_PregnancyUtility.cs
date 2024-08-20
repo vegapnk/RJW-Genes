@@ -31,10 +31,14 @@ namespace RJW_BGS
             List<GeneDef> genes = InheritanceUtility.AnimalInheritedGenes(father, mother);
             if (genes.Any())
             {
+                RJW_Genes.ModLog.Debug($"Adding {(genes.Count)} Genes from an Animal-Pregnancy between {father} and {mother}");
                 foreach (GeneDef gene in genes)
                 {
                     __result.AddGene(gene);
                 }
+            } else
+            {
+                RJW_Genes.ModLog.Debug($"Tried to add Genes from Animal-Pregnancy between {father} and {mother} but didn't find any");
             }
         }
     }

@@ -86,13 +86,20 @@ namespace RJW_BGS
 
         public static HediffDef controler = DefDatabase<HediffDef>.GetNamed("rjw_genes_animal_control_hediff", false);
 
+        /// <summary>
+        /// This Patch (only) adds the "rjw_genes_animal_control_hediff" to newborn VE hybrid-animals. 
+        /// </summary>
+        /// <param name="__instance"></param>
         [HarmonyPostfix]
         [HarmonyPatch("GenerateBabies")]
         public static void addHedif (Hediff_BasePregnancy __instance)
         {
             if (controler == null) return;
 
-            if (!RJW_BGSSettings.rjw_bgs_VE_genetics) return;
+            if (!RJW_BGSSettings.rjw_bgs_VE_genetics)
+            {
+                return;
+            }
 
             foreach (Pawn baby in __instance.babies)
             {

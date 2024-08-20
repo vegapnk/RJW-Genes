@@ -20,14 +20,12 @@ namespace RJW_BGS
             //One parent must be an animal and the other must be human, so only one needs to return
             if (father != null && !father.RaceProps.Humanlike)
             {
-                if (RJW_BGSSettings.rjw_bgs_detailed_debug)
-                    ModLog.Message($"Father was found to be animal - looking up genes for {father.Name}");
+                RJW_Genes.ModLog.Debug($"Father was found to be animal - looking up genes for {father.Name}");
                 return SelectGenes(father);
             }
             if (mother != null && !mother.RaceProps.Humanlike)
             {
-                if (RJW_BGSSettings.rjw_bgs_detailed_debug)
-                    ModLog.Message($"Mother was found to be animal - looking up genes for {mother.Name}");
+                RJW_Genes.ModLog.Debug($"Mother was found to be animal - looking up genes for {mother.Name}");
                 return SelectGenes(mother);
             }
 
@@ -54,8 +52,7 @@ namespace RJW_BGS
                     }
                 }
             }
-            if (RJW_BGSSettings.rjw_bgs_detailed_debug)
-                ModLog.Message($"From {raceGeneDef.genes.Count} possible genes in {raceGeneDef.defName}, {genelist.Count} were added by chance ({RJW_BGSSettings.rjw_bgs_global_gene_chance} chance multiplier from Settings).");
+            RJW_Genes.ModLog.Debug($"From {raceGeneDef.genes.Count} possible genes in {raceGeneDef.defName}, {genelist.Count} were added by chance ({RJW_BGSSettings.rjw_bgs_global_gene_chance} chance multiplier from Settings).");
             return genelist;
         }
 

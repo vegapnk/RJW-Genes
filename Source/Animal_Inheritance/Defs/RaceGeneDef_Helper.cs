@@ -36,8 +36,7 @@ namespace RJW_BGS
 			PawnData pawnData = SaveStorage.DataStore.GetPawnData(pawn);
 			RaceGroupDef raceGroupDef = pawnData.RaceSupportDef;
 
-			if (RJW_BGSSettings.rjw_bgs_detailed_debug)
-				ModLog.Message($"Looking up Animal-Inheritable Genes for {pawnName} with KindDef {kindDef.defName},RaceName {raceName}, PawnKind {pawnKindName} and RaceGroup {raceGroupDef.defName}");
+            RJW_Genes.ModLog.Debug($"Looking up Animal-Inheritable Genes for {pawnName} with KindDef {kindDef.defName},RaceName {raceName}, PawnKind {pawnKindName} and RaceGroup {raceGroupDef.defName}");
 
 			IEnumerable<RaceGeneDef> allDefs = DefDatabase<RaceGeneDef>.AllDefs;
 			List<RaceGeneDef> pawnKindDefs = allDefs.Where(delegate (RaceGeneDef group)
@@ -50,8 +49,7 @@ namespace RJW_BGS
 				DebugPrintRaceGeneDefs("PawnKindDefs", pawnName,pawnKindDefs);
 				return pawnKindDefs;
 			}
-			else if (RJW_BGSSettings.rjw_bgs_detailed_debug)
-				ModLog.Message($"Did not find PawnKindDefs for {pawnName}");
+			RJW_Genes.ModLog.Debug($"Did not find PawnKindDefs for {pawnName}");
 
 			List<RaceGeneDef> raceKindDefs = allDefs.Where(delegate (RaceGeneDef group)
 			{
@@ -63,8 +61,7 @@ namespace RJW_BGS
 				DebugPrintRaceGeneDefs("PawnKindDefs", pawnName, raceKindDefs);
 				return raceKindDefs;
 			}
-			else if (RJW_BGSSettings.rjw_bgs_detailed_debug)
-				ModLog.Message($"Did not find RaceKindDefs for {pawnName}");
+            RJW_Genes.ModLog.Debug($"Did not find RaceKindDefs for {pawnName}");
 
 			List<RaceGeneDef> raceGroupDefs = new List<RaceGeneDef>();
 			if (raceGroupDef != null)
@@ -83,8 +80,7 @@ namespace RJW_BGS
 				DebugPrintRaceGeneDefs("RaceKindDefs", pawnName, raceGroupDefs);
 				return raceGroupDefs;
 			}
-			else if (RJW_BGSSettings.rjw_bgs_detailed_debug)
-				ModLog.Message($"Did not find RaceGroupDefs for {pawnName}");
+            RJW_Genes.ModLog.Debug($"Did not find RaceGroupDefs for {pawnName}");
 
 			ModLog.Message($"Did not find any Genes inheritable for {pawnName}");
 			return new List<RaceGeneDef>();
@@ -92,7 +88,7 @@ namespace RJW_BGS
 
 		private static void DebugPrintRaceGeneDefs(String header,String identifier,List<RaceGeneDef> defs)
         {
-			if (RJW_BGSSettings.rjw_bgs_detailed_debug)
+			if (RJW_Genes.RJW_Genes_Settings.rjw_genes_detailed_debug)
             {
 				var defString = "[";
 				foreach (RaceGeneDef raceGeneDef in defs)
