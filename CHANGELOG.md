@@ -15,6 +15,7 @@
 - Added a map-check for LifeForce Empaths. Won't work off-map. (#120)
 - Added another Patch for `Blocked Masturbation` that disables the ThinkNode like Sexperience does (#127,#147). Thanks @TinyMechanoid333 !
 - Fixed males spawning with small-female breasts (#138) by adding a detailed check `should have breasts`
+- Added a `MayRequire="rjw.sexperience"` to the Genies Sex-Curiosity, which was a hidden dependency on sexperience (#136)
 
 # 2.2.0 (23-07-2024)
 
