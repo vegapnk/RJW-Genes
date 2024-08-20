@@ -47,7 +47,7 @@ namespace RJW_Genes
             Hediff cumstuffed_hediff = inflated.health.hediffSet.GetFirstHediffOfDef(LicentiaLabs.Licentia.HediffDefs.Cumstuffed);
             //Hediff cumstuffed_hediff = LicentiaLabs.CumflationHelper.GetCumflationHediff(inflated, LicentiaLabs.Licentia.HediffDefs.Cumstuffed, "stomach");
             if (cumstuffed_hediff != null && cumstuffed_hediff.Severity >= 0.01) {
-                ModLog.Message($"{inflated} got cumstuffed and gets the counter-part");
+                ModLog.Debug($"{inflated} got cumstuffed and gets the counter-part");
                 var bodyPartRecord = inflated.RaceProps.body.AllParts.Find(bpr => bpr.def.defName.Contains("stomach") || bpr.def.defName.Contains("stomach".ToLower()));
                 var counter_hediff = CreateOrGetCumflationCounterHediff(inflated, HediffDefOf.rjw_genes_cumstuffed_counter, bodyPartRecord);
                 counter_hediff.Severity = cumstuffed_hediff.Severity;
@@ -56,7 +56,7 @@ namespace RJW_Genes
             Hediff cumflation_hediff = inflated.health.hediffSet.GetFirstHediffOfDef(LicentiaLabs.Licentia.HediffDefs.Cumflation);
             if (cumflation_hediff != null && cumflation_hediff.Severity >= 0.01)
             {
-                ModLog.Message($"{inflated} got cumflated and gets the counter-part");
+                ModLog.Debug($"{inflated} got cumflated and gets the counter-part");
                 var bodyPartRecord = Genital_Helper.get_genitalsBPR(inflated);
                 var counter_hediff = CreateOrGetCumflationCounterHediff(inflated, HediffDefOf.rjw_genes_cumflation_counter, bodyPartRecord);
                 counter_hediff.Severity = cumflation_hediff.Severity;
