@@ -115,6 +115,40 @@ namespace RJW_Genes
             else
                 return part.TryGetComp<rjw.CompHediffBodyPart>().SizeOwner;
         }
+
+        /// <summary>
+        /// Checks whether a pawn needs to have breasts, for genes that add or change breast sizes and numbers. 
+        /// This was a little oversight noticed in #138.
+        /// </summary>
+        /// <param name="pawn"></param>
+        /// <returns>True if the Pawn with his current gender and genes should have breasts. False otherwise. </returns>
+        public static bool ShouldHaveBreasts(Pawn pawn)
+        {
+            // if anything is missing, just return True for Women and False for anyone else.
+            if (pawn == null || pawn.genes == null)
+                return pawn.gender == Gender.Female;
+
+            if (pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_featureless_chest))
+                return false;
+            if (pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_no_breasts))
+                return false;
+
+            if (pawn.gender == Gender.Female)
+            {
+                if (pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_femboy))
+                    return false;
+
+                // Default Case: Women do have breasts.
+                return true;
+            } 
+            if (pawn.gender == Gender.Male)
+            {
+                // Default Case: Men do not have Breasts.
+                return false;
+            }
+
+            return false;
+        }
     }
 
 }

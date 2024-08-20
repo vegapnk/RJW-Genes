@@ -13,6 +13,10 @@ namespace RJW_Genes
     /// There was an Issue (#34) that re-sized the genitalia over multiple birthdays. 
     /// Before the addition of `ExposeData`, it lost track whether the resizing was already run, 
     /// leading to a change with every birthday over multiple game starts. 
+    /// 
+    /// Issue #138 lead to male pawns having breasts, fixed by a "should have breasts" check in the relevant genes.
+    /// 
+    /// There is an ongoing issue with Resizing resitting after the first day (#151) which is likely from up-stream. 
     /// </summary>
     public abstract class Gene_GenitaliaResizingGene : RJW_Gene
     {

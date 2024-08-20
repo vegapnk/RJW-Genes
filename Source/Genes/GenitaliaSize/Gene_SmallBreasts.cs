@@ -6,7 +6,8 @@ namespace RJW_Genes
     {
         public override void Resize()
         {
-            SizeAdjuster.AdjustAllBreastSizes(pawn, 0.0f, 0.5f);
+            if (GenitaliaUtility.ShouldHaveBreasts(this.pawn))
+                SizeAdjuster.AdjustAllBreastSizes(pawn, 0.0f, 0.5f);
         }
     }
 }
