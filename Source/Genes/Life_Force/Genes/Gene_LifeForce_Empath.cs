@@ -42,6 +42,9 @@ namespace RJW_Genes
             base.Tick();
             if (this.pawn.IsHashIntervalTick(tickInterval) && this.pawn.Map != null)
             {
+                // Small check - likely minors were ticking this but not having Life-Force yet (#143)
+                if (!GeneUtility.HasLifeForce(this.pawn)) return;
+
                 foreach (Pawn pawn in this.AffectedPawns(this.pawn.Position, this.pawn.Map))
                 {
                     this.FarmLifeForce(pawn);

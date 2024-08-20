@@ -7,6 +7,8 @@
 - Reduced Log-Level for Likes-Cumflation Debug Messages (#131)
 - Fixed the Localization String for Animal Hybrids (#144) ("Baseliner Bug" still persists, thats all RW not me)
 - Added another null-check for "Offset Lifeforce" (#120,#143)
+- Added a check for LifeForce-Empath having an active life-force gene (#143), which likely threw errors being active despite children not having life-force yet.
+
 
 # 2.2.0 (23-07-2024)
 
