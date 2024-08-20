@@ -5,6 +5,7 @@
 - Trying to harden the behaviour of VGE children (#116)
 - Changed Version number in manifest.xml (#132)
 - Reduced Log-Level for Likes-Cumflation Debug Messages (#131)
+- Fixed the Localization String for Animal Hybrids (#144) ("Baseliner Bug" still persists, thats all RW not me)
 
 # 2.2.0 (23-07-2024)
 

@@ -46,7 +46,7 @@ namespace RJW_BGS
                     baby.genes.hybrid = true;
 
                     //reason = "AbilityDisabledNoFertilinGene".Translate(this.parent.pawn);
-                    baby.genes.xenotypeName = "rjw_genes_bestiality_hybrid".Translate();
+                    baby.genes.xenotypeName = "rjw_genes_bestiality_hybrid_name".Translate();
                 }
             }
         }
