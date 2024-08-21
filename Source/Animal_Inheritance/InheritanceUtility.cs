@@ -2,6 +2,8 @@
 using Verse;
 using RimWorld;
 using rjw;
+using RJW_Genes;
+using System.Linq;
 
 namespace RJW_BGS
 {
@@ -16,7 +18,7 @@ namespace RJW_BGS
             if (mother.RaceProps.Humanlike && father.RaceProps.Humanlike)
                 return genelist;
 
-            ModLog.Message($"Trigger an Animal-Gene-Inheritance for {father.Name} and {mother.Name}");
+            RJW_Genes.ModLog.Message($"Trigger an Animal-Gene-Inheritance for {father.Name} and {mother.Name}");
             //One parent must be an animal and the other must be human, so only one needs to return
             if (father != null && !father.RaceProps.Humanlike)
             {
@@ -86,7 +88,7 @@ namespace RJW_BGS
                 return;
             }
 
-            ModLog.Message($"Triggering an New-Gene Animal-Gene-Inheritance for {baby.Name} ({dad.Name} + {mother.Name})");
+            RJW_Genes.ModLog.Message($"Triggering an New-Gene Animal-Gene-Inheritance for {baby.Name} ({dad.Name} + {mother.Name})");
             if (baby.RaceProps.Humanlike)
             {
                 if (baby.genes == null)
@@ -139,7 +141,7 @@ namespace RJW_BGS
         /// <summary>
         /// Used only for debugging, to see what you loaded and how it looks.
         /// </summary>
-        private static void logAllFoundRaceGroupGenes()
+        private static void LogAllFoundRaceGroupGenes()
         {
             foreach (RaceGroupDef def in DefDatabase<RaceGroupDef>.AllDefs)
             {

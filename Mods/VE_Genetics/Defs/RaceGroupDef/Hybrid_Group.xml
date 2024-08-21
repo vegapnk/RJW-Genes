@@ -1,797 +1,786 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-	<!--
-	<rjw.RaceGroupDef>
-		<defName>Bear_Grizzly_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
-			<li>Human</li>
+	<RJW_Genes.VGEHybridOffspringDefs>
+		<defName>Bear_Group</defName>
+		<!-- Other Pawn is always assumed to be human -->
+		<SupportedParentKindDefs>
 			<li>Bear_Grizzly</li>
-		</hybridRaceParents>
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
-			<li>GR_Manbear</li>
-			<li>GR_Bearman</li>
-		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
-	
-	<rjw.RaceGroupDef>
-		<defName>Bear_Polar_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
-			<li>Human</li>
 			<li>Bear_Polar</li>
-		</hybridRaceParents>
-		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		</SupportedParentKindDefs> 
+		<PossibleHybdridChildKindDefs>
 			<li>GR_Manbear</li>
 			<li>GR_Bearman</li>
-		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+		</PossibleHybdridChildKindDefs>
+	</RJW_Genes.VGEHybridOffspringDefs>
+
+	<!--
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Manbear_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents>
 			<li>Human</li>
 			<li>GR_Manbear</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Bearman_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents>
 			<li>Human</li>
 			<li>GR_Bearman</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Boomalope_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents>
 			<li>Human</li>
 			<li>Boomalope</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manalope</li>
 			<li>GR_Booman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Manalope_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GR_Manalope</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Booman_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GR_Booman</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Chicken_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Chicken</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manchicken</li>
 			<li>GR_Turkeyman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Duck_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Duck</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manchicken</li>
 			<li>GR_Turkeyman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Turkey_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Turkey</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manchicken</li>
 			<li>GR_Turkeyman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Goose_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Goose</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manchicken</li>
 			<li>GR_Turkeyman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Ostrich_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Ostrich</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manchicken</li>
 			<li>GR_Turkeyman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Emu_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Emu</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manchicken</li>
 			<li>GR_Turkeyman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Cassowary_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Cassowary</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manchicken</li>
 			<li>GR_Turkeyman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Manchicken_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GR_Manchicken</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-		<rjw.RaceGroupDef>
+		<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Turkeyman_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GR_Turkeyman</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Cow_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Cow</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manffalo</li>
 			<li>GR_Muffaloman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Muffalo_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Muffalo</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manffalo</li>
 			<li>GR_Muffaloman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Bison_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Bison</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manffalo</li>
 			<li>GR_Muffaloman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Yak_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Yak</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manffalo</li>
 			<li>GR_Muffaloman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Manffalo_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GR_Manffalo</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Muffaloman_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GR_Muffaloman</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Warg_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Warg</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manwolf</li>
 			<li>GR_Dogman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Wolf_Timber_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Wolf_Timber</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manwolf</li>
 			<li>GR_Dogman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Wolf_Arctic_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Wolf_Arctic</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manwolf</li>
 			<li>GR_Dogman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Fox_Fennec_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Fox_Fennec</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manwolf</li>
 			<li>GR_Dogman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Fox_Red_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Fox_Red</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manwolf</li>
 			<li>GR_Dogman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Fox_Arctic_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Fox_Arctic</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manwolf</li>
 			<li>GR_Dogman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Husky_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Husky</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manwolf</li>
 			<li>GR_Dogman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>LabradorRetriever_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>LabradorRetriever</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manwolf</li>
 			<li>GR_Dogman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>YorkshireTerrier_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>YorkshireTerrier</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manwolf</li>
 			<li>GR_Dogman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Manwolf_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GR_Manwolf</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Dogman_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GR_Dogman</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Cougar_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Cougar</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Mancat</li>
 			<li>GR_Catman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Panther_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Panther</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Mancat</li>
 			<li>GR_Catman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Lynx_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Lynx</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Mancat</li>
 			<li>GR_Catman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Cat_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Cat</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Mancat</li>
 			<li>GR_Catman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Mancat_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GR_Mancat</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Catman_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GR_Catman</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GuineaPig_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GuineaPig</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Mansquirrel</li>
 			<li>GR_Moleman</li>			
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Hare_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Hare</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Mansquirrel</li>
 			<li>GR_Moleman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Snowhare_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Snowhare</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Mansquirrel</li>
 			<li>GR_Moleman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Squirrel_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Squirrel</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Mansquirrel</li>
 			<li>GR_Moleman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Rat_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Rat</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Mansquirrel</li>
 			<li>GR_Moleman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Raccoon_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Raccoon</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Mansquirrel</li>
 			<li>GR_Moleman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Mansquirrel_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GR_Mansquirrel</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Moleman_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GR_Moleman</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Thrumbo_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Thrumbo</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Thrumboman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Thrumboman_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GR_Thrumboman</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
 	
 	
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Dromedary_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Dromedary</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Hurseman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Elk_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Elk</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Hurseman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Horse_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Horse</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Hurseman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Caribou_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Caribou</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Hurseman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Donkey_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Donkey</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Hurseman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Hurseman_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GR_Hurseman</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Megascarab_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Megascarab</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manscarab</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Spelopede_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Spelopede</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manscarab</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Megaspider_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Megaspider</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Manscarab</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Manscarab_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GR_Manscarab</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Iguana_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Iguana</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Lizardman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Cobra_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Cobra</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Lizardman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>Tortoise_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>Tortoise</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>GR_Lizardman</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
+	</RJW_Genes.HybridOffspringDefs>
 	
-	<rjw.RaceGroupDef>
+	<RJW_Genes.HybridOffspringDefs>
 		<defName>GR_Lizardman_Group</defName>
-		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
+		<hybridRaceParents> 
 			<li>Human</li>
 			<li>GR_Lizardman</li>
 		</hybridRaceParents>
 		
-		<hybridChildKindDef><!-- hybrid Pregnancy child KindDef output -->
+		<hybridChildKindDef>
 			<li>Human</li>
 		</hybridChildKindDef>
-	</rjw.RaceGroupDef>
-	
- -->
+	</RJW_Genes.HybridOffspringDefs>
+	 -->
+
 </Defs>
