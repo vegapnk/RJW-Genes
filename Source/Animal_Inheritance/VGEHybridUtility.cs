@@ -91,7 +91,7 @@ namespace RJW_BGS
         {
             IEnumerable<VGEHybridOffspringDefs> defs = DefDatabase<VGEHybridOffspringDefs>.AllDefs;
             var parents = defs.SelectMany(def => def.SupportedParentKindDefs).Distinct();
-            var offsprings = defs.SelectMany(def => def.PossibleHybdridChildKindDefs).Distinct();
+            var offsprings = defs.SelectMany(def => def.PossibleHybridChildKindDefs).Distinct();
             RJW_Genes.ModLog.Message($"Found {defs.Count()} VGEHybridOffspringDefs, covering {parents.Count()} distinct possible parent-animals and {offsprings.Count()} distinct possible hybrid-children.");
         }
 
