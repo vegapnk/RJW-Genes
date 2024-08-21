@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
+	<!--
 	<rjw.RaceGroupDef>
 		<defName>Bear_Grizzly_Group</defName>
 		<hybridRaceParents><!-- hybrid Pregnancy checks both parents races (who are not same race) -->
@@ -792,4 +793,5 @@
 		</hybridChildKindDef>
 	</rjw.RaceGroupDef>
 	
+ -->
 </Defs>

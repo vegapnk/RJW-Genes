@@ -10,103 +10,35 @@ using rjw;
 
 namespace RJW_BGS
 {
-    [HarmonyPatch(typeof(Hediff_BasePregnancy))]
-    public class Patch_RJW_BasePregnancy_VanillaExpandedGenetics
+
+    
+[HarmonyPatch(typeof(Hediff_BasePregnancy))]
+public class Patch_RJW_BasePregnancy_VanillaExpandedGenetics
+{
+    public static HediffDef controler = DefDatabase<HediffDef>.GetNamed("rjw_genes_animal_control_hediff", false);
+
+    /// <summary>
+    /// This Patch (only) adds the "rjw_genes_animal_control_hediff" to newborn VE hybrid-animals. 
+    /// </summary>
+    /// <param name="__instance"></param>
+    [HarmonyPostfix]
+    [HarmonyPatch("GenerateBabies")]
+    public static void addHedif (Hediff_BasePregnancy __instance)
     {
-        public static List<string> supportedHybridRaces = new List<string>()
-            {
-            "GR_Manbear",
-            "GR_Bearman",
-            "GR_Manalope",
-            "GR_Booman",
-            "GR_Manchicken",
-            "GR_Turkeyman",
-            "GR_Manffalo",
-            "GR_Muffaloman",
-            "GR_Manwolf",
-            "GR_Dogman",
-            "GR_Mancat",
-            "GR_Catman",
-            "GR_Mansquirrel",
-            "GR_Moleman",
-            "GR_Thrumboman",
-            "GR_Hurseman",
-            "GR_Manscarab",
-            "GR_Lizardman"
-            };
 
-        public static List<string> supportedInitialAnimalRaces = new List<string>()
-            {
-            "Bear_Grizzly",
-            "Bear_Polar",
-            "Boomalope",
-            "Chicken",
-            "Duck",
-            "Turkey",
-            "Goose",
-            "Ostrich",
-            "Emu",
-            "Cassowary",
-            "Cow",
-            "Muffalo",
-            "Bison",
-            "Yak",
-            "Warg",
-            "Wolf_Timber",
-            "Wolf_Arctic",
-            "Fox_Fennec",
-            "Fox_Red",
-            "Fox_Arctic",
-            "Husky",
-            "LabradorRetriever",
-            "YorkshireTerrier",
-            "Cougar",
-            "Panther",
-            "Lynx",
-            "Cat",
-            "GuineaPig",
-            "Hare",
-            "Snowhare",
-            "Squirrel",
-            "Rat",
-            "Raccoon",
-            "Thrumbo",
-            "Dromedary",
-            "Elk",
-            "Horse",
-            "Caribou",
-            "Donkey",
-            "Megascarab",
-            "Spelopede",
-            "Megaspider",
-            "Iguana",
-            "Cobra",
-            "Tortoise"
-            };
+        if (controler == null) return;
 
-        public static HediffDef controler = DefDatabase<HediffDef>.GetNamed("rjw_genes_animal_control_hediff", false);
-
-        /// <summary>
-        /// This Patch (only) adds the "rjw_genes_animal_control_hediff" to newborn VE hybrid-animals. 
-        /// </summary>
-        /// <param name="__instance"></param>
-        [HarmonyPostfix]
-        [HarmonyPatch("GenerateBabies")]
-        public static void addHedif (Hediff_BasePregnancy __instance)
+        if (!RJW_BGSSettings.rjw_bgs_VE_genetics)
         {
-            if (controler == null) return;
-
-            if (!RJW_BGSSettings.rjw_bgs_VE_genetics)
-            {
-                return;
-            }
-
-            foreach (Pawn baby in __instance.babies)
-            {
-                if(baby != null && supportedHybridRaces.Contains(baby.kindDef.race.defName))
-                   baby.health.AddHediff(controler);
-            }
+            return;
         }
 
+        foreach (Pawn baby in __instance.babies)
+        {
+            if(baby != null && VGEHybridUtility.supportedHybridRaces.Contains(baby.kindDef.race.defName))
+               baby.health.AddHediff(controler);
+        }
+
+        }
     }
 }
