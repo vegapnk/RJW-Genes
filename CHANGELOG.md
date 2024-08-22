@@ -20,6 +20,7 @@
 - Fixed males spawning with small-female breasts (#138) by adding a detailed check `should have breasts`
 - Added a `MayRequire="rjw.sexperience"` to the Genies Sex-Curiosity, which was a hidden dependency on sexperience (#136)
 - Updated some Labels and References in patches (#149), thanks @flock-of-birds
+- Removed the Filth-Production for Living-Cum-Bucket (#129). Hope to re-introduce it later but to remove the nullpointers some people get for now. 
 
 **Internal**:
 

@@ -22,6 +22,7 @@ namespace RJW_Genes
 
         protected override IEnumerable<Toil> MakeNewToils()
         {
+            // DevNote: Right now, this needs RJW.sexperience to produce the Cum-Item. 
             if (!ModsConfig.IsActive("rjw.sexperience"))
                 yield break;
 
@@ -58,14 +59,16 @@ namespace RJW_Genes
                 {
                     if (!sourceName.NullOrEmpty())
                     {
-                        if (ModsConfig.IsActive("LustLicentia.RJWLabs"))
-                            FilthMaker.TryMakeFilth(this.job.targetA.Cell, base.Map, Licentia.ThingDefs.FilthCum, sourceName);
+                        //TODO: Currently disabled due to Errors (#129), not a Fix but atleast no more errors
+                        //if (ModsConfig.IsActive("LustLicentia.RJWLabs"))
+                        //    FilthMaker.TryMakeFilth(this.job.targetA.Cell, base.Map, Licentia.ThingDefs.FilthCum, sourceName);
                         SpawnCum(this.pawn, this.job.targetA.Cell, base.Map);
                     }
                     else
                     {
-                        if (ModsConfig.IsActive("LustLicentia.RJWLabs"))
-                            FilthMaker.TryMakeFilth(this.job.targetA.Cell, base.Map, Licentia.ThingDefs.FilthCum);
+                        //TODO: Currently disabled due to Errors (#129), not a Fix but atleast no more errors
+                        // if (ModsConfig.IsActive("LustLicentia.RJWLabs"))
+                        //    FilthMaker.TryMakeFilth(this.job.targetA.Cell, base.Map, Licentia.ThingDefs.FilthCum);
                         SpawnCum(this.pawn, this.job.targetA.Cell, base.Map);
                     }
                 }
