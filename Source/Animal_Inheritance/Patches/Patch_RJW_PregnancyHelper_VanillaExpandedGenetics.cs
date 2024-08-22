@@ -51,9 +51,16 @@ public class Patch_RJW_PregnancyHelper_VanillaExpandedGenetics
             bool humanFatherAndSupportedAnimal = father.IsHuman() && VGEHybridUtility.SupportedInitialAnimalRaces.Contains(mother.kindDef);
             bool humanFatherAndSupportedHybrid = father.IsHuman() && VGEHybridUtility.SupportedHybridRaces.Contains(mother.kindDef);
 
+            // Exit if there are no supported parents / nothing to do for my logic
             if (!(humanMotherAndSupportedAnimal || humanMotherAndSupportedHybrid || humanFatherAndSupportedAnimal || humanFatherAndSupportedHybrid))
             {
                 RJW_Genes.ModLog.Debug("Aborting VGE-Hybdrization Pregnancy - Parents were unsupported RaceKinds");
+                return true;
+            }
+            // Exit by chance
+            if((new Random()).NextDouble() > RJW_BGSSettings.rjw_bgs_ve_genetics_chance)
+            {
+                RJW_Genes.ModLog.Debug($"VGE-Hybridization chance ({Math.Round(RJW_BGSSettings.rjw_bgs_ve_genetics_chance,3)*100}%) was not met - continuing with normal pregnancy behaviour.");
                 return true;
             }
 
