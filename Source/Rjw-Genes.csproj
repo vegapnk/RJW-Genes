@@ -206,11 +206,10 @@
     <Compile Include="Genes\Special\Patches\Patch_GeneticSexSwap.cs" />
     <Compile Include="Genes\Special\Patches\Patch_GeneticSexThief.cs" />
     <Compile Include="Genes\Special\Patches\Patch_HormonalSaliva.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_Aftersex_ApplyProgressingGeneticTransformations.cs" />
     <Compile Include="Genes\Special\Patches\Patch_OrgasmMytosis.cs" />
     <Compile Include="Genes\Special\Patches\Patch_PregnancyOverwrite.cs" />
     <Compile Include="Genes\Special\Patches\Patch_SexualTamer.cs" />
-    <Compile Include="Genes\Special\Patches\Patch_Feminizer.cs" />
-    <Compile Include="Genes\Special\Patches\Patch_Twinkifier.cs" />
     <Compile Include="Genes\Special\Thoughts\ThoughtWorker_Aphrodisiac_Pheromones_Social.cs" />
     <Compile Include="LetterDefOf.cs" />
     <Compile Include="Interactions\SuccubusTailjob\CompAbility_SexInteractionRequirements.cs" />
