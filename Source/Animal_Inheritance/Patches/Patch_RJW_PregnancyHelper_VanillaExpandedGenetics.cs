@@ -23,6 +23,16 @@ public class Patch_RJW_PregnancyHelper_VanillaExpandedGenetics
         ///
         /// Small Note: Below we use `Hediff_BasePregnancy.Create<Hediff_BestialPregnancy>(mother, father, DnaGivingParent.Mother);`
         /// This completely creates the pregnancy, it does not need to be assigned to anything or added to some hediffs.
+        /// 
+        /// There was an issue with Pawn Generation and this has been Reworked - Please see #116 for more documentation. 
+        /// The current state of affairs is that hybrids are generated using RJW-Pregnancy and "switching" the Fathers KindDef only for Child Generation, before switching it back. 
+        /// It's not easy to just change the Babies kindDef, because RJW-Preg runs a PawnGeneration Request. 
+        /// Thus, if you just change that from Husky to Dogman, most of the things are still Husky and you get a lot of red errors after birth.  
+        /// 
+        /// Relevant RJW Files:
+        /// 
+        /// - Hediff_BestialPregnancy https://gitgud.io/Ed86/rjw/-/blob/master/1.5/Source/Modules/Pregnancy/Hediffs/Hediff_BestialPregnancy.cs?ref_type=heads
+        /// - Hediff_BasePregnancy https://gitgud.io/Ed86/rjw/-/blob/master/1.5/Source/Modules/Pregnancy/Hediffs/Hediff_BasePregnancy.cs?ref_type=heads
         /// </summary>
         [HarmonyPrefix]
         [HarmonyPatch("AddPregnancyHediff")]
@@ -31,19 +41,15 @@ public class Patch_RJW_PregnancyHelper_VanillaExpandedGenetics
         
             // Error & Setting HandlingHandling, "true" means the normal method is run (and nothing else from this patch).
             // Behaviour of Harmony Prefixes: https://harmony.pardeike.net/articles/patching-prefix.html
-            if (!RJW_BGSSettings.rjw_bgs_VE_genetics)
-            {
-                //RJW_Genes.ModLog.Debug("Started VGE Pregnancy Patch - but settings are off so going into Vanilla");
-                return true;
-            }
+            if (!RJW_BGSSettings.rjw_bgs_VE_genetics) return true;
             if (mother == null || father == null) return true;
 
             RJW_Genes.ModLog.Debug("Trying to add RJW Pregnancy Hediff - Checking for potential VGE Animal-Hybridization");
 
-            bool humanMotherAndSupportedAnimal = mother.IsHuman() && VGEHybridUtility.supportedInitialAnimalRaces.Contains(father.kindDef.race.defName);
-            bool humanMotherAndSupportedHybrid = mother.IsHuman() && VGEHybridUtility.supportedHybridRaces.Contains(father.kindDef.race.defName);
-            bool humanFatherAndSupportedAnimal = father.IsHuman() && VGEHybridUtility.supportedInitialAnimalRaces.Contains(mother.kindDef.race.defName);
-            bool humanFatherAndSupportedHybrid = father.IsHuman() && VGEHybridUtility.supportedHybridRaces.Contains(mother.kindDef.race.defName);
+            bool humanMotherAndSupportedAnimal = mother.IsHuman() && VGEHybridUtility.SupportedInitialAnimalRaces.Contains(father.kindDef);
+            bool humanMotherAndSupportedHybrid = mother.IsHuman() && VGEHybridUtility.SupportedHybridRaces.Contains(father.kindDef);
+            bool humanFatherAndSupportedAnimal = father.IsHuman() && VGEHybridUtility.SupportedInitialAnimalRaces.Contains(mother.kindDef);
+            bool humanFatherAndSupportedHybrid = father.IsHuman() && VGEHybridUtility.SupportedHybridRaces.Contains(mother.kindDef);
 
             if (!(humanMotherAndSupportedAnimal || humanMotherAndSupportedHybrid || humanFatherAndSupportedAnimal || humanFatherAndSupportedHybrid))
             {
@@ -55,27 +61,38 @@ public class Patch_RJW_PregnancyHelper_VanillaExpandedGenetics
             {
                 RJW_Genes.ModLog.Debug("Found a human mother and a supported animal resulting in an animal-child - starting VGE pregnancy (rjw.Hediff_BestialPregnancy)");
                 Hediff_BasePregnancy.Create<Hediff_BestialPregnancy>(mother, father, DnaGivingParent.Father);
+
+                var kindDef = VGEHybridUtility.LookupPossiblyOffspringHybrid(father.kindDef);
+                var stored = father.kindDef;
+                father.kindDef = kindDef;
+                Hediff_BasePregnancy preg = Hediff_BasePregnancy.Create<Hediff_BestialPregnancy>(mother, father, DnaGivingParent.Father);
+                father.kindDef = stored;
+
                 // "false" means the normal method is not run
                 return false;
             }
             else if (humanMotherAndSupportedHybrid)
             {
-                RJW_Genes.ModLog.Debug("Found a human mother and a supported hybrid resulting in an human-child - starting VGE pregnancy (Biotech Pregnancy)");
 
-                PregnancyHelper.StartVanillaPregnancy(mother, father);
-                return false;
+                RJW_Genes.ModLog.Debug("Found a human mother and a hybrid - this behaviour has been disabled from 2.2.1 onward - sorry :(");
+                return true;
             }
             else if (humanFatherAndSupportedAnimal)
             {
                 RJW_Genes.ModLog.Debug("Found a human father and a supported animal resulting in an animal-child - starting VGE pregnancy (rjw.Hediff_BestialPregnancy)");
-                Hediff_BasePregnancy.Create<Hediff_BestialPregnancy>(mother, father, DnaGivingParent.Mother);
+
+                var kindDef = VGEHybridUtility.LookupPossiblyOffspringHybrid(mother.kindDef);
+                var stored = mother.kindDef;
+                mother.kindDef = kindDef;
+                Hediff_BasePregnancy preg = Hediff_BasePregnancy.Create<Hediff_BestialPregnancy>(mother, father, DnaGivingParent.Mother);
+                mother.kindDef = stored;
+                
                 return false;
             }
             else if (humanFatherAndSupportedHybrid)
             {
-                RJW_Genes.ModLog.Debug("Found a human father and a supported hybrid resulting in an animal-child - starting VGE pregnancy (rjw.Hediff_BestialPregnancy)");
-                Hediff_BasePregnancy.Create<Hediff_BestialPregnancy>(mother, father, DnaGivingParent.Father);
-                return false;
+                RJW_Genes.ModLog.Debug("Found a human father and a hybrid - this behaviour has been disabled from 2.2.1 onward - sorry :(");
+                return true;
             }
 
             RJW_Genes.ModLog.Debug("Issues in applying the Patch for VGE hybdritization - doing nothing and continuing with normal pregnancy.");

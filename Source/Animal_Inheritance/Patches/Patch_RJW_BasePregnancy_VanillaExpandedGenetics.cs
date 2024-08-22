@@ -23,7 +23,7 @@ public class Patch_RJW_BasePregnancy_VanillaExpandedGenetics
     /// <param name="__instance"></param>
     [HarmonyPostfix]
     [HarmonyPatch("GenerateBabies")]
-    public static void addHedif (Hediff_BasePregnancy __instance)
+    public static void AddHediff (Hediff_BasePregnancy __instance)
     {
 
         if (controler == null) return;
@@ -35,7 +35,7 @@ public class Patch_RJW_BasePregnancy_VanillaExpandedGenetics
 
         foreach (Pawn baby in __instance.babies)
         {
-            if(baby != null && VGEHybridUtility.supportedHybridRaces.Contains(baby.kindDef.race.defName))
+            if(baby != null && VGEHybridUtility.SupportedHybridRaces.Contains(baby.kindDef))
                baby.health.AddHediff(controler);
         }
 

@@ -10,78 +10,41 @@ namespace RJW_BGS
 {
     public class VGEHybridUtility
     {
+        /// <summary>
+        /// All VGE-Hybrids that can result from Bestiality - these are drawn from the existing XML-Defs. 
+        /// </summary>
+        public static List<PawnKindDef> SupportedHybridRaces { 
+            get{return DefDatabase<VGEHybridOffspringDefs>.AllDefs.SelectMany(def => def.PossibleHybridChildKindDefs).Distinct().ToList();}
+        }
 
-        public static List<string> supportedHybridRaces = new List<string>()
+        /// <summary>
+        /// All Animals that can produce VGE Hybrids - these are drawn from the existing XML-Defs. 
+        /// </summary>
+        public static List<PawnKindDef> SupportedInitialAnimalRaces { 
+            get { return DefDatabase<VGEHybridOffspringDefs>.AllDefs.SelectMany(def => def.SupportedParentKindDefs).Distinct().ToList(); } 
+        }
+
+        /// <summary>
+        /// Returns a possible Hybrid KindDef for a given Animal. 
+        /// Null if there is none. 
+        /// Random one if there are multiple. 
+        /// </summary>
+        /// <param name="Parent">The animal fathering the baby</param>
+        /// <returns>KindDef for Hybrid originated from Parent Animal. Null on None, Not-Supported or Error. Random one from multiple.</returns>
+        public static PawnKindDef LookupPossiblyOffspringHybrid(PawnKindDef Parent)
+        {
+            if (Parent == null) return null;
+            if (!SupportedInitialAnimalRaces.Contains(Parent)) return null; 
+            else
             {
-            "GR_Manbear",
-            "GR_Bearman",
-            "GR_Manalope",
-            "GR_Booman",
-            "GR_Manchicken",
-            "GR_Turkeyman",
-            "GR_Manffalo",
-            "GR_Muffaloman",
-            "GR_Manwolf",
-            "GR_Dogman",
-            "GR_Mancat",
-            "GR_Catman",
-            "GR_Mansquirrel",
-            "GR_Moleman",
-            "GR_Thrumboman",
-            "GR_Hurseman",
-            "GR_Manscarab",
-            "GR_Lizardman"
-            };
-
-        public static List<string> supportedInitialAnimalRaces = new List<string>()
-            {
-            "Bear_Grizzly",
-            "Bear_Polar",
-            "Boomalope",
-            "Chicken",
-            "Duck",
-            "Turkey",
-            "Goose",
-            "Ostrich",
-            "Emu",
-            "Cassowary",
-            "Cow",
-            "Muffalo",
-            "Bison",
-            "Yak",
-            "Warg",
-            "Wolf_Timber",
-            "Wolf_Arctic",
-            "Fox_Fennec",
-            "Fox_Red",
-            "Fox_Arctic",
-            "Husky",
-            "LabradorRetriever",
-            "YorkshireTerrier",
-            "Cougar",
-            "Panther",
-            "Lynx",
-            "Cat",
-            "GuineaPig",
-            "Hare",
-            "Snowhare",
-            "Squirrel",
-            "Rat",
-            "Raccoon",
-            "Thrumbo",
-            "Dromedary",
-            "Elk",
-            "Horse",
-            "Caribou",
-            "Donkey",
-            "Megascarab",
-            "Spelopede",
-            "Megaspider",
-            "Iguana",
-            "Cobra",
-            "Tortoise"
-            };
-
+                return DefDatabase<VGEHybridOffspringDefs>.AllDefs
+                    .Where(def => def.SupportedParentKindDefs.Contains(Parent))
+                    .SelectMany(def => def.PossibleHybridChildKindDefs)
+                    .Distinct()
+                    .RandomElementWithFallback(null);
+                // Man I am a true Java Developer
+            }
+        }
 
         /// <summary>
         /// Small Method for debugging - I used it mostly on game-startup to see if reading all Defs worked fine. 
@@ -92,7 +55,7 @@ namespace RJW_BGS
             IEnumerable<VGEHybridOffspringDefs> defs = DefDatabase<VGEHybridOffspringDefs>.AllDefs;
             var parents = defs.SelectMany(def => def.SupportedParentKindDefs).Distinct();
             var offsprings = defs.SelectMany(def => def.PossibleHybridChildKindDefs).Distinct();
-            RJW_Genes.ModLog.Message($"Found {defs.Count()} VGEHybridOffspringDefs, covering {parents.Count()} distinct possible parent-animals and {offsprings.Count()} distinct possible hybrid-children.");
+            RJW_Genes.ModLog.Debug($"Found {defs.Count()} VGEHybridOffspringDefs, covering {parents.Count()} distinct possible parent-animals and {offsprings.Count()} distinct possible hybrid-children.");
         }
 
     }
