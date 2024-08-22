@@ -4,10 +4,12 @@
 
 - Biotechs Highmates do not get patched Hypersexual anymore. This was wished because Hypersexual is rather heavy. 
 - "No-XXX"-Genes add a `Missing Body Part` Hediff. This was wanted to work better with OTY sized apparel (#133)
+- VGE Hybridization now has a chance to be hybridized. If not met, it will continue with normal bestiality behaviour. 
+- VGE Hybridization can not produce Humans from `DogMan + Dog` anymore, unfortunately. 
 
 **Fixes**:
 
-- Trying to harden the behaviour of VGE children (#116), but it does not seem fixed ... 
+- Fixed the usage of "Disabled" VGE Hybridization (#116)
 - Changed Version number in manifest.xml (#132)
 - Reduced Log-Level for Likes-Cumflation Debug Messages (#131)
 - Fixed the Localization String for Animal Hybrids (#144) ("Baseliner Bug" still persists, thats all RW not me)
@@ -23,6 +25,10 @@
 
 - Way more debug-logs for Animal Pregnancies.
 - Removed seperate debug-logging for Animal_BGS - Just uses the normal setting from RJW-Genes.
+
+**See Also**: 
+
+- [Wiki Page on Hybridization](https://github.com/vegapnk/RJW-Genes/wiki/Vanilla-Genetics-Expanded-Hybridization)
 
 # 2.2.0 (23-07-2024)
 
