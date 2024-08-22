@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
 	<RJW_Genes.VGEHybridOffspringDefs>
@@ -7,7 +7,7 @@
 		<SupportedParentKindDefs>
 			<li>Bear_Grizzly</li>
 			<li>Bear_Polar</li>
-		</SupportedParentKindDefs> 
+		</SupportedParentKindDefs>
 		<PossibleHybridChildKindDefs>
 			<li>GR_Manbear</li>
 			<li>GR_Bearman</li>
@@ -50,13 +50,13 @@
 			<li>Bison</li>
 			<li>Yak</li>
 		</SupportedParentKindDefs>
-		
+
 		<PossibleHybridChildKindDefs>
 			<li>GR_Manffalo</li>
 			<li>GR_Muffaloman</li>
 		</PossibleHybridChildKindDefs>
 	</RJW_Genes.VGEHybridOffspringDefs>
-	
+
 	<RJW_Genes.VGEHybridOffspringDefs>
 		<defName>Canine_Group</defName>
 		<SupportedParentKindDefs>
@@ -70,7 +70,7 @@
 			<li>LabradorRetriever</li>
 			<li>YorkshireTerrier</li>
 		</SupportedParentKindDefs>
-		
+
 		<PossibleHybridChildKindDefs>
 			<li>GR_Manwolf</li>
 			<li>GR_Dogman</li>
@@ -85,13 +85,12 @@
 			<li>Lynx</li>
 			<li>Cat</li>
 		</SupportedParentKindDefs>
-		
+
 		<PossibleHybridChildKindDefs>
 			<li>GR_Mancat</li>
 			<li>GR_Catman</li>
 		</PossibleHybridChildKindDefs>
 	</RJW_Genes.VGEHybridOffspringDefs>
-	
 
 	<RJW_Genes.VGEHybridOffspringDefs>
 		<defName>Rabbit_Group</defName>
@@ -103,25 +102,23 @@
 			<li>Rat</li>
 			<li>Raccoon</li>
 		</SupportedParentKindDefs>
-		
+
 		<PossibleHybridChildKindDefs>
 			<li>GR_Mansquirrel</li>
-			<li>GR_Moleman</li>			
+			<li>GR_Moleman</li>
 		</PossibleHybridChildKindDefs>
 	</RJW_Genes.VGEHybridOffspringDefs>
-	
-	
+
 	<RJW_Genes.VGEHybridOffspringDefs>
 		<defName>Thrumbo_Group</defName>
 		<SupportedParentKindDefs>
 			<li>Thrumbo</li>
 		</SupportedParentKindDefs>
-		
+
 		<PossibleHybridChildKindDefs>
 			<li>GR_Thrumboman</li>
 		</PossibleHybridChildKindDefs>
 	</RJW_Genes.VGEHybridOffspringDefs>
-	
 
 	<RJW_Genes.VGEHybridOffspringDefs>
 		<defName>Equine_Group</defName>
@@ -132,12 +129,11 @@
 			<li>Caribou</li>
 			<li>Donkey</li>
 		</SupportedParentKindDefs>
-		
+
 		<PossibleHybridChildKindDefs>
 			<li>GR_Hurseman</li>
 		</PossibleHybridChildKindDefs>
 	</RJW_Genes.VGEHybridOffspringDefs>
-	
 
 	<RJW_Genes.VGEHybridOffspringDefs>
 		<defName>Insect_Group</defName>
@@ -146,7 +142,7 @@
 			<li>Spelopede</li>
 			<li>Megaspider</li>
 		</SupportedParentKindDefs>
-		
+
 		<PossibleHybridChildKindDefs>
 			<li>GR_Manscarab</li>
 		</PossibleHybridChildKindDefs>
@@ -159,10 +155,10 @@
 			<li>Cobra</li>
 			<li>Tortoise</li>
 		</SupportedParentKindDefs>
-		
+
 		<PossibleHybridChildKindDefs>
 			<li>GR_Lizardman</li>
 		</PossibleHybridChildKindDefs>
 	</RJW_Genes.VGEHybridOffspringDefs>
-	
+
 </Defs>
