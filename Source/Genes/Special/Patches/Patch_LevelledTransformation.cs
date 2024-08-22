@@ -63,7 +63,7 @@ namespace RJW_Genes
             }
         }
 
-        private static void ApplyTransformation(Pawn pawn, GeneDef geneDef)
+        public static void ApplyTransformation(Pawn pawn, GeneDef geneDef)
         {
             if (pawn == null || geneDef == null) return;
             var Random = new System.Random();
