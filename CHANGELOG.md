@@ -26,6 +26,7 @@
 
 - Way more debug-logs for Animal Pregnancies.
 - Removed seperate debug-logging for Animal_BGS - Just uses the normal setting from RJW-Genes.
+- Merged the behaviour of Twinkifier and Feminizer into one `Patch_Aftersex_ApplyProgressingGeneticTransformations`. This allows for a XML-Only approach to defining more genes like this. Thanks @ArcherSaiter (#145,#150)
 
 **See Also**: 
 
