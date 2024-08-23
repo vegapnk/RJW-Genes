@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>rjw_genes_ability_paralysingkiss</defName>
+    <label>paralysing kiss</label>
+    <description>Paralyse someone briefly with a kiss.</description>
+    <iconPath>Genes/Icons/rjw_genes_lips</iconPath>
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+	  <statBases>
+      <Ability_Duration>5</Ability_Duration>
+    </statBases>
+    <warmupMote>Mote_CoagulateStencil</warmupMote>
+    <warmupEffecter>Coagulate</warmupEffecter>
+    <warmupStartSound>Coagulate_Cast</warmupStartSound>
+    <displayOrder>402</displayOrder>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>1</warmupTime>
+      <targetParams>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class = "CompProperties_AbilityEffectWithDuration">
+        <compClass>CompAbilityEffect_Stun</compClass>
+        <goodwillImpact>-15</goodwillImpact>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>rjw_genes_lips</fleckDef> <!--Will change to kiss when I have a good icon/fleck for it-->
+      </li>
+	  <li Class="RJW_Genes.CompProperties_AbilityLifeForceCost">
+        <fertilinCost>0.1</fertilinCost>
+      </li>
+    </comps> 
+  </AbilityDef>
+</Defs>

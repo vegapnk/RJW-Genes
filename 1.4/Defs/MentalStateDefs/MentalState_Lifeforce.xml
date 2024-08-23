@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<MentalBreakDef>
+		<defName>rjw_genes_lifeforce_randomrape</defName>
+		<mentalState>rjw_genes_lifeforce_randomrape</mentalState>
+		<baseCommonality>1.5</baseCommonality>
+		<intensity>Extreme</intensity>
+		<workerClass>RJW_Genes.LifeForceMentalBreakWorker</workerClass>
+	</MentalBreakDef>
+
+	<MentalStateDef ParentName="BaseMentalState">
+		<defName>rjw_genes_lifeforce_randomrape</defName>
+		<stateClass>RJW_Genes.LifeForceMentalState</stateClass>
+		<workerClass>RJW_Genes.LifeForceMentalStateWorker</workerClass>
+		<label>random rape</label>
+		<category>Malicious</category>
+		<prisonersCanDo>true</prisonersCanDo>
+		<colonistsOnly>false</colonistsOnly>
+		<minTicksBeforeRecovery>30000</minTicksBeforeRecovery>
+		<recoveryMtbDays>0.8</recoveryMtbDays>
+		<maxTicksBeforeRecovery>80000</maxTicksBeforeRecovery>
+		<nameColor>(0.5, 0.9, 0.5)</nameColor>
+		<beginLetterLabel>random rape</beginLetterLabel>
+		<beginLetter>{0} has run out of lifeforce and is looking to obtain some.</beginLetter>
+		<beginLetterDef>ThreatSmall</beginLetterDef>
+		<recoveryMessage>{0} is no longer raping randomly.</recoveryMessage>
+		<baseInspectLine>Mental state: Random Rape</baseInspectLine>
+		<recoverFromSleep>true</recoverFromSleep>
+	</MentalStateDef>
+</Defs>

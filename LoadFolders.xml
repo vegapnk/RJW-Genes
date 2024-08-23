@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <loadFolders>
+	
+	<v1.4>
+		<li>1.4</li>
+		<li>Common</li>
+		<!-- Didn't have Mod Folders back then -->
+	</v1.4>
 	<v1.5>
 		<li>1.5</li>
 		<li>Common</li>

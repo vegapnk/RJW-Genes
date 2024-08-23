@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Name="GeneCumAmount" Abstract="True">
+      <displayCategory>rjw_genes_cum</displayCategory>
+      <exclusionTags>
+          <li>CumAmount</li>
+      </exclusionTags>  
+        
+      <modExtensions>
+        <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+          <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+          <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+        </li>
+      </modExtensions>
+    </GeneDef>
+
+  <!-- Penis -->
+  <GeneDef ParentName="GeneCumAmount">
+    <defName>rjw_genes_no_cum</defName>
+    <label>No Cum</label>
+    <description>Males of these species have no fluid.</description>
+    <iconPath>Genes/Icons/No_Cum</iconPath>
+    <geneClass>RJW_Genes.Gene_NoCum</geneClass>
+    <displayOrderInCategory>533</displayOrderInCategory>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>1</biostatMet>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneCumAmount">
+    <defName>rjw_genes_much_cum</defName>
+    <label>Much Cum</label>
+    <description>Males of this species produce a lot of fluid.</description>
+    <iconPath>Genes/Icons/Much_Cum</iconPath>
+    <geneClass>RJW_Genes.Gene_MuchCum</geneClass>
+    <displayOrderInCategory>534</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneCumAmount">
+    <defName>rjw_genes_very_much_cum</defName>
+    <label>Very Much Cum</label>
+    <description>Males of this species produce a whole lot of fluid. They are like fountains basically.</description>
+    <iconPath>Genes/Icons/Very_Much_Cum</iconPath>
+    <geneClass>RJW_Genes.Gene_VeryMuchCum</geneClass>
+    <displayOrderInCategory>535</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef>
+
+  <GeneDef MayRequire="LustLicentia.RJWLabs">
+    <defName>rjw_genes_likes_cumflation</defName>
+    <label>Likes Cumflation</label>
+    <displayCategory>rjw_genes_cum</displayCategory>
+    <description>This Xenotype loves being cumflated.</description>
+    <iconPath>Genes/Icons/Cumflation</iconPath>
+    <displayOrderInCategory>536</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>LikesCumflation</def>
+      </li>
+    </forcedTraits>
+    <exclusionTags>
+        <li>NotCumflatable</li>
+    </exclusionTags>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef MayRequire="LustLicentia.RJWLabs">
+    <defName>rjw_genes_cumflation_immunity</defName>
+    <label>Cumflation Immunity</label>
+    <displayCategory>rjw_genes_cum</displayCategory>
+    <description>This Xenotype cannot get cumflated.</description>
+    <iconPath>Genes/Icons/Cumflation_Immunity</iconPath>
+    <displayOrderInCategory>537</displayOrderInCategory>
+    <exclusionTags>
+        <li>NotCumflatable</li>
+    </exclusionTags>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+
+  <GeneDef MayRequire="LustLicentia.RJWLabs">
+    <defName>rjw_genes_generous_donor</defName>
+    <label>Generous Donor</label>
+    <displayCategory>rjw_genes_cum</displayCategory>
+    <description>When this Xenotype transfers nutrition via cumshot, the giver will not get hungry. (Licentia Configuration for Transfer Nutrition must be enabled).</description>
+    <iconPath>Genes/Icons/Generous_Donor</iconPath>
+    <displayOrderInCategory>538</displayOrderInCategory>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+</Defs>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>[LTS]Xenotech</li>
+                </mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="LTS_Nyankind"]/genes</xpath>
+                    <value>
+                        <li>rjw_genes_feline_genitalia</li>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>[LTS]Xenotech</li>
+                </mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="LTS_Growler"]/genes</xpath>
+                    <value>
+                        <li>rjw_genes_canine_genitalia</li>
+                    </value>
+                </match>
+            </li>
+
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>[LTS]Xenotech</li>
+                </mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="LTS_Elfin"]/genes</xpath>
+                    <value>
+                        <li>rjw_genes_small_male_genitalia</li>
+                        <li>rjw_genes_tight_female_genitalia</li>
+                    </value>
+                </match>
+            </li>
+
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>[LTS]Xenotech</li>
+                </mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="LTS_Ork"]/genes</xpath>
+                    <value>
+                        <li>rjw_genes_big_male_genitalia</li>
+                        <li>rjw_genes_loose_female_genitalia</li>
+                    </value>
+                </match>
+            </li>
+
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>[LTS]Xenotech</li>
+                </mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="LTS_Lilime"]/genes</xpath>
+                    <value>
+                        <li>rjw_genes_demonic_genitalia</li>
+                        <li MayRequire="LustLicentia.RJWLabs">rjw_genes_elasticity</li>
+                        <li MayRequire="rjw.sexperience">AptitudeRemarkable_Sex</li>
+                    </value>
+                </match>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

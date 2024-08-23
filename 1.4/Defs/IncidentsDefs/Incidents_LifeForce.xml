@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>	
+	<IncidentDef>
+		<defName>SuccubusDreamVisit</defName>
+		<label>dirty dreams</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>RJW_Genes.IncidentWorker_SuccubusDreamVisit</workerClass>
+		<baseChance>1.0</baseChance>
+		<minRefireDays>10</minRefireDays>
+		<pointsScaleable>false</pointsScaleable>
+	</IncidentDef>
+</Defs>

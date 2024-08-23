@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech Nyaron</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Nyaron"]/genes</xpath>
+			<value>
+				<li>rjw_genes_feline_genitalia</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

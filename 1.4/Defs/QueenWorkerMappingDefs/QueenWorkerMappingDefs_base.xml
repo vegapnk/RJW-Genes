@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RJW_Genes.QueenWorkerMappingDef>
+        <!-- Important: this default defName cannot be renamed! It is a protected keyword.-->
+        <!-- Changing the queenXenotype-Name will also throw an error.-->
+        <!-- But you can change the workerGenes list.-->
+		<defName>rjw_genes_default_worker_genes</defName>
+        <queenXenotype>default</queenXenotype>
+		<workerGenes>
+			<li>StrongStomach</li>
+			<li MayRequire="sarg.alphagenes" >AG_FasterAging</li>
+			<li>PsychicAbility_Dull</li>
+			<li>FireTerror</li>
+			<li>Sterile</li>
+			<li>AptitudeTerrible_Intellectual</li>
+			<li>rjw_genes_featureless_chest</li>
+			<li>rjw_genes_worker</li>
+			<li>rjw_genes_zealous_loyalty</li>	
+		</workerGenes>
+	</RJW_Genes.QueenWorkerMappingDef>
+
+	<RJW_Genes.QueenWorkerMappingDef>
+        <defName>rjw_genes_halamyr_queen_worker_mapping</defName>
+        <queenXenotype>rjw_genes_halamyr_queen_xenotype</queenXenotype>
+		<workerGenes>
+			<li MayRequire="sarg.alphagenes" >AG_SmallerBodySize</li>
+			<li>StrongStomach</li>
+			<li MayRequire="sarg.alphagenes" >AG_EfficientMandibles</li>
+			<li MayRequire="sarg.alphagenes" >AG_FasterAging</li>
+			<li>PsychicAbility_Dull</li>
+			<li>FireTerror</li>
+			<li>Sterile</li>
+			<li MayRequire="sarg.alphagenes" >AG_FormicAntennas</li>
+			<li>Skin_DeepRed</li>
+			<li>AptitudeTerrible_Intellectual</li>
+			<li>rjw_genes_featureless_chest</li>
+			<li>rjw_genes_worker</li>
+			<li>rjw_genes_zealous_loyalty</li>
+		</workerGenes>
+	</RJW_Genes.QueenWorkerMappingDef>
+	
+</Defs>

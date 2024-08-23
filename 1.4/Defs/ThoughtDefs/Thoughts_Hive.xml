@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<ThoughtDef>
+		<!-- For Challenged Queens -->
+		<defName>rjw_genes_rival_queen_mood</defName>
+		<workerClass>RJW_Genes.Thoughtworker_RivalQueen_Mood</workerClass>
+		<validWhileDespawned>false</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Rivaled</label>
+				<description>There is another queen nearby!</description>
+				<baseMoodEffect>-70</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<!-- For Challenged Queens -->
+		<defName>rjw_genes_rival_queen_social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>RJW_Genes.Thoughtworker_RivalQueen_Social</workerClass>
+		<stages>
+			<li>
+				<label>rivals me</label>
+				<description>{0} threatens my dominion. {0} must be perished.</description>
+				<baseOpinionOffset>-130</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>rjw_genes_queen_despises_workers_social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>RJW_Genes.ThoughtWorker_WorkerDespised_Social</workerClass>
+		<stages>
+			<li>
+				<label>underling</label>
+				<description>those workers are not even worth a glance.</description>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<!-- For Loyal Pawns -->
+		<defName>rjw_genes_multiple_queens_mood</defName>
+		<workerClass>RJW_Genes.Thoughtworker_MultipleQueens_Mood</workerClass>
+		<validWhileDespawned>false</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Confused Servitude</label>
+				<description>I have too many queens around me!</description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<!-- For Loyal Pawns -->
+		<defName>rjw_genes_queen_loyalty_social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>RJW_Genes.Thoughtworker_QueenPresent_Social</workerClass>
+		<stages>
+			<li>
+				<label>Worship</label>
+				<description>{0} is my queen. My one and only reason to live.</description>
+				<baseOpinionOffset>+80</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<!-- For Loyal Pawns -->
+		<defName>rjw_genes_no_queen_mood</defName>
+		<workerClass>RJW_Genes.Thoughtworker_QueenAbsent_Mood</workerClass>
+		<validWhileDespawned>false</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Missing Queen</label>
+				<description>We do not have a queen! How are we suppossed to face the cruelties of the world without a shepherd?</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<!-- For Loyal Pawns -->
+		<defName>rjw_genes_queen_present_mood</defName>
+		<workerClass>RJW_Genes.Thoughtworker_QueenPresent_Mood</workerClass>
+		<validWhileDespawned>false</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Queen Present</label>
+				<description>Our queen is so wonderful.</description>
+				<baseMoodEffect>+10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

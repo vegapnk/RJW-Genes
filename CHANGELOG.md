@@ -3,6 +3,7 @@
 **Changes**:
 
 - Support for `1.5`, `1.4`, ... Folder-Structure
+- Salvaged the `1.4` Folder from `RJW-Genes 1.3.3`. This will be a *frozen* version. 
 - Biotechs Highmates do not get patched Hypersexual anymore. This was wished because Hypersexual is rather heavy. 
 - "No-XXX"-Genes add a `Missing Body Part` Hediff. This was wanted to work better with OTY sized apparel (#133)
 - VGE Hybridization now has a chance to be hybridized. If not met, it will continue with normal bestiality behaviour. 

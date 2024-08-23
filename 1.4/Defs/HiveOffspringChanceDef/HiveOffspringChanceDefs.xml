@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- 
+        For writing your own: 
+        1. specify your queenXenotype with an exactly matching name 
+        2. defName is not important
+        3. queen + drone + worker == 1
+
+        Otherwise, it should default to the ones specified for rjw_genes_default_hive_offspring_chances
+    -->
+
+	<RJW_Genes.HiveOffspringChanceDef>
+        <!-- Important: this default defName cannot be renamed! It is a protected keyword.-->
+        <!-- Changing the queenXenotype-Name will also throw an error.-->
+        <!-- But you can change the workerGenes list.-->
+		<defName>rjw_genes_default_hive_offspring_chances</defName>
+        <queenXenotype>default</queenXenotype>
+
+        <queenChance>0.02</queenChance>
+        <droneChance>0.48</droneChance>
+        <workerChance>0.5</workerChance>
+
+	</RJW_Genes.HiveOffspringChanceDef>
+
+	<RJW_Genes.HiveOffspringChanceDef>
+        <defName>rjw_genes_test_queen_offspring_chances</defName>
+        <queenXenotype>rjw_genes_test_queen_xenotype</queenXenotype>
+
+        <queenChance>0.02</queenChance>
+        <droneChance>0.28</droneChance>
+        <workerChance>0.7</workerChance>
+
+	</RJW_Genes.HiveOffspringChanceDef>
+	
+</Defs>

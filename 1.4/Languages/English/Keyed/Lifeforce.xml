@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<!-- Fertilin strings -->
+	<AbilityDisabledNoFertilinGene>Pawn doesn't have required fertilin gene.</AbilityDisabledNoFertilinGene>
+	<AbilityDisabledNoFertilin>Not enough fertilin to cast.</AbilityDisabledNoFertilin>
+	<MentalBreakNoFertilin>This happened because of low fertilin.</MentalBreakNoFertilin>
+	
+	<AlertLowFertilin>Low fertilin</AlertLowFertilin>
+	<AlertLowFertilinDesc>A colonist has low fertilin. At this point they are becoming desperate enough to consider rape and bestiality to obtain fertilin (if they didn't already). At zero fertilin they will lose all sense and start raping randomly</AlertLowFertilinDesc>
+
+
+	<!--Succubus Events-->
+	<SuccubusLeaving>{0} has fed enough on your colonists and will now leave.</SuccubusLeaving>
+	
+	<rjw_genes_sexdemon_visit_incident_label>Dirty dreams</rjw_genes_sexdemon_visit_incident_label>
+	<rjw_genes_sexdemon_visit_incident_description>The dirty dreams of your colonists have attracted succubi.\n\nThey will hang around for a couple of days trying to seduce your colonists. They may decide to join your colony, if they are impressed by your colonists's sexual prowess.</rjw_genes_sexdemon_visit_incident_description>
+
+	<rjw_genes_succubus_joins_letter_label>Guest Joins</rjw_genes_succubus_joins_letter_label>
+	<rjw_genes_succubus_joins_letter_description>{0} enjoys it here and has decided to stay.</rjw_genes_succubus_joins_letter_description>
+</LanguageData>

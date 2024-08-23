@@ -33,3 +33,8 @@ This mod adds genes related and based on RJW to Rimworld.
 - Last: By Type of Action (Def, Patch, etc.)
 
 So if you want to change / add a gene about shrinking cocks you were to go: `Genes -> GenitaliaSize -> Defs`. 
+
+## Older Versions 
+
+For `Rimworld 1.4` there is a frozen version of `RJW-Genes 1.3.3` provided. 
+This was the last version before the Rimworld-Anomaly release. 

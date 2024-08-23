@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef Name="GeneGenitalTypeBase" Abstract="True">
+    <displayCategory>rjw_genes_genitalia_type</displayCategory>
+    <exclusionTags>
+      <li>GenitalType</li>
+    </exclusionTags>
+    <biostatCpx>0</biostatCpx>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_equine_genitalia</defName>
+    <label>equine genitalia</label>
+    <description>Carriers of this gene develop equine genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_Equine</iconPath>
+    <geneClass>RJW_Genes.Gene_EquineGenitalia</geneClass>
+    <displayOrderInCategory>802</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_canine_genitalia</defName>
+    <label>canine genitalia</label>
+    <description>Carriers of this gene develop canine genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_Canine</iconPath>
+    <geneClass>RJW_Genes.Gene_CanineGenitalia</geneClass>
+    <displayOrderInCategory>803</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_feline_genitalia</defName>
+    <label>feline genitalia</label>
+    <description>Carriers of this gene develop feline genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_Feline</iconPath>
+    <geneClass>RJW_Genes.Gene_FelineGenitalia</geneClass>
+    <displayOrderInCategory>804</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_demonic_genitalia</defName>
+    <label>demonic genitalia</label>
+    <description>Carriers of this gene have demonic genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_Demon</iconPath>
+    <geneClass>RJW_Genes.Gene_DemonicGenitalia</geneClass>
+    <displayOrderInCategory>805</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_dragon_genitalia</defName>
+    <label>dragon genitalia</label>
+    <description>Carriers of this gene develop dragon genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_Draconic</iconPath>
+    <geneClass>RJW_Genes.Gene_DragonGenitalia</geneClass>
+    <displayOrderInCategory>806</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_slime_genitalia</defName>
+    <label>slime genitalia</label>
+    <description>Carriers of this gene have slime genitalia.</description>
+    <iconPath>Genes/Icons/Slime_Genitalia</iconPath>
+    <geneClass>RJW_Genes.Gene_SlimeGenitalia</geneClass>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_ovipositor_genitalia</defName>
+    <label>insect genitalia</label>
+    <description>Carriers of this gene have ovipositors similar to insects.</description>
+    <iconPath>Genes/Icons/Ovipositor_Genitalia</iconPath>
+    <geneClass>RJW_Genes.Gene_OvipositorGenitalia</geneClass>
+    <displayOrderInCategory>808</displayOrderInCategory>
+
+    <exclusionTags>
+			<li>Egglaying</li>
+			<li>AG_Egglaying</li>
+		</exclusionTags>
+    
+  </GeneDef>
+
+
+</Defs>
