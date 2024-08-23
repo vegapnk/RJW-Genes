@@ -1,3 +1,4 @@
+<<<<<<< HEAD:Source/Genes/Special/Patches/Patch_Aftersex_ApplyProgressingGeneticTransformations.cs
 ﻿using HarmonyLib;
 using rjw;
 using System;
@@ -64,7 +65,7 @@ namespace RJW_Genes
             }
         }
 
-        private static void ApplyTransformation(Pawn pawn, GeneDef geneDef)
+        public static void ApplyTransformation(Pawn pawn, GeneDef geneDef)
         {
             if (pawn == null || geneDef == null) return;
             var Random = new System.Random();
