@@ -1,5 +1,4 @@
-<<<<<<< HEAD:Source/Genes/Special/Patches/Patch_Aftersex_ApplyProgressingGeneticTransformations.cs
-﻿using HarmonyLib;
+using HarmonyLib;
 using rjw;
 using System;
 using System.Collections.Generic;
