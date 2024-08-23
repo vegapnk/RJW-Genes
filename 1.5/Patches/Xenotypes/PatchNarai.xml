@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>NaraiXenotype</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Narai"]/genes</xpath>
+			<value>
+				<li>rjw_genes_canine_genitalia</li>
+				<li>rjw_genes_zoophile</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

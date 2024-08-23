@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- rjw_genes_mechbreeder,rjw_genes_insectincubator and rjw_genes_insectbreeder were kindly supplied by `Shabalox` https://github.com/Shabalox/RJW_Genes_Addons/ -->
+
+  <GeneDef>
+    <defName>rjw_genes_mechbreeder</defName>
+    <label>Mechbreeder</label>
+    <description>Pawns with this gene are able to birth mechanoids unharmed.</description>
+    <iconPath>World/WorldObjects/Expanding/Mechanoids</iconPath>
+    <displayOrderInCategory>51</displayOrderInCategory>
+	  <displayCategory>rjw_genes_breeding</displayCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef>
+      <defName>rjw_genes_zoophile</defName>
+      <label>Zoophile</label>
+      <displayCategory>rjw_genes_breeding</displayCategory>
+      <description>Xenotypes with this Gene are Zoophile.</description>
+      <iconPath>Genes/Icons/Zoophile</iconPath>
+      <displayOrderInCategory>54</displayOrderInCategory>    
+      <forcedTraits>
+          <li>
+              <def>Zoophile</def>
+          </li>
+      </forcedTraits>
+
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+</Defs>

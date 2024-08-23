@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef MayRequire="LustLicentia.RJWLabs">
+    <defName>rjw_genes_elasticity</defName>
+    <label>Elasticity</label>
+    <displayCategory>rjw_genes_damage</displayCategory>
+    <description>This Xenotype cannot get stretched by huge penetrators.</description>
+    <iconPath>Genes/Icons/Elasticity</iconPath>
+    <geneClass>RJW_Genes.Gene_Elasticity</geneClass>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef >
+    <defName>rjw_genes_unbreakable</defName>
+    <label>Unbreakable</label>
+    <displayCategory>rjw_genes_damage</displayCategory>
+    <description>This Gene makes the Carrier unable to get mood or social penalties from being raped and they cannot be broken for a long period of time.</description>
+    <iconPath>UI/Icons/Rituals/TrialDefend</iconPath>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <!-- Note: This Gene is mostly handled by patching XMLs -->
+    <geneClass>RJW_Genes.Gene_Unbreakable</geneClass>
+    <hediffGiversCannotGive>
+      <li>FeelingBroken</li>
+    </hediffGiversCannotGive>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+</Defs>

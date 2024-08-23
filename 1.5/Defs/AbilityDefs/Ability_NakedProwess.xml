@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityDef>
+    <defName>rjw_genes_ability_naked_prowess</defName>
+    <label>naked prowess</label>
+    <description>Enhance the strength and resilience of your naked body with fertilin.</description>
+    <iconPath>Genes/Icons/rjw_naked_prowess</iconPath>
+    <warmupMoteSocialSymbol>Things/Mote/Heart</warmupMoteSocialSymbol>
+	  <jobDef>CastAbilityOnThing</jobDef>
+    <targetRequired>False</targetRequired>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <stunTargetWhileCasting>True</stunTargetWhileCasting>
+    <statBases>
+      <Ability_Duration>126</Ability_Duration>
+      <Ability_EffectRadius>0</Ability_EffectRadius>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>2</warmupTime>
+      <range>0</range>
+      <drawAimPie>False</drawAimPie>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetHumans>false</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>rjw_genes_naked_prowess</hediffDef>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+	  <li Class="RJW_Genes.CompProperties_CasterIsNaked"/>
+	  <li Class="RJW_Genes.CompProperties_AbilityLifeForceCost">
+        <fertilinCost>0.15</fertilinCost>
+      </li>
+    </comps>
+	
+	
+  </AbilityDef>
+</Defs>

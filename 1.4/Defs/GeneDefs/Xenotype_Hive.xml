@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Alpha Genes ID: sarg.alphagenes -->
+
+  <XenotypeDef>
+    <defName>rjw_genes_halamyr_queen_xenotype</defName>
+    <label>Halamyr Queen</label>
+    <iconPath>Genes/Icons/Xenotypes/Xenotype-Queen</iconPath>
+    <inheritable>false</inheritable>
+    <canGenerateAsCombatant>false</canGenerateAsCombatant>
+
+    <description>The Halamyr are a race of insect-xenotypes living in a caste-system. On top of the caste, the queens are the centerpiece of any hive. They are the only Halamyr that can produce drones, or mass-produce workers. A hive can virtually not live without a queen - without their royalty the drones and workers are irritated and receive sever penalties. Queens are very fragile and need to be kept safe and in best conditions.</description>
+    <descriptionShort>The fragile queens of the Halamyr are the center of the hives reproduction. Multiple queens, or and absence of a queen, can cause to fall the best hive into disarray real quick.</descriptionShort>
+    
+    <genes>			
+        <li MayRequire="sarg.alphagenes" >AG_LargerBodySize</li>
+        <li MayRequire="sarg.alphagenes" >AG_InsectBlood</li>
+        <li MayRequire="sarg.alphagenes" >AG_InsectJellyProduction</li>
+        <li MayRequire="sarg.alphagenes" >AG_SurvivalInstinct_Low</li>
+        <li>WoundHealing_Slow</li>
+        <li>PsychicAbility_Extreme</li>
+        <li>MoveSpeed_Slow</li>
+        <li>FireTerror</li>
+        <li>MeleeDamage_Weak</li>
+        <li>Sleepy</li>
+        <li>Delicate</li>
+        <li>rjw_genes_hypersexual</li>
+        <li>rjw_genes_bisexual</li>
+        <li>Libido_High</li>
+        <li>Beauty_Beautiful</li>
+        <li MayRequire="sarg.alphagenes" >AG_OutwardsAntennas</li>
+        <li>Skin_DeepRed</li>
+        <li>Learning_Fast</li>
+        <li>rjw_genes_fervent_ovipositor</li>
+        <li>AptitudeTerrible_Shooting</li>
+        <li>AptitudeTerrible_Melee</li>
+        <li>AptitudeRemarkable_Social</li>
+        <li MayRequire="rjw.sexperience">AptitudeRemarkable_Sex</li>
+        <li>rjw_genes_female_only</li>
+        <li>rjw_genes_ovipositor_genitalia</li>
+        <li>rjw_genes_aphrodisiac_pheromones</li>
+        <li>rjw_genes_queen</li>
+        <li>rjw_genes_cocoonweaver</li>
+        <li>rjw_genes_spawn_spelopede</li>
+    </genes>
+  </XenotypeDef>
+  
+  <XenotypeDef>
+    <defName>rjw_genes_halamyr_hiveguard_xenotype</defName>
+    <label>Halamyr Hiveguard</label>
+    <iconPath>Genes/Icons/Xenotypes/Xenotype-Guard</iconPath>
+
+    <combatPowerFactor>1.5</combatPowerFactor>
+    <inheritable>false</inheritable>
+
+    <description>The Halamyr hiveguards are the bastion to protect the hive. Next to the walls, these meele specialists form the ultimate guard for the queen, for which they'd give their lifes. Their tuned bodies come with a price, crippling them for social interactions and increased hunger.</description>
+    <descriptionShort>Frontline of the Halamyr, guards of the hive, specialised in meele combat. Heavily handicapped without a queen.</descriptionShort>
+    
+    <genes>			
+        <li MayRequire="sarg.alphagenes" >AG_InsectBlood</li>
+        <li MayRequire="sarg.alphagenes" >AG_EfficientMandibles</li>
+        <li>Immunity_Strong</li>
+        <li>WoundHealing_Fast</li>
+        <li>MoveSpeed_Quick</li>
+        <li>FireTerror</li>
+        <li>MeleeDamage_Strong</li>
+        <li>KillThirst</li>
+        <li>LowSleep</li>
+        <li MayRequire="sarg.alphagenes" >AG_WaspWings</li>
+        <li>Hair_ShortOnly</li>
+        <li MayRequire="sarg.alphagenes" >AG_DownwardsAntennas</li>
+        <li>Hair_DarkBlack</li>
+        <li>Skin_DeepRed</li>
+        <li MayRequire="sarg.alphagenes" >AG_FeraliskEyes</li>
+        <li>AptitudeTerrible_Shooting</li>
+        <li>AptitudeRemarkable_Melee</li>
+        <li>AptitudePoor_Construction</li>
+        <li>AptitudePoor_Cooking</li>
+        <li>AptitudePoor_Plants</li>
+        <li>AptitudePoor_Crafting</li>
+        <li>AptitudeTerrible_Artistic</li>
+        <li>AptitudeTerrible_Medicine</li>
+        <li>AptitudePoor_Social</li>
+        <li>rjw_genes_male_only</li>
+        <li>rjw_genes_ovipositor_genitalia</li>
+        <li>rjw_genes_drone</li>
+        <li>rjw_genes_zealous_loyalty</li>
+    </genes>
+  </XenotypeDef>
+  
+  <XenotypeDef>
+    <defName>rjw_genes_halamyr_breeder_xenotype</defName>
+    <label>Halamyr Breeder</label>
+    <iconPath>Genes/Icons/Xenotypes/Xenotype-Breeder</iconPath>
+    <inheritable>false</inheritable>
+    <canGenerateAsCombatant>false</canGenerateAsCombatant>
+    <combatPowerFactor>0.8</combatPowerFactor>
+
+    <description>The Halamyr breeders are the backbone of the hive. Their special genes allow them to carry more eggs and hatch them faster, enabling a steady output of hivelings. To support their position in the hive, breeders spend most of their life in the queens cocoon, a task which they gladly accept.</description>
+    <descriptionShort>Made for incubating Halamyr eggs, breeders spend most of their life in the queens cocoon.</descriptionShort>
+
+    <genes>			
+      <li MayRequire="sarg.alphagenes" >AG_Spinnerets</li>
+			<li MayRequire="sarg.alphagenes" >AG_InsectBlood</li>
+			<li MayRequire="sarg.alphagenes" >AG_InsectJellyProduction</li>
+			<li MayRequire="sarg.alphagenes" >AG_FormicAntennas</li>
+      <li>Fertile</li>
+			<li MayRequire="sarg.alphagenes" >AG_FastGestation</li>
+			<li>FireTerror</li>
+			<li>VerySleepy</li>
+			<li>rjw_genes_bisexual</li>
+			<li>Skin_DeepRed</li>
+			<li>AptitudeStrong_Social</li>
+			<li>rjw_genes_drone</li>
+      <li>rjw_genes_female_only</li>
+			<li>rjw_genes_zealous_loyalty</li>
+			<li>rjw_genes_insectincubator</li>	
+			<li>rjw_genes_zoophile</li>	
+      <li>rjw_genes_no_vagina</li>
+    </genes>
+  </XenotypeDef>
+  
+</Defs>

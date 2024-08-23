@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef>
+        <defName>rjw_genes_female_only</defName>
+        <label>Female</label>
+        <displayCategory>rjw_genes_gender</displayCategory>
+        <description>This Xenotype only has females.</description>
+        <biostatCpx>0</biostatCpx>
+        <iconPath>Genes/Icons/Female_Only</iconPath>
+        <geneClass>RJW_Genes.Gene_FemaleOnly</geneClass>
+        <displayOrderInCategory>1</displayOrderInCategory>
+
+        <exclusionTags>
+          <li>AG_Gender</li>
+          <li>Gender</li>
+        </exclusionTags>
+        
+        <modExtensions>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+            <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+            <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+          </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>rjw_genes_male_only</defName>
+        <displayCategory>rjw_genes_gender</displayCategory>
+        <label>Male</label>
+        <description>This Xenotype only has males.</description>
+        <biostatCpx>0</biostatCpx>
+        <iconPath>Genes/Icons/Male_Only</iconPath>
+        <geneClass>RJW_Genes.Gene_MaleOnly</geneClass>
+        <displayOrderInCategory>2</displayOrderInCategory>
+        
+        <exclusionTags>
+          <li>AG_Gender</li>
+          <li>Gender</li>          
+        </exclusionTags>
+
+        <modExtensions>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+            <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+            <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+          </li>
+        </modExtensions>
+    </GeneDef>
+    
+
+    <GeneDef>
+        <defName>rjw_genes_gender_fluid</defName>
+        <displayCategory>rjw_genes_gender</displayCategory>
+        <label>Gender Fluid</label>
+        <description>Everyday carriers of this gene might change their biological sex.</description>
+        <biostatCpx>0</biostatCpx>
+        <iconPath>Genes/Icons/Futa</iconPath>
+        <geneClass>RJW_Genes.Gene_GenderFluid</geneClass>
+        <displayOrderInCategory>2</displayOrderInCategory>
+        
+        <!-- Design Decision: GenderFluids like GenderFluids (slightly) more. -->
+        <missingGeneRomanceChanceFactor>0.9</missingGeneRomanceChanceFactor>
+
+        <exclusionTags>
+          <li>AG_Gender</li>
+          <li>Gender</li>          
+        </exclusionTags>
+
+        <modExtensions>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+            <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+            <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+          </li>
+          <li Class="RJW_Genes.GenderFluidExtension">
+                <!-- 120k = 2 days -->
+                <changeInterval>120000</changeInterval>
+                <changeChance>0.25</changeChance>
+          </li>
+        </modExtensions>
+    </GeneDef>
+
+</Defs>

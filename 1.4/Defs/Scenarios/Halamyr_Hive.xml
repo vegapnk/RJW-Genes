@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ScenarioDef>
+    <defName>rjw_genes_scenario_halamyr_hive</defName>
+    <label>Halamyr Hive</label>
+    <description>A young queen set out to build a new hive. After a long path, a suitable place is found to generate new offspring. DEVNOTE: Try to choose a high-food biome to keep up with the Hive!</description>
+    <scenario>
+      <summary>A Halamyr queen set out to build a new hive.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerTribe</factionDef>
+      </playerFaction>
+      <parts>
+
+
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+          <def>ConfigurePawnsXenotypes</def>
+          <pawnChoiceCount>4</pawnChoiceCount>
+          <customSummary>Start with a set of Halamyr Xenotypes and one other colonist of any age.</customSummary>
+
+          <xenotypeCounts>
+            <li>
+              <xenotype>rjw_genes_halamyr_queen_xenotype</xenotype>
+              <count>1</count>
+              <description>non-baby halamyr queen</description>
+              <requiredAtStart>true</requiredAtStart>
+              <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+            </li>
+
+            <li>
+              <xenotype>rjw_genes_halamyr_hiveguard_xenotype</xenotype>
+              <count>1</count>
+              <description>non-baby halamyr hiveguard</description>
+              <requiredAtStart>true</requiredAtStart>
+              <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+            </li>
+
+            <li>
+              <xenotype>rjw_genes_halamyr_breeder_xenotype</xenotype>
+              <count>1</count>
+              <description>adulthalamyr breeder</description>
+              <requiredAtStart>true</requiredAtStart>
+              <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+            </li>
+
+            <li>
+              <xenotype>Baseliner</xenotype>
+              <count>2</count>
+            </li>
+          </xenotypeCounts>
+        </li>
+
+        <!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+
+        <!-- Player pawns modifiers -->
+        <li Class="ScenPart_ForcedHediff">
+          <def>ForcedHediff</def>
+          <visible>false</visible>
+          <context>PlayerStarter</context>
+          <chance>0.5</chance>
+          <hediff>Malnutrition</hediff>
+          <severityRange>0.1~0.2</severityRange>
+        </li>
+        <li Class="ScenPart_SetNeedLevel">
+          <def>SetNeedLevel</def>
+          <visible>false</visible>
+          <context>PlayerStarter</context>
+          <chance>1.0</chance>
+          <need>Food</need>
+          <levelRange>0.3~0.8</levelRange>
+        </li>
+
+        <!-- Player starting things -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Pemmican</thingDef>
+          <count>350</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>InsectJelly</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineHerbal</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Club</thingDef>
+          <stuff>WoodLog</stuff>
+        </li>
+
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+          <animalKind>Spelopede</animalKind>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+          <animalKind>Megascarab</animalKind>
+          <count>3</count>
+          <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+        </li>
+
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+          <animalKind>Megaspider</animalKind>
+          <count>1</count>
+        </li>
+
+        <!-- Scatter some things near player start -->
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>500</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Jade</thingDef>
+          <count>100</count>
+        </li>
+        
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Pemmican</thingDef>
+          <count>150</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>200</count>
+        </li>
+
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>After a long journey, this is it: \n\nThis is the right place to start the new hive. Spin in your breeders, build your defenses and start mating.\n\nMake this a place worthy for a queen.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

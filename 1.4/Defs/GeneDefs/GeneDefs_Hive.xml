@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef Name="HiveBase" Abstract="True">
+		<displayCategory>rjw_genes_hive</displayCategory>
+		
+		<modExtensions>
+				<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+					<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+					<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+				</li>
+			</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HiveBase">
+		<defName>rjw_genes_queen</defName>
+		<label>Hive Queen</label>
+		<labelShortAdj>queen</labelShortAdj>
+		<description>This gene represents the royal caste amongst its xenotype. Children of a queen are usually born as sterile workers, unless the father was a drone. Having multiple (adult) queens leads to intense rivalry and can throw the whole colony into chaos!</description>
+		<iconPath>Genes/Icons/Queen</iconPath>
+		<displayOrderInCategory>1</displayOrderInCategory>
+
+		<statOffsets>
+			<PsychicSensitivity>0.5</PsychicSensitivity>
+			<MeditationFocusGain>0.25</MeditationFocusGain>
+		</statOffsets>
+
+		
+		<conditionalStatAffecters>
+			<li Class="RJW_Genes.ConditionalStatAffecter_MultipleQueens">
+				<statFactors>
+					<MoveSpeed>0.7</MoveSpeed>
+				</statFactors>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+			<li Class="RJW_Genes.ConditionalStatAffecter_QueenCloseBy">
+				<statFactors>
+					<MoveSpeed>0.4</MoveSpeed>
+					<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+				</statFactors>
+			</li>
+		</conditionalStatAffecters>
+
+		<exclusionTags>
+			<li>rjw_genes_hive_caste</li>
+			<li>rjw_genes_swearing_loyalty</li>
+		</exclusionTags>
+
+		<biostatCpx>7</biostatCpx>
+		<biostatMet>-3</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="HiveBase">
+		<defName>rjw_genes_drone</defName>
+		<label>Hive Drone</label>
+		<labelShortAdj>drone</labelShortAdj>
+		<description>This gene represents the drone caste amongst its xenotype. Drones are highly specialised experts that ensure the hives functioning. Other than that, drones are the only xenotypes capable of producing fertile offspring with a queen.</description>
+		<iconPath>Genes/Icons/Drone</iconPath>
+		<displayOrderInCategory>2</displayOrderInCategory>
+
+		<exclusionTags>
+			<li>rjw_genes_hive_caste</li>
+		</exclusionTags>
+
+		<conditionalStatAffecters>
+			<li Class="RJW_Genes.ConditionalStatAffecter_QueenAbsent">
+				<statFactors>
+					<MoveSpeed>0.9</MoveSpeed>
+				</statFactors>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</conditionalStatAffecters>
+
+		<biostatCpx>4</biostatCpx>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+
+
+	<GeneDef ParentName="HiveBase">
+		<defName>rjw_genes_worker</defName>
+		<label>Hive Worker</label>
+		<labelShortAdj>worker</labelShortAdj>
+		<description>This gene marks the lowest caste of a hive, the workers. Usually sterile, they are despised by higher castes and only live to serve with labour.</description>
+		<iconPath>Genes/Icons/Worker</iconPath>
+		<displayOrderInCategory>3</displayOrderInCategory>
+
+		<exclusionTags>
+			<li>rjw_genes_hive_caste</li>
+		</exclusionTags>
+
+		<conditionalStatAffecters>
+			<li Class="RJW_Genes.ConditionalStatAffecter_QueenAbsent">
+				<statFactors>
+					<MoveSpeed>0.7</MoveSpeed>
+				</statFactors>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+			<li Class="RJW_Genes.ConditionalStatAffecter_MultipleQueens">
+				<statFactors>
+					<MoveSpeed>0.7</MoveSpeed>
+				</statFactors>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+			<li Class="RJW_Genes.ConditionalStatAffecter_QueenCloseBy">
+				<statFactors>
+					<MoveSpeed>1.2</MoveSpeed>
+					<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+				</statFactors>
+			</li>
+		</conditionalStatAffecters>
+
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="HiveBase">
+		<defName>rjw_genes_zealous_loyalty</defName>
+		<label>Zealous Loyalty</label>
+		<labelShortAdj>loyalty</labelShortAdj>
+		<description>Carriers of this gene are genetically wired to worship carriers of the 'Queen'-gene. They receive a massive relation-ship bonus towards the queen and a slight mood bonus. Having multiple queens in the colony causes severe distress.</description>
+		<iconPath>Genes/Icons/Loyalty</iconPath>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		
+		<exclusionTags>
+			<li>rjw_genes_swearing_loyalty</li>
+		</exclusionTags>
+
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HiveBase">
+		<defName>rjw_genes_cocoonweaver</defName>
+		<label>Cocoon Weaver</label>
+		<labelShortAdj>cocooner</labelShortAdj>
+		<description>Carriers of this gene can produce a cocoon to prepare helpless (or willing) victims for breeding.</description>
+		<iconPath>Genes/Icons/Cocoon</iconPath>
+		<displayOrderInCategory>11</displayOrderInCategory>
+		<abilities>
+			<li>rjw_genes_ability_cocoonweaver</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>rjw_genes_ability_cocoonweaver</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+	
+	<GeneDef ParentName="HiveBase">
+		<defName>rjw_genes_spawn_spelopede</defName>
+		<label>Spelopede Dispenser</label>
+		<labelShortAdj>spelopede</labelShortAdj>
+		<description>Carriers of this gene can generate tame spelopedes. Higher psychic-sensitivity will spawn more spelopedes.</description>
+		<iconPath>Genes/Icons/Spelopede_Dispenser</iconPath>
+		<displayOrderInCategory>12</displayOrderInCategory>
+		<abilities>
+			<li>rjw_genes_ability_spawn_spelopede</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>rjw_genes_ability_spawn_spelopede</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+
+	
+  <GeneDef ParentName="HiveBase">
+    <defName>rjw_genes_insectincubator</defName>
+    <label>Insect Incubator</label>	
+	<geneClass>RJW_Genes.Gene_InsectIncubator</geneClass>
+    <description>Pawns with this gene are able to hold more insect eggs.</description>
+    <iconPath>Genes/Icons/Egg</iconPath>
+    <displayOrderInCategory>52</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef ParentName="HiveBase">
+    <defName>rjw_genes_insectbreeder</defName>
+    <label>Insect Breeder</label>	
+    <description>Pawns with this gene are able to fertilize eggs with any fertile penis.</description>
+    <iconPath>Genes/Icons/Insect_Breeder</iconPath>
+    <displayOrderInCategory>53</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>rjw_genes_fervent_ovipositor</defName>
+    <label>Fervent Ovipositor</label>	
+	<geneClass>RJW_Genes.Gene_FerventOvipositor</geneClass>
+    <description>Pawns that have a female (egg producing) ovipositor produce eggs at drastically increased speed.</description>
+    <iconPath>Genes/Icons/Fervent_Ovipositor</iconPath>
+    <displayOrderInCategory>55</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+  
+</Defs>

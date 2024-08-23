@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GeneDef Name="GeneExtraGenitaliaBase" Abstract="True">
+    <displayCategory>rjw_genes_genitalia_extras</displayCategory>
+
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneExtraGenitaliaBase">
+    <defName>rjw_genes_extra_penis</defName>
+    <label>extra penis</label>
+    <description>Males of this species grow an additional penis .</description>
+    <iconPath>Genes/Icons/extra_male</iconPath>
+    <geneClass>RJW_Genes.Gene_ExtraPenis</geneClass>
+    <displayOrderInCategory>701</displayOrderInCategory>
+    <exclusionTags>
+      <li>PenisAmount</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneExtraGenitaliaBase">
+    <defName>rjw_genes_no_penis</defName>
+    <label>no penis</label>
+    <description>Males of this do not have a penis.</description>
+    <iconPath>Genes/Icons/No_Male_Genitalia</iconPath>
+    <geneClass>RJW_Genes.Gene_NoPenis</geneClass>
+    <displayOrderInCategory>702</displayOrderInCategory>
+    <exclusionTags>
+      <li>PenisAmount</li>
+    </exclusionTags>
+  </GeneDef>
+
+
+  <GeneDef ParentName="GeneExtraGenitaliaBase">
+    <defName>rjw_genes_extra_vagina</defName>
+    <label>extra vagina</label>
+    <description>Females of this species grow an additional vagina .</description>
+    <iconPath>Genes/Icons/Extra_Vagina</iconPath>
+    <geneClass>RJW_Genes.Gene_ExtraVagina</geneClass>
+    <displayOrderInCategory>703</displayOrderInCategory>
+    <exclusionTags>
+      <li>VaginaAmount</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneExtraGenitaliaBase">
+    <defName>rjw_genes_no_vagina</defName>
+    <label>no vagina</label>
+    <description>Females of this do not have a vagina.</description>
+    <iconPath>Genes/Icons/No_Vagina</iconPath>
+    <geneClass>RJW_Genes.Gene_NoVagina</geneClass>
+    <displayOrderInCategory>704</displayOrderInCategory>
+    <exclusionTags>
+      <li>VaginaAmount</li>
+    </exclusionTags>
+  </GeneDef>
+
+
+  <GeneDef ParentName="GeneExtraGenitaliaBase">
+    <defName>rjw_genes_extra_breasts</defName>
+    <label>extra breasts</label>
+    <description>Females of this species grow an additional pair of breasts .</description>
+    <iconPath>Genes/Icons/Extra_Breasts</iconPath>
+    <geneClass>RJW_Genes.Gene_ExtraBreasts</geneClass>
+    <displayOrderInCategory>705</displayOrderInCategory>
+    <exclusionTags>
+      <li>BreastAmount</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneExtraGenitaliaBase">
+    <defName>rjw_genes_no_breasts</defName>
+    <label>no breasts</label>
+    <description>Females of this do not have a pair of breasts, but only nipples.</description>
+    <iconPath>Genes/Icons/No_Breasts</iconPath>
+    <geneClass>RJW_Genes.Gene_NoBreasts</geneClass>
+    <displayOrderInCategory>706</displayOrderInCategory>
+    <exclusionTags>
+      <li>BreastAmount</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneExtraGenitaliaBase">
+    <defName>rjw_genes_extra_anus</defName>
+    <label>extra anus</label>
+    <description>This specias has an extra anus.</description>
+    <iconPath>Genes/Icons/Extra_Anus</iconPath>
+    <geneClass>RJW_Genes.Gene_ExtraAnus</geneClass>
+    <displayOrderInCategory>707</displayOrderInCategory>
+    <exclusionTags>
+      <li>AnusAmount</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneExtraGenitaliaBase">
+    <defName>rjw_genes_no_anus</defName>
+    <label>no anus</label>
+    <description>This specias has no anus.</description>
+    <iconPath>Genes/Icons/No_Anus</iconPath>
+    <geneClass>RJW_Genes.Gene_NoAnus</geneClass>
+    <displayOrderInCategory>708</displayOrderInCategory>
+    <exclusionTags>
+      <li>AnusAmount</li>
+    </exclusionTags>
+  </GeneDef>
+
+    <GeneDef ParentName="GeneExtraGenitaliaBase">
+	    <defName>rjw_genes_futa</defName>
+	    <label>futanari</label>
+	    <description>Males with this gene grow additional female genitalia, females grow additional male genitalia.</description>
+	    <iconPath>Genes/Icons/Futa</iconPath>
+	    <geneClass>RJW_Genes.Gene_Futa</geneClass>
+	    <displayOrderInCategory>709</displayOrderInCategory>
+	    <exclusionTags>
+		    <li>PenisAmount</li>
+		    <li>VaginaAmount</li>
+	    </exclusionTags>
+    </GeneDef>
+	
+  <GeneDef ParentName="GeneExtraGenitaliaBase">
+    <defName>rjw_genes_featureless_chest</defName>
+    <label>Featureless Chest</label>
+    <description>Carriers of this gene do not have breasts or nipples.</description>
+    <iconPath>Genes/Icons/No_Breasts</iconPath>
+    <geneClass>RJW_Genes.Gene_FeaturelessChest</geneClass>
+    <displayOrderInCategory>710</displayOrderInCategory>
+    <exclusionTags>
+      <li>BreastAmount</li>
+    </exclusionTags>
+  </GeneDef>
+  <!-- 
+  See Comment in `RJW_Genes.Gene_UdderBreasts` why this is currently commented out.
+  
+  <GeneDef ParentName="GeneExtraGenitaliaBase">
+    <defName>rjw_genes_udder</defName>
+    <label>udder</label>
+    <description>Carriers of this gene have udders instead of breasts.</description>
+    <iconPath>Things/Mote/Heart</iconPath>
+    <geneClass>RJW_Genes.Gene_UdderBreasts</geneClass>
+    <displayOrderInCategory>711</displayOrderInCategory>
+    <exclusionTags>
+      <li>BreastAmount</li>
+    </exclusionTags>
+  </GeneDef>
+  -->
+</Defs>

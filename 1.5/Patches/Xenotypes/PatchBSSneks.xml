@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <!-- Placeholder pending refactor of genital type genes-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Big and Small - Lamias and other Snake-People</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName = "LoS_Lamia" 
+                                  or defName = "LoS_TrueLamia" 
+                                  or defName = "Naga"
+                                  or defName = "Los_Adderman"
+                                  or defName = "Los_Anacondaman"
+                                  or defName = "Los_Snakeman"]/genes</xpath>
+          <value>
+            <li>rjw_genes_reptilian_genitalia</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName = "Nagaraj" or defName = "LoS_Silver" or defName = "LoS_Gorgon"]/genes</xpath>
+          <value>
+            <li>rjw_genes_reptilian_genitalia</li>
+            <li>rjw_genes_unbreakable</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName = "LoS_Siren"]/genes</xpath>
+          <value>
+            <li>rjw_genes_reptilian_genitalia</li>
+            <li>rjw_genes_aphrodisiac_pheromones</li>
+            <li MayRequire="rjw.sexperience">AptitudeStrong_Sex</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

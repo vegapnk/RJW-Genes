@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityDef>
+    <defName>rjw_genes_ability_flight</defName>
+    <label>fly</label>
+    <description>Fly to a short location using your wings.</description>
+    <iconPath>Genes/Icons/Succubus_Wings</iconPath>
+    <cooldownTicksRange>1250</cooldownTicksRange>
+    <hostile>false</hostile>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>fly</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>0.5</warmupTime>
+      <range>19.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <jobDef>CastJump</jobDef>
+  </AbilityDef>
+</Defs>

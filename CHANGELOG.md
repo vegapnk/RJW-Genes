@@ -1,3 +1,40 @@
+# 2.2.1 (23-08-2024)
+
+**Changes**:
+
+- Support for `1.5`, `1.4`, ... Folder-Structure
+- Salvaged the `1.4` Folder from `RJW-Genes 1.3.3`. This will be a *frozen* version. 
+- Biotechs Highmates do not get patched Hypersexual anymore. This was wished because Hypersexual is rather heavy. 
+- "No-XXX"-Genes add a `Missing Body Part` Hediff. This was wanted to work better with OTY sized apparel (#133)
+- VGE Hybridization now has a chance to be hybridized. If not met, it will continue with normal bestiality behaviour. 
+- VGE Hybridization can not produce Humans from `DogMan + Dog` anymore, unfortunately. 
+
+**Fixes**:
+
+- Fixed the usage of "Disabled" VGE Hybridization (#116)
+- Changed Version number in manifest.xml (#132)
+- Reduced Log-Level for Likes-Cumflation Debug Messages (#131)
+- Fixed the Localization String for Animal Hybrids (#144) ("Baseliner Bug" still persists, thats all RW not me)
+- Added another null-check for "Offset Lifeforce" (#120,#143)
+- Added a check for LifeForce-Empath having an active life-force gene (#143), which likely threw errors being active despite children not having life-force yet.
+- Added a map-check for LifeForce Empaths. Won't work off-map. (#120)
+- Added another Patch for `Blocked Masturbation` that disables the ThinkNode like Sexperience does (#127,#147). Thanks @TinyMechanoid333 !
+- Fixed males spawning with small-female breasts (#138) by adding a detailed check `should have breasts`
+- Added a `MayRequire="rjw.sexperience"` to the Genies Sex-Curiosity, which was a hidden dependency on sexperience (#136)
+- Updated some Labels and References in patches (#149), thanks @flock-of-birds
+- Removed the Filth-Production for Living-Cum-Bucket (#129). Hope to re-introduce it later but to remove the nullpointers some people get for now. 
+
+**Internal**:
+
+- Way more debug-logs for Animal Pregnancies.
+- Removed seperate debug-logging for Animal_BGS - Just uses the normal setting from RJW-Genes.
+- Merged the behaviour of Twinkifier and Feminizer into one `Patch_Aftersex_ApplyProgressingGeneticTransformations`. This allows for a XML-Only approach to defining more genes like this. Thanks @ArcherSaiter (#145,#150)
+- Moved all DefOfs into it's own source-folder. 
+
+**See Also**: 
+
+- [Wiki Page on Hybridization](https://github.com/vegapnk/RJW-Genes/wiki/Vanilla-Genetics-Expanded-Hybridization)
+
 # 2.2.0 (23-07-2024)
 
 ## Explanations

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Papou Race : emotional birds</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="papago"]/genes</xpath>
+			<value>
+				<li>rjw_genes_orgasm_rush</li>
+				<li>rjw_genes_tight_female_genitalia</li>
+				<li>rjw_genes_tight_anus</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
