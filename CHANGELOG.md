@@ -2,6 +2,7 @@
 
 **Changes**:
 
+- Support for `1.5`, `1.4`, ... Folder-Structure
 - Biotechs Highmates do not get patched Hypersexual anymore. This was wished because Hypersexual is rather heavy. 
 - "No-XXX"-Genes add a `Missing Body Part` Hediff. This was wanted to work better with OTY sized apparel (#133)
 - VGE Hybridization now has a chance to be hybridized. If not met, it will continue with normal bestiality behaviour. 
@@ -27,6 +28,7 @@
 - Way more debug-logs for Animal Pregnancies.
 - Removed seperate debug-logging for Animal_BGS - Just uses the normal setting from RJW-Genes.
 - Merged the behaviour of Twinkifier and Feminizer into one `Patch_Aftersex_ApplyProgressingGeneticTransformations`. This allows for a XML-Only approach to defining more genes like this. Thanks @ArcherSaiter (#145,#150)
+- Moved all DefOfs into it's own source-folder. 
 
 **See Also**: 
 

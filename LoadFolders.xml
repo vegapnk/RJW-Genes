@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <loadFolders>
 	<v1.5>
-		<li>/</li>
+		<li>1.5</li>
 		<li>Common</li>
 		<!-- Mods -->
-		<li IfModNotActive="asmr.rjw.racesupport">Mods/NotRaceSupport</li>
-		<li IfModActive="vanillaracesexpanded.sanguophage">Mods/Sanguophage</li>
-		<li IfModActive="vanillaracesexpanded.saurid">Mods/Saurid</li>
-		<li IfModActive="vanillaracesexpanded.phytokin">Mods/Phytokin</li>
-		<li IfModActive="vanillaracesexpanded.lycanthrope">Mods/Lycanthrope</li>
-		<li IfModActive="vanillaracesexpanded.highmate">Mods/Highmate</li>
-		<li IfModActive="vanillaracesexpanded.genie">Mods/Genie</li>
-		<li IfModActive="vanillaracesexpanded.fungoid">Mods/Fungoid</li>
-		<li IfModActive="vanillaracesexpanded.archon">Mods/Archon</li>
-		<li IfModActive="vanillaracesexpanded.android">Mods/Android</li>
-		<li IfModActive="VanillaExpanded.VGeneticsE">Mods/VE_Genetics</li>
-		<li IfModActive="LustLicentia.RJWLabs">Mods/LicentiaLabs</li>
-		<li IfModActive="rjw.sexperience">Mods/Sexperience</li>
+		<li IfModActive="LustLicentia.RJWLabs">1.5/Mods/LicentiaLabs</li>
+		<li IfModActive="rjw.sexperience">1.5/Mods/Sexperience</li>
+		<li IfModNotActive="asmr.rjw.racesupport">1.5/Mods/NotRaceSupport</li>
+		<li IfModActive="vanillaracesexpanded.sanguophage">1.5/Mods/Sanguophage</li>
+		<li IfModActive="vanillaracesexpanded.saurid">1.5/Mods/Saurid</li>
+		<li IfModActive="vanillaracesexpanded.phytokin">1.5/Mods/Phytokin</li>
+		<li IfModActive="vanillaracesexpanded.lycanthrope">1.5/Mods/Lycanthrope</li>
+		<li IfModActive="vanillaracesexpanded.highmate">1.5/Mods/Highmate</li>
+		<li IfModActive="vanillaracesexpanded.genie">1.5/Mods/Genie</li>
+		<li IfModActive="vanillaracesexpanded.fungoid">1.5/Mods/Fungoid</li>
+		<li IfModActive="vanillaracesexpanded.archon">1.5/Mods/Archon</li>
+		<li IfModActive="vanillaracesexpanded.android">1.5/Mods/Android</li>
+		<li IfModActive="VanillaExpanded.VGeneticsE">1.5/Mods/VE_Genetics</li>
 	</v1.5>
 </loadFolders>
