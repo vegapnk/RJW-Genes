@@ -48,11 +48,11 @@ namespace RJW_Genes
             HediffDef penisForGene = GenitaliaUtility.GetPenisForGene(GenitaliaUtility.GetGenitaliaTypeGeneForPawn(this.pawn));
             BodyPartRecord part = Genital_Helper.get_genitalsBPR(this.pawn);
             this.additional_genital = HediffMaker.MakeHediff(penisForGene, this.pawn, null);
-            CompHediffBodyPart compHediffBodyPart = this.additional_genital.TryGetComp<CompHediffBodyPart>();
-            if (compHediffBodyPart != null)
+            HediffComp_SexPart hediffCompSexPart = this.additional_genital.TryGetComp<HediffComp_SexPart>();
+            if (hediffCompSexPart != null)
             {
-                compHediffBodyPart.initComp(this.pawn, false);
-                compHediffBodyPart.updatesize(0f);
+                hediffCompSexPart.Init(this.pawn, false);
+                hediffCompSexPart.UpdateSeverity(0f);
             }
             this.pawn.health.AddHediff(this.additional_genital, part, null, null);
             foreach (Gene g in pawn.genes.GenesListForReading)

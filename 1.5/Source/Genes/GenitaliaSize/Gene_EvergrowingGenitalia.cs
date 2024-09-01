@@ -30,15 +30,15 @@ namespace RJW_Genes
             List<Hediff> AllPenisses = Genital_Helper.get_AllPartsHediffList(pawn).FindAll(x => Genital_Helper.is_penis(x));
             foreach(Hediff penis in AllPenisses)
             {
-                CompHediffBodyPart CompHediff = penis.TryGetComp<rjw.CompHediffBodyPart>();
+                HediffComp_SexPart CompHediff = penis.TryGetComp<rjw.HediffComp_SexPart>();
                 if (penis.Severity < 1.00)
                 {
                     penis.Severity = Math.Min(1.01f, penis.Severity + 0.05f);
                 } else {
                     if (CompHediff != null)
                     {
-                        CompHediff.SizeOwner += 0.015f;
-                        if (CompHediff.SizeOwner > 3.0f)
+                        CompHediff.originalOwnerSize += 0.015f;
+                        if (CompHediff.originalOwnerSize > 3.0f)
                         {
                             // Add Mental Hediff 
                             HandleGenitaliaSizeThoughts(pawn);
@@ -48,7 +48,7 @@ namespace RJW_Genes
 
                 // Increase Fluid
                 if (CompHediff != null)
-                    CompHediff.FluidAmmount *= 1.05f;
+                    CompHediff.partFluidFactor *= 1.05f;
             }
         }
 
@@ -57,7 +57,7 @@ namespace RJW_Genes
             List<Hediff> AllVaginas = Genital_Helper.get_AllPartsHediffList(pawn).FindAll(x => Genital_Helper.is_vagina(x));
             foreach (Hediff vagina in AllVaginas)
             {
-                CompHediffBodyPart CompHediff = vagina.TryGetComp<rjw.CompHediffBodyPart>();
+                HediffComp_SexPart CompHediff = vagina.TryGetComp<rjw.HediffComp_SexPart>();
                 if (vagina.Severity < 1.00)
                 {
                     vagina.Severity = Math.Min(1.01f, vagina.Severity + 0.05f);
@@ -66,8 +66,8 @@ namespace RJW_Genes
                 {
                     if (CompHediff != null)
                     {
-                        CompHediff.SizeOwner += 0.015f;
-                        if (CompHediff.SizeOwner > 3.0f)
+                        CompHediff.originalOwnerSize += 0.015f;
+                        if (CompHediff.originalOwnerSize > 3.0f)
                         {
                             // Add Mental Hediff 
                             HandleGenitaliaSizeThoughts(pawn);
@@ -77,7 +77,7 @@ namespace RJW_Genes
 
                 // Increase Fluid
                 if (CompHediff != null)
-                    CompHediff.FluidAmmount *= 1.025f;
+                    CompHediff.partFluidFactor *= 1.025f;
             }
         }
 
