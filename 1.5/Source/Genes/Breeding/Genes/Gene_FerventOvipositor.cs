@@ -27,11 +27,11 @@ namespace RJW_Genes
 
             if (pawn == null) return;
 
-            Hediff_PartBaseNatural OvipositorF = (Hediff_PartBaseNatural)pawn.health.hediffSet.GetFirstHediffOfDef(rjw.Genital_Helper.ovipositorF);
+            Hediff_NaturalSexPart OvipositorF = (Hediff_NaturalSexPart)pawn.health.hediffSet.GetFirstHediffOfDef(rjw.Genital_Helper.ovipositorF);
 
             if (OvipositorF == null) return;
 
-            OvipositorF.nextEggTick = Math.Max(OvipositorF.nextEggTick - MULTIPLIER, -1);
+            OvipositorF.AsHediff.TryGetComp<HediffComp_Ovipositor>().eggInterval.max = 10000 / MULTIPLIER;
 
             // DevNote: I first had a for-loop calling OviPositorF.tick(), but I fear that would be a performance sink.
             // Also, it would double other aspects as well, such as bleeding out through your insect-PP or dropping out the eggs.

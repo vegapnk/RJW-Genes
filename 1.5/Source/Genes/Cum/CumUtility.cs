@@ -13,7 +13,7 @@ namespace RJW_Genes
 
 			if (!parts.NullOrEmpty())
 			{
-				CompHediffBodyPart CompHediff;
+				HediffComp_SexPart CompHediff;
 
 				foreach (Hediff part in parts)
 				{
@@ -22,10 +22,10 @@ namespace RJW_Genes
 
 					if (rjw.Genital_Helper.is_penis(part))
 					{
-						CompHediff = part.TryGetComp<rjw.CompHediffBodyPart>();
+						CompHediff = part.TryGetComp<rjw.HediffComp_SexPart>();
 						if (CompHediff != null)
 						{
-							CompHediff.FluidAmmount *= multiplier;
+							CompHediff.partFluidFactor *= multiplier;
 						}
 					}
 				}
@@ -57,7 +57,7 @@ namespace RJW_Genes
 			float total_cum = 0;
 			if (!parts.NullOrEmpty())
 			{
-				CompHediffBodyPart CompHediff;
+				HediffComp_SexPart CompHediff;
 
 				foreach (Hediff part in parts)
 				{
@@ -66,10 +66,10 @@ namespace RJW_Genes
 
 					if (rjw.Genital_Helper.is_penis(part))
 					{
-						CompHediff = part.TryGetComp<rjw.CompHediffBodyPart>();
+						CompHediff = part.TryGetComp<rjw.HediffComp_SexPart>();
 						if (CompHediff != null)
 						{
-							total_cum += CompHediff.FluidAmmount * CompHediff.FluidModifier * multiplier;
+							total_cum += CompHediff.FluidAmount * CompHediff.Def.fluidMultiplier * multiplier;
 						}
 					}
 				}

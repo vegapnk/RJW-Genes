@@ -25,7 +25,7 @@ namespace RJW_Genes
 			if (!oldParts.NullOrEmpty())
 			{
 				Hediff replacementGenital;
-				CompHediffBodyPart CompHediff;
+				HediffComp_SexPart CompHediff;
 
 				foreach (Hediff existingGenital in oldParts)
 				{
@@ -55,11 +55,11 @@ namespace RJW_Genes
 
 					if (replacementGenital != null)
 					{
-						CompHediff = replacementGenital.TryGetComp<rjw.CompHediffBodyPart>();
+						CompHediff = replacementGenital.TryGetComp<rjw.HediffComp_SexPart>();
 						if (CompHediff != null)
 						{
-							CompHediff.initComp(pawn);
-							CompHediff.updatesize();
+							CompHediff.Init(pawn);
+							CompHediff.UpdateSeverity();
 						}
 						GenderHelper.ChangeSex(pawn, () =>
 						{
@@ -80,16 +80,18 @@ namespace RJW_Genes
         public static bool IsAnus(Hediff candidate)
         {
             return candidate.def.defName.ToLower().Contains("anus");        }
+        
+        private static bool is_breast_family(GenitalFamily family) => family switch
+        {
+	        GenitalFamily.Breasts => true,
+	        _ => false
+        };
 
 
         public static bool is_breast(Hediff hed)
         {
-            if (!GenitalPartExtension.TryGet(hed, out var ext))
-            {
-                return false;
-            }
-
-            return ext.family == rjw.Modules.Interactions.Enums.GenitalFamily.Breasts;
+	        if (hed.def is not HediffDef_SexPart def) return false;
+	        return is_breast_family(def.genitalFamily);
         }
 
         public static bool IsArtificial(Hediff candidate)
