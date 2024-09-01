@@ -3,6 +3,7 @@
 **Changes**:
 
 - Migration to RJW 5.5.0, big thanks to @prototype99 (#146)
+- Removed some Genitalia and Genes that substituted Race-Support. Golem, Pig, Ghost, Marine and Orc Genitalia are gone (for now), but an enthusiast can surely bring it back.
 
 **Fixes**:
 

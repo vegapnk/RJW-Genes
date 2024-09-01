@@ -1,4 +1,4 @@
-<!-- 
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>rjw_genes_Necro_genitalia</defName>
@@ -103,4 +103,3 @@
     <displayOrderInCategory>807</displayOrderInCategory>
   </GeneDef>
 </Defs>
--->

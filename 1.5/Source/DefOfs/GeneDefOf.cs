@@ -25,14 +25,6 @@ namespace RJW_Genes
         public static readonly GeneDef rjw_genes_crocodilian_genitalia;
         public static readonly GeneDef rjw_genes_racoon_genitalia;
         public static readonly GeneDef rjw_genes_reptilian_genitalia;
-        public static readonly GeneDef rjw_genes_Ghost_genitalia;
-        public static readonly GeneDef rjw_genes_Golem_genitalia;
-        public static readonly GeneDef rjw_genes_Marine_genitalia;
-        public static readonly GeneDef rjw_genes_Necro_genitalia;
-        public static readonly GeneDef rjw_genes_Needle_genitalia;
-        public static readonly GeneDef rjw_genes_Orc_genitalia;
-        public static readonly GeneDef rjw_genes_Pig_genitalia;
-        public static readonly GeneDef rjw_genes_Tentacle_genitalia;
         public static readonly GeneDef rjw_genes_human_genitalia;
 
         // Extra Genitalia 
