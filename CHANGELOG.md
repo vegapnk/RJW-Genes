@@ -1,5 +1,9 @@
 # 2.2.2 (xx-09-2024)
 
+**Changes**:
+
+- Migration to RJW 5.5.0, big thanks to @prototype99 (#146)
+
 **Fixes**:
 
 - Reverted the `Missing Body Part` from (#133). Causes issues at World Generation with some other Mods (#157).
