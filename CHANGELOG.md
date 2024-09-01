@@ -1,3 +1,9 @@
+# 2.2.2 (xx-09-2024)
+
+**Fixes**:
+
+- Reverted the `Missing Body Part` from (#133). Causes issues at World Generation with some other Mods (#157).
+
 # 2.2.1 (23-08-2024)
 
 **Changes**:

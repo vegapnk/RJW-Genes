@@ -34,7 +34,7 @@ namespace RJW_Genes
         public override void PostRemove()
         {
             base.PostRemove();
-            // Re-Scale the old breasts
+            // Re-Add the old breasts
             if (oldSize != null)
                 breastsToShrink.Severity = oldSize;
         }
@@ -47,6 +47,7 @@ namespace RJW_Genes
             if(breastsToShrink != null)
             {
                 oldSize = breastsToShrink.Severity;
+                //pawn.health.RemoveHediff(breastsToRemove);
                 breastsToShrink.Severity = 0f;
             }
         }
