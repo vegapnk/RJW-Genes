@@ -71,7 +71,7 @@ namespace RJW_Genes
 
         public static bool IsBreasts(Hediff candidate)
         {
-            return candidate.def.defName.ToLower().Contains("breast");
+            return candidate.def.defName.ToLower().Contains("breast") || candidate.def.defName.ToLower().Contains("udder");
         }
 
         /// <summary>
