@@ -14,6 +14,7 @@
 - Removed some Genitalia and Genes that substituted Race-Support. Golem, Pig, Ghost, Marine and Orc Genitalia are gone (for now), but an enthusiast can surely bring it back.
 - Evergrowth is not exclusive with normal genitalia-sizes anymore. 
 - "Very much Cum" Gene -> "Very much Fluid" Gene. Works for all primary genitalia of both genders now.  
+- Introduced a max-severity of 75.0 for Living Cumbucket (#153)
 
 **Fixes**:
 
