@@ -29,6 +29,7 @@
 - `GenitaliaFluidChangeExtension` and Extensible Genes that change FluidTypes.
 - Renamed GeneDef from `LitteredBirth` to `rjw_genes_littered_birth` for consistency
 - `BoundedExtension` to provide Upper and Lower Bounds for GenitaliaSizes. 
+- Fixed a tiny yellow startup-warning by deleting a duplicate file. 
 
 *Beta-1* was put up on 03-09-2024.
 

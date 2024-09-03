@@ -23,7 +23,7 @@
   <GeneDef>
     <defName>rjw_genes_likes_cumflation</defName>
     <label>likes cumflation</label>
-    <displayCategory>rjw_genes_cum</displayCategory>
+    <displayCategory>rjw_genes_fluids</displayCategory>
     <description>This Xenotype loves being cumflated.</description>
     <iconPath>Genes/Icons/Cumflation</iconPath>
     <displayOrderInCategory>536</displayOrderInCategory>
@@ -49,7 +49,7 @@
   <GeneDef>
     <defName>rjw_genes_cumflation_immunity</defName>
     <label>cumflation immunity</label>
-    <displayCategory>rjw_genes_cum</displayCategory>
+    <displayCategory>rjw_genes_fluids</displayCategory>
     <description>This Xenotype cannot get cumflated.</description>
     <iconPath>Genes/Icons/Cumflation_Immunity</iconPath>
     <displayOrderInCategory>537</displayOrderInCategory>
@@ -68,7 +68,7 @@
   <GeneDef>
     <defName>rjw_genes_generous_donor</defName>
     <label>generous donor</label>
-    <displayCategory>rjw_genes_cum</displayCategory>
+    <displayCategory>rjw_genes_fluids</displayCategory>
     <description>When this Xenotype transfers nutrition via cumshot, the giver will not get hungry. (Licentia Configuration for Transfer Nutrition must be enabled).</description>
     <iconPath>Genes/Icons/Generous_Donor</iconPath>
     <displayOrderInCategory>538</displayOrderInCategory>
