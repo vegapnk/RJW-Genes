@@ -3,7 +3,7 @@ using rjw;
 
 namespace RJW_Genes
 {
-    public class CumUtility
+    public class FluidUtility
     {
 
         public static void MultiplyFluidAmountBy(Pawn pawn, float multiplier)
@@ -11,36 +11,20 @@ namespace RJW_Genes
 			var partBPR = Genital_Helper.get_genitalsBPR(pawn);
 			var parts = Genital_Helper.get_PartsHediffList(pawn, partBPR);
 
-			if (!parts.NullOrEmpty())
+			foreach (Hediff part in parts)
 			{
-				HediffComp_SexPart CompHediff;
-
-				foreach (Hediff part in parts)
-				{
-					if (GenitaliaChanger.IsArtificial(part))
-						continue;
-
-					if (rjw.Genital_Helper.is_penis(part))
-					{
-						CompHediff = part.TryGetComp<rjw.HediffComp_SexPart>();
-						if (CompHediff != null)
-						{
-							CompHediff.partFluidFactor *= multiplier;
-						}
-					}
-				}
-
+				// Right now: Ignore Breasts, only do 
+				if (part is ISexPartHediff sexPart && (Genital_Helper.is_penis(part) || Genital_Helper.is_vagina(part)))
+					sexPart.GetPartComp().partFluidFactor *= multiplier;
 			}
-
 		}
 
 		/// <summary>
 		/// Looks up the "MultiplierExtensions" Value for a given Gene, with a fall back. 
 		/// Returns the fallback if there is no Extension, or if the Multiplier is smaller than 0. 
 		/// </summary>
-
-        public static float LookupCumMultiplier(Gene gene, float FALLBACK = 3.0f) => LookupCumMultiplier(gene.def,FALLBACK);
-        public static float LookupCumMultiplier(GeneDef def, float FALLBACK = 3.0f)
+        public static float LookupFluidMultiplier(Gene gene, float FALLBACK = 3.0f) => LookupFluidMultiplier(gene.def,FALLBACK);
+        public static float LookupFluidMultiplier(GeneDef def, float FALLBACK = 3.0f)
         {
             MultiplierExtension multiplier = def.GetModExtension<MultiplierExtension>();
             if (multiplier == null || multiplier.multiplier < 0)
@@ -54,28 +38,21 @@ namespace RJW_Genes
 		{
 			var partBPR = Genital_Helper.get_genitalsBPR(pawn);
 			var parts = Genital_Helper.get_PartsHediffList(pawn, partBPR);
-			float total_cum = 0;
+			float total_fluid = 0;
 			if (!parts.NullOrEmpty())
 			{
-				HediffComp_SexPart CompHediff;
-
 				foreach (Hediff part in parts)
 				{
 					if (GenitaliaChanger.IsArtificial(part))
 						continue;
 
-					if (rjw.Genital_Helper.is_penis(part))
+					if (part is ISexPartHediff sexPart)
 					{
-						CompHediff = part.TryGetComp<rjw.HediffComp_SexPart>();
-						if (CompHediff != null)
-						{
-							total_cum += CompHediff.FluidAmount * CompHediff.Def.fluidMultiplier * multiplier;
-						}
+						total_fluid += sexPart.GetPartComp().FluidAmount;
 					}
 				}
-
 			}
-			return total_cum;
+			return total_fluid;
 
 		}
 	}

@@ -69,10 +69,10 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_blocked_masturbation;
 		public static readonly GeneDef rjw_genes_basic_rut;
 
-        // Cum 
-        public static readonly GeneDef rjw_genes_no_cum;
-		public static readonly GeneDef rjw_genes_much_cum;
-		public static readonly GeneDef rjw_genes_very_much_cum;
+        // Fluids 
+        public static readonly GeneDef rjw_genes_no_fluid;
+		public static readonly GeneDef rjw_genes_much_fluid;
+		public static readonly GeneDef rjw_genes_very_much_fluid;
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_likes_cumflation;
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_cumflation_immunity;
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_generous_donor;
