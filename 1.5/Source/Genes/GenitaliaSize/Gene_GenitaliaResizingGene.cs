@@ -68,5 +68,17 @@ namespace RJW_Genes
         /// </summary>
         public abstract void Resize();
 
+        public (float,float) GetResizingBounds()
+        {
+
+            BoundedExtension bounds = def.GetModExtension<BoundedExtension>();
+            if (bounds != null )
+                return (bounds.minimum,bounds.maximum);
+            else
+            {
+                ModLog.Warning($"Tried to read BoundedExtension for {this.def} but failed - going default values.");
+            } 
+                return (0.0f, 1.0f);
+        }
     }
 }

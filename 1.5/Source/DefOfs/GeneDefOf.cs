@@ -69,10 +69,10 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_blocked_masturbation;
 		public static readonly GeneDef rjw_genes_basic_rut;
 
-        // Cum 
-        public static readonly GeneDef rjw_genes_no_cum;
-		public static readonly GeneDef rjw_genes_much_cum;
-		public static readonly GeneDef rjw_genes_very_much_cum;
+        // Fluids 
+        public static readonly GeneDef rjw_genes_no_fluid;
+		public static readonly GeneDef rjw_genes_much_fluid;
+		public static readonly GeneDef rjw_genes_very_much_fluid;
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_likes_cumflation;
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_cumflation_immunity;
 		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_generous_donor;
@@ -85,7 +85,7 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_homosexual;
 		public static readonly GeneDef rjw_genes_bisexual;
 		public static readonly GeneDef rjw_genes_no_sex_need;
-        public static readonly GeneDef LitteredBirths;
+        public static readonly GeneDef rjw_genes_littered_births;
 
         // Damage & Side Effects 
         [MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_elasticity;
@@ -105,6 +105,7 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_pregnancy_overwrite;
 		public static readonly GeneDef rjw_genes_feminizer;
 		public static readonly GeneDef rjw_genes_twinkifier;
+		public static readonly GeneDef rjw_genes_electric_satisfaction;
 
         // Cosmetic
         public static readonly GeneDef rjw_genes_succubus_tail;

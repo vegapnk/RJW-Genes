@@ -5,6 +5,7 @@
         <hediffClass>HediffWithComps</hediffClass>
         <label>filled living cumbucket</label>
         <description>This pawn is a (filled) living cum bucket. Thanks to a generous donation, this pawn will slowly generate cum for pickup.</description>
+		    <maxSeverity>75.0</maxSeverity>
         <defaultLabelColor>(240,200,110)</defaultLabelColor>
         <scenarioCanAdd>false</scenarioCanAdd>
         <!-- <maxSeverity>1.0</maxSeverity> -->

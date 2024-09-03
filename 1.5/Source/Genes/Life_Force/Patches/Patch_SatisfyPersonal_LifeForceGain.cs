@@ -141,7 +141,7 @@ namespace RJW_Genes
 
 		public static float TotalFertilinAmount(SexProps props, float multiplier)
         {
-			float total_fluid = CumUtility.GetTotalFluidAmount(props.pawn) / 100;
+			float total_fluid = FluidUtility.GetTotalFluidAmount(props.pawn) / 100;
 
 			//More in the tank means more to give
 			if (props.pawn.Has(Quirk.Messy))

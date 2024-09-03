@@ -20,7 +20,7 @@ namespace RJW_Genes
             bool randomTwinsRoll;
             int totalBirths;
             bool laborStateIsNull = !laborStateMap.ContainsKey(__instance.pawn.ThingID);
-            bool hasLitteredBirthsGene = __instance.pawn.genes.HasActiveGene(GeneDefOf.LitteredBirths);
+            bool hasLitteredBirthsGene = __instance.pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_littered_births);
 
             // we'll never do additional processing if this is the guaranteed last birth (eg birth #4)
             if (!laborStateIsNull && laborStateMap.TryGetValue(__instance.pawn.ThingID).birthCount == 4)
@@ -105,7 +105,7 @@ namespace RJW_Genes
         public static void Hediff_LaborPushing_PostRemovedPostFix(ref Hediff_LaborPushing __instance)
         {
             bool hasAgitator = __instance.pawn.health.hediffSet.HasHediff(HediffDef.Named("OvaryAgitator"));
-            bool hasLitteredBirthsGene = __instance.pawn.genes.HasActiveGene(GeneDefOf.LitteredBirths);
+            bool hasLitteredBirthsGene = __instance.pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_littered_births);
             bool laborStateIsNull = !laborStateMap.ContainsKey(__instance.pawn.ThingID);
             LaborState currentLaborState;
             laborStateMap.TryGetValue(__instance.pawn.ThingID, out currentLaborState);

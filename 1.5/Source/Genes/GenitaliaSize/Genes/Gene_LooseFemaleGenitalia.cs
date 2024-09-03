@@ -6,7 +6,8 @@ namespace RJW_Genes
     {
         public override void Resize()
         {
-            SizeAdjuster.AdjustAllVaginaSizes(pawn, 0.5f, 1.0f);
+            var bounds = this.GetResizingBounds();
+            SizeAdjuster.AdjustAllVaginaSizes(pawn, bounds.Item1, bounds.Item2);
         }
     }
 }
