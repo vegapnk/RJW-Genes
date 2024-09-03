@@ -15,6 +15,9 @@
 - Evergrowth is not exclusive with normal genitalia-sizes anymore. 
 - "Very much Cum" Gene -> "Very much Fluid" Gene. Works for all primary genitalia of both genders now.  
 - Introduced a max-severity of 75.0 for Living Cumbucket (#153)
+- Genitalia-Size Genes are now XML-Configurable
+- Genitalia-Size genes are now slightly more pronounced - e.g. large male genitalia go from (0.6 -> 1.01) instead of (0.5 -> 1.0). People were a bit unhappy with seeing "average" penises on their large male genitalia pawns.
+
 
 **Fixes**:
 
@@ -24,7 +27,7 @@
 
 - `GenitaliaFluidChangeExtension` and Extensible Genes that change FluidTypes.
 - Renamed GeneDef from `LitteredBirth` to `rjw_genes_littered_birth` for consistency
-
+- `BoundedExtension` to provide Upper and Lower Bounds for GenitaliaSizes. 
 
 # 2.2.1 (23-08-2024)
 

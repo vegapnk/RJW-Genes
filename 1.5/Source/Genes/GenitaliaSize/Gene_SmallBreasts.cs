@@ -7,7 +7,10 @@ namespace RJW_Genes
         public override void Resize()
         {
             if (GenitaliaUtility.ShouldHaveBreasts(this.pawn))
-                SizeAdjuster.AdjustAllBreastSizes(pawn, 0.0f, 0.5f);
+            {
+                var bounds = this.GetResizingBounds();
+                SizeAdjuster.AdjustAllBreastSizes(pawn, bounds.Item1, bounds.Item2);
+            }
         }
     }
 }

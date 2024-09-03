@@ -4,7 +4,8 @@
     {
         public override void Resize()
         {
-            SizeAdjuster.AdjustAllPenisSizes(pawn, 0.5f, 1.0f);
+            var bounds = this.GetResizingBounds();
+            SizeAdjuster.AdjustAllPenisSizes(pawn, bounds.Item1, bounds.Item2);
         }
     }
 }
