@@ -7,6 +7,7 @@
 **Additions**:
 
 - Genes that change Fluid-Types: Milk-Penis, Cum-Breasts & Insect-Spunk. These only overwrite existing Fluid, so if you have a Ovipositor pawn it will make InsectSpunk anyway.
+- Gene: Electric Satisfaction. Charges nearby powernets on orgasm. 
 
 **Changes**:
 
@@ -28,6 +29,8 @@
 - `GenitaliaFluidChangeExtension` and Extensible Genes that change FluidTypes.
 - Renamed GeneDef from `LitteredBirth` to `rjw_genes_littered_birth` for consistency
 - `BoundedExtension` to provide Upper and Lower Bounds for GenitaliaSizes. 
+
+*Beta-1* was put up on 03-09-2024.
 
 # 2.2.1 (23-08-2024)
 

@@ -186,6 +186,7 @@
     <Compile Include="Genes\Special\Defs\GeneAlteringExtension.cs" />
     <Compile Include="Genes\Special\Defs\HormonalSalivaExtension.cs" />
     <Compile Include="Genes\Special\Patches\Patch_AgeDrain.cs" />
+    <Compile Include="Genes\Special\Patches\Patch_ElectricSatisfaction.cs" />
     <Compile Include="Genes\Special\Patches\Patch_GeneticSexSwap.cs" />
     <Compile Include="Genes\Special\Patches\Patch_GeneticSexThief.cs" />
     <Compile Include="Genes\Special\Patches\Patch_HormonalSaliva.cs" />
