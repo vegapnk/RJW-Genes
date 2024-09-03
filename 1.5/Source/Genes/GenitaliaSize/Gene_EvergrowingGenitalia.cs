@@ -31,19 +31,19 @@ namespace RJW_Genes
             foreach(Hediff penis in AllPenisses)
             {
                 HediffComp_SexPart CompHediff = penis.TryGetComp<rjw.HediffComp_SexPart>();
-                if (penis.Severity < 1.00)
+                if (CompHediff.baseSize <= 1.00f)
+                    CompHediff.baseSize += 0.10f;
+                else
                 {
-                    penis.Severity = Math.Min(1.01f, penis.Severity + 0.05f);
-                } else {
-                    if (CompHediff != null)
-                    {
-                        CompHediff.originalOwnerSize += 0.015f;
-                        if (CompHediff.originalOwnerSize > 3.0f)
-                        {
-                            // Add Mental Hediff 
-                            HandleGenitaliaSizeThoughts(pawn);
-                        }
-                    }
+                    //CompHediff.ForceSize(CompHediff.Size + 0.05f);
+                    CompHediff.originalOwnerSize += 0.05f;
+                }
+                CompHediff.UpdateSeverity();
+
+                if (CompHediff.originalOwnerSize > 3.0f)
+                {
+                    // Add Mental Hediff 
+                    HandleGenitaliaSizeThoughts(pawn);
                 }
 
                 // Increase Fluid
@@ -58,23 +58,22 @@ namespace RJW_Genes
             foreach (Hediff vagina in AllVaginas)
             {
                 HediffComp_SexPart CompHediff = vagina.TryGetComp<rjw.HediffComp_SexPart>();
-                if (vagina.Severity < 1.00)
-                {
-                    vagina.Severity = Math.Min(1.01f, vagina.Severity + 0.05f);
-                }
+                if (CompHediff.baseSize <= 1.00f)
+                    CompHediff.baseSize += 0.10f;
                 else
                 {
-                    if (CompHediff != null)
-                    {
-                        CompHediff.originalOwnerSize += 0.015f;
-                        if (CompHediff.originalOwnerSize > 3.0f)
-                        {
-                            // Add Mental Hediff 
-                            HandleGenitaliaSizeThoughts(pawn);
-                        }
-                    }
-                }
 
+                    CompHediff.originalOwnerSize += 0.05f;
+                }
+                    //CompHediff.ForceSize(CompHediff.Size + 0.05f);
+                    //CompHediff.originalOwnerSize += 0.05f;
+                CompHediff.UpdateSeverity();
+
+                if (CompHediff.baseSize > 3.0f)
+                {
+                    // Add Mental Hediff 
+                    HandleGenitaliaSizeThoughts(pawn);
+                }
                 // Increase Fluid
                 if (CompHediff != null)
                     CompHediff.partFluidFactor *= 1.025f;
@@ -83,17 +82,17 @@ namespace RJW_Genes
 
         private void HandleGenitaliaSizeThoughts(Pawn pawn)
         {
-            Hediff hybridsThoughts = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.rjw_genes_evergrowth_sideeffect);
+            Hediff sizeThought = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.rjw_genes_evergrowth_sideeffect);
 
-            if (hybridsThoughts != null)
+            if (sizeThought != null)
             {
-                hybridsThoughts.Severity += 0.025f;
+                sizeThought.Severity += 0.025f;
             }
             else
             {
-                hybridsThoughts = HediffMaker.MakeHediff(HediffDefOf.rjw_genes_evergrowth_sideeffect, pawn);
-                hybridsThoughts.Severity = 0.1f;
-                pawn.health.AddHediff(hybridsThoughts);
+                sizeThought = HediffMaker.MakeHediff(HediffDefOf.rjw_genes_evergrowth_sideeffect, pawn);
+                sizeThought.Severity = 0.1f;
+                pawn.health.AddHediff(sizeThought);
 
                 if (!xxx.is_nympho(pawn))
                 {
