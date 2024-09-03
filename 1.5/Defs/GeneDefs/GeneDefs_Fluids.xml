@@ -109,7 +109,7 @@
 
   <GeneDef ParentName="GeneFluidType">
     <defName>rjw_genes_fluid_milk_penis</defName>
-    <label>cum milk</label>
+    <label>milk cum</label>
     <description>Penises of this xenotype produce milk.</description>
     <iconPath>Genes/Icons/RoundC</iconPath>
     <displayOrderInCategory>313</displayOrderInCategory>
