@@ -2,7 +2,6 @@ using rjw;
 
 namespace RJW_Genes
 {
-    // bleh plural attributive noun in keeping with naming convention
     public class Gene_GenitaliaType : RJW_Gene
     {
         public override void PostMake()

@@ -121,14 +121,10 @@
     <iconPath>Genes/Icons/Big_Male_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_EvergrowingGenitalia</geneClass>
     <displayOrderInCategory>767</displayOrderInCategory>
-    <exclusionTags>
-      <li>PenisSize</li>
-      <li>VaginaSize</li>
-    </exclusionTags>
     <modExtensions>
         	<li Class="RJW_Genes.TickIntervalExtension">
 				<!-- One day has 60k ticks-->
-				<tickInterval>60000</tickInterval>
+				<tickInterval>250</tickInterval>
 			</li>
 		</modExtensions>
   </GeneDef> 
