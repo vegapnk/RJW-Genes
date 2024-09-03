@@ -68,6 +68,8 @@
     <Compile Include="Genes\Breeding\Genes\Gene_Rut.cs" />
     <Compile Include="Genes\Breeding\Patches\Patch_BlockedMasturbation.cs" />
     <Compile Include="Genes\Breeding\Patches\Patch_BlockedMasturbation_ThinkNodeFappin.cs" />
+    <Compile Include="Genes\Fluid\Defs\GenitaliaFluidChangeExtension.cs" />
+    <Compile Include="Genes\Fluid\Genes\Gene_ChangeFluidType.cs" />
     <Compile Include="Genes\Fluid\HediffComp_ProcessCumbucket.cs" />
     <Compile Include="Genes\Fluid\HediffsCompProperties_ProcessCumbucketMTB.cs" />
     <Compile Include="Genes\Fluid\JobDriver_ProcessingCumbucket.cs" />

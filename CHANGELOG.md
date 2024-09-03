@@ -1,4 +1,12 @@
-# 2.2.2 (xx-09-2024)
+# 2.3.0 (xx-09-2024)
+
+**Summary**:
+
+- Migration to RJW 5.5.0, big thanks to @prototype99 (#146)
+
+**Additions**:
+
+- Genes that change Fluid-Types: Milk-Penis, Cum-Breasts & Insect-Spunk. These only overwrite existing Fluid, so if you have a Ovipositor pawn it will make InsectSpunk anyway.
 
 **Changes**:
 
@@ -10,6 +18,10 @@
 **Fixes**:
 
 - Reverted the `Missing Body Part` from (#133). Causes issues at World Generation with some other Mods (#157).
+
+**Internal**:
+
+- DefModExtension and Extensible Genes that change FluidTypes. 
 
 # 2.2.1 (23-08-2024)
 

@@ -64,4 +64,60 @@
     </modExtensions>
   </GeneDef>
 
+
+  <GeneDef Name="GeneFluidType" Abstract="True">
+    <displayCategory>rjw_genes_fluids</displayCategory>
+    <randomChosen>false</randomChosen>
+    <geneClass>RJW_Genes.Gene_ChangeFluidType</geneClass>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+        Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+        <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneFluidType">
+    <defName>rjw_genes_fluid_insect_spunk</defName>
+    <label>insect spunk</label>
+    <description>Penises and Vaginas with this gene produce insect spunk.</description>
+    <iconPath>Genes/Icons/RoundC</iconPath>
+    <displayOrderInCategory>311</displayOrderInCategory>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaFluidChangeExtension">
+        <penisFluidReplacement>InsectSpunk</penisFluidReplacement>
+        <vaginaFluidReplacement>InsectSpunk</vaginaFluidReplacement>
+        <!-- <breastFluidReplacement>Cum</breastFluidReplacement> -->
+        <!-- <otherFluidReplacement>Cum</otherFluidReplacement>   -->
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneFluidType">
+    <defName>rjw_genes_fluid_cum_breasts</defName>
+    <label>cum milk</label>
+    <description>Breasts of this xenotype produce cum.</description>
+    <iconPath>Genes/Icons/RoundC</iconPath>
+    <displayOrderInCategory>312</displayOrderInCategory>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaFluidChangeExtension">
+        <breastFluidReplacement>Cum</breastFluidReplacement>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneFluidType">
+    <defName>rjw_genes_fluid_milk_penis</defName>
+    <label>cum milk</label>
+    <description>Penises of this xenotype produce milk.</description>
+    <iconPath>Genes/Icons/RoundC</iconPath>
+    <displayOrderInCategory>313</displayOrderInCategory>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaFluidChangeExtension">
+        <penisFluidReplacement>Milk</penisFluidReplacement>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
 </Defs>
