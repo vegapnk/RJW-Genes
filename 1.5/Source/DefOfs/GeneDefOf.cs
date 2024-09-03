@@ -85,7 +85,7 @@ namespace RJW_Genes
 		public static readonly GeneDef rjw_genes_homosexual;
 		public static readonly GeneDef rjw_genes_bisexual;
 		public static readonly GeneDef rjw_genes_no_sex_need;
-        public static readonly GeneDef LitteredBirths;
+        public static readonly GeneDef rjw_genes_littered_births;
 
         // Damage & Side Effects 
         [MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_elasticity;

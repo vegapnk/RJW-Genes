@@ -21,7 +21,9 @@
 
 **Internal**:
 
-- DefModExtension and Extensible Genes that change FluidTypes. 
+- `GenitaliaFluidChangeExtension` and Extensible Genes that change FluidTypes.
+- Renamed GeneDef from `LitteredBirth` to `rjw_genes_littered_birth` for consistency
+
 
 # 2.2.1 (23-08-2024)
 

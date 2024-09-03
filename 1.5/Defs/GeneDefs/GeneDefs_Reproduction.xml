@@ -161,7 +161,7 @@
     </GeneDef>
 
     <GeneDef>
-        <defName>LitteredBirths</defName>
+        <defName>rjw_genes_littered_births</defName>
         <label>littered births</label>
         <displayCategory>Reproduction</displayCategory>
         <description>Female carriers of this gene birth litters instead of just one baby, with a
