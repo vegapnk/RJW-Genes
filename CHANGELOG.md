@@ -13,12 +13,12 @@
 
 - Migration to RJW 5.5.0, big thanks to @prototype99 (#146)
 - Removed some Genitalia and Genes that substituted Race-Support. Golem, Pig, Ghost, Marine and Orc Genitalia are gone (for now), but an enthusiast can surely bring it back.
-- Evergrowth is not exclusive with normal genitalia-sizes anymore. 
+- `rjw_genes_evergrowth` is not exclusive with normal genitalia-sizes anymore. 
 - "Very much Cum" Gene -> "Very much Fluid" Gene. Works for all primary genitalia of both genders now.  
 - Introduced a max-severity of 75.0 for Living Cumbucket (#153)
 - Genitalia-Size Genes are now XML-Configurable
 - Genitalia-Size genes are now slightly more pronounced - e.g. large male genitalia go from (0.6 -> 1.01) instead of (0.5 -> 1.0). People were a bit unhappy with seeing "average" penises on their large male genitalia pawns.
-
+- Due to the pending migration, `rjw_genes_evergrowth` and `rjw_genes_hormonal_saliva` do not produce *oversized* genitalia anymore - they just max out at the moment. I will work on getting this back. 
 
 **Fixes**:
 

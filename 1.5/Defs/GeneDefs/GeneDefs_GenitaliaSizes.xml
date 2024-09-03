@@ -172,7 +172,7 @@
     <modExtensions>
         	<li Class="RJW_Genes.TickIntervalExtension">
 				<!-- One day has 60k ticks-->
-				<tickInterval>250</tickInterval>
+				<tickInterval>60000</tickInterval>
 			</li>
 		</modExtensions>
   </GeneDef> 

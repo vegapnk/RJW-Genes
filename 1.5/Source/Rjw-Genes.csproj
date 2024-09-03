@@ -86,7 +86,6 @@
     <Compile Include="Genes\Diseases\Patches\Patch_SecondaryRomanceChanceFactor_Gene_SizeBlinded.cs" />
     <Compile Include="Genes\Diseases\Thoughts\ThoughtWorker_HasMoreDiseasesThanMe_Social.cs" />
     <Compile Include="Genes\Diseases\Thoughts\ThoughtWorker_SizeBlinded_Social.cs" />
-    <Compile Include="Genes\GenitaliaSize\Patch_PartSizeCalculator_AllowOversized.cs" />
     <Compile Include="Common\Defs\BoundedExtension.cs" />
     <Compile Include="Genes\Life_Force\Events\SuccubusVisit\IncidentWorker_SuccubusVisit.cs" />
     <Compile Include="Genes\Life_Force\Events\SuccubusVisit\LordJob_SuccubusVisit.cs" />
