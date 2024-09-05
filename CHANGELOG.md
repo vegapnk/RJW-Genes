@@ -8,6 +8,7 @@
 
 - Genes that change Fluid-Types: Milk-Penis, Cum-Breasts & Insect-Spunk. These only overwrite existing Fluid, so if you have a Ovipositor pawn it will make InsectSpunk anyway.
 - Gene: Electric Satisfaction. Charges nearby powernets on orgasm. 
+- Gene: Genetic Disease Carrier. Allows to spread diseases for a week while being immune against them. Chances follow normal infection. (#135)
 
 **Changes**:
 

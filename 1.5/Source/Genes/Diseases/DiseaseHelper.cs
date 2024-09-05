@@ -74,7 +74,7 @@ namespace RJW_Genes
                     .ToList();
             }
 
-            List<GeneDef> carrierResults = GetGeneticDiseaseGenes(pawn);
+            List<GeneDef> carrierResults = GetGeneticDiseasesGenesFromDiseaseCarrier(pawn);
             diseases.AddRange(carrierResults);
 
             return diseases;
@@ -159,12 +159,13 @@ namespace RJW_Genes
         {
             if (disease == null || pawn == null) return false;
 
-            if (GeneUtility.HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_disease_carrier))
+            if (!GeneUtility.HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_disease_carrier))
                 return false;
             var store = GetOrCreateDiseaseStorageHediff(pawn).TryGetComp<HediffComp_DiseaseStorage>();
             if (store == null) return false;
 
             store.StoreDisease(disease);
+            ModLog.Debug($"DiseaseCarrier: Stored {disease} in {pawn}");
             return true;
         }
 

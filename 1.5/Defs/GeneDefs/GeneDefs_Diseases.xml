@@ -205,7 +205,7 @@
 
         <modExtensions>
             <li Class="RJW_Genes.GeneticDiseaseExtension">
-                <infectionChance>1.05</infectionChance>
+                <infectionChance>0.05</infectionChance>
             </li>
         </modExtensions>
     </GeneDef>

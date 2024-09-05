@@ -41,11 +41,10 @@ namespace RJW_Genes
 
         private static void TryTransferGeneticDiseases(Pawn infector, Pawn infected, SexProps props)
         {
-            
             foreach (GeneDef disease in DiseaseHelper.GetGeneticDiseaseGenes(infector)) {
                 ModLog.Debug($"Found genetic disease {disease} in {infector}, trying to infect {infected}");
 
-                //DiseaseHelper.TryStoreGeneticDiseaseInCarrier(disease, infected);
+                DiseaseHelper.TryStoreGeneticDiseaseInCarrier(disease, infected);
                 if (DiseaseHelper.IsImmuneAgainstGeneticDisease(infected,disease))
                     continue;
 

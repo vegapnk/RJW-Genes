@@ -11,38 +11,27 @@ namespace RJW_Genes
     {
         public HediffCompProperties_DiseaseStorage Props => (HediffCompProperties_DiseaseStorage)this.props;
 
-        List<int> RemainingTicks = new List<int>();
-        List<GeneDef> StoredDiseases = new List<GeneDef>();
+        List<int> remainingTicks = new List<int>();
+        List<GeneDef> storedDiseases = new List<GeneDef>();
 
         public void StoreDisease(GeneDef disease)
         {
-            if (StoredDiseases.Contains(disease)) {
-                RemainingTicks[StoredDiseases.IndexOf(disease)] = Props.ticksThatDiseasesAreStored;
+            if (storedDiseases.Contains(disease)) {
+                remainingTicks[storedDiseases.IndexOf(disease)] = Props.ticksThatDiseasesAreStored;
             } else
             {
-                StoredDiseases.Add(disease);
-                RemainingTicks.Add(Props.ticksThatDiseasesAreStored);
+                storedDiseases.Add(disease);
+                remainingTicks.Add(Props.ticksThatDiseasesAreStored);
             }
         }
+        public List<GeneDef> GetStoredDiseases() { return storedDiseases.ToList(); }
 
-        public List<GeneDef> GetStoredDiseases() { return StoredDiseases.ToList(); }
-
-        public override void CompPostTick(ref float severityAdjustment)
+        public override void CompExposeData()
         {
-            base.CompPostTick(ref severityAdjustment);
+            base.CompExposeData();
 
-            List<int> indizesToRemove = new List<int>();
-            for (int i = 0; i < RemainingTicks.Count; i++) {
-                RemainingTicks[i] = RemainingTicks[i] - 1; 
-                if (RemainingTicks[i] <= 0)
-                    indizesToRemove.Add(i);
-            }
-
-            foreach (int indice in indizesToRemove.OrderByDescending(v => v))
-            {
-                RemainingTicks.RemoveAt(indice);
-                StoredDiseases.RemoveAt(indice);
-            }
+            Scribe_Collections.Look<int>(ref remainingTicks, "remainingTicks");
+            Scribe_Collections.Look<GeneDef>(ref storedDiseases, "storedDiseases");
         }
 
     }

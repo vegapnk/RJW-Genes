@@ -48,8 +48,7 @@ namespace RJW_Genes
 
                 foreach (GeneDef diseaseGeneDef in DiseaseHelper.LookupInfectionGeneDefs(diseaseExt))
                 {
-
-                    //DiseaseHelper.TryStoreGeneticDiseaseInCarrier(diseaseGeneDef, partner);
+                    DiseaseHelper.TryStoreGeneticDiseaseInCarrier(diseaseGeneDef, partner);
                     if (DiseaseHelper.IsImmuneAgainstGeneticDisease(partner, diseaseGeneDef)) 
                         continue;
 

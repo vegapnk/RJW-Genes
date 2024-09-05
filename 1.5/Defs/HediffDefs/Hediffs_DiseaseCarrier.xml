@@ -17,6 +17,12 @@
                 <ticksThatDiseasesAreStored>300000</ticksThatDiseasesAreStored>
             </li>
         </comps>
+        <stages>
+            <li>
+              <label>active</label>
+              <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
     </HediffDef>
 
 </Defs>
