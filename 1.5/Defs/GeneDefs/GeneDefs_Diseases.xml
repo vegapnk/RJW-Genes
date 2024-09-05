@@ -17,12 +17,31 @@
         <displayCategory>rjw_genes_diseases</displayCategory>
         <defName>rjw_genes_genetic_disease_immunity</defName>
         <displayOrderInCategory>1</displayOrderInCategory>
-        <marketValueFactor>0.95</marketValueFactor>
+        <marketValueFactor>1.15</marketValueFactor>
         <label>genetic disease immunity</label>
         <description>This gene makes the pawn immune against genetic STDs and some other genes that
             imply negative side-effects.</description>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
+        <iconPath>Genes/Icons/disease_immunity</iconPath>
+        <modExtensions>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
+                Class="VanillaGenesExpanded.GeneExtension">
+                <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+                <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+            </li>
+        </modExtensions>
+    </GeneDef>
+    
+    <GeneDef>
+        <displayCategory>rjw_genes_diseases</displayCategory>
+        <defName>rjw_genes_disease_carrier</defName>
+        <displayOrderInCategory>1</displayOrderInCategory>
+        <marketValueFactor>1.1</marketValueFactor>
+        <label>disease carrier</label>
+        <description>This gene makes the pawn immune against genetic STDs, yet they are capable of spreading them on intercourse. </description>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-2</biostatMet>
         <iconPath>Genes/Icons/disease_immunity</iconPath>
         <modExtensions>
             <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"
@@ -186,7 +205,7 @@
 
         <modExtensions>
             <li Class="RJW_Genes.GeneticDiseaseExtension">
-                <infectionChance>0.05</infectionChance>
+                <infectionChance>1.05</infectionChance>
             </li>
         </modExtensions>
     </GeneDef>

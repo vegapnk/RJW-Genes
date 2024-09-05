@@ -137,6 +137,7 @@ namespace RJW_Genes
         public static readonly GeneDef rjw_genes_stretcher;
 		public static readonly GeneDef rjw_genes_infectious_blocked_masturbation;
         public static readonly GeneDef rjw_genes_infectious_rut;
+		public static readonly GeneDef rjw_genes_disease_carrier;
 
         //Other Defs
         public static readonly XenotypeDef rjw_genes_succubus;
