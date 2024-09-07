@@ -1,3 +1,9 @@
+# 2.3.1 (xx-xx-2024)
+
+**Fixes**:
+
+- Fixed some references to genes that changed names in patches. 
+
 # 2.3.0 (07-09-2024)
 
 **Summary**:

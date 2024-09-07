@@ -50,7 +50,6 @@
             <xpath>Defs/XenotypeDef[defName="BS_Corrupterd_Titan"]/genes</xpath> <!-- sic -->
             <value>
               <li>rjw_genes_rapist</li>
-              <li>rjw_genes_Tentacle_genitalia</li>
             </value>
           </match>
         </li>
