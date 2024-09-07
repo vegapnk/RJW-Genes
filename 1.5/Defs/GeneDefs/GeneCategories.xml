@@ -50,8 +50,8 @@
   </GeneCategoryDef>
 
   <GeneCategoryDef>
-    <defName>rjw_genes_cum</defName>
-    <label>cum</label>
+    <defName>rjw_genes_fluids</defName>
+    <label>fluids</label>
     <displayPriorityInXenotype>12</displayPriorityInXenotype>
   </GeneCategoryDef>
 

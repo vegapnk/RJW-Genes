@@ -1,3 +1,41 @@
+# 2.3.0 (07-09-2024)
+
+**Summary**:
+
+- Migration to RJW 5.5.0, big thanks to @prototype99 (#146)
+
+**Additions**:
+
+- Genes that change Fluid-Types: Milk-Penis, Cum-Breasts & Insect-Spunk. These only overwrite existing Fluid, so if you have a Ovipositor pawn it will make InsectSpunk anyway.
+- Gene: Electric Satisfaction. Charges nearby powernets on orgasm. 
+- Gene: Genetic Disease Carrier. Allows to spread diseases for a week while being immune against them. Chances follow normal infection. (#135)
+
+**Changes**:
+
+- Migration to RJW 5.5.0, big thanks to @prototype99 (#146)
+- Removed some Genitalia and Genes that substituted Race-Support. Golem, Pig, Ghost, Marine and Orc Genitalia are gone (for now), but an enthusiast can surely bring it back.
+- `rjw_genes_evergrowth` is not exclusive with normal genitalia-sizes anymore. 
+- "Very much Cum" Gene -> "Very much Fluid" Gene. Works for all primary genitalia of both genders now.  
+- Introduced a max-severity of 75.0 for Living Cumbucket (#153)
+- Genitalia-Size Genes are now XML-Configurable
+- Genitalia-Size genes are now slightly more pronounced - e.g. large male genitalia go from (0.6 -> 1.01) instead of (0.5 -> 1.0). People were a bit unhappy with seeing "average" penises on their large male genitalia pawns.
+- Due to the pending migration, `rjw_genes_evergrowth` and `rjw_genes_hormonal_saliva` do not produce *oversized* genitalia anymore - they just max out at the moment. I will work on getting this back. 
+
+**Fixes**:
+
+- Reverted the `Missing Body Part` from (#133). Causes issues at World Generation with some other Mods (#157,#159).
+
+**Internal**:
+
+- `GenitaliaFluidChangeExtension` and Extensible Genes that change FluidTypes.
+- Renamed GeneDef from `LitteredBirth` to `rjw_genes_littered_birth` for consistency
+- `BoundedExtension` to provide Upper and Lower Bounds for GenitaliaSizes. 
+- Fixed a tiny yellow startup-warning by deleting a duplicate file. 
+
+*Beta-1* was put up on 03-09-2024.
+
+Since then the Disease Carrier was added and a typo was fixed. 
+
 # 2.2.1 (23-08-2024)
 
 **Changes**:

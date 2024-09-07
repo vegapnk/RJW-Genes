@@ -1,6 +1,6 @@
 ﻿namespace RJW_Genes
 {
-    public class Gene_ChangeCumAmount : RJW_Gene
+    public class Gene_ChangeFluidAmount : RJW_Gene
     {
         bool has_been_fired = false;
 
@@ -9,8 +9,8 @@
         {
             base.PostMake();
 
-            float multipier = CumUtility.LookupCumMultiplier(this);
-            CumUtility.MultiplyFluidAmountBy(pawn, multipier);
+            float multipier = FluidUtility.LookupFluidMultiplier(this);
+            FluidUtility.MultiplyFluidAmountBy(pawn, multipier);
             has_been_fired = true;
         }
 
@@ -19,8 +19,8 @@
             base.PostAdd();
             if (!has_been_fired)
             {
-                float multipier = CumUtility.LookupCumMultiplier(this);
-                CumUtility.MultiplyFluidAmountBy(pawn, multipier);
+                float multipier = FluidUtility.LookupFluidMultiplier(this);
+                FluidUtility.MultiplyFluidAmountBy(pawn, multipier);
                 has_been_fired = true;
             }
         }
@@ -31,8 +31,8 @@
 
             if (has_been_fired)
             {
-                float multipier = CumUtility.LookupCumMultiplier(this);
-                CumUtility.MultiplyFluidAmountBy(pawn, 1/ multipier);
+                float multipier = FluidUtility.LookupFluidMultiplier(this);
+                FluidUtility.MultiplyFluidAmountBy(pawn, 1/ multipier);
                 has_been_fired = false;
             }
         }

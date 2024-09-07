@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Necro_genitalia</defName>
+    <label>undead genitalia</label>
+    <description>Carriers of this gene have necrotic undead genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_necro_icon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>NecroPenis</penis>
+      </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>TeratophileQuirk</Satisfiedquirk>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Orc_genitalia</defName>
+    <label>orc genitalia</label>
+    <description>Carriers of this gene have orc genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_orc_icon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>OrcPenis</penis>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Pig_genitalia</defName>
+    <label>screw genitalia</label>
+    <description>Carriers of this gene have screw genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_screw_icon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>PigPenis</penis>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Tentacle_genitalia</defName>
+    <label>alien genitalia</label>
+    <description>Carriers of this gene have alien genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_alien_icon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>TentaclePenis</penis>
+      </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>TeratophileQuirk</Satisfiedquirk>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Golem_genitalia</defName>
+    <label>golem genitalia</label>
+    <description>Carriers of this gene have rocky golem genitalia.</description>
+    <iconPath>Genes/Icons/penis_rock_icon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>GolemPenis</penis>
+      </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>TeratophileQuirk</Satisfiedquirk>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Marine_genitalia</defName>
+    <label>marine genitalia</label>
+    <description>Carriers of this gene have marine mammal like genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_marine_icon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>MarinePenis</penis>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Ghost_genitalia</defName>
+    <label>ghost genitalia</label>
+    <description>Carriers of this gene have ghost genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_ghost_icon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>GhostPenis</penis>
+        <vagina>GhostVagina</vagina>
+      </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>TeratophileQuirk</Satisfiedquirk>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+</Defs>

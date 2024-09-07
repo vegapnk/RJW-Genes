@@ -33,14 +33,14 @@ namespace RJW_Genes
             Pawn pawnA = props.pawn;
             Pawn pawnB = props.partner;
 
-            if (pawnA.genes != null && pawnA.genes.HasActiveGene(GeneDefOf.rjw_genes_living_cumbucket) && CumUtility.GetTotalFluidAmount(pawnB) > 0)
+            if (pawnA.genes != null && pawnA.genes.HasActiveGene(GeneDefOf.rjw_genes_living_cumbucket) && FluidUtility.GetTotalFluidAmount(pawnB) > 0)
             {
-                ProcessLivingCumbucket(pawnA, CumUtility.GetTotalFluidAmount(pawnB));
+                ProcessLivingCumbucket(pawnA, FluidUtility.GetTotalFluidAmount(pawnB));
             }
 
-            if (pawnB.genes != null && pawnB.genes.HasActiveGene(GeneDefOf.rjw_genes_living_cumbucket) && CumUtility.GetTotalFluidAmount(pawnA) > 0)
+            if (pawnB.genes != null && pawnB.genes.HasActiveGene(GeneDefOf.rjw_genes_living_cumbucket) && FluidUtility.GetTotalFluidAmount(pawnA) > 0)
             {
-                ProcessLivingCumbucket(pawnB, CumUtility.GetTotalFluidAmount(pawnA));
+                ProcessLivingCumbucket(pawnB, FluidUtility.GetTotalFluidAmount(pawnA));
             }
         }
 

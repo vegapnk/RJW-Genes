@@ -23,6 +23,12 @@
     <exclusionTags>
       <li>PenisSize</li>
     </exclusionTags>
+    <modExtensions>
+			<li Class="RJW_Genes.BoundedExtension">
+        <minimum>0.6</minimum>
+        <maximum>1.01</maximum>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <GeneDef ParentName="GeneGenitaliaSizeBase">
@@ -35,6 +41,12 @@
     <exclusionTags>
       <li>PenisSize</li>
     </exclusionTags>
+    <modExtensions>
+			<li Class="RJW_Genes.BoundedExtension">
+        <minimum>0.0</minimum>
+        <maximum>0.4</maximum>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <!-- Vagina -->
@@ -48,6 +60,12 @@
     <exclusionTags>
       <li>VaginaSize</li>
     </exclusionTags>
+    <modExtensions>
+			<li Class="RJW_Genes.BoundedExtension">
+        <minimum>0.6</minimum>
+        <maximum>1.01</maximum>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <GeneDef ParentName="GeneGenitaliaSizeBase">
@@ -60,6 +78,12 @@
     <exclusionTags>
       <li>VaginaSize</li>
     </exclusionTags>
+    <modExtensions>
+			<li Class="RJW_Genes.BoundedExtension">
+        <minimum>0.0</minimum>
+        <maximum>0.4</maximum>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <!-- Breasts -->
@@ -73,6 +97,12 @@
     <exclusionTags>
       <li>BreastSize</li>
     </exclusionTags>
+    <modExtensions>
+			<li Class="RJW_Genes.BoundedExtension">
+        <minimum>0.6</minimum>
+        <maximum>1.0</maximum>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <GeneDef ParentName="GeneGenitaliaSizeBase">
@@ -85,6 +115,12 @@
     <exclusionTags>
       <li>BreastSize</li>
     </exclusionTags>
+    <modExtensions>
+			<li Class="RJW_Genes.BoundedExtension">
+        <minimum>0.0</minimum>
+        <maximum>0.4</maximum>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <!-- Anus -->
@@ -98,6 +134,12 @@
     <exclusionTags>
       <li>AnusSize</li>
     </exclusionTags>
+    <modExtensions>
+			<li Class="RJW_Genes.BoundedExtension">
+        <minimum>0.6</minimum>
+        <maximum>1.0</maximum>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <GeneDef ParentName="GeneGenitaliaSizeBase">
@@ -110,6 +152,12 @@
     <exclusionTags>
       <li>AnusSize</li>
     </exclusionTags>
+    <modExtensions>
+			<li Class="RJW_Genes.BoundedExtension">
+        <minimum>0.0</minimum>
+        <maximum>0.4</maximum>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <!-- Extra -->
@@ -121,10 +169,6 @@
     <iconPath>Genes/Icons/Big_Male_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_EvergrowingGenitalia</geneClass>
     <displayOrderInCategory>767</displayOrderInCategory>
-    <exclusionTags>
-      <li>PenisSize</li>
-      <li>VaginaSize</li>
-    </exclusionTags>
     <modExtensions>
         	<li Class="RJW_Genes.TickIntervalExtension">
 				<!-- One day has 60k ticks-->

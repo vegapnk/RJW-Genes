@@ -41,33 +41,27 @@ namespace RJW_Genes
 
         private static void GrowPenisses(Pawn pawn)
         {
-
             HormonalSalivaExtension salivaExt = GeneDefOf.rjw_genes_hormonal_saliva.GetModExtension<HormonalSalivaExtension>();
 
             float size_increment = salivaExt?.sizeIncrement ?? SIZE_INCREMENT_FALLBACK;
             float maximum_body_size = salivaExt?.maxBodySize ?? MAX_BODY_SIZE_FALLBACK;
             float cum_multiplier = salivaExt?.cumMultiplier ?? CUM_MULTIPLIER_FALLBACK;
 
-
             List<Hediff> AllPenisses = Genital_Helper.get_AllPartsHediffList(pawn).FindAll(x => Genital_Helper.is_penis(x));
             foreach (Hediff penis in AllPenisses)
             {
-                CompHediffBodyPart CompHediff = penis.TryGetComp<rjw.CompHediffBodyPart>();
-                if (penis.Severity < 1.00)
+                HediffComp_SexPart CompHediff = penis.TryGetComp<rjw.HediffComp_SexPart>();
+                if (CompHediff.baseSize <= 1.00f)
+                    CompHediff.baseSize += size_increment;
+                else if (CompHediff.originalOwnerSize <= maximum_body_size)
                 {
-                    penis.Severity = Math.Min(1.01f, penis.Severity + size_increment);
+                    CompHediff.originalOwnerSize += size_increment;
                 }
-                else
-                {
-                    if (CompHediff != null && CompHediff.SizeOwner <= maximum_body_size)
-                    {
-                        CompHediff.SizeOwner += size_increment;
-                    }
-                }
+                CompHediff.UpdateSeverity();
 
                 // Increase Fluid
                 if (CompHediff != null)
-                    CompHediff.FluidAmmount *= cum_multiplier;
+                    CompHediff.partFluidFactor *= cum_multiplier;
             }
         }
 

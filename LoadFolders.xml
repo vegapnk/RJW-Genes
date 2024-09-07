@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <loadFolders>
-	
+
 	<v1.4>
 		<li>1.4</li>
 		<li>Common</li>
@@ -12,7 +12,7 @@
 		<!-- Mods -->
 		<li IfModActive="LustLicentia.RJWLabs">1.5/Mods/LicentiaLabs</li>
 		<li IfModActive="rjw.sexperience">1.5/Mods/Sexperience</li>
-		<li IfModNotActive="asmr.rjw.racesupport">1.5/Mods/NotRaceSupport</li>
+		<!-- <li IfModNotActive="asmr.rjw.racesupport">1.5/Mods/NotRaceSupport</li> -->
 		<li IfModActive="vanillaracesexpanded.sanguophage">1.5/Mods/Sanguophage</li>
 		<li IfModActive="vanillaracesexpanded.saurid">1.5/Mods/Saurid</li>
 		<li IfModActive="vanillaracesexpanded.phytokin">1.5/Mods/Phytokin</li>

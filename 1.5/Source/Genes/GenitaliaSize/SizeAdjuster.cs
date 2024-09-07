@@ -25,8 +25,8 @@ namespace RJW_Genes
         /// Re-Rolls the sizes for all anus of the pawn to be between lower and upper limit.
         /// </summary>
         /// <param name="pawn">The pawn whos anus are rerolled</param>
-        /// <param name="lowerLimit">The minimum severity for the vagina</param>
-        /// <param name="upperLimit">The maximum severity for the vagina</param>
+        /// <param name="lowerLimit">The minimum severity for the anus</param>
+        /// <param name="upperLimit">The maximum severity for the anus</param>
         public static void AdjustAllAnusSizes(Pawn pawn, float lowerLimit = 0.0f, float upperLimit = 1.0f)
         {
             List<Hediff> AllAnus = Genital_Helper.get_AllPartsHediffList(pawn).FindAll(x => GenitaliaChanger.IsAnus(x));
@@ -57,7 +57,6 @@ namespace RJW_Genes
         /// <param name="upperLimit">The maximum severity for the vagina</param>
         public static void AdjustAllBreastSizes(Pawn pawn, float lowerLimit = 0.0f, float upperLimit = 1.0f)
         {
-
             List<Hediff> AllBreasts = Genital_Helper.get_AllPartsHediffList(pawn).FindAll(x => x.def.defName.ToLower().Contains("breasts"));
             ResizeAll(AllBreasts,lowerLimit,upperLimit);
         }
@@ -67,9 +66,14 @@ namespace RJW_Genes
         {
             foreach (var hediff in toResize)
             {
-                Random rnd = new Random();
-                float size = (float)(rnd.NextDouble() * (upperLimit - lowerLimit) + lowerLimit);
-                hediff.Severity = size;
+                if (hediff is ISexPartHediff casted)
+                {
+                    Random rnd = new Random();
+                    float size = (float)(rnd.NextDouble() * (upperLimit - lowerLimit) + lowerLimit);
+
+                    casted.GetPartComp().baseSize = size;
+                    casted.GetPartComp().UpdateSeverity();
+                }
             }
         }
     }

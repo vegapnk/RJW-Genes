@@ -8,7 +8,6 @@ namespace RJW_Genes
     {
 
         internal Hediff removed_penis;
-        internal Hediff missing_bodypart_hediff;
 
         public override void PostMake()
         {
@@ -35,11 +34,7 @@ namespace RJW_Genes
         public override void PostRemove()
         {
             base.PostRemove();
-
-            if (missing_bodypart_hediff != null)
-                pawn.health.RemoveHediff(missing_bodypart_hediff);
-
-            if (removed_penis != null)    
+            if(removed_penis != null)    
                 pawn.health.AddHediff(removed_penis);
         }
 
@@ -52,9 +47,6 @@ namespace RJW_Genes
             {
                 removed_penis = penisToRemove;
                 pawn.health.RemoveHediff(penisToRemove);
-
-                if (missing_bodypart_hediff == null)
-                    missing_bodypart_hediff = pawn.health.AddHediff(RimWorld.HediffDefOf.MissingBodyPart, partBPR);
             }
         }
 

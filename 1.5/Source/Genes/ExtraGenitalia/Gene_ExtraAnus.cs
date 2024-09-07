@@ -58,11 +58,11 @@ namespace RJW_Genes
             var partBPR = Genital_Helper.get_anusBPR(pawn);
             additional_anus = HediffMaker.MakeHediff(anusDef, pawn);
 
-            var CompHediff = additional_anus.TryGetComp<rjw.CompHediffBodyPart>();
+            var CompHediff = additional_anus.TryGetComp<rjw.HediffComp_SexPart>();
             if (CompHediff != null)
             {
-                CompHediff.initComp(pawn);
-                CompHediff.updatesize();
+                CompHediff.Init(pawn);
+                CompHediff.UpdateSeverity();
             }
 
             pawn.health.AddHediff(additional_anus, partBPR);

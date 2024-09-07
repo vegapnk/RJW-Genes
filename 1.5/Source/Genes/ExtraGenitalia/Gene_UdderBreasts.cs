@@ -42,14 +42,14 @@ namespace RJW_Genes
 
         internal void AddUdders()
         {
-            CompHediffBodyPart CompHediff = null;
-            BodyPartRecord bpr = Genital_Helper.get_uddersBPR(pawn);
+            HediffComp_SexPart CompHediff = null;
+            BodyPartRecord bpr = Genital_Helper.get_breastsBPR(pawn);
             added_udders = pawn.health.AddHediff(Genital_Helper.udder_breasts, bpr);
-            added_udders.TryGetComp<rjw.CompHediffBodyPart>();
+            added_udders.TryGetComp<rjw.HediffComp_SexPart>();
             if (CompHediff != null)
             {
-                CompHediff.initComp(pawn);
-                CompHediff.updatesize();
+                CompHediff.Init(pawn);
+                CompHediff.UpdateSeverity();
             }
 
         }

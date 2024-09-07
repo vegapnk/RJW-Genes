@@ -224,7 +224,7 @@
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_twinkifier</defName>
         <label>twinkifier</label>
-        <description>Carriers with this gene slowly turn male sexual partners into breedabel cute twinks.</description>
+        <description>Carriers with this gene slowly turn male sexual partners into breedable cute twinks.</description>
         <iconPath>Genes/Icons/twinkifier</iconPath>
         <displayOrderInCategory>50</displayOrderInCategory>
         <biostatCpx>4</biostatCpx>
@@ -260,6 +260,28 @@
                 </minorGenes>
                 <minorApplicationChance>0.25</minorApplicationChance>
                 <majorApplicationChance>0.1</majorApplicationChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_electric_satisfaction</defName>
+        <label>electric satisfaction</label>
+        <!-- DevNote: This does not need any class, all is handled in `RJW_Genes.Patch_ElectricSatisfaction` -->
+        <description>Upon reaching climax, carriers of this gene can charge nearby powergrids.</description>
+        <iconPath>Genes/Icons/RoundC</iconPath>
+        <displayOrderInCategory>20</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <modExtensions>
+            <li Class="RJW_Genes.DistanceExtension">
+                <!-- distance 25 means 25 tiles in every direction from the pheromone-pawn.-->
+                <distance>4</distance>
+            </li>
+            <li Class="RJW_Genes.BoundedExtension">
+                <minimum>75</minimum>
+                <maximum>150</maximum>
             </li>
         </modExtensions>
     </GeneDef>
