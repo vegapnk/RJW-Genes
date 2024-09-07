@@ -224,7 +224,7 @@
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_twinkifier</defName>
         <label>twinkifier</label>
-        <description>Carriers with this gene slowly turn male sexual partners into breedabel cute twinks.</description>
+        <description>Carriers with this gene slowly turn male sexual partners into breedable cute twinks.</description>
         <iconPath>Genes/Icons/twinkifier</iconPath>
         <displayOrderInCategory>50</displayOrderInCategory>
         <biostatCpx>4</biostatCpx>

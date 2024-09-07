@@ -1,4 +1,4 @@
-# 2.3.0 (xx-09-2024)
+# 2.3.0 (07-09-2024)
 
 **Summary**:
 
@@ -23,7 +23,7 @@
 
 **Fixes**:
 
-- Reverted the `Missing Body Part` from (#133). Causes issues at World Generation with some other Mods (#157).
+- Reverted the `Missing Body Part` from (#133). Causes issues at World Generation with some other Mods (#157,#159).
 
 **Internal**:
 
@@ -33,6 +33,8 @@
 - Fixed a tiny yellow startup-warning by deleting a duplicate file. 
 
 *Beta-1* was put up on 03-09-2024.
+
+Since then the Disease Carrier was added and a typo was fixed. 
 
 # 2.2.1 (23-08-2024)
 
