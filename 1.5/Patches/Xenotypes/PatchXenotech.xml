@@ -30,7 +30,6 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs/XenotypeDef[defName="LTS_Ork"]/genes</xpath>
           <value>
-            <li>rjw_genes_Orc_genitalia</li>
             <li>rjw_genes_big_male_genitalia</li>
             <li>rjw_genes_loose_female_genitalia</li>
           </value>
@@ -52,15 +51,8 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs/XenotypeDef[defName="LTS_Faun"]/genes</xpath>
-          <value>
-            <li>rjw_genes_Needle_genitalia</li>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
           <xpath>Defs/XenotypeDef[defName="LTS_Hydragon"]/genes</xpath>
           <value>
-            <li>rjw_genes_Marine_genitalia</li>
             <li>rjw_genes_dragon_genitalia</li>
             <li>rjw_genes_basic_rut</li>
           </value>

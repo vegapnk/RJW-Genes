@@ -6,6 +6,10 @@
 - Same changes as Asexual Gene for the Android version `rjw_genes_SexDisabled` (#137)
 - Fixed some references to genes that changed names in patches. 
 
+**Removal**:
+
+- Removed Xenotype Patches for Roos Xenotypes - they were not ported to 1.5 (by Roos, atleast.)
+
 # 2.3.0 (07-09-2024)
 
 **Summary**:
