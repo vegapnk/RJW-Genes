@@ -136,15 +136,17 @@
     <GeneDef>
         <defName>rjw_genes_no_sex_need</defName>
         <label>asexual</label>
-        <description>Carriers of this gene do not have a sex-need. They can still participate in
-            sex, </description>
+        <description>Carriers of this gene are not sexually interested in other pawns. They still can participate in sex, but their sex-need does not decline over time.</description>
         <iconPath>Genes/Icons/Empty</iconPath>
         <displayOrderInCategory>5</displayOrderInCategory>
-        <disablesNeeds>
-            <li>Sex</li>
-        </disablesNeeds>
         <biostatMet>-1</biostatMet>
         <biostatCpx>2</biostatCpx>
+        <geneClass>RJW_Genes.Gene_NoSexNeed</geneClass>
+        <forcedTraits>
+            <li>
+                <def>Asexual</def>
+            </li>
+        </forcedTraits>
 
         <randomChosen>false</randomChosen>
         <exclusionTags>

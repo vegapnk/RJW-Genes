@@ -21,7 +21,6 @@
 			<xpath>Defs/XenotypeDef[defName="Ashfeather"]/genes</xpath>
 			<value>
 				<li>rjw_genes_much_fluid</li>
-				<li>rjw_genes_Needle_genitalia</li>
 			</value>
 		</match>
 	</Operation>

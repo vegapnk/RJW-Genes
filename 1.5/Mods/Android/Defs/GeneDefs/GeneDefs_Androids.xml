@@ -45,9 +45,12 @@
 		<iconPath>Genes/Icons/sex_disabled</iconPath>
 		<displayOrderInCategory>3</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<disablesNeeds>
-			<li>Sex</li>
-		</disablesNeeds>
+        <geneClass>RJW_Genes.Gene_NoSexNeed</geneClass>
+        <forcedTraits>
+            <li>
+                <def>Asexual</def>
+            </li>
+        </forcedTraits>
 		<removeWhenAwakened>true</removeWhenAwakened>
 	</VREAndroids.AndroidGeneDef>
 	

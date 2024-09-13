@@ -41,7 +41,7 @@ namespace RJW_Genes
 					if (Genital_Helper.is_vagina(existingGenital) && vaginaReplacement != null && existingGenital.def != vaginaReplacement)
 						replacementGenital = HediffMaker.MakeHediff(vaginaReplacement, pawn, correctBPR);
 
-					if (is_breast(existingGenital) && breastsReplacement != null && existingGenital.def != breastsReplacement)
+					if (IsBreast(existingGenital) && breastsReplacement != null && existingGenital.def != breastsReplacement)
 					{
                         correctBPR = Genital_Helper.get_breastsBPR(pawn);
                         replacementGenital = HediffMaker.MakeHediff(breastsReplacement, pawn, correctBPR);
@@ -79,28 +79,33 @@ namespace RJW_Genes
 
         public static bool IsAnus(Hediff candidate)
         {
-            return candidate.def.defName.ToLower().Contains("anus");        }
+			if (candidate == null || !(candidate is ISexPartHediff)) return false;
+			return candidate.def.defName.ToLower().Contains("anus");        
+		}
         
-        private static bool is_breast_family(GenitalFamily family) => family switch
+        private static bool IsBreastFamiliy(GenitalFamily family) => family switch
         {
 	        GenitalFamily.Breasts => true,
 	        _ => false
         };
 
 
-        public static bool is_breast(Hediff hed)
+        public static bool IsBreast(Hediff candidate)
         {
-	        if (hed.def is not HediffDef_SexPart def) return false;
-	        return is_breast_family(def.genitalFamily);
+            if (candidate == null || !(candidate is ISexPartHediff)) return false;
+            if (candidate.def is not HediffDef_SexPart def) return false;
+	        return IsBreastFamiliy(def.genitalFamily);
         }
 
         public static bool IsArtificial(Hediff candidate)
         {
-			return candidate.def.defName.ToLower().Contains("bionic") || candidate.def.defName.ToLower().Contains("archo");
+            if (candidate == null || !(candidate is ISexPartHediff)) return false;
+            return candidate.def.defName.ToLower().Contains("bionic") || candidate.def.defName.ToLower().Contains("archo");
         }
 
 		public static void RemoveAllGenitalia(Pawn pawn)
 		{
+			if (pawn == null) return;
 			var parts = Genital_Helper.get_AllPartsHediffList(pawn);
 			foreach (var part in parts)
             {

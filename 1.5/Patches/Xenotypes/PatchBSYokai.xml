@@ -10,7 +10,7 @@
           <xpath>Defs/XenotypeDef[defName = "BS_Kitsune"]/genes</xpath>
           <value>
             <li>rjw_genes_canine_genitalia</li>
-            <li>LitteredBirths</li>
+            <li>rjw_genes_littered_births</li>
           </value>
         </li>
 
@@ -21,7 +21,7 @@
             <li>rjw_genes_extra_vagina</li>
             <li>rjw_genes_extra_penis</li>
             <li>rjw_genes_small_breasts</li>
-            <li>LitteredBirths</li>
+            <li>rjw_genes_littered_births</li>
           </value>
         </li>
 

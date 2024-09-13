@@ -7,7 +7,6 @@ namespace RJW_Genes
         public override void PostMake()
         {
             base.PostMake();
-           
         }
 
         public override void PostAdd()

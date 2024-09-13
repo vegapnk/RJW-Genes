@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using rjw;
 using System.Linq;
 using Verse;
 
@@ -11,11 +12,13 @@ namespace RJW_Genes.Genes
         [HarmonyPostfix]
         public static void PawnGenerator_GenerateGenes_Postfix(Pawn pawn)
         {
-            if (pawn.genes == null) return;
+            if (pawn == null || pawn.genes == null) return;
 
-            foreach(var gene in pawn.genes.GenesListForReading)
+            if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn)) return;
+
+            foreach (var gene in pawn.genes.GenesListForReading)
             {
-                if (gene is RJW_Gene rjwGene)
+                if (gene != null && gene is RJW_Gene rjwGene)
                     rjwGene.Notify_OnPawnGeneration();
             }
         }

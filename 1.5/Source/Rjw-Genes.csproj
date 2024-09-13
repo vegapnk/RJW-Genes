@@ -182,6 +182,7 @@
     <Compile Include="Genes\Patch_AddNotifyOnGeneration.cs" />
     <Compile Include="Genes\Quirks\Defs\QirkExtension.cs" />
     <Compile Include="Genes\Quirks\QuirkPatcher.cs" />
+    <Compile Include="Genes\Reproduction\Gene_NoSexNeed.cs" />
     <Compile Include="Genes\Special\Abilities\CompAbilityEffect_CocoonWeaver.cs" />
     <Compile Include="Genes\Special\Abilities\CompProperties_AbilityCocoonWeaver.cs" />
     <Compile Include="Genes\Special\Defs\AgeTransferExtension.cs" />

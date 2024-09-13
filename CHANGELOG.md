@@ -1,3 +1,15 @@
+# 2.3.1 (xx-xx-2024)
+
+**Fixes**:
+
+- Asexual Gene (`rjw_genes_no_sex_need`) now gives the `asexual` trait instead of removing Sex Need (#164). Every 3k ticks (every half hour) it sets SexNeed to 60%. 
+- Same changes as Asexual Gene for the Android version `rjw_genes_SexDisabled` (#137)
+- Fixed some references to genes that changed names in patches. 
+
+**Removal**:
+
+- Removed Xenotype Patches for Roos Xenotypes - they were not ported to 1.5 (by Roos, atleast.)
+
 # 2.3.0 (07-09-2024)
 
 **Summary**:
