@@ -87,16 +87,18 @@ namespace RJW_Genes
             // Shouldn't ever be true in the normal case, but this stops someone from calling this with an incorrect setup
             if (pawn?.health == null)
                 return;
-
             if(wasSexThoughts == null || sexChangeThoughts == null || !wasSexThoughts.Any() || !sexChangeThoughts.Any())
             {
                 Log.Warning($"Couldn't get values from RJW.\nold_sex_list: {wasSexThoughts.ToStringSafeEnumerable()}\nSexChangeThoughts: {sexChangeThoughts.ToStringSafeEnumerable()}");
                 return;
             }
 
-            foreach(var def in wasSexThoughts.Concat(sexChangeThoughts))
+            var thoughtsToRemove = wasSexThoughts.Concat(sexChangeThoughts);
+            if (thoughtsToRemove.Count() == 0) return;
+
+            foreach (var thoughtToRemove in thoughtsToRemove)
             {
-                var hediff = pawn.health.hediffSet.GetFirstHediffOfDef(def);
+                var hediff = pawn.health.hediffSet.GetFirstHediffOfDef(thoughtToRemove);
                 if (hediff != null)
                     pawn.health.RemoveHediff(hediff);
             }

@@ -9,6 +9,7 @@ namespace RJW_Genes
         public override void PostMake()
         {
             base.PostMake();
+
             if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn))
                 Sexualizer.sexualize_pawn(pawn);
         }
