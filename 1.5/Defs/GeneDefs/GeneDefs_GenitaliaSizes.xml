@@ -16,7 +16,7 @@
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_big_male_genitalia</defName>
     <label>big male genitalia</label>
-    <description>Penises of this Xenotype are bigger.(Resizing takes place at 20th Birthday)</description>
+    <description>Carriers of this gene have larger penises.(Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Big_Male_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_BigMaleGenitalia</geneClass>
     <displayOrderInCategory>751</displayOrderInCategory>
@@ -34,7 +34,7 @@
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_small_male_genitalia</defName>
     <label>small male genitalia</label>
-    <description>Penises of this Xenotype are smaller. (Resizing takes place at 20th Birthday)</description>
+    <description>Carriers of this gene have smaller penises. (Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Small_Male_Genitalia</iconPath>
     <geneClass>RJW_Genes.Gene_SmallMaleGenitalia</geneClass>
     <displayOrderInCategory>753</displayOrderInCategory>
@@ -53,7 +53,7 @@
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_loose_female_genitalia</defName>
     <label>loose female genitalia</label>
-    <description>Vaginas of this Xenotype are quite spacy. (Resizing takes place at 20th Birthday)</description>
+    <description>Carriers of this gene have spacious vaginas. (Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Loose_Vagina</iconPath>
     <geneClass>RJW_Genes.Gene_LooseFemaleGenitalia</geneClass>
     <displayOrderInCategory>754</displayOrderInCategory>
@@ -71,7 +71,7 @@
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_tight_female_genitalia</defName>
     <label>tight female genitalia</label>
-    <description>Vaginas of this Xenotype are pretty tight.(Resizing takes place at 20th Birthday)</description>
+    <description>Carriers of this gene have tight vaginas.(Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Tight_Vagina</iconPath>
     <geneClass>RJW_Genes.Gene_TightFemaleGenitalia</geneClass>
     <displayOrderInCategory>756</displayOrderInCategory>
@@ -90,7 +90,7 @@
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_big_breasts</defName>
     <label>big breasts</label>
-    <description>Females of this Xenotype have big honkers.(Resizing takes place at 20th Birthday)</description>
+    <description>Carriers of this gene have larger breasts.(Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Big_Breasts</iconPath>
     <geneClass>RJW_Genes.Gene_BigBreasts</geneClass>
     <displayOrderInCategory>757</displayOrderInCategory>
@@ -108,7 +108,7 @@
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_small_breasts</defName>
     <label>small breasts</label>
-    <description>Females of this Xenotype have smaller breasts.(Resizing takes place at 20th Birthday)</description>
+    <description>Carriers of this gene have smaller breasts.(Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Small_Breasts</iconPath>
     <geneClass>RJW_Genes.Gene_SmallBreasts</geneClass>
     <displayOrderInCategory>759</displayOrderInCategory>
@@ -127,7 +127,7 @@
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_loose_anus</defName>
     <label>loose anus</label>
-    <description>The Anus of this Xenotype is roomy.(Resizing takes place at 20th Birthday)</description>
+    <description>Carriers of this gene have a spacious anus.(Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Loose_Anus</iconPath>
     <geneClass>RJW_Genes.Gene_LooseAnus</geneClass>
     <displayOrderInCategory>760</displayOrderInCategory>
@@ -145,7 +145,7 @@
   <GeneDef ParentName="GeneGenitaliaSizeBase">
     <defName>rjw_genes_tight_anus</defName>
     <label>tight anus</label>
-    <description>The anus of this Xenotype is small.(Resizing takes place at 20th Birthday)</description>
+    <description>Carriers of this gene have a tight anus.(Resizing takes place at 20th Birthday)</description>
     <iconPath>Genes/Icons/Tight_Anus</iconPath>
     <geneClass>RJW_Genes.Gene_TightAnus</geneClass>
     <displayOrderInCategory>762</displayOrderInCategory>

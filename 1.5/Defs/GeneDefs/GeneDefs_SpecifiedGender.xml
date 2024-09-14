@@ -4,7 +4,7 @@
     <defName>rjw_genes_female_only</defName>
     <label>female</label>
     <displayCategory>rjw_genes_gender</displayCategory>
-    <description>This Xenotype only has females.</description>
+    <description>Carriers of this gene are only female.</description>
     <biostatCpx>0</biostatCpx>
     <iconPath>Genes/Icons/Female_Only</iconPath>
     <geneClass>RJW_Genes.Gene_FemaleOnly</geneClass>
@@ -26,7 +26,7 @@
     <defName>rjw_genes_male_only</defName>
     <displayCategory>rjw_genes_gender</displayCategory>
     <label>male</label>
-    <description>This Xenotype only has males.</description>
+    <description>Carriers of this gene are only male.</description>
     <biostatCpx>0</biostatCpx>
     <iconPath>Genes/Icons/Male_Only</iconPath>
     <geneClass>RJW_Genes.Gene_MaleOnly</geneClass>
@@ -48,7 +48,7 @@
     <defName>rjw_genes_gender_fluid</defName>
     <displayCategory>rjw_genes_gender</displayCategory>
     <label>genderfluid</label>
-    <description>Everyday carriers of this gene might change their biological sex.</description>
+    <description>Carriers of this gene might change their biological sex daily.</description>
     <biostatCpx>0</biostatCpx>
     <iconPath>Genes/Icons/Futa</iconPath>
     <geneClass>RJW_Genes.Gene_GenderFluid</geneClass>

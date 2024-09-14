@@ -5,7 +5,7 @@
         <defName>rjw_genes_hypersexual</defName>
         <label>hypersexuality</label>
         <displayCategory>Reproduction</displayCategory>
-        <description>Xenotypes with this Gene are Hypersexual (Nymphs).</description>
+        <description>Carriers of this Gene are Hypersexual (Nymphs).</description>
         <iconPath>Genes/Icons/Hypersexual</iconPath>
         <displayOrderInCategory>1</displayOrderInCategory>
         <forcedTraits>
@@ -32,7 +32,7 @@
         <defName>rjw_genes_rapist</defName>
         <label>rapist</label>
         <displayCategory>Reproduction</displayCategory>
-        <description>Xenotypes with this Gene are Rapists.</description>
+        <description>Carriers of this gene are more inclined to force themselves on others sexually.</description>
         <iconPath>Genes/Icons/Rape</iconPath>
         <biostatMet>1</biostatMet>
         <displayOrderInCategory>2</displayOrderInCategory>
@@ -56,7 +56,7 @@
         <defName>rjw_genes_masochist</defName>
         <label>masochist</label>
         <displayCategory>Reproduction</displayCategory>
-        <description>Xenotypes with this Gene are Masochists.</description>
+        <description>Carriers of this gene enjoy being the target of pain.</description>
         <iconPath>Genes/Icons/Rape</iconPath>
         <biostatMet>1</biostatMet>
         <displayOrderInCategory>2</displayOrderInCategory>
@@ -80,7 +80,7 @@
         <defName>rjw_genes_homosexual</defName>
         <label>homosexual</label>
         <displayCategory>Reproduction</displayCategory>
-        <description>This Gene makes you gay.</description>
+        <description>Carriers of this gene are Homosexuals.</description>
         <iconPath>Genes/Icons/RoundC</iconPath>
         <biostatMet>0</biostatMet>
         <displayOrderInCategory>3</displayOrderInCategory>
@@ -166,8 +166,7 @@
         <defName>rjw_genes_littered_births</defName>
         <label>littered births</label>
         <displayCategory>Reproduction</displayCategory>
-        <description>Female carriers of this gene birth litters instead of just one baby, with a
-            chance of having two to four babies per pregnancy.</description>
+        <description>Female carriers of this gene birth litters instead of just one baby, with a chance of having two to four babies per pregnancy.</description>
         <iconPath>Genes/Icons/Gene_LitteredBirths</iconPath>
         <displayOrderInCategory>110</displayOrderInCategory>
         <marketValueFactor>1.10</marketValueFactor>

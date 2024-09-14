@@ -15,8 +15,7 @@
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_orgasm_rush</defName>
         <label>orgasm rush</label>
-        <description>On orgasm, carriers of this gene get a boost in activity. (rest-need is
-            partially filled)</description>
+        <description>On orgasm, carriers of this gene get a boost in activity. (rest-need is partially filled)</description>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-2</biostatMet>
         <iconPath>Genes/Icons/FleshPurity</iconPath>
@@ -26,8 +25,7 @@
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_youth_fountain</defName>
         <label>youth fountain</label>
-        <description>Having sex with a carrier of this gene makes the partner slightly younger.
-            (Partner stays adult)</description>
+        <description>Carriers of this gene reverse the age of their sexual partners. (Partner stays adult)</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-2</biostatMet>
         <iconPath>Genes/Icons/FireLeaves</iconPath>
@@ -44,8 +42,7 @@
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_sex_age_drain</defName>
         <label>sexual age drain</label>
-        <description>Having sex transfers some of the partners life-time to themselves. (Pawn stays
-            adult)</description>
+        <description>Carriers of this gene drain the age from their sexual partners. (Pawn stays adult)</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-1</biostatMet>
         <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
@@ -63,7 +60,7 @@
         <defName>rjw_genes_aphrodisiac_pheromones</defName>
         <label>aphrodisiac pheromones</label>
         <geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass>
-        <description>Pheremones of this pawn induce an incressed sexdrive to others nearby.</description>
+        <description>Carriers of this gene produce and aphrodisiac pheremone making others nearby more sexually needy.</description>
         <iconPath>Genes/Icons/Pheromones</iconPath>
         <displayOrderInCategory>4</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
@@ -84,10 +81,7 @@
         <defName>rjw_genes_sexual_mytosis</defName>
         <label>orgasmic mytosis</label>
         <!-- <geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass> -->
-        <description>Carriers have malfunctioning regenerative archites that grow more unstable with
-            ongoing multiple orgasms - climaxing in a process of mytosis. This will result in an
-            (biologically) identical pawn and both twins are set in a regenerative state. Also, the
-            pawn can have multiple orgasms: In a state of higher unstableness, they come quicker.</description>
+        <description>Carriers of this gene have malfunctioning regenerative archites that grow more unstable with ongoing multiple orgasms - climaxing in a process of mytosis. This will result in an (biologically) identical pawn and both twins are set in a regenerative state. Also, the pawn can have multiple orgasms: In a state of higher unstableness, they come quicker.</description>
         <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
         <displayOrderInCategory>5</displayOrderInCategory>
         <biostatCpx>5</biostatCpx>
@@ -98,8 +92,7 @@
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_hormonal_saliva</defName>
         <label>hormonal saliva</label>
-        <description>The saliva of this xenotype stimulates growth in penises. Regular contact will
-            lead to noticable growth.</description>
+        <description>Carriers of this gene have saliva that stimulates growth in penises. Regular contact will lead to noticable growth.</description>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-1</biostatMet>
         <iconPath>Genes/Icons/Big_Male_Genitalia</iconPath>
@@ -119,8 +112,7 @@
         <defName>rjw_genes_cocoonweaver</defName>
         <label>cocoon weaver</label>
         <labelShortAdj>cocooner</labelShortAdj>
-        <description>Carriers of this gene can produce a cocoon to prepare helpless (or willing)
-            victims for breeding.</description>
+        <description>Carriers of this gene can produce a cocoon to prepare helpless (or willing) victims for breeding.</description>
         <iconPath>Genes/Icons/Cocoon</iconPath>
         <displayOrderInCategory>11</displayOrderInCategory>
         <abilities>
@@ -142,7 +134,7 @@
         <defName>rjw_genes_sex_tamer</defName>
         <label>sexual tamer</label>
         <labelShortAdj>sextamer</labelShortAdj>
-        <description>Bestiality has a chance to tame animals or advance their training.</description>
+        <description>Carriers of this gene can bestow intelligence and docility to animals during sexual encounters, effectively increasing their training.</description>
         <iconPath>Genes/Icons/RJW_Genes_SexualTamer</iconPath>
         <displayOrderInCategory>14</displayOrderInCategory>
         <biostatCpx>2</biostatCpx>
@@ -152,7 +144,7 @@
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_sexual_genetic_swap</defName>
         <label>sexual genetic swap</label>
-        <description>Carriers with this gene may switch a gene with their sex-partner. Switched Genes are always endogenes.</description>
+        <description>Carriers of this gene may switch a gene with their sex-partner. Switched Genes are always endogenes.</description>
         <iconPath>Genes/Icons/sexual_genetic_swap</iconPath>
         <displayOrderInCategory>20</displayOrderInCategory>
         <biostatCpx>3</biostatCpx>
@@ -167,7 +159,7 @@
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_sexual_genetic_thief</defName>
         <label>sexual gene thief</label>
-        <description>Carriers with this gene may steal a gene from their sex-partner. Stolen genes are always xenogenes.</description>
+        <description>Carriers of this gene may steal a gene from their sex-partner. Stolen genes are always xenogenes.</description>
         <iconPath>Genes/Icons/sexual_genetic_thief</iconPath>
         <displayOrderInCategory>21</displayOrderInCategory>
         <biostatCpx>5</biostatCpx>
@@ -183,7 +175,7 @@
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_feminizer</defName>
         <label>feminizer</label>
-        <description>Carriers with this gene slowly turn male sexual partners into females.</description>
+        <description>Carriers of this gene slowly turn male sexual partners into females.</description>
         <iconPath>Genes/Icons/feminizer</iconPath>
         <displayOrderInCategory>31</displayOrderInCategory>
         <biostatCpx>4</biostatCpx>
@@ -224,7 +216,7 @@
     <GeneDef ParentName="SpecialBase">
         <defName>rjw_genes_twinkifier</defName>
         <label>twinkifier</label>
-        <description>Carriers with this gene slowly turn male sexual partners into breedable cute twinks.</description>
+        <description>Carriers of this gene slowly turn male sexual partners into breedable cute twinks.</description>
         <iconPath>Genes/Icons/twinkifier</iconPath>
         <displayOrderInCategory>50</displayOrderInCategory>
         <biostatCpx>4</biostatCpx>
@@ -269,7 +261,7 @@
         <defName>rjw_genes_electric_satisfaction</defName>
         <label>electric satisfaction</label>
         <!-- DevNote: This does not need any class, all is handled in `RJW_Genes.Patch_ElectricSatisfaction` -->
-        <description>Upon reaching climax, carriers of this gene can charge nearby powergrids.</description>
+        <description>Carriers of this gene produce an electrical charge in nearby electronics during orgasm. This charge is substantial enough to charge batteries.</description>
         <iconPath>Genes/Icons/RoundC</iconPath>
         <displayOrderInCategory>20</displayOrderInCategory>
         <biostatCpx>2</biostatCpx>

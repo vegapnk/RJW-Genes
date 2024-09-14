@@ -18,7 +18,7 @@
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_mechbreeder</defName>
     <label>mechbreeder</label>
-    <description>Pawns with this gene are able to birth mechanoids unharmed.</description>
+    <description>Carriers of this gene are able to birth mechanoids unharmed.</description>
     <iconPath>World/WorldObjects/Expanding/Mechanoids</iconPath>
     <displayOrderInCategory>51</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
@@ -28,7 +28,7 @@
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_zoophile</defName>
     <label>zoophile</label>
-    <description>Xenotypes with this Gene are Zoophile.</description>
+    <description>Carriers of this Gene are drawn to animals sexually.</description>
     <iconPath>Genes/Icons/Zoophile</iconPath>
     <displayOrderInCategory>54</displayOrderInCategory>
     <forcedTraits>
@@ -41,9 +41,7 @@
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_fertile_anus</defName>
     <label>fertile anus</label>
-    <description>Xenotypes with this gene have a functional uterus if they do not possess one by
-      means of their vagina.
-      For males, it is connected to the anal cavity and leads to a normal pregnancy.</description>
+    <description>Carriers of this gene have a functional uterus if they do not possess one by means of their vagina. For males, it is connected to the anal cavity and leads to a normal pregnancy.</description>
     <iconPath>Genes/Icons/Fertile_anus</iconPath>
     <displayOrderInCategory>54</displayOrderInCategory>
   </GeneDef>
@@ -52,7 +50,7 @@
     <defName>rjw_genes_insectincubator</defName>
     <label>insect incubator</label>
     <geneClass>RJW_Genes.Gene_InsectIncubator</geneClass>
-    <description>Pawns with this gene fertilize insect eggs that are placed inside them.</description>
+    <description>Carriers of this gene fertilize insect eggs that are placed inside them.</description>
     <iconPath>Genes/Icons/Egg</iconPath>
     <displayOrderInCategory>52</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
@@ -62,7 +60,7 @@
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_insectbreeder</defName>
     <label>insect breeder</label>
-    <description>Pawns with this gene are able to fertilize eggs with any fertile penis.</description>
+    <description>Carriers of this gene are able to fertilize eggs with any fertile penis.</description>
     <iconPath>Genes/Icons/Insect_Breeder</iconPath>
     <displayOrderInCategory>53</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
@@ -73,8 +71,7 @@
     <defName>rjw_genes_fervent_ovipositor</defName>
     <label>fervent ovipositor</label>
     <geneClass>RJW_Genes.Gene_FerventOvipositor</geneClass>
-    <description>Pawns that have a female (egg producing) ovipositor produce eggs at drastically
-      increased speed.</description>
+    <description>Carriers of this gene that have a female (egg producing) ovipositor produce eggs at drastically increased speed.</description>
     <iconPath>Genes/Icons/Fervent_Ovipositor</iconPath>
     <displayOrderInCategory>55</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
@@ -84,7 +81,7 @@
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_mating_call</defName>
     <label>mating call</label>
-    <description>This gene allows to call nearby animals and invite them for mating.</description>
+    <description>Carriers of this gene are able to call nearby animals and invite them for mating.</description>
     <iconPath>Genes/Icons/RJW_Genes_Mating_Call</iconPath>
     <displayOrderInCategory>65</displayOrderInCategory>
     <abilities>
@@ -100,7 +97,7 @@
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_pheromone_spit</defName>
     <label>pheromone spit</label>
-    <description>This gene allows to mark targets for breeding, enticing nearby animals for a ride.</description>
+    <description>Carriers of this gene are able to release a burst of pheremones on another, making them desirable and breedable to nearby animals.</description>
     <iconPath>Genes/Icons/RJW_Genes_PheromoneSpit</iconPath>
     <displayOrderInCategory>66</displayOrderInCategory>
     <abilities>
@@ -116,8 +113,7 @@
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_hardwired_progenity</defName>
     <label>hardwired progenity</label>
-    <description>Carriers of this gene need to procreate. They suffer negative effects if they are
-      childless, and have increased capabilities if they reach a high amount of offsprings.</description>
+    <description>Carriers of this gene need to procreate. They suffer negative effects if they are childless, and have increased capabilities if they reach a high amount of offsprings.</description>
     <iconPath>Genes/Icons/hardwired_progenity</iconPath>
     <displayOrderInCategory>70</displayOrderInCategory>
 
@@ -155,8 +151,7 @@
   <GeneDef ParentName="BreedingBase">
     <defName>rjw_genes_basic_rut</defName>
     <label>rut</label>
-    <description>Carriers of this gene can enter a state of heat, resulting in drastically higher
-      sexual activity.</description>
+    <description>Carriers of this gene can enter a state of heat, resulting in drastically higher sexual activity.</description>
     <iconPath>Genes/Icons/rut</iconPath>
     <biostatCpx>1</biostatCpx>
     <biostatMet>1</biostatMet>
