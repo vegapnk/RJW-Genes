@@ -18,7 +18,7 @@
   <GeneDef ParentName="GeneFluidAmount">
     <defName>rjw_genes_no_fluid</defName>
     <label>no fluid</label>
-    <description>Genitalia of these species have no fluid.</description>
+    <description>Carriers of this gene produce no sexual fluids.</description>
     <iconPath>Genes/Icons/No_Cum</iconPath>
     <geneClass>RJW_Genes.Gene_ChangeFluidAmount</geneClass>
     <displayOrderInCategory>533</displayOrderInCategory>
@@ -34,7 +34,7 @@
   <GeneDef ParentName="GeneFluidAmount">
     <defName>rjw_genes_much_fluid</defName>
     <label>much fluid</label>
-    <description>Genitalia of this species produce a lot of fluid.</description>
+    <description>Carriers of this gene produce a lot of sexual fluids.</description>
     <iconPath>Genes/Icons/Much_Cum</iconPath>
     <geneClass>RJW_Genes.Gene_ChangeFluidAmount</geneClass>
     <displayOrderInCategory>534</displayOrderInCategory>
@@ -50,8 +50,7 @@
   <GeneDef ParentName="GeneFluidAmount">
     <defName>rjw_genes_very_much_fluid</defName>
     <label>very much fluid</label>
-    <description>Genitalia of this species produce a whole lot of fluid. They are like fountains
-      basically.</description>
+    <description>Carriers of this gene produce an excessive amount of sexual fluids.</description>
     <iconPath>Genes/Icons/Very_Much_Cum</iconPath>
     <geneClass>RJW_Genes.Gene_ChangeFluidAmount</geneClass>
     <displayOrderInCategory>535</displayOrderInCategory>
@@ -81,7 +80,7 @@
   <GeneDef ParentName="GeneFluidType">
     <defName>rjw_genes_fluid_insect_spunk</defName>
     <label>insect spunk</label>
-    <description>Penises and Vaginas with this gene produce insect spunk.</description>
+    <description>Carriers of this gene produce insect spunk instead of cum.</description>
     <iconPath>Genes/Icons/RoundC</iconPath>
     <displayOrderInCategory>311</displayOrderInCategory>
     <modExtensions>
@@ -97,7 +96,7 @@
   <GeneDef ParentName="GeneFluidType">
     <defName>rjw_genes_fluid_cum_breasts</defName>
     <label>cum milk</label>
-    <description>Breasts of this xenotype produce cum.</description>
+    <description>Carriers of this gene produce cum from their breasts instead of milk.</description>
     <iconPath>Genes/Icons/RoundC</iconPath>
     <displayOrderInCategory>312</displayOrderInCategory>
     <modExtensions>
@@ -110,7 +109,7 @@
   <GeneDef ParentName="GeneFluidType">
     <defName>rjw_genes_fluid_milk_penis</defName>
     <label>milk cum</label>
-    <description>Penises of this xenotype produce milk.</description>
+    <description>Carriers of this gene produce milk from their penis instead of cum.</description>
     <iconPath>Genes/Icons/RoundC</iconPath>
     <displayOrderInCategory>313</displayOrderInCategory>
     <modExtensions>

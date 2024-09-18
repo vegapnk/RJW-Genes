@@ -4,10 +4,8 @@
   <XenotypeDef>
     <defName>rjw_genes_succubus</defName>
     <label>succubus</label>
-    <description>Succubi are strongly enhanced xenohumans. These overnaturally beautiful creatures
-      strive parasitically on the Fertilin found in semen.</description>
-    <descriptionShort>Succubi are beautiful and extremely hungry Xenohumans. They strive on having
-      sex and extracting their victims life-force through this. </descriptionShort>
+    <description>Succubi are strongly enhanced xenohumans. These overnaturally beautiful creatures strive parasitically on the Fertilin found in semen.</description>
+    <descriptionShort>Succubi are beautiful and extremely hungry Xenohumans. They strive on having sex and extracting their victims life-force through this. </descriptionShort>
     <iconPath>Genes/Icons/Xenotypes/Xenotype-Succubus</iconPath>
     <soundDefOnImplant>PawnBecameSanguophage</soundDefOnImplant>
     <generateWithXenogermReplicatingHediffChance>0.5</generateWithXenogermReplicatingHediffChance>
@@ -53,10 +51,8 @@
   <XenotypeDef>
     <defName>rjw_genes_incubus</defName>
     <label>incubus</label>
-    <description>Incubi are strongly enhanced xenohumans. These overnaturally beautiful creatures
-      strive parasitically on the Fertilin found in semen.</description>
-    <descriptionShort>Incubi are beautiful and extremely hungry Xenohumans. They strive on having
-      sex and extracting their victims life-force through this. </descriptionShort>
+    <description>Incubi are strongly enhanced xenohumans. These overnaturally beautiful creatures strive parasitically on the Fertilin found in semen.</description>
+    <descriptionShort>Incubi are beautiful and extremely hungry Xenohumans. They strive on having sex and extracting their victims life-force through this. </descriptionShort>
     <iconPath>Genes/Icons/Xenotypes/Xenotype-Incubus</iconPath>
     <soundDefOnImplant>PawnBecameSanguophage</soundDefOnImplant>
     <generateWithXenogermReplicatingHediffChance>0.5</generateWithXenogermReplicatingHediffChance>
@@ -101,14 +97,8 @@
   <XenotypeDef>
     <defName>rjw_genes_cumazone</defName>
     <label>Cumazone</label>
-    <description>Cumazone are a female only xenotype that excel at meele combat. Originally created
-      as bodyguards for glitterworld amazon communities, they spred to other systems by mere
-      strength and providing for some fetishes. They can use Fertilin to enhance their skin to
-      overpower any combatant in meele. Their only source for Fertilin is biting of male genitalia -
-      so be sure to have a steady supply of victim males or prepare to raid unsuspecting men of the
-      rim.</description>
-    <descriptionShort>Female only, strong meele fighters, that use Fertilin from bitten-off cocks
-      for powerful buffs.</descriptionShort>
+    <description>Cumazone are a female only xenotype that excel at melee combat. Originally created as bodyguards for glitterworld amazon communities, they spred to other systems by mere strength and providing for some fetishes. They can use Fertilin to enhance their skin to overpower any combatant in melee. Their only source for Fertilin is biting off male genitalia - so be sure to have a steady supply of victim males or prepare to raid unsuspecting men of the rim.</description>
+    <descriptionShort>Female only, strong meele fighters, that use Fertilin from bitten-off cocks for powerful buffs.</descriptionShort>
     <iconPath>Genes/Icons/Xenotypes/Xenotype-Cumazon</iconPath>
     <generateWithXenogermReplicatingHediffChance>0.5</generateWithXenogermReplicatingHediffChance>
     <xenogermReplicatingDurationLeftDaysRange>0.1~140</xenogermReplicatingDurationLeftDaysRange>

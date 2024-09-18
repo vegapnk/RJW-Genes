@@ -5,8 +5,7 @@
     <defName>rjw_genes_unbreakable</defName>
     <label>unbreakable</label>
     <displayCategory>rjw_genes_damage</displayCategory>
-    <description>This Gene makes the Carrier unable to get mood or social penalties from being raped
-      and they cannot be broken for a long period of time.</description>
+    <description>Carriers of this gene are unable to get mood or social penalties from being raped and they cannot be broken for a long period of time.</description>
     <iconPath>Genes/Icons/TrialDefend</iconPath>
     <displayOrderInCategory>2</displayOrderInCategory>
     <biostatMet>-1</biostatMet>
