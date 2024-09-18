@@ -4,6 +4,14 @@
 
 - Lots of wording-changes provided by @myphicbowser (Thanks!)
 
+**Fixes**:
+
+- Fixed Miss-Firing of GatheredCum Patch after `RJW-Sexperience 1.5.1.5` update (#172, thanks @Ryufas)
+
+**Additions**:
+
+- Simple patch for `Cumpilation_Cum` to give Fertilin too (#172)
+
 # 2.3.1 (13-09-2024)
 
 **Fixes**:
