@@ -12,6 +12,7 @@
 		<!-- Mods -->
 		<li IfModActive="LustLicentia.RJWLabs">1.5/Mods/LicentiaLabs</li>
 		<li IfModActive="rjw.sexperience">1.5/Mods/Sexperience</li>
+		<li IfModActive="vegapnk.cumpilation">1.5/Mods/Cumpilation</li>
 		<!-- <li IfModNotActive="asmr.rjw.racesupport">1.5/Mods/NotRaceSupport</li> -->
 		<li IfModActive="vanillaracesexpanded.sanguophage">1.5/Mods/Sanguophage</li>
 		<li IfModActive="vanillaracesexpanded.saurid">1.5/Mods/Saurid</li>
