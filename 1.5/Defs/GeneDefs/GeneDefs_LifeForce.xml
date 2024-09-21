@@ -221,9 +221,9 @@
 
 	<GeneDef ParentName="LifeForceBase">
 		<defName>rjw_genes_lifeforce_empath</defName>
-		<label>empathic lifeforce</label>
+		<label>empathic fertilin</label>
 		<geneClass>RJW_Genes.Gene_LifeForce_Empath</geneClass>
-		<description>Carriers of this gene generate lifeforce if nearby pawns are sexually satisfied. Be careful: Sexually frustrated pawns will make your empath loose lifeforce!</description>
+		<description>Carriers of this gene generate fertilin if nearby pawns are sexually satisfied. Be careful: Sexually frustrated pawns will make your empath loose fertilin!</description>
 		<iconPath>Genes/Icons/Hypersexual</iconPath>
 		<prerequisite>rjw_genes_lifeforce</prerequisite>
 		<displayOrderInCategory>3</displayOrderInCategory>
