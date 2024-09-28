@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: cockeater -->
+  <rjw_genes_cockeater.label>食屌者</rjw_genes_cockeater.label>
+  <!-- EN: Carriers of this gene are able eat cocks to restore their fertilin supply.\n			Cocks are consumed during that process. -->
+  <rjw_genes_cockeater.description>该基因携带者通过吃掉别人的阴茎来补充精素。鸡巴是真的会被吃掉的！</rjw_genes_cockeater.description>
+  <!-- EN: cockeater -->
+  <rjw_genes_cockeater.labelShortAdj>食屌者</rjw_genes_cockeater.labelShortAdj>
+  <!-- EN: life -->
+  <rjw_genes_cockeater.symbolPack.suffixSymbols.0.symbol>TODO</rjw_genes_cockeater.symbolPack.suffixSymbols.0.symbol>
+  <!-- EN: cock -->
+  <rjw_genes_cockeater.symbolPack.suffixSymbols.1.symbol>阴茎</rjw_genes_cockeater.symbolPack.suffixSymbols.1.symbol>
+  <!-- EN: eat -->
+  <rjw_genes_cockeater.symbolPack.suffixSymbols.2.symbol>吃</rjw_genes_cockeater.symbolPack.suffixSymbols.2.symbol>
+  
+  <!-- EN: cum eater -->
+  <rjw_genes_cum_eater.label>饮精者</rjw_genes_cum_eater.label>
+  <!-- EN: Carriers of this gene are able to absorb fertilin through eating cum. This\n			includes oral sex, eating cum for food or sucking out cumflated pawns.  -->
+  <rjw_genes_cum_eater.description>该基因携带者通过饮精来吸收精素。包括口交、食用精液制品、吮吸粘在身上的精液。</rjw_genes_cum_eater.description>
+  
+  <!-- EN: vitality drainer -->
+  <rjw_genes_drainer.label>精气汲取</rjw_genes_drainer.label>
+  <!-- EN: Carriers of this gene are able to absorb a great amount of fertilin by draining\n			the vitality of the partner. This is done passively through having sex with a\n			non-drained pawn that does not have this gene. -->
+  <rjw_genes_drainer.description>该基因携带者可以在与没有此基因的性伴侣做爱时汲取其活力，吸收大量精素。</rjw_genes_drainer.description>
+  
+  <!-- EN: fertilin absorber -->
+  <rjw_genes_fertilin_absorber.label>精素吸收</rjw_genes_fertilin_absorber.label>
+  <!-- EN: Carriers of this gene are able to absorb the fertilin inside sperm through\n			their vagina and anus. -->
+  <rjw_genes_fertilin_absorber.description>该基因的携带者可以通过阴道和肛门中的精液吸收精素。</rjw_genes_fertilin_absorber.description>
+  
+  <!-- EN: fertilin -->
+  <rjw_genes_lifeforce.label>精素</rjw_genes_lifeforce.label>
+  <!-- EN: Carriers of this gene have a reserve of biological strength powered by a\n			resource called fertilin. The resource can be gained and spent in various ways, some of\n			which are unlocked by other genes.\n\nCarriers lose 5 fertilin per day from biological\n			entropy. \n\nGene is inactive until carrier is able to have sex. -->
+  <rjw_genes_lifeforce.description>该基因的携带者可以储存一种叫做精素的资源的生物能力。这种资源可以通过多种途径获取和消耗，同时解锁一些相关基因。当携带者能够参与性爱后激活。</rjw_genes_lifeforce.description>
+  <!-- EN: Gives fertilin supply. -->
+  <rjw_genes_lifeforce.customEffectDescriptions.0>精素供给</rjw_genes_lifeforce.customEffectDescriptions.0>
+  <!-- EN: A reserve of biological strength which can be gained and spent in a\n			variety of ways. \n\nFertilin can be increased by absorbing cum, typically through oral\n			sex or stored cum. \n\nIf fertilin reaches zero, {PAWN_nameDef} will become very unhappy\n			and may try to obtain some forcefully. -->
+  <rjw_genes_lifeforce.resourceDescription>作为一种可以通过多种方式获取和消费的生物能力贮藏，精素可以通过吸收精液增加，特别是通过口交。如果精素归零，{PAWN_nameDef}会非常不悦，并尝试强行补充。</rjw_genes_lifeforce.resourceDescription>
+  <!-- EN: fertilin -->
+  <rjw_genes_lifeforce.resourceLabel>精素</rjw_genes_lifeforce.resourceLabel>
+  <!-- EN: fert -->
+  <rjw_genes_lifeforce.symbolPack.prefixSymbols.0.symbol>TODO</rjw_genes_lifeforce.symbolPack.prefixSymbols.0.symbol>
+  
+  <!-- EN: fertilin drain -->
+  <rjw_genes_lifeforce_drain.label>精素流失</rjw_genes_lifeforce_drain.label>
+  <!-- EN: Carriers lose an additional 7.5 fertilin per day from biological entropy. -->
+  <rjw_genes_lifeforce_drain.description>携带者每天额外失去7.5精素。</rjw_genes_lifeforce_drain.description>
+  <!-- EN: draining -->
+  <rjw_genes_lifeforce_drain.labelShortAdj>流失中</rjw_genes_lifeforce_drain.labelShortAdj>
+  <!-- EN: fertilin -->
+  <rjw_genes_lifeforce_drain.resourceLabel>精素</rjw_genes_lifeforce_drain.resourceLabel>
+  
+  <!-- EN: empathic lifeforce -->
+  <rjw_genes_lifeforce_empath.label>生命共情</rjw_genes_lifeforce_empath.label>
+  <!-- EN: Carriers of this gene generate lifeforce if nearby pawns are sexually\n			satisfied. Be careful: Sexually frustrated pawns will make your empath loose lifeforce! -->
+  <rjw_genes_lifeforce_empath.description>该基因的携带者将在周围有人获得性满足时产生生命力。当心：扫兴的性行为可能使你损失生命力！</rjw_genes_lifeforce_empath.description>
+  
+  <!-- EN: naked prowess -->
+  <rjw_genes_naked_prowess.label>天体之力</rjw_genes_naked_prowess.label>
+  <!-- EN: Carriers of this gene are able to temporarily increase their strength and\n			resilience, while they are naked. -->
+  <rjw_genes_naked_prowess.description>该基因的携带者在裸体时可以暂时增强力量和愈合速度。</rjw_genes_naked_prowess.description>
+  
+  <!-- EN: paralysing kiss -->
+  <rjw_genes_paralysingkiss.label>麻痹之吻</rjw_genes_paralysingkiss.label>
+  <!-- EN: Carriers of this gene are able to briefly stun an enemy with a kiss. -->
+  <rjw_genes_paralysingkiss.description>该基因的携带者可以通过接吻短暂眩晕一名敌人。</rjw_genes_paralysingkiss.description>
+  <!-- EN: paralysing kiss -->
+  <rjw_genes_paralysingkiss.labelShortAdj>麻痹之吻</rjw_genes_paralysingkiss.labelShortAdj>
+  <!-- EN: stun -->
+  <rjw_genes_paralysingkiss.symbolPack.suffixSymbols.0.symbol>眩晕</rjw_genes_paralysingkiss.symbolPack.suffixSymbols.0.symbol>
+  <!-- EN: kiss -->
+  <rjw_genes_paralysingkiss.symbolPack.suffixSymbols.1.symbol>吻</rjw_genes_paralysingkiss.symbolPack.suffixSymbols.1.symbol>
+  
+  <!-- EN: pussy healer -->
+  <rjw_genes_pussyhealing.label>腟愈师</rjw_genes_pussyhealing.label>
+  <!-- EN: Carriers of this gene are able use vaginal sex to tend to other's wounds. -->
+  <rjw_genes_pussyhealing.description>与该基因携带者的阴道性交可以治愈他人的伤势。</rjw_genes_pussyhealing.description>
+  <!-- EN: pussyhealer -->
+  <rjw_genes_pussyhealing.labelShortAdj>腟愈师</rjw_genes_pussyhealing.labelShortAdj>
+  <!-- EN: life -->
+  <rjw_genes_pussyhealing.symbolPack.suffixSymbols.0.symbol>生命</rjw_genes_pussyhealing.symbolPack.suffixSymbols.0.symbol>
+  <!-- EN: pussy -->
+  <rjw_genes_pussyhealing.symbolPack.suffixSymbols.1.symbol>阴道</rjw_genes_pussyhealing.symbolPack.suffixSymbols.1.symbol>
+  <!-- EN: heal -->
+  <rjw_genes_pussyhealing.symbolPack.suffixSymbols.2.symbol>治疗</rjw_genes_pussyhealing.symbolPack.suffixSymbols.2.symbol>
+  
+  <!-- EN: seduction -->
+  <rjw_genes_seduce.label>魅惑</rjw_genes_seduce.label>
+  <!-- EN: Carriers of this gene are able to seduce a pawn into having sex with them. -->
+  <rjw_genes_seduce.description>该基因的携带者可以勾引他人与自己做爱。</rjw_genes_seduce.description>
+  <!-- EN: seduction -->
+  <rjw_genes_seduce.labelShortAdj>魅惑</rjw_genes_seduce.labelShortAdj>
+  <!-- EN: stun -->
+  <rjw_genes_seduce.symbolPack.suffixSymbols.0.symbol>眩晕</rjw_genes_seduce.symbolPack.suffixSymbols.0.symbol>
+  <!-- EN: kiss -->
+  <rjw_genes_seduce.symbolPack.suffixSymbols.1.symbol>吻</rjw_genes_seduce.symbolPack.suffixSymbols.1.symbol>
+  
+</LanguageData>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: cocoon -->
+  <rjw_genes_ability_cocoonweaver.label>结茧</rjw_genes_ability_cocoonweaver.label>
+  <!-- EN: Weaves the victim into a (self-sustaining) cocoon. The victim cannot move, but can be bred. -->
+  <rjw_genes_ability_cocoonweaver.description>将受害者织入一个自给自足的茧中。受害者不能移动，但可以被饲养配种。</rjw_genes_ability_cocoonweaver.description>
+  
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Mating Call -->
+  <rjw_genes_ability_mating_call.label>野性呼唤</rjw_genes_ability_mating_call.label>
+  <!-- EN: Calls nearby animals to breed me. -->
+  <rjw_genes_ability_mating_call.description>召唤附近的动物来与我交配。</rjw_genes_ability_mating_call.description>
+  <!-- EN: Being Bred is not an easy business.\nThis might lead to a broken pawn, torn genitalia and hybrid-pregnancies.\nMaybe this is what you want.\nThe pawn will `submit` and e.g. Insects might cocoon him.\n\nAre you sure to proceed? -->
+  <rjw_genes_ability_mating_call.confirmationDialogText>被配种不是件容易事，这可能产生一个损毁的小人，撕裂的生殖器，混血的杂种。也许这就是你想要的？你的单位会“服从”于虫族对其使用结茧之类的情况。你确定要这么做吗？</rjw_genes_ability_mating_call.confirmationDialogText>
+  
+</LanguageData>
