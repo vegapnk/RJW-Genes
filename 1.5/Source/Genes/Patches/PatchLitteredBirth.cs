@@ -139,14 +139,12 @@ namespace RJW_Genes
                 {
                     ModLog.Message("Pawn " + __instance.pawn.NameShortColored + " (" + __instance.pawn.ThingID + ") is having random twins");
                 }
-                Find.LetterStack.ReceiveLetter("Twins!", __instance.pawn.NameShortColored + " is still in labor and is having twins!\n\n" +
-                    "Be sure to gather your doctor and additional friends and family to ensure the other baby is also born healthy!", 
+                Find.LetterStack.ReceiveLetter("rjw_genes_twin_letter".Translate(), __instance.pawn.NameShortColored + " " + "rjw_genes_twin_letter_content".Translate(), 
                     LetterDefOf.AnotherBaby, __instance.pawn);
                 return;
             }
 
-            Find.LetterStack.ReceiveLetter("Another baby!", __instance.pawn.NameShortColored + " is still in labor and is having another baby!\n\n" +
-                "Be sure to gather your doctor and additional friends and family to ensure the next baby is also born healthy!", 
+            Find.LetterStack.ReceiveLetter("rjw_genes_another_baby_letter".Translate(), __instance.pawn.NameShortColored + " " + "rjw_genes_another_baby_letter_content".Translate(), 
                 LetterDefOf.AnotherBaby, __instance.pawn);
         }
     }

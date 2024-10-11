@@ -1,3 +1,13 @@
+# 2.3.3
+
+**Changes**:
+
+- Made Littered Birth Letters Translatable (#178)
+
+**Fixes**: 
+
+- Fixed two patches using the outdated LitteredBirth DefNames (#181)
+
 # 2.3.2 (19-09-2024)
 
 **Changes**:
