@@ -47,33 +47,6 @@ namespace RJW_Genes
             harmony.Patch(AccessTools.Method(typeof(Quirk), nameof(Quirk.CountSatisfiedQuirks)),
                 postfix: new HarmonyMethod(typeof(QuirkPatcher), nameof(QuirkPatcher.CountSatisfiedPostfix)));
 
-            // Patch Licentia, if Licentia exists
-            // Logic & Explanation taken from https://rimworldwiki.com/wiki/Modding_Tutorials/Compatibility_with_DLLs
-            // Adjusted to use ModsConfig (which makes it work, the example above does not run out of the box)
-#pragma warning disable CS0168 // Variable is declared but never used
-            try
-            {
-                ((Action)(() =>
-                {
-                    if (ModsConfig.IsActive("LustLicentia.RJWLabs"))
-                    {
-                        // Gene: Cumflation Immunity [Prefix Patch]
-                        //harmony.Patch(AccessTools.Method(typeof(LicentiaLabs.CumflationHelper), nameof(LicentiaLabs.CumflationHelper.Cumflation)),
-                        //    prefix: new HarmonyMethod(typeof(Patch_CumflationImmunity), nameof(Patch_CumflationImmunity.Prefix)));
-                        // Gene: Generous Donor [Postfix Patch]
-                        //harmony.Patch(AccessTools.Method(typeof(LicentiaLabs.CumflationHelper), nameof(LicentiaLabs.CumflationHelper.TransferNutrition)),
-                        //    postfix: new HarmonyMethod(typeof(Patch_TransferNutrition), nameof(Patch_TransferNutrition.Postfix)));
-                        // Gene: CumEater [Postfix Patch] -- This is not exactly licentia, but the Generous-Donor Gene is only active with Licentia
-                        harmony.Patch(AccessTools.Method(typeof(rjw.JobDriver_Sex), nameof(rjw.JobDriver_Sex.ChangePsyfocus)),
-                            postfix: new HarmonyMethod(typeof(Patch_SexTicks_ChangePsyfocus), nameof(Patch_SexTicks_ChangePsyfocus.Postfix)));
-                    }
-                }))();
-            }
-            catch (TypeLoadException ex)
-            {
-                // To be expected for people without Licentia Labs
-            }
-#pragma warning restore CS0168 // Variable is declared but never used
 
             // Patch Cumpilation, if Cumpilation exists
 #pragma warning disable CS0168 // Variable is declared but never used
@@ -97,7 +70,8 @@ namespace RJW_Genes
             }
             catch (TypeLoadException ex)
             {
-                // To be expected for people without Licentia Labs
+                // To be expected for people without Cumpilation
+                // It's ok to do nothing then. 
             }
 #pragma warning restore CS0168 // Variable is declared but never used
         }

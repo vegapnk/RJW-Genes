@@ -109,7 +109,7 @@
     <Compile Include="Genes\GenitaliaSize\Genes\Gene_EvergrowingGenitalia.cs" />
     <Compile Include="Genes\Fluid\FluidUtility.cs" />
     <Compile Include="Genes\Fluid\Genes\Gene_ChangeFluidAmount.cs" />
-    <Compile Include="Genes\Fluid\Patches\Patch_TransferNutrition.cs" />
+    <Compile Include="Genes\Fluid\Patches\Patch_TransferNutrition_Generous_Donor_PawnToPartner.cs" />
     <Compile Include="Genes\Damage\Gene_Unbreakable.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraBreasts.cs" />
     <Compile Include="Genes\ExtraGenitalia\Gene_ExtraAnus.cs" />
