@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <HediffDef>
+    <defName>RJW_Genes_Cumpilation_Cumflation_Counter</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>cumflation counter</label>
+    <labelNoun>cumflation counter</labelNoun>
+    <description>Apparently you can deal with it quite well.</description>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>3.0</maxSeverity>
+    <isBad>false</isBad>
+    <tendable>false</tendable>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.85</severityPerDay>
+      </li>
+      <li Class="RJW_Genes.HediffCompProperties_MatchSeverityOfHediff">
+        <hediffToMatch>Cumpilation_Cumflation</hediffToMatch>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>counter a little</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <label>counter slight</label>
+        <minSeverity>0.2</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>counter moderate</label>
+        <minSeverity>0.4</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.25</offset>
+          </li>
+        </capMods>
+        <painOffset>-0.1</painOffset>
+      </li>
+      <li>
+        <label>counter intense</label>
+        <minSeverity>0.65</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.55</offset>
+          </li>
+        </capMods>
+        <painOffset>-0.15</painOffset>
+      </li>
+      <li>
+        <label>counter extreme</label>
+        <minSeverity>0.9</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.85</offset>
+          </li>
+        </capMods>
+        <painOffset>-0.25</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

@@ -2,40 +2,21 @@
 <Defs>
 
   <GeneDef>
-    <defName>rjw_genes_elasticity</defName>
-    <label>elasticity</label>
-    <displayCategory>rjw_genes_damage</displayCategory>
-    <description>This Xenotype cannot get stretched by huge penetrators.</description>
-    <iconPath>Genes/Icons/Elasticity</iconPath>
-    <geneClass>RJW_Genes.Gene_Elasticity</geneClass>
-    <biostatMet>-1</biostatMet>
-    <biostatCpx>1</biostatCpx>
-    <displayOrderInCategory>1</displayOrderInCategory>
-    
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
-				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
-  </GeneDef>
-
-  <GeneDef>
-    <defName>rjw_genes_likes_cumflation</defName>
-    <label>likes cumflation</label>
+    <defName>rjw_genes_inflatable</defName>
+    <label>inflatable</label>
     <displayCategory>rjw_genes_fluids</displayCategory>
-    <description>This Xenotype loves being cumflated.</description>
+    <description>This Xenotype loves being stuffed with fluids and does not suffer physical impediments from being inflated.</description>
     <iconPath>Genes/Icons/Cumflation</iconPath>
     <displayOrderInCategory>536</displayOrderInCategory>
     <biostatMet>-1</biostatMet>
     <biostatCpx>2</biostatCpx>
     <forcedTraits>
       <li>
-        <def>LikesCumflation</def>
+        <def>Cumpilation_LikesCumflation</def>
       </li>
     </forcedTraits>
     <exclusionTags>
-        <li>NotCumflatable</li>
+        <li>Cumpilation_NotCumflatable</li>
     </exclusionTags>
     
     <modExtensions>
@@ -47,14 +28,14 @@
   </GeneDef>
 
   <GeneDef>
-    <defName>rjw_genes_cumflation_immunity</defName>
-    <label>cumflation immunity</label>
+    <defName>rjw_genes_un_inflatable</defName>
+    <label>inflation resistance</label>
     <displayCategory>rjw_genes_fluids</displayCategory>
-    <description>This Xenotype cannot get cumflated.</description>
+    <description>This Xenotype cannot get inflated by fluids, neither vaginal, oral or anal.</description>
     <iconPath>Genes/Icons/Cumflation_Immunity</iconPath>
     <displayOrderInCategory>537</displayOrderInCategory>
     <exclusionTags>
-        <li>NotCumflatable</li>
+        <li>Cumpilation_NotCumflatable</li>
     </exclusionTags>
     
     <modExtensions>

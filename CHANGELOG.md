@@ -1,8 +1,12 @@
-# 2.3.3
+# 2.4.0
+
 
 **Changes**:
 
 - Made Littered Birth Letters Translatable (#178)
+- Likes Cumflation now works for all Cumflations and Stuffings from [Cumpilation](https://github.com/vegapnk/Cumpilation). It only removes the "physical" parts of the debuffs (pain, moving), but not e.g. food need reduction. It is now called `rjw_genes_inflatable`.  
+- Likes Cumflation might not work for Licentia anymore. Maybe it does, tried my best. 
+- Blocked Cumflation moved from Licentia Labs to Cumflation Hediffs. It's now called Un-Inflatable (`rjw_genes_un_inflatable`). 
 
 **Fixes**: 
 

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HediffDef Abstract="True" Name="RJW_Genes_Cumpilation_Counter_Stuffing">
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(240,200,110)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <tendable>false</tendable>
+  </HediffDef>
+
+  <HediffDef ParentName="RJW_Genes_Cumpilation_Counter_Stuffing">
+    <defName>RJW_Genes_Cumpilation_Cumstuffed_Counter</defName>
+    <label>cumstuffed counter</label>
+    <labelNoun>cumstuffed countered</labelNoun>
+    <description>Apparently you can deal with it quite well.</description>
+    <comps>
+      <li Class="RJW_Genes.HediffCompProperties_MatchSeverityOfHediff">
+        <hediffToMatch>Cumpilation_Cumstuffed</hediffToMatch>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>counter slightly bloated</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <label>counter bloated</label>
+        <becomeVisible>false</becomeVisible>
+        <minSeverity>0.2</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.03</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>counter full</label>
+        <becomeVisible>false</becomeVisible>
+        <minSeverity>0.4</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>counter stuffed</label>
+        <becomeVisible>false</becomeVisible>
+        <minSeverity>0.6</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+        <painOffset>-0.1</painOffset>
+      </li>
+      <li>
+        <label>counter overstuffed</label>
+        <minSeverity>0.8</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.3</offset>
+          </li>
+        </capMods>
+        <painOffset>-0.2</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="RJW_Genes_Cumpilation_Counter_Stuffing">
+    <defName>RJW_Genes_Cumpilation_InsectSpunkStuffed_Counter</defName>
+    <label>insect-spunk stuffed counter</label>
+    <labelNoun>insect-spunk stuffed counter</labelNoun>
+    <comps>
+      <li Class="RJW_Genes.HediffCompProperties_MatchSeverityOfHediff">
+        <hediffToMatch>Cumpilation_InsectSpunkStuffed</hediffToMatch>
+      </li>
+    </comps>
+    <description>Apparently you can deal with it quite well.</description>
+    <stages>
+      <li>
+        <label>counter slightly bloated</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <label>counter bloated</label>
+        <becomeVisible>false</becomeVisible>
+        <minSeverity>0.2</minSeverity>
+        <statOffsets>
+          <MoveSpeed>0.05</MoveSpeed>
+          <RestFallRateFactor>-0.1</RestFallRateFactor>
+        </statOffsets>
+      </li>
+      <li>
+        <label>counter full</label>
+        <becomeVisible>false</becomeVisible>
+        <minSeverity>0.4</minSeverity>
+        <statOffsets>
+          <RestFallRateFactor>0.25</RestFallRateFactor>
+          <ComfyTemperatureMax>5</ComfyTemperatureMax>
+          <ComfyTemperatureMin>5</ComfyTemperatureMin>
+          <GlobalLearningFactor>-0.1</GlobalLearningFactor>
+          <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+          <WorkSpeedGlobal>+0.15</WorkSpeedGlobal>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Talking</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>counter over-stuffed</label>
+        <becomeVisible>false</becomeVisible>
+        <minSeverity>0.7</minSeverity>
+        <statOffsets>
+          <ComfyTemperatureMax>10</ComfyTemperatureMax>
+          <ComfyTemperatureMin>10</ComfyTemperatureMin>
+          <GlobalLearningFactor>-0.2</GlobalLearningFactor>
+          <MentalBreakThreshold>-0.2</MentalBreakThreshold>
+          <WorkSpeedGlobal>+0.25</WorkSpeedGlobal>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>+0.05</offset>
+          </li>
+          <li>
+            <capacity>Talking</capacity>
+            <offset>+0.15</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

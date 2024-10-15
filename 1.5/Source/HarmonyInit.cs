@@ -5,6 +5,7 @@ using rjw;
 using RJWLoveFeeding;
 using RimWorld;
 using System.Linq;
+using LicentiaLabs;
 
 namespace RJW_Genes
 {
@@ -56,17 +57,14 @@ namespace RJW_Genes
                     if (ModsConfig.IsActive("LustLicentia.RJWLabs"))
                     {
                         // Gene: Cumflation Immunity [Prefix Patch]
-                        harmony.Patch(AccessTools.Method(typeof(LicentiaLabs.CumflationHelper), nameof(LicentiaLabs.CumflationHelper.Cumflation)),
-                            prefix: new HarmonyMethod(typeof(Patch_CumflationImmunity), nameof(Patch_CumflationImmunity.Prefix)));
+                        //harmony.Patch(AccessTools.Method(typeof(LicentiaLabs.CumflationHelper), nameof(LicentiaLabs.CumflationHelper.Cumflation)),
+                        //    prefix: new HarmonyMethod(typeof(Patch_CumflationImmunity), nameof(Patch_CumflationImmunity.Prefix)));
                         // Gene: Generous Donor [Postfix Patch]
-                        harmony.Patch(AccessTools.Method(typeof(LicentiaLabs.CumflationHelper), nameof(LicentiaLabs.CumflationHelper.TransferNutrition)),
-                            postfix: new HarmonyMethod(typeof(Patch_TransferNutrition), nameof(Patch_TransferNutrition.Postfix)));
+                        //harmony.Patch(AccessTools.Method(typeof(LicentiaLabs.CumflationHelper), nameof(LicentiaLabs.CumflationHelper.TransferNutrition)),
+                        //    postfix: new HarmonyMethod(typeof(Patch_TransferNutrition), nameof(Patch_TransferNutrition.Postfix)));
                         // Gene: CumEater [Postfix Patch] -- This is not exactly licentia, but the Generous-Donor Gene is only active with Licentia
                         harmony.Patch(AccessTools.Method(typeof(rjw.JobDriver_Sex), nameof(rjw.JobDriver_Sex.ChangePsyfocus)),
                             postfix: new HarmonyMethod(typeof(Patch_SexTicks_ChangePsyfocus), nameof(Patch_SexTicks_ChangePsyfocus.Postfix)));
-                        // Gene: Likes Cumflation [Postfix Patch]
-                        harmony.Patch(AccessTools.Method(typeof(LicentiaLabs.CumflationHelper), nameof(LicentiaLabs.CumflationHelper.Cumflation)),
-                            postfix: new HarmonyMethod(typeof(Patch_LikesCumflation), nameof(Patch_LikesCumflation.PostFix)));
                     }
                 }))();
             }
@@ -75,6 +73,29 @@ namespace RJW_Genes
                 // To be expected for people without Licentia Labs
             }
 
+            // Patch Cumpilation, if Cumpilation exists
+            try
+            {
+                ((Action)(() =>
+                {
+                    if (ModsConfig.IsActive("vegapnk.cumpilation"))
+                    {
+                        // Gene: Inflatable [Postfix Patch]
+                        harmony.Patch(AccessTools.Method(typeof(SexUtility), nameof(SexUtility.TransferFluids)),
+                            postfix: new HarmonyMethod(typeof(Patch_Cumpilation_Inflatable), nameof(Patch_Cumpilation_Inflatable.PostFix)));
+                        // Gene: Inflation-Resistance [Postfix Patch]
+                        harmony.Patch(AccessTools.Method(typeof(Cumpilation.Cumflation.CumflationUtility), nameof(Cumpilation.Cumflation.CumflationUtility.CanBeCumflated)),
+                            postfix: new HarmonyMethod(typeof(Patch_Cumpilation_BlockCumflation), nameof(Patch_Cumpilation_BlockCumflation.PostFix)));
+                        // Gene: Inflation-Resistance [Postfix Patch]
+                        harmony.Patch(AccessTools.Method(typeof(Cumpilation.Cumflation.StuffingUtility), nameof(Cumpilation.Cumflation.StuffingUtility.CanBeStuffed)),
+                            postfix: new HarmonyMethod(typeof(Patch_Cumpilation_BlockStuffing), nameof(Patch_Cumpilation_BlockStuffing.PostFix)));
+                    }
+                }))();
+            }
+            catch (TypeLoadException ex)
+            {
+                // To be expected for people without Licentia Labs
+            }
         }
     }
 }

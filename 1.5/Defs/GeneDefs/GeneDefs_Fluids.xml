@@ -119,4 +119,23 @@
     </modExtensions>
   </GeneDef>
 
+
+  <GeneDef>
+    <defName>rjw_genes_generous_donor</defName>
+    <label>generous donor</label>
+    <displayCategory>rjw_genes_fluids</displayCategory>
+    <description>When this Xenotype transfers fluids during sex, the giver will not get hungry.</description>
+    <iconPath>Genes/Icons/Generous_Donor</iconPath>
+    <displayOrderInCategory>538</displayOrderInCategory>
+    
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
 </Defs>
