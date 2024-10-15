@@ -4,7 +4,7 @@ namespace RJW_Genes
 {
     public class HediffComp_MatchSeverityOfHediff : HediffComp
     {
-        public new HediffCompProperties_MatchSeverityOfHediff Props => (HediffCompProperties_MatchSeverityOfHediff)this.props;
+        public HediffCompProperties_MatchSeverityOfHediff Props => (HediffCompProperties_MatchSeverityOfHediff)this.props;
 
         public override void CompPostTick(ref float severityAdjustment)
         {

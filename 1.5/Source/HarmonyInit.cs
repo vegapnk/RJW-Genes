@@ -50,6 +50,7 @@ namespace RJW_Genes
             // Patch Licentia, if Licentia exists
             // Logic & Explanation taken from https://rimworldwiki.com/wiki/Modding_Tutorials/Compatibility_with_DLLs
             // Adjusted to use ModsConfig (which makes it work, the example above does not run out of the box)
+#pragma warning disable CS0168 // Variable is declared but never used
             try
             {
                 ((Action)(() =>
@@ -72,8 +73,10 @@ namespace RJW_Genes
             {
                 // To be expected for people without Licentia Labs
             }
+#pragma warning restore CS0168 // Variable is declared but never used
 
             // Patch Cumpilation, if Cumpilation exists
+#pragma warning disable CS0168 // Variable is declared but never used
             try
             {
                 ((Action)(() =>
@@ -96,6 +99,7 @@ namespace RJW_Genes
             {
                 // To be expected for people without Licentia Labs
             }
+#pragma warning restore CS0168 // Variable is declared but never used
         }
     }
 }

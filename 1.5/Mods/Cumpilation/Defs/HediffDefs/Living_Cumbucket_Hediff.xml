@@ -15,6 +15,7 @@
           <li Class="HediffCompProperties_SeverityPerDay">
             <severityPerDay>-0.5</severityPerDay>
           </li>
+          <li Class="Cumpilation.Cumflation.HediffCompProperties_SourceStorage"/>
           <li Class="RJW_Genes.HediffsCompProperties_ProcessCumbucketMTB">
             <mtbDaysPerStage>
               <li>0</li>
