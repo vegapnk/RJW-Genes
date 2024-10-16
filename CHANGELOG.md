@@ -16,6 +16,7 @@
 - Fertilin is looking for the `Cumpilation_Cum` instead of Sexperiences `GatheredCum` (#176,#185)
 - Hardened Orgasmic Mytosis against LoveThrall (#130)
 - Added some more checks for Aphrodisiac Pheromones (#183)
+- Changed description of LifeForce Empath (#175 thanks @elatedCentipede)
 
 **Other**:
 
