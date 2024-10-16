@@ -241,9 +241,12 @@ namespace RJW_Genes
                 // Some Hediffs really need to know their  bodypart, e.g. an implanted arm can either be left or right. 
                 // Ignoring this will lead to many errors, mostly around nullpointers.
 
-                // Issue #186: Copying Pregnancies is super bad, so we do not touch pregnancies
-                if (hed.def == RimWorld.HediffDefOf.Pregnant)
+                // Issue #184: Copying Pregnancies is super bad, so we do not touch pregnancies
+                if (hed.def.defName == RimWorld.HediffDefOf.Pregnant.defName)
                     continue;
+                if (PregnancyUtility.GetPregnancyHediff(copiedFrom) != null)
+                    if (PregnancyUtility.GetPregnancyHediff(copiedFrom) == hed)
+                        continue;
 
                 BodyPartRecord originalBPR = hed.Part;
                 if (originalBPR != null) { 

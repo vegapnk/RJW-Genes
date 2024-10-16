@@ -8,6 +8,7 @@
 - Likes Cumflation might not work for Licentia anymore. Maybe it does, tried my best. 
 - Blocked Cumflation moved from Licentia Labs to Cumflation Hediffs. It's now called Un-Inflatable (`rjw_genes_un_inflatable`). 
 - Generous Donor now does not need Licentia anymore. 
+- Orgasmic Mytosis does not copy pregnancies anymore (#184). This should make things a bit more stable and protect against errors. 
 
 **Fixes**: 
 
