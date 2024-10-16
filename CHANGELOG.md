@@ -13,6 +13,11 @@
 **Fixes**: 
 
 - Fixed two patches using the outdated LitteredBirth DefNames (#181)
+- Fertilin is looking for the `Cumpilation_Cum` instead of Sexperiences `GatheredCum` (#176,#185)
+
+**Other**:
+
+- I decided to (for now) not lock Fertilin Gain behind Cum as Fluid Type. So you will get some from InsectSpunk, etc. I hope that it does not get out of hand, but I don't want to introduce a punishing mechanic. 
 
 # 2.3.2 (19-09-2024)
 
