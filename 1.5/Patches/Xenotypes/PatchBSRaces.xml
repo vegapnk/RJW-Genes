@@ -71,7 +71,7 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs/XenotypeDef[defName="BS_Redcap"]/genes</xpath>
           <value>
-            <li>LitteredBirths</li>
+            <li>rjw_genes_littered_births</li>
             <li>rjw_genes_tight_female_genitalia</li>
             <li>rjw_genes_tight_anus</li>
             <li>rjw_genes_much_fluid</li>
