@@ -241,6 +241,10 @@ namespace RJW_Genes
                 // Some Hediffs really need to know their  bodypart, e.g. an implanted arm can either be left or right. 
                 // Ignoring this will lead to many errors, mostly around nullpointers.
 
+                // Issue #130: LoveThrall is a strange Hediff that has a lot of background logic, we skip it 
+                if (hed.def.defName == "Hediff_LoveThrall")
+                    continue;
+
                 // Issue #184: Copying Pregnancies is super bad, so we do not touch pregnancies
                 if (hed.def.defName == RimWorld.HediffDefOf.Pregnant.defName)
                     continue;

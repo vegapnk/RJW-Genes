@@ -14,6 +14,7 @@
 
 - Fixed two patches using the outdated LitteredBirth DefNames (#181)
 - Fertilin is looking for the `Cumpilation_Cum` instead of Sexperiences `GatheredCum` (#176,#185)
+- Hardened Orgasmic Mytosis against LoveThrall (#130)
 
 **Other**:
 
