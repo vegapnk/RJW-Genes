@@ -116,7 +116,6 @@ namespace RJW_Genes
         public static bool IsYouthFountain(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_youth_fountain); }
         public static bool IsAgeDrainer(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_sex_age_drain); }
         public static bool IsElastic(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_elasticity); }
-        public static bool IsCumflationImmune(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_cumflation_immunity); }
         public static bool IsGenerousDonor(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_generous_donor); }
         public static bool IsPussyHealer(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_pussyhealing); }
         public static bool IsUnbreakable(Pawn pawn) { return HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_unbreakable); }

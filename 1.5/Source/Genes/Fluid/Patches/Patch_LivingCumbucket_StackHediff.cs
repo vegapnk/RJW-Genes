@@ -23,11 +23,15 @@ namespace RJW_Genes
 
         public static void Postfix(SexProps props)
         {
-            if (!ModsConfig.IsActive("rjw.sexperience"))
+            if (!ModsConfig.IsActive("vegapnk.cumpilation"))
                 return;
 
             // ShortCuts: Exit Early if Pawn or Partner are null (can happen with Masturbation or other nieche-cases)
             if (props == null || props.pawn == null || !props.hasPartner())
+                return;
+
+            // Is not internal Sex
+            if (!Cumpilation.Cumflation.StuffingUtility.IsSexTypeThatCanCumstuff(props) && !Cumpilation.Cumflation.CumflationUtility.IsSexTypeThatCanCumflate(props))
                 return;
 
             Pawn pawnA = props.pawn;
@@ -35,26 +39,42 @@ namespace RJW_Genes
 
             if (pawnA.genes != null && pawnA.genes.HasActiveGene(GeneDefOf.rjw_genes_living_cumbucket) && FluidUtility.GetTotalFluidAmount(pawnB) > 0)
             {
-                ProcessLivingCumbucket(pawnA, FluidUtility.GetTotalFluidAmount(pawnB));
+                ISexPartHediff genital = Cumpilation.Common.FluidUtility.GetGenitalsWithFluids(pawnB,filterForShootsOnOrgasm:true).RandomElement();
+                if (genital != null)
+                {
+                    var comp = genital.GetPartComp();
+                    StackUpLivingCumbucket(pawnA, comp.FluidAmount, comp.Fluid, pawnB);
+                }
             }
 
             if (pawnB.genes != null && pawnB.genes.HasActiveGene(GeneDefOf.rjw_genes_living_cumbucket) && FluidUtility.GetTotalFluidAmount(pawnA) > 0)
             {
-                ProcessLivingCumbucket(pawnB, FluidUtility.GetTotalFluidAmount(pawnA));
+                ISexPartHediff genital = Cumpilation.Common.FluidUtility.GetGenitalsWithFluids(pawnA, filterForShootsOnOrgasm: true).RandomElement();
+                if (genital != null)
+                {
+                    var comp = genital.GetPartComp();
+                    StackUpLivingCumbucket(pawnB, comp.FluidAmount, comp.Fluid, pawnA);
+                }
             }
         }
 
-        public static void ProcessLivingCumbucket(Pawn pawn, float cumamount)
+        public static void StackUpLivingCumbucket(Pawn pawn, float cumamount, SexFluidDef fluid, Pawn source)
         {
             float bodysize = pawn.BodySize;
             float result_severity_increase = cumamount / (fluid_amount_required_for_hediff_severity_ * bodysize);
-
 
             Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.rjw_genes_filled_living_cumbucket);
             if (hediff == null)
             {
                 hediff = pawn.health.GetOrAddHediff(HediffDefOf.rjw_genes_filled_living_cumbucket);
                 hediff.Severity = 0.01f;
+            }
+
+            var storage = hediff.TryGetComp<Cumpilation.Cumflation.HediffComp_SourceStorage>();
+            if (storage != null)
+            {
+                Cumpilation.Cumflation.FluidSource entry = new Cumpilation.Cumflation.FluidSource() { amount = cumamount, fluid=fluid, pawn = source };
+                storage.AddOrMerge(entry);
             }
 
             hediff.Severity += result_severity_increase;

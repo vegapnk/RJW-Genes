@@ -73,9 +73,9 @@ namespace RJW_Genes
         public static readonly GeneDef rjw_genes_no_fluid;
 		public static readonly GeneDef rjw_genes_much_fluid;
 		public static readonly GeneDef rjw_genes_very_much_fluid;
-		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_likes_cumflation;
-		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_cumflation_immunity;
-		[MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_generous_donor;
+		[MayRequire("vegapnk.cumpilation")] public static readonly GeneDef rjw_genes_un_inflatable;
+		[MayRequire("vegapnk.cumpilation")] public static readonly GeneDef rjw_genes_inflatable;
+		public static readonly GeneDef rjw_genes_generous_donor;
 		[MayRequire("rjw.sexperience")] public static readonly GeneDef rjw_genes_living_cumbucket;
         
 

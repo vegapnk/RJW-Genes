@@ -68,20 +68,26 @@ namespace RJW_Genes
 
 		private Thing GetStoredCum(Pawn pawn)
 		{
+			if (!ModsConfig.IsActive("vegapnk.cumpilation"))
+				return null;
+
 			Thing carriedThing = pawn.carryTracker.CarriedThing;
-			ThingDef gatheredCum = ThingDef.Named("GatheredCum");
-			if (carriedThing != null && carriedThing.def == gatheredCum)
+			ThingDef cumThingDef = Cumpilation.DefOfs.Cumpilation_Cum;
+
+			if (cumThingDef == null) { return null; }
+
+			if (carriedThing != null && carriedThing.def == cumThingDef)
 			{
 				return carriedThing;
 			}
 			for (int i = 0; i < pawn.inventory.innerContainer.Count; i++)
 			{
-				if (pawn.inventory.innerContainer[i].def == gatheredCum)
+				if (pawn.inventory.innerContainer[i].def == cumThingDef)
 				{
 					return pawn.inventory.innerContainer[i];
 				}
 			}
-			return GenClosest.ClosestThing_Global_Reachable(pawn.Position, pawn.Map, pawn.Map.listerThings.ThingsOfDef(gatheredCum), PathEndMode.OnCell, TraverseParms.For(pawn, Danger.Deadly, TraverseMode.ByPawn, false, false, false), 9999f, (Thing t) => pawn.CanReserve(t, 1, -1, null, false) && !t.IsForbidden(pawn), null);
+			return GenClosest.ClosestThing_Global_Reachable(pawn.Position, pawn.Map, pawn.Map.listerThings.ThingsOfDef(cumThingDef), PathEndMode.OnCell, TraverseParms.For(pawn, Danger.Deadly, TraverseMode.ByPawn, false, false, false), 9999f, (Thing t) => pawn.CanReserve(t, 1, -1, null, false) && !t.IsForbidden(pawn), null);
 		}
 	}
 }

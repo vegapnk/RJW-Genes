@@ -49,10 +49,13 @@ namespace RJW_Genes
 
 		public static void DrinkCumflation(Pawn source, Pawn consumer)
         {
-			if (GeneUtility.HasLifeForce(consumer) && GeneUtility.IsCumEater(consumer)
-				&& source.health.hediffSet.HasHediff(HediffDef.Named("Cumflation")))
+            if (!ModsConfig.IsActive("vegapnk.cumpilation")) return;
+			if (source  == null || consumer == null || source.IsAnimal() || consumer.IsAnimal() ) return;
+
+            if (GeneUtility.HasLifeForce(consumer) && GeneUtility.IsCumEater(consumer)
+				&& source.health.hediffSet.HasHediff(Cumpilation.DefOfs.Cumpilation_Cumflation))
 			{
-				Hediff cumflation = source.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("Cumflation"));
+				Hediff cumflation = source.health.hediffSet.GetFirstHediffOfDef(Cumpilation.DefOfs.Cumpilation_Cumflation);
 				Gene_LifeForce gene_LifeForce = consumer.genes.GetFirstGeneOfType<Gene_LifeForce>();
 				cumflation.Severity = Math.Max(0f,cumflation.Severity - CUMFLATION_SEVERITY_LOSS_PER_TICK);
 				gene_LifeForce.Resource.Value += LIFEFORCE_GAIN_PER_TICK;

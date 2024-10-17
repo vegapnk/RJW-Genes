@@ -1,3 +1,33 @@
+# 2.4.0 (17-10-2024)
+
+**Changes**:
+
+- Made Littered Birth Letters Translatable (#178)
+- Likes Cumflation now works for all Cumflations and Stuffings from [Cumpilation](https://github.com/vegapnk/Cumpilation). It only removes the "physical" parts of the debuffs (pain, moving), but not e.g. food need reduction. It is now called `rjw_genes_inflatable`.  
+- Likes Cumflation might not work for Licentia anymore. Maybe it does, tried my best. 
+- Blocked Cumflation moved from Licentia Labs to Cumflation Hediffs. It's now called Un-Inflatable (`rjw_genes_un_inflatable`). 
+- Generous Donor now does not need Licentia anymore. 
+- Orgasmic Mytosis does not copy pregnancies anymore (#184). This should make things a bit more stable and protect against errors. 
+- Eating 10 Cumpilation Cum should give 2 Fertilin for CumEater Pawns.
+
+**Fixes**: 
+
+- Fixed two patches using the outdated LitteredBirth DefNames (#181)
+- Fertilin is looking for the `Cumpilation_Cum` instead of Sexperiences `GatheredCum` (#176,#185)
+- Hardened Orgasmic Mytosis against LoveThrall (#130)
+- Added some more checks for Aphrodisiac Pheromones (#183)
+- Changed description of LifeForce Empath (#175 thanks @elatedCentipede)
+- Ovary Agitator, Limbyc Stimulator and Bioscaffold can be removed with surgery (#186). Scramblers cannot be removed. 
+
+**Other**:
+
+- I decided to (for now) not lock Fertilin Gain behind Cum as Fluid Type. So you will get some from InsectSpunk, etc. I hope that it does not get out of hand, but I don't want to introduce a punishing mechanic. 
+- Evergrowing Genitalia now uses the BodySizeOverride of Comps. But: Still not fully correctly displayed :/ (#161)
+
+**To Test**: 
+
+- Since the RJW 5.5 Update, the fluid amount has changed. With Cumpilation, I also changed how much fluid becomes one item etc. so right now, Succubi might be a bit too easy or a bit too hard. To fix or change it, I need some feedback that use these in their "normal" playthroughs. 
+
 # 2.3.2 (19-09-2024)
 
 **Changes**:

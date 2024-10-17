@@ -8,7 +8,7 @@
 			<value>
 				<outcomeDoers>
 					<li Class="RJW_Genes.IngestionOutcomeDoer_LifeForceOffset">
-						<FertilinPerUnit>1</FertilinPerUnit>
+						<FertilinPerUnit>2</FertilinPerUnit>
 					</li>
 				</outcomeDoers>
 			</value>
@@ -17,7 +17,7 @@
 			<xpath>Defs/ThingDef[defName="Cumpilation_Cum"]/ingestible/outcomeDoers</xpath>
 			<value>
 				<li Class="RJW_Genes.IngestionOutcomeDoer_LifeForceOffset">
-						<FertilinPerUnit>1</FertilinPerUnit>
+						<FertilinPerUnit>2</FertilinPerUnit>
 					</li>
 			</value>
 		</match>

@@ -54,6 +54,13 @@ namespace RJW_Genes
                 // Do nothing if Pawn is Baby or Child (#25)
                 if (!pawn.ageTracker.Adult)
                     continue;
+                // Sometimes things can happen if pawns de-spawn, are in Bed, or otherwise disappear (#183)
+                if (!pawn.Spawned)
+                    continue;
+                if (pawn.Crawling)
+                    continue;
+                if (pawn.InBed())
+                    continue;
                 // Do nothing for pawns that also have pheromones
                 if (GeneUtility.HasGeneNullCheck(pawn, GeneDefOf.rjw_genes_aphrodisiac_pheromones))
                     continue;
@@ -87,8 +94,6 @@ namespace RJW_Genes
                 aphrodisiac = HediffMaker.MakeHediff(HediffDefOf.rjw_genes_aphrodisiac_pheromone, pawn);
                 aphrodisiac.Severity = 0.5f;
                 pawn.health.AddHediff(aphrodisiac);
-
-                
             }
         }
 

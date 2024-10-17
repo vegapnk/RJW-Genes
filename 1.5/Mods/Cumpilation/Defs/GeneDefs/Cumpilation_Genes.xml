@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef>
+    <defName>rjw_genes_inflatable</defName>
+    <label>inflatable</label>
+    <displayCategory>rjw_genes_fluids</displayCategory>
+    <description>This Xenotype loves being stuffed with fluids and does not suffer physical impediments from being inflated.</description>
+    <iconPath>Genes/Icons/Cumflation</iconPath>
+    <displayOrderInCategory>536</displayOrderInCategory>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>2</biostatCpx>
+    <forcedTraits>
+      <li>
+        <def>Cumpilation_LikesCumflation</def>
+      </li>
+    </forcedTraits>
+    <exclusionTags>
+        <li>Cumpilation_NotCumflatable</li>
+    </exclusionTags>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>rjw_genes_un_inflatable</defName>
+    <label>inflation resistance</label>
+    <displayCategory>rjw_genes_fluids</displayCategory>
+    <description>This Xenotype cannot get inflated by fluids, neither vaginal, oral or anal.</description>
+    <iconPath>Genes/Icons/Cumflation_Immunity</iconPath>
+    <displayOrderInCategory>537</displayOrderInCategory>
+    <exclusionTags>
+        <li>Cumpilation_NotCumflatable</li>
+    </exclusionTags>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+
+  <GeneDef>
+    <defName>rjw_genes_living_cumbucket</defName>
+    <label>living cumbucket</label>
+    <displayCategory>rjw_genes_fluids</displayCategory>
+    <description>When this Xenotype partakes in sexual activity, they store cum and produce it as an item.</description>
+    <iconPath>Genes/Icons/living_cumbucket</iconPath>
+    <displayOrderInCategory>559</displayOrderInCategory>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <modExtensions>
+        <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+            <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+            <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+        </li>
+    </modExtensions>
+  </GeneDef>
+
+
+</Defs>

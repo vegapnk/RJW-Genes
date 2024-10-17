@@ -1,5 +1,4 @@
-﻿using LicentiaLabs;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Verse;
 using Verse.AI;
 using UnityEngine;
@@ -23,7 +22,7 @@ namespace RJW_Genes
         protected override IEnumerable<Toil> MakeNewToils()
         {
             // DevNote: Right now, this needs RJW.sexperience to produce the Cum-Item. 
-            if (!ModsConfig.IsActive("rjw.sexperience"))
+            if (!ModsConfig.IsActive("vegapnk.cumpilation"))
                 yield break;
 
             Toil toil = new Toil();
@@ -76,10 +75,6 @@ namespace RJW_Genes
                 if (this.ticksLeft <= 0)
                 {
                     base.ReadyForNextToil();
-                    TaleRecorder.RecordTale(Licentia.TaleDefs.VomitedCum, new object[]
-                    {
-                        this.pawn
-                    });
                 }
             };
             toil.defaultCompleteMode = ToilCompleteMode.Never;
@@ -91,15 +86,19 @@ namespace RJW_Genes
 
         private void SpawnCum(Pawn pawn, IntVec3 cell, Map map)
         {
-            ThingDef cumDef = DefDatabase<ThingDef>.GetNamed("GatheredCum", true);
-
             Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.rjw_genes_filled_living_cumbucket);
             if (hediff == null)
             {
                 ModLog.Warning($"{pawn} has the JobDriver_ProcessCumbucket but does not have the Hediff for filled cumbucket.");
                 return;
             }
-            
+
+            var storage = hediff.TryGetComp<Cumpilation.Cumflation.HediffComp_SourceStorage>();
+            var random_entry = storage.sources.RandomElementByWeight(p => p.amount);
+            ThingDef ToSpawn = random_entry.fluid.consumable == null ? Cumpilation.DefOfs.Cumpilation_Cum : random_entry.fluid.consumable;
+
+            ThingDef cumDef = Cumpilation.DefOfs.Cumpilation_Cum;
+
             // Case 1: "Normal Severity", just puke out a bit of cum here and there. 
             if (hediff.Severity <= 10)
             {
