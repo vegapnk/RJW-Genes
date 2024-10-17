@@ -35,12 +35,12 @@ namespace RJW_Genes
                     CompHediff.baseSize += 0.10f;
                 else
                 {
-                    //CompHediff.ForceSize(CompHediff.Size + 0.05f);
-                    CompHediff.originalOwnerSize += 0.05f;
+                    if (CompHediff.bodySizeOverride <= 1.0) CompHediff.bodySizeOverride = 1.0f;
+                    CompHediff.bodySizeOverride += 0.05f;
                 }
                 CompHediff.UpdateSeverity();
 
-                if (CompHediff.originalOwnerSize > 3.0f)
+                if (CompHediff.bodySizeOverride > 3.0f)
                 {
                     // Add Mental Hediff 
                     HandleGenitaliaSizeThoughts(pawn);
@@ -62,14 +62,14 @@ namespace RJW_Genes
                     CompHediff.baseSize += 0.10f;
                 else
                 {
-
-                    CompHediff.originalOwnerSize += 0.05f;
+                    if (CompHediff.bodySizeOverride <= 1.0) CompHediff.bodySizeOverride = 1.0f;
+                    CompHediff.bodySizeOverride += 0.05f;
                 }
                     //CompHediff.ForceSize(CompHediff.Size + 0.05f);
                     //CompHediff.originalOwnerSize += 0.05f;
                 CompHediff.UpdateSeverity();
 
-                if (CompHediff.baseSize > 3.0f)
+                if (CompHediff.bodySizeOverride > 3.0f)
                 {
                     // Add Mental Hediff 
                     HandleGenitaliaSizeThoughts(pawn);
