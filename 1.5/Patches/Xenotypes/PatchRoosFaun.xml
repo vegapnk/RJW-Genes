@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Roo's Faun Xenotype</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="RBSF_Faun"]/genes</xpath>
+		<value>
+			<li>rjw_genes_equine_genitalia</li>
+			<li>rjw_genes_zoophile</li>
+			<li>rjw_genes_mating_call</li>
+			<li>rjw_genes_tight_female_genitalia</li>
+		</value>
+	</match>
+</Operation>
+</Patch>
