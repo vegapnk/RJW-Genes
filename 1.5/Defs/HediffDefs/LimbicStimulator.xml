@@ -35,4 +35,17 @@
       <researchPrerequisite>FertilityProcedures</researchPrerequisite>
     </recipeMaker>
   </ThingDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveLimbicStimulator</defName>
+    <label>remove limbic stimulator</label>
+    <description>Remove the limbic stimulator.</description>
+    <descriptionHyperlinks>
+      <ThingDef>LimbicStimulator</ThingDef>
+      <HediffDef>LimbicStimulator</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing limbic stimulator.</jobString>
+    <removesHediff>LimbicStimulator</removesHediff>
+  </RecipeDef>
+
 </Defs>

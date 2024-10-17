@@ -17,6 +17,7 @@
 - Hardened Orgasmic Mytosis against LoveThrall (#130)
 - Added some more checks for Aphrodisiac Pheromones (#183)
 - Changed description of LifeForce Empath (#175 thanks @elatedCentipede)
+- Ovary Agitator, Limbyc Stimulator and Bioscaffold can be removed with surgery (#186). Scramblers cannot be removed. 
 
 **Other**:
 

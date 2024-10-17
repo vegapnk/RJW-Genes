@@ -133,4 +133,17 @@
       <researchPrerequisite>FertilityProcedures</researchPrerequisite>
     </recipeMaker>
   </ThingDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveOvaryAgitator</defName>
+    <label>remove ovary agitator</label>
+    <description>Remove the ovary agitator.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OvaryAgitator</ThingDef>
+      <HediffDef>OvaryAgitator</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing ovary agitator.</jobString>
+    <removesHediff>OvaryAgitator</removesHediff>
+  </RecipeDef>
+
 </Defs>

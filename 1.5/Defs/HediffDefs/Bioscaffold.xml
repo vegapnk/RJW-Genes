@@ -68,4 +68,17 @@
       <li>ExoticMisc</li>
     </tradeTags>
   </ThingDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveBioscaffold</defName>
+    <label>remove Bioscaffold</label>
+    <description>Remove the bioscaffold.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bioscaffold</ThingDef>
+      <HediffDef>Bioscaffold</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing bioscaffold.</jobString>
+    <removesHediff>Bioscaffold</removesHediff>
+  </RecipeDef>
+
 </Defs>
