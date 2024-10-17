@@ -1,5 +1,4 @@
-# 2.4.0
-
+# 2.4.0 (17-10-2024)
 
 **Changes**:
 
@@ -9,6 +8,7 @@
 - Blocked Cumflation moved from Licentia Labs to Cumflation Hediffs. It's now called Un-Inflatable (`rjw_genes_un_inflatable`). 
 - Generous Donor now does not need Licentia anymore. 
 - Orgasmic Mytosis does not copy pregnancies anymore (#184). This should make things a bit more stable and protect against errors. 
+- Eating 10 Cumpilation Cum should give 2 Fertilin for CumEater Pawns.
 
 **Fixes**: 
 
@@ -23,6 +23,10 @@
 
 - I decided to (for now) not lock Fertilin Gain behind Cum as Fluid Type. So you will get some from InsectSpunk, etc. I hope that it does not get out of hand, but I don't want to introduce a punishing mechanic. 
 - Evergrowing Genitalia now uses the BodySizeOverride of Comps. But: Still not fully correctly displayed :/ (#161)
+
+**To Test**: 
+
+- Since the RJW 5.5 Update, the fluid amount has changed. With Cumpilation, I also changed how much fluid becomes one item etc. so right now, Succubi might be a bit too easy or a bit too hard. To fix or change it, I need some feedback that use these in their "normal" playthroughs. 
 
 # 2.3.2 (19-09-2024)
 
