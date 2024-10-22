@@ -4,7 +4,8 @@
 
 - Added standard patches for Obsidia Arachnas, Axotl, Ceraton, Mothoids, Tortle, Slimes Xenotypes (#188, Thanks @casualArtifice)
 - Added standard patches for Rimsenal Harana, Urred & Askbarn Xenotypes (#188, Thanks @casualArtifice)
-- Re-Added standard patches for Roos Faun & Minotaur (#188, Thanks @casualArtifice) 
+- Re-Added standard patches for Roos Faun & Minotaur (#188, Thanks @casualArtifice)
+- Issue and Feature Request Templates for Github
 
 **Fixes**:
 
