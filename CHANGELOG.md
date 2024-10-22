@@ -13,6 +13,10 @@
 - Fixed some Xenotype Patches to not need Licentia for Generous Donor (#188, Thanks @casualArtifice)
 - Fixed GeneDef Typo in Heaven-And-Hell LiL Glutton elasticity (#122)
 
+**Other**:
+
+- Nazeeeem made a gene [here](https://gitgud.io/nazeeeem/nutritious-cum) that increases nutrition from cum, and reduces nutritions from anything else (effectifely closes #101)
+
 # 2.4.0 (17-10-2024)
 
 **Changes**:
