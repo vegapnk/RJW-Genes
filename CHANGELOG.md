@@ -11,6 +11,7 @@
 
 - Put Living Cumbucket code properly behind a dependency check (#190)
 - Fixed some Xenotype Patches to not need Licentia for Generous Donor (#188, Thanks @casualArtifice)
+- Fixed GeneDef Typo in Heaven-And-Hell LiL Glutton elasticity (#122)
 
 # 2.4.0 (17-10-2024)
 
