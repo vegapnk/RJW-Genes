@@ -65,6 +65,9 @@ namespace RJW_Genes
                         // Gene: Inflation-Resistance [Postfix Patch]
                         harmony.Patch(AccessTools.Method(typeof(Cumpilation.Cumflation.StuffingUtility), nameof(Cumpilation.Cumflation.StuffingUtility.CanBeStuffed)),
                             postfix: new HarmonyMethod(typeof(Patch_Cumpilation_BlockStuffing), nameof(Patch_Cumpilation_BlockStuffing.PostFix)));
+                        // Gene: Living Cumbucket [Postfix Patch] 
+                        harmony.Patch(AccessTools.Method(typeof(SexUtility), nameof(SexUtility.SatisfyPersonal)),
+                            postfix: new HarmonyMethod(typeof(Patch_LivingCumbucket_StackHediff), nameof(Patch_LivingCumbucket_StackHediff.PostFix)));
                     }
                 }))();
             }

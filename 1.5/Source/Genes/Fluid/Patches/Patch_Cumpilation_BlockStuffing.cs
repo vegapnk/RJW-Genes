@@ -9,6 +9,8 @@ namespace RJW_Genes
 {
     public class Patch_Cumpilation_BlockStuffing
     {
+
+        public static bool Prepare() => ModsConfig.IsActive("vegapnk.cumpilation");
         public static void PostFix(Pawn pawn,ref bool __result) { 
             if (pawn != null && pawn.genes != null && pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_un_inflatable))
                 __result = false;

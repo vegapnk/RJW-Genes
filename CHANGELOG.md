@@ -1,3 +1,9 @@
+# 2.4.1 (22-10-2024)
+
+**Fixes**:
+
+- Put Living Cumbucket code properly behind a dependency check (#190)
+
 # 2.4.0 (17-10-2024)
 
 **Changes**:
