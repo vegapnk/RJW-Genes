@@ -12,7 +12,7 @@
             <li>rjw_genes_big_male_genitalia</li>
             <li>rjw_genes_big_breasts</li>
             <li>rjw_genes_no_sex_need</li>
-            <li MayRequire="LustLicentia.RJWLabs">rjw_genes_generous_donor</li>
+            <li>rjw_genes_generous_donor</li>
             <li MayRequire="rjw.sexperience">AptitudePoor_Sex</li>
           </value>
         </li>
@@ -20,7 +20,7 @@
           <xpath>Defs/XenotypeDef[defName="BS_Malakim"]/genes</xpath>
           <value>
             <li>rjw_genes_small_breasts</li>
-            <li MayRequire="LustLicentia.RJWLabs">rjw_genes_generous_donor</li>
+            <li>rjw_genes_generous_donor</li>
             <li MayRequire="rjw.sexperience">AptitudeTerrible_Sex</li>
           </value>
         </li>
@@ -35,7 +35,7 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs/XenotypeDef[defName="BS_Grigori"]/genes</xpath>
           <value>
-            <li MayRequire="LustLicentia.RJWLabs">rjw_genes_generous_donor</li>
+            <li>rjw_genes_generous_donor</li>
             <li MayRequire="rjw.sexperience">AptitudeStrong_Sex</li>
           </value>
         </li>
@@ -62,7 +62,7 @@
             <li>rjw_genes_loose_anus</li>
             <li>rjw_genes_extra_vagina</li>
             <li>rjw_genes_extra_anus</li>
-            <li MayRequire="LustLicentia.RJWLabs">rjw_genes_cumflation_immunity</li>
+            <li MayRequire="vegapnk.cumpilation">rjw_genes_un_inflatable</li>
             <li MayRequire="rjw.sexperience">AptitudeStrong_Sex</li>
           </value>
         </li>
@@ -75,7 +75,7 @@
             <li>rjw_genes_tight_anus</li>
             <li>rjw_genes_extra_vagina</li>
             <li>rjw_genes_extra_anus</li>
-            <li MayRequire="LustLicentia.RJWLabs">rjw_genes_likes_cumflation</li>
+            <li MayRequire="vegapnk.cumpilation">rjw_genes_inflatable</li>
             <li MayRequire="LustLicentia.RJWLabs">rjw_genes_elastic</li>
             <li MayRequire="rjw.sexperience">AptitudeStrong_Sex</li>
           </value>
