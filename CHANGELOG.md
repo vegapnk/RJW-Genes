@@ -1,3 +1,22 @@
+# 2.4.1 (22-10-2024)
+
+**Additions**:
+
+- Added standard patches for Obsidia Arachnas, Axotl, Ceraton, Mothoids, Tortle, Slimes Xenotypes (#188, Thanks @casualArtifice)
+- Added standard patches for Rimsenal Harana, Urred & Askbarn Xenotypes (#188, Thanks @casualArtifice)
+- Re-Added standard patches for Roos Faun & Minotaur (#188, Thanks @casualArtifice)
+- Issue and Feature Request Templates for Github
+
+**Fixes**:
+
+- Put Living Cumbucket code properly behind a dependency check (#190)
+- Fixed some Xenotype Patches to not need Licentia for Generous Donor (#188, Thanks @casualArtifice)
+- Fixed GeneDef Typo in Heaven-And-Hell LiL Glutton elasticity (#122)
+
+**Other**:
+
+- Nazeeeem made a gene [here](https://gitgud.io/nazeeeem/nutritious-cum) that increases nutrition from cum, and reduces nutritions from anything else (effectifely closes #101)
+
 # 2.4.0 (17-10-2024)
 
 **Changes**:

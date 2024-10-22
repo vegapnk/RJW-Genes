@@ -12,15 +12,11 @@ using Verse;
 
 namespace RJW_Genes
 {
-    /// <summary>
-    /// Changes LicentiaLabs (if Present) to add a cumflation-counter hediff, when the pawn is cumflated. 
-    /// The counter hediff takes away the negative stats of the original hediff.
-    /// This code is exercised / loaded in the HarmonyInit.
-    /// Patched File: https://gitgud.io/John-the-Anabaptist/licentia-labs/-/blob/master/Source/LicentiaLabs/LicentiaLabs/Cumflation.cs
-    /// </summary>
-    /// 
     class Patch_Cumpilation_Inflatable
     {
+
+        public static bool Prepare() => ModsConfig.IsActive("vegapnk.cumpilation");
+
         // This patch does not need the normal Harmony Targetting, 
         // as it needs to be added only on demand (See HarmonyInit.cs)
         public static void PostFix(SexProps props)

@@ -11,7 +11,6 @@ using static System.Net.Mime.MediaTypeNames;
 namespace RJW_Genes
 {
 
-    [HarmonyPatch(typeof(SexUtility), nameof(SexUtility.SatisfyPersonal))]
     public class Patch_LivingCumbucket_StackHediff
     {
 
@@ -20,12 +19,10 @@ namespace RJW_Genes
         /// The hediff can still be increased over 1.0. 
         /// </summary>
         const float fluid_amount_required_for_hediff_severity_ = 100.0f;
+        public static bool Prepare() => ModsConfig.IsActive("vegapnk.cumpilation");
 
-        public static void Postfix(SexProps props)
+        public static void PostFix(SexProps props)
         {
-            if (!ModsConfig.IsActive("vegapnk.cumpilation"))
-                return;
-
             // ShortCuts: Exit Early if Pawn or Partner are null (can happen with Masturbation or other nieche-cases)
             if (props == null || props.pawn == null || !props.hasPartner())
                 return;
