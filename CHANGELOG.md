@@ -1,8 +1,15 @@
 # 2.4.1 (22-10-2024)
 
+**Additions**:
+
+- Added standard patches for Obsidia Arachnas, Axotl, Ceraton, Mothoids, Tortle, Slimes Xenotypes (#188, Thanks @casualArtifice)
+- Added standard patches for Rimsenal Harana, Urred & Askbarn Xenotypes (#188, Thanks @casualArtifice)
+- Re-Added standard patches for Roos Faun & Minotaur (#188, Thanks @casualArtifice) 
+
 **Fixes**:
 
 - Put Living Cumbucket code properly behind a dependency check (#190)
+- Fixed some Xenotype Patches to not need Licentia for Generous Donor (#188, Thanks @casualArtifice)
 
 # 2.4.0 (17-10-2024)
 
