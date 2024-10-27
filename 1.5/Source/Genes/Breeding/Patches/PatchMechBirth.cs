@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HarmonyLib;
 using rjw;
+using Verse;
 
 namespace RJW_Genes
 {
@@ -22,41 +23,25 @@ namespace RJW_Genes
         [HarmonyTranspiler]
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator il)
         {
-            bool found_call = false;
-            bool found_skip = false;
-            Label skip_label = il.DefineLabel();
             MethodInfo ismechbreeder = AccessTools.Method(typeof(GeneUtility), "IsMechbreeder");
             foreach (CodeInstruction codeInstruction in instructions)
             {
-                //Check if the first opcode after endfinally ldloc_0 is and in that case add the label to skip the code
-                if (found_skip && codeInstruction.opcode == OpCodes.Ldloc_0)
-                {
-                    codeInstruction.labels.Add(skip_label);
-                }
-                found_skip = false;
-                if (codeInstruction.opcode == OpCodes.Endfinally)
-                {
-                    found_skip = true;
-                }
-
                 yield return codeInstruction;
-
+                //find the call to source.Any()
                 if (codeInstruction.opcode == OpCodes.Call)
                 {
-                    if (codeInstruction.operand.ToString() == "Boolean TryMakeFilth(Verse.IntVec3, Verse.Map, Verse.ThingDef, System.String, Int32, RimWorld.FilthSourceFlags)")
+                    if (codeInstruction.operand.ToString() == "Boolean Any[BodyPartRecord](System.Collections.Generic.IEnumerable`1[Verse.BodyPartRecord])")
                     {
-                        found_call = true;
+                        //Load pawn, call function to check if a mechbreeder, reverse result, call and instruction
+                        yield return new CodeInstruction(OpCodes.Ldloc_0);
+                        yield return new CodeInstruction(OpCodes.Call, ismechbreeder);
+                        yield return new CodeInstruction(OpCodes.Ldc_I4_0);
+                        yield return new CodeInstruction(OpCodes.Ceq);
+                        yield return new CodeInstruction(OpCodes.And);
+                        
                     }
                 }
-                //Triggers after the pop opcode (after generating filth in c#).
-                else if (found_call)
-                {
-                    //Load pawn, call function to check if a mechbreeder, and skip past the part which does damage
-                    yield return new CodeInstruction(OpCodes.Ldloc_0, null);
-                    yield return new CodeInstruction(OpCodes.Call, ismechbreeder);
-                    yield return new CodeInstruction(OpCodes.Brtrue_S, skip_label);
-                    found_call = false;
-                }
+
             }
             yield break;
         }
