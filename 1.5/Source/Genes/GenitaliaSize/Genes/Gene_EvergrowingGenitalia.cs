@@ -26,7 +26,7 @@ namespace RJW_Genes
         private void GrowPenisses()
         {
             List<Hediff> AllPenisses = Genital_Helper.get_AllPartsHediffList(pawn).FindAll(x => Genital_Helper.is_penis(x));
-            float bodySizeOverride = -1f;
+            float bodySizeOverride = -1f; //this is just hackjob to temporary fix an issue. It need to be remade
             foreach (Hediff penis in AllPenisses)
             {
                 HediffComp_SexPart CompHediff = penis.TryGetComp<rjw.HediffComp_SexPart>();
@@ -54,7 +54,7 @@ namespace RJW_Genes
         private void GrowVaginas()
         {
             List<Hediff> AllVaginas = Genital_Helper.get_AllPartsHediffList(pawn).FindAll(x => Genital_Helper.is_vagina(x));
-            float bodySizeOverride = -1f;
+            float bodySizeOverride = -1f; //this is just hackjob to temporary fix an issue. It need to be remade
             foreach (Hediff vagina in AllVaginas)
             {
                 HediffComp_SexPart CompHediff = vagina.TryGetComp<rjw.HediffComp_SexPart>();
