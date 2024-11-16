@@ -61,7 +61,7 @@ namespace RJW_Genes
 
                 // Increase Fluid
                 if (CompHediff != null)
-                    CompHediff.partFluidFactor *= cum_multiplier;
+                    CompHediff.partFluidMultiplier *= cum_multiplier;
             }
         }
 

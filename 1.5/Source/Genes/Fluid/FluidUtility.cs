@@ -16,7 +16,7 @@ namespace RJW_Genes
 			{
 				// Right now: Ignore Breasts, only do 
 				if (part is ISexPartHediff sexPart && (Genital_Helper.is_penis(part) || Genital_Helper.is_vagina(part)))
-					sexPart.GetPartComp().partFluidFactor *= multiplier;
+					sexPart.GetPartComp().partFluidMultiplier *= multiplier;
 			}
 		}
 
