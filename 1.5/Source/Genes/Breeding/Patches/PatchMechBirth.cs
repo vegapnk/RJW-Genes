@@ -20,12 +20,18 @@ namespace RJW_Genes
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator il)
         {
             bool found_call = false;
+            bool finished = false;
             Label skip_label = il.DefineLabel();
             MethodInfo removeHediff = AccessTools.Method(typeof(Pawn_HealthTracker), nameof(Pawn_HealthTracker.RemoveHediff));
             MethodInfo ismechbreeder = AccessTools.Method(typeof(GeneUtility), "IsMechbreeder");
             foreach (CodeInstruction codeInstruction in instructions)
             {
                 yield return codeInstruction;
+
+                if (finished)
+                {
+                    continue;
+                }
 
                 if (!found_call && codeInstruction.Calls(removeHediff))
                 {
@@ -40,6 +46,7 @@ namespace RJW_Genes
                 {
                     // next instruction after the insert
                     codeInstruction.labels.Add(skip_label);
+                    finished = true;
                 }
             }
         }
