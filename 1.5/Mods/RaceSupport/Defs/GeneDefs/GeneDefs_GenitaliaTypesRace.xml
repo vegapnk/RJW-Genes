@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Pig_genitalia</defName>
+    <label>Pig genitalia</label>
+    <description>Carriers of this gene develop pig genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_screw_icon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>PigPenis</penis>
+        <vagina>PigVagina</vagina>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Orc_genitalia</defName>
+    <label>Orc genitalia</label>
+    <description>Carriers of this gene develop orc genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_orc_icon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>OrcPenis</penis>
+        <vagina>OrcVagina</vagina>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+
+</Defs>
