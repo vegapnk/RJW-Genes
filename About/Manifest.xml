@@ -4,14 +4,12 @@
 	<version>2.4.1</version>
 	<dependencies>
         <li>RimJobWorld</li>
-		<li>HugsLib</li>
 	</dependencies>
 	<incompatibleWith> 
 		<li>Male- and Female- Only Genes</li>
 	</incompatibleWith>
 	<loadAfter>
         <li>RimJobWorld</li>
-		<li>HugsLib</li>
 		<li>RJWSexperience_CumGenes</li>
 		<li>Cumpilation</li>
 	</loadAfter>
