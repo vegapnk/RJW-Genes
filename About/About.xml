@@ -38,12 +38,6 @@ Adds:
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 		</li>
-		<li>
-			<packageId>UnlimitedHugs.HugsLib</packageId>
-			<displayName>HugsLib</displayName>
-			<downloadUrl>https://github.com/UnlimitedHugs/RimworldHugsLib/releases/latest</downloadUrl>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
-		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
@@ -54,7 +48,6 @@ Adds:
 		<li>brrainz.harmony</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>sarg.alphaanimals</li>
-
 		<li>Sl4vP0weR.DominantGene</li>
 		<li>rjw.sexperience.cumgenes</li>
 		<li>vegapnk.cumpilation</li>
