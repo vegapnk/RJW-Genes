@@ -1,3 +1,16 @@
+# 2.4.2 (25-11-2024)
+
+**Fixes**:
+
+- Removed Mention of Hugslib Dependency (Thanks @DukeEltoro)
+- Re-Added Pig & Orc Genitalia, to Fix WorldGen with SpawnRJW-Genes (Thanks @DukeElToro)
+- Change to MechBirth Transpiler (Thanks @DukeElToro & @Jikulopo)
+- Changes to be compatible with RJW 5.6 (Thanks @DukeElToro)
+
+**Non-Fix**:
+
+- EverGrowth will still only max out. This would be a good first issue, for all you naughty wannabe modders!
+
 # 2.4.1 (22-10-2024)
 
 **Additions**:

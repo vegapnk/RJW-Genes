@@ -1,14 +1,11 @@
 ﻿
 
-using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Emit;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using HarmonyLib;
 using rjw;
+using Verse;
 
 namespace RJW_Genes
 {
@@ -23,42 +20,35 @@ namespace RJW_Genes
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator il)
         {
             bool found_call = false;
-            bool found_skip = false;
+            bool finished = false;
             Label skip_label = il.DefineLabel();
+            MethodInfo removeHediff = AccessTools.Method(typeof(Pawn_HealthTracker), nameof(Pawn_HealthTracker.RemoveHediff));
             MethodInfo ismechbreeder = AccessTools.Method(typeof(GeneUtility), "IsMechbreeder");
             foreach (CodeInstruction codeInstruction in instructions)
             {
-                //Check if the first opcode after endfinally ldloc_0 is and in that case add the label to skip the code
-                if (found_skip && codeInstruction.opcode == OpCodes.Ldloc_0)
-                {
-                    codeInstruction.labels.Add(skip_label);
-                }
-                found_skip = false;
-                if (codeInstruction.opcode == OpCodes.Endfinally)
-                {
-                    found_skip = true;
-                }
-
                 yield return codeInstruction;
 
-                if (codeInstruction.opcode == OpCodes.Call)
+                if (finished)
                 {
-                    if (codeInstruction.operand.ToString() == "Boolean TryMakeFilth(Verse.IntVec3, Verse.Map, Verse.ThingDef, System.String, Int32, RimWorld.FilthSourceFlags)")
-                    {
-                        found_call = true;
-                    }
+                    continue;
                 }
-                //Triggers after the pop opcode (after generating filth in c#).
-                else if (found_call)
+
+                if (!found_call && codeInstruction.Calls(removeHediff))
                 {
                     //Load pawn, call function to check if a mechbreeder, and skip past the part which does damage
-                    yield return new CodeInstruction(OpCodes.Ldloc_0, null);
+                    yield return new CodeInstruction(OpCodes.Ldloc_0);
                     yield return new CodeInstruction(OpCodes.Call, ismechbreeder);
-                    yield return new CodeInstruction(OpCodes.Brtrue_S, skip_label);
-                    found_call = false;
+                    yield return new CodeInstruction(OpCodes.Brfalse_S, skip_label);
+                    yield return new CodeInstruction(OpCodes.Ret);
+                    found_call = true;
+                }
+                else if (found_call)
+                {
+                    // next instruction after the insert
+                    codeInstruction.labels.Add(skip_label);
+                    finished = true;
                 }
             }
-            yield break;
         }
     }
 }

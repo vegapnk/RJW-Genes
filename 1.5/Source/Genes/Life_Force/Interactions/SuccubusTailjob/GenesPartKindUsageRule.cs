@@ -29,13 +29,13 @@ namespace RJW_Genes.Interactions
                 {
                     weight *= 2.5f;
                 }
-                if (pawn.genes.HasGene(GeneDefOf.rjw_genes_cum_eater))
+                if (pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_cum_eater))
                 {
                     yield return new Weighted<LewdablePartKind>(weight, LewdablePartKind.Mouth);
                     yield return new Weighted<LewdablePartKind>(weight, LewdablePartKind.Beak);
                 }
 
-                if (pawn.genes.HasGene(GeneDefOf.rjw_genes_fertilin_absorber))
+                if (pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_fertilin_absorber))
                 {
                     yield return new Weighted<LewdablePartKind>(weight, LewdablePartKind.Vagina);
                     yield return new Weighted<LewdablePartKind>(weight, LewdablePartKind.Anus);
@@ -62,7 +62,7 @@ namespace RJW_Genes.Interactions
                 yield return new Weighted<LewdablePartKind>(weight, LewdablePartKind.Mouth);
                 yield return new Weighted<LewdablePartKind>(weight, LewdablePartKind.Beak);
 
-                if (pawn.genes.HasGene(GeneDefOf.rjw_genes_fertilin_absorber))
+                if (pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_fertilin_absorber))
                 {
                     yield return new Weighted<LewdablePartKind>(weight, LewdablePartKind.Vagina);
                     yield return new Weighted<LewdablePartKind>(weight, LewdablePartKind.Anus);
