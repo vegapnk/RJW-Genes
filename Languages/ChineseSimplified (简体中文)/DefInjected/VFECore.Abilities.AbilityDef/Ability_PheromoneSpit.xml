@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: pheromone spit -->
+  <rjw_genes_ability_pheromone_spit.label>费洛蒙标记</rjw_genes_ability_pheromone_spit.label>
+  <!-- EN: Spit a condensed ball of animal pheromones to mark a target. Nearby Animals will try to breed the target. This means all animals - hostile, friendly and wild. -->
+  <rjw_genes_ability_pheromone_spit.description>发射一个浓缩信息素球来标记目标。附近的所有动物——无论是敌对、友好还是中立，将会试图与其配种。</rjw_genes_ability_pheromone_spit.description>
+  
+</LanguageData>

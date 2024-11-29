@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: big breasts -->
+  <rjw_genes_big_breasts.label>巨乳</rjw_genes_big_breasts.label>
+  <!-- EN: Females of this Xenotype have big honkers.(Resizing takes place at 20th Birthday) -->
+  <rjw_genes_big_breasts.description>该异种的雌性拥有巨乳。（变化在20周岁时发生）</rjw_genes_big_breasts.description>
+  
+  <!-- EN: big male genitalia -->
+  <rjw_genes_big_male_genitalia.label>巨根</rjw_genes_big_male_genitalia.label>
+  <!-- EN: Penises of this Xenotype are bigger.(Resizing takes place at 20th Birthday) -->
+  <rjw_genes_big_male_genitalia.description>该异种的阴茎很大。（变化在20周岁时发生）</rjw_genes_big_male_genitalia.description>
+  
+  <!-- EN: evergrowth -->
+  <rjw_genes_evergrowth.label>持续生长</rjw_genes_evergrowth.label>
+  <!-- EN: One of the most regretted gene-modifications in the Glitterworlds: The (primary) genitalia will continue growing forever. This affects size and fluid output. Excessive growth can also effect mental stability! (Resizing takes place at 20th Birthday) -->
+  <rjw_genes_evergrowth.description>闪耀世界中最容易后悔的一种基因修饰：主生殖器会永远持续生长，影响尺寸和体液输出。过度的成长还会影响精神稳定！（变化在20周岁时发生）</rjw_genes_evergrowth.description>
+  
+  <!-- EN: loose anus -->
+  <rjw_genes_loose_anus.label>松弛肛门</rjw_genes_loose_anus.label>
+  <!-- EN: The Anus of this Xenotype is roomy.(Resizing takes place at 20th Birthday) -->
+  <rjw_genes_loose_anus.description>该异种的肛门有点松弛。（变化在20周岁时发生）</rjw_genes_loose_anus.description>
+  
+  <!-- EN: loose female genitalia -->
+  <rjw_genes_loose_female_genitalia.label>松弛小穴</rjw_genes_loose_female_genitalia.label>
+  <!-- EN: Vaginas of this Xenotype are quite spacy. (Resizing takes place at 20th Birthday) -->
+  <rjw_genes_loose_female_genitalia.description>该异种的阴道相当宽敞。（变化在20周岁时发生）</rjw_genes_loose_female_genitalia.description>
+  
+  <!-- EN: small breasts -->
+  <rjw_genes_small_breasts.label>贫乳</rjw_genes_small_breasts.label>
+  <!-- EN: Females of this Xenotype have smaller breasts.(Resizing takes place at 20th Birthday) -->
+  <rjw_genes_small_breasts.description>该异种的雌性胸部很小。（变化在20周岁时发生）</rjw_genes_small_breasts.description>
+  
+  <!-- EN: small male genitalia -->
+  <rjw_genes_small_male_genitalia.label>杂鱼鸡鸡</rjw_genes_small_male_genitalia.label>
+  <!-- EN: Penises of this Xenotype are smaller. (Resizing takes place at 20th Birthday) -->
+  <rjw_genes_small_male_genitalia.description>该异种阴茎短小。（变化在20周岁时发生）</rjw_genes_small_male_genitalia.description>
+  
+  <!-- EN: tight anus -->
+  <rjw_genes_tight_anus.label>紧致肛门</rjw_genes_tight_anus.label>
+  <!-- EN: The anus of this Xenotype is small.(Resizing takes place at 20th Birthday) -->
+  <rjw_genes_tight_anus.description>该异种的肛门很小。（变化在20周岁时发生）</rjw_genes_tight_anus.description>
+  
+  <!-- EN: tight female genitalia -->
+  <rjw_genes_tight_female_genitalia.label>紧致小穴</rjw_genes_tight_female_genitalia.label>
+  <!-- EN: Vaginas of this Xenotype are pretty tight.(Resizing takes place at 20th Birthday) -->
+  <rjw_genes_tight_female_genitalia.description>该异种的阴道很紧。（变化在20周岁时发生）</rjw_genes_tight_female_genitalia.description>
+  
+</LanguageData>
