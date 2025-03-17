@@ -1,3 +1,11 @@
+# 2.4.3 (3-17-2025)
+
+**Fixes**
+
+- Updated Hediffs_PrivateParts_Added to be compatible with current RJW.
+- Moved files to address Error when loaded with Big And Small - Vampires and the Undead.
+- Made Cumflation trait compatible with mod Cumpilation, but this trait will no longer be compatible with outdated version of Licentia Labs.
+
 # 2.4.2 (25-11-2024)
 
 **Fixes**:
