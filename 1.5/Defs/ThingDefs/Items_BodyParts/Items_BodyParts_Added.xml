@@ -91,7 +91,7 @@
 		</statBases>
 	</ThingDef>
 
-  <ThingDef ParentName="rjw_BodyPartNaturalBaseGenFemale">
+  <!--<ThingDef ParentName="rjw_BodyPartNaturalBaseGenFemale">
     <defName>PigVagina</defName>
     <label>pig vagina</label>
     <descriptionHyperlinks>
@@ -113,5 +113,5 @@
       <MarketValue>250</MarketValue>
       <Mass>0.40</Mass>
     </statBases>
-  </ThingDef>
+  </ThingDef>-->
 </Defs>
