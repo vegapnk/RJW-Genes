@@ -24,7 +24,7 @@
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>OrcPenis</penis>
-        <!--<vagina>OrcVagina</vagina>-->
+        <vagina>OrcVagina</vagina>
       </li>
     </modExtensions>
     <displayOrderInCategory>807</displayOrderInCategory>
@@ -38,7 +38,7 @@
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>PigPenis</penis>
-        <!--<vagina>PigVagina</vagina>-->
+        <vagina>PigVagina</vagina>
       </li>
     </modExtensions>
   </GeneDef>
