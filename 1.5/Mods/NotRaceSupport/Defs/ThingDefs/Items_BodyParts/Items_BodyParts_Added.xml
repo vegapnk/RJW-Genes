@@ -81,7 +81,7 @@
 		</statBases>
 	</ThingDef>
 	
-	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
+	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenFemale">
 		<defName>GhostVagina</defName>
 		<label>ghost vagina</label>
 		<descriptionHyperlinks><ThingDef>GhostVagina</ThingDef></descriptionHyperlinks>
@@ -90,7 +90,28 @@
 			<Mass>0.40</Mass>
 		</statBases>
 	</ThingDef>
-	
 
+  <!--<ThingDef ParentName="rjw_BodyPartNaturalBaseGenFemale">
+    <defName>PigVagina</defName>
+    <label>pig vagina</label>
+    <descriptionHyperlinks>
+      <ThingDef>PigVagina</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>250</MarketValue>
+      <Mass>0.40</Mass>
+    </statBases>
+  </ThingDef>
 
+  <ThingDef ParentName="rjw_BodyPartNaturalBaseGenFemale">
+    <defName>OrcVagina</defName>
+    <label>orc vagina</label>
+    <descriptionHyperlinks>
+      <ThingDef>OrcVagina</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>250</MarketValue>
+      <Mass>0.40</Mass>
+    </statBases>
+  </ThingDef>-->
 </Defs>

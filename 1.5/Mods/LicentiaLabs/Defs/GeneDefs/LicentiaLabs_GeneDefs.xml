@@ -31,7 +31,7 @@
     <biostatCpx>2</biostatCpx>
     <forcedTraits>
       <li>
-        <def>LikesCumflation</def>
+        <def MayRequire="vegapnk.cumpilation">Cumpilation_LikesCumflation</def>
       </li>
     </forcedTraits>
     <exclusionTags>
