@@ -50,7 +50,15 @@ namespace RJW_BGS
                 {
                     if (gene.chance * RJW_BGSSettings.rjw_bgs_global_gene_chance  >= Rand.Range(0.01f,1f))
                     {
-                        genelist.Add(DefDatabase<GeneDef>.GetNamed(gene.defName));
+                        GeneDef tmpGene = DefDatabase<GeneDef>.GetNamed(gene.defName, false);
+                        if (tmpGene != null) 
+                        { 
+                            genelist.Add(tmpGene); 
+                        } 
+                        else
+                        {
+                            RJW_Genes.ModLog.Warning($"Unable to find gene {gene.defName}, skipping. May need to update {raceGeneDef.defName} definition.");
+                        }
                     }
                 }
             }
