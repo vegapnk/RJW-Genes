@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThoughtDef>
+		<defName>rjw_genes_cock_eaten</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>30.0</durationDays>
+		<stackLimit>100</stackLimit>
+		<stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>cock eaten</label>
+				<description>My cock was eaten directly off my body, I am devestated. This is not what good head feels like. </description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>rjw_genes_seduced</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>10.0</durationDays>
+		<stackLimit>100</stackLimit>
+		<stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>seduced</label>
+				<description>I was seduced into having sex. I regret what happened.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>rjw_genes_critical_fertilin</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>rjw_genes_fertilin_craving</hediff>
+    <stages>
+      <li>
+        <label>fertilin craving</label>
+        <description>My bones ache. I really need fertilin.</description>
+        <baseMoodEffect>-25</baseMoodEffect>
+      </li>
+      <li>
+        <label>fertilin craving</label>
+        <description>This hurts bad and I can't stop thinking about sex. I would do anything for some cum.</description>
+        <baseMoodEffect>-40</baseMoodEffect>
+      </li>
+      <li>
+        <label>fertilin craving</label>
+        <description>Can't think. Sex. Sex. Must. Have. Cum.</description>
+        <baseMoodEffect>-55</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

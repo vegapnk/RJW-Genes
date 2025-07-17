@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>rjw_genes_ability_cocoonweaver</defName>
+    <label>cocoon</label>
+    <description>Weaves the victim into a (self-sustaining) cocoon. The victim cannot move, but can be bred.</description>
+    <iconPath>Genes/Icons/Cocoon</iconPath>
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <warmupMote>Mote_CocoonStencil</warmupMote>
+    <warmupEffecter>CocoonWeave</warmupEffecter>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <displayOrder>404</displayOrder>
+    <!-- 30k Ticks = 12h -->
+    <cooldownTicksRange>30000</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>15</warmupTime>
+      <targetParams>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="RJW_Genes.CompProperties_AbilityCocoonWeaver"/>
+    </comps>
+  </AbilityDef>
+</Defs>

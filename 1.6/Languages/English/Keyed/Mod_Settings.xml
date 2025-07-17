@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<rjw_genes_settings_genitalia_resizing_age>Genitalia resizing age:</rjw_genes_settings_genitalia_resizing_age>
+    <rjw_genes_settings_genitalia_resizing_postfix>years</rjw_genes_settings_genitalia_resizing_postfix>
+    <rjw_genes_settings_genitalia_resizing_age_explanation>At this age (in biological years) any resizing gene will be applied. This is done to prevent changes and issues related to genitalia changing in the pawns growth, but also for 'ethics'.</rjw_genes_settings_genitalia_resizing_age_explanation>
+
+    <rjw_genes_settings_fertilin_gain_from_animals>Fertilin-Gain from Animals:</rjw_genes_settings_fertilin_gain_from_animals>
+    <rjw_genes_settings_fertilin_gain_from_animals_explanation>% of fertilin gained (compared to human-baseline).</rjw_genes_settings_fertilin_gain_from_animals_explanation>
+
+    <rjw_genes_settings_sexdemon_spawn_key>Sexdemon Visits</rjw_genes_settings_sexdemon_spawn_key>
+    <rjw_genes_settings_sexdemon_spawn_explanation>If enabled, incubi and succubi can spawn in through an event.</rjw_genes_settings_sexdemon_spawn_explanation>
+    <rjw_genes_settings_sexdemon_size_matters_key>Size matters</rjw_genes_settings_sexdemon_size_matters_key>
+    <rjw_genes_settings_sexdemon_size_matters_explanation>Incubi and succubi will consider size/tightness of partners genital for deciding if they want to join</rjw_genes_settings_sexdemon_size_matters_explanation>
+    <rjw_genes_settings_sexdemon_group_spawn_key>Sexdemon groups</rjw_genes_settings_sexdemon_group_spawn_key>
+    <rjw_genes_settings_sexdemon_group_spawn_explanation>Multiple sexdemons can spawn during a event</rjw_genes_settings_sexdemon_group_spawn_explanation>
+    <rjw_genes_settings_sexdemon_succubi_spawn_key>Succubi</rjw_genes_settings_sexdemon_succubi_spawn_key>
+    <rjw_genes_settings_sexdemon_succubi_spawn_explanation>Allow Succubi to spawn through this event</rjw_genes_settings_sexdemon_succubi_spawn_explanation>
+    <rjw_genes_settings_sexdemon_incubi_spawn_key>Incubi</rjw_genes_settings_sexdemon_incubi_spawn_key>
+    <rjw_genes_settings_sexdemon_incubi_spawn_explanation>Allow Incubi to spawn through this event</rjw_genes_settings_sexdemon_incubi_spawn_explanation>
+
+    <rjw_genes_settings_regret_stealing_love_key>Regret Stealing Love</rjw_genes_settings_regret_stealing_love_key>
+    <rjw_genes_settings_regret_stealing_love_explanation>If off, pawns will not get bad thoughts for seduction.</rjw_genes_settings_regret_stealing_love_explanation>
+
+    <rjw_genes_settings_animal_mating_needs_penis_key>Animal-Mating GenitalCheck</rjw_genes_settings_animal_mating_needs_penis_key>
+    <rjw_genes_settings_animal_mating_needs_penis_explanation>If on, only animals that 'can rape' will be engaging in bestiality after being hit by a animal mating pulse. This usually means that only male animals will start breeding.</rjw_genes_settings_animal_mating_needs_penis_explanation>
+
+    <rjw_genes_genetic_disease_header_key>Genetic STDS</rjw_genes_genetic_disease_header_key>
+    <rjw_genes_settings_genetic_disease_spread_key>Genetic STD Spread</rjw_genes_settings_genetic_disease_spread_key>
+    <rjw_genes_settings_genetic_disease_spread_explanation>If checked, certain Genes will spread on sex.</rjw_genes_settings_genetic_disease_spread_explanation>
+    <rjw_genes_genetic_disease_as_endogenes_key>Genetic STDs as Endogenes</rjw_genes_genetic_disease_as_endogenes_key>
+    <rjw_genes_genetic_disease_as_endogenes_explanation>If checked, genetic diseases will be added as Endogenes. Otherwise they are added as Xenogenes.</rjw_genes_genetic_disease_as_endogenes_explanation>
+    <rjw_genes_genetic_disease_spread_only_on_penetrative_sex_key>Genetic STDs on penetrative-sex only</rjw_genes_genetic_disease_spread_only_on_penetrative_sex_key>
+    <rjw_genes_genetic_disease_spread_only_on_penetrative_sex_explanation>If checked, genetic STDs are only spread on penetrative sex. Otherwise, any sextype is considered for spread.</rjw_genes_genetic_disease_spread_only_on_penetrative_sex_explanation>
+    
+    <rjw_genes_settings_generous_donor_cheatmode_key>generous-donor cheatmode</rjw_genes_settings_generous_donor_cheatmode_key>
+    <rjw_genes_settings_generous_donor_cheatmode_explanation>When enabled, pawns with the 'generous donor' are not drained and not fertilin exhausted. Hence they can fuel succubi and incubi non-stop. This makes them drastically easier to keep, and you should not do it.</rjw_genes_settings_generous_donor_cheatmode_explanation>
+
+    <rjw_genes_settings_detailed_debug_key>detailed-debug</rjw_genes_settings_detailed_debug_key>
+    <rjw_genes_settings_detailed_debug_explanation>Adds detailed information to the log about interactions and genes.</rjw_genes_settings_detailed_debug_explanation>
+</LanguageData>

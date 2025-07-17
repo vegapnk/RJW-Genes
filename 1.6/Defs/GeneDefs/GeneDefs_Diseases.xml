@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <GeneDef Name="RJWGeneDisease" Abstract="True">
+        <displayCategory>rjw_genes_diseases</displayCategory>
+        <randomChosen>false</randomChosen>
+        <modExtensions>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+                <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Disease_Background</backgroundPathEndogenes>
+                <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Endogene_Disease_Background</backgroundPathXenogenes>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef>
+        <displayCategory>rjw_genes_diseases</displayCategory>
+        <defName>rjw_genes_genetic_disease_immunity</defName>
+        <displayOrderInCategory>1</displayOrderInCategory>
+        <marketValueFactor>1.15</marketValueFactor>
+        <label>genetic disease immunity</label>
+        <description>Carriers of this gene are immune against genetic STDs and some other genes that imply negative side-effects.</description>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <iconPath>Genes/Icons/disease_immunity</iconPath>
+        <modExtensions>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+                <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+                <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+            </li>
+        </modExtensions>
+    </GeneDef>
+    
+    <GeneDef>
+        <displayCategory>rjw_genes_diseases</displayCategory>
+        <defName>rjw_genes_disease_carrier</defName>
+        <displayOrderInCategory>1</displayOrderInCategory>
+        <marketValueFactor>1.1</marketValueFactor>
+        <label>disease carrier</label>
+        <description>Carriers of this gene are asymptomatic to genetic STDs, yet they are capable of spreading them on intercourse. </description>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <iconPath>Genes/Icons/disease_immunity</iconPath>
+        <modExtensions>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+                <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+                <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_minor_vulnerability</defName>
+        <label>minor vulnerability</label>
+        <description>Carriers of this gene are a bit more vulnerable, and a slightly more attractive target for rape.</description>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <marketValueFactor>0.85</marketValueFactor>
+        <iconPath>Genes/Icons/minor_vulnerability</iconPath>
+        <displayOrderInCategory>5</displayOrderInCategory>
+
+        <statOffsets>
+            <Vulnerability>0.15</Vulnerability>
+        </statOffsets>
+
+        <exclusionTags>
+            <li>RJW_Genes_Vulnerability</li>
+        </exclusionTags>
+
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.05</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_major_vulnerability</defName>
+        <label>major vulnerability</label>
+        <description>Carriers of this gene are more vulnerable, and a more attractive target for rape.</description>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <iconPath>Genes/Icons/major_vulnerability</iconPath>
+        <displayOrderInCategory>6</displayOrderInCategory>
+
+        <exclusionTags>
+            <li>RJW_Genes_Vulnerability</li>
+        </exclusionTags>
+
+        <statOffsets>
+            <Vulnerability>0.3</Vulnerability>
+        </statOffsets>
+
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.03</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_infectious_blocked_masturbation</defName>
+        <label>infectious masturbation block</label>
+        <description>Carriers of this gene are unable to masturbate - they need a partner or equipment.</description>
+        <iconPath>Genes/Icons/blocked_masturbation</iconPath>
+        <displayOrderInCategory>55</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.05</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_infectious_low_fertility</defName>
+        <label>infectious low fertility vulnerability</label>
+        <description>Carriers of this genetic disease have lower fertility.</description>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <marketValueFactor>0.9</marketValueFactor>
+        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <displayOrderInCategory>5</displayOrderInCategory>
+
+        <statOffsets>
+            <Fertility>-0.15</Fertility>
+        </statOffsets>
+
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.05</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_infectious_increased_sex_need</defName>
+        <label>infectious increased sexneed</label>
+        <description>Carriers of this genetic disease need more sex.</description>
+        <biostatCpx>0</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <marketValueFactor>0.9</marketValueFactor>
+        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <displayOrderInCategory>5</displayOrderInCategory>
+
+        <statOffsets>
+            <SexFrequency>0.15</SexFrequency>
+        </statOffsets>
+
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.08</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_infectious_major_increased_sex_need</defName>
+        <label>major infectious increased sexneed</label>
+        <description>Carriers of this genetic disease need a lot more sex.</description>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <marketValueFactor>0.85</marketValueFactor>
+        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <displayOrderInCategory>5</displayOrderInCategory>
+
+        <statOffsets>
+            <SexFrequency>1.0</SexFrequency>
+        </statOffsets>
+
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.03</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_infectious_hypersexuality</defName>
+        <label>infectious hypersexuality</label>
+        <description>Carriers of this genetic disease are hypersexual, and have a chance to spread this gene during intercourse.</description>
+        <iconPath>Genes/Icons/Hypersexual</iconPath>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <displayOrderInCategory>7</displayOrderInCategory>
+        <exclusionTags>
+            <li>rjw_genes_hypersexuality_trait_giver</li>
+        </exclusionTags>
+
+        <forcedTraits>
+            <li>
+                <def>Nymphomaniac</def>
+            </li>
+        </forcedTraits>
+
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.05</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_infectious_bisexuality</defName>
+        <label>infectious bisexuality</label>
+        <description>Carriers of this genetic disease are bisexual, and have a chance to spread this gene during intercourse.</description>
+        <iconPath>Genes/Icons/bisexuality</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <displayOrderInCategory>8</displayOrderInCategory>
+
+        <exclusionTags>
+            <li>rjw_genes_bisexuality_trait_giver</li>
+            <li>rjw_genes_sexual_orientation</li>
+        </exclusionTags>
+
+        <forcedTraits>
+            <li>
+                <def>Bisexual</def>
+            </li>
+        </forcedTraits>
+
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.1</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_infectious_homosexuality</defName>
+        <label>infectious homosexuality</label>
+        <description>Carriers of this genetic diseases are homosexual, and have a chance to spread this gene during intercourse.</description>
+        <iconPath>Genes/Icons/homosexuality</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <displayOrderInCategory>9</displayOrderInCategory>
+
+        <exclusionTags>
+            <li>rjw_genes_homosexuality_trait_giver</li>
+            <li>rjw_genes_sexual_orientation</li>
+        </exclusionTags>
+
+        <forcedTraits>
+            <li>
+                <def>Gay</def>
+            </li>
+        </forcedTraits>
+
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.1</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_fluctual_sexual_needs</defName>
+        <label>fluctual sexual needs</label>
+        <description>Carriers of this genetic disease have a chance to suddenly require sex, gaining a bit of energy to find quick relief.</description>
+        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <displayOrderInCategory>11</displayOrderInCategory>
+        <geneClass>RJW_Genes.Gene_FluctualSexualNeed</geneClass>
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.1</infectionChance>
+            </li>
+            <li Class="RJW_Genes.TickBasedChanceExtension">
+                <!-- 30k = 1/2 days -->
+                <tickInterval>30000</tickInterval>
+                <eventChance>0.15</eventChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_size_blinded</defName>
+        <label>size blinded</label>
+        <description>Carriers of this genetic disease are dramatically more drawn to pawns with huge cocks.</description>
+        <iconPath>Genes/Icons/size_blinded</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <displayOrderInCategory>11</displayOrderInCategory>
+        <modExtensions>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.1</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_stretcher</defName>
+        <label>genetic stretcher</label>
+        <description>Carriers of this gene have a chance to alter the genes of their sexual partners to prefer large cocks.</description>
+        <iconPath>Genes/Icons/stretcher</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <displayOrderInCategory>12</displayOrderInCategory>
+        <modExtensions>
+            <li Class="RJW_Genes.ImmunityAgainstGenesExtension">
+                <givesImmunityAgainst>
+                    <li>rjw_genes_size_blinded</li>
+                </givesImmunityAgainst>
+            </li>
+            <li Class="RJW_Genes.GeneticInfectorExtension">
+                <infectionChance>0.05</infectionChance>
+                <infectionGenes>
+                    <li>rjw_genes_size_blinded</li>
+                </infectionGenes>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+
+    <GeneDef ParentName="RJWGeneDisease">
+        <defName>rjw_genes_infectious_rut</defName>
+        <label>Rut</label>
+        <description>Carriers of this gene can enter a state of heat, resulting in drastically higher sexual activity.</description>
+        <iconPath>Genes/Icons/rut</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <displayOrderInCategory>11</displayOrderInCategory>
+        <geneClass>RJW_Genes.Gene_Rut</geneClass>
+        <modExtensions>
+            <li Class="RJW_Genes.TickBasedChanceExtension">
+                <!-- 60k = 1 days -->
+                <tickInterval>60000</tickInterval>
+                <eventChance>0.05</eventChance>
+            </li>
+            <li Class="RJW_Genes.GeneticDiseaseExtension">
+                <infectionChance>0.1</infectionChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+
+</Defs>

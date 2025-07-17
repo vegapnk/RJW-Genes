@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Big and Small - Genes &amp; More</li>
+	  <li>Big and Small - Heaven and Hell</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <!-- <xpath>Defs/XenotypeDef[defName="VU_Succubus"]/genes</xpath> -->
+		  <xpath>Defs/XenotypeDef[@Name="BS_Succubus_A"]/genes</xpath>
+          <value>
+            <li>rjw_genes_demonic_genitalia</li>
+            <li>rjw_genes_aphrodisiac_pheromones</li>
+            <li>rjw_genes_hypersexual</li>
+            <li>rjw_genes_bisexual</li>
+            <li MayRequire="rjw.sexperience">AptitudeRemarkable_Sex</li>
+            <li MayRequire="LustLicentia.RJWLabs">rjw_genes_elasticity</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="VU_Hellguard"]/genes</xpath>
+          <value>
+            <li>rjw_genes_demonic_genitalia</li>
+            <li>rjw_genes_equine_genitalia</li>
+            <li MayRequire="rjw.sexperience">AptitudePoor_Sex</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="VU_Gatekeeper"]/genes</xpath>
+          <value>
+            <li>rjw_genes_demonic_genitalia</li>
+            <li>rjw_genes_equine_genitalia</li>
+            <li>rjw_genes_big_male_genitalia</li>
+            <li>rjw_genes_much_fluid</li>
+            <li MayRequire="rjw.sexperience">AptitudeTerrible_Sex</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="VU_Imp"]/genes</xpath>
+          <value>
+            <li>rjw_genes_demonic_genitalia</li>
+            <li>rjw_genes_much_fluid</li>
+            <li>rjw_genes_small_male_genitalia</li>
+            <li>rjw_genes_tight_female_genitalia</li>
+            <li>rjw_genes_small_breasts</li>
+            <li>rjw_genes_tight_anus</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

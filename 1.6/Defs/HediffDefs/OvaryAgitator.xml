@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <HediffDef>
+    <defName>OvaryAgitator</defName>
+    <label>ovary agitator</label>
+    <description>An installed ovary agitator.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OvaryAgitator</ThingDef>
+    </descriptionHyperlinks>
+    <hediffClass>HediffWithComps</hediffClass>
+    <initialSeverity>0.0001</initialSeverity>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>RJW_Fertility</capacity>
+            <offset>0.50</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.1</minSeverity>
+        <capMods>
+          <li>
+            <capacity>RJW_Fertility</capacity>
+            <offset>0.22</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.2</minSeverity>
+        <capMods>
+          <li>
+            <capacity>RJW_Fertility</capacity>
+            <offset>0</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.3</minSeverity>
+        <capMods>
+          <li>
+            <capacity>RJW_Fertility</capacity>
+            <offset>-0.17</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.4</minSeverity>
+        <capMods>
+          <li>
+            <capacity>RJW_Fertility</capacity>
+            <offset>-0.32</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.5</minSeverity>
+        <capMods>
+          <li>
+            <capacity>RJW_Fertility</capacity>
+            <offset>-0.48</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.6</minSeverity>
+        <capMods>
+          <li>
+            <capacity>RJW_Fertility</capacity>
+            <offset>-0.54</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.7</minSeverity>
+        <capMods>
+          <li>
+            <capacity>RJW_Fertility</capacity>
+            <offset>-0.63</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.8</minSeverity>
+        <capMods>
+          <li>
+            <capacity>RJW_Fertility</capacity>
+            <offset>-0.69</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.9</minSeverity>
+        <capMods>
+          <li>
+            <capacity>RJW_Fertility</capacity>
+            <offset>-0.75</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+        <capMods>
+          <li>
+            <capacity>RJW_Fertility</capacity>
+            <offset>-100</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.0045</severityPerDay>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>OvaryAgitator</defName>
+    <label>ovary agitator</label>
+    <description>A crude slaver implant used to increase the number of eggs released during ovulation, increasing the likelihood of having multiple children per pregnancy. Their use is largely limited to rimworlds lacking in cloning infrastructure as most civilized and unified worlds have outlawed them.\n\nWhile it provides an initial boost in fertility, the implant will slowly deplete the victims's ovaries over several years until they're infertile. Allies of implanted victims will be angered.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallOvaryAgitator</RecipeDef>
+    </descriptionHyperlinks>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <MedicineIndustrial>1</MedicineIndustrial>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>FertilityProcedures</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveOvaryAgitator</defName>
+    <label>remove ovary agitator</label>
+    <description>Remove the ovary agitator.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OvaryAgitator</ThingDef>
+      <HediffDef>OvaryAgitator</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing ovary agitator.</jobString>
+    <removesHediff>OvaryAgitator</removesHediff>
+  </RecipeDef>
+
+</Defs>

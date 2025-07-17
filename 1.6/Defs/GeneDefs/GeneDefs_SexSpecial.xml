@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <GeneDef Name="SpecialBase" Abstract="True">
+        <displayCategory>rjw_genes_special</displayCategory>
+        <modExtensions>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+                <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+                <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_orgasm_rush</defName>
+        <label>orgasm rush</label>
+        <description>On orgasm, carriers of this gene get a boost in activity. (rest-need is partially filled)</description>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <iconPath>Genes/Icons/FleshPurity</iconPath>
+        <displayOrderInCategory>1</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_youth_fountain</defName>
+        <label>youth fountain</label>
+        <description>Carriers of this gene reverse the age of their sexual partners. (Partner stays adult)</description>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <iconPath>Genes/Icons/FireLeaves</iconPath>
+        <displayOrderInCategory>2</displayOrderInCategory>
+        <modExtensions>
+            <li Class="RJW_Genes.AgeTransferExtension">
+                <!-- 60k = 1 day -->
+                <ageTickChange>60000</ageTickChange>
+                <minAgeInYears>18</minAgeInYears>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_sex_age_drain</defName>
+        <label>sexual age drain</label>
+        <description>Carriers of this gene drain the age from their sexual partners. (Pawn stays adult)</description>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <iconPath>UI/Icons/ColonistBar/Idle</iconPath>
+        <displayOrderInCategory>3</displayOrderInCategory>
+        <modExtensions>
+            <li Class="RJW_Genes.AgeTransferExtension">
+                <!-- 120k = 2 days -->
+                <ageTickChange>120000</ageTickChange>
+                <minAgeInYears>18</minAgeInYears>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_aphrodisiac_pheromones</defName>
+        <label>aphrodisiac pheromones</label>
+        <geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass>
+        <description>Carriers of this gene produce and aphrodisiac pheremone making others nearby more sexually needy.</description>
+        <iconPath>Genes/Icons/Pheromones</iconPath>
+        <displayOrderInCategory>4</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <modExtensions>
+            <li Class="RJW_Genes.TickIntervalExtension">
+                <!-- One day has 60k ticks, so we check every hour with 60000/48 = 1250-->
+                <tickInterval>1250</tickInterval>
+            </li>
+            <li Class="RJW_Genes.DistanceExtension">
+                <!-- distance 25 means 25 tiles in every direction from the pheromone-pawn.-->
+                <distance>25</distance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_sexual_mytosis</defName>
+        <label>orgasmic mytosis</label>
+        <!-- <geneClass>RJW_Genes.Gene_Aphrodisiac_Pheromones</geneClass> -->
+        <description>Carriers of this gene have malfunctioning regenerative archites that grow more unstable with ongoing multiple orgasms - climaxing in a process of mytosis. This will result in an (biologically) identical pawn and both twins are set in a regenerative state. Also, the pawn can have multiple orgasms: In a state of higher unstableness, they come quicker.</description>
+        <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
+        <displayOrderInCategory>5</displayOrderInCategory>
+        <biostatCpx>5</biostatCpx>
+        <biostatMet>-5</biostatMet>
+        <biostatArc>1</biostatArc>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_hormonal_saliva</defName>
+        <label>hormonal saliva</label>
+        <description>Carriers of this gene have saliva that stimulates growth in penises. Regular contact will lead to noticable growth.</description>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <iconPath>Genes/Icons/Big_Male_Genitalia</iconPath>
+        <displayOrderInCategory>6</displayOrderInCategory>
+        <modExtensions>
+            <li Class="RJW_Genes.HormonalSalivaExtension">
+                <!-- SizeIncrement is applied "flat" -->
+                <sizeIncrement>0.02</sizeIncrement>
+                <maxBodySize>2.5</maxBodySize>
+                <!-- CumMultiplier is applied "exponential" -->
+                <cumMultiplier>1.05</cumMultiplier>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_cocoonweaver</defName>
+        <label>cocoon weaver</label>
+        <labelShortAdj>cocooner</labelShortAdj>
+        <description>Carriers of this gene can produce a cocoon to prepare helpless (or willing) victims for breeding.</description>
+        <iconPath>Genes/Icons/Cocoon</iconPath>
+        <displayOrderInCategory>11</displayOrderInCategory>
+        <abilities>
+            <li>rjw_genes_ability_cocoonweaver</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>rjw_genes_ability_cocoonweaver</AbilityDef>
+        </descriptionHyperlinks>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <modExtensions>
+            <li Class="RJW_Genes.QirkExtension">
+                <Satisfiedquirk>BreederQuirk</Satisfiedquirk>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_sex_tamer</defName>
+        <label>sexual tamer</label>
+        <labelShortAdj>sextamer</labelShortAdj>
+        <description>Carriers of this gene can bestow intelligence and docility to animals during sexual encounters, effectively increasing their training.</description>
+        <iconPath>Genes/Icons/RJW_Genes_SexualTamer</iconPath>
+        <displayOrderInCategory>14</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_sexual_genetic_swap</defName>
+        <label>sexual genetic swap</label>
+        <description>Carriers of this gene may switch a gene with their sex-partner. Switched Genes are always endogenes.</description>
+        <iconPath>Genes/Icons/sexual_genetic_swap</iconPath>
+        <displayOrderInCategory>20</displayOrderInCategory>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <modExtensions>
+            <li Class="RJW_Genes.ChanceExtension">
+                <chance>0.1</chance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_sexual_genetic_thief</defName>
+        <label>sexual gene thief</label>
+        <description>Carriers of this gene may steal a gene from their sex-partner. Stolen genes are always xenogenes.</description>
+        <iconPath>Genes/Icons/sexual_genetic_thief</iconPath>
+        <displayOrderInCategory>21</displayOrderInCategory>
+        <biostatCpx>5</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <biostatArc>1</biostatArc>
+        <modExtensions>
+            <li Class="RJW_Genes.ChanceExtension">
+                <chance>0.2</chance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_feminizer</defName>
+        <label>feminizer</label>
+        <description>Carriers of this gene slowly turn male sexual partners into females.</description>
+        <iconPath>Genes/Icons/feminizer</iconPath>
+        <displayOrderInCategory>31</displayOrderInCategory>
+        <biostatCpx>4</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <modExtensions>
+            <li Class="RJW_Genes.ImmunityAgainstGenesExtension">
+                <givesImmunityAgainst>
+                    <li>rjw_genes_feminizer</li>
+                </givesImmunityAgainst>
+            </li>
+            <li Class="RJW_Genes.HediffIncreaseOnSexExtension">
+                <hediffDef>rjw_genes_feminization_progress</hediffDef>
+                <canCreateHediff>true</canCreateHediff>
+                <severityIncrease>0.01</severityIncrease>
+                <applicationChance>1.00</applicationChance>
+                <applicableForWomen>false</applicableForWomen>
+                <applicableForMen>true</applicableForMen>
+                <requiresPenetrativeSex>false</requiresPenetrativeSex>
+            </li>
+            <li Class="RJW_Genes.GeneAlteringExtension">
+                <majorGenes>
+                    <li>rjw_genes_female_only</li>
+                    <li>rjw_genes_no_penis</li>
+                    <li>rjw_genes_minor_vulnerability</li>
+                </majorGenes>
+                <minorGenes>
+                    <li>rjw_genes_small_male_genitalia</li>
+                    <li>rjw_genes_big_breasts</li>
+                    <li>Beard_NoBeardOnly</li>
+                    <li>Hair_LongOnly</li>
+                </minorGenes>
+                <minorApplicationChance>0.25</minorApplicationChance>
+                <majorApplicationChance>0.1</majorApplicationChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+    
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_twinkifier</defName>
+        <label>twinkifier</label>
+        <description>Carriers of this gene slowly turn male sexual partners into breedable cute twinks.</description>
+        <iconPath>Genes/Icons/twinkifier</iconPath>
+        <displayOrderInCategory>50</displayOrderInCategory>
+        <biostatCpx>4</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <modExtensions>
+            <li Class="RJW_Genes.ImmunityAgainstGenesExtension">
+                <givesImmunityAgainst>
+                    <li>rjw_genes_twinkifier</li>
+                </givesImmunityAgainst>
+            </li>
+            <li Class="RJW_Genes.HediffIncreaseOnSexExtension">
+                <hediffDef>rjw_genes_twinkification_progress</hediffDef>
+                <canCreateHediff>true</canCreateHediff>
+                <severityIncrease>0.01</severityIncrease>
+                <applicationChance>1.00</applicationChance>
+                <applicableForWomen>false</applicableForWomen>
+                <applicableForMen>true</applicableForMen>
+                <requiresPenetrativeSex>false</requiresPenetrativeSex>
+            </li>
+            <li Class="RJW_Genes.GeneAlteringExtension">
+                <majorGenes>
+                    <li>rjw_genes_fertile_anus</li>
+                    <li>Beauty_Pretty</li>
+                    <li>Delicate</li>
+                    <li>rjw_genes_minor_vulnerability</li>
+                    <li>rjw_genes_infectious_homosexuality</li>
+                </majorGenes>
+                <minorGenes>
+                    <li>rjw_genes_small_male_genitalia</li>
+                    <li>Beard_NoBeardOnly</li>
+                    <li>Body_Thin</li>
+                    <li>rjw_genes_homosexual</li>
+                </minorGenes>
+                <minorApplicationChance>0.25</minorApplicationChance>
+                <majorApplicationChance>0.1</majorApplicationChance>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+
+    <GeneDef ParentName="SpecialBase">
+        <defName>rjw_genes_electric_satisfaction</defName>
+        <label>electric satisfaction</label>
+        <!-- DevNote: This does not need any class, all is handled in `RJW_Genes.Patch_ElectricSatisfaction` -->
+        <description>Carriers of this gene produce an electrical charge in nearby electronics during orgasm. This charge is substantial enough to charge batteries.</description>
+        <iconPath>Genes/Icons/RoundC</iconPath>
+        <displayOrderInCategory>20</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <modExtensions>
+            <li Class="RJW_Genes.DistanceExtension">
+                <!-- distance 25 means 25 tiles in every direction from the pheromone-pawn.-->
+                <distance>4</distance>
+            </li>
+            <li Class="RJW_Genes.BoundedExtension">
+                <minimum>75</minimum>
+                <maximum>150</maximum>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+</Defs>

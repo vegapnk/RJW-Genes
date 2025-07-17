@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech Expansion - Mythic</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Glintscale"]/genes</xpath>
+			<value>
+				<li>rjw_genes_much_fluid</li>
+				<li>rjw_genes_dragon_genitalia</li>
+				<li>rjw_genes_big_male_genitalia</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech Expansion - Mythic</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Ashfeather"]/genes</xpath>
+			<value>
+				<li>rjw_genes_much_fluid</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech Expansion - Mythic</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Tailbinder"]/genes</xpath>
+			<value>
+				<li>rjw_genes_much_fluid</li>
+				<li>rjw_genes_canine_genitalia</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

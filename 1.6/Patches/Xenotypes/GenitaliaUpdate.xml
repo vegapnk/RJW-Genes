@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="Neanderthal"]/genes</xpath>
+		<value>
+			<li>rjw_genes_big_male_genitalia</li>
+			<li>rjw_genes_loose_female_genitalia</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="Pigskin"]/genes</xpath>
+		<value>
+			<li>rjw_genes_much_fluid</li>
+			<li>rjw_genes_zoophile</li>
+			<!-- <li>rjw_genes_Pig_genitalia</li> -->
+			<li>rjw_genes_human_genitalia</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="Yttakin"]/genes</xpath>
+		<value>
+			<li>rjw_genes_big_male_genitalia</li>
+			<li>rjw_genes_loose_female_genitalia</li>
+		</value>
+	</Operation>
+
+<!-- Conditional Patch, only add these Genes for players with Licentia 
+	I tried "mayRequire" but that cannot be put so fine-grained into the <li> -->
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>LustLicentia.RJWLabs</li>
+    </mods>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/XenotypeDef[defName="Highmate"]/genes</xpath>
+      <value>
+        <li>rjw_genes_likes_cumflation</li>
+      </value>
+    </match>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="Genie"]/genes</xpath>
+		<value>
+			<li>rjw_genes_mechbreeder</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="Sanguophage"]/genes</xpath>
+		<value>
+			<li>rjw_genes_demonic_genitalia</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="Impid"]/genes</xpath>
+		<value>
+			<li>rjw_genes_demonic_genitalia</li>
+			<li>rjw_genes_small_breasts</li>
+			<li>rjw_genes_small_male_genitalia</li>
+			<li>rjw_genes_tight_female_genitalia</li>
+			<li>rjw_genes_tight_anus</li>
+		</value>
+	</Operation>
+
+</Patch>

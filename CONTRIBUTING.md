@@ -22,6 +22,7 @@ But please consider also the following:
 - Jaaldabaoth (1.5 Migration, MPreg, Femboys, Initial VE-Genetic Hybrids)
 - Flock-of-Birds (Cosmetic Genitalia per XML)
 - Archer (Some Help throughout various pieces)
+- Telanda (1.6 Migration, Animal Gene Inheritance Fixes)
 - A lot of degenerates on the RJW Discord for Testing <3
 
 Detailed credits are in the [Changelog](./CHANGELOG.md).

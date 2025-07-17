@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TipSetDef>
+    <defName>RJWGenesTips</defName>
+    <tips>
+
+      <li TKey="SuccubusArrival">Succubi and Incubi can spawn at a rare event when a horny pawn is sleeping alone in the night.</li>
+      
+      <li TKey="CumazoneCockbite">Cumazones need to regularly bite of cocks. This hunger can be stilled by animals - but they will need much more this way!</li>
+      
+      <li TKey="SuccubusDrain">Succubi drain Fertilin through sex. The drained pawn will give less Fertilin in consequent acts until they are recovered.</li>
+
+      <li TKey="IncubusDrain">Incubi 'tap' pawns they have sex with to gain fertilin. Incubi cannot gain further Fertilin this way until the pawn is fully recovered.</li>
+      
+      <li TKey="XenotypeMaintenance">The Xenotypes added by RJW_Genes require a lot of human resources - have yourself a big colony or lots of prisoners before you keep their company!</li>
+      
+      <li TKey="SuccubusCost">Succubi receive their fertilin from cum. Make sure to have enough juice around to keep them happy.</li>
+      
+      <li TKey="CumeaterCumflation">The gene 'cumeater' allows you to drain cumflation by cunnilingus. ... Cool, huh?</li>
+      
+      <li TKey="BestialityGeneInheritance">Some animals carry rare genes - you can try to breed them and create your own super-hybrids! (No warranty provided for cat girls or genetic waste)</li>
+      
+      <li TKey="BestialityGeneSettings">The Settings for Animal-Gene Inheritance are distributed between RJW-Pregnancy-Settings and their own Mod-Options.</li>
+      
+      <li TKey="FertilaAnusJoke">Children born by pawns with the `Fertile Anus` gene might be bullied at school, but they can still live a fulfilling and happy life.</li>
+      
+    </tips>
+  </TipSetDef>
+
+</Defs>

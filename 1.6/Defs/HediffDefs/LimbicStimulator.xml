@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HediffDef>
+    <defName>LimbicStimulator</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>limbic stimulator</label>
+    <labelNoun>limbic stimulator</labelNoun>
+    <description>An installed limbic stimulator.</description>
+
+    <defaultLabelColor>(1.0, 0.6, 0.7)</defaultLabelColor>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <statOffsets>
+          <Vulnerability>-1.0</Vulnerability>
+          <SexFrequency>6.0</SexFrequency>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+    <ThingDef ParentName="BodyPartBionicBase">
+    <defName>LimbicStimulator</defName>
+    <label>limbic stimulator</label>
+    <description>A perpetual slow-release chemical stimulation implant that is embedded deep within the reward center of the brain, greatly increasing the need for lovin'. The need is said to become so strong that it can drive people to force themselves onto others, even if they wouldn't otherwise. Post-lovin' clarity will leave the implanted in a state of bliss, but they may also feel a sense of regret if they steal lovin' if they normally wouldn't - at least until they become used to doing it.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallLimbicStimulator</RecipeDef>
+    </descriptionHyperlinks>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>FertilityProcedures</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveLimbicStimulator</defName>
+    <label>remove limbic stimulator</label>
+    <description>Remove the limbic stimulator.</description>
+    <descriptionHyperlinks>
+      <ThingDef>LimbicStimulator</ThingDef>
+      <HediffDef>LimbicStimulator</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing limbic stimulator.</jobString>
+    <removesHediff>LimbicStimulator</removesHediff>
+  </RecipeDef>
+
+</Defs>

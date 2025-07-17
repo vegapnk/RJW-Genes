@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Races Expanded - Phytokin</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="VRE_Poluxkin" or defName="VRE_Gauranlenkin" or defName="VRE_Animakin"]/genes</xpath>
+      <value>
+        <li>rjw_genes_tight_female_genitalia</li>
+        <li>rjw_genes_tight_anus</li>
+        <li MayRequire="LustLicentia.RJWLabs">rjw_genes_elasticity</li>
+        <li>rjw_genes_bisexual</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

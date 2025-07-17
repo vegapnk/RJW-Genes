@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Big and Small - Yokai</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName = "BS_Kitsune"]/genes</xpath>
+          <value>
+            <li>rjw_genes_canine_genitalia</li>
+            <li>rjw_genes_littered_births</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName = "BS_Nekomata"]/genes</xpath>
+          <value>
+            <li>rjw_genes_feline_genitalia</li>
+            <li>rjw_genes_extra_vagina</li>
+            <li>rjw_genes_extra_penis</li>
+            <li>rjw_genes_small_breasts</li>
+            <li>rjw_genes_littered_births</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName = "BS_RedOni" or defName = "BS_BlueOni" or defName = "BS_LesserOni"]/genes</xpath>
+          <value>
+            <li>rjw_genes_demonic_genitalia</li>
+            <li>rjw_genes_much_fluid</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName = "BS_GreatBlueOni" or defName = "BS_GreatRedOni"]/genes</xpath>
+          <value>
+            <li>rjw_genes_demonic_genitalia</li>
+            <li>rjw_genes_big_male_genitalia</li>
+            <li>rjw_genes_loose_female_genitalia</li>
+            <li>rjw_genes_very_much_fluid</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

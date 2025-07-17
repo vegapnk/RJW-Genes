@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<ThoughtDef>
+		<defName>rjw_genes_pheromone_carrier_nearby</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>RJW_Genes.ThoughtWorker_Aphrodisiac_Pheromones_Social</workerClass>
+		<stages>
+			<li>
+				<label>pheromones</label>
+				<description>{0} has a special vibe, we should hang out more often.</description>
+				<baseOpinionOffset>+3</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

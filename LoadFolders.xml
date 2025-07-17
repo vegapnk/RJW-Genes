@@ -25,4 +25,22 @@
 		<li IfModActive="VanillaExpanded.VGeneticsE">1.5/Mods/VE_Genetics</li>
 		<li IfModActive="ASMR.RJW.RaceSupport">1.5/Mods/RaceSupport</li>
 	</v1.5>
+	<v1.6>
+		<li>1.6</li>
+		<li>Common</li>
+		<!-- Mods -->
+		<li IfModActive="LustLicentia.RJWLabs">1.6/Mods/LicentiaLabs</li>
+		<li IfModActive="vegapnk.cumpilation">1.6/Mods/Cumpilation</li>
+		<li IfModActive="vanillaracesexpanded.sanguophage">1.6/Mods/Sanguophage</li>
+		<li IfModActive="vanillaracesexpanded.saurid">1.6/Mods/Saurid</li>
+		<li IfModActive="vanillaracesexpanded.phytokin">1.6/Mods/Phytokin</li>
+		<li IfModActive="vanillaracesexpanded.lycanthrope">1.6/Mods/Lycanthrope</li>
+		<li IfModActive="vanillaracesexpanded.highmate">1.6/Mods/Highmate</li>
+		<li IfModActive="vanillaracesexpanded.genie">1.6/Mods/Genie</li>
+		<li IfModActive="vanillaracesexpanded.fungoid">1.6/Mods/Fungoid</li>
+		<li IfModActive="vanillaracesexpanded.archon">1.6/Mods/Archon</li>
+		<li IfModActive="vanillaracesexpanded.android">1.6/Mods/Android</li>
+		<li IfModActive="VanillaExpanded.VGeneticsE">1.6/Mods/VE_Genetics</li>
+		<li IfModActive="ASMR.RJW.RaceSupport">1.6/Mods/RaceSupport</li>
+	</v1.6>
 </loadFolders>

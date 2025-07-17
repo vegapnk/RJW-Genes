@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Obsidia Expansion - Arachnas Xenotype</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+	<xpath>Defs/XenotypeDef[defName="OE_WidowArachna" or defName="OE_WolfArachna" or defName="OE_GoliathArachna"]/genes</xpath>
+		<value>
+			<li>rjw_genes_ovipositor_genitalia</li>
+			<li>rjw_genes_insectbreeder</li>
+			<li>rjw_genes_fluid_insect_spunk</li>
+			<li>rjw_genes_cocoonweaver</li>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Obsidia Expansion - Axotl Xenotype</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+	<xpath>Defs/XenotypeDef[defName="OE_Axotl"]/genes</xpath>
+		<value>
+			<li>rjw_genes_small_male_genitalia</li>
+			<li MayRequire="vegapnk.cumpilation">rjw_genes_living_cumbucket</li>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Obsidia Expansion - Ceratons Xenotype</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+	<xpath>Defs/XenotypeDef[defName="OE_Protoceraton" or defName="OE_Styracodon" or defName="OE_Triceraton"]/genes</xpath>
+		<value>
+			<li>rjw_genes_crocodilian_genitalia</li>
+			<li>rjw_genes_big_male_genitalia</li>
+			<li>rjw_genes_loose_female_genitalia</li>
+			<li>rjw_genes_big_breasts</li>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Obsidia Expansion - Liches Xenotype</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+	<xpath>Defs/XenotypeDef[defName="OE_Lich" or defName="OE_Archlich"]/genes</xpath>
+		<value>
+			<li>rjw_genes_no_fluid</li>
+			<li>rjw_genes_featureless_chest</li>
+			<li>rjw_genes_no_sex_need</li>
+			<li>rjw_genes_no_penis</li>
+			<li>rjw_genes_no_vagina</li>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Obsidia Expansion - Mothoids Xenotype</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+	<xpath>Defs/XenotypeDef[defName="OE_Mothoid" or defName="OE_MothoidPrime" or defName="OE_MothoidAtlant"]/genes</xpath>
+		<value>
+			<li>rjw_genes_insectincubator</li>
+			<li>rjw_genes_fluid_insect_spunk</li>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Obsidia Expansion - Slimes Xenotype</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+	<xpath>Defs/XenotypeDef[defName="OE_Slime" or defName="OE_SlimeWaste" or defName="OE_SlimeBloody" or defName="OE_SlimePrime"]/genes</xpath>
+		<value>
+			<li>rjw_genes_slime_genitalia</li>
+			<li>rjw_genes_very_much_fluid</li>
+			<li>rjw_genes_loose_anus</li>
+			<li>rjw_genes_loose_female_genitalia</li>
+			<li MayRequire="vegapnk.cumpilation">rjw_genes_inflatable</li>
+			<li MayRequire="LustLicentia.RJWLabs">rjw_genes_elasticity</li>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Obsidia Expansion - Tortle Xenotype</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+	<xpath>Defs/XenotypeDef[defName="OE_Tortle"]/genes</xpath>
+		<value>
+			<li>rjw_genes_reptilian_genitalia</li>
+		</value>
+	</match>
+</Operation>
+
+</Patch>

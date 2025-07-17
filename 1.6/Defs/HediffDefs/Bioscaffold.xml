@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <HediffDef>
+    <defName>Bioscaffold</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>bioscaffold</label>
+    <description>This woman has an bioscaffold mesh within her womb, providing an enriching environment for an unborn baby to grow more quickly.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bioscaffold</ThingDef>
+    </descriptionHyperlinks>
+    <initialSeverity>0.001</initialSeverity>
+    <everCurableByItem>false</everCurableByItem>
+    <!-- <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>true</showRemainingTime>
+        <disappearsAfterTicks>540000</disappearsAfterTicks> <!10 Days>
+      </li>
+    </comps> -->
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>Bioscaffold</defName>
+    <label>bioscaffold</label>
+    <description>A single-use nanite-constructed lattice of organic mesh material meant to be installed inside a woman's womb prior to pregnancy. It provides an enriching environment for an unborn baby to grow more quickly.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallBioscaffold</RecipeDef>
+    </descriptionHyperlinks>
+    <techLevel>Spacer</techLevel>
+    <tickerType>Rare</tickerType>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <stackLimit>25</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <MarketValue>350</MarketValue>
+      <Mass>0.15</Mass>
+      <Flammability>1.3</Flammability>
+      <DeteriorationRate>6</DeteriorationRate>
+      <WorkToMake>800</WorkToMake>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <costList>
+      <Plasteel>5</Plasteel>
+      <BabyFood>10</BabyFood>
+      <MedicineUltratech>1</MedicineUltratech>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+        <Intellectual>4</Intellectual>
+      </skillRequirements> 
+      <researchPrerequisite>FertilityProcedures</researchPrerequisite>
+      <bulkRecipeCount>4</bulkRecipeCount>
+    </recipeMaker>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveBioscaffold</defName>
+    <label>remove Bioscaffold</label>
+    <description>Remove the bioscaffold.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bioscaffold</ThingDef>
+      <HediffDef>Bioscaffold</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing bioscaffold.</jobString>
+    <removesHediff>Bioscaffold</removesHediff>
+  </RecipeDef>
+
+</Defs>

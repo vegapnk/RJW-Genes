@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech Expansion - Mammalia</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Barkkin"]/genes</xpath>
+			<value>
+				<li>rjw_genes_canine_genitalia</li>
+				<li>rjw_genes_zoophile</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech Expansion - Mammalia</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Bonecrown"]/genes</xpath>
+			<value>
+				<li>rjw_genes_equine_genitalia</li>
+				<li>rjw_genes_zoophile</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech Expansion - Mammalia</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Wiretail"]/genes</xpath>
+			<value>
+				<li>rjw_genes_small_breasts</li>
+				<li>rjw_genes_small_male_genitalia</li>
+				<li>rjw_genes_tight_female_genitalia</li>
+				<li>rjw_genes_tight_anus</li>
+				<li>rjw_genes_zoophile</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech Expansion - Mammalia</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Hidewing"]/genes</xpath>
+			<value>
+				<li>rjw_genes_small_breasts</li>
+				<li>rjw_genes_small_male_genitalia</li>
+				<li>rjw_genes_tight_female_genitalia</li>
+				<li>rjw_genes_tight_anus</li>
+				<li>rjw_genes_zoophile</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech Expansion - Mammalia</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Seertusk"]/genes</xpath>
+			<value>
+				<li>rjw_genes_big_breasts</li>
+				<li>rjw_genes_big_male_genitalia</li>
+				<li>rjw_genes_loose_female_genitalia</li>
+				<li>rjw_genes_loose_anus</li>
+				<li>rjw_genes_equine_genitalia</li>
+				<li>rjw_genes_zoophile</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech Expansion - Mammalia</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Hindhopper"]/genes</xpath>
+			<value>
+				<li>rjw_genes_tight_female_genitalia</li>
+				<li>rjw_genes_tight_anus</li>
+				<li>rjw_genes_littered_births</li>
+				<li>rjw_genes_zoophile</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech Expansion - Mammalia</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Haytankard"]/genes</xpath>
+			<value>
+				<li>rjw_genes_big_breasts</li>
+				<li>rjw_genes_big_male_genitalia</li>
+				<li>rjw_genes_loose_female_genitalia</li>
+				<li>rjw_genes_loose_anus</li>
+				<li>rjw_genes_udder</li>
+				<li>rjw_genes_equine_genitalia</li>
+				<li>rjw_genes_zoophile</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech Expansion - Mammalia</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Cloudpuff"]/genes</xpath>
+			<value>
+				<li>rjw_genes_tight_female_genitalia</li>
+				<li>rjw_genes_zoophile</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech Expansion - Mammalia</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Devilpuff"]/genes</xpath>
+			<value>
+				<li>rjw_genes_tight_female_genitalia</li>
+				<li>rjw_genes_zoophile</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech Expansion - Mammalia</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Blastheart"]/genes</xpath>
+			<value>
+				<li>rjw_genes_equine_genitalia</li>
+				<li>rjw_genes_zoophile</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--========= General ============-->
+
+  <JobDef>
+    <defName>RJW_Genes_ProcessCumbucket</defName>
+    <driverClass>RJW_Genes.JobDriver_ProcessingCumbucket</driverClass>
+    <playerInterruptible>false</playerInterruptible>
+    <casualInterruptible>false</casualInterruptible>
+    <reportString>processing internal cumbucket.</reportString>
+    <suspendable>false</suspendable>
+  </JobDef>
+  
+</Defs>

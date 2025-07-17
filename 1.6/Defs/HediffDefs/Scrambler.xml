@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HediffDef>
+    <defName>Scrambler</defName>
+    <label>scrambler</label>
+    <labelNoun>scrambler</labelNoun>
+    <description>An installed scrambler.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Scrambler</ThingDef>
+    </descriptionHyperlinks>
+    <defaultLabelColor>(0.9, 0.5, 1.0)</defaultLabelColor>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <statOffsets>
+          <SlaveSuppressionOffset MayRequire="Ideology">0.40</SlaveSuppressionOffset>
+          <Vulnerability>3.0</Vulnerability>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.6</setMax>
+          </li>
+          <li>
+            <capacity>Talking</capacity>
+            <setMax>0.2</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+   <ThingDef ParentName="BodyPartBionicBase">
+    <defName>Scrambler</defName>
+    <label>scrambler</label>
+    <description>A slaver implant, similar to the mindscrew, that can inject disorienting mind imagery directly into the visual cortex of the brain through a complex network of nanoelectrodes. Victims of scrambler implantation tend to socially withdraw to minimize additional stimulation. As a consequence of their confusion, they also become physically meek, making them easy to impose upon. Allies of implanted victims will be angered.</description>
+
+    <statBases>
+      <WorkToMake>50</WorkToMake>
+    </statBases>
+    <costList>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>FertilityProcedures</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

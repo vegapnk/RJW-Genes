@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityDef>
+    <defName>rjw_genes_ability_seduce</defName>
+    <label>seduce</label>
+    <description>Seduce the target to approach the caster.</description>
+    <iconPath>Genes/Icons/seduce</iconPath>
+    <writeCombatLog>True</writeCombatLog>	
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <statBases>
+      <Ability_Duration>10</Ability_Duration>
+    </statBases>
+    <warmupMote>Mote_CoagulateStencil</warmupMote>
+    <warmupEffecter>Coagulate</warmupEffecter>
+    <warmupStartSound>Coagulate_Cast</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>10</range>
+      <warmupTime>1</warmupTime>
+      <targetParams>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class = "RJW_Genes.CompProperties_Seduce">
+        <compClass>RJW_Genes.CompAbilityEffect_Seduce</compClass>
+        <destination>Caster</destination>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>Heart</fleckDef>
+      </li>
+      <li Class="RJW_Genes.CompProperties_AbilityLifeForceCost">
+        <fertilinCost>0.20</fertilinCost>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+</Defs>

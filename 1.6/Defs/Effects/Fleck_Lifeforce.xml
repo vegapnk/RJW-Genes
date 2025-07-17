@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>rjw_genes_lips</defName>
+    <graphicData>
+      <texPath>Genes/Icons/rjw_genes_lips</texPath>
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <fadeInTime>0.08</fadeInTime>
+    <solidTime>1.4</solidTime>
+    <fadeOutTime>1.5</fadeOutTime>
+  </FleckDef>
+
+</Defs>

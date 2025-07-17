@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+			<xpath>/Defs/GeneDef[defName="VRE_SanguineHair"]</xpath>
+			<value>
+				<li Class="RJW_Genes.QirkExtension">
+				<Satisfiedquirk>DemonLoverQuirk</Satisfiedquirk>
+				</li>
+			</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+			<xpath>/Defs/GeneDef[defName="VRE_BatEars"]</xpath>
+			<value>
+				<li Class="RJW_Genes.QirkExtension">
+				<Satisfiedquirk>TeratophileQuirk</Satisfiedquirk>
+				</li>
+			</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+			<xpath>/Defs/GeneDef[defName="VRE_UpperBatEars"]</xpath>
+			<value>
+				<li Class="RJW_Genes.QirkExtension">
+				<Satisfiedquirk>TeratophileQuirk</Satisfiedquirk>
+				</li>
+			</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+			<xpath>/Defs/GeneDef[defName="VRE_Talons"]</xpath>
+			<value>
+				<li Class="RJW_Genes.QirkExtension">
+				<Satisfiedquirk>DemonLoverQuirk</Satisfiedquirk>
+				</li>
+			</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+			<xpath>/Defs/GeneDef[defName="VRE_BatNose"]</xpath>
+			<value>
+				<li Class="RJW_Genes.QirkExtension">
+				<Satisfiedquirk>TeratophileQuirk</Satisfiedquirk>
+				</li>
+			</value>
+	</Operation>
+</Patch>
+

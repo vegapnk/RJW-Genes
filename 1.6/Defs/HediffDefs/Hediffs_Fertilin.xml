@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<HediffDef>
+		<defName>rjw_genes_fertilin_lost</defName>
+		<hediffClass>Hediff_HemogenCraving</hediffClass>
+		<label>lost fertilin</label>
+		<description>Percentage of fertilin lost.</description>
+		<defaultLabelColor>(1,1,1)</defaultLabelColor>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.5</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>true</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>rjw_genes_succubus_drained</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Drained</label>
+		<description>The vitality of this pawn has been drained. Cannot be drained again until fully
+			recovered.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<maxSeverity>1.0</maxSeverity>
+		<initialSeverity>1.0</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.25</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<restFallFactorOffset>0.1</restFallFactorOffset>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<label>moderate</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+				<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+				<restFallFactorOffset>0.20</restFallFactorOffset>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<label>severe</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.3</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
+				</statOffsets>
+				<vomitMtbDays>0.4</vomitMtbDays>
+				<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
+				<restFallFactorOffset>0.35</restFallFactorOffset>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>rjw_genes_fertilin_craving</defName>
+		<label>fertilin craving</label>
+		<hediffClass>Hediff_HemogenCraving</hediffClass>
+		<description>weakened due to running out of fertilin.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<maxSeverity>1.0</maxSeverity>
+		<initialSeverity>0.01</initialSeverity>
+		<stages>
+			<li>
+				<label>minor</label>
+				<painOffset>0.05</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.9</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.35</minSeverity>
+				<painOffset>0.1</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.8</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>major</label>
+				<minSeverity>0.7</minSeverity>
+				<painOffset>0.15</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.5</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="RJW_Genes.HediffCompProperties_SeverityFromFertilin">
+				<severityPerHourEmpty>0.05</severityPerHourEmpty>
+				<severityPerHourHemogen>-0.1</severityPerHourHemogen>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>rjw_genes_naked_prowess</defName>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<label>naked prowss</label>
+		<description>Driven by fertilin, this person has greatly increased strength and resilience.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>
+				<!--Maybe
+				a bit to much, but they are supposed to be strong-->
+				<statOffsets>
+					<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.5</ArmorRating_Heat>
+				</statOffsets>
+				<statFactors>
+					<IncomingDamageFactor>0.5</IncomingDamageFactor>
+					<MeleeDamageFactor>1.5</MeleeDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+				<disappearsAfterTicks>5000</disappearsAfterTicks> <!-- 2 hours -->
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<!--TODO:
+			Make hediff disappear if pawn is nolonger naked-->
+		</comps>
+		<isBad>false</isBad>
+	</HediffDef>
+
+</Defs>

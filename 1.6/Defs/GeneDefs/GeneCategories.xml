@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Note: It is very important that rjw_genes_gender has a higher priority than the other genes
+       That way they run in the correct order. 
+       If the Gender Change happens after e.g. genitalia change, it will produce errors.
+
+       General Order: 
+       1. Gender
+       2. Genitalia Types
+       3. Extra Genitalia
+       4. Genitalia Sizes 
+       5. Others
+  -->
+
+  <GeneCategoryDef>
+    <defName>rjw_genes_gender</defName>
+    <label>gender</label>
+    <displayPriorityInXenotype>21</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>rjw_genes_genitalia_type</defName>
+    <label>cosmetic - genitalia type</label>
+    <displayPriorityInXenotype>19</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>rjw_genes_genitalia_extras</defName>
+    <label>genitalia count</label>
+    <displayPriorityInXenotype>17</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>rjw_genes_genitalia_size</defName>
+    <label>genitalia size / attributes</label>
+    <displayPriorityInXenotype>15</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>rjw_genes_fertilin</defName>
+    <label>fertilin</label>
+    <displayPriorityInXenotype>14</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>rjw_genes_breeding</defName>
+    <label>breeding</label>
+    <displayPriorityInXenotype>13</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>rjw_genes_fluids</defName>
+    <label>fluids</label>
+    <displayPriorityInXenotype>12</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>rjw_genes_damage</defName>
+    <label>genital-related damage</label>
+    <displayPriorityInXenotype>11</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>rjw_genes_special</defName>
+    <label>genital-based special abilities</label>
+    <displayPriorityInXenotype>8</displayPriorityInXenotype>
+  </GeneCategoryDef>
+  
+  <GeneCategoryDef>
+    <defName>rjw_genes_diseases</defName>
+    <label>genetic STDs</label>
+    <displayPriorityInXenotype>22</displayPriorityInXenotype>
+  </GeneCategoryDef>
+  
+  
+</Defs>

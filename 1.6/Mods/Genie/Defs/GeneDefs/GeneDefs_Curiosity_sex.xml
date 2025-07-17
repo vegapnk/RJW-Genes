@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef Name="VRE_CuriosityBase" Abstract="True">
+		<displayCategory>VRE_Curiosity</displayCategory>
+		<exclusionTags>
+			<li>VRE_Curiosity</li>
+			<li>Curiosity</li>			
+		</exclusionTags>
+		<biostatMet>-2</biostatMet>
+		<biostatCpx>2</biostatCpx>
+	</GeneDef>
+	
+	<GeneDef ParentName="VRE_CuriosityBase">
+		<defName>VRE_Curiosity_Sex</defName>
+		<label>sex curiosity</label>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<description>The carrier has a natural curiosity for sex which makes them gain recreation whenever they learn it. Furthermore, curiosity prevents skill loss in sex completely. 
+		</description>
+		<iconPath>Genes/Icons/sex_curiosity</iconPath>		
+		<modExtensions>
+			<li MayRequire="rjw.sexperience" Class="VanillaGenesExpanded.GeneExtension">
+				<noSkillLoss>Sex</noSkillLoss>
+				<skillRecreation>Sex</skillRecreation>
+			</li>
+		</modExtensions>	
+	</GeneDef>	
+
+	
+</Defs>

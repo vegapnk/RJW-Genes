@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<JobDef>
+		<defName>sex_on_spot</defName>
+		<driverClass>RJW_Genes.JobDriver_SexOnSpot</driverClass>
+		<reportString>making love on the spot.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+	
+	<JobDef>
+		<defName>sex_on_spot_reciever</defName>
+		<driverClass>RJW_Genes.JobDriver_SexOnSpotReciever</driverClass>
+		<reportString>lovin'.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+</Defs>

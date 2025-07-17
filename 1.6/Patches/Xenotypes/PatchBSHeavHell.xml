@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Big and Small - Heaven and Hell</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_Authority"]/genes</xpath>
+          <value>
+            <li>rjw_genes_big_male_genitalia</li>
+            <li>rjw_genes_big_breasts</li>
+            <li>rjw_genes_no_sex_need</li>
+            <li>rjw_genes_generous_donor</li>
+            <li MayRequire="rjw.sexperience">AptitudePoor_Sex</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_Malakim"]/genes</xpath>
+          <value>
+            <li>rjw_genes_small_breasts</li>
+            <li>rjw_genes_generous_donor</li>
+            <li MayRequire="rjw.sexperience">AptitudeTerrible_Sex</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_Satan"]/genes</xpath>
+          <value>
+            <li>rjw_genes_big_male_genitalia</li>
+            <li>rjw_genes_big_breasts</li>
+            <li MayRequire="rjw.sexperience">AptitudeStrong_Sex</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_Grigori"]/genes</xpath>
+          <value>
+            <li>rjw_genes_generous_donor</li>
+            <li MayRequire="rjw.sexperience">AptitudeStrong_Sex</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_Nephilim"]/genes</xpath>
+          <value>
+            <li>rjw_genes_big_male_genitalia</li>
+            <li>rjw_genes_big_breasts</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_Lilim"]/genes</xpath>
+          <value>
+            <li>rjw_genes_hypersexual</li>
+            <li MayRequire="rjw.sexperience">AptitudeStrong_Sex</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_Glutton"]/genes</xpath>
+          <value>
+            <li>rjw_genes_demonic_genitalia</li>
+            <li>rjw_genes_big_male_genitalia</li>
+            <li>rjw_genes_loose_female_genitalia</li>
+            <li>rjw_genes_loose_anus</li>
+            <li>rjw_genes_extra_vagina</li>
+            <li>rjw_genes_extra_anus</li>
+            <li MayRequire="vegapnk.cumpilation">rjw_genes_un_inflatable</li>
+            <li MayRequire="rjw.sexperience">AptitudeStrong_Sex</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_LilGlutton"]/genes</xpath>
+          <value>
+            <li>rjw_genes_demonic_genitalia</li>
+            <li>rjw_genes_small_male_genitalia</li>
+            <li>rjw_genes_tight_female_genitalia</li>
+            <li>rjw_genes_tight_anus</li>
+            <li>rjw_genes_extra_vagina</li>
+            <li>rjw_genes_extra_anus</li>
+            <li MayRequire="vegapnk.cumpilation">rjw_genes_inflatable</li>
+            <li MayRequire="LustLicentia.RJWLabs">rjw_genes_elasticity</li>
+            <li MayRequire="rjw.sexperience">AptitudeStrong_Sex</li>
+          </value>
+        </li>
+
+        <!-- Remaining demon patches are in PatchBSShared.xml. -->
+      </operations>
+    </match>
+  </Operation>
+</Patch>

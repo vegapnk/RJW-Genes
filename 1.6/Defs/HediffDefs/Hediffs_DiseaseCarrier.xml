@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef>
+        <defName>rjw_genes_disease_carrier_storage</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>stored genetic diseases</label>
+        <description>This pawn is capable of carrying genetic diseases without being infected.</description>
+        <defaultLabelColor>(240,200,110)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <isBad>false</isBad>
+        <tendable>false</tendable>
+        <!--<visible>false</visible -->
+        <comps>
+            <li Class="RJW_Genes.HediffCompProperties_DiseaseStorage">
+                <!-- 60k = 1 Day, so we store default 5 days-->
+                <ticksThatDiseasesAreStored>300000</ticksThatDiseasesAreStored>
+            </li>
+        </comps>
+        <stages>
+            <li>
+              <label>active</label>
+              <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

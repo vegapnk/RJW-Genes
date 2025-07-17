@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<GeneDef Name="GeneGenitaliaSizeBase" Abstract="True">
+    <displayCategory>rjw_genes_genitalia_size</displayCategory>
+    <!--These Genes need to be loaded quite late, otherwise e.g. genitalia types will re-roll and overrule genitalia size-->
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <!-- Penis -->
+  <GeneDef ParentName="GeneGenitaliaSizeBase">
+    <defName>rjw_genes_big_male_genitalia</defName>
+    <label>big male genitalia</label>
+    <description>Carriers of this gene have larger penises.(Resizing takes place at 20th Birthday)</description>
+    <iconPath>Genes/Icons/Big_Male_Genitalia</iconPath>
+    <geneClass>RJW_Genes.Gene_BigMaleGenitalia</geneClass>
+    <displayOrderInCategory>751</displayOrderInCategory>
+    <exclusionTags>
+      <li>PenisSize</li>
+    </exclusionTags>
+    <modExtensions>
+			<li Class="RJW_Genes.BoundedExtension">
+        <minimum>0.6</minimum>
+        <maximum>1.01</maximum>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitaliaSizeBase">
+    <defName>rjw_genes_small_male_genitalia</defName>
+    <label>small male genitalia</label>
+    <description>Carriers of this gene have smaller penises. (Resizing takes place at 20th Birthday)</description>
+    <iconPath>Genes/Icons/Small_Male_Genitalia</iconPath>
+    <geneClass>RJW_Genes.Gene_SmallMaleGenitalia</geneClass>
+    <displayOrderInCategory>753</displayOrderInCategory>
+    <exclusionTags>
+      <li>PenisSize</li>
+    </exclusionTags>
+    <modExtensions>
+			<li Class="RJW_Genes.BoundedExtension">
+        <minimum>0.0</minimum>
+        <maximum>0.4</maximum>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <!-- Vagina -->
+  <GeneDef ParentName="GeneGenitaliaSizeBase">
+    <defName>rjw_genes_loose_female_genitalia</defName>
+    <label>loose female genitalia</label>
+    <description>Carriers of this gene have spacious vaginas. (Resizing takes place at 20th Birthday)</description>
+    <iconPath>Genes/Icons/Loose_Vagina</iconPath>
+    <geneClass>RJW_Genes.Gene_LooseFemaleGenitalia</geneClass>
+    <displayOrderInCategory>754</displayOrderInCategory>
+    <exclusionTags>
+      <li>VaginaSize</li>
+    </exclusionTags>
+    <modExtensions>
+			<li Class="RJW_Genes.BoundedExtension">
+        <minimum>0.6</minimum>
+        <maximum>1.01</maximum>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitaliaSizeBase">
+    <defName>rjw_genes_tight_female_genitalia</defName>
+    <label>tight female genitalia</label>
+    <description>Carriers of this gene have tight vaginas.(Resizing takes place at 20th Birthday)</description>
+    <iconPath>Genes/Icons/Tight_Vagina</iconPath>
+    <geneClass>RJW_Genes.Gene_TightFemaleGenitalia</geneClass>
+    <displayOrderInCategory>756</displayOrderInCategory>
+    <exclusionTags>
+      <li>VaginaSize</li>
+    </exclusionTags>
+    <modExtensions>
+			<li Class="RJW_Genes.BoundedExtension">
+        <minimum>0.0</minimum>
+        <maximum>0.4</maximum>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <!-- Breasts -->
+  <GeneDef ParentName="GeneGenitaliaSizeBase">
+    <defName>rjw_genes_big_breasts</defName>
+    <label>big breasts</label>
+    <description>Carriers of this gene have larger breasts.(Resizing takes place at 20th Birthday)</description>
+    <iconPath>Genes/Icons/Big_Breasts</iconPath>
+    <geneClass>RJW_Genes.Gene_BigBreasts</geneClass>
+    <displayOrderInCategory>757</displayOrderInCategory>
+    <exclusionTags>
+      <li>BreastSize</li>
+    </exclusionTags>
+    <modExtensions>
+			<li Class="RJW_Genes.BoundedExtension">
+        <minimum>0.6</minimum>
+        <maximum>1.0</maximum>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitaliaSizeBase">
+    <defName>rjw_genes_small_breasts</defName>
+    <label>small breasts</label>
+    <description>Carriers of this gene have smaller breasts.(Resizing takes place at 20th Birthday)</description>
+    <iconPath>Genes/Icons/Small_Breasts</iconPath>
+    <geneClass>RJW_Genes.Gene_SmallBreasts</geneClass>
+    <displayOrderInCategory>759</displayOrderInCategory>
+    <exclusionTags>
+      <li>BreastSize</li>
+    </exclusionTags>
+    <modExtensions>
+			<li Class="RJW_Genes.BoundedExtension">
+        <minimum>0.0</minimum>
+        <maximum>0.4</maximum>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <!-- Anus -->
+  <GeneDef ParentName="GeneGenitaliaSizeBase">
+    <defName>rjw_genes_loose_anus</defName>
+    <label>loose anus</label>
+    <description>Carriers of this gene have a spacious anus.(Resizing takes place at 20th Birthday)</description>
+    <iconPath>Genes/Icons/Loose_Anus</iconPath>
+    <geneClass>RJW_Genes.Gene_LooseAnus</geneClass>
+    <displayOrderInCategory>760</displayOrderInCategory>
+    <exclusionTags>
+      <li>AnusSize</li>
+    </exclusionTags>
+    <modExtensions>
+			<li Class="RJW_Genes.BoundedExtension">
+        <minimum>0.6</minimum>
+        <maximum>1.0</maximum>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitaliaSizeBase">
+    <defName>rjw_genes_tight_anus</defName>
+    <label>tight anus</label>
+    <description>Carriers of this gene have a tight anus.(Resizing takes place at 20th Birthday)</description>
+    <iconPath>Genes/Icons/Tight_Anus</iconPath>
+    <geneClass>RJW_Genes.Gene_TightAnus</geneClass>
+    <displayOrderInCategory>762</displayOrderInCategory>
+    <exclusionTags>
+      <li>AnusSize</li>
+    </exclusionTags>
+    <modExtensions>
+			<li Class="RJW_Genes.BoundedExtension">
+        <minimum>0.0</minimum>
+        <maximum>0.4</maximum>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <!-- Extra -->
+  
+  <GeneDef ParentName="GeneGenitaliaSizeBase">
+    <defName>rjw_genes_evergrowth</defName>
+    <label>evergrowth</label>
+    <description>One of the most regretted gene-modifications in the Glitterworlds: The (primary) genitalia will continue growing forever. This affects size and fluid output. Excessive growth can also effect mental stability! (Resizing takes place at 20th Birthday)</description>
+    <iconPath>Genes/Icons/Big_Male_Genitalia</iconPath>
+    <geneClass>RJW_Genes.Gene_EvergrowingGenitalia</geneClass>
+    <displayOrderInCategory>767</displayOrderInCategory>
+    <modExtensions>
+        	<li Class="RJW_Genes.TickIntervalExtension">
+				<!-- One day has 60k ticks-->
+				<tickInterval>60000</tickInterval>
+			</li>
+		</modExtensions>
+  </GeneDef> 
+  
+</Defs>

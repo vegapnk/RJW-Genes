@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GeneDef Name="GeneFluidAmount" Abstract="True">
+    <displayCategory>rjw_genes_fluids</displayCategory>
+    <exclusionTags>
+      <li>FluidAmount</li>
+    </exclusionTags>
+    <randomChosen>false</randomChosen>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+        <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+        <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneFluidAmount">
+    <defName>rjw_genes_no_fluid</defName>
+    <label>no fluid</label>
+    <description>Carriers of this gene produce no sexual fluids.</description>
+    <iconPath>Genes/Icons/No_Cum</iconPath>
+    <geneClass>RJW_Genes.Gene_ChangeFluidAmount</geneClass>
+    <displayOrderInCategory>533</displayOrderInCategory>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>1</biostatMet>
+    <modExtensions>
+      <li Class="RJW_Genes.MultiplierExtension">
+        <multiplier>0.0</multiplier>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneFluidAmount">
+    <defName>rjw_genes_much_fluid</defName>
+    <label>much fluid</label>
+    <description>Carriers of this gene produce a lot of sexual fluids.</description>
+    <iconPath>Genes/Icons/Much_Cum</iconPath>
+    <geneClass>RJW_Genes.Gene_ChangeFluidAmount</geneClass>
+    <displayOrderInCategory>534</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <modExtensions>
+      <li Class="RJW_Genes.MultiplierExtension">
+        <multiplier>3.0</multiplier>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneFluidAmount">
+    <defName>rjw_genes_very_much_fluid</defName>
+    <label>very much fluid</label>
+    <description>Carriers of this gene produce an excessive amount of sexual fluids.</description>
+    <iconPath>Genes/Icons/Very_Much_Cum</iconPath>
+    <geneClass>RJW_Genes.Gene_ChangeFluidAmount</geneClass>
+    <displayOrderInCategory>535</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <modExtensions>
+      <li Class="RJW_Genes.MultiplierExtension">
+        <multiplier>15.0</multiplier>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+
+  <GeneDef Name="GeneFluidType" Abstract="True">
+    <displayCategory>rjw_genes_fluids</displayCategory>
+    <randomChosen>false</randomChosen>
+    <geneClass>RJW_Genes.Gene_ChangeFluidType</geneClass>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+        <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+        <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneFluidType">
+    <defName>rjw_genes_fluid_insect_spunk</defName>
+    <label>insect spunk</label>
+    <description>Carriers of this gene produce insect spunk instead of cum.</description>
+    <iconPath>Genes/Icons/RoundC</iconPath>
+    <displayOrderInCategory>311</displayOrderInCategory>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaFluidChangeExtension">
+        <penisFluidReplacement>InsectSpunk</penisFluidReplacement>
+        <vaginaFluidReplacement>InsectSpunk</vaginaFluidReplacement>
+        <!-- <breastFluidReplacement>Cum</breastFluidReplacement> -->
+        <!-- <otherFluidReplacement>Cum</otherFluidReplacement>   -->
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneFluidType">
+    <defName>rjw_genes_fluid_cum_breasts</defName>
+    <label>cum milk</label>
+    <description>Carriers of this gene produce cum from their breasts instead of milk.</description>
+    <iconPath>Genes/Icons/RoundC</iconPath>
+    <displayOrderInCategory>312</displayOrderInCategory>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaFluidChangeExtension">
+        <breastFluidReplacement>Cum</breastFluidReplacement>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneFluidType">
+    <defName>rjw_genes_fluid_milk_penis</defName>
+    <label>milk cum</label>
+    <description>Carriers of this gene produce milk from their penis instead of cum.</description>
+    <iconPath>Genes/Icons/RoundC</iconPath>
+    <displayOrderInCategory>313</displayOrderInCategory>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaFluidChangeExtension">
+        <penisFluidReplacement>Milk</penisFluidReplacement>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>rjw_genes_generous_donor</defName>
+    <label>generous donor</label>
+    <displayCategory>rjw_genes_fluids</displayCategory>
+    <description>When this Xenotype transfers fluids during sex, the giver will not get hungry.</description>
+    <iconPath>Genes/Icons/Generous_Donor</iconPath>
+    <displayOrderInCategory>538</displayOrderInCategory>
+
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+        <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+        <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+</Defs>

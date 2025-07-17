@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<RJW_Genes.VGEHybridOffspringDefs>
+		<defName>Bear_Group</defName>
+		<!-- Other Pawn is always assumed to be human -->
+		<SupportedParentKindDefs>
+			<li>Bear_Grizzly</li>
+			<li>Bear_Polar</li>
+		</SupportedParentKindDefs>
+		<PossibleHybridChildKindDefs>
+			<li>GR_Manbear</li>
+			<li>GR_Bearman</li>
+		</PossibleHybridChildKindDefs>
+	</RJW_Genes.VGEHybridOffspringDefs>
+
+	<RJW_Genes.VGEHybridOffspringDefs>
+		<defName>Boomalope_Group</defName>
+		<SupportedParentKindDefs>
+			<li>Boomalope</li>
+		</SupportedParentKindDefs>
+		<PossibleHybridChildKindDefs>
+			<li>GR_Manalope</li>
+			<li>GR_Booman</li>
+		</PossibleHybridChildKindDefs>
+	</RJW_Genes.VGEHybridOffspringDefs>
+
+	<RJW_Genes.VGEHybridOffspringDefs>
+		<defName>Poultry_Group</defName>
+		<SupportedParentKindDefs>
+			<li>Chicken</li>
+			<li>Cassowary</li>
+			<li>Emu</li>
+			<li>Ostrich</li>
+			<li>Goose</li>
+			<li>Turkey</li>
+			<li>Duck</li>
+		</SupportedParentKindDefs>
+		<PossibleHybridChildKindDefs>
+			<li>GR_Manchicken</li>
+			<li>GR_Turkeyman</li>
+		</PossibleHybridChildKindDefs>
+	</RJW_Genes.VGEHybridOffspringDefs>
+
+	<RJW_Genes.VGEHybridOffspringDefs>
+		<defName>Bovine_Group</defName>
+		<SupportedParentKindDefs>
+			<li>Muffalo</li>
+			<li>Cow</li>
+			<li>Bison</li>
+			<li>Yak</li>
+		</SupportedParentKindDefs>
+
+		<PossibleHybridChildKindDefs>
+			<li>GR_Manffalo</li>
+			<li>GR_Muffaloman</li>
+		</PossibleHybridChildKindDefs>
+	</RJW_Genes.VGEHybridOffspringDefs>
+
+	<RJW_Genes.VGEHybridOffspringDefs>
+		<defName>Canine_Group</defName>
+		<SupportedParentKindDefs>
+			<li>Warg</li>
+			<li>Wolf_Timber</li>
+			<li>Wolf_Arctic</li>
+			<li>Fox_Fennec</li>
+			<li>Fox_Red</li>
+			<li>Fox_Arctic</li>
+			<li>Husky</li>
+			<li>LabradorRetriever</li>
+			<li>YorkshireTerrier</li>
+		</SupportedParentKindDefs>
+
+		<PossibleHybridChildKindDefs>
+			<li>GR_Manwolf</li>
+			<li>GR_Dogman</li>
+		</PossibleHybridChildKindDefs>
+	</RJW_Genes.VGEHybridOffspringDefs>
+
+	<RJW_Genes.VGEHybridOffspringDefs>
+		<defName>Feline_Group</defName>
+		<SupportedParentKindDefs>
+			<li>Cougar</li>
+			<li>Panther</li>
+			<li>Lynx</li>
+			<li>Cat</li>
+		</SupportedParentKindDefs>
+
+		<PossibleHybridChildKindDefs>
+			<li>GR_Mancat</li>
+			<li>GR_Catman</li>
+		</PossibleHybridChildKindDefs>
+	</RJW_Genes.VGEHybridOffspringDefs>
+
+	<RJW_Genes.VGEHybridOffspringDefs>
+		<defName>Rabbit_Group</defName>
+		<SupportedParentKindDefs>
+			<li>GuineaPig</li>
+			<li>Hare</li>
+			<li>Snowhare</li>
+			<li>Squirrel</li>
+			<li>Rat</li>
+			<li>Raccoon</li>
+		</SupportedParentKindDefs>
+
+		<PossibleHybridChildKindDefs>
+			<li>GR_Mansquirrel</li>
+			<li>GR_Moleman</li>
+		</PossibleHybridChildKindDefs>
+	</RJW_Genes.VGEHybridOffspringDefs>
+
+	<RJW_Genes.VGEHybridOffspringDefs>
+		<defName>Thrumbo_Group</defName>
+		<SupportedParentKindDefs>
+			<li>Thrumbo</li>
+		</SupportedParentKindDefs>
+
+		<PossibleHybridChildKindDefs>
+			<li>GR_Thrumboman</li>
+		</PossibleHybridChildKindDefs>
+	</RJW_Genes.VGEHybridOffspringDefs>
+
+	<RJW_Genes.VGEHybridOffspringDefs>
+		<defName>Equine_Group</defName>
+		<SupportedParentKindDefs>
+			<li>Dromedary</li>
+			<li>Elk</li>
+			<li>Horse</li>
+			<li>Caribou</li>
+			<li>Donkey</li>
+		</SupportedParentKindDefs>
+
+		<PossibleHybridChildKindDefs>
+			<li>GR_Hurseman</li>
+		</PossibleHybridChildKindDefs>
+	</RJW_Genes.VGEHybridOffspringDefs>
+
+	<RJW_Genes.VGEHybridOffspringDefs>
+		<defName>Insect_Group</defName>
+		<SupportedParentKindDefs>
+			<li>Megascarab</li>
+			<li>Spelopede</li>
+			<li>Megaspider</li>
+		</SupportedParentKindDefs>
+
+		<PossibleHybridChildKindDefs>
+			<li>GR_Manscarab</li>
+		</PossibleHybridChildKindDefs>
+	</RJW_Genes.VGEHybridOffspringDefs>
+
+	<RJW_Genes.VGEHybridOffspringDefs>
+		<defName>Reptile_Group</defName>
+		<SupportedParentKindDefs>
+			<li>Iguana</li>
+			<li>Cobra</li>
+			<li>Tortoise</li>
+		</SupportedParentKindDefs>
+
+		<PossibleHybridChildKindDefs>
+			<li>GR_Lizardman</li>
+		</PossibleHybridChildKindDefs>
+	</RJW_Genes.VGEHybridOffspringDefs>
+
+</Defs>

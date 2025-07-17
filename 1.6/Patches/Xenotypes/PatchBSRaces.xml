@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Big and Small - Races</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_Ogre"]/genes</xpath>
+          <value>
+            <li>rjw_genes_much_fluid</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_GreatOgre"]/genes</xpath>
+          <value>
+            <li>rjw_genes_very_much_fluid</li>
+            <li>rjw_genes_big_male_genitalia</li>
+            <li>rjw_genes_big_breasts</li>
+            <li>rjw_genes_loose_female_genitalia</li>
+            <li>rjw_genes_loose_anus</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_Troll"]/genes</xpath>
+          <value>
+            <li>rjw_genes_evergrowth</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_Jotun"
+            or defName="BS_FrostJotun"
+            or defName="BS_FireJotun"
+            or defName="BS_Surtr"
+            or defName="BS_Ymir"
+            or defName="BS_Half_Jotun"
+            ]/genes</xpath>
+          <value>
+            <li>rjw_genes_big_male_genitalia</li>
+            <li>rjw_genes_big_breasts</li>
+            <li>rjw_genes_orgasm_rush</li>
+          </value>
+        </li>
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>Alpha Genes</li>
+          </mods>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/XenotypeDef[defName="BS_Corrupterd_Titan"]/genes</xpath> <!-- sic -->
+            <value>
+              <li>rjw_genes_rapist</li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_Gnome"]/genes</xpath>
+          <value>
+            <li>rjw_genes_tight_female_genitalia</li>
+            <li>rjw_genes_tight_anus</li>
+            <li>rjw_genes_very_much_fluid</li>
+            <li MayRequire="vegapnk.cumpilation">rjw_genes_inflatable</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_Dwarf" or defName="BS_Svartalf"]/genes</xpath>
+          <value>
+            <li>rjw_genes_big_male_genitalia</li>
+          </value>
+        </li>   
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="BS_Redcap"]/genes</xpath>
+          <value>
+            <li>rjw_genes_littered_births</li>
+            <li>rjw_genes_tight_female_genitalia</li>
+            <li>rjw_genes_tight_anus</li>
+            <li>rjw_genes_much_fluid</li>
+            <li>rjw_genes_rapist</li>
+          </value>
+        </li>   
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName = "BS_Hearthguard" or defName = "BS_Hearthdoll" or defName = "BS_PilotableFleshGolem" or defName="BS_FleshGolemServant"]/genes</xpath>
+          <value>
+            <li>rjw_genes_no_sex_need</li>
+          </value>
+        </li>   
+      </operations>
+    </match>
+  </Operation>
+</Patch>

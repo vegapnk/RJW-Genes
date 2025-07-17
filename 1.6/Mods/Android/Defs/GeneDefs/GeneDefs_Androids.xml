@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<VREAndroids.AndroidGeneDef ParentName="VREA_SubroutineBase">
+		<defName>rjw_genes_bionic_genitalia</defName>
+		<label>bionic genitalia</label>
+		<geneClass>RJW_Genes.Gene_GenitaliaType</geneClass>
+		<description>This piece of hardware is a set of bionic genitals of high quality</description>
+		<iconPath>Genes/Icons/Genitalia_human</iconPath>
+			<modExtensions>
+				<li Class="RJW_Genes.GenitaliaTypeExtension">
+				<penis>BionicPenis</penis>
+				<vagina>BionicVagina</vagina>
+				<anus>BionicAnus</anus>
+				<breasts>BionicBreasts</breasts>
+				</li>
+			</modExtensions>
+		<displayOrderInCategory>802</displayOrderInCategory>
+		<biostatMet>-2</biostatMet>
+	</VREAndroids.AndroidGeneDef>
+	
+	<VREAndroids.AndroidGeneDef ParentName="VREA_HardwareBase">
+		<defName>rjw_genes_hydrolic_genitalia</defName>
+		<label>hydrolic genitalia</label>
+		<geneClass>RJW_Genes.Gene_GenitaliaType</geneClass>
+		<description>This piece of hardware is a set of crude hydrolic genitals, at least it come with a suspension system</description>
+		<iconPath>Genes/Icons/Genitalia_human</iconPath>
+			<modExtensions>
+				<li Class="RJW_Genes.GenitaliaTypeExtension">
+				<penis>HydraulicPenis</penis>
+				<vagina>HydraulicVagina</vagina>
+				<anus>HydraulicAnus</anus>
+				<breasts>HydraulicBreasts</breasts>
+				</li>
+			</modExtensions>
+		<displayOrderInCategory>802</displayOrderInCategory>
+		<statFactors>
+			<MoveSpeed>1.12</MoveSpeed>
+		</statFactors>
+	</VREAndroids.AndroidGeneDef>
+	
+	<VREAndroids.AndroidGeneDef ParentName="VREA_HardwareBase">
+		<defName>rjw_genes_SexDisabled</defName>
+		<label>sex disabled</label>
+		<description>Androids do not feel satisfaction from sex, and have no need to feel it.</description>
+		<iconPath>Genes/Icons/sex_disabled</iconPath>
+		<displayOrderInCategory>3</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+        <geneClass>RJW_Genes.Gene_NoSexNeed</geneClass>
+        <forcedTraits>
+            <li>
+                <def>Asexual</def>
+            </li>
+        </forcedTraits>
+		<removeWhenAwakened>true</removeWhenAwakened>
+	</VREAndroids.AndroidGeneDef>
+	
+</Defs>

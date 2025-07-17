@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Pigskin</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="VRE_Boarskin"]/genes</xpath>
+			<value>
+				<!-- <li>rjw_genes_Pig_genitalia</li> -->
+				<li>rjw_genes_human_genitalia</li>
+				<li>rjw_genes_much_fluid</li>
+				<li>rjw_genes_zoophile</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

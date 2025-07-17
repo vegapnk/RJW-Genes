@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GeneDef Name="GeneGenitalTypeBase" Abstract="True">
+    <displayCategory>rjw_genes_genitalia_type</displayCategory>
+    <geneClass>RJW_Genes.Gene_GenitaliaType</geneClass>
+    <exclusionTags>
+      <li>GenitalType</li>
+    </exclusionTags>
+    <randomChosen>true</randomChosen>
+    <biostatCpx>0</biostatCpx>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+        <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+        <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_equine_genitalia</defName>
+    <label>equine genitalia</label>
+    <description>Carriers of this gene develop equine genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_Equine</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>HorsePenis</penis>
+        <vagina>HorseVagina</vagina>
+        <anus>GenericAnus</anus>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>802</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_human_genitalia</defName>
+    <label>human genitalia</label>
+    <description>Carriers of this gene develop human genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_human</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>Penis</penis>
+        <vagina>Vagina</vagina>
+        <anus>Anus</anus>
+        <breasts>Breasts</breasts>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>802</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_canine_genitalia</defName>
+    <label>canine genitalia</label>
+    <description>Carriers of this gene develop canine genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_Canine</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>DogPenis</penis>
+        <vagina>DogVagina</vagina>
+        <anus>GenericAnus</anus>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>803</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_feline_genitalia</defName>
+    <label>feline genitalia</label>
+    <description>Carriers of this gene develop feline genitalia.</description>
+    <iconPath>Genes/Icons/RJW_Genes_Feline_Genitalia</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>CatPenis</penis>
+        <vagina>CatVagina</vagina>
+        <anus>GenericAnus</anus>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>804</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_demonic_genitalia</defName>
+    <label>demonic genitalia</label>
+    <description>Carriers of this gene have demonic genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_Demon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>DemonPenis</penis>
+        <vagina>DemonVagina</vagina>
+        <anus>DemonAnus</anus>
+      </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>DemonLoverQuirk</Satisfiedquirk>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>805</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_dragon_genitalia</defName>
+    <label>dragon genitalia</label>
+    <description>Carriers of this gene develop dragon genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_Draconic</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>DragonPenis</penis>
+        <vagina>DragonVagina</vagina>
+        <anus>GenericAnus</anus>
+      </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>806</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_slime_genitalia</defName>
+    <label>slime genitalia</label>
+    <description>Carriers of this gene have slime genitalia.</description>
+    <iconPath>Genes/Icons/Slime_Genitalia</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>SlimeTentacles</penis>
+        <vagina>SlimeVagina</vagina>
+        <anus>SlimeAnus</anus>
+        <breasts>SlimeBreasts</breasts>
+      </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>SlimeLoverQuirk</Satisfiedquirk>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_demonicT_genitalia</defName>
+    <label>demonic tentacle genitalia</label>
+    <description>Carriers of this gene have demonic tentacle genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_tentacle_icon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>DemonTentaclePenis</penis>
+        <vagina>DemonVagina</vagina>
+        <anus>DemonAnus</anus>
+      </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>DemonLoverQuirk</Satisfiedquirk>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_crocodilian_genitalia</defName>
+    <label>crocodilian genitalia</label>
+    <description>Carriers of this gene have crocodilian genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_croc_icon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>CrocodilianPenis</penis>
+      </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_racoon_genitalia</defName>
+    <label>racoon genitalia</label>
+    <description>Carriers of this gene have racoon genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_racoon_icon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>RaccoonPenis</penis>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_reptilian_genitalia</defName>
+    <label>reptilian genitalia</label>
+    <description>Carriers of this gene have reptilian genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_hemi_icon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>HemiPenis</penis>
+      </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_Needle_genitalia</defName>
+    <label>narrow genitalia</label>
+    <description>Carriers of this gene have very thin genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_thin_icon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>NeedlePenis</penis>
+        <vagina>NarrowVagina</vagina>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>807</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_ovipositor_genitalia</defName>
+    <label>insect genitalia</label>
+    <description>Carriers of this gene have ovipositors similar to insects.</description>
+    <iconPath>Genes/Icons/Ovipositor_Genitalia</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>OvipositorM</penis>
+        <vagina>OvipositorF</vagina>
+        <anus>InsectAnus</anus>
+      </li>
+      <li Class="RJW_Genes.QirkExtension">
+        <Satisfiedquirk>ChitinLoverQuirk</Satisfiedquirk>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>808</displayOrderInCategory>
+    <exclusionTags>
+      <li>Egglaying</li>
+      <li>AG_Egglaying</li>
+    </exclusionTags>
+  </GeneDef>
+
+</Defs>

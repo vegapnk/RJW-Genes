@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<AbilityDef>
+    <defName>rjw_genes_ability_pheromone_spit</defName>
+    <label>pheromone spit</label>
+    <description>Spit a condensed ball of animal pheromones to mark a target. Nearby Animals will try to breed the target. This means all animals - hostile, friendly and wild.</description>
+    <iconPath>Genes/Icons/RJW_Genes_PheromoneSpit</iconPath>
+
+    <cooldownTicksRange>3000</cooldownTicksRange>
+    <displayOrder>201</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>11</range>
+      <warmupTime>1.2</warmupTime>
+      <soundCast>PiercingSpine_Launch</soundCast>
+      <targetParams>
+        <canTargetHumans>True</canTargetHumans>
+        <canTargetMechs>False</canTargetMechs>
+        <canTargetAnimals>False</canTargetAnimals>
+        <canTargetLocations>False</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="RJW_Genes.CompProperties_AbilityPheromoneSpit">
+        <calldistance>25</calldistance>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

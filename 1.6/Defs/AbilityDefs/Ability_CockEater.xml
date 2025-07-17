@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>rjw_genes_ability_cockeater</defName>
+    <label>eat cock</label>
+    <description>Eat the cock of another pawn, restoring fertilin based on the size of the cock.</description>
+    <iconPath>Genes/Icons/cockeater</iconPath>
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <warmupMote>Mote_CoagulateStencil</warmupMote>
+    <warmupEffecter>Coagulate</warmupEffecter>
+    <warmupStartSound>Coagulate_Cast</warmupStartSound>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <displayOrder>402</displayOrder>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>10</warmupTime>
+      <targetParams>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="RJW_Genes.CompProperties_AbilityCockEater"/> <!-- namespace needs to be changed when copied to another mod-->
+    </comps>
+  </AbilityDef>
+</Defs>

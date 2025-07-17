@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Kijin Race 3.0</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="KijinXenotype"]/genes</xpath>
+			<value>
+				<li>rjw_genes_demonic_genitalia</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

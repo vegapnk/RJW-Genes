@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Rimsenal Xenotype Pack - Askbarn</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	<operations>
+		<li Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="Askbarn"]/genes</xpath>
+			<value>
+				<li>rjw_genes_electric_satisfaction</li>
+				<li>rjw_genes_pheromone_spit</li>
+				<li>rjw_genes_loose_anus</li>
+				<li>rjw_genes_bisexual</li>
+			</value>
+		</li>
+		
+		<li Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="Uredd"]/genes</xpath>
+			<value>
+				<li>rjw_genes_electric_satisfaction</li>
+				<li>rjw_genes_dragon_genitalia</li>
+				<li>rjw_genes_big_male_genitalia</li>
+				<li>rjw_genes_big_breasts</li>
+			</value>
+		</li>
+	</operations>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Rimsenal Xenotype Pack - Harana</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="Harana"]/genes</xpath>
+			<value>
+				<li>rjw_genes_small_male_genitalia</li>
+				<li>rjw_genes_tight_female_genitalia</li>
+				<li>rjw_genes_unbreakable</li>
+			</value>
+	</match>
+</Operation>
+
+</Patch>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[LTS]Xenotech</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="LTS_Nyankind"]/genes</xpath>
+          <value>
+            <li>rjw_genes_feline_genitalia</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="LTS_Growler"]/genes</xpath>
+          <value>
+            <li>rjw_genes_canine_genitalia</li>
+            <li>rjw_genes_zoophile</li>
+            <li>rjw_genes_mating_call</li>
+          </value>
+        </li>        
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="LTS_Elfin"]/genes</xpath>
+          <value>
+            <li>rjw_genes_small_male_genitalia</li>
+            <li>rjw_genes_tight_female_genitalia</li>
+          </value>
+        </li>        
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="LTS_Ork"]/genes</xpath>
+          <value>
+            <li>rjw_genes_big_male_genitalia</li>
+            <li>rjw_genes_loose_female_genitalia</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="LTS_Lilime"]/genes</xpath>
+          <value>
+            <li>rjw_genes_demonic_genitalia</li>
+            <li MayRequire="LustLicentia.RJWLabs">rjw_genes_elasticity</li>
+            <li MayRequire="rjw.sexperience">AptitudeRemarkable_Sex</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="LTS_Anthrae"]/genes</xpath>
+          <value>
+            <li>rjw_genes_ovipositor_genitalia</li>
+            <li>rjw_genes_bisexual</li>
+            <li>rjw_genes_insectincubator</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="LTS_Hydragon"]/genes</xpath>
+          <value>
+            <li>rjw_genes_dragon_genitalia</li>
+            <li>rjw_genes_basic_rut</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
