@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: flirt -->
+  <rjw_genes_flirt.label>调情</rjw_genes_flirt.label>
+  <!-- EN:
+    <li>r_logentry->[INITIATOR_nameDef] and [RECIPIENT_nameDef] [talkedabout] [TalkTopicLight].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [talkedabout] [TalkTopicLight] with [RECIPIENT_nameDef].</li>
+    <li>r_logentry(p=0.8)->[INITIATOR_nameDef] [commentedabout] [TalkTopicLight] to [RECIPIENT_nameDef].</li>
+    <li>talkedabout(p=4)->chatted about</li>
+    <li>talkedabout->shared a word about</li>
+    <li>talkedabout->spoke about</li>
+    <li>talkedabout->gabbed about</li>
+    <li>talkedabout->talked about</li>
+    <li>talkedabout->joked about</li>
+    <li>talkedabout->quipped about</li>
+    <li>commentedabout->said something about</li>
+    <li>commentedabout->said a word about</li>
+    <li>commentedabout->made a comment about</li>
+    <li>commentedabout->commented about</li>
+    <li>commentedabout->told a joke about</li>
+  -->
+  <rjw_genes_flirt.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] 和 [RECIPIENT_nameDef] [talkedabout] [TalkTopicLight].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [talkedabout] [TalkTopicLight] 给 [RECIPIENT_nameDef].</li>
+    <li>r_logentry(p=0.8)->[INITIATOR_nameDef] [commentedabout] [TalkTopicLight] 对 [RECIPIENT_nameDef].</li>
+    <li>talkedabout(p=4)->聊了聊</li>
+    <li>talkedabout-提到</li>
+    <li>talkedabout->说到</li>
+    <li>talkedabout->聊到</li>
+    <li>talkedabout->谈论</li>
+    <li>talkedabout->开玩笑说到</li>
+    <li>talkedabout->讥讽说</li>
+    <li>commentedabout->说了些关于</li>
+    <li>commentedabout->提及了</li>
+    <li>commentedabout->锐评了</li>
+    <li>commentedabout->评价了</li>
+    <li>commentedabout->讲了个段子关于</li></rjw_genes_flirt.logRulesInitiator.rulesStrings>
+  
+</LanguageData>
