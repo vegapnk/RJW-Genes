@@ -11,22 +11,8 @@ namespace RJW_Genes
 
         public override void PostMake()
         {
+            
             base.PostMake();
-
-            // If the Pawn is already a Futa, do not do anything. Can Happen by Base-RJW Spawn Chance or potentially races / other mods. 
-            if (IsAlreadyFuta(pawn))
-            {
-                return;
-            }
-
-            if (GenderUtility.IsFemale(pawn) && additional_genital == null)
-            {
-                createAndAddPenis();
-            }
-            if (GenderUtility.IsMale(pawn) && additional_genital == null)
-            {
-                CreateAndAddVagina();
-            }
         }
         
         public override void PostAdd()

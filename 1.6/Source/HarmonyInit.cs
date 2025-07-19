@@ -5,7 +5,6 @@ using rjw;
 using RJWLoveFeeding;
 using RimWorld;
 using System.Linq;
-using LicentiaLabs;
 
 namespace RJW_Genes
 {
@@ -42,11 +41,17 @@ namespace RJW_Genes
             // OvaryAgitator/Gene_LitteredBirths multibirth logic
             harmony.Patch(AccessTools.Method(typeof(Hediff_LaborPushing), nameof(Hediff_LaborPushing.PostRemoved)),
                 postfix: new HarmonyMethod(typeof(PatchLitteredBirth), nameof(PatchLitteredBirth.Hediff_LaborPushing_PostRemovedPostFix)));
-            
+
             //TODO:
             //1.6 quirks migrated to submod, disableing this patch for the time being.
             //harmony.Patch(AccessTools.Method(typeof(Quirk), nameof(Quirk.CountSatisfiedQuirks)),
-                //postfix: new HarmonyMethod(typeof(QuirkPatcher), nameof(QuirkPatcher.CountSatisfiedPostfix)));
+            //postfix: new HarmonyMethod(typeof(QuirkPatcher), nameof(QuirkPatcher.CountSatisfiedPostfix)));
+
+            
+            //RJW.Sexualizer.sexualize_pawn
+            harmony.Patch(AccessTools.Method(typeof(Sexualizer), nameof(Sexualizer.sexualize_pawn)),
+                prefix: new HarmonyMethod(typeof(Patch_sexualize_pawn), nameof(Patch_sexualize_pawn.PreFix)));
+            
 
         }
     }

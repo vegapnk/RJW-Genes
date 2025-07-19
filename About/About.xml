@@ -2,7 +2,7 @@
 	<name>RJW Genes</name>
 	<author>Vegapnk - 1.6 Rewrite by Telanda</author>
 	<packageId>Vegapnk.rjw.genes</packageId>
-	<modVersion>2.5.1</modVersion>
+	<modVersion>2.5.2</modVersion>
 	<supportedVersions>
 		<li>1.4</li>
 		<li>1.5</li>

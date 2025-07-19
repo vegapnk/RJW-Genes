@@ -2,8 +2,7 @@
 <Patch>
   <Operation Class="PatchOperationFindMod">
     <mods>
-      <li>Big and Small - Genes &amp; More</li>
-	  <li>Big and Small - Heaven and Hell</li>
+		<li>Big and Small - Heaven and Hell</li>
     </mods>
     <match Class="PatchOperationSequence">
       <operations>

@@ -1,3 +1,12 @@
+# 2.5.2 (19-07-2025)
+(Commit by @Telanda-DDS)
+
+**Fixes**
+- Fixed "Big and Small - Heaven and Hell" XML patch being applied incorrectly, again.
+- Fixed issue that was causing Extra genitals,Anus,breasts being added to pawns when a gene was applied.
+- Removed some code duplication in the Gender specific Genes, I cannot see any situations where this code was required, but but there are some notes in other genes relating to character editor, I'm leaving other genes As they are for now, and will wait to see if it breaks some strange edge case i didn't test for.
+
+
 # 2.5.1 (17-07-2025)
 (Commit by @Telanda-DDS)
   

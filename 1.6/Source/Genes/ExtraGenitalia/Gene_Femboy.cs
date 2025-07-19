@@ -6,27 +6,20 @@ namespace RJW_Genes
 {
     public class Gene_Femboy : RJW_Gene
     {
-        // Token: 0x06000335 RID: 821 RVA: 0x0000401D File Offset: 0x0000221D
         public override void PostMake()
         {
             base.PostMake();
+        }
+
+        public override void PostAdd()
+        {
+            base.PostAdd();
             if (GenderUtility.IsMale(this.pawn) && this.additional_genital == null)
             {
                 this.CreateAndAddVagina();
             }
         }
 
-        // Token: 0x06000336 RID: 822 RVA: 0x00004040 File Offset: 0x00002240
-        public override void PostAdd()
-        {
-            base.PostAdd();
-            if (this.pawn.gender == Gender.Male && this.additional_genital == null)
-            {
-                this.CreateAndAddVagina();
-            }
-        }
-
-        // Token: 0x06000337 RID: 823 RVA: 0x0000EE4C File Offset: 0x0000D04C
         internal void CreateAndAddVagina()
         {
             if (this.pawn.gender != Gender.Female)
