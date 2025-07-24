@@ -25,14 +25,15 @@ namespace CumpilationPatcher
             
             if (props == null || props.pawn == null || props.partner == null) return;
 
-
-            if (props.pawn.genes != null && props.pawn.genes.HasActiveGene(RJW_Genes.GeneDefOf.rjw_genes_inflatable) )
+            if (props.pawn.genes != null && (props.pawn.genes.HasActiveGene(RJW_Genes.GeneDefOf.rjw_genes_inflatable) || props.pawn.genes.HasActiveGene(RJW_Genes.GeneDefOf.rjw_genes_elasticity) ))
             {
+                ModLog.Debug($"Adding or updating Counter Cumflation HeDiff for {props.pawn.Name}.");
                 AddOrIncreaseCumflationCounterHediffs(props.pawn);
             }
 
-            if (props.partner.genes != null && props.partner.genes.HasActiveGene(RJW_Genes.GeneDefOf.rjw_genes_inflatable))
+            if (props.partner.genes != null && (props.partner.genes.HasActiveGene(RJW_Genes.GeneDefOf.rjw_genes_inflatable) || props.partner.genes.HasActiveGene(RJW_Genes.GeneDefOf.rjw_genes_elasticity) ))
             {
+                ModLog.Debug($"Adding or updating Counter Cumflation HeDiff for {props.partner.Name}.");
                 AddOrIncreaseCumflationCounterHediffs(props.partner);
             }
         }

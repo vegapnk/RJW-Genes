@@ -24,7 +24,6 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\About\**" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal_Inheritance\Defs\VGEHybridOffspringDefs.cs" />
@@ -174,6 +173,7 @@
     <Compile Include="Genes\Patches\LustFeeding.cs" />
     <Compile Include="Genes\Patches\MultiplePregnancies.cs" />
     <Compile Include="Genes\Patches\Patch_Asexual_CanRape.cs" />
+    <Compile Include="Genes\Patches\Patch_eltoro_streching.cs" />
     <Compile Include="Genes\Patches\Patch_sexualize_pawn.cs" />
     <Compile Include="Genes\Patch_AddNotifyOnGeneration.cs" />
     <Compile Include="Genes\Quirks\Defs\QirkExtension.cs" />
@@ -222,16 +222,16 @@
       <HintPath>..\..\..\..\..\..\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="LicentiaLabs">
-      <HintPath>..\..\..\licentia-labs\Assemblies\LicentiaLabs.dll</HintPath>
+    <Reference Include="LLStretcher">
+      <HintPath>..\..\..\..\Mods\rjw-elt-stretching\Assemblies\LLStretcher.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RJW">
-      <HintPath>..\..\..\rjw\1.6\Assemblies\RJW.dll</HintPath>
+      <HintPath>..\..\..\..\Mods\rjw\1.6\Assemblies\RJW.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RJWSexperience">
-      <HintPath>..\..\..\rjw-sexperience\1.5\Assemblies\RJWSexperience.dll</HintPath>
+      <HintPath>..\..\..\..\Mods\rjw-sexperience\1.6\Assemblies\RJWSexperience.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

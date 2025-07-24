@@ -22,6 +22,7 @@ namespace RJW_Genes
         
         public override void PostAdd()
         {
+            if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             base.PostAdd();
 
             // Penis are only removed for male pawns!

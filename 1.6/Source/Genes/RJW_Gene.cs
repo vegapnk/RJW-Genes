@@ -18,6 +18,7 @@ namespace RJW_Genes
         /// </summary>
         public override void PostAdd()
         {
+            if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn))
             {
                 Sexualizer.sexualize_pawn(pawn);

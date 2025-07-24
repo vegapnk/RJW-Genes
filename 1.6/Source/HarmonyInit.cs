@@ -1,10 +1,11 @@
-﻿using Verse;
+﻿using System;
+using System.Linq;
 using HarmonyLib;
-using System;
+using LLStretcher;
+using RimWorld;
 using rjw;
 using RJWLoveFeeding;
-using RimWorld;
-using System.Linq;
+using Verse;
 
 namespace RJW_Genes
 {
@@ -51,7 +52,15 @@ namespace RJW_Genes
             //RJW.Sexualizer.sexualize_pawn
             harmony.Patch(AccessTools.Method(typeof(Sexualizer), nameof(Sexualizer.sexualize_pawn)),
                 prefix: new HarmonyMethod(typeof(Patch_sexualize_pawn), nameof(Patch_sexualize_pawn.PreFix)));
-            
+
+
+            //Patch for Elastic Gene support with Eltro's Streching mod.
+            if (ModLister.GetActiveModWithIdentifier("eltoro.stretching") != null)
+            {
+                ModLog.Debug("Patching eltoro.Streching for elasticity gene Support.");
+                harmony.Patch(AccessTools.Method(typeof(Stretcher), "ApplyInjury"),
+                    prefix: new HarmonyMethod(typeof(Patch_eltoro_streching), nameof(Patch_eltoro_streching.Prefix)));
+            }
 
         }
     }

@@ -41,6 +41,7 @@ namespace RJW_Genes
 
         public override void PostAdd()
         {
+            if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             base.PostAdd();
             if (pawn.ageTracker.AgeBiologicalYears >= RJW_Genes_Settings.rjw_genes_resizing_age)
             {

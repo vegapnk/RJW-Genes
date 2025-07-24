@@ -88,7 +88,7 @@ namespace RJW_Genes
         public static readonly GeneDef rjw_genes_littered_births;
 
         // Damage & Side Effects 
-        [MayRequire("LustLicentia.RJWLabs")] public static readonly GeneDef rjw_genes_elasticity;
+        public static readonly GeneDef rjw_genes_elasticity;
 		public static readonly GeneDef rjw_genes_unbreakable;
 
 		// Special

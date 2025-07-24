@@ -19,7 +19,7 @@
 		</description>
 		<iconPath>Genes/Icons/sex_curiosity</iconPath>		
 		<modExtensions>
-			<li MayRequire="rjw.sexperience" Class="VanillaGenesExpanded.GeneExtension">
+			<li MayRequire="rjw.sexperience,OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
 				<noSkillLoss>Sex</noSkillLoss>
 				<skillRecreation>Sex</skillRecreation>
 			</li>

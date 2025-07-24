@@ -13,7 +13,7 @@
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <statBases>
         <Ability_Duration>50</Ability_Duration>
-        <Ability_EffectRadius>0</Ability_EffectRadius>
+        <Ability_EffectRadius>30</Ability_EffectRadius>
     </statBases>
 
     <displayOrder>410</displayOrder>
@@ -35,7 +35,7 @@
           <fleckDef>PsycastPsychicEffect</fleckDef>
         </li>
         <li Class="RJW_Genes.CompProperties_AbilityMatingCall">
-            <calldistance>40</calldistance>
+            <calldistance>30</calldistance>
         </li>
         <li Class="CompProperties_AbilityGiveHediff">
             <compClass>CompAbilityEffect_GiveHediff</compClass>

@@ -17,6 +17,7 @@ namespace RJW_Genes
         
         public override void PostAdd()
         {
+            if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             base.PostAdd();
 
             // If the Pawn is already a Futa, do not do anything. Can Happen by Base-RJW Spawn Chance or potentially races / other mods. 

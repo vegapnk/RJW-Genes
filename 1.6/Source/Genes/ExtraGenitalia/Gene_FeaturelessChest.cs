@@ -20,6 +20,7 @@ namespace RJW_Genes
 
         public override void PostAdd()
         {
+            if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             base.PostAdd();
 
             if (removed_breasts == null)

@@ -30,6 +30,7 @@ namespace RJW_Genes
         
         public override void PostAdd()
         {
+            if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             base.PostAdd();
 
             // Some sources add Genes before they fire, e.g. Character Editor

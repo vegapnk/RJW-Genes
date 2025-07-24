@@ -22,6 +22,7 @@ namespace RJW_Genes
         /// <param name="pulse_distance">The range around the pawn for which animals will be triggered.</param>
         public static void DoAnimalBreedingPulse(Pawn toBeBred, int pulse_distance, bool ends_manhunter = true)
         {
+            ModLog.Debug($"Triggering animal Breeding pulse, target pawn: {toBeBred.Name}, Pulse Distance {pulse_distance}");
             IEnumerable<Pawn> animals = GetAnimalsInRange(toBeBred.Map, toBeBred.Position, pulse_distance);
             int breeder_counter = 0;
 

@@ -14,6 +14,7 @@ namespace RJW_Genes
         private const int RESET_INTERVAL = 30000; // 30k should be 0.5 day 
         public override void PostAdd()
         {
+            if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             base.PostAdd();
             RemoveBrokenHediff();
         }

@@ -46,7 +46,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="RJW">
-      <HintPath>..\..\..\..\rjw\1.6\Assemblies\RJW.dll</HintPath>
+      <HintPath>..\..\..\..\..\Mods\rjw\1.6\Assemblies\RJW.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Rjw-Genes">

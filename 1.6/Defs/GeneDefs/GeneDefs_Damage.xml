@@ -24,4 +24,24 @@
     </modExtensions>
   </GeneDef>
 
+  <GeneDef>
+    <defName>rjw_genes_elasticity</defName>
+    <label>elasticity</label>
+    <displayCategory>rjw_genes_damage</displayCategory>
+    <description>This Xenotype does not suffer any injury from being stretched by large penetrations or large volumes of fluid.</description>
+    <iconPath>Genes/Icons/Elasticity</iconPath>
+    <!-- <geneClass>RJW_Genes.Gene_Elasticity</geneClass> -->
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+
 </Defs>
