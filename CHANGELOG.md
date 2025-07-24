@@ -1,3 +1,18 @@
+# 2.5.3 (19-07-2025)
+(Commit by @Telanda-DDS)
+
+**Changes**
+- Re-factored directory paths & common directories between versions, decreasing mod Size.
+- Added Elasticity Support for Eltoro's Streching mod. (Prevents Injury Hediffs from being created, Pawn still gets Stretched.)
+- Added Elasticity support to Cumpilation (Adds counter HeDiff that negates effects.)
+
+**Fixes**
+- Fixed Mating Call Ability.
+- Fixed incorrect mod Call for Genie Sex-curiosity gene.
+- Added additional Null check to Genes for when Rimworld tries to created statue pawns.
+- Removed Depreciated LicentiaLabs XML files.
+
+
 # 2.5.2 (19-07-2025)
 (Commit by @Telanda-DDS)
 
