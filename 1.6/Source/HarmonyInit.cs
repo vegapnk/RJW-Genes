@@ -55,10 +55,11 @@ namespace RJW_Genes
 
 
             //Patch for Elastic Gene support with Eltro's Streching mod.
-            if (ModLister.GetActiveModWithIdentifier("eltoro.stretching") != null)
+            if (ModsConfig.IsActive("eltoro.stretching"))
             {
                 ModLog.Debug("Patching eltoro.Streching for elasticity gene Support.");
-                harmony.Patch(AccessTools.Method(typeof(Stretcher), "ApplyInjury"),
+                // This patching structure allows to patch a class that is not allways present, and a Private function that is not normaly Available.
+                harmony.Patch(AccessTools.Method(GenTypes.GetTypeInAnyAssembly("LLStretcher.Stretcher"),"ApplyInjury"),
                     prefix: new HarmonyMethod(typeof(Patch_eltoro_streching), nameof(Patch_eltoro_streching.Prefix)));
             }
 
