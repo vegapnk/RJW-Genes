@@ -11,7 +11,7 @@
 		<biostatCpx>2</biostatCpx>
 	</GeneDef>
 	
-	<GeneDef ParentName="VRE_CuriosityBase">
+	<GeneDef MayRequire="rjw.sexperience" ParentName="VRE_CuriosityBase">
 		<defName>VRE_Curiosity_Sex</defName>
 		<label>sex curiosity</label>
 		<displayOrderInCategory>0</displayOrderInCategory>
@@ -19,7 +19,7 @@
 		</description>
 		<iconPath>Genes/Icons/sex_curiosity</iconPath>		
 		<modExtensions>
-			<li MayRequire="rjw.sexperience,OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+			<li MayRequire="rjw.sexperience" Class="VEF.Genes.GeneExtension">
 				<noSkillLoss>Sex</noSkillLoss>
 				<skillRecreation>Sex</skillRecreation>
 			</li>
