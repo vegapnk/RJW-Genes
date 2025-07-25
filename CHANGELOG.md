@@ -1,3 +1,19 @@
+# 2.5.5 (25-07-2025)
+(Commit by @Telanda-DDS)
+
+**Changes**
+- Support for RJW RC-5
+- Updated Elastic gene to also increase speed at which stretched parts return to normal under ElToro's stretching Mod.
+
+
+**Fixes**
+- Fixed Load bug with VRE-Genie Sexperience interaction.
+- Fixed incorrect consciousness value on infectious sex change Gene.
+- Fixed ElToro Stretching support causing an error if not present.
+- Fixed Typo in Disease ThoughtDef
+
+
+
 # 2.5.3 (19-07-2025)
 (Commit by @Telanda-DDS)
 
