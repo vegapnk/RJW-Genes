@@ -25,10 +25,10 @@ namespace RJW_Genes
             if (RJWSettings.DevMode) rjw.ModLog.Message("Rimjobworld::impregnate(" + props.sexType + "):: " + xxx.get_pawnname(props.pawn) + " + " + xxx.get_pawnname(props.partner) + ":");
 
             //"mech" pregnancy
-            if (props.sexType == xxx.rjwSextype.MechImplant)
-            {
-                return;
-            }
+            //if (props.sexType == xxx.rjwSextype.MechImplant)
+            //{
+            //    return;
+            //}
 
             Pawn giver = props.pawn; // orgasmer
             Pawn receiver = props.partner;
@@ -121,15 +121,15 @@ namespace RJW_Genes
                     ":"
                     }));
                 }
-                if (sexType == xxx.rjwSextype.MechImplant && !RJWPregnancySettings.mechanoid_pregnancy_enabled)
-                {
-                    if (RJWSettings.DevMode)
-                    {
-                    ModLog.Message(" mechanoid 'pregnancy' disabled");
-                    }
-                return false;
+            //if (sexType == xxx.rjwSextype.MechImplant && !RJWPregnancySettings.mechanoid_pregnancy_enabled)
+            //{
+            //    if (RJWSettings.DevMode)
+            //    {
+            //    ModLog.Message(" mechanoid 'pregnancy' disabled");
+            //    }
+            //return false;
 
-            }
+            //}
             if (sexType != xxx.rjwSextype.Vaginal && sexType != xxx.rjwSextype.DoublePenetration && !(sexType == xxx.rjwSextype.Anal && fucked.genes.HasActiveGene(GeneDefOf.rjw_genes_fertile_anus)))
                 {
                     if (RJWSettings.DevMode)
@@ -148,15 +148,15 @@ namespace RJW_Genes
                 return false;
 
             }
-            if ((fucker.IsUnsexyRobot() || fucked.IsUnsexyRobot()) && sexType != xxx.rjwSextype.MechImplant)
-                {
-                    if (RJWSettings.DevMode)
-                    {
-                    ModLog.Message(" unsexy robot cant be pregnant");
-                    }
-                return false;
+            //if ((fucker.IsUnsexyRobot() || fucked.IsUnsexyRobot()) && sexType != xxx.rjwSextype.MechImplant)
+            //    {
+            //        if (RJWSettings.DevMode)
+            //        {
+            //        ModLog.Message(" unsexy robot cant be pregnant");
+            //        }
+            //    return false;
 
-            }
+            //}
             if (!fucker.RaceHasPregnancy())
                 {
                     if (RJWSettings.DevMode)
