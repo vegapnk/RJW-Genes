@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using HarmonyLib;
 
 namespace RJW_Genes
 {
@@ -17,18 +18,36 @@ namespace RJW_Genes
         /// <param name="def"></param>
         /// <param name="severity"></param>
         /// <returns></returns>
-        public static bool Prefix(Pawn pawn, BodyPartRecord part, HediffDef def, float severity)
+        public static void Postfix(Pawn pawn, BodyPartRecord part, HediffDef def, float severity, ref bool __result)
         {
-            ModLog.Debug($"Checking elasticity genes for pawn {pawn.Name}.");
             if (pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_elasticity))
             {
                 ModLog.Debug($"Preventing creation of Injury Hediffs from streching for pawn {pawn.Name}.");
-                return false;
+                __result = false;
+                return;
             } 
             else 
             {
-                return true;
+                return;
             }
         }
     }
+
+    public class Patch_eltoro_strechheal
+    {
+        /// <summary>
+        /// Patch function that connects to Strecher.ApplyInjury, itercepting the creation of injury hediffs, and preventing if a Gene would stop the injury.
+        /// </summary>
+        /// <returns></returns>
+        public static void Postfix(ref HediffComp __instance, ref float __result)
+        {
+            if (__instance.Pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_elasticity))
+            {
+                ModLog.Debug($"Healing streching factor @ x2 speed for pawn : {__instance.Pawn.Name}.");
+                __result = 2f;
+            }
+            return;
+        }
+    }
+
 }

@@ -54,13 +54,18 @@ namespace RJW_Genes
                 prefix: new HarmonyMethod(typeof(Patch_sexualize_pawn), nameof(Patch_sexualize_pawn.PreFix)));
 
 
-            //Patch for Elastic Gene support with Eltro's Streching mod.
+            //Patch for Elastic Gene support with Eltoro's Streching mod.
             if (ModsConfig.IsActive("eltoro.stretching"))
             {
                 ModLog.Debug("Patching eltoro.Streching for elasticity gene Support.");
                 // This patching structure allows to patch a class that is not allways present, and a Private function that is not normaly Available.
-                harmony.Patch(AccessTools.Method(GenTypes.GetTypeInAnyAssembly("LLStretcher.Stretcher"),"ApplyInjury"),
-                    prefix: new HarmonyMethod(typeof(Patch_eltoro_streching), nameof(Patch_eltoro_streching.Prefix)));
+                harmony.Patch(AccessTools.Method(GenTypes.GetTypeInAnyAssembly("LLStretcher.Stretcher"), "ApplyInjuryHook"),
+                    postfix: new HarmonyMethod(typeof(Patch_eltoro_streching), nameof(Patch_eltoro_streching.Postfix)));
+
+
+                // HediffComp_StretchMemory.StretchRecoveryHook
+                harmony.Patch(AccessTools.Method(GenTypes.GetTypeInAnyAssembly("LLStretcher.HediffComp_StretchMemory"), "StretchRecoveryHook"),
+                    postfix: new HarmonyMethod(typeof(Patch_eltoro_strechheal), nameof(Patch_eltoro_strechheal.Postfix)));
             }
 
         }
