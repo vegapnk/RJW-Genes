@@ -23,9 +23,10 @@ namespace RJW_Genes
 			if (props == null || props.pawn == null || !props.hasPartner())
 				return;
 
-			// Exit for Animals - Animals can't get or trigger Orgasm Rushes. Fixes #15
-			if (props.pawn.IsAnimal() || props.partner.IsAnimal())
-				return;
+            // Exit for Animals - Animals can't get or trigger Orgasm Rushes.
+            //if (props.pawn.IsAnimal() || props.partner.IsAnimal())
+            if (props.pawn.IsAnimal())
+                return;
 
 			if (props.pawn.genes != null && props.pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_orgasm_rush))
             {

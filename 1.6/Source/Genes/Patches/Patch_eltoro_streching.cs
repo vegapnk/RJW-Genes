@@ -20,7 +20,7 @@ namespace RJW_Genes
         /// <returns></returns>
         public static void Postfix(Pawn pawn, BodyPartRecord part, HediffDef def, float severity, ref bool __result)
         {
-            if (pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_elasticity))
+            if (pawn?.genes?.HasActiveGene(GeneDefOf.rjw_genes_elasticity) ?? false)
             {
                 ModLog.Debug($"Preventing creation of Injury Hediffs from streching for pawn {pawn.Name}.");
                 __result = false;
@@ -41,12 +41,16 @@ namespace RJW_Genes
         /// <returns></returns>
         public static void Postfix(ref HediffComp __instance, ref float __result)
         {
-            if (__instance.Pawn.genes.HasActiveGene(GeneDefOf.rjw_genes_elasticity))
+            if (__instance.Pawn?.genes?.HasActiveGene(GeneDefOf.rjw_genes_elasticity) ?? false)
             {
                 ModLog.Debug($"Healing streching factor @ x2 speed for pawn : {__instance.Pawn.Name}.");
                 __result = 2f;
+            } else
+            {
+                return;
             }
-            return;
+
+                
         }
     }
 
