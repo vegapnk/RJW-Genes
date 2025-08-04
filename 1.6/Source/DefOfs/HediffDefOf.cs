@@ -30,6 +30,6 @@ namespace RJW_Genes
         public static readonly HediffDef OvaryAgitator;
         public static readonly HediffDef Bioscaffold;
 
-        [MayRequire("rjw.sexperience")] public static readonly HediffDef rjw_genes_filled_living_cumbucket;
+        [MayRequire("vegapnk.cumpilation")] public static readonly HediffDef rjw_genes_filled_living_cumbucket;
     }
 }

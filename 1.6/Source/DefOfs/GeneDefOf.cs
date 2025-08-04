@@ -76,7 +76,7 @@ namespace RJW_Genes
 		[MayRequire("vegapnk.cumpilation")] public static readonly GeneDef rjw_genes_un_inflatable;
 		[MayRequire("vegapnk.cumpilation")] public static readonly GeneDef rjw_genes_inflatable;
 		public static readonly GeneDef rjw_genes_generous_donor;
-		[MayRequire("rjw.sexperience")] public static readonly GeneDef rjw_genes_living_cumbucket;
+		[MayRequire("vegapnk.cumpilation")] public static readonly GeneDef rjw_genes_living_cumbucket;
         
 
         // Reproduction 
