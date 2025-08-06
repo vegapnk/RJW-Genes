@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Rut -->
+  <rjw_genes_genetic_rut.label>发情期</rjw_genes_genetic_rut.label>
+  <!-- EN: Based on genetics, this pawn is in heat. -->
+  <rjw_genes_genetic_rut.description>由于基因影响，该单位正欲火焚身。</rjw_genes_genetic_rut.description>
+  <!-- EN: calming down -->
+  <rjw_genes_genetic_rut.stages.calming_down.label>冷静</rjw_genes_genetic_rut.stages.calming_down.label>
+  <!-- EN: in heat -->
+  <rjw_genes_genetic_rut.stages.in_heat.label>欲火焚身</rjw_genes_genetic_rut.stages.in_heat.label>
+  
+</LanguageData>
