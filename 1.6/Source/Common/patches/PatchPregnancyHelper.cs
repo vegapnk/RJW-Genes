@@ -55,7 +55,6 @@ namespace RJW_Genes
 
             //"normal" and "beastial" pregnancy
             if (RJWSettings.DevMode) ModLog.Message(" 'normal' pregnancy checks");
-
             //interaction stuff if for handling futa/see who penetrates who in interaction
             if (!props.isReceiver &&
                 interaction.Extension.initiatorRequirement.genitalTags.Contains(GenitalTag.CanPenetrate) &&
@@ -77,19 +76,20 @@ namespace RJW_Genes
                 return;
             }
 
-            if (!interaction.Extension.initiatorRequirement.genitalTags.Contains(GenitalTag.CanFertilize))
+            if (!giver.GetLewdParts().AllRJWParts.Any(p => p.HasGenitalTag(GenitalTag.CanFertilize)))
             {
                 if (RJWSettings.DevMode) ModLog.Message(xxx.get_pawnname(giver) + " has no parts to Fertilize with");
                 return;
             }
             if (vasectomy != null)
             {
+                //Temporarily remove Vasectomy from Receiver to prevent fertility Malice, replace it after DoImpregnate.
                 if (RJWSettings.DevMode) ModLog.Message("vasectomy check");
                 receiver.health.RemoveHediff(vasectomy);
             }
             if (CanImpregnate2(giver, receiver, props.sexType))
             {
-                
+                if (RJWSettings.DevMode) ModLog.Message(xxx.get_pawnname(giver)+" is analy impregnating "+ xxx.get_pawnname(receiver));
                 PregnancyHelper.DoImpregnate(giver, receiver);
                
             }
