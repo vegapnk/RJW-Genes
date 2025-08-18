@@ -61,8 +61,8 @@ namespace RJW_BGS
                         }
                     }
                 }
-            }
-            RJW_Genes.ModLog.Debug($"From {raceGeneDef.genes.Count} possible genes in {raceGeneDef.defName}, {genelist.Count} were added by chance ({RJW_BGSSettings.rjw_bgs_global_gene_chance} chance multiplier from Settings).");
+                RJW_Genes.ModLog.Debug($"From {raceGeneDef.genes.Count} possible genes in {raceGeneDef.defName}, {genelist.Count} were added by chance ({RJW_BGSSettings.rjw_bgs_global_gene_chance} chance multiplier from Settings).");
+            } 
             return genelist;
         }
 

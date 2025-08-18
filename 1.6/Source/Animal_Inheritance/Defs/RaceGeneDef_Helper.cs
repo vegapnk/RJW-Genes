@@ -25,7 +25,7 @@ namespace RJW_BGS
 			PawnKindDef kindDef = pawn.kindDef;
 			if (kindDef == null)
 			{
-				RJW_Genes.ModLog.Warning($"Error looking up PawnKindDef for {pawn.Name} - Could not lookup Animal Inheritance Genes");
+				RJW_Genes.ModLog.Warning("Error looking up PawnKindDef for "+xxx.get_pawnname(pawn)+" - Could not lookup Animal Inheritance Genes");
 				return null;
 			}
 			
