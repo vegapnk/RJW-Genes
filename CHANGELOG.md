@@ -1,3 +1,10 @@
+# 2.5.7 (18-08-2025)
+(Commit by @Telanda-DDS)
+
+**Fixes**
+- Fixed fertile anus not correctly detecting if penetrating partner had a penis capable of impregnation.
+
+
 # 2.5.5 (25-07-2025)
 (Commit by @Telanda-DDS)
 
