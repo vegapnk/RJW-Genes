@@ -56,13 +56,13 @@ namespace RJWLoveFeeding
                     Pawn_GeneTracker genes = fucked.genes;
                     if (genes.HasActiveGene(RJW_Genes.GeneDefOf.RS_MultiPregnancy))
                     {
-                        Log.Message(xxx.get_pawnname(fucked) + " has multipregnancy gene");
+                        if (RJWSettings.DevMode) Log.Message(xxx.get_pawnname(fucked) + " has multipregnancy gene");
                         return false;
                     }
                 }
                 else
                 {
-                    Log.Message(setNoPreggo.First<Hediff>().def.defName + ": This prevents pregnancy");
+                    if (RJWSettings.DevMode) Log.Message(setNoPreggo.First<Hediff>().def.defName + ": This prevents pregnancy");
                 }
             }
 
