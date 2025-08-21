@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: female -->
+  <rjw_genes_female_only.label>雌性</rjw_genes_female_only.label>
+  <!-- EN: This Xenotype only has females. -->
+  <rjw_genes_female_only.description>该异种只有雌性。</rjw_genes_female_only.description>
+  
+  <!-- EN: genderfluid -->
+  <rjw_genes_gender_fluid.label>流体性别</rjw_genes_gender_fluid.label>
+  <!-- EN: Everyday carriers of this gene might change their biological sex. -->
+  <rjw_genes_gender_fluid.description>携带者每天都可能会改变其生物学性别。</rjw_genes_gender_fluid.description>
+  
+  <!-- EN: male -->
+  <rjw_genes_male_only.label>雄性</rjw_genes_male_only.label>
+  <!-- EN: This Xenotype only has males. -->
+  <rjw_genes_male_only.description>该异种只有雄性。</rjw_genes_male_only.description>
+  
+</LanguageData>

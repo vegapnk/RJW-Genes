@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: succubus tail -->
+  <rjw_genes_succubus_tail.label>魅魔之尾</rjw_genes_succubus_tail.label>
+  <!-- EN: Carriers of this gene grow a slender tail ending with a heart that can act as a\n			dexterous fifth limb. -->
+  <rjw_genes_succubus_tail.description>该基因的携带者的长出如臂使指的尾巴，带有心形末梢。</rjw_genes_succubus_tail.description>
+  
+  <!-- EN: succubus wings -->
+  <rjw_genes_succubus_wings.label>魅魔之翼</rjw_genes_succubus_wings.label>
+  <!-- EN: Carriers of this gene grow succubus wings. -->
+  <rjw_genes_succubus_wings.description>该基因的携带者会长出魅魔之翼。</rjw_genes_succubus_wings.description>
+  
+</LanguageData>

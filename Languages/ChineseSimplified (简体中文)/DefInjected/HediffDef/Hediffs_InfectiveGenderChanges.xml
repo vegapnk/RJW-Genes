@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: feminization -->
+  <rjw_genes_feminization_progress.label>雌化</rjw_genes_feminization_progress.label>
+  <!-- EN: Something is changing this pawn - there is a chance to develop female features\n            upon sex. -->
+  <rjw_genes_feminization_progress.description>该单位正在发生变化，通过性行为可以继续发展女性特征。</rjw_genes_feminization_progress.description>
+  <!-- EN: neglectable -->
+  <rjw_genes_feminization_progress.stages.neglectable.label>可忽略</rjw_genes_feminization_progress.stages.neglectable.label>
+  <!-- EN: minor -->
+  <rjw_genes_feminization_progress.stages.minor.label>轻微</rjw_genes_feminization_progress.stages.minor.label>
+  <!-- EN: severe -->
+  <rjw_genes_feminization_progress.stages.severe.label>严重</rjw_genes_feminization_progress.stages.severe.label>
+  <!-- EN: critical -->
+  <rjw_genes_feminization_progress.stages.critical.label>关键</rjw_genes_feminization_progress.stages.critical.label>
+  
+  <!-- EN: twinkification -->
+  <rjw_genes_twinkification_progress.label>觉醒心中的雌</rjw_genes_twinkification_progress.label>
+  <!-- EN: Something is changing this pawn - there is a chance to turn into a cute,\n            breedable twink upon sex. -->
+  <rjw_genes_twinkification_progress.description>该单位正在发生变化，通过性行为可以继续发展烧0特征。</rjw_genes_twinkification_progress.description>
+  <!-- EN: neglectable -->
+  <rjw_genes_twinkification_progress.stages.neglectable.label>可忽略</rjw_genes_twinkification_progress.stages.neglectable.label>
+  <!-- EN: minor -->
+  <rjw_genes_twinkification_progress.stages.minor.label>轻微</rjw_genes_twinkification_progress.stages.minor.label>
+  <!-- EN: severe -->
+  <rjw_genes_twinkification_progress.stages.severe.label>严重</rjw_genes_twinkification_progress.stages.severe.label>
+  <!-- EN: critical -->
+  <rjw_genes_twinkification_progress.stages.critical.label>关键</rjw_genes_twinkification_progress.stages.critical.label>
+  
+</LanguageData>
