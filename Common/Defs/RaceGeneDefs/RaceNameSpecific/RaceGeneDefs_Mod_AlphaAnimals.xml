@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs> 
+
+	<RJW_BGS.RaceGeneDef ParentName = "Canine">
+		<defName>AnimusVox</defName>
+		<raceNames>
+			<li>AA_AnimusVox</li>
+		</raceNames>
+		<genes>
+			<li>
+				<defName>StrongStomach</defName>
+				<chance>0.5</chance>
+			</li>			
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+</Defs>
