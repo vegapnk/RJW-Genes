@@ -1,3 +1,10 @@
+# 2.6.0 (18-08-2025)
+(Commit by @Telanda-DDS)
+
+**Changes**
+- Removed Animal Gene Inheritance code from Core RJW_Genes and moved it into it's own mod.
+- Replaced all references to GenericAnus with Anus in Genital type Genes.
+
 # 2.5.7 (18-08-2025)
 (Commit by @Telanda-DDS)
 
