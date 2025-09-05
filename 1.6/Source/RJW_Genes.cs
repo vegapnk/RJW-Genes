@@ -11,8 +11,6 @@ namespace RJW_Genes
         static RJW_Genes()
         {
             ModLog.Message("RJW-Genes loaded");
-
-            RJW_BGS.VGEHybridUtility.LogAllFoundVGEHybridDefinitions();
         }
     }
 }
