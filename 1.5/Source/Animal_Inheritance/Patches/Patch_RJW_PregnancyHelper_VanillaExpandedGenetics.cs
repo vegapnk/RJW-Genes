@@ -43,8 +43,9 @@ public class Patch_RJW_PregnancyHelper_VanillaExpandedGenetics
             // Behaviour of Harmony Prefixes: https://harmony.pardeike.net/articles/patching-prefix.html
             if (!RJW_BGSSettings.rjw_bgs_VE_genetics) return true;
             if (mother == null || father == null) return true;
+            if (mother.IsHuman() == father.IsHuman()) return true;
 
-            RJW_Genes.ModLog.Debug("Trying to add RJW Pregnancy Hediff - Checking for potential VGE Animal-Hybridization");
+            RJW_Genes.ModLog.Debug($"Trying to add RJW Pregnancy Hediff - Checking for potential VGE Animal-Hybridization. Parents: {mother.Name.ToStringFull} & {father.Name.ToStringFull}");
 
             bool humanMotherAndSupportedAnimal = mother.IsHuman() && VGEHybridUtility.SupportedInitialAnimalRaces.Contains(father.kindDef);
             bool humanMotherAndSupportedHybrid = mother.IsHuman() && VGEHybridUtility.SupportedHybridRaces.Contains(father.kindDef);
@@ -67,7 +68,6 @@ public class Patch_RJW_PregnancyHelper_VanillaExpandedGenetics
             if (humanMotherAndSupportedAnimal)
             {
                 RJW_Genes.ModLog.Debug("Found a human mother and a supported animal resulting in an animal-child - starting VGE pregnancy (rjw.Hediff_BestialPregnancy)");
-                Hediff_BasePregnancy.Create<Hediff_BestialPregnancy>(mother, father, DnaGivingParent.Father);
 
                 var kindDef = VGEHybridUtility.LookupPossiblyOffspringHybrid(father.kindDef);
                 var stored = father.kindDef;
