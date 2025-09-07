@@ -55,7 +55,7 @@ namespace RJW_Genes
             }
 
             // Re-Choose heads if it is wrong gender
-            if (pawn.story.headType.gender == Gender.None || pawn.story.headType.gender == targetGender)
+            if (pawn.story.headType == null || pawn.story.headType.gender == Gender.None || pawn.story.headType.gender == targetGender)
             {
                 // Do nothing, Gender of Heat is Neutral or matches
             }
