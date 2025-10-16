@@ -17,7 +17,7 @@ But please consider also the following:
 
 ## Contributors 
 
-- Shabalox (MechBreeding, InsectBreeding, Animal Gene Inheritance)
+- Shabalox (MechBreeding, InsectBreeding)
 - WasMachenDennSachen (Various Icons)
 - Jaaldabaoth (1.5 Migration, MPreg, Femboys, Initial VE-Genetic Hybrids)
 - Flock-of-Birds (Cosmetic Genitalia per XML)

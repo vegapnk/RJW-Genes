@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using HarmonyLib;
 using RimWorld;
-using Verse;
 using rjw;
 using rjw.Modules.Interactions;
+using Verse;
+using static rjw.RJWPregnancySettings;
 //using rjw.Modules.Interactions.Enums;
 
 namespace RJW_Genes
@@ -81,9 +82,10 @@ namespace RJW_Genes
                 if (RJWSettings.DevMode) ModLog.Message(xxx.get_pawnname(giver) + " has no parts to Fertilize with");
                 return;
             }
+
+            //If recieving pawn has a Vasectomy,temporarily remove it to prevent fertility Malice, replace it after DoImpregnate.
             if (vasectomy != null)
             {
-                //Temporarily remove Vasectomy from Receiver to prevent fertility Malice, replace it after DoImpregnate.
                 if (RJWSettings.DevMode) ModLog.Message("vasectomy check");
                 receiver.health.RemoveHediff(vasectomy);
             }
@@ -103,7 +105,7 @@ namespace RJW_Genes
         private static bool CanImpregnate2(Pawn fucker, Pawn fucked, xxx.rjwSextype sexType)
         {
 
-                if (fucker == null || fucked == null)
+            if (fucker == null || fucked == null)
                 {
                 return false;
 
@@ -223,7 +225,7 @@ namespace RJW_Genes
                 return false;
 
             }
-            if (((xxx.is_animal(fucker) && xxx.is_human(fucked)) || (xxx.is_human(fucker) && xxx.is_animal(fucked))) && !RJWPregnancySettings.bestial_pregnancy_enabled)
+            if (((xxx.is_animal(fucker) && xxx.is_human(fucked)) || (xxx.is_human(fucker) && xxx.is_animal(fucked))) && RJWPregnancySettings.bestial_pregnancy == BestialPregnancy.None)
                 {
                     if (RJWSettings.DevMode)
                     {
