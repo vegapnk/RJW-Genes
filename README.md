@@ -14,7 +14,6 @@ This mod adds genes related and based on RJW to Rimworld.
 - Cum-Amount Changes, Transfer Nutrition Boosts
 - Sexual Vampires that need Cum, Cocks or some other sources.
 - Mech Breeding Additions & Orgasmic Mytosis
-- Human-Animal Gene Inheritance merged from [Shabakur](https://github.com/Shabakur/RJW_Animal_Gene_Inheritance)
 - Genetic Diseases that spread on Intercourse
 - Patches for some popular / common Xenotypes from other Mods.
 

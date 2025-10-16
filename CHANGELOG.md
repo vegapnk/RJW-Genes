@@ -1,4 +1,10 @@
-# 2.6.0 (18-08-2025)
+# 2.6.1 (16-10-2025)
+(Commit by @Telanda-DDS)
+
+**Fixes**
+- Updated RJW Patches to reference changed setting variable.
+
+# 2.6.0 (05-09-2025)
 (Commit by @Telanda-DDS)
 
 **Changes**

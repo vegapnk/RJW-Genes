@@ -189,6 +189,8 @@
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>HemiPenis</penis>
+		<vagina>CloacalVagina</vagina>
+		<anus>CloacalAnus</anus>
       </li>
       <li Class="RJW_Genes.QirkExtension">
         <Satisfiedquirk>ScaleLoverQuirk</Satisfiedquirk>
@@ -231,6 +233,33 @@
       <li>Egglaying</li>
       <li>AG_Egglaying</li>
     </exclusionTags>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_rodent_genitalia</defName>
+    <label>rodent genitalia</label>
+    <description>Carriers of this gene develop rodent genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_croc_icon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>RodentPenis</penis>
+        <vagina>RodentVagina</vagina>
+      </li>
+    </modExtensions>
+  </GeneDef>
+  
+    <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>rjw_genes_cloacal_genitalia</defName>
+    <label>cloacal genitalia</label>
+    <description>Carriers of this gene develop cloacal genitalia.</description>
+    <iconPath>Genes/Icons/Genitalia_croc_icon</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>CloacalPenis</penis>
+        <vagina>CloacalVagina</vagina>
+		<anus>CloacalAnus</anus>
+      </li>
+    </modExtensions>
   </GeneDef>
 
 </Defs>
