@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: much cum -->
+  <rjw_genes_much_cum.label>更多精液</rjw_genes_much_cum.label>
+  <!-- EN: Males of this species produce a lot of fluid. -->
+  <rjw_genes_much_cum.description>该物种的雄性能产生大量体液。</rjw_genes_much_cum.description>
+  
+  <!-- EN: no cum -->
+  <rjw_genes_no_cum.label>无精液</rjw_genes_no_cum.label>
+  <!-- EN: Males of these species have no fluid. -->
+  <rjw_genes_no_cum.description>该物种的雄性不会产生体液</rjw_genes_no_cum.description>
+  
+  <!-- EN: very much cum -->
+  <rjw_genes_very_much_cum.label>巨量精液</rjw_genes_very_much_cum.label>
+  <!-- EN: Males of this species produce a whole lot of fluid. They are like fountains\n      basically. -->
+  <rjw_genes_very_much_cum.description>该物种的雄性能产生超大量的体液，基本上跟喷泉差不多。</rjw_genes_very_much_cum.description>
+  
+</LanguageData>

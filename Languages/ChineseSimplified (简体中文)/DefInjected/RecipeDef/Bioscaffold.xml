@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: install bioscaffold -->
+  <InstallBioscaffold.label>植入生物支架</InstallBioscaffold.label>
+  <!-- EN: Install a bioscaffold. -->
+  <InstallBioscaffold.description>植入一个生物支架。</InstallBioscaffold.description>
+  <!-- EN: Installing bioscaffold. -->
+  <InstallBioscaffold.jobString>正在植入生物支架。</InstallBioscaffold.jobString>
+  
+</LanguageData>

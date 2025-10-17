@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: pheromones -->
+  <rjw_genes_pheromone_carrier_nearby.stages.pheromones.label>费洛蒙</rjw_genes_pheromone_carrier_nearby.stages.pheromones.label>
+  <!-- EN: {0} has a special vibe, we should hang out more often. -->
+  <rjw_genes_pheromone_carrier_nearby.stages.pheromones.description>{0}有股特别的气质，我应该多跟她出去玩玩。</rjw_genes_pheromone_carrier_nearby.stages.pheromones.description>
+  
+</LanguageData>

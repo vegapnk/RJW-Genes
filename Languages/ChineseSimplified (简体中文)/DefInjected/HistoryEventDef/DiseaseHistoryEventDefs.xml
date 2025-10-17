@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Infected a pawn with a genetic disease -->
+  <rjw_genes_GoodwillChangedReason_infected_with_disease.label>被人传染了基因性病。</rjw_genes_GoodwillChangedReason_infected_with_disease.label>
+  
+  <!-- EN: Spread a genetic disease -->
+  <rjw_genes_GoodwillChangedReason_spread_genetic_disease.label>传播了基因性病。</rjw_genes_GoodwillChangedReason_spread_genetic_disease.label>
+  
+  <!-- EN: Stole a gene -->
+  <rjw_genes_GoodwillChangedReason_StoleGene.label>窃取了一个基因。</rjw_genes_GoodwillChangedReason_StoleGene.label>
+  
+</LanguageData>

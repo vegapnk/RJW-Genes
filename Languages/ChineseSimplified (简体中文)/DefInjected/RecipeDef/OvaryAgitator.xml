@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: install ovary agitator -->
+  <InstallOvaryAgitator.label>植入卵巢促动器</InstallOvaryAgitator.label>
+  <!-- EN: Install an ovary agitator. -->
+  <InstallOvaryAgitator.description>植入一个卵巢促动器。</InstallOvaryAgitator.description>
+  <!-- EN: Installing ovary agitator. -->
+  <InstallOvaryAgitator.jobString>正在植入卵巢促动器。</InstallOvaryAgitator.jobString>
+  
+</LanguageData>

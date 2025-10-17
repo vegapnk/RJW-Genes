@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ghost penis -->
+  <GhostPenis.label>幽魂阴茎</GhostPenis.label>
+  <!-- EN: A evanescent ghost penis, you can barely feel it. -->
+  <GhostPenis.description>一根转瞬即逝的幽魂阴茎，你几乎感觉不到它。</GhostPenis.description>
+  
+  <!-- EN: ghost vagina -->
+  <GhostVagina.label>幽魂阴道</GhostVagina.label>
+  
+  <!-- EN: golem penis -->
+  <GolemPenis.label>矿物阴茎</GolemPenis.label>
+  <!-- EN: A large rocky golem penis. -->
+  <GolemPenis.description>由坚硬的矿物材料（如岩石或水晶）制成的空心肉棒。</GolemPenis.description>
+  
+  <!-- EN: marine penis -->
+  <MarinePenis.label>鲸类阴茎</MarinePenis.label>
+  <!-- EN: A penis similar to those of marine mammals. -->
+  <MarinePenis.description>一根根部粗壮但随之往上逐渐变细的阴茎。</MarinePenis.description>
+  
+  <!-- EN: undead penis -->
+  <NecroPenis.label>腐烂阴茎</NecroPenis.label>
+  <!-- EN: A rotten, reanimated penis. -->
+  <NecroPenis.description>这根阴茎明显是从腐烂后留下的阴茎中抢救出来的。上面遍布着不应该存在的倒刺，而大部分本应该存在的组织则分崩离析。但不知为何，它仍然有用。</NecroPenis.description>
+  
+  <!-- EN: needle penis -->
+  <NeedlePenis.label>针状阴茎</NeedlePenis.label>
+  <!-- EN: A long thin needle penis -->
+  <NeedlePenis.description>一根勃起时很长但非常细的阴茎。</NeedlePenis.description>
+  
+  <!-- EN: orc penis -->
+  <OrcPenis.label>兽人阴茎</OrcPenis.label>
+  <!-- EN: A large orc penis. -->
+  <OrcPenis.description>一根类人阴茎，但是带有马阴茎的特征，可以说是相当粗壮。勃起时包皮会被留在中段形成一个环，尖端则会露出圆形的扁平头部。不勃起时，则会甩来甩去的。</OrcPenis.description>
+  
+  <!-- EN: screw penis -->
+  <PigPenis.label>猪类阴茎</PigPenis.label>
+  <!-- EN: A large screw penis. -->
+  <PigPenis.description>长且细的阴茎，呈螺旋状。外侧的肉相比内侧要坚硬许多，在勃起时形状仿佛开瓶器。这类阴茎最独特的则是在其射精时会产生大量的精液。</PigPenis.description>
+  
+  <!-- EN: alien penis -->
+  <TentaclePenis.label>触手阴茎</TentaclePenis.label>
+  <!-- EN: A alien penis featuring multiples tentacles. -->
+  <TentaclePenis.description>一团触手状的阴茎，具有极佳的调教功能，也是优秀的性伴侣。</TentaclePenis.description>
+  
+</LanguageData>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: fertilin craving -->
+  <rjw_genes_fertilin_craving.label>精素渴求</rjw_genes_fertilin_craving.label>
+  <!-- EN: weakened due to running out of fertilin. -->
+  <rjw_genes_fertilin_craving.description>耗尽精素导致的虚弱。</rjw_genes_fertilin_craving.description>
+  <!-- EN: minor -->
+  <rjw_genes_fertilin_craving.stages.minor.label>轻微</rjw_genes_fertilin_craving.stages.minor.label>
+  <!-- EN: moderate -->
+  <rjw_genes_fertilin_craving.stages.moderate.label>中度</rjw_genes_fertilin_craving.stages.moderate.label>
+  <!-- EN: major -->
+  <rjw_genes_fertilin_craving.stages.major.label>严重</rjw_genes_fertilin_craving.stages.major.label>
+  
+  <!-- EN: lost fertilin -->
+  <rjw_genes_fertilin_lost.label>精素流失</rjw_genes_fertilin_lost.label>
+  <!-- EN: Percentage of fertilin lost. -->
+  <rjw_genes_fertilin_lost.description>精素流失比例。</rjw_genes_fertilin_lost.description>
+  
+  <!-- EN: naked prowss -->
+  <rjw_genes_naked_prowess.label>天体之力</rjw_genes_naked_prowess.label>
+  <!-- EN: Driven by fertilin, this person has greatly increased strength and resilience. -->
+  <rjw_genes_naked_prowess.description>受精素驱使，大幅提高力量和愈合速度。</rjw_genes_naked_prowess.description>
+  
+  <!-- EN: Drained -->
+  <rjw_genes_succubus_drained.label>精疲力竭</rjw_genes_succubus_drained.label>
+  <!-- EN: The vitality of this pawn has been drained. Cannot be drained again until fully\n			recovered. -->
+  <rjw_genes_succubus_drained.description>该单位的精力刚被榨干，完全恢复前不能再次榨取。</rjw_genes_succubus_drained.description>
+  <!-- EN: minor -->
+  <rjw_genes_succubus_drained.stages.minor.label>轻微</rjw_genes_succubus_drained.stages.minor.label>
+  <!-- EN: moderate -->
+  <rjw_genes_succubus_drained.stages.moderate.label>中度</rjw_genes_succubus_drained.stages.moderate.label>
+  <!-- EN: severe -->
+  <rjw_genes_succubus_drained.stages.severe.label>严重</rjw_genes_succubus_drained.stages.severe.label>
+  
+</LanguageData>

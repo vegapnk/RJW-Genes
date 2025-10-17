@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ovary agitator -->
+  <OvaryAgitator.label>卵巢促动器</OvaryAgitator.label>
+  <!-- EN: A crude slaver implant used to increase the number of eggs released during ovulation, increasing the likelihood of having multiple children per pregnancy. Their use is largely limited to rimworlds lacking in cloning infrastructure as most civilized and unified worlds have outlawed them.\n\nWhile it provides an initial boost in fertility, the implant will slowly deplete the victims's ovaries over several years until they're infertile. Allies of implanted victims will be angered. -->
+  <OvaryAgitator.description>一种粗糙的奴隶植入物，用于增加排卵数量，提高多胞胎可能性。它们主要用于缺乏克隆设施的边缘世界，因为大多数文明和统一的世界都禁止它们。虽然它能在短期内提高生育能力，但植入物会在几年内慢慢耗尽受害者的卵巢直至不孕。植入者的盟友将会感到愤怒。</OvaryAgitator.description>
+  
+</LanguageData>
