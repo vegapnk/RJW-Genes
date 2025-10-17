@@ -198,7 +198,7 @@ namespace RJW_Genes
 
             }
             List<Hediff> genitalsList = fucker.GetGenitalsList();
-                List<Hediff> genitalsList2 = fucked.GetGenitalsList();
+            List<Hediff> genitalsList2 = fucked.GetGenitalsList();
             if (!Genital_Helper.has_penis_fertile(fucker, genitalsList)  && !Genital_Helper.has_penis_fertile(fucked, genitalsList2))
             {
                 if (RJWSettings.DevMode)
