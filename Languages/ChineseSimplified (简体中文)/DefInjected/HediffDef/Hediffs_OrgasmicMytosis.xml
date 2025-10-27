@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Mytosis Shock -->
+  <rjw_genes_mytosis_shock_hediff.label>分裂休克</rjw_genes_mytosis_shock_hediff.label>
+  <!-- EN: Recently underwent (successful) mytosis. As this is a taxing process, some time for regeneration is required. While regenerating, no new mytosis can be started. -->
+  <rjw_genes_mytosis_shock_hediff.description>刚刚完成一次有丝分裂，作为代价，一段时间内不会再次触发分裂。</rjw_genes_mytosis_shock_hediff.description>
+  <!-- EN: wearing off -->
+  <rjw_genes_mytosis_shock_hediff.stages.wearing_off.label>消退</rjw_genes_mytosis_shock_hediff.stages.wearing_off.label>
+  <!-- EN: fresh -->
+  <rjw_genes_mytosis_shock_hediff.stages.fresh.label>刚刚</rjw_genes_mytosis_shock_hediff.stages.fresh.label>
+  
+  <!-- EN: Orgasmic Instability -->
+  <rjw_genes_orgasmic_mytosis_hediff.label>高潮失稳</rjw_genes_orgasmic_mytosis_hediff.label>
+  <!-- EN: Xenotypes with this Gene grow more unstable on orgasm - upon reaching critical level they will initate a process of mytosis. -->
+  <rjw_genes_orgasmic_mytosis_hediff.description>该异种因高潮变得更加不稳定，在这之上即将迎来分裂。</rjw_genes_orgasmic_mytosis_hediff.description>
+  <!-- EN: stable -->
+  <rjw_genes_orgasmic_mytosis_hediff.stages.stable.label>稳定</rjw_genes_orgasmic_mytosis_hediff.stages.stable.label>
+  <!-- EN: agitated -->
+  <rjw_genes_orgasmic_mytosis_hediff.stages.agitated.label>躁动</rjw_genes_orgasmic_mytosis_hediff.stages.agitated.label>
+  <!-- EN: unstable -->
+  <rjw_genes_orgasmic_mytosis_hediff.stages.unstable.label>失稳</rjw_genes_orgasmic_mytosis_hediff.stages.unstable.label>
+  <!-- EN: critical -->
+  <rjw_genes_orgasmic_mytosis_hediff.stages.critical.label>临界</rjw_genes_orgasmic_mytosis_hediff.stages.critical.label>
+  
+</LanguageData>

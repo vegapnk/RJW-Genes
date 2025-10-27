@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: scrambler -->
+  <Scrambler.label>扰频器</Scrambler.label>
+  <!-- EN: An installed scrambler. -->
+  <Scrambler.description>一种植入式扰频器。</Scrambler.description>
+  <!-- EN: scrambler -->
+  <Scrambler.labelNoun>扰频器</Scrambler.labelNoun>
+  
+</LanguageData>

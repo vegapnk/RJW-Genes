@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: genital hybris -->
+  <rjw_genes_evergrowth_sideeffect.label>生殖器瘤</rjw_genes_evergrowth_sideeffect.label>
+  <!-- EN: science has gone too far - a tool like this needs constant attention. -->
+  <rjw_genes_evergrowth_sideeffect.description>科技已经走的太远了，这玩意需要持续关注。</rjw_genes_evergrowth_sideeffect.description>
+  <!-- EN: minor -->
+  <rjw_genes_evergrowth_sideeffect.stages.minor.label>轻微</rjw_genes_evergrowth_sideeffect.stages.minor.label>
+  <!-- EN: moderate -->
+  <rjw_genes_evergrowth_sideeffect.stages.moderate.label>中等</rjw_genes_evergrowth_sideeffect.stages.moderate.label>
+  <!-- EN: strong -->
+  <rjw_genes_evergrowth_sideeffect.stages.strong.label>严重</rjw_genes_evergrowth_sideeffect.stages.strong.label>
+  
+</LanguageData>

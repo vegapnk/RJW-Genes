@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: unbreakable -->
+  <rjw_genes_unbreakable.label>坚毅不拔</rjw_genes_unbreakable.label>
+  <!-- EN: This Gene makes the Carrier unable to get mood or social penalties from being raped\n      and they cannot be broken for a long period of time. -->
+  <rjw_genes_unbreakable.description>该基因会使携带者免遭被强奸所带来的心情和社交惩罚，他们在很长一段时间内不会被击溃。</rjw_genes_unbreakable.description>
+  
+</LanguageData>

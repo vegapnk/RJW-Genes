@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: induced libido -->
+  <rjw_genes_aphrodisiac_pheromone.label>性欲诱发</rjw_genes_aphrodisiac_pheromone.label>
+  <!-- EN: sex drive increasing due to smelling aphrodisiac pheromones. -->
+  <rjw_genes_aphrodisiac_pheromone.description>受催情信息素影响，性欲被激发。</rjw_genes_aphrodisiac_pheromone.description>
+  <!-- EN: wearing off -->
+  <rjw_genes_aphrodisiac_pheromone.stages.wearing_off.label>消退</rjw_genes_aphrodisiac_pheromone.stages.wearing_off.label>
+  <!-- EN: moderate -->
+  <rjw_genes_aphrodisiac_pheromone.stages.moderate.label>中等</rjw_genes_aphrodisiac_pheromone.stages.moderate.label>
+  <!-- EN: strong -->
+  <rjw_genes_aphrodisiac_pheromone.stages.strong.label>强烈</rjw_genes_aphrodisiac_pheromone.stages.strong.label>
+  
+</LanguageData>

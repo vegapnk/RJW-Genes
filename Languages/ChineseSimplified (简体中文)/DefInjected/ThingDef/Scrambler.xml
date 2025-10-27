@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: scrambler -->
+  <Scrambler.label>扰频器</Scrambler.label>
+  <!-- EN: A slaver implant, similar to the mindscrew, that can inject disorienting mind imagery directly into the visual cortex of the brain through a complex network of nanoelectrodes. Victims of scrambler implantation tend to socially withdraw to minimize additional stimulation. As a consequence of their confusion, they also become physically meek, making them easy to impose upon. Allies of implanted victims will be angered. -->
+  <Scrambler.description>一种类似于思维螺钉的奴隶植入物，可以通过复杂的纳米电极网络将令人迷惑的思维图像直接注入大脑的视觉皮层。植入扰频器的受害者倾向于社交退缩，以尽量减少额外的刺激。他们在身体上也变得温顺，很容易被强迫。植入者的盟友将会感到愤怒。</Scrambler.description>
+  
+</LanguageData>

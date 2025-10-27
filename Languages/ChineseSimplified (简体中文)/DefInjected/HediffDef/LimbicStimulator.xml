@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: limbic stimulator -->
+  <LimbicStimulator.label>边缘刺激器</LimbicStimulator.label>
+  <!-- EN: An installed limbic stimulator. -->
+  <LimbicStimulator.description>一种植入式边缘刺激器。</LimbicStimulator.description>
+  <!-- EN: limbic stimulator -->
+  <LimbicStimulator.labelNoun>边缘刺激器</LimbicStimulator.labelNoun>
+  
+</LanguageData>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: breeding -->
+  <rjw_genes_breeding.label>繁育</rjw_genes_breeding.label>
+  
+  <!-- EN: cum -->
+  <rjw_genes_cum.label>精液</rjw_genes_cum.label>
+  
+  <!-- EN: genital-related damage -->
+  <rjw_genes_damage.label>性伤害</rjw_genes_damage.label>
+  
+  <!-- EN: genetic STDs -->
+  <rjw_genes_diseases.label>基因性病</rjw_genes_diseases.label>
+  
+  <!-- EN: fertilin -->
+  <rjw_genes_fertilin.label>精素</rjw_genes_fertilin.label>
+  
+  <!-- EN: gender -->
+  <rjw_genes_gender.label>性别</rjw_genes_gender.label>
+  
+  <!-- EN: genitalia count -->
+  <rjw_genes_genitalia_extras.label>生殖器数量</rjw_genes_genitalia_extras.label>
+  
+  <!-- EN: genitalia size / attributes -->
+  <rjw_genes_genitalia_size.label>生殖器属性</rjw_genes_genitalia_size.label>
+  
+  <!-- EN: cosmetic - genitalia type -->
+  <rjw_genes_genitalia_type.label>生殖器类型</rjw_genes_genitalia_type.label>
+  
+  <!-- EN: genital-based special abilities -->
+  <rjw_genes_special.label>性特殊能力</rjw_genes_special.label>
+  
+</LanguageData>

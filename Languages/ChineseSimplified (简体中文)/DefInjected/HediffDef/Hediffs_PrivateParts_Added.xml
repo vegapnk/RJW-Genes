@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 非物质阴茎 -->
+  <GhostPenis.label>TODO</GhostPenis.label>
+  <!-- EN: 半透明、几乎看不见的阴茎。它的某些部分呈现出如蓝白色火焰般的样子，但触摸上去却十分寒冷，甚至会让人脊椎发冷。 -->
+  <GhostPenis.description>TODO</GhostPenis.description>
+  <!-- EN: an ghost penis -->
+  <GhostPenis.labelNoun>幽魂阴茎</GhostPenis.labelNoun>
+  <!-- EN: 非物质 -->
+  <GhostPenis.stages.tiny_undeveloped_penis.label>TODO</GhostPenis.stages.tiny_undeveloped_penis.label>
+  <!-- EN: slender preteen penis -->
+  <GhostPenis.stages.slender_preteen_penis.label>幼稚鸡鸡</GhostPenis.stages.slender_preteen_penis.label>
+  <!-- EN: Micro -->
+  <GhostPenis.stages.Micro.label>微小</GhostPenis.stages.Micro.label>
+  <!-- EN: Small -->
+  <GhostPenis.stages.Small.label>小</GhostPenis.stages.Small.label>
+  <!-- EN: Average -->
+  <GhostPenis.stages.Average.label>平均</GhostPenis.stages.Average.label>
+  <!-- EN: Large -->
+  <GhostPenis.stages.Large.label>大</GhostPenis.stages.Large.label>
+  <!-- EN: Huge -->
+  <GhostPenis.stages.Huge.label>硕大</GhostPenis.stages.Huge.label>
+  <!-- EN: Towering -->
+  <GhostPenis.stages.Towering.label>高耸</GhostPenis.stages.Towering.label>
+  
+  <!-- EN: 非物质阴道 -->
+  <GhostVagina.label>TODO</GhostVagina.label>
+  <!-- EN: 半透明、几乎看不见的阴道。它的内部呈现出如蓝白色火焰般的样子，但触摸上去却十分寒冷，甚至会让人脊椎发冷。 -->
+  <GhostVagina.description>TODO</GhostVagina.description>
+  <!-- EN: a ghost vagina -->
+  <GhostVagina.labelNoun>幽魂阴道</GhostVagina.labelNoun>
+  <!-- EN: 非物质 -->
+  <GhostVagina.stages.swollen_baby_pussy.label>TODO</GhostVagina.stages.swollen_baby_pussy.label>
+  <!-- EN: tiny child pussy -->
+  <GhostVagina.stages.tiny_child_pussy.label>幼稚小穴</GhostVagina.stages.tiny_child_pussy.label>
+  <!-- EN: puffy child pussy -->
+  <GhostVagina.stages.puffy_child_pussy.label>幼稚馒头穴</GhostVagina.stages.puffy_child_pussy.label>
+  <!-- EN: puffy preteen pussy -->
+  <GhostVagina.stages.puffy_preteen_pussy.label>萝莉馒头穴</GhostVagina.stages.puffy_preteen_pussy.label>
+  <!-- EN: Micro -->
+  <GhostVagina.stages.Micro.label>微小</GhostVagina.stages.Micro.label>
+  <!-- EN: Tight -->
+  <GhostVagina.stages.Tight.label>紧致</GhostVagina.stages.Tight.label>
+  <!-- EN: Average -->
+  <GhostVagina.stages.Average.label>平均</GhostVagina.stages.Average.label>
+  <!-- EN: Accommodating -->
+  <GhostVagina.stages.Accommodating.label>宽松</GhostVagina.stages.Accommodating.label>
+  <!-- EN: Cavernous -->
+  <GhostVagina.stages.Cavernous.label>敞开</GhostVagina.stages.Cavernous.label>
+  <!-- EN: Abyssal -->
+  <GhostVagina.stages.Abyssal.label>深邃</GhostVagina.stages.Abyssal.label>
+  
+  <!-- EN: 矿物阴茎 -->
+  <GolemPenis.label>TODO</GolemPenis.label>
+  <!-- EN: 由坚硬的矿物材料（如岩石或水晶）制成的空心肉棒。 -->
+  <GolemPenis.description>TODO</GolemPenis.description>
+  <!-- EN: 矿石阴茎 -->
+  <GolemPenis.labelNoun>TODO</GolemPenis.labelNoun>
+  <!-- EN: tiny undeveloped penis -->
+  <GolemPenis.stages.tiny_undeveloped_penis.label>未发育的鸡鸡</GolemPenis.stages.tiny_undeveloped_penis.label>
+  <!-- EN: slender preteen penis -->
+  <GolemPenis.stages.slender_preteen_penis.label>幼稚鸡鸡</GolemPenis.stages.slender_preteen_penis.label>
+  <!-- EN: Micro -->
+  <GolemPenis.stages.Micro.label>微小</GolemPenis.stages.Micro.label>
+  <!-- EN: Small -->
+  <GolemPenis.stages.Small.label>小</GolemPenis.stages.Small.label>
+  <!-- EN: Average -->
+  <GolemPenis.stages.Average.label>平均</GolemPenis.stages.Average.label>
+  <!-- EN: Large -->
+  <GolemPenis.stages.Large.label>大</GolemPenis.stages.Large.label>
+  <!-- EN: Huge -->
+  <GolemPenis.stages.Huge.label>硕大</GolemPenis.stages.Huge.label>
+  <!-- EN: Towering -->
+  <GolemPenis.stages.Towering.label>高耸</GolemPenis.stages.Towering.label>
+  
+  <!-- EN: 鲸类阴茎 -->
+  <MarinePenis.label>TODO</MarinePenis.label>
+  <!-- EN: 一根根部粗壮但随之往上逐渐变细的阴茎。 -->
+  <MarinePenis.description>TODO</MarinePenis.description>
+  <!-- EN: 鲸类阴茎 -->
+  <MarinePenis.labelNoun>TODO</MarinePenis.labelNoun>
+  <!-- EN: tiny undeveloped penis -->
+  <MarinePenis.stages.tiny_undeveloped_penis.label>未发育</MarinePenis.stages.tiny_undeveloped_penis.label>
+  <!-- EN: slender preteen penis -->
+  <MarinePenis.stages.slender_preteen_penis.label>幼稚鸡鸡</MarinePenis.stages.slender_preteen_penis.label>
+  <!-- EN: Micro -->
+  <MarinePenis.stages.Micro.label>微小</MarinePenis.stages.Micro.label>
+  <!-- EN: Small -->
+  <MarinePenis.stages.Small.label>小</MarinePenis.stages.Small.label>
+  <!-- EN: Average -->
+  <MarinePenis.stages.Average.label>平均</MarinePenis.stages.Average.label>
+  <!-- EN: Large -->
+  <MarinePenis.stages.Large.label>大</MarinePenis.stages.Large.label>
+  <!-- EN: Huge -->
+  <MarinePenis.stages.Huge.label>硕大</MarinePenis.stages.Huge.label>
+  <!-- EN: Towering -->
+  <MarinePenis.stages.Towering.label>高耸</MarinePenis.stages.Towering.label>
+  
+  <!-- EN: 腐烂阴茎 -->
+  <NecroPenis.label>TODO</NecroPenis.label>
+  <!-- EN: 这根阴茎明显是从腐烂后留下的阴茎中抢救出来的。上面遍布着不应该存在的倒刺，而大部分本应该存在的组织则分崩离析。但不知为何，它仍然有用。 -->
+  <NecroPenis.description>TODO</NecroPenis.description>
+  <!-- EN: 腐烂阴茎 -->
+  <NecroPenis.labelNoun>TODO</NecroPenis.labelNoun>
+  <!-- EN: tiny undeveloped penis -->
+  <NecroPenis.stages.tiny_undeveloped_penis.label>未发育</NecroPenis.stages.tiny_undeveloped_penis.label>
+  <!-- EN: slender preteen penis -->
+  <NecroPenis.stages.slender_preteen_penis.label>幼稚鸡鸡</NecroPenis.stages.slender_preteen_penis.label>
+  <!-- EN: Micro -->
+  <NecroPenis.stages.Micro.label>微小</NecroPenis.stages.Micro.label>
+  <!-- EN: Small -->
+  <NecroPenis.stages.Small.label>小</NecroPenis.stages.Small.label>
+  <!-- EN: Average -->
+  <NecroPenis.stages.Average.label>平均</NecroPenis.stages.Average.label>
+  <!-- EN: Large -->
+  <NecroPenis.stages.Large.label>大</NecroPenis.stages.Large.label>
+  <!-- EN: Huge -->
+  <NecroPenis.stages.Huge.label>硕大</NecroPenis.stages.Huge.label>
+  <!-- EN: Towering -->
+  <NecroPenis.stages.Towering.label>高耸</NecroPenis.stages.Towering.label>
+  
+  <!-- EN: 针状阴茎 -->
+  <NeedlePenis.label>TODO</NeedlePenis.label>
+  <!-- EN: 一根勃起时很长但非常细的阴茎。 -->
+  <NeedlePenis.description>TODO</NeedlePenis.description>
+  <!-- EN: 针状阴茎 -->
+  <NeedlePenis.labelNoun>TODO</NeedlePenis.labelNoun>
+  <!-- EN: 未发育 -->
+  <NeedlePenis.stages.tiny_undeveloped_penis.label>TODO</NeedlePenis.stages.tiny_undeveloped_penis.label>
+  <!-- EN: 青春期前的尺寸 -->
+  <NeedlePenis.stages.slender_preteen_penis.label>TODO</NeedlePenis.stages.slender_preteen_penis.label>
+  <!-- EN: 微型 -->
+  <NeedlePenis.stages.Micro.label>TODO</NeedlePenis.stages.Micro.label>
+  <!-- EN: 很小 -->
+  <NeedlePenis.stages.Small.label>TODO</NeedlePenis.stages.Small.label>
+  <!-- EN: 平均 -->
+  <NeedlePenis.stages.Average.label>TODO</NeedlePenis.stages.Average.label>
+  <!-- EN: 很大 -->
+  <NeedlePenis.stages.Large.label>TODO</NeedlePenis.stages.Large.label>
+  <!-- EN: 巨大 -->
+  <NeedlePenis.stages.Huge.label>TODO</NeedlePenis.stages.Huge.label>
+  <!-- EN: 高耸入云 -->
+  <NeedlePenis.stages.Towering.label>TODO</NeedlePenis.stages.Towering.label>
+  
+  <!-- EN: 兽人阴茎 -->
+  <OrcPenis.label>TODO</OrcPenis.label>
+  <!-- EN: 一根类人阴茎，但是带有马阴茎的特征，可以说是相当粗壮。勃起时包皮会被留在中段形成一个环，尖端则会露出圆形的扁平头部。不勃起时，则会甩来甩去的。 -->
+  <OrcPenis.description>TODO</OrcPenis.description>
+  <!-- EN: 兽人阴茎 -->
+  <OrcPenis.labelNoun>TODO</OrcPenis.labelNoun>
+  <!-- EN: tiny undeveloped penis -->
+  <OrcPenis.stages.tiny_undeveloped_penis.label>未发育</OrcPenis.stages.tiny_undeveloped_penis.label>
+  <!-- EN: slender preteen penis -->
+  <OrcPenis.stages.slender_preteen_penis.label>幼稚鸡鸡</OrcPenis.stages.slender_preteen_penis.label>
+  <!-- EN: Micro -->
+  <OrcPenis.stages.Micro.label>微小</OrcPenis.stages.Micro.label>
+  <!-- EN: Small -->
+  <OrcPenis.stages.Small.label>小</OrcPenis.stages.Small.label>
+  <!-- EN: Average -->
+  <OrcPenis.stages.Average.label>平均</OrcPenis.stages.Average.label>
+  <!-- EN: Large -->
+  <OrcPenis.stages.Large.label>大</OrcPenis.stages.Large.label>
+  <!-- EN: Huge -->
+  <OrcPenis.stages.Huge.label>硕大</OrcPenis.stages.Huge.label>
+  <!-- EN: Towering -->
+  <OrcPenis.stages.Towering.label>高耸</OrcPenis.stages.Towering.label>
+  
+  <!-- EN: 猪类阴茎 -->
+  <PigPenis.label>TODO</PigPenis.label>
+  <!-- EN: 长且细的阴茎，呈螺旋状。外侧的肉相比内侧要坚硬许多，在勃起时形状仿佛开瓶器。这类阴茎最独特的则是在其射精时会产生大量的精液。 -->
+  <PigPenis.description>TODO</PigPenis.description>
+  <!-- EN: 猪类阴茎 -->
+  <PigPenis.labelNoun>TODO</PigPenis.labelNoun>
+  <!-- EN: tiny undeveloped penis -->
+  <PigPenis.stages.tiny_undeveloped_penis.label>未发育</PigPenis.stages.tiny_undeveloped_penis.label>
+  <!-- EN: slender preteen penis -->
+  <PigPenis.stages.slender_preteen_penis.label>幼稚鸡鸡</PigPenis.stages.slender_preteen_penis.label>
+  <!-- EN: Micro -->
+  <PigPenis.stages.Micro.label>微小</PigPenis.stages.Micro.label>
+  <!-- EN: Small -->
+  <PigPenis.stages.Small.label>小</PigPenis.stages.Small.label>
+  <!-- EN: Average -->
+  <PigPenis.stages.Average.label>平均</PigPenis.stages.Average.label>
+  <!-- EN: Large -->
+  <PigPenis.stages.Large.label>大</PigPenis.stages.Large.label>
+  <!-- EN: Huge -->
+  <PigPenis.stages.Huge.label>硕大</PigPenis.stages.Huge.label>
+  <!-- EN: Towering -->
+  <PigPenis.stages.Towering.label>高耸</PigPenis.stages.Towering.label>
+  
+  <!-- EN: 触手阴茎 -->
+  <TentaclePenis.label>TODO</TentaclePenis.label>
+  <!-- EN: 一团触手状的阴茎，具有极佳的调教功能，也是优秀的性伴侣。 -->
+  <TentaclePenis.description>TODO</TentaclePenis.description>
+  <!-- EN: 生殖触手 -->
+  <TentaclePenis.labelNoun>TODO</TentaclePenis.labelNoun>
+  <!-- EN: tiny undeveloped penis -->
+  <TentaclePenis.stages.tiny_undeveloped_penis.label>未发育</TentaclePenis.stages.tiny_undeveloped_penis.label>
+  <!-- EN: slender preteen penis -->
+  <TentaclePenis.stages.slender_preteen_penis.label>幼稚鸡鸡</TentaclePenis.stages.slender_preteen_penis.label>
+  <!-- EN: Micro -->
+  <TentaclePenis.stages.Micro.label>微小</TentaclePenis.stages.Micro.label>
+  <!-- EN: Small -->
+  <TentaclePenis.stages.Small.label>小</TentaclePenis.stages.Small.label>
+  <!-- EN: Average -->
+  <TentaclePenis.stages.Average.label>平均</TentaclePenis.stages.Average.label>
+  <!-- EN: Large -->
+  <TentaclePenis.stages.Large.label>大</TentaclePenis.stages.Large.label>
+  <!-- EN: Huge -->
+  <TentaclePenis.stages.Huge.label>硕大</TentaclePenis.stages.Huge.label>
+  <!-- EN: Towering -->
+  <TentaclePenis.stages.Towering.label>高耸</TentaclePenis.stages.Towering.label>
+  
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: install limbic stimulator -->
+  <InstallLimbicStimulator.label>植入边缘刺激器</InstallLimbicStimulator.label>
+  <!-- EN: Install a limbic stimulator. -->
+  <InstallLimbicStimulator.description>植入一个缘刺激器。</InstallLimbicStimulator.description>
+  <!-- EN: Installing limbic stimulator. -->
+  <InstallLimbicStimulator.jobString>正在植入边缘刺激器。</InstallLimbicStimulator.jobString>
+  
+</LanguageData>

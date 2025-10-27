@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Aged a pawn with sexual age transfer -->
+  <rjw_genes_GoodwillChangedReason_aged_pawn_with_sex_gene.label>被采补，变得年迈。</rjw_genes_GoodwillChangedReason_aged_pawn_with_sex_gene.label>
+  
+  <!-- EN: Replaced a pregnancy -->
+  <rjw_genes_GoodwillChangedReason_OverwritePregnancy.label>替换了胎儿的生父。</rjw_genes_GoodwillChangedReason_OverwritePregnancy.label>
+  
+  <!-- EN: Youthed a pawn with youth fountain -->
+  <rjw_genes_GoodwillChangedReason_youthed_pawn_with_sex_gene.label>青春源泉使单位变得年轻。</rjw_genes_GoodwillChangedReason_youthed_pawn_with_sex_gene.label>
+  
+</LanguageData>

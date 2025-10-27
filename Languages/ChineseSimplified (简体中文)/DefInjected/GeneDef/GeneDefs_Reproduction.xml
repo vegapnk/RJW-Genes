@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: littered births -->
+  <LitteredBirths.label>多产</LitteredBirths.label>
+  <!-- EN: Female carriers of this gene birth litters instead of just one baby, with a\n            chance of having two to four babies per pregnancy. -->
+  <LitteredBirths.description>雌性携带者可能一次怀孕生下2~4胎婴儿。</LitteredBirths.description>
+  
+  <!-- EN: bisexual -->
+  <rjw_genes_bisexual.label>双性恋</rjw_genes_bisexual.label>
+  <!-- EN: Carriers of this Gene are Bisexual. -->
+  <rjw_genes_bisexual.description>该基因的携带者是双性恋。</rjw_genes_bisexual.description>
+  
+  <!-- EN: no masturbation -->
+  <rjw_genes_blocked_masturbation.label>自慰障碍</rjw_genes_blocked_masturbation.label>
+  <!-- EN: Carriers of this gene are unable to masturbate - they need a partner or equipment. -->
+  <rjw_genes_blocked_masturbation.description>此基因的携带者无法自慰，必须借助于伴侣或道具。</rjw_genes_blocked_masturbation.description>
+  
+  <!-- EN: homosexual -->
+  <rjw_genes_homosexual.label>同性恋</rjw_genes_homosexual.label>
+  <!-- EN: This Gene makes you gay. -->
+  <rjw_genes_homosexual.description>该基因会让你变成gay。</rjw_genes_homosexual.description>
+  
+  <!-- EN: hypersexuality -->
+  <rjw_genes_hypersexual.label>性瘾者</rjw_genes_hypersexual.label>
+  <!-- EN: Xenotypes with this Gene are Hypersexual (Nymphs). -->
+  <rjw_genes_hypersexual.description>带有该基因的异种性爱成瘾。</rjw_genes_hypersexual.description>
+  
+  <!-- EN: masochist -->
+  <rjw_genes_masochist.label>抖M</rjw_genes_masochist.label>
+  <!-- EN: Xenotypes with this Gene are Masochists. -->
+  <rjw_genes_masochist.description>带有该基因的异种是受虐狂。</rjw_genes_masochist.description>
+  
+  <!-- EN: asexual -->
+  <rjw_genes_no_sex_need.label>无性恋</rjw_genes_no_sex_need.label>
+  <!-- EN: Carriers of this gene do not have a sex-need. They can still participate in\n            sex,  -->
+  <rjw_genes_no_sex_need.description>该基因的携带者没有性欲需求，不过他们还是可以参加性爱。</rjw_genes_no_sex_need.description>
+  
+  <!-- EN: Sperm Displacement -->
+  <rjw_genes_pregnancy_overwrite.label>精子置换</rjw_genes_pregnancy_overwrite.label>
+  <!-- EN: Carriers of this gene can 'overwrite' an existing pregnancy, keeping the\n            progress but effectively replacing the father. -->
+  <rjw_genes_pregnancy_overwrite.description>该基因的携带者可以在保持妊娠进度的情况下替换胎儿的父亲。</rjw_genes_pregnancy_overwrite.description>
+  
+  <!-- EN: rapist -->
+  <rjw_genes_rapist.label>强奸魔</rjw_genes_rapist.label>
+  <!-- EN: Xenotypes with this Gene are Rapists. -->
+  <rjw_genes_rapist.description>携带该基因的异种都是强奸魔。</rjw_genes_rapist.description>
+  
+</LanguageData>
