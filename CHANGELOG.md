@@ -1,3 +1,15 @@
+#INPROG
+
+# 2.6.2 (15-02-2026)
+(Commit by @Telanda-DDS)
+
+**Fixes**
+- Fixed incorrect gene Definition for Big and Small - Vampires and the Undead.
+- Fixed missing translation text field `RJW_Genes_GenitalsNotAlterable`
+
+
+------------
+
 # 2.6.1 (16-10-2025)
 (Commit by @Telanda-DDS)
 

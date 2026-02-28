@@ -18,7 +18,7 @@ namespace RJW_Genes
             this.birthTotal = birthTotal;
             this.birthCount = 0;
             this.hasOvaryAgitator = pawn.health.hediffSet.HasHediff(HediffDef.Named("OvaryAgitator"));
-            this.hasBioscaffold = pawn.health.hediffSet.HasHediff(HediffDef.Named("OvaryAgitator"));
+            this.hasBioscaffold = pawn.health.hediffSet.HasHediff(HediffDef.Named("Bioscaffold"));
         }
     }
 }
