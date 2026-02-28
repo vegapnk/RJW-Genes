@@ -4,5 +4,6 @@
 	<StatsReport_NoChildren>Pawn doesn't have any children.</StatsReport_NoChildren>
 	<StatsReport_ManyChildren>Pawn has a decent amount of children.</StatsReport_ManyChildren>
 	<StatsReport_VeryManyChildren>Pawn has a lot of children.</StatsReport_VeryManyChildren>
+	<RJW_Genes_GenitalsNotAlterable>Unable to geneticaly adapt or alter {PAWN_nameDef}'s genitals.</RJW_Genes_GenitalsNotAlterable>
 
 </LanguageData>

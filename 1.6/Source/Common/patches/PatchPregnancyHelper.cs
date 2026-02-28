@@ -18,8 +18,8 @@ namespace RJW_Genes
     {
         public static HediffDef vasectomydef = DefDatabase<HediffDef>.GetNamed("Vasectomy", true);
         // Token: 0x0600000F RID: 15
-        [HarmonyPostfix]
-        [HarmonyPatch("impregnate")]
+        //[HarmonyPostfix]
+        //[HarmonyPatch("impregnate")]
         private static void ImpregnatePostfix(ref SexProps props)
         {
             
@@ -92,7 +92,8 @@ namespace RJW_Genes
             if (CanImpregnate2(giver, receiver, props.sexType))
             {
                 if (RJWSettings.DevMode) ModLog.Message(xxx.get_pawnname(giver)+" is analy impregnating "+ xxx.get_pawnname(receiver));
-                PregnancyHelper.DoImpregnate(giver, receiver);
+                //DOES NOT EXIST
+                //PregnancyHelper.DoImpregnate(giver, receiver);
                
             }
             if (vasectomy != null)
