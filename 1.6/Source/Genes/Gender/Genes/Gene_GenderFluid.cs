@@ -56,14 +56,16 @@ namespace RJW_Genes
             // Case 2: Check every interval if the Chance triggers
             else if (pawn.IsHashIntervalTick(change_interval) && (new Random()).NextDouble() < switch_chance)
             {
+                // Case 2.A - if the Pawn is Pregnant, do not allow sex change this interval.
+                if (pawn.IsPregnant()) return;
                 
-                // Case 2.A) SexChange was blocked, postpone it
+                // Case 2.B) SexChange was blocked, postpone it
                 if (SexChangeBlocked(pawn))
                 {
                     sexChangeWasBlocked |= true;
                     return;
                 } 
-                // Case 2.B) Nothing blocking, change the sex.
+                // Case 2.C) Nothing blocking, change the sex.
                 else { ChangeSex();}
             }
 

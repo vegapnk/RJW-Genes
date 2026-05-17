@@ -14,8 +14,12 @@ namespace RJW_Genes
     /// 40 Genes that Add a specific genital type to the pawn.
     /// 50 Genes that alter the values on a pawns genitals such as size or fluid type.
     /// </summary>
+#pragma warning disable CS0649  //Disable the warning for a variable that is 'unset'.
     internal class SexualizerGeneExtension : DefModExtension
     {
+
         public int order;
+
     }
+#pragma warning restore CS0649
 }

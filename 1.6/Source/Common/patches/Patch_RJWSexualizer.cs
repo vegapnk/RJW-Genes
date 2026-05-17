@@ -20,6 +20,7 @@ namespace RJW_Genes
             if (pawn.genes == null) return;
             foreach (Gene curGene in pawn.genes.GenesListForReading)
             {
+                
                 if (!curGene.def.HasModExtension<SexualizerGeneExtension>()) continue;
 
                 SexualizerGeneExtension geneExtension = curGene.def.GetModExtension<SexualizerGeneExtension>();
