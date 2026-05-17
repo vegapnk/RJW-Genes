@@ -32,17 +32,18 @@ namespace RJW_Genes
         public override void PostMake()
         {
             base.PostMake();
-            if (pawn.ageTracker.AgeBiologicalYears >= RJW_Genes_Settings.rjw_genes_resizing_age)
-            {
-                Resize();
-                ResizingWasApplied = true;
-            }
+            //if (pawn.ageTracker.AgeBiologicalYears >= RJW_Genes_Settings.rjw_genes_resizing_age)
+            //{
+            //    Resize();
+            //    ResizingWasApplied = true;
+            //}
         }
 
         public override void PostAdd()
         {
             if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             base.PostAdd();
+            if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn)) return; //If pawn hasn't been sexualized yet, skip.
             if (pawn.ageTracker.AgeBiologicalYears >= RJW_Genes_Settings.rjw_genes_resizing_age)
             {
                 Resize();

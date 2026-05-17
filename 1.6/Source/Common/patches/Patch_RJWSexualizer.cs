@@ -13,10 +13,12 @@ namespace RJW_Genes
         /// This Harmony patch is called after Sexualiser, and runs all the genes on that pawn that would have not been functional before sexualization.
         /// </summary>
         public static void ApplyGenesPostfix(Pawn pawn) 
-        { 
+        {
             //Generate a sorted list of Genes that need to be processed.
+            if (pawn == null) return;
             Dictionary<int,List<Gene>> geneDict = new Dictionary<int,List<Gene>>();
-            foreach (Gene curGene in pawn.genes?.GenesListForReading)
+            if (pawn.genes == null) return;
+            foreach (Gene curGene in pawn.genes.GenesListForReading)
             {
                 if (!curGene.def.HasModExtension<SexualizerGeneExtension>()) continue;
 

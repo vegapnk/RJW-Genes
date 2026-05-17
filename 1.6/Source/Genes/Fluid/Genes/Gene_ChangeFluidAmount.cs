@@ -9,15 +9,16 @@
         {
             base.PostMake();
 
-            float multipier = FluidUtility.LookupFluidMultiplier(this);
-            FluidUtility.MultiplyFluidAmountBy(pawn, multipier);
-            has_been_fired = true;
+            //float multipier = FluidUtility.LookupFluidMultiplier(this);
+            //FluidUtility.MultiplyFluidAmountBy(pawn, multipier);
+            //has_been_fired = true;
         }
 
         public override void PostAdd()
         {
             if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             base.PostAdd();
+            if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn)) return; //If pawn hasn't been sexualized yet, skip.
             if (!has_been_fired)
             {
                 float multipier = FluidUtility.LookupFluidMultiplier(this);

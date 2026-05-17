@@ -11,18 +11,18 @@ namespace RJW_Genes
         {
             base.PostMake();
 
-            if (removed_breasts == null)
-            {
-                RemoveButStoreBreasts();
-                AddFeaturelessBreast();
-            }
+            //if (removed_breasts == null)
+            //{
+            //    RemoveButStoreBreasts();
+            //    AddFeaturelessBreast();
+            //}
         }
 
         public override void PostAdd()
         {
             if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             base.PostAdd();
-
+            if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn)) return; //If pawn hasn't been sexualized yet, skip.
             if (removed_breasts == null)
             {
                 RemoveButStoreBreasts();
