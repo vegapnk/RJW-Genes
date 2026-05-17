@@ -31,6 +31,7 @@
     <Compile Include="Common\Defs\HediffIncreaseOnSexExtension.cs" />
     <Compile Include="Common\Defs\ModExtensionHelper.cs" />
     <Compile Include="Common\Defs\MultiplierExtension.cs" />
+    <Compile Include="Common\Defs\SexualizerGeneExtension.cs" />
     <Compile Include="Common\Defs\TickBasedChanceExtension.cs" />
     <Compile Include="Common\Either.cs" />
     <Compile Include="Common\Helpers\FactionUtility.cs" />
@@ -41,6 +42,7 @@
     <Compile Include="Common\Patches\PatchImplants.cs" />
     <Compile Include="Common\Patches\Patch_HediffIncreaseOnSex.cs" />
     <Compile Include="Common\Patches\Patch_ParentRelationUtility_GetParents.cs" />
+    <Compile Include="Common\Patches\Patch_RJWSexualizer.cs" />
     <Compile Include="Genes\Breeding\Abilities\CompAbilityEffect_MatingCall.cs" />
     <Compile Include="Genes\Breeding\Abilities\CompAbilityEffect_PheromoneSpit.cs" />
     <Compile Include="Genes\Breeding\Abilities\CompProperties_AbilityMatingCall.cs" />

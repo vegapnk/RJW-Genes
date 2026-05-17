@@ -1,6 +1,9 @@
 <ModMetaData>
 	<name>RJW Genes</name>
-	<author>Vegapnk - 1.6 Rewrite by Telanda</author>
+	<authors>
+		<li>Vegapnk</li>
+		<li>1.6 Rewrite by Telanda</li>
+	</authors>
 	<packageId>Vegapnk.rjw.genes</packageId>
 	<modVersion>2.6.2</modVersion>
 	<supportedVersions>
@@ -14,7 +17,6 @@ Adds:
 - Genes for Genitalia Types and Sizes
 - Fertilin, a resource similiar to Hemogen, and accompanying sex-vampires
 - Mechanics for Breeding and being Breed by Animals and Insects
-- Inherit genes from bestiality or produce VGE-Hybrids
 - Male / Female Only, MPreg, Genderfluid Pawns
 - Orgasmic Mytosis, Orgasmic Supercharging, Age-Transfer on Sex, Pheromones
 - Cum-Amount changes, Cumflation Immunity
@@ -22,6 +24,9 @@ Adds:
 - Genetic Diseases that Spread on Intercourse
 - Patches for some popular Xenotypes from the Workshop
 - Sexual Taming of Animals
+
+For Feedback or Support please see the Rimjob World Discord!
+https://discord.gg/UWZ3WfVWeK
 	</description>
 	<url>https://github.com/vegapnk/RJW-Genes</url>
 	<modDependencies>
@@ -40,14 +45,6 @@ Adds:
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 		</li>
-		<!--
-		<li>
-			<packageId>vegapnk.cumpilation</packageId>
-			<displayName>Cumpilation</displayName>
-			<steamWorkshopUrl></steamWorkshopUrl>
-			<downloadUrl>https://github.com/vegapnk/Cumpilation</downloadUrl>
-		</li>				
-		-->
 	</modDependencies>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>

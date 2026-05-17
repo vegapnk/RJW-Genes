@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 using rjw;
 using Verse;
 
+
+
 namespace RJW_Genes
 {
+    [Obsolete]
     internal static class Patch_sexualize_pawn
     {
         /// <summary>

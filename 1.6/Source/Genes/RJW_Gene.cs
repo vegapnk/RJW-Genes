@@ -37,5 +37,8 @@ namespace RJW_Genes
         public virtual void Notify_OnPawnGeneration()
         {
         }
+
+
+        public virtual void Notify_OnPawnSexualization() { }
     }
 }
