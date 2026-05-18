@@ -11,9 +11,9 @@
           <xpath>Defs/XenotypeDef[defName = "LoS_Lamia" 
                                   or defName = "LoS_TrueLamia" 
                                   or defName = "Naga"
-                                  or defName = "Los_Adderman"
-                                  or defName = "Los_Anacondaman"
-                                  or defName = "Los_Snakeman"]/genes</xpath>
+                                  or defName = "LoS_Adderman"
+                                  or defName = "LoS_Anacondaman"
+                                  or defName = "LoS_Snakeman"]/genes</xpath>
           <value>
             <li>rjw_genes_reptilian_genitalia</li>
           </value>
