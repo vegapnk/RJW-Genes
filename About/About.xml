@@ -11,8 +11,7 @@
 		<li>1.5</li>
 		<li>1.6</li>
 	</supportedVersions>
-	<description>
-Adds Genes for RJW Content.
+	<description>Adds Genes for RJW Content.
 Adds:
 - Genes for Genitalia Types and Sizes
 - Fertilin, a resource similiar to Hemogen, and accompanying sex-vampires
@@ -22,8 +21,41 @@ Adds:
 - Cum-Amount changes, Cumflation Immunity
 - Horny Pheromones, Animal Mating Call
 - Genetic Diseases that Spread on Intercourse
-- Patches for some popular Xenotypes from the Workshop
 - Sexual Taming of Animals
+
+Patches for the following Xenotype Mods
+- Alpha Genes
+- Biotech Expansion - Mammalia
+- Biotech Expansion - Mythic
+- Biotech Nyaron
+- Big and Small Heaven and Hell
+- Big and Small More Xenotypes
+- Big and Small - Races
+- Big and Small - Slimes
+- Big and Small - Lamias and other Snake-People
+- Big and Small - Vampires and the Undead
+- Big and Small - Yokai
+- Erin's Auronya
+- Erin's Shisune
+- Kijin Race 3.0
+- NaraiXenotype
+- Obsidia Expansion - Arachnas Xenotype
+- Papou Xenotype: Emotional Birds (Continued)
+- Rimsenal Xenotype Pack - Askbarn
+- Roo's Faun Xenotype
+- Roo's Minotaur Xenotype
+- Roo's Satyr Xenotype
+- Vanilla Races Expanded - Android
+- Vanilla Races Expanded - Archon
+- Vanilla Races Expanded - Fungoid
+- Vanilla Races Expanded - Genie
+- Vanilla Races Expanded - Highmate
+- Vanilla Races Expanded - Lycanthrope
+- Vanilla Races Expanded - Pigskin
+- Vanilla Races Expanded - Phytokin 
+- Vanilla Races Expanded - Sanguophage
+- Vanilla Races Expanded - Saurid
+- [LTS]Xenotech
 
 For Feedback or Support please see the Rimjob World Discord!
 https://discord.gg/UWZ3WfVWeK
@@ -47,17 +79,49 @@ https://discord.gg/UWZ3WfVWeK
 		</li>
 	</modDependencies>
 	<loadAfter>
-		<li>Ludeon.RimWorld</li>
-		<li>Ludeon.RimWorld.Royalty</li>
-		<li>Ludeon.RimWorld.Ideology</li>
-		<li>Ludeon.RimWorld.Biotech</li>
-		<li>rim.job.world</li>
+		<li>ASMR.RJW.RaceSupport</li>
+		<li>biotexpans.insect</li>
+		<li>biotexpans.mammalia</li>
+		<li>biotexpans.mythic</li>
 		<li>brrainz.harmony</li>
+		<li>CaptoLamia.NyaronBioTechHAR</li>
+		<li>erin.auronyabiotech</li>
+		<li>erin.shisune</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld</li>
+		<li>lyzz.naraixenotype</li>
+		<li>obsidiaexpansion.xenos.arachnas</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-		<li>sarg.alphaanimals</li>
-		<li>Sl4vP0weR.DominantGene</li>
+		<li>oskarpotocki.vfe.empire</li>
+		<li>redmattis.bsslimes</li>
+		<li>redmattis.heaven</li>
+		<li>redmattis.lamiasandothersnakes</li>
+		<li>redmattis.undead</li>
+		<li>redmattis.yokai</li>
+		<li>rim.job.world</li>
+		<li>rimsenal.askbarn</li>
 		<li>rjw.sexperience.cumgenes</li>
+		<li>sarg.alphaanimals</li>
+		<li>sarg.alphagenes</li>
+		<li>Sl4vP0weR.DominantGene</li>
+		<li>ssulunge.kijinrace3</li>
+		<li>tug.minotaur</li>
+		<li>tug.satyr</li>
+		<li>v.rooboid.faun</li>
+		<li>VanillaExpanded.VGeneticsE</li>
+		<li>vanillaracesexpanded.android</li>
+		<li>vanillaracesexpanded.archon</li>
+		<li>vanillaracesexpanded.fungoid</li>
+		<li>vanillaracesexpanded.genie</li>
+		<li>vanillaracesexpanded.highmate</li>
+		<li>vanillaracesexpanded.lycanthrope</li>
+		<li>vanillaracesexpanded.phytokin</li>
+		<li>vanillaracesexpanded.sanguophage</li>
+		<li>vanillaracesexpanded.saurid</li>
 		<li>vegapnk.cumpilation</li>
+		<li>zal.papou</li>
 	</loadAfter>
 
 </ModMetaData>
