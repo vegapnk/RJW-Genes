@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <rjw_genes_ability_mating_call.label>求偶鸣叫</rjw_genes_ability_mating_call.label>
+  <rjw_genes_ability_mating_call.description>呼唤附近的动物来对自己进行配种。</rjw_genes_ability_mating_call.description>
+  <rjw_genes_ability_mating_call.confirmationDialogText>被配种可不是一件轻松的事。\n这可能会导致殖民者精神崩溃、生殖器官撕裂以及怀上杂交后代。\n或许这正是你所期望的。\n该殖民者将会“顺从”，例如昆虫可能会将其织入肉茧。\n\n你确定要继续吗？</rjw_genes_ability_mating_call.confirmationDialogText>
+  
+</LanguageData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<StatsReport_NoChildren>该角色没有子女。</StatsReport_NoChildren>
+	<StatsReport_ManyChildren>该角色拥有一定数量的子女。</StatsReport_ManyChildren>
+	<StatsReport_VeryManyChildren>该角色拥有较多子女。</StatsReport_VeryManyChildren>
+	<RJW_Genes_GenitalsNotAlterable>无法对 {PAWN_nameDef} 的生殖器进行基因适应或改造。</RJW_Genes_GenitalsNotAlterable>
+
+</LanguageData>

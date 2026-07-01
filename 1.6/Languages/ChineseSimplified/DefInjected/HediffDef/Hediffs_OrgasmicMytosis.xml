@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <rjw_genes_mytosis_shock_hediff.label>有丝分裂恢复期</rjw_genes_mytosis_shock_hediff.label>
+  <rjw_genes_mytosis_shock_hediff.description>该角色近期完成了一次有丝分裂。由于这一过程会消耗大量生理机能，因此需要一段时间恢复。在恢复完成之前，无法再次进行有丝分裂。</rjw_genes_mytosis_shock_hediff.description>
+  <rjw_genes_mytosis_shock_hediff.stages.wearing_off.label>恢复中</rjw_genes_mytosis_shock_hediff.stages.wearing_off.label>
+  <rjw_genes_mytosis_shock_hediff.stages.fresh.label>刚发生</rjw_genes_mytosis_shock_hediff.stages.fresh.label>
+
+  <rjw_genes_orgasmic_mytosis_hediff.label>高潮分裂不稳定</rjw_genes_orgasmic_mytosis_hediff.label>
+  <rjw_genes_orgasmic_mytosis_hediff.description>拥有此基因的异种体会在高潮后逐渐变得不稳定。当不稳定性达到临界值时，将自动启动有丝分裂。</rjw_genes_orgasmic_mytosis_hediff.description>
+  <rjw_genes_orgasmic_mytosis_hediff.stages.stable.label>稳定</rjw_genes_orgasmic_mytosis_hediff.stages.stable.label>
+  <rjw_genes_orgasmic_mytosis_hediff.stages.agitated.label>躁动</rjw_genes_orgasmic_mytosis_hediff.stages.agitated.label>
+  <rjw_genes_orgasmic_mytosis_hediff.stages.unstable.label>不稳定</rjw_genes_orgasmic_mytosis_hediff.stages.unstable.label>
+  <rjw_genes_orgasmic_mytosis_hediff.stages.critical.label>临界</rjw_genes_orgasmic_mytosis_hediff.stages.critical.label>
+
+</LanguageData>

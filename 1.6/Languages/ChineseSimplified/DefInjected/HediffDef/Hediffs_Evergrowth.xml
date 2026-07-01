@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <rjw_genes_evergrowth_sideeffect.label>器官失控</rjw_genes_evergrowth_sideeffect.label>
+  <rjw_genes_evergrowth_sideeffect.description>科学将这种改造推向了极致，而它带来的代价也需要时刻承受。</rjw_genes_evergrowth_sideeffect.description>
+  <rjw_genes_evergrowth_sideeffect.stages.minor.label>轻度</rjw_genes_evergrowth_sideeffect.stages.minor.label>
+  <rjw_genes_evergrowth_sideeffect.stages.moderate.label>中度</rjw_genes_evergrowth_sideeffect.stages.moderate.label>
+  <rjw_genes_evergrowth_sideeffect.stages.strong.label>重度</rjw_genes_evergrowth_sideeffect.stages.strong.label>
+
+</LanguageData>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <rjw_genes_cockeater.label>噬茎者</rjw_genes_cockeater.label>
+  <rjw_genes_cockeater.description>携带此基因的个体能够通过吞食阴茎恢复精元质储备。在此过程中，阴茎会被完全吞噬。</rjw_genes_cockeater.description>
+  <rjw_genes_cockeater.labelShortAdj>噬茎</rjw_genes_cockeater.labelShortAdj>
+  <rjw_genes_cockeater.symbolPack.suffixSymbols.0.symbol>生命</rjw_genes_cockeater.symbolPack.suffixSymbols.0.symbol>
+  <rjw_genes_cockeater.symbolPack.suffixSymbols.1.symbol>阴茎</rjw_genes_cockeater.symbolPack.suffixSymbols.1.symbol>
+  <rjw_genes_cockeater.symbolPack.suffixSymbols.2.symbol>吞噬</rjw_genes_cockeater.symbolPack.suffixSymbols.2.symbol>
+
+  <rjw_genes_cum_eater.label>食精者</rjw_genes_cum_eater.label>
+  <rjw_genes_cum_eater.description>携带此基因的个体能够通过摄取精液吸收精元质。这包括口交、食用储存的精液，以及吸出被精液灌满个体体内的精液。</rjw_genes_cum_eater.description>
+
+  <rjw_genes_drainer.label>活力汲取</rjw_genes_drainer.label>
+  <rjw_genes_drainer.description>携带此基因的个体能够通过汲取性伴侣的生命活力吸收大量精元质。与未被汲取且不具备此基因的个体发生性交时，会被动触发这一效果。</rjw_genes_drainer.description>
+
+  <rjw_genes_fertilin_absorber.label>精元质吸收</rjw_genes_fertilin_absorber.label>
+  <rjw_genes_fertilin_absorber.description>携带此基因的个体能够通过阴道或肛门吸收精液中的精元质。</rjw_genes_fertilin_absorber.description>
+
+  <rjw_genes_lifeforce.label>精元质</rjw_genes_lifeforce.label>
+  <rjw_genes_lifeforce.description>携带此基因的个体拥有一种以「精元质」为能量来源的生物活力储备。精元质可以通过多种方式获得或消耗，其中部分方式需要其他基因解锁。\n\n由于生物熵作用，每天会损失5点精元质。\n\n该基因将在携带者具备性交能力后激活。</rjw_genes_lifeforce.description>
+  <rjw_genes_lifeforce.customEffectDescriptions.0>提供精元质储备。</rjw_genes_lifeforce.customEffectDescriptions.0>
+  <rjw_genes_lifeforce.resourceDescription>一种可通过多种方式获得和消耗的生物活力储备。\n\n通常可通过吸收精液获得精元质，例如口交或摄取储存的精液。\n\n当精元质降至零时，{PAWN_nameDef}会变得极度不满，并可能尝试强行获取精元质。</rjw_genes_lifeforce.resourceDescription>
+  <rjw_genes_lifeforce.resourceLabel>精元质</rjw_genes_lifeforce.resourceLabel>
+  <rjw_genes_lifeforce.symbolPack.prefixSymbols.0.symbol>生殖</rjw_genes_lifeforce.symbolPack.prefixSymbols.0.symbol>
+
+  <rjw_genes_lifeforce_drain.label>精元质流失</rjw_genes_lifeforce_drain.label>
+  <rjw_genes_lifeforce_drain.description>由于生物熵作用，携带此基因的个体每天会额外损失7.5点精元质。</rjw_genes_lifeforce_drain.description>
+  <rjw_genes_lifeforce_drain.labelShortAdj>流失</rjw_genes_lifeforce_drain.labelShortAdj>
+  <rjw_genes_lifeforce_drain.resourceLabel>精元质</rjw_genes_lifeforce_drain.resourceLabel>
+
+  <rjw_genes_lifeforce_empath.label>精元质共感</rjw_genes_lifeforce_empath.label>
+  <rjw_genes_lifeforce_empath.description>附近个体获得性满足时，携带此基因的个体会产生精元质；但若附近个体长期性压抑，则会反过来失去精元质。</rjw_genes_lifeforce_empath.description>
+
+  <rjw_genes_naked_prowess.label>赤身强能</rjw_genes_naked_prowess.label>
+  <rjw_genes_naked_prowess.description>携带此基因的个体在裸体状态下能够暂时提升力量与韧性。</rjw_genes_naked_prowess.description>
+
+  <rjw_genes_paralysingkiss.label>麻痹之吻</rjw_genes_paralysingkiss.label>
+  <rjw_genes_paralysingkiss.description>携带此基因的个体能够通过亲吻短暂麻痹敌人。</rjw_genes_paralysingkiss.description>
+  <rjw_genes_paralysingkiss.labelShortAdj>麻痹之吻</rjw_genes_paralysingkiss.labelShortAdj>
+  <rjw_genes_paralysingkiss.symbolPack.suffixSymbols.0.symbol>麻痹</rjw_genes_paralysingkiss.symbolPack.suffixSymbols.0.symbol>
+  <rjw_genes_paralysingkiss.symbolPack.suffixSymbols.1.symbol>亲吻</rjw_genes_paralysingkiss.symbolPack.suffixSymbols.1.symbol>
+
+  <rjw_genes_pussyhealing.label>愈疗之穴</rjw_genes_pussyhealing.label>
+  <rjw_genes_pussyhealing.description>携带此基因的个体能够通过阴道性交治疗他人的伤势。</rjw_genes_pussyhealing.description>
+  <rjw_genes_pussyhealing.labelShortAdj>愈疗</rjw_genes_pussyhealing.labelShortAdj>
+  <rjw_genes_pussyhealing.symbolPack.suffixSymbols.0.symbol>生命</rjw_genes_pussyhealing.symbolPack.suffixSymbols.0.symbol>
+  <rjw_genes_pussyhealing.symbolPack.suffixSymbols.1.symbol>阴道</rjw_genes_pussyhealing.symbolPack.suffixSymbols.1.symbol>
+  <rjw_genes_pussyhealing.symbolPack.suffixSymbols.2.symbol>治愈</rjw_genes_pussyhealing.symbolPack.suffixSymbols.2.symbol>
+
+  <rjw_genes_seduce.label>魅惑</rjw_genes_seduce.label>
+  <rjw_genes_seduce.description>携带此基因的个体能够魅惑他人，使其自愿与自己发生性行为。</rjw_genes_seduce.description>
+  <rjw_genes_seduce.labelShortAdj>魅惑</rjw_genes_seduce.labelShortAdj>
+  <rjw_genes_seduce.symbolPack.suffixSymbols.0.symbol>魅惑</rjw_genes_seduce.symbolPack.suffixSymbols.0.symbol>
+  <rjw_genes_seduce.symbolPack.suffixSymbols.1.symbol>亲吻</rjw_genes_seduce.symbolPack.suffixSymbols.1.symbol>
+
+</LanguageData>

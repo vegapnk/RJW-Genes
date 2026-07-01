@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <rjw_genes_aphrodisiac_pheromone.label>催生性欲</rjw_genes_aphrodisiac_pheromone.label>
+  <rjw_genes_aphrodisiac_pheromone.description>受到催情信息素影响，性欲逐渐增强。</rjw_genes_aphrodisiac_pheromone.description>
+  <rjw_genes_aphrodisiac_pheromone.stages.wearing_off.label>逐渐消退</rjw_genes_aphrodisiac_pheromone.stages.wearing_off.label>
+  <rjw_genes_aphrodisiac_pheromone.stages.moderate.label>中度</rjw_genes_aphrodisiac_pheromone.stages.moderate.label>
+  <rjw_genes_aphrodisiac_pheromone.stages.strong.label>强烈</rjw_genes_aphrodisiac_pheromone.stages.strong.label>
+
+</LanguageData>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <rjw_genes_lifeforce_randomrape.label>失控性侵</rjw_genes_lifeforce_randomrape.label>
+
+  <rjw_genes_lifeforce_randomrape.baseInspectLine>精神状态：失控性侵</rjw_genes_lifeforce_randomrape.baseInspectLine>
+
+  <rjw_genes_lifeforce_randomrape.beginLetter>{0}的精元质已经耗尽，正不顾一切地寻找目标，以补充精元质。</rjw_genes_lifeforce_randomrape.beginLetter>
+
+  <rjw_genes_lifeforce_randomrape.beginLetterLabel>失控性侵</rjw_genes_lifeforce_randomrape.beginLetterLabel>
+
+  <rjw_genes_lifeforce_randomrape.recoveryMessage>{0}恢复了理智，不再失控地寻找目标实施性侵。</rjw_genes_lifeforce_randomrape.recoveryMessage>
+
+</LanguageData>

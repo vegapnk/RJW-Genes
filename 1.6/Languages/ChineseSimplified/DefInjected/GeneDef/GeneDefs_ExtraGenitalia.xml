@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <rjw_genes_extra_anus.label>额外肛门</rjw_genes_extra_anus.label>
+  <rjw_genes_extra_anus.description>携带此基因的个体拥有一个额外的肛门。</rjw_genes_extra_anus.description>
+
+  <rjw_genes_extra_breasts.label>额外乳房</rjw_genes_extra_breasts.label>
+  <rjw_genes_extra_breasts.description>携带此基因的女性会长出额外的一对乳房。</rjw_genes_extra_breasts.description>
+
+  <rjw_genes_extra_penis.label>额外阴茎</rjw_genes_extra_penis.label>
+  <rjw_genes_extra_penis.description>携带此基因的男性会长出一根额外的阴茎。</rjw_genes_extra_penis.description>
+
+  <rjw_genes_extra_vagina.label>额外阴道</rjw_genes_extra_vagina.label>
+  <rjw_genes_extra_vagina.description>携带此基因的女性会长出一个额外的阴道。</rjw_genes_extra_vagina.description>
+
+  <rjw_genes_featureless_chest.label>平滑胸部</rjw_genes_featureless_chest.label>
+  <rjw_genes_featureless_chest.description>携带此基因的个体没有乳房，也没有乳头。</rjw_genes_featureless_chest.description>
+
+  <rjw_genes_femboy.label>伪娘</rjw_genes_femboy.label>
+  <rjw_genes_femboy.description>携带此基因的男性即使拥有阴茎，也会被视为女性。</rjw_genes_femboy.description>
+
+  <rjw_genes_futa.label>扶她</rjw_genes_futa.label>
+  <rjw_genes_futa.description>携带此基因的男性会长出额外的女性生殖器，女性则会长出额外的男性生殖器。</rjw_genes_futa.description>
+
+  <rjw_genes_no_anus.label>无肛门</rjw_genes_no_anus.label>
+  <rjw_genes_no_anus.description>携带此基因的个体没有肛门。</rjw_genes_no_anus.description>
+
+  <rjw_genes_no_breasts.label>无乳房</rjw_genes_no_breasts.label>
+  <rjw_genes_no_breasts.description>携带此基因的女性没有乳房，仅保留乳头。</rjw_genes_no_breasts.description>
+
+  <rjw_genes_no_penis.label>无阴茎</rjw_genes_no_penis.label>
+  <rjw_genes_no_penis.description>携带此基因的男性没有阴茎。</rjw_genes_no_penis.description>
+
+  <rjw_genes_no_vagina.label>无阴道</rjw_genes_no_vagina.label>
+  <rjw_genes_no_vagina.description>携带此基因的女性没有阴道。</rjw_genes_no_vagina.description>
+
+  <rjw_genes_udder.label>乳房囊</rjw_genes_udder.label>
+  <rjw_genes_udder.description>携带此基因的个体同时拥有胸部乳房和腹部乳房囊。</rjw_genes_udder.description>
+
+</LanguageData>

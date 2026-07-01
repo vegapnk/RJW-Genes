@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <rjw_genes_fertilin_craving.label>精元质渴求</rjw_genes_fertilin_craving.label>
+  <rjw_genes_fertilin_craving.description>由于精元质耗尽，身体与精神均陷入衰弱。</rjw_genes_fertilin_craving.description>
+  <rjw_genes_fertilin_craving.stages.minor.label>轻度</rjw_genes_fertilin_craving.stages.minor.label>
+  <rjw_genes_fertilin_craving.stages.moderate.label>中度</rjw_genes_fertilin_craving.stages.moderate.label>
+  <rjw_genes_fertilin_craving.stages.major.label>重度</rjw_genes_fertilin_craving.stages.major.label>
+
+  <rjw_genes_fertilin_lost.label>精元质流失</rjw_genes_fertilin_lost.label>
+  <rjw_genes_fertilin_lost.description>已流失的精元质比例。</rjw_genes_fertilin_lost.description>
+
+  <rjw_genes_naked_prowess.label>裸体强化</rjw_genes_naked_prowess.label>
+  <rjw_genes_naked_prowess.description>在精元质的驱动下，该个体的力量与韧性获得了显著提升。</rjw_genes_naked_prowess.description>
+
+  <rjw_genes_succubus_drained.label>活力枯竭</rjw_genes_succubus_drained.label>
+  <rjw_genes_succubus_drained.description>该角色的生命活力已被汲取。在完全恢复之前，无法再次被汲取活力。</rjw_genes_succubus_drained.description>
+  <rjw_genes_succubus_drained.stages.minor.label>轻度</rjw_genes_succubus_drained.stages.minor.label>
+  <rjw_genes_succubus_drained.stages.moderate.label>中度</rjw_genes_succubus_drained.stages.moderate.label>
+  <rjw_genes_succubus_drained.stages.severe.label>重度</rjw_genes_succubus_drained.stages.severe.label>
+
+</LanguageData>

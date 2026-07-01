@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <rjw_genes_aphrodisiac_pheromones.label>催情信息素</rjw_genes_aphrodisiac_pheromones.label>
+  <rjw_genes_aphrodisiac_pheromones.description>携带此基因的个体会分泌催情信息素，使附近的个体更容易产生性需求。</rjw_genes_aphrodisiac_pheromones.description>
+
+  <rjw_genes_cocoonweaver.label>虫茧编织者</rjw_genes_cocoonweaver.label>
+  <rjw_genes_cocoonweaver.description>携带此基因的个体能够制造虫茧，将无力反抗或自愿的目标包裹起来，为繁殖做好准备。</rjw_genes_cocoonweaver.description>
+  <rjw_genes_cocoonweaver.labelShortAdj>织茧</rjw_genes_cocoonweaver.labelShortAdj>
+
+  <rjw_genes_electric_satisfaction.label>电能高潮</rjw_genes_electric_satisfaction.label>
+  <rjw_genes_electric_satisfaction.description>携带此基因的个体在达到高潮时，会向附近的电子设备释放电荷，产生的电能足以为电池充电。</rjw_genes_electric_satisfaction.description>
+
+  <rjw_genes_feminizer.label>雌化</rjw_genes_feminizer.label>
+  <rjw_genes_feminizer.description>携带此基因的个体会逐渐将男性性伴侣转变为女性。</rjw_genes_feminizer.description>
+
+  <rjw_genes_hormonal_saliva.label>激素唾液</rjw_genes_hormonal_saliva.label>
+  <rjw_genes_hormonal_saliva.description>携带此基因的个体唾液中含有促进阴茎生长的激素。持续接触会带来明显的生长效果。</rjw_genes_hormonal_saliva.description>
+
+  <rjw_genes_orgasm_rush.label>高潮激涌</rjw_genes_orgasm_rush.label>
+  <rjw_genes_orgasm_rush.description>携带此基因的个体在高潮后会获得短暂的行动力提升。（部分恢复休息需求）</rjw_genes_orgasm_rush.description>
+
+  <rjw_genes_sex_age_drain.label>年龄汲取</rjw_genes_sex_age_drain.label>
+  <rjw_genes_sex_age_drain.description>携带此基因的个体能够吸取性伴侣的年龄，使自身恢复年轻。（双方均保持成年状态）</rjw_genes_sex_age_drain.description>
+
+  <rjw_genes_sex_tamer.label>交配驯化</rjw_genes_sex_tamer.label>
+  <rjw_genes_sex_tamer.description>携带此基因的个体能够在性行为中赋予动物更高的智慧与温顺性，从而提升其训练程度。</rjw_genes_sex_tamer.description>
+  <rjw_genes_sex_tamer.labelShortAdj>驯化</rjw_genes_sex_tamer.labelShortAdj>
+
+  <rjw_genes_sexual_genetic_swap.label>性交基因置换</rjw_genes_sexual_genetic_swap.label>
+  <rjw_genes_sexual_genetic_swap.description>携带此基因的个体在性行为中有概率与性伴侣交换一个基因。交换的基因始终为内源基因。</rjw_genes_sexual_genetic_swap.description>
+
+  <rjw_genes_sexual_genetic_thief.label>性交基因窃取</rjw_genes_sexual_genetic_thief.label>
+  <rjw_genes_sexual_genetic_thief.description>携带此基因的个体在性行为中有概率窃取性伴侣的一个基因。窃取的基因始终为异源基因。</rjw_genes_sexual_genetic_thief.description>
+
+  <rjw_genes_sexual_mytosis.label>高潮有丝分裂</rjw_genes_sexual_mytosis.label>
+  <rjw_genes_sexual_mytosis.description>携带此基因的个体体内的再生远古机械体存在缺陷，并会随着连续高潮而愈发不稳定，最终触发有丝分裂，诞生一个生物学上完全相同的个体。分裂后的双方都会进入再生状态。此外，该个体能够连续高潮，并且稳定性越低，越容易再次达到高潮。</rjw_genes_sexual_mytosis.description>
+
+  <rjw_genes_twinkifier.label>美少年化</rjw_genes_twinkifier.label>
+  <rjw_genes_twinkifier.description>携带此基因的个体会逐渐将男性性伴侣转变为可繁殖的可爱美少年。</rjw_genes_twinkifier.description>
+
+  <rjw_genes_youth_fountain.label>青春之泉</rjw_genes_youth_fountain.label>
+  <rjw_genes_youth_fountain.description>携带此基因的个体能够逆转性伴侣的年龄，使其恢复年轻。（目标始终保持成年状态）</rjw_genes_youth_fountain.description>
+
+</LanguageData>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <rjw_genes_disease_carrier_storage.label>遗传疾病储存</rjw_genes_disease_carrier_storage.label>
+  <rjw_genes_disease_carrier_storage.description>该角色能够携带遗传性疾病，而自身不会受到感染。</rjw_genes_disease_carrier_storage.description>
+  <rjw_genes_disease_carrier_storage.stages.active.label>已储存</rjw_genes_disease_carrier_storage.stages.active.label>
+
+</LanguageData>

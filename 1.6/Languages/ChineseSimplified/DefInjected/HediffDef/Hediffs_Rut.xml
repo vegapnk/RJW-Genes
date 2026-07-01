@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <rjw_genes_genetic_rut.label>发情期</rjw_genes_genetic_rut.label>
+  <rjw_genes_genetic_rut.description>受遗传基因影响，该角色正处于发情状态。</rjw_genes_genetic_rut.description>
+  <rjw_genes_genetic_rut.stages.calming_down.label>消退中</rjw_genes_genetic_rut.stages.calming_down.label>
+  <rjw_genes_genetic_rut.stages.in_heat.label>发情中</rjw_genes_genetic_rut.stages.in_heat.label>
+
+</LanguageData>
