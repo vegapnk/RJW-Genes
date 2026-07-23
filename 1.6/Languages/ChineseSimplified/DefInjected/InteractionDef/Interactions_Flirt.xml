@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <rjw_genes_flirt.label>调情</rjw_genes_flirt.label>
+
+  <rjw_genes_flirt.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef]与[RECIPIENT_nameDef]聊起了[TalkTopicLight]。</li>
+    <li>r_logentry->[INITIATOR_nameDef]和[RECIPIENT_nameDef]谈论着[TalkTopicLight]。</li>
+    <li>r_logentry(p=0.8)->[INITIATOR_nameDef]向[RECIPIENT_nameDef]提起了[TalkTopicLight]。</li>
+    <li>talkedabout(p=4)->聊起了</li>
+    <li>talkedabout->谈到了</li>
+    <li>talkedabout->说起了</li>
+    <li>talkedabout->闲聊起</li>
+    <li>talkedabout->讨论了</li>
+    <li>talkedabout->打趣着</li>
+    <li>talkedabout->开玩笑地聊起了</li>
+    <li>commentedabout->提到了</li>
+    <li>commentedabout->说起了</li>
+    <li>commentedabout->评论了</li>
+    <li>commentedabout->发表了关于……的看法</li>
+    <li>commentedabout->拿……开了个玩笑</li>
+  </rjw_genes_flirt.logRulesInitiator.rulesStrings>
+
+</LanguageData>

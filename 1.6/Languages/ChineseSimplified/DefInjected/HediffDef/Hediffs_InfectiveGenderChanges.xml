@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <rjw_genes_feminization_progress.label>雌化进程</rjw_genes_feminization_progress.label>
+  <rjw_genes_feminization_progress.description>某种力量正在改变该角色。每次进行性行为时，都有可能进一步发育出女性特征。</rjw_genes_feminization_progress.description>
+  <rjw_genes_feminization_progress.stages.neglectable.label>初期</rjw_genes_feminization_progress.stages.neglectable.label>
+  <rjw_genes_feminization_progress.stages.minor.label>轻度</rjw_genes_feminization_progress.stages.minor.label>
+  <rjw_genes_feminization_progress.stages.severe.label>重度</rjw_genes_feminization_progress.stages.severe.label>
+  <rjw_genes_feminization_progress.stages.critical.label>完成</rjw_genes_feminization_progress.stages.critical.label>
+
+  <rjw_genes_twinkification_progress.label>美少年化进程</rjw_genes_twinkification_progress.label>
+  <rjw_genes_twinkification_progress.description>某种力量正在改变该角色。每次进行性行为时，都有可能进一步转变为可繁殖的可爱美少年。</rjw_genes_twinkification_progress.description>
+  <rjw_genes_twinkification_progress.stages.neglectable.label>初期</rjw_genes_twinkification_progress.stages.neglectable.label>
+  <rjw_genes_twinkification_progress.stages.minor.label>轻度</rjw_genes_twinkification_progress.stages.minor.label>
+  <rjw_genes_twinkification_progress.stages.severe.label>重度</rjw_genes_twinkification_progress.stages.severe.label>
+  <rjw_genes_twinkification_progress.stages.critical.label>完成</rjw_genes_twinkification_progress.stages.critical.label>
+
+</LanguageData>

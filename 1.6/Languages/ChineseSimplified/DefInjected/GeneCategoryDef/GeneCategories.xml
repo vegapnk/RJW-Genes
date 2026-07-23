@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <rjw_genes_breeding.label>生物繁衍</rjw_genes_breeding.label>
+  
+  <rjw_genes_damage.label>损伤抗性</rjw_genes_damage.label>
+  
+  <rjw_genes_diseases.label>基因性病</rjw_genes_diseases.label>
+  
+  <rjw_genes_fertilin.label>精元质</rjw_genes_fertilin.label>
+  
+  <rjw_genes_fluids.label>体液分泌</rjw_genes_fluids.label>
+  
+  <rjw_genes_gender.label>性别特征</rjw_genes_gender.label>
+  
+  <rjw_genes_genitalia_extras.label>多重器官</rjw_genes_genitalia_extras.label>
+  
+  <rjw_genes_genitalia_size.label>生殖器规格</rjw_genes_genitalia_size.label>
+  
+  <rjw_genes_genitalia_type.label>外形 - 生殖器类型</rjw_genes_genitalia_type.label>
+  
+  <rjw_genes_special.label>器官专属能力</rjw_genes_special.label>
+  
+</LanguageData>

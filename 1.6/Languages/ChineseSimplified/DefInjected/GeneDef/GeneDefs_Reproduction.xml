@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <rjw_genes_bisexual.label>双性恋</rjw_genes_bisexual.label>
+  <rjw_genes_bisexual.description>携带此基因的个体为双性恋。</rjw_genes_bisexual.description>
+
+  <rjw_genes_blocked_masturbation.label>自慰障碍</rjw_genes_blocked_masturbation.label>
+  <rjw_genes_blocked_masturbation.description>携带此基因的个体无法自慰，必须依靠伴侣或器具才能获得满足。</rjw_genes_blocked_masturbation.description>
+
+  <rjw_genes_homosexual.label>同性恋</rjw_genes_homosexual.label>
+  <rjw_genes_homosexual.description>携带此基因的个体为同性恋。</rjw_genes_homosexual.description>
+
+  <rjw_genes_hypersexual.label>性欲亢进</rjw_genes_hypersexual.label>
+  <rjw_genes_hypersexual.description>携带此基因的个体性欲异常旺盛（淫魔体质）。</rjw_genes_hypersexual.description>
+
+  <rjw_genes_littered_births.label>多胎分娩</rjw_genes_littered_births.label>
+  <rjw_genes_littered_births.description>携带此基因的女性不会只生育一个婴儿，而是会产下多胎，每次妊娠有概率诞下2至4名婴儿。</rjw_genes_littered_births.description>
+
+  <rjw_genes_masochist.label>受虐倾向</rjw_genes_masochist.label>
+  <rjw_genes_masochist.description>携带此基因的个体会从疼痛中获得愉悦。</rjw_genes_masochist.description>
+
+  <rjw_genes_no_sex_need.label>无性恋</rjw_genes_no_sex_need.label>
+  <rjw_genes_no_sex_need.description>携带此基因的个体不会对他人产生性兴趣。他们仍可参与性行为，但性需求不会随时间下降。</rjw_genes_no_sex_need.description>
+
+  <rjw_genes_pregnancy_overwrite.label>妊娠覆写</rjw_genes_pregnancy_overwrite.label>
+  <rjw_genes_pregnancy_overwrite.description>携带此基因的个体能够「覆写」已有的妊娠，在保留妊娠进度的同时，将胎儿的生父替换为自己。</rjw_genes_pregnancy_overwrite.description>
+
+  <rjw_genes_rapist.label>强制交配倾向</rjw_genes_rapist.label>
+  <rjw_genes_rapist.description>携带此基因的个体更倾向于通过强迫手段与他人发生性行为。</rjw_genes_rapist.description>
+
+</LanguageData>

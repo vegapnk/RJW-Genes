@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <rjw_genes_fluid_cum_breasts.label>乳房产精</rjw_genes_fluid_cum_breasts.label>
+  <rjw_genes_fluid_cum_breasts.description>携带此基因的个体乳房分泌的并非乳汁，而是精液。</rjw_genes_fluid_cum_breasts.description>
+
+  <rjw_genes_fluid_insect_spunk.label>虫族精液</rjw_genes_fluid_insect_spunk.label>
+  <rjw_genes_fluid_insect_spunk.description>携带此基因的个体分泌的并非普通精液，而是虫族精液。</rjw_genes_fluid_insect_spunk.description>
+
+  <rjw_genes_fluid_milk_penis.label>阴茎产乳</rjw_genes_fluid_milk_penis.label>
+  <rjw_genes_fluid_milk_penis.description>携带此基因的个体阴茎分泌的并非精液，而是乳汁。</rjw_genes_fluid_milk_penis.description>
+
+  <rjw_genes_generous_donor.label>慷慨奉献</rjw_genes_generous_donor.label>
+  <rjw_genes_generous_donor.description>拥有此异种的个体在性交过程中向他人输送体液时，不会因此产生饥饿感。</rjw_genes_generous_donor.description>
+
+  <rjw_genes_much_fluid.label>体液充盈</rjw_genes_much_fluid.label>
+  <rjw_genes_much_fluid.description>携带此基因的个体能够产生大量性体液。</rjw_genes_much_fluid.description>
+
+  <rjw_genes_no_fluid.label>无体液</rjw_genes_no_fluid.label>
+  <rjw_genes_no_fluid.description>携带此基因的个体不会产生任何性体液。</rjw_genes_no_fluid.description>
+
+  <rjw_genes_very_much_fluid.label>体液过盛</rjw_genes_very_much_fluid.label>
+  <rjw_genes_very_much_fluid.description>携带此基因的个体能够产生极其大量的性体液。</rjw_genes_very_much_fluid.description>
+
+</LanguageData>

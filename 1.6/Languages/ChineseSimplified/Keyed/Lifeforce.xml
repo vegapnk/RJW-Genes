@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<AbilityDisabledNoFertilinGene>该个体不具备所需的精元质相关基因。</AbilityDisabledNoFertilinGene>
+	<AbilityDisabledNoFertilin>精元质不足，无法施展该能力。</AbilityDisabledNoFertilin>
+	<MentalBreakNoFertilin>由于精元质过低而导致的精神崩溃。</MentalBreakNoFertilin>
+	
+	<AlertLowFertilin>精元质过低</AlertLowFertilin>
+	<AlertLowFertilinDesc>一名殖民者的精元质已处于低水平。此时其生理驱动将变得极端，可能会通过强迫性性行为或对动物的性行为来获取精元质（若此前尚未发生）。当精元质归零时，该个体将失去理性并进入随机性攻击状态。</AlertLowFertilinDesc>
+
+	<SuccubusLeaving>{0}已摄取足够的殖民者精元质，现在将离开。</SuccubusLeaving>
+	
+	<rjw_genes_sexdemon_visit_incident_label>淫梦</rjw_genes_sexdemon_visit_incident_label>
+	<rjw_genes_sexdemon_visit_incident_description>殖民者的淫欲梦境吸引了魅魔的到来。\n\n她们将在接下来的几天内徘徊，试图诱惑殖民者。如果她们认为殖民者的性能力足够出色，可能会选择加入殖民地。</rjw_genes_sexdemon_visit_incident_description>
+
+	<rjw_genes_succubus_joins_letter_label>访客加入</rjw_genes_succubus_joins_letter_label>
+	<rjw_genes_succubus_joins_letter_description>{0}对这里感到满意，并决定留下。</rjw_genes_succubus_joins_letter_description>
+
+</LanguageData>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <InstallBioscaffold.label>植入孕育基质</InstallBioscaffold.label>
+  <InstallBioscaffold.description>植入一个孕育基质。</InstallBioscaffold.description>
+  <InstallBioscaffold.jobString>正在植入孕育基质。</InstallBioscaffold.jobString>
+
+  <RemoveBioscaffold.label>移除孕育基质</RemoveBioscaffold.label>
+  <RemoveBioscaffold.description>移除孕育基质。</RemoveBioscaffold.description>
+  <RemoveBioscaffold.jobString>正在移除孕育基质。</RemoveBioscaffold.jobString>
+
+</LanguageData>

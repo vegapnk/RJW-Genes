@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <InstallOvaryAgitator.label>植入排卵刺激器</InstallOvaryAgitator.label>
+  <InstallOvaryAgitator.description>植入一个排卵刺激器。</InstallOvaryAgitator.description>
+  <InstallOvaryAgitator.jobString>正在植入排卵刺激器。</InstallOvaryAgitator.jobString>
+
+  <RemoveOvaryAgitator.label>移除排卵刺激器</RemoveOvaryAgitator.label>
+  <RemoveOvaryAgitator.description>移除排卵刺激器。</RemoveOvaryAgitator.description>
+  <RemoveOvaryAgitator.jobString>正在移除排卵刺激器。</RemoveOvaryAgitator.jobString>
+
+</LanguageData>

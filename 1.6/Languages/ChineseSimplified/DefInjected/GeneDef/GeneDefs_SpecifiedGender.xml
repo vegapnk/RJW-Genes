@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <rjw_genes_female_only.label>女性</rjw_genes_female_only.label>
+  <rjw_genes_female_only.description>携带此基因的个体仅会表现为女性生理性别。</rjw_genes_female_only.description>
+
+  <rjw_genes_gender_fluid.label>流动性别</rjw_genes_gender_fluid.label>
+  <rjw_genes_gender_fluid.description>携带此基因的个体可能每天改变自己的生理性别。</rjw_genes_gender_fluid.description>
+
+  <rjw_genes_male_only.label>男性</rjw_genes_male_only.label>
+  <rjw_genes_male_only.description>携带此基因的个体仅会表现为男性生理性别。</rjw_genes_male_only.description>
+
+</LanguageData>

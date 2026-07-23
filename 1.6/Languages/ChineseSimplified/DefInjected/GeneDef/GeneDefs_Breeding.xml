@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <rjw_genes_basic_rut.label>发情期</rjw_genes_basic_rut.label>
+  <rjw_genes_basic_rut.description>此基因携带者会进入发情状态，导致性活跃度急剧上升。</rjw_genes_basic_rut.description>
+  
+  <rjw_genes_fertile_anus.label>受孕肛门</rjw_genes_fertile_anus.label>
+  <rjw_genes_fertile_anus.description>如果携带者没有通过阴道拥有功能性子宫，此基因将为其提供一个。对于男性而言，该子宫与肛腔相连，并可导致正常的妊娠受孕。</rjw_genes_fertile_anus.description>
+  
+  <rjw_genes_fervent_ovipositor.label>高效产卵器</rjw_genes_fervent_ovipositor.label>
+  <rjw_genes_fervent_ovipositor.description>若此基因携带者拥有雌性（具备产卵能力的）产卵器，其产卵速度将会大幅提升。</rjw_genes_fervent_ovipositor.description>
+  
+  <rjw_genes_hardwired_progenity.label>繁衍本能</rjw_genes_hardwired_progenity.label>
+  <rjw_genes_hardwired_progenity.description>此基因携带者被刻入了繁衍后代的底层逻辑。如果他们膝下无子，将会受到负面情绪或状态惩罚；而当他们拥有大量子嗣时，其各项能力将会获得显著提升。</rjw_genes_hardwired_progenity.description>
+  
+  <rjw_genes_insectbreeder.label>昆虫授精者</rjw_genes_insectbreeder.label>
+  <rjw_genes_insectbreeder.description>此基因携带者能够使用任何具有生育能力的阴茎来为昆虫卵受精。</rjw_genes_insectbreeder.description>
+  
+  <rjw_genes_insectincubator.label>昆虫孵化体</rjw_genes_insectincubator.label>
+  <rjw_genes_insectincubator.description>此基因携带者会使被植入其体内的昆虫卵受精并进行孵化。</rjw_genes_insectincubator.description>
+  
+  <rjw_genes_mating_call.label>求偶鸣叫</rjw_genes_mating_call.label>
+  <rjw_genes_mating_call.description>此基因携带者能够呼唤附近的动物并吸引它们来进行交配。</rjw_genes_mating_call.description>
+  
+  <rjw_genes_mechbreeder.label>机械育体</rjw_genes_mechbreeder.label>
+  <rjw_genes_mechbreeder.description>此基因携带者能够无伤分娩出机械族个体。</rjw_genes_mechbreeder.description>
+  
+  <rjw_genes_pheromone_spit.label>信息素喷吐</rjw_genes_pheromone_spit.label>
+  <rjw_genes_pheromone_spit.description>此基因携带者能够向他人喷吐一股爆发性的信息素，使目标成为附近动物渴望并试图配种的对象。</rjw_genes_pheromone_spit.description>
+  
+  <rjw_genes_zoophile.label>恋兽癖</rjw_genes_zoophile.label>
+  <rjw_genes_zoophile.description>此基因携带者在性取向上对动物有着强烈的渴望与吸引力。</rjw_genes_zoophile.description>
+  
+</LanguageData>
