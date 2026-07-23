@@ -13,18 +13,18 @@ namespace RJW_Genes
         {
             base.PostMake();
             
-            // Breasts are removed for female pawns!
-            if (GenderUtility.IsFemale(pawn) && oldSize < 0)
-            {
-                RemoveButStoreBreasts();
-            }
+            //// Breasts are removed for female pawns!
+            //if (GenderUtility.IsFemale(pawn) && oldSize < 0)
+            //{
+            //    RemoveButStoreBreasts();
+            //}
         }
         
         public override void PostAdd()
         {
             if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             base.PostAdd();
-
+            if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn)) return; //If pawn hasn't been sexualized yet, skip.
             // Breasts are removed for female pawns!
             if (GenderUtility.IsFemale(pawn) && oldSize < 0)
             {

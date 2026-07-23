@@ -1,4 +1,51 @@
-#INPROG
+# 2.7.0 (23-07-2026)
+(Commit by @Telanda-DDS)
+
+### Fixes.
+- Rewrite of how Genital Genes handle non-Sexualised pawns, should address most 'extra genitals' bugs.
+- Gender Fluid no longer allows sex changes while a pawn is pregnant.
+- Updated Big & Small - Lamia Patches to account for changes in Def Capitalisation.
+- Hormonal Saliva & Evergrowth now have a caps on fluid production, pawns should no longer grow so productive their cumshots crash the game.
+
+
+### Xenotypes.
+I've done a Check over the included xenotype patches, A few Xenotypes that hadn't been updated to 1.6 have been removed, and minor fixes Applied to other races. The current Supported Xenotype list is as following.
+- Alpha Genes
+- Biotech Expansion - Mammalia
+- Biotech Expansion - Mythic
+- Biotech Nyaron
+- Big and Small Heaven and Hell
+- Big and Small More Xenotypes
+- Big and Small - Races
+- Big and Small - Slimes
+- Big and Small - Lamias and other Snake-People
+- Big and Small - Vampires and the Undead
+- Big and Small - Yokai
+- Erin's Auronya
+- Erin's Shisune
+- Kijin Race 3.0
+- NaraiXenotype
+- Obsidia Expansion - Arachnas Xenotype
+- Papou Xenotype: Emotional Birds (Continued)
+- Rimsenal Xenotype Pack - Askbarn
+- Roo's Faun Xenotype
+- Roo's Minotaur Xenotype
+- Roo's Satyr Xenotype
+- Vanilla Races Expanded - Android
+- Vanilla Races Expanded - Archon
+- Vanilla Races Expanded - Fungoid
+- Vanilla Races Expanded - Genie
+- Vanilla Races Expanded - Highmate
+- Vanilla Races Expanded - Lycanthrope
+- Vanilla Races Expanded - Pigskin
+- Vanilla Races Expanded - Phytokin 
+- Vanilla Races Expanded - Sanguophage
+- Vanilla Races Expanded - Saurid
+- \[LTS\]Xenotech
+
+### Known Issues.
+- Fertile Anus gene is Unreliable, and does not work with Biotech Pregnancies Enabled in RJW.  (Waiting for large Upstream patch to RJW Core to be accepted.)
+
 
 # 2.6.2 (15-02-2026)
 (Commit by @Telanda-DDS)

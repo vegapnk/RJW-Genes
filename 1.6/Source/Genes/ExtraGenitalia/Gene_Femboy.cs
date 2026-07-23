@@ -15,6 +15,7 @@ namespace RJW_Genes
         {
             if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             base.PostAdd();
+            if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn)) return; //If pawn hasn't been sexualized yet, skip.
             if (GenderUtility.IsMale(this.pawn) && this.additional_genital == null)
             {
                 this.CreateAndAddVagina();

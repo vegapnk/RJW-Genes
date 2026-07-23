@@ -21,23 +21,23 @@ namespace RJW_Genes
 
             // Some sources add Genes before they fire, e.g. Character Editor
             // This should harden the gene, to solve #19
-            if (HasAlreadyTwoVaginas())
-            {
-                return;
-            }
+            //if (HasAlreadyTwoVaginas())
+            //{
+            //    return;
+            //}
 
-            // Vaginas are only added for female pawns!
-            if (GenderUtility.IsFemale(pawn) && additional_vagina == null)
-            {
-                CreateAndAddVagina();
-            }
+            //// Vaginas are only added for female pawns!
+            //if (GenderUtility.IsFemale(pawn) && additional_vagina == null)
+            //{
+            //    CreateAndAddVagina();
+            //}
         }
         
         public override void PostAdd()
         {
             if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             base.PostAdd();
-
+            if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn)) return; //If pawn hasn't been sexualized yet, skip.
             // Some sources add Genes before they fire, e.g. Character Editor
             // This should harden the gene, to solve #19
             if (HasAlreadyTwoVaginas())

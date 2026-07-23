@@ -38,7 +38,6 @@ namespace RJW_Genes
                     ModLog.Message("Pawn: " + __instance.pawn.NameShortColored + " (" + __instance.pawn.ThingID + ")");
                     ModLog.Message("birthCount: " + laborStateMap.TryGetValue(__instance.pawn.ThingID).birthCount);
                 }
-
                 return;
             }
 
@@ -46,7 +45,7 @@ namespace RJW_Genes
             if (laborStateIsNull && hasLitteredBirthsGene)
             {
                 ModLog.Message("Found littered births gene");
-                int litteredBirthsTotalRoll = Rand.RangeInclusive(2, 4);
+                int litteredBirthsTotalRoll = Rand.RangeInclusive(1, 3);
                 laborStateMap.SetOrAdd(__instance.pawn.ThingID, new LaborState(__instance.pawn, litteredBirthsTotalRoll));
                 return;
             }
@@ -119,7 +118,7 @@ namespace RJW_Genes
                 return;
             }
 
-            if (currentLaborState.birthTotal == currentLaborState.birthCount)
+            if (currentLaborState.birthTotal <= currentLaborState.birthCount)
             {
                 laborStateMap.Remove(__instance.pawn.ThingID);
                 if (__instance.pawn.health.hediffSet.HasHediff(HediffDef.Named("Bioscaffold")))

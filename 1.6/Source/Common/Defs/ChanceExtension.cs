@@ -11,5 +11,4 @@ namespace RJW_Genes
     {
         public float chance;
     }
-
 }

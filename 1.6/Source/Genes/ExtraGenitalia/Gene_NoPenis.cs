@@ -13,18 +13,18 @@ namespace RJW_Genes
         {
             base.PostMake();
 
-            // Penis are only removed for male pawns!
-            if (GenderUtility.IsMale(pawn) && removed_penis == null)
-            {
-                RemoveButStorePenis();
-            }
+            //// Penis are only removed for male pawns!
+            //if (GenderUtility.IsMale(pawn) && removed_penis == null)
+            //{
+            //    RemoveButStorePenis();
+            //}
         }
         
         public override void PostAdd()
         {
             if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             base.PostAdd();
-
+            if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn)) return; //If pawn hasn't been sexualized yet, skip.
             // Penis are only removed for male pawns!
             if (GenderUtility.IsMale(pawn) && removed_penis == null)
             {

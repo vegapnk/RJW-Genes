@@ -48,10 +48,12 @@ namespace RJW_Genes
             //harmony.Patch(AccessTools.Method(typeof(Quirk), nameof(Quirk.CountSatisfiedQuirks)),
             //postfix: new HarmonyMethod(typeof(QuirkPatcher), nameof(QuirkPatcher.CountSatisfiedPostfix)));
 
-            
+
             //RJW.Sexualizer.sexualize_pawn
             harmony.Patch(AccessTools.Method(typeof(Sexualizer), nameof(Sexualizer.sexualize_pawn)),
-                prefix: new HarmonyMethod(typeof(Patch_sexualize_pawn), nameof(Patch_sexualize_pawn.PreFix)));
+                //prefix: new HarmonyMethod(typeof(Patch_sexualize_pawn), nameof(Patch_sexualize_pawn.PreFix)));    //Old Method that ran Sexualize early.
+                postfix: new HarmonyMethod(typeof(Patch_RJWSexualizer), nameof(Patch_RJWSexualizer.ApplyGenesPostfix)));
+        
 
 
             //Patch for Elastic Gene support with Eltoro's Streching mod.

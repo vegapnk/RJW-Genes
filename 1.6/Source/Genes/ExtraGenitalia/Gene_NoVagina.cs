@@ -14,17 +14,17 @@ namespace RJW_Genes
             base.PostMake();
 
             // Vaginas are only removed for female pawns!
-            if (GenderUtility.IsFemale(pawn) && removed_vagina == null)
-            {
-                RemoveButStoreVagina();
-            }
+            //if (GenderUtility.IsFemale(pawn) && removed_vagina == null)
+            //{
+            //    RemoveButStoreVagina();
+            //}
         }
         
         public override void PostAdd()
         {
             if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             base.PostAdd();
-
+            if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn)) return; //If pawn hasn't been sexualized yet, skip.
             // Vaginas are only removed for female pawns!
             if (GenderUtility.IsFemale(pawn) && removed_vagina == null)
             {

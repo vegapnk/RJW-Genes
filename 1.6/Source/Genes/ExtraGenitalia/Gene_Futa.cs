@@ -19,7 +19,7 @@ namespace RJW_Genes
         {
             if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             base.PostAdd();
-
+            if (GenitaliaUtility.PawnStillNeedsGenitalia(pawn)) return; //If pawn hasn't been sexualized yet, skip.
             // If the Pawn is already a Futa, do not do anything. Can Happen by Base-RJW Spawn Chance or potentially races / other mods. 
             if (IsAlreadyFuta(pawn))
             {
