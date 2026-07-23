@@ -46,8 +46,13 @@ namespace RJW_Genes
                 }
 
                 // Increase Fluid
-                if (CompHediff != null)
+                // Increase Fluid, if it's already above 10x don't increase to avoid crash issues.
+                if (CompHediff != null && (CompHediff.partFluidMultiplier < 100))
+                {
                     CompHediff.partFluidMultiplier *= 1.05f;
+                    if (CompHediff.partFluidMultiplier > 100)
+                        CompHediff.partFluidMultiplier = 100;
+                }
             }
         }
 

@@ -60,11 +60,11 @@ namespace RJW_Genes
                 CompHediff.UpdateSeverity();
 
                 // Increase Fluid, if it's already above 10x don't increase to avoid crash issues.
-                if (CompHediff != null && (CompHediff.partFluidMultiplier < 10))
+                if (CompHediff != null && (CompHediff.partFluidMultiplier < 100))
                 {
                     CompHediff.partFluidMultiplier *= cum_multiplier;
-                    if (CompHediff.partFluidMultiplier > 10)
-                        CompHediff.partFluidMultiplier = 10;
+                    if (CompHediff.partFluidMultiplier > 100)
+                        CompHediff.partFluidMultiplier = 100;
                 }
             }
         }

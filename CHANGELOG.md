@@ -1,4 +1,3 @@
-#INPROG
 # 2.7.0 (23-07-2026)
 (Commit by @Telanda-DDS)
 
@@ -6,7 +5,7 @@
 - Rewrite of how Genital Genes handle non-Sexualised pawns, should address most 'extra genitals' bugs.
 - Gender Fluid no longer allows sex changes while a pawn is pregnant.
 - Updated Big & Small - Lamia Patches to account for changes in Def Capitalisation.
-- Hormonal Saliva now has a cap on fluid production, pawns will no longer grow so productive their cumshots crash the game.
+- Hormonal Saliva & Evergrowth now have a caps on fluid production, pawns should no longer grow so productive their cumshots crash the game.
 
 
 **Xenotypes**
