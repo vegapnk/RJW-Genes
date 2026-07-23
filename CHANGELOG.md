@@ -1,14 +1,14 @@
 # 2.7.0 (23-07-2026)
 (Commit by @Telanda-DDS)
 
-** Fixes. **
+### Fixes.
 - Rewrite of how Genital Genes handle non-Sexualised pawns, should address most 'extra genitals' bugs.
 - Gender Fluid no longer allows sex changes while a pawn is pregnant.
 - Updated Big & Small - Lamia Patches to account for changes in Def Capitalisation.
 - Hormonal Saliva & Evergrowth now have a caps on fluid production, pawns should no longer grow so productive their cumshots crash the game.
 
 
-** Xenotypes. **
+### Xenotypes.
 I've done a Check over the included xenotype patches, A few Xenotypes that hadn't been updated to 1.6 have been removed, and minor fixes Applied to other races. The current Supported Xenotype list is as following.
 - Alpha Genes
 - Biotech Expansion - Mammalia
@@ -43,7 +43,7 @@ I've done a Check over the included xenotype patches, A few Xenotypes that hadn'
 - Vanilla Races Expanded - Saurid
 - \[LTS\]Xenotech
 
-** Known Issues. **
+### Known Issues.
 - Fertile Anus gene is Unreliable, and does not work with Biotech Pregnancies Enabled in RJW.  (Waiting for large Upstream patch to RJW Core to be accepted.)
 
 
