@@ -15,8 +15,10 @@ namespace RJW_Genes
         {
             if (pawn.kindDef == null) return;   //Added to catch Rimworld creating statues of pawns.
             base.PostMake();
-            AdjustPawnToFemale();
-            GenderUtility.RemoveSexChangeThoughtsIfTooYoung(this.pawn);
+            if (this.Active) {
+                AdjustPawnToFemale();
+                GenderUtility.RemoveSexChangeThoughtsIfTooYoung(this.pawn);
+            }
         }
 
         private void AdjustPawnToFemale()

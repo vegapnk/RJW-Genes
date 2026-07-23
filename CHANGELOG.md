@@ -1,4 +1,13 @@
 #INPROG
+# 2.7.0 (18-05-2026)
+(Commit by @Telanda-DDS)
+
+**Fixes**
+- Updated Big & Small - Lamia Patches to accoutn for changes in Def Capitalizeation.
+- Rewrite of how Genital Genes handle non-Sexualised pawns, should address most 'extra genitals' bugs.
+
+**Changes**
+- Fixed `Fertile Anus` Gene so that it is now compatible with both RJW & Biotech Pregnancies.
 
 # 2.6.2 (15-02-2026)
 (Commit by @Telanda-DDS)
