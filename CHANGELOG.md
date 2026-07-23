@@ -1,13 +1,13 @@
 #INPROG
-# 2.7.0 (18-05-2026)
+# 2.7.x (12-07-2026)
 (Commit by @Telanda-DDS)
 
 **Fixes**
 - Updated Big & Small - Lamia Patches to accoutn for changes in Def Capitalizeation.
 - Rewrite of how Genital Genes handle non-Sexualised pawns, should address most 'extra genitals' bugs.
+- Hormonal Saliva now has a cap on fluid production, pawns will no longer grow so productive their cumshots crash the game.
 
-**Changes**
-- Fixed `Fertile Anus` Gene so that it is now compatible with both RJW & Biotech Pregnancies.
+
 
 # 2.6.2 (15-02-2026)
 (Commit by @Telanda-DDS)
