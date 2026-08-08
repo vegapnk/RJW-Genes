@@ -72,6 +72,23 @@
             <li>rjw_genes_canine_genitalia</li>
           </value>
         </li>
+
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="AG_Forsaken"]/genes</xpath>
+			<value>
+				<li>rjw_genes_demonic_genitalia</li>
+			</value>
+		</li>
+
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="AG_Hiveling"]/genes</xpath>
+			<value>
+				<li>rjw_genes_no_sex_need</li>
+				<li>rjw_genes_no_penis</li>
+				<li>rjw_genes_no_vagina</li>
+				<li>rjw_genes_no_breasts</li>
+			</value>
+		</li>
         
         <li Class="PatchOperationFindMod">
           <mods>
@@ -83,6 +100,33 @@
               <li>rjw_genes_demonic_genitalia</li>
             </value>
           </match>
+        </li>
+
+		<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Vanilla Races Expanded - Phytokin</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/XenotypeDef[defName="VRE_Ocularkin"]/genes</xpath>
+				<value>
+					<li>rjw_genes_tight_female_genitalia</li>
+					<li>rjw_genes_tight_anus</li>
+					<li MayRequire="LustLicentia.RJWLabs">rjw_genes_elasticity</li>
+					<li>rjw_genes_bisexual</li>
+				</value>
+			</match>
+		</li>
+
+		<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Vanilla Races Expanded - Fungoid</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/XenotypeDef[defName="AG_Mycormorph"]/genes</xpath>
+				<value>
+					<li>rjw_genes_demonicT_genitalia</li>
+				</value>
+			</match>
         </li>
         
       </operations>

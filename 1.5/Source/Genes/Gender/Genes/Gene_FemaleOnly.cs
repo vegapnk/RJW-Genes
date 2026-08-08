@@ -41,7 +41,7 @@ namespace RJW_Genes
             }
             foreach(Gene g in pawn.genes.GenesListForReading)
             {
-                if(g.def.defName== "rjw_genes_hydrolic_genitalia")
+                if(g.def.defName== "rjw_genes_hydraulic_genitalia")
                 {
                     g.PostAdd();
                 }
