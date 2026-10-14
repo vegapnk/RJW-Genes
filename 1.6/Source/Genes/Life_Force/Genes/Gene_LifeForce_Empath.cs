@@ -37,10 +37,10 @@ namespace RJW_Genes
             frustratedDecrement = empathExt?.frustratedDecrement ?? FRUSTRATED_FALLBACK;
         }
 
-        public override void Tick()
+        public override void TickInterval(int delta)
         {
-            base.Tick();
-            if (this.pawn.IsHashIntervalTick(tickInterval) && this.pawn.Map != null)
+            base.TickInterval(delta);
+            if (this.pawn.IsHashIntervalTick(tickInterval,delta) && this.pawn.Map != null)
             {
                 // Small check if LifeForce is present - likely minors were ticking this but not having Life-Force yet (#143)
                 if (!GeneUtility.HasLifeForce(this.pawn)) return;
@@ -52,7 +52,7 @@ namespace RJW_Genes
                 {
                     this.FarmLifeForce(pawn);
                 }
-                        
+
             }
         }
 

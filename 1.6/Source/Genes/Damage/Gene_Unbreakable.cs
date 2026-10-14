@@ -19,14 +19,12 @@ namespace RJW_Genes
             RemoveBrokenHediff();
         }
 
-        public override void Tick()
+        public override void TickInterval(int delta)
         {
-            base.Tick();
-            if (pawn.IsHashIntervalTick(RESET_INTERVAL))
+            base.TickInterval(delta);
+            if (pawn.IsHashIntervalTick(RESET_INTERVAL,delta))
                 RemoveBrokenHediff();
         }
-
-
 
         private void RemoveBrokenHediff()
         {

@@ -9,17 +9,18 @@ namespace RJW_Genes
 {
     public class Gene_Rut : Gene
     {
-        public override void Tick()
-        {
-            base.Tick();
 
+        public override void TickInterval(int delta)
+        {
+            base.TickInterval(delta);
             if (pawn == null || pawn.genes == null)
                 return;
 
             var chanceExtension = this.def.GetModExtension<TickBasedChanceExtension>();
             if (chanceExtension == null) return;
 
-            if (pawn.IsHashIntervalTick(chanceExtension.tickInterval)){
+            if (pawn.IsHashIntervalTick(chanceExtension.tickInterval,delta))
+            {
                 Random r = new Random();
                 if (r.NextDouble() < chanceExtension.eventChance)
                 {
@@ -29,5 +30,6 @@ namespace RJW_Genes
                 }
             }
         }
+
     }
 }

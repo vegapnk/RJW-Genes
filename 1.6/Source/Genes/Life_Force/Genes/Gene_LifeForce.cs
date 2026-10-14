@@ -49,7 +49,7 @@ namespace RJW_Genes
 			yield break;
 		}
 
-		//every tick it decreases fertilin value and everyday if fertilin is below alert minimum there a ~50 chance for mental break
+        //every tick it decreases fertilin value and everyday if fertilin is below alert minimum there a ~50 chance for mental break	
 		public override void Tick()
 		{
 			base.Tick();

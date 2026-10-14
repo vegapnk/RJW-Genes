@@ -51,7 +51,6 @@ namespace RJW_Genes
 
             //RJW.Sexualizer.sexualize_pawn
             harmony.Patch(AccessTools.Method(typeof(Sexualizer), nameof(Sexualizer.sexualize_pawn)),
-                //prefix: new HarmonyMethod(typeof(Patch_sexualize_pawn), nameof(Patch_sexualize_pawn.PreFix)));    //Old Method that ran Sexualize early.
                 postfix: new HarmonyMethod(typeof(Patch_RJWSexualizer), nameof(Patch_RJWSexualizer.ApplyGenesPostfix)));
         
 

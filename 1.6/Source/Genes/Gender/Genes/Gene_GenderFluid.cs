@@ -44,31 +44,31 @@ namespace RJW_Genes
             switch_chance = tickbasedChanceExt?.eventChance ?? SWITCH_CHANCE_FALLBACK;
         }
 
-        public override void Tick()
+        public override void TickInterval(int delta)
         {
-            base.Tick();
+            base.TickInterval(delta);
 
             // Case 1: We had a blocked SexChange, now Pawn is free, apply sexchange a bit delayed.
-            if (pawn.IsHashIntervalTick(1500) && sexChangeWasBlocked && !SexChangeBlocked(pawn)){
+            if (pawn.IsHashIntervalTick(1500,delta) && sexChangeWasBlocked && !SexChangeBlocked(pawn))
+            {
                 ChangeSex();
                 sexChangeWasBlocked = false;
             }
             // Case 2: Check every interval if the Chance triggers
-            else if (pawn.IsHashIntervalTick(change_interval) && (new Random()).NextDouble() < switch_chance)
+            else if (pawn.IsHashIntervalTick(change_interval,delta) && (new Random()).NextDouble() < switch_chance)
             {
                 // Case 2.A - if the Pawn is Pregnant, do not allow sex change this interval.
                 if (pawn.IsPregnant()) return;
-                
+
                 // Case 2.B) SexChange was blocked, postpone it
                 if (SexChangeBlocked(pawn))
                 {
                     sexChangeWasBlocked |= true;
                     return;
-                } 
+                }
                 // Case 2.C) Nothing blocking, change the sex.
-                else { ChangeSex();}
+                else { ChangeSex(); }
             }
-
         }
 
         private void ChangeSex()

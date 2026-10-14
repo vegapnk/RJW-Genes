@@ -27,11 +27,11 @@ namespace RJW_Genes
         }
 
 
-        public override void Tick()
+        public override void TickInterval(int delta)
         {
-            base.Tick();
+            base.TickInterval(delta);
 
-            if (pawn.IsHashIntervalTick(event_interval) && (new Random()).NextDouble() < event_chance)
+            if (pawn.IsHashIntervalTick(event_interval,delta) && (new Random()).NextDouble() < event_chance)
             {
                 ModLog.Debug($"Firing Gene_FluctualSexualNeed for {pawn}");
                 ApplyFluctualSexNeedEffect(pawn);
