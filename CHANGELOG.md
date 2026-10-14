@@ -1,10 +1,13 @@
 # 2.7.1 (14-10-2026)
 (Commit by @Telanda-DDS)
 ### Experimental Update.
-- Added Rimworld v1.7 to about.xml
+- Added Rimworld v1.7 to about.xml - This is not a full 1.7 Upgrade, but instead just delineates that the 1.6 version is Compatible with 1.7
 
 ### Balance Changes.
 - Altered base infection rate for Feminizer and Twinkifier from 0.01 to 0.05 (20 Sex events to max instead of 100)
+
+### Fixes
+- Migrated most .Tick() functions to TickInterval().
 
 
 
