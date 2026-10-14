@@ -21,19 +21,17 @@ namespace RJW_Genes
     {
         const int TICK_INTERVAL = 60000 / 48; // 60k = 1 day, we want 0.5h which is 1/48th of 1 day. 
 
-        public override void Tick()
+        public override void TickInterval(int delta)
         {
-            base.Tick();
+            base.TickInterval(delta);
 
             // Don't check too often, only in the HashTickInterval to safe some computing power
-            if (this.pawn.IsHashIntervalTick(TICK_INTERVAL) && this.pawn.Map != null)
+            if (this.pawn.IsHashIntervalTick(TICK_INTERVAL,delta) && this.pawn.Map != null)
             {
                 List<Hediff_InsectEgg> eggs = new List<Hediff_InsectEgg>();
                 pawn.health.hediffSet.GetHediffs<Hediff_InsectEgg>(ref eggs);
                 // This part works as intended and shows Non-Human Eggs too
                 //if (RJW_Genes_Settings.rjw_genes_detailed_debug) ModLog.Message($"Gene_InsectIncubator: Found {eggs.Count} Hediff_InsectEgg in {pawn}");
-
-
                 foreach (Hediff_InsectEgg egg in eggs)
                 {
                     // The implanter check checks if the egg is still in an ovipositor. 

@@ -10,11 +10,10 @@ namespace RJW_Genes
     public class Gene_NoSexNeed : Gene
     {
 
-        public override void Tick()
+        public override void TickInterval(int delta)
         {
-            base.Tick();
-
-            if (!pawn.IsHashIntervalTick(3000))
+            base.TickInterval(delta);
+            if (!pawn.IsHashIntervalTick(3000,delta))
                 return;
             if (!pawn.ageTracker.Adult)
                 return;
@@ -26,5 +25,6 @@ namespace RJW_Genes
                     sex_need.CurLevelPercentage = 0.6f;
             }
         }
+
     }
 }

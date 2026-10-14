@@ -1,7 +1,5 @@
-﻿using RimWorld;
-using Verse;
+﻿using Verse;
 using rjw;
-using System;
 
 namespace RJW_Genes
 {

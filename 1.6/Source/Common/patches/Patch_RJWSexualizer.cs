@@ -42,7 +42,7 @@ namespace RJW_Genes
             {
                 foreach (var curGene in geneDict[key])
                 {
-                    curGene.PostAdd();
+                    (curGene as RJW_Gene).Notify_OnPawnSexualization();
                 }
             }
         }

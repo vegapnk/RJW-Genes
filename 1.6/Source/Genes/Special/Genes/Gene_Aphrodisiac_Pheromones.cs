@@ -16,24 +16,24 @@ namespace RJW_Genes
 
         const float SEXFREQ_THRESHOLD = 0.5f;
 
-        // Summary: once every one hour check for all pawns nearby and in line of sight (same room) and add/renew a hediff which lasts for 1 hour.
-        public override void Tick()
-        {
-            base.Tick();
 
+        // Summary: once every one hour check for all pawns nearby and in line of sight (same room) and add/renew a hediff which lasts for 1 hour.
+        public override void TickInterval(int delta)
+        {
+            base.TickInterval(delta);
             int tickInterval = ModExtensionHelper.GetTickIntervalFromModExtension(GeneDefOf.rjw_genes_aphrodisiac_pheromones, TICK_INTERVAL_FALLBACK);
 
-            if (this.pawn.IsHashIntervalTick(tickInterval) && this.pawn.Map != null)
+            if (this.pawn.IsHashIntervalTick(tickInterval,delta) && this.pawn.Map != null)
             {
                 // Only spread pheromones if sexdrive above 1
                 float sexfrequency = this.pawn.GetStatValue(StatDef.Named("SexFrequency"));
-                if(sexfrequency > SEXFREQ_THRESHOLD)
+                if (sexfrequency > SEXFREQ_THRESHOLD)
                 {
                     foreach (Pawn pawn in this.AffectedPawns(this.pawn.Position, this.pawn.Map))
                     {
                         this.InduceAphrodisiac(pawn);
                     }
-                }               
+                }
             }
         }
 

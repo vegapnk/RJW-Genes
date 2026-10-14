@@ -34,6 +34,9 @@ namespace RJW_Genes
         }
 
 
-        public virtual void Notify_OnPawnSexualization() { }
+        public virtual void Notify_OnPawnSexualization() 
+        {
+            PostAdd();
+        }
     }
 }

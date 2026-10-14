@@ -1,3 +1,16 @@
+# 2.7.1 (14-10-2026)
+(Commit by @Telanda-DDS)
+### Experimental Update.
+- Added Rimworld v1.7 to about.xml - This is not a full 1.7 Upgrade, but instead just delineates that the 1.6 version is Compatible with 1.7
+
+### Balance Changes.
+- Altered base infection rate for Feminizer and Twinkifier from 0.01 to 0.05 (20 Sex events to max instead of 100)
+
+### Fixes
+- Migrated most .Tick() functions to TickInterval().
+
+
+
 # 2.7.0 (23-07-2026)
 (Commit by @Telanda-DDS)
 
@@ -46,6 +59,7 @@ I've done a Check over the included xenotype patches, A few Xenotypes that hadn'
 ### Known Issues.
 - Fertile Anus gene is Unreliable, and does not work with Biotech Pregnancies Enabled in RJW.  (Waiting for large Upstream patch to RJW Core to be accepted.)
 
+------------
 
 # 2.6.2 (15-02-2026)
 (Commit by @Telanda-DDS)
@@ -54,8 +68,6 @@ I've done a Check over the included xenotype patches, A few Xenotypes that hadn'
 - Fixed incorrect gene Definition for Big and Small - Vampires and the Undead.
 - Fixed missing translation text field `RJW_Genes_GenitalsNotAlterable`
 
-
-------------
 
 # 2.6.1 (16-10-2025)
 (Commit by @Telanda-DDS)

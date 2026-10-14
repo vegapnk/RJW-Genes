@@ -9,19 +9,21 @@ namespace RJW_Genes
     {
         const int BASE_TICKS = 60000;
 
-        public override void Tick()
+
+        public override void TickInterval(int delta)
         {
-            base.Tick();
+            base.TickInterval(delta);
 
             int interval = ModExtensionHelper.GetTickIntervalFromModExtension(GeneDefOf.rjw_genes_evergrowth, ModExtensionHelper.GetTickIntervalFromModExtension(this.def, BASE_TICKS));
-            if (pawn.IsHashIntervalTick(interval) 
-                && this.pawn.Map != null 
+            if (pawn.IsHashIntervalTick(interval,delta)
+                && this.pawn.Map != null
                 && pawn.ageTracker.AgeBiologicalYears >= RJW_Genes_Settings.rjw_genes_resizing_age)
             {
                 GrowPenisses();
                 GrowVaginas();
             }
         }
+
 
         private void GrowPenisses()
         {
