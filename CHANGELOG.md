@@ -1,5 +1,5 @@
 # 2.7.1 (14-10-2026)
-
+(Commit by @Telanda-DDS)
 ### Experimental Update.
 - Added Rimworld v1.7 to about.xml
 
