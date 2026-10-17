@@ -33,8 +33,8 @@ namespace RJW_BGS
 			string pawnKindName = kindDef.defName;
 			//Wild animals have no name, so we will use pawnkindname instead
 			string pawnName = pawn.Name != null ? pawn.Name.ToStringFull : pawnKindName; 
-			PawnData pawnData = SaveStorage.DataStore.GetPawnData(pawn);
-			RaceGroupDef raceGroupDef = pawnData.RaceSupportDef;
+			PawnData pawnData = pawn.GetRJWPawnData();
+            RaceGroupDef raceGroupDef = pawnData.RaceSupportDef;
 
             RJW_Genes.ModLog.Debug($"Looking up Animal-Inheritable Genes for {pawnName} with KindDef {kindDef.defName},RaceName {raceName}, PawnKind {pawnKindName} and RaceGroup {raceGroupDef.defName}");
 
