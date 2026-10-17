@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Nottingham's Kholo 1.5.1</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Kholo_Cave"]/genes</xpath>
+			<value>
+				<li>rjw_genes_canine_genitalia</li>
+				<li>rjw_genes_zoophile</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Nottingham's Kholo 1.5.1</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Kholo_Sweetbreath"]/genes</xpath>
+			<value>
+				<li>rjw_genes_canine_genitalia</li>
+				<li>rjw_genes_zoophile</li>
+			</value>
+		</match>
+	</Operation>
+		<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Nottingham's Kholo 1.5.1</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Kholo_Great"]/genes</xpath>
+			<value>
+				<li>rjw_genes_canine_genitalia</li>
+				<li>rjw_genes_zoophile</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
